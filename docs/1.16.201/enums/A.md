@@ -1,0 +1,1477 @@
+# A
+### `ArmorSlot`
+Name | Value
+-|-
+Feet | `0`
+Body | `1`
+WeaponAttachPoint | `2`
+Head | `3`
+DropAttachPoint | `4`
+ExplosionPoint | `5`
+Eyes | `6`
+BreathingPoint | `7`
+Mouth | `8`
+
+
+### `ActiveDirectoryAction`
+Name | Value
+-|-
+DismissAndStartGame | `1`
+DismissAndExitGame | `2`
+DismissAndDisplayDemoChoice | `3`
+
+
+### `ActorDamageCause`
+Name | Value
+-|-
+
+
+### `ActorType`
+Name | Value
+-|-
+
+
+### `ActorFilterGroup::Processing`
+Name | Value
+-|-
+
+
+### `AF_Dimension_`
+Name | Value
+-|-
+AF_DIMENSION_HORZ | `0`
+AF_DIMENSION_VERT | `1`
+AF_DIMENSION_MAX | `2`
+
+
+### `AF_Style_`
+Name | Value
+-|-
+AF_STYLE_ADLM_DFLT | `0`
+AF_STYLE_ARAB_DFLT | `1`
+AF_STYLE_ARMN_DFLT | `2`
+AF_STYLE_AVST_DFLT | `3`
+AF_STYLE_BAMU_DFLT | `4`
+AF_STYLE_BENG_DFLT | `5`
+AF_STYLE_BUHD_DFLT | `6`
+AF_STYLE_CAKM_DFLT | `7`
+AF_STYLE_CANS_DFLT | `8`
+AF_STYLE_CARI_DFLT | `9`
+AF_STYLE_CHER_DFLT | `10`
+AF_STYLE_COPT_DFLT | `11`
+AF_STYLE_CPRT_DFLT | `12`
+AF_STYLE_CYRL_C2CP | `13`
+AF_STYLE_CYRL_C2SC | `14`
+AF_STYLE_CYRL_ORDN | `15`
+AF_STYLE_CYRL_PCAP | `16`
+AF_STYLE_CYRL_SINF | `17`
+AF_STYLE_CYRL_SMCP | `18`
+AF_STYLE_CYRL_SUBS | `19`
+AF_STYLE_CYRL_SUPS | `20`
+AF_STYLE_CYRL_TITL | `21`
+AF_STYLE_CYRL_DFLT | `22`
+AF_STYLE_DEVA_DFLT | `23`
+AF_STYLE_DSRT_DFLT | `24`
+AF_STYLE_ETHI_DFLT | `25`
+AF_STYLE_GEOR_DFLT | `26`
+AF_STYLE_GEOK_DFLT | `27`
+AF_STYLE_GLAG_DFLT | `28`
+AF_STYLE_GOTH_DFLT | `29`
+AF_STYLE_GREK_C2CP | `30`
+AF_STYLE_GREK_C2SC | `31`
+AF_STYLE_GREK_ORDN | `32`
+AF_STYLE_GREK_PCAP | `33`
+AF_STYLE_GREK_SINF | `34`
+AF_STYLE_GREK_SMCP | `35`
+AF_STYLE_GREK_SUBS | `36`
+AF_STYLE_GREK_SUPS | `37`
+AF_STYLE_GREK_TITL | `38`
+AF_STYLE_GREK_DFLT | `39`
+AF_STYLE_GUJR_DFLT | `40`
+AF_STYLE_GURU_DFLT | `41`
+AF_STYLE_HEBR_DFLT | `42`
+AF_STYLE_KALI_DFLT | `43`
+AF_STYLE_KHMR_DFLT | `44`
+AF_STYLE_KHMS_DFLT | `45`
+AF_STYLE_KNDA_DFLT | `46`
+AF_STYLE_LAO_DFLT | `47`
+AF_STYLE_LATN_C2CP | `48`
+AF_STYLE_LATN_C2SC | `49`
+AF_STYLE_LATN_ORDN | `50`
+AF_STYLE_LATN_PCAP | `51`
+AF_STYLE_LATN_SINF | `52`
+AF_STYLE_LATN_SMCP | `53`
+AF_STYLE_LATN_SUBS | `54`
+AF_STYLE_LATN_SUPS | `55`
+AF_STYLE_LATN_TITL | `56`
+AF_STYLE_LATN_DFLT | `57`
+AF_STYLE_LATB_DFLT | `58`
+AF_STYLE_LATP_DFLT | `59`
+AF_STYLE_LISU_DFLT | `60`
+AF_STYLE_MLYM_DFLT | `61`
+AF_STYLE_MONG_DFLT | `62`
+AF_STYLE_MYMR_DFLT | `63`
+AF_STYLE_NKOO_DFLT | `64`
+AF_STYLE_NONE_DFLT | `65`
+AF_STYLE_OLCK_DFLT | `66`
+AF_STYLE_ORKH_DFLT | `67`
+AF_STYLE_OSGE_DFLT | `68`
+AF_STYLE_OSMA_DFLT | `69`
+AF_STYLE_SAUR_DFLT | `70`
+AF_STYLE_SHAW_DFLT | `71`
+AF_STYLE_SINH_DFLT | `72`
+AF_STYLE_SUND_DFLT | `73`
+AF_STYLE_TAML_DFLT | `74`
+AF_STYLE_TAVT_DFLT | `75`
+AF_STYLE_TELU_DFLT | `76`
+AF_STYLE_TFNG_DFLT | `77`
+AF_STYLE_THAI_DFLT | `78`
+AF_STYLE_VAII_DFLT | `79`
+AF_STYLE_LIMB_DFLT | `80`
+AF_STYLE_ORYA_DFLT | `81`
+AF_STYLE_SYLO_DFLT | `82`
+AF_STYLE_TIBT_DFLT | `83`
+AF_STYLE_HANI_DFLT | `84`
+AF_STYLE_MAX | `85`
+
+
+### `AF_WritingSystem_`
+Name | Value
+-|-
+AF_WRITING_SYSTEM_DUMMY | `0`
+AF_WRITING_SYSTEM_LATIN | `1`
+AF_WRITING_SYSTEM_CJK | `2`
+AF_WRITING_SYSTEM_INDIC | `3`
+AF_WRITING_SYSTEM_MAX | `4`
+
+
+### `AF_Script_`
+Name | Value
+-|-
+AF_SCRIPT_ADLM | `0`
+AF_SCRIPT_ARAB | `1`
+AF_SCRIPT_ARMN | `2`
+AF_SCRIPT_AVST | `3`
+AF_SCRIPT_BAMU | `4`
+AF_SCRIPT_BENG | `5`
+AF_SCRIPT_BUHD | `6`
+AF_SCRIPT_CAKM | `7`
+AF_SCRIPT_CANS | `8`
+AF_SCRIPT_CARI | `9`
+AF_SCRIPT_CHER | `10`
+AF_SCRIPT_COPT | `11`
+AF_SCRIPT_CPRT | `12`
+AF_SCRIPT_CYRL | `13`
+AF_SCRIPT_DEVA | `14`
+AF_SCRIPT_DSRT | `15`
+AF_SCRIPT_ETHI | `16`
+AF_SCRIPT_GEOR | `17`
+AF_SCRIPT_GEOK | `18`
+AF_SCRIPT_GLAG | `19`
+AF_SCRIPT_GOTH | `20`
+AF_SCRIPT_GREK | `21`
+AF_SCRIPT_GUJR | `22`
+AF_SCRIPT_GURU | `23`
+AF_SCRIPT_HEBR | `24`
+AF_SCRIPT_KALI | `25`
+AF_SCRIPT_KHMR | `26`
+AF_SCRIPT_KHMS | `27`
+AF_SCRIPT_KNDA | `28`
+AF_SCRIPT_LAO | `29`
+AF_SCRIPT_LATN | `30`
+AF_SCRIPT_LATB | `31`
+AF_SCRIPT_LATP | `32`
+AF_SCRIPT_LISU | `33`
+AF_SCRIPT_MLYM | `34`
+AF_SCRIPT_MONG | `35`
+AF_SCRIPT_MYMR | `36`
+AF_SCRIPT_NKOO | `37`
+AF_SCRIPT_NONE | `38`
+AF_SCRIPT_OLCK | `39`
+AF_SCRIPT_ORKH | `40`
+AF_SCRIPT_OSGE | `41`
+AF_SCRIPT_OSMA | `42`
+AF_SCRIPT_SAUR | `43`
+AF_SCRIPT_SHAW | `44`
+AF_SCRIPT_SINH | `45`
+AF_SCRIPT_SUND | `46`
+AF_SCRIPT_TAML | `47`
+AF_SCRIPT_TAVT | `48`
+AF_SCRIPT_TELU | `49`
+AF_SCRIPT_TFNG | `50`
+AF_SCRIPT_THAI | `51`
+AF_SCRIPT_VAII | `52`
+AF_SCRIPT_LIMB | `53`
+AF_SCRIPT_ORYA | `54`
+AF_SCRIPT_SYLO | `55`
+AF_SCRIPT_TIBT | `56`
+AF_SCRIPT_HANI | `57`
+AF_SCRIPT_MAX | `58`
+
+
+### `AF_Blue_Stringset_`
+Name | Value
+-|-
+AF_BLUE_STRINGSET_ADLM | `0`
+AF_BLUE_STRINGSET_ARAB | `5`
+AF_BLUE_STRINGSET_ARMN | `9`
+AF_BLUE_STRINGSET_AVST | `16`
+AF_BLUE_STRINGSET_BAMU | `19`
+AF_BLUE_STRINGSET_BENG | `22`
+AF_BLUE_STRINGSET_BUHD | `27`
+AF_BLUE_STRINGSET_CAKM | `32`
+AF_BLUE_STRINGSET_CANS | `36`
+AF_BLUE_STRINGSET_CARI | `43`
+AF_BLUE_STRINGSET_CHER | `46`
+AF_BLUE_STRINGSET_COPT | `53`
+AF_BLUE_STRINGSET_CPRT | `58`
+AF_BLUE_STRINGSET_CYRL | `63`
+AF_BLUE_STRINGSET_DEVA | `69`
+AF_BLUE_STRINGSET_DSRT | `75`
+AF_BLUE_STRINGSET_ETHI | `80`
+AF_BLUE_STRINGSET_GEOR | `83`
+AF_BLUE_STRINGSET_GEOK | `90`
+AF_BLUE_STRINGSET_GLAG | `97`
+AF_BLUE_STRINGSET_GOTH | `102`
+AF_BLUE_STRINGSET_GREK | `105`
+AF_BLUE_STRINGSET_GUJR | `112`
+AF_BLUE_STRINGSET_GURU | `118`
+AF_BLUE_STRINGSET_HEBR | `124`
+AF_BLUE_STRINGSET_KALI | `128`
+AF_BLUE_STRINGSET_KHMR | `134`
+AF_BLUE_STRINGSET_KHMS | `140`
+AF_BLUE_STRINGSET_KNDA | `143`
+AF_BLUE_STRINGSET_LAO | `146`
+AF_BLUE_STRINGSET_LATN | `152`
+AF_BLUE_STRINGSET_LATB | `159`
+AF_BLUE_STRINGSET_LATP | `166`
+AF_BLUE_STRINGSET_LISU | `173`
+AF_BLUE_STRINGSET_MLYM | `176`
+AF_BLUE_STRINGSET_MONG | `179`
+AF_BLUE_STRINGSET_MYMR | `182`
+AF_BLUE_STRINGSET_NKOO | `187`
+AF_BLUE_STRINGSET_NONE | `192`
+AF_BLUE_STRINGSET_OLCK | `193`
+AF_BLUE_STRINGSET_ORKH | `196`
+AF_BLUE_STRINGSET_OSGE | `199`
+AF_BLUE_STRINGSET_OSMA | `207`
+AF_BLUE_STRINGSET_SAUR | `210`
+AF_BLUE_STRINGSET_SHAW | `213`
+AF_BLUE_STRINGSET_SINH | `219`
+AF_BLUE_STRINGSET_SUND | `223`
+AF_BLUE_STRINGSET_TAML | `227`
+AF_BLUE_STRINGSET_TAVT | `230`
+AF_BLUE_STRINGSET_TELU | `233`
+AF_BLUE_STRINGSET_TFNG | `236`
+AF_BLUE_STRINGSET_THAI | `239`
+AF_BLUE_STRINGSET_VAII | `247`
+af_blue_2_1 | `250`
+AF_BLUE_STRINGSET_HANI | `250`
+af_blue_2_1_1 | `252`
+af_blue_2_1_2 | `252`
+af_blue_2_2 | `253`
+AF_BLUE_STRINGSET_MAX | `254`
+
+
+### `AF_Coverage_`
+Name | Value
+-|-
+AF_COVERAGE_PETITE_CAPITALS_FROM_CAPITALS | `0`
+AF_COVERAGE_SMALL_CAPITALS_FROM_CAPITALS | `1`
+AF_COVERAGE_ORDINALS | `2`
+AF_COVERAGE_PETITE_CAPITALS | `3`
+AF_COVERAGE_RUBY | `4`
+AF_COVERAGE_SCIENTIFIC_INFERIORS | `5`
+AF_COVERAGE_SMALL_CAPITALS | `6`
+AF_COVERAGE_SUBSCRIPT | `7`
+AF_COVERAGE_SUPERSCRIPT | `8`
+AF_COVERAGE_TITLING | `9`
+AF_COVERAGE_DEFAULT | `10`
+
+
+### `AF_Blue_String_`
+Name | Value
+-|-
+AF_BLUE_STRING_ADLAM_CAPITAL_TOP | `0`
+AF_BLUE_STRING_ADLAM_CAPITAL_BOTTOM | `30`
+AF_BLUE_STRING_ADLAM_SMALL_TOP | `40`
+AF_BLUE_STRING_ADLAM_SMALL_BOTTOM | `65`
+AF_BLUE_STRING_ARABIC_TOP | `105`
+AF_BLUE_STRING_ARABIC_BOTTOM | `123`
+AF_BLUE_STRING_ARABIC_JOIN | `138`
+AF_BLUE_STRING_ARMENIAN_CAPITAL_TOP | `141`
+AF_BLUE_STRING_ARMENIAN_CAPITAL_BOTTOM | `165`
+AF_BLUE_STRING_ARMENIAN_SMALL_ASCENDER | `189`
+AF_BLUE_STRING_ARMENIAN_SMALL_TOP | `210`
+AF_BLUE_STRING_ARMENIAN_SMALL_BOTTOM | `234`
+AF_BLUE_STRING_ARMENIAN_SMALL_DESCENDER | `258`
+AF_BLUE_STRING_AVESTAN_TOP | `282`
+AF_BLUE_STRING_AVESTAN_BOTTOM | `302`
+AF_BLUE_STRING_BAMUM_TOP | `312`
+AF_BLUE_STRING_BAMUM_BOTTOM | `344`
+AF_BLUE_STRING_BENGALI_BASE | `376`
+AF_BLUE_STRING_BENGALI_TOP | `408`
+AF_BLUE_STRING_BENGALI_HEAD | `436`
+AF_BLUE_STRING_BUHID_TOP | `468`
+AF_BLUE_STRING_BUHID_LARGE | `476`
+AF_BLUE_STRING_BUHID_SMALL | `488`
+AF_BLUE_STRING_BUHID_BOTTOM | `504`
+AF_BLUE_STRING_CANADIAN_SYLLABICS_TOP | `532`
+AF_BLUE_STRING_CANADIAN_SYLLABICS_BOTTOM | `564`
+AF_BLUE_STRING_CANADIAN_SYLLABICS_SMALL_TOP | `596`
+AF_BLUE_STRING_CANADIAN_SYLLABICS_SMALL_BOTTOM | `628`
+AF_BLUE_STRING_CANADIAN_SYLLABICS_SUPS_TOP | `660`
+AF_BLUE_STRING_CANADIAN_SYLLABICS_SUPS_BOTTOM | `688`
+AF_BLUE_STRING_CARIAN_TOP | `720`
+AF_BLUE_STRING_CARIAN_BOTTOM | `760`
+AF_BLUE_STRING_CHAKMA_TOP | `795`
+AF_BLUE_STRING_CHAKMA_BOTTOM | `820`
+AF_BLUE_STRING_CHAKMA_DESCENDER | `845`
+AF_BLUE_STRING_CHEROKEE_CAPITAL | `910`
+AF_BLUE_STRING_CHEROKEE_SMALL_ASCENDER | `942`
+AF_BLUE_STRING_CHEROKEE_SMALL | `974`
+AF_BLUE_STRING_CHEROKEE_SMALL_DESCENDER | `1006`
+AF_BLUE_STRING_COPTIC_CAPITAL_TOP | `1022`
+AF_BLUE_STRING_COPTIC_CAPITAL_BOTTOM | `1054`
+AF_BLUE_STRING_COPTIC_SMALL_TOP | `1086`
+AF_BLUE_STRING_COPTIC_SMALL_BOTTOM | `1118`
+AF_BLUE_STRING_CYPRIOT_TOP | `1150`
+AF_BLUE_STRING_CYPRIOT_BOTTOM | `1190`
+AF_BLUE_STRING_CYPRIOT_SMALL | `1225`
+AF_BLUE_STRING_CYRILLIC_CAPITAL_TOP | `1240`
+AF_BLUE_STRING_CYRILLIC_CAPITAL_BOTTOM | `1264`
+AF_BLUE_STRING_CYRILLIC_SMALL | `1288`
+AF_BLUE_STRING_CYRILLIC_SMALL_DESCENDER | `1312`
+AF_BLUE_STRING_DESERET_CAPITAL_TOP | `1321`
+AF_BLUE_STRING_DESERET_CAPITAL_BOTTOM | `1346`
+AF_BLUE_STRING_DESERET_SMALL_TOP | `1371`
+AF_BLUE_STRING_DESERET_SMALL_BOTTOM | `1396`
+AF_BLUE_STRING_DEVANAGARI_BASE | `1421`
+AF_BLUE_STRING_DEVANAGARI_TOP | `1453`
+AF_BLUE_STRING_DEVANAGARI_HEAD | `1485`
+AF_BLUE_STRING_DEVANAGARI_BOTTOM | `1517`
+AF_BLUE_STRING_ETHIOPIC_TOP | `1525`
+AF_BLUE_STRING_ETHIOPIC_BOTTOM | `1557`
+AF_BLUE_STRING_GEORGIAN_MKHEDRULI_TOP | `1589`
+AF_BLUE_STRING_GEORGIAN_MKHEDRULI_BOTTOM | `1621`
+AF_BLUE_STRING_GEORGIAN_MKHEDRULI_ASCENDER | `1653`
+AF_BLUE_STRING_GEORGIAN_MKHEDRULI_DESCENDER | `1685`
+AF_BLUE_STRING_GEORGIAN_ASOMTAVRULI_TOP | `1717`
+AF_BLUE_STRING_GEORGIAN_ASOMTAVRULI_BOTTOM | `1749`
+AF_BLUE_STRING_GEORGIAN_NUSKHURI_TOP | `1781`
+AF_BLUE_STRING_GEORGIAN_NUSKHURI_BOTTOM | `1813`
+AF_BLUE_STRING_GEORGIAN_NUSKHURI_ASCENDER | `1845`
+AF_BLUE_STRING_GEORGIAN_NUSKHURI_DESCENDER | `1877`
+AF_BLUE_STRING_GEORGIAN_MTAVRULI_TOP | `1909`
+AF_BLUE_STRING_GEORGIAN_MTAVRULI_BOTTOM | `1941`
+AF_BLUE_STRING_GLAGOLITIC_CAPITAL_TOP | `1973`
+AF_BLUE_STRING_GLAGOLITIC_CAPITAL_BOTTOM | `2005`
+AF_BLUE_STRING_GLAGOLITIC_SMALL_TOP | `2037`
+AF_BLUE_STRING_GLAGOLITIC_SMALL_BOTTOM | `2069`
+AF_BLUE_STRING_GOTHIC_TOP | `2101`
+AF_BLUE_STRING_GOTHIC_BOTTOM | `2141`
+AF_BLUE_STRING_GREEK_CAPITAL_TOP | `2161`
+AF_BLUE_STRING_GREEK_CAPITAL_BOTTOM | `2182`
+AF_BLUE_STRING_GREEK_SMALL_BETA_TOP | `2200`
+AF_BLUE_STRING_GREEK_SMALL | `2218`
+AF_BLUE_STRING_GREEK_SMALL_DESCENDER | `2242`
+AF_BLUE_STRING_GUJARATI_TOP | `2266`
+AF_BLUE_STRING_GUJARATI_BOTTOM | `2298`
+AF_BLUE_STRING_GUJARATI_ASCENDER | `2330`
+AF_BLUE_STRING_GUJARATI_DESCENDER | `2380`
+AF_BLUE_STRING_GUJARATI_DIGIT_TOP | `2413`
+AF_BLUE_STRING_GURMUKHI_BASE | `2433`
+AF_BLUE_STRING_GURMUKHI_HEAD | `2465`
+AF_BLUE_STRING_GURMUKHI_TOP | `2497`
+AF_BLUE_STRING_GURMUKHI_BOTTOM | `2529`
+AF_BLUE_STRING_GURMUKHI_DIGIT_TOP | `2561`
+AF_BLUE_STRING_HEBREW_TOP | `2581`
+AF_BLUE_STRING_HEBREW_BOTTOM | `2605`
+AF_BLUE_STRING_HEBREW_DESCENDER | `2623`
+AF_BLUE_STRING_KANNADA_TOP | `2638`
+AF_BLUE_STRING_KANNADA_BOTTOM | `2682`
+AF_BLUE_STRING_KAYAH_LI_TOP | `2714`
+AF_BLUE_STRING_KAYAH_LI_BOTTOM | `2738`
+AF_BLUE_STRING_KAYAH_LI_ASCENDER | `2758`
+AF_BLUE_STRING_KAYAH_LI_DESCENDER | `2766`
+AF_BLUE_STRING_KAYAH_LI_LARGE_DESCENDER | `2778`
+AF_BLUE_STRING_KHMER_TOP | `2799`
+AF_BLUE_STRING_KHMER_SUBSCRIPT_TOP | `2823`
+AF_BLUE_STRING_KHMER_BOTTOM | `2863`
+AF_BLUE_STRING_KHMER_DESCENDER | `2895`
+AF_BLUE_STRING_KHMER_LARGE_DESCENDER | `2929`
+AF_BLUE_STRING_KHMER_SYMBOLS_WAXING_TOP | `3016`
+AF_BLUE_STRING_KHMER_SYMBOLS_WANING_BOTTOM | `3024`
+AF_BLUE_STRING_LAO_TOP | `3032`
+AF_BLUE_STRING_LAO_BOTTOM | `3064`
+AF_BLUE_STRING_LAO_ASCENDER | `3096`
+AF_BLUE_STRING_LAO_LARGE_ASCENDER | `3112`
+AF_BLUE_STRING_LAO_DESCENDER | `3124`
+AF_BLUE_STRING_LATIN_CAPITAL_TOP | `3148`
+AF_BLUE_STRING_LATIN_CAPITAL_BOTTOM | `3164`
+AF_BLUE_STRING_LATIN_SMALL_F_TOP | `3180`
+AF_BLUE_STRING_LATIN_SMALL_TOP | `3194`
+AF_BLUE_STRING_LATIN_SMALL_BOTTOM | `3210`
+AF_BLUE_STRING_LATIN_SMALL_DESCENDER | `3226`
+AF_BLUE_STRING_LATIN_SUBS_CAPITAL_TOP | `3236`
+AF_BLUE_STRING_LATIN_SUBS_CAPITAL_BOTTOM | `3256`
+AF_BLUE_STRING_LATIN_SUBS_SMALL_F_TOP | `3276`
+AF_BLUE_STRING_LATIN_SUBS_SMALL | `3296`
+AF_BLUE_STRING_LATIN_SUBS_SMALL_DESCENDER | `3332`
+AF_BLUE_STRING_LATIN_SUPS_CAPITAL_TOP | `3352`
+AF_BLUE_STRING_LATIN_SUPS_CAPITAL_BOTTOM | `3383`
+AF_BLUE_STRING_LATIN_SUPS_SMALL_F_TOP | `3412`
+AF_BLUE_STRING_LATIN_SUPS_SMALL | `3438`
+AF_BLUE_STRING_LATIN_SUPS_SMALL_DESCENDER | `3463`
+AF_BLUE_STRING_LISU_TOP | `3474`
+AF_BLUE_STRING_LISU_BOTTOM | `3506`
+AF_BLUE_STRING_MALAYALAM_TOP | `3538`
+AF_BLUE_STRING_MALAYALAM_BOTTOM | `3582`
+AF_BLUE_STRING_MONGOLIAN_TOP_BASE | `3614`
+AF_BLUE_STRING_MONGOLIAN_BOTTOM_BASE | `3658`
+AF_BLUE_STRING_MYANMAR_TOP | `3662`
+AF_BLUE_STRING_MYANMAR_BOTTOM | `3694`
+AF_BLUE_STRING_MYANMAR_ASCENDER | `3726`
+AF_BLUE_STRING_MYANMAR_DESCENDER | `3754`
+AF_BLUE_STRING_NKO_TOP | `3786`
+AF_BLUE_STRING_NKO_BOTTOM | `3810`
+AF_BLUE_STRING_NKO_SMALL_TOP | `3825`
+AF_BLUE_STRING_NKO_SMALL_BOTTOM | `3834`
+AF_BLUE_STRING_OL_CHIKI | `3846`
+AF_BLUE_STRING_OLD_TURKIC_TOP | `3870`
+AF_BLUE_STRING_OLD_TURKIC_BOTTOM | `3885`
+AF_BLUE_STRING_OSAGE_CAPITAL_TOP | `3905`
+AF_BLUE_STRING_OSAGE_CAPITAL_BOTTOM | `3945`
+AF_BLUE_STRING_OSAGE_CAPITAL_DESCENDER | `3975`
+AF_BLUE_STRING_OSAGE_SMALL_TOP | `3990`
+AF_BLUE_STRING_OSAGE_SMALL_BOTTOM | `4030`
+AF_BLUE_STRING_OSAGE_SMALL_ASCENDER | `4070`
+AF_BLUE_STRING_OSAGE_SMALL_DESCENDER | `4095`
+AF_BLUE_STRING_OSMANYA_TOP | `4110`
+AF_BLUE_STRING_OSMANYA_BOTTOM | `4150`
+AF_BLUE_STRING_SAURASHTRA_TOP | `4190`
+AF_BLUE_STRING_SAURASHTRA_BOTTOM | `4222`
+AF_BLUE_STRING_SHAVIAN_TOP | `4242`
+AF_BLUE_STRING_SHAVIAN_BOTTOM | `4252`
+AF_BLUE_STRING_SHAVIAN_DESCENDER | `4277`
+AF_BLUE_STRING_SHAVIAN_SMALL_TOP | `4287`
+AF_BLUE_STRING_SHAVIAN_SMALL_BOTTOM | `4322`
+AF_BLUE_STRING_SINHALA_TOP | `4337`
+AF_BLUE_STRING_SINHALA_BOTTOM | `4369`
+AF_BLUE_STRING_SINHALA_DESCENDER | `4401`
+AF_BLUE_STRING_SUNDANESE_TOP | `4445`
+AF_BLUE_STRING_SUNDANESE_BOTTOM | `4469`
+AF_BLUE_STRING_SUNDANESE_DESCENDER | `4501`
+AF_BLUE_STRING_TAI_VIET_TOP | `4509`
+AF_BLUE_STRING_TAI_VIET_BOTTOM | `4529`
+AF_BLUE_STRING_TAMIL_TOP | `4541`
+AF_BLUE_STRING_TAMIL_BOTTOM | `4573`
+AF_BLUE_STRING_TELUGU_TOP | `4605`
+AF_BLUE_STRING_TELUGU_BOTTOM | `4633`
+AF_BLUE_STRING_THAI_TOP | `4661`
+AF_BLUE_STRING_THAI_BOTTOM | `4685`
+AF_BLUE_STRING_THAI_ASCENDER | `4713`
+AF_BLUE_STRING_THAI_LARGE_ASCENDER | `4725`
+AF_BLUE_STRING_THAI_DESCENDER | `4737`
+AF_BLUE_STRING_THAI_LARGE_DESCENDER | `4753`
+AF_BLUE_STRING_THAI_DIGIT_TOP | `4761`
+AF_BLUE_STRING_TIFINAGH | `4773`
+AF_BLUE_STRING_VAI_TOP | `4805`
+AF_BLUE_STRING_VAI_BOTTOM | `4837`
+af_blue_1_1 | `4868`
+AF_BLUE_STRING_CJK_TOP | `4869`
+AF_BLUE_STRING_CJK_BOTTOM | `5071`
+af_blue_1_1_1 | `5272`
+af_blue_1_1_2 | `5272`
+af_blue_1_2 | `5272`
+AF_BLUE_STRING_MAX | `5273`
+
+
+### `Ability::Options`
+Name | Value
+-|-
+
+
+### `ActorLinkType`
+Name | Value
+-|-
+
+
+### `AssetCacheCategory`
+Name | Value
+-|-
+LanguageData | `0`
+InitialPackResources | `1`
+AdditionalPackResources | `2`
+SoundAndMusic | `3`
+
+
+### `AnimationEventType`
+Name | Value
+-|-
+
+
+### `ActorTerrainInterlockData::VisibilityState`
+Name | Value
+-|-
+Visible | `0`
+HiddenFromCommandBlockOrigin | `2`
+HiddenFromPlayerOrigin | `4`
+Hidden | `6`
+
+
+### `ARVRPlatform`
+Name | Value
+-|-
+ARVR_None | `0`
+ARVR_Rift | `1`
+ARVR_Holographic | `2`
+ARVR_WindowsMR | `3`
+ARVR_PSVR | `4`
+ARVR_GearVR | `5`
+ARVR_DesktopXR | `6`
+
+
+### `AnimationEventState`
+Name | Value
+-|-
+
+
+### `AreaType`
+Name | Value
+-|-
+Circle | `1`
+TickingArea | `2`
+
+
+### `Automation::MessagePurpose`
+Name | Value
+-|-
+
+
+### `ActorDefinitionGroup::LoadStatus`
+Name | Value
+-|-
+
+
+### `AttributeModifierOperation`
+Name | Value
+-|-
+OPERATION_ADDITION | `0`
+OPERATION_MULTIPLY_BASE | `1`
+OPERATION_MULTIPLY_TOTAL | `2`
+OPERATION_CAP | `3`
+TOTAL_OPERATIONS | `4`
+OPERATION_INVALID | `4`
+
+
+### `AttributeOperands`
+Name | Value
+-|-
+OPERAND_MIN | `0`
+OPERAND_MAX | `1`
+OPERAND_CURRENT | `2`
+TOTAL_OPERANDS | `3`
+OPERAND_INVALID | `3`
+
+
+### `ActorAddEffectEvent::EffectState`
+Name | Value
+-|-
+
+
+### `ActorContainerType`
+Name | Value
+-|-
+Armor | `0`
+Hand | `1`
+PlayerUI | `3`
+PlayerInventory | `4`
+PlayerEnderChest | `5`
+
+
+### `ArmorItem::Tier`
+Name | Value
+-|-
+TIER_LEATHER | `0`
+TIER_CHAIN | `1`
+TIER_IRON | `2`
+TIER_DIAMOND | `3`
+TIER_GOLD | `4`
+TIER_ELYTRA | `5`
+TIER_TURTLE | `6`
+TIER_NETHERITE | `7`
+
+
+### `ActorFlags`
+Name | Value
+-|-
+
+
+### `ActionEvent::<unnamed_enum_ACTION_MOVE_LEFT>`
+Name | Value
+-|-
+ACTION_MOVE_LEFT | `1`
+ACTION_MOVE_RIGHT | `2`
+ACTION_MOVE_FORWARD | `3`
+ACTION_MOVE_BACKWARD | `4`
+ACTION_ASCEND | `5`
+ACTION_DESCEND | `6`
+ACTION_PADDLE_LEFT | `7`
+ACTION_PADDLE_RIGHT | `8`
+ACTION_SNEAK | `10`
+ACTION_JUMP | `11`
+ACTION_SPRINT | `12`
+ACTION_DISMOUNT | `14`
+ACTION_MOB_EFFECTS | `20`
+ACTION_DROP | `21`
+ACTION_INVENTORY | `22`
+ACTION_BUILD | `23`
+ACTION_DESTROY | `24`
+ACTION_INTERACT | `25`
+ACTION_ATTACK | `26`
+ACTION_PAUSE | `30`
+ACTION_CHAT | `31`
+ACTION_CONSOLE | `32`
+ACTION_THIRD_PERSON_VIEW | `33`
+ACTION_SCOREBOARD | `34`
+ACTION_CODE_BUILDER | `35`
+ACTION_SLOT_0 | `50`
+ACTION_SLOT_1 | `51`
+ACTION_SLOT_2 | `52`
+ACTION_SLOT_3 | `53`
+ACTION_SLOT_4 | `54`
+ACTION_SLOT_5 | `55`
+ACTION_SLOT_6 | `56`
+ACTION_SLOT_7 | `57`
+ACTION_SLOT_8 | `58`
+ACTION_SLOT_9 | `59`
+ACTION_MENU_UP | `100`
+ACTION_MENU_DOWN | `101`
+ACTION_MENU_LEFT | `102`
+ACTION_MENU_RIGHT | `103`
+ACTION_MENU_OK | `104`
+ACTION_MENU_CANCEL | `105`
+ACTION_MENU_INVENTORY_DROP | `106`
+ACTION_MENU_INVENTORY_CANCEL | `107`
+ACTION_POINTER_PRESSED | `120`
+ACTION_BUILD_OR_INTERACT | `130`
+ACTION_DESTROY_OR_ATTACK | `131`
+ACTION_BUILD_OR_ATTACK | `140`
+ACTION_DESTROY_OR_INTERACT | `141`
+
+
+### `AF_Direction_`
+Name | Value
+-|-
+AF_DIR_RIGHT | `1`
+AF_DIR_UP | `2`
+AF_DIR_NONE | `4`
+AF_DIR_DOWN | `18446744073709551614`
+AF_DIR_LEFT | `18446744073709551615`
+
+
+### `AFM_ValueType_`
+Name | Value
+-|-
+AFM_VALUE_TYPE_STRING | `0`
+AFM_VALUE_TYPE_NAME | `1`
+AFM_VALUE_TYPE_FIXED | `2`
+AFM_VALUE_TYPE_INTEGER | `3`
+AFM_VALUE_TYPE_BOOL | `4`
+AFM_VALUE_TYPE_INDEX | `5`
+
+
+### `AutoNumberState`
+Name | Value
+-|-
+ANS_INIT | `0`
+ANS_AUTO | `1`
+ANS_MANUAL | `2`
+
+
+### `Actor::InitializationMethod`
+```
+enum Actor::InitializationMethod : __int8
+{
+  INVALID = 0x0,
+  LOADED = 0x1,
+  SPAWNED = 0x2,
+  BORN = 0x3,
+  TRANSFORMED = 0x4,
+  UPDATED = 0x5,
+  EVENT = 0x6,
+  LEGACY = 0x7,
+};
+
+```
+
+### `ActorCategory`
+```
+typedef Rotation ActorCategory;
+
+```
+
+### `ActorLocation`
+```
+enum ActorLocation : __int32
+{
+  Feet = 0x0,
+  Body = 0x1,
+  WeaponAttachPoint = 0x2,
+  Head = 0x3,
+  DropAttachPoint = 0x4,
+  ExplosionPoint = 0x5,
+  Eyes = 0x6,
+  BreathingPoint = 0x7,
+  Mouth = 0x8,
+};
+
+```
+
+### `ActorEvent`
+```
+enum ActorEvent : __int8
+{
+  NONE = 0x0,
+  JUMP = 0x1,
+  HURT = 0x2,
+  DEATH = 0x3,
+  START_ATTACKING = 0x4,
+  STOP_ATTACKING = 0x5,
+  TAMING_FAILED = 0x6,
+  TAMING_SUCCEEDED = 0x7,
+  SHAKE_WETNESS = 0x8,
+  EAT_GRASS = 0xA,
+  FISHHOOK_BUBBLE = 0xB,
+  FISHHOOK_FISHPOS = 0xC,
+  FISHHOOK_HOOKTIME = 0xD,
+  FISHHOOK_TEASE = 0xE,
+  SQUID_FLEEING = 0xF,
+  ZOMBIE_CONVERTING = 0x10,
+  PLAY_AMBIENT = 0x11,
+  SPAWN_ALIVE = 0x12,
+  START_OFFER_FLOWER = 0x13,
+  STOP_OFFER_FLOWER = 0x14,
+  LOVE_HEARTS = 0x15,
+  VILLAGER_ANGRY = 0x16,
+  VILLAGER_HAPPY = 0x17,
+  WITCH_HAT_MAGIC = 0x18,
+  FIREWORKS_EXPLODE = 0x19,
+  IN_LOVE_HEARTS = 0x1A,
+  SILVERFISH_MERGE_ANIM = 0x1B,
+  GUARDIAN_ATTACK_SOUND = 0x1C,
+  DRINK_POTION = 0x1D,
+  THROW_POTION = 0x1E,
+  PRIME_TNTCART = 0x1F,
+  PRIME_CREEPER = 0x20,
+  AIR_SUPPLY = 0x21,
+  ADD_PLAYER_LEVELS = 0x22,
+  GUARDIAN_MINING_FATIGUE = 0x23,
+  AGENT_SWING_ARM = 0x24,
+  DRAGON_START_DEATH_ANIM = 0x25,
+  GROUND_DUST = 0x26,
+  SHAKE = 0x27,
+  FEED = 0x39,
+  BABY_EAT = 0x3C,
+  INSTANT_DEATH = 0x3D,
+  NOTIFY_TRADE = 0x3E,
+  LEASH_DESTROYED = 0x3F,
+  CARAVAN_UPDATED = 0x40,
+  TALISMAN_ACTIVATE = 0x41,
+  UPDATE_STRUCTURE_FEATURE = 0x42,
+  PLAYER_SPAWNED_MOB = 0x43,
+  PUKE = 0x44,
+  UPDATE_STACK_SIZE = 0x45,
+  START_SWIMMING = 0x46,
+  BALLOON_POP = 0x47,
+  TREASURE_HUNT = 0x48,
+  SUMMON_AGENT = 0x49,
+  FINISHED_CHARGING_CROSSBOW = 0x4A,
+  LANDED_ON_GROUND = 0x4B,
+};
+
+```
+
+### `ArmorMaterialType`
+```
+typedef Rotation ArmorMaterialType;
+
+```
+
+### `ArmorTextureType`
+```
+typedef Rotation ArmorTextureType;
+
+```
+
+### `AttributeBuffType`
+```
+typedef cg::ColorSpace AttributeBuffType;
+
+```
+
+### `AutoUpdateMode`
+```
+enum AutoUpdateMode : __int32
+{
+  Off = 0x0,
+  WifiOnly = 0x1,
+  WithCellular = 0x2,
+};
+
+```
+
+### `AppAction`
+```
+enum AppAction : __int8
+{
+  OpenKeyboard = 0x0,
+  OpenExternalResource = 0x1,
+};
+
+```
+
+### `AppFocusState`
+```
+enum AppFocusState : __int32
+{
+  Focused = 0x0,
+  Unfocused = 0x1,
+};
+
+```
+
+### `ADRole`
+```
+typedef cg::ColorSpace ADRole;
+
+```
+
+### `AbilitiesIndex`
+```
+typedef TransformSpace AbilitiesIndex;
+
+```
+
+### `ActorTypeNamespaceRules`
+```
+enum ActorTypeNamespaceRules : __int32
+{
+  ReturnWithoutNamespace = 0x0,
+  ReturnWithNamespace = 0x1,
+};
+
+```
+
+### `AllExperiments`
+```
+enum AllExperiments : __int32
+{
+  DataDrivenItems = 0x0,
+  NextUpdate = 0x1,
+  DataDrivenBiomes = 0x2,
+  Scripting = 0x3,
+  DisabledExperiment = 0x4,
+  ExperimentalText = 0x5,
+  CavesAndCliffs = 0x6,
+  NumExperiments = 0x7,
+};
+
+```
+
+### `AnimationLoopMode`
+```
+enum AnimationLoopMode : __int32
+{
+  StopApplyingAnimationWhenFinished = 0x0,
+  Loop = 0x1,
+  HoldOnLastFrame = 0x2,
+};
+
+```
+
+### `ActorAnimationType`
+```
+typedef ui::GameEventNotification ActorAnimationType;
+
+```
+
+### `ActionEvent::ActionState`
+```
+typedef IMinecraftEventing::EducationLessonAction ActionEvent::ActionState;
+
+```
+
+### `Ability::Type`
+```
+typedef TransformSpace Ability::Type;
+
+```
+
+### `AnimationMode`
+```
+typedef Rotation AnimationMode;
+
+```
+
+### `AdvanceFrameResult`
+```
+enum AdvanceFrameResult : __int8
+{
+  NoChange = 0x0,
+  ObjectModified = 0x1,
+  NotImplemented = 0x2,
+};
+
+```
+
+### `AnimationComponentGroup`
+```
+enum AnimationComponentGroup : __int32
+{
+  Client = 0x0,
+  ClientHUD = 0x1,
+  Server = 0x2,
+  ClientMap = 0x3,
+};
+
+```
+
+### `AdventureSettingsPacket::Flags`
+```
+enum AdventureSettingsPacket::Flags : __int32
+{
+  WorldImmutable = 0x1,
+  NoPvM = 0x2,
+  NoMvP = 0x4,
+  Unused = 0x8,
+  ShowNameTags = 0x10,
+  AutoJump = 0x20,
+  PlayerMayFly = 0x40,
+  PlayerNoClip = 0x80,
+  PlayerWorldBuilder = 0x100,
+  PlayerFlying = 0x200,
+  PlayerMuted = 0x400,
+};
+
+```
+
+### `AdventureSettingsPacket::PermissionsFlags`
+```
+enum AdventureSettingsPacket::PermissionsFlags : __int32
+{
+  Mine = 0x1,
+  DoorsAndSwitches = 0x2,
+  OpenContainers = 0x4,
+  AttackPlayers = 0x8,
+  AttackMobs = 0x10,
+  OP = 0x20,
+  Teleport = 0x80,
+  Build = 0x100,
+  DefaultLevelPermissions = 0x200,
+};
+
+```
+
+### `AttachableSlotIndex`
+```
+typedef ActorLocation AttachableSlotIndex;
+
+```
+
+### `ActorDataIDs`
+```
+typedef OptionID ActorDataIDs;
+
+```
+
+### `ACTCTX_REQUESTED_RUN_LEVEL`
+```
+enum ACTCTX_REQUESTED_RUN_LEVEL : __int32
+{
+  ACTCTX_RUN_LEVEL_UNSPECIFIED = 0x0,
+  ACTCTX_RUN_LEVEL_AS_INVOKER = 0x1,
+  ACTCTX_RUN_LEVEL_HIGHEST_AVAILABLE = 0x2,
+  ACTCTX_RUN_LEVEL_REQUIRE_ADMIN = 0x3,
+  ACTCTX_RUN_LEVEL_NUMBERS = 0x4,
+};
+
+```
+
+### `ARM64_FNPDATA_FLAGS`
+```
+enum ARM64_FNPDATA_FLAGS : __int32
+{
+  PdataRefToFullXdata = 0x0,
+  PdataPackedUnwindFunction = 0x1,
+  PdataPackedUnwindFragment = 0x2,
+};
+
+```
+
+### `ASSOCCLASS`
+```
+enum ASSOCCLASS : __int32
+{
+  ASSOCCLASS_SHELL_KEY = 0x0,
+  ASSOCCLASS_PROGID_KEY = 0x1,
+  ASSOCCLASS_PROGID_STR = 0x2,
+  ASSOCCLASS_CLSID_KEY = 0x3,
+  ASSOCCLASS_CLSID_STR = 0x4,
+  ASSOCCLASS_APP_KEY = 0x5,
+  ASSOCCLASS_APP_STR = 0x6,
+  ASSOCCLASS_SYSTEM_STR = 0x7,
+  ASSOCCLASS_FOLDER = 0x8,
+  ASSOCCLASS_STAR = 0x9,
+};
+
+```
+
+### `ACTCTX_COMPATIBILITY_ELEMENT_TYPE`
+```
+enum ACTCTX_COMPATIBILITY_ELEMENT_TYPE : __int32
+{
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_UNKNOWN = 0x0,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_OS = 0x1,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_MITIGATION = 0x2,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_MAXVERSIONTESTED = 0x3,
+};
+
+```
+
+### `ARM64_FNPDATA_CR`
+```
+enum ARM64_FNPDATA_CR : __int32
+{
+  PdataCrUnchained = 0x0,
+  PdataCrUnchainedSavedLr = 0x1,
+  PdataCrChainedWithPac = 0x2,
+  PdataCrChained = 0x3,
+};
+
+```
+
+### `ActorBlockSyncMessage::MessageId`
+```
+typedef ActorEvent ActorBlockSyncMessage::MessageId;
+
+```
+
+### `ActiveDirectoryAuthenticationState`
+```
+enum ActiveDirectoryAuthenticationState : __int32
+{
+  Unauthenticated = 0x0,
+  AuthenticationChoicePresentation = 0x1,
+  AuthenticatingDemoWithService = 0x2,
+  AuthenticatedDemoWithService = 0x3,
+  ShowingAuthenticationPage = 0x4,
+  AuthenticatedWithADAL = 0x5,
+  AuthenticatingWithService = 0x6,
+  AuthenticatedWithService = 0x7,
+  AuthenticationPendingPresentation = 0x8,
+  AuthenticationComplete = 0x9,
+  AuthenticationNoEULA = 0xA,
+  AuthenticationOfferPurchase = 0xB,
+  AuthenticationInvalid = 0xC,
+  AuthenticationMUTSNetworkError = 0xD,
+  AuthenticationADALException = 0xE,
+  AuthenticationDemoInvalid = 0xF,
+  RefreshingToken = 0x10,
+  RefreshFailed = 0x11,
+};
+
+```
+
+### `ActiveDirectoryExperience`
+```
+typedef Rotation ActiveDirectoryExperience;
+
+```
+
+### `AnvilPart`
+```
+typedef Frustum::FrustumSide AnvilPart;
+
+```
+
+### `ADDialogMode`
+```
+enum ADDialogMode : __int8
+{
+  ForcePrompt = 0x0,
+  AttemptSSO = 0x1,
+};
+
+```
+
+### `ADTokenRefreshAction`
+```
+typedef Social::JoinGameStatus ADTokenRefreshAction;
+
+```
+
+### `AnimEvent`
+```
+typedef Realms::World::State AnimEvent;
+
+```
+
+### `AnimationTickResult`
+```
+typedef UIAnim::State AnimationTickResult;
+
+```
+
+### `ActorPortraitRenderer::RotateMode`
+```
+typedef Rotation ActorPortraitRenderer::RotateMode;
+
+```
+
+### `AcceptDeclineInvitationScreenController::AcceptDeclineInvitationState`
+```
+typedef StateTransitionEvent AcceptDeclineInvitationScreenController::AcceptDeclineInvitationState;
+
+```
+
+### `AuthenticationUIState`
+```
+typedef Rotation AuthenticationUIState;
+
+```
+
+### `AddExternalServerScreenController::Mode`
+```
+typedef std::filesystem::perm_options AddExternalServerScreenController::Mode;
+
+```
+
+### `AnimatePacket::Action`
+```
+enum AnimatePacket::Action : __int32
+{
+  NoAction = 0x0,
+  Swing = 0x1,
+  WakeUp = 0x3,
+  CriticalHit = 0x4,
+  MagicCriticalHit = 0x5,
+  RowRight = 0x80,
+  RowLeft = 0x81,
+};
+
+```
+
+### `Arrow::Data`
+```
+enum Arrow::Data : __int32
+{
+  IsCritical = 0x10,
+  TippedAuxValue = 0x12,
+};
+
+```
+
+### `AbstractArrow::Data`
+```
+enum AbstractArrow::Data : __int32
+{
+  OwnerID = 0x11,
+};
+
+```
+
+### `AttackState`
+```
+typedef ui::FontSize AttackState;
+
+```
+
+### `AttachmentType`
+```
+typedef VRControllerType AttachmentType;
+
+```
+
+### `ActorTarget`
+```
+enum ActorTarget : __int32
+{
+  This = 0x0,
+  Killer = 0x1,
+  KillerPlayer = 0x2,
+};
+
+```
+
+### `AgentCommands::Direction`
+```
+typedef GameControllerButtonState AgentCommands::Direction;
+
+```
+
+### `Automation::Response::Type`
+```
+typedef IMinecraftEventing::OpenCodeMethod Automation::Response::Type;
+
+```
+
+### `AnvilDamage`
+```
+typedef VRControllerType AnvilDamage;
+
+```
+
+### `AgentCommand::Mode`
+```
+typedef MinecraftEventing::ItemInteractMethod AgentCommand::Mode;
+
+```
+
+### `AgentCommands::CollectCommand::CollectionSpecification`
+```
+typedef Rotation AgentCommands::CollectCommand::CollectionSpecification;
+
+```
+
+### `AddTickingAreaStatus`
+```
+typedef IMinecraftEventing::AuthenticationOutcome AddTickingAreaStatus;
+
+```
+
+### `ActorTargetFilter::ConditionType`
+```
+typedef FilterGroup::CollectionType ActorTargetFilter::ConditionType;
+
+```
+
+### `ActorInWeatherTest::WeatherType`
+```
+typedef DimensionId ActorInWeatherTest::WeatherType;
+
+```
+
+### `AttributeMessageTypes::<unnamed_enum_EXHAUSTION>`
+```
+typedef OptionID AttributeMessageTypes::<unnamed_enum_EXHAUSTION>;
+
+```
+
+### `AutomaticFeatureRules::PriorityBucket`
+```
+typedef BoneTransformType AutomaticFeatureRules::PriorityBucket;
+
+```
+
+### `AggregateFeature<0>::EarlyOut`
+```
+typedef Rotation AggregateFeature<0>::EarlyOut;
+
+```
+
+### `AggregateFeature<1>::EarlyOut`
+```
+typedef Rotation AggregateFeature<1>::EarlyOut;
+
+```
+
+### `ASSOCIATIONTYPE`
+```
+enum ASSOCIATIONTYPE : __int32
+{
+  AT_FILEEXTENSION = 0x0,
+  AT_URLPROTOCOL = 0x1,
+  AT_STARTMENUCLIENT = 0x2,
+  AT_MIMETYPE = 0x3,
+};
+
+```
+
+### `ASSOCIATIONLEVEL`
+```
+enum ASSOCIATIONLEVEL : __int32
+{
+  AL_MACHINE = 0x0,
+  AL_EFFECTIVE = 0x1,
+  AL_USER = 0x2,
+};
+
+```
+
+### `APPDOCLISTTYPE`
+```
+enum APPDOCLISTTYPE : __int32
+{
+  ADLT_RECENT = 0x0,
+  ADLT_FREQUENT = 0x1,
+};
+
+```
+
+### `AgileReferenceOptions`
+```
+enum AgileReferenceOptions : __int32
+{
+  AGILEREFERENCE_DEFAULT = 0x0,
+  AGILEREFERENCE_DELAYEDMARSHAL = 0x1,
+};
+
+```
+
+### `ABI::Windows::Foundation::Diagnostics::RoErrorReportingFlags`
+```
+typedef Rotation ABI::Windows::Foundation::Diagnostics::RoErrorReportingFlags;
+
+```
+
+### `AnvilScreenController::SlotIndex`
+```
+enum AnvilScreenController::SlotIndex : __int32
+{
+  Input = 0x0,
+  Material = 0x1,
+  Result = 0x2,
+};
+
+```
+
+### `AriaProtocol::_bond_enumerators::ValueKind::ValueKind`
+```
+enum AriaProtocol::_bond_enumerators::ValueKind::ValueKind : __int32
+{
+  ValueInt64 = 0x0,
+  ValueUInt64 = 0x1,
+  ValueInt32 = 0x2,
+  ValueUInt32 = 0x3,
+  ValueDouble = 0x4,
+  ValueString = 0x5,
+  ValueBool = 0x6,
+  ValueDateTime = 0x7,
+  ValueGuid = 0x8,
+  ValueArrayInt64 = 0x9,
+  ValueArrayUInt64 = 0xA,
+  ValueArrayInt32 = 0xB,
+  ValueArrayUInt32 = 0xC,
+  ValueArrayDouble = 0xD,
+  ValueArrayString = 0xE,
+  ValueArrayBool = 0xF,
+  ValueArrayDateTime = 0x10,
+  ValueArrayGuid = 0x11,
+};
+
+```
+
+### `AriaProtocol::_bond_enumerators::PIIKind::PIIKind`
+```
+enum AriaProtocol::_bond_enumerators::PIIKind::PIIKind : __int32
+{
+  NotSet = 0x0,
+  DistinguishedName = 0x1,
+  GenericData = 0x2,
+  IPV4Address = 0x3,
+  IPv6Address = 0x4,
+  MailSubject = 0x5,
+  PhoneNumber = 0x6,
+  QueryString = 0x7,
+  SipAddress = 0x8,
+  SmtpAddress = 0x9,
+  Identity = 0xA,
+  Uri = 0xB,
+  Fqdn = 0xC,
+  IPV4AddressLegacy = 0xD,
+};
+
+```
+
+### `AriaProtocol::_bond_enumerators::CustomerContentKind::CustomerContentKind`
+```
+typedef AriaProtocol::_bond_enumerators::PIIKind::PIIKind AriaProtocol::_bond_enumerators::CustomerContentKind::CustomerContentKind;
+
+```
+
+### `AFM_Token_`
+```
+enum AFM_Token_ : __int32
+{
+  AFM_TOKEN_ASCENDER = 0x0,
+  AFM_TOKEN_AXISLABEL = 0x1,
+  AFM_TOKEN_AXISTYPE = 0x2,
+  AFM_TOKEN_B = 0x3,
+  AFM_TOKEN_BLENDAXISTYPES = 0x4,
+  AFM_TOKEN_BLENDDESIGNMAP = 0x5,
+  AFM_TOKEN_BLENDDESIGNPOSITIONS = 0x6,
+  AFM_TOKEN_C = 0x7,
+  AFM_TOKEN_CC = 0x8,
+  AFM_TOKEN_CH = 0x9,
+  AFM_TOKEN_CAPHEIGHT = 0xA,
+  AFM_TOKEN_CHARWIDTH = 0xB,
+  AFM_TOKEN_CHARACTERSET = 0xC,
+  AFM_TOKEN_CHARACTERS = 0xD,
+  AFM_TOKEN_DESCENDER = 0xE,
+  AFM_TOKEN_ENCODINGSCHEME = 0xF,
+  AFM_TOKEN_ENDAXIS = 0x10,
+  AFM_TOKEN_ENDCHARMETRICS = 0x11,
+  AFM_TOKEN_ENDCOMPOSITES = 0x12,
+  AFM_TOKEN_ENDDIRECTION = 0x13,
+  AFM_TOKEN_ENDFONTMETRICS = 0x14,
+  AFM_TOKEN_ENDKERNDATA = 0x15,
+  AFM_TOKEN_ENDKERNPAIRS = 0x16,
+  AFM_TOKEN_ENDTRACKKERN = 0x17,
+  AFM_TOKEN_ESCCHAR = 0x18,
+  AFM_TOKEN_FAMILYNAME = 0x19,
+  AFM_TOKEN_FONTBBOX = 0x1A,
+  AFM_TOKEN_FONTNAME = 0x1B,
+  AFM_TOKEN_FULLNAME = 0x1C,
+  AFM_TOKEN_ISBASEFONT = 0x1D,
+  AFM_TOKEN_ISCIDFONT = 0x1E,
+  AFM_TOKEN_ISFIXEDPITCH = 0x1F,
+  AFM_TOKEN_ISFIXEDV = 0x20,
+  AFM_TOKEN_ITALICANGLE = 0x21,
+  AFM_TOKEN_KP = 0x22,
+  AFM_TOKEN_KPH = 0x23,
+  AFM_TOKEN_KPX = 0x24,
+  AFM_TOKEN_KPY = 0x25,
+  AFM_TOKEN_L = 0x26,
+  AFM_TOKEN_MAPPINGSCHEME = 0x27,
+  AFM_TOKEN_METRICSSETS = 0x28,
+  AFM_TOKEN_N = 0x29,
+  AFM_TOKEN_NOTICE = 0x2A,
+  AFM_TOKEN_PCC = 0x2B,
+  AFM_TOKEN_STARTAXIS = 0x2C,
+  AFM_TOKEN_STARTCHARMETRICS = 0x2D,
+  AFM_TOKEN_STARTCOMPOSITES = 0x2E,
+  AFM_TOKEN_STARTDIRECTION = 0x2F,
+  AFM_TOKEN_STARTFONTMETRICS = 0x30,
+  AFM_TOKEN_STARTKERNDATA = 0x31,
+  AFM_TOKEN_STARTKERNPAIRS = 0x32,
+  AFM_TOKEN_STARTKERNPAIRS0 = 0x33,
+  AFM_TOKEN_STARTKERNPAIRS1 = 0x34,
+  AFM_TOKEN_STARTTRACKKERN = 0x35,
+  AFM_TOKEN_STDHW = 0x36,
+  AFM_TOKEN_STDVW = 0x37,
+  AFM_TOKEN_TRACKKERN = 0x38,
+  AFM_TOKEN_UNDERLINEPOSITION = 0x39,
+  AFM_TOKEN_UNDERLINETHICKNESS = 0x3A,
+  AFM_TOKEN_VV = 0x3B,
+  AFM_TOKEN_VVECTOR = 0x3C,
+  AFM_TOKEN_VERSION = 0x3D,
+  AFM_TOKEN_W = 0x3E,
+  AFM_TOKEN_W0 = 0x3F,
+  AFM_TOKEN_W0X = 0x40,
+  AFM_TOKEN_W0Y = 0x41,
+  AFM_TOKEN_W1 = 0x42,
+  AFM_TOKEN_W1X = 0x43,
+  AFM_TOKEN_W1Y = 0x44,
+  AFM_TOKEN_WX = 0x45,
+  AFM_TOKEN_WY = 0x46,
+  AFM_TOKEN_WEIGHT = 0x47,
+  AFM_TOKEN_WEIGHTVECTOR = 0x48,
+  AFM_TOKEN_XHEIGHT = 0x49,
+  N_AFM_TOKENS = 0x4A,
+  AFM_TOKEN_UNKNOWN = 0x4B,
+};
+
+```
+

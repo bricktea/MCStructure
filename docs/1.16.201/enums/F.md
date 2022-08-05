@@ -1,0 +1,1248 @@
+# F
+### `FocusImpact`
+Name | Value
+-|-
+Neutral | `0`
+ActivateFocus | `1`
+DeactivateFocus | `2`
+
+
+### `Facing::Rotation`
+Name | Value
+-|-
+NONE | `0`
+JUMP | `1`
+HURT | `2`
+DEATH | `3`
+START_ATTACKING | `4`
+STOP_ATTACKING | `5`
+TAMING_FAILED | `6`
+TAMING_SUCCEEDED | `7`
+SHAKE_WETNESS | `8`
+EAT_GRASS | `10`
+FISHHOOK_BUBBLE | `11`
+FISHHOOK_FISHPOS | `12`
+FISHHOOK_HOOKTIME | `13`
+FISHHOOK_TEASE | `14`
+SQUID_FLEEING | `15`
+ZOMBIE_CONVERTING | `16`
+PLAY_AMBIENT | `17`
+SPAWN_ALIVE | `18`
+START_OFFER_FLOWER | `19`
+STOP_OFFER_FLOWER | `20`
+LOVE_HEARTS | `21`
+VILLAGER_ANGRY | `22`
+VILLAGER_HAPPY | `23`
+WITCH_HAT_MAGIC | `24`
+FIREWORKS_EXPLODE | `25`
+IN_LOVE_HEARTS | `26`
+SILVERFISH_MERGE_ANIM | `27`
+GUARDIAN_ATTACK_SOUND | `28`
+DRINK_POTION | `29`
+THROW_POTION | `30`
+PRIME_TNTCART | `31`
+PRIME_CREEPER | `32`
+AIR_SUPPLY | `33`
+ADD_PLAYER_LEVELS | `34`
+GUARDIAN_MINING_FATIGUE | `35`
+AGENT_SWING_ARM | `36`
+DRAGON_START_DEATH_ANIM | `37`
+GROUND_DUST | `38`
+SHAKE | `39`
+FEED | `57`
+BABY_EAT | `60`
+INSTANT_DEATH | `61`
+NOTIFY_TRADE | `62`
+LEASH_DESTROYED | `63`
+CARAVAN_UPDATED | `64`
+TALISMAN_ACTIVATE | `65`
+UPDATE_STRUCTURE_FEATURE | `66`
+PLAYER_SPAWNED_MOB | `67`
+PUKE | `68`
+UPDATE_STACK_SIZE | `69`
+START_SWIMMING | `70`
+BALLOON_POP | `71`
+TREASURE_HUNT | `72`
+SUMMON_AGENT | `73`
+FINISHED_CHARGING_CROSSBOW | `74`
+LANDED_ON_GROUND | `75`
+
+
+### `Flip`
+Name | Value
+-|-
+
+
+### `FertilizerType`
+Name | Value
+-|-
+Bonemeal | `0`
+Rapid | `1`
+
+
+### `FogDistanceSetting::DistanceType`
+Name | Value
+-|-
+THIRD_BEZIER | `0`
+FOURTH_BEZIER | `1`
+FIXED | `2`
+
+
+### `FilterOperator`
+Name | Value
+-|-
+Equal | `0`
+NotEqual | `1`
+GreaterThan | `2`
+LessThan | `3`
+GreaterThanOrEqual | `4`
+LessThanOrEqual | `5`
+
+
+### `Facing::Name`
+Name | Value
+-|-
+
+
+### `FT_RFork_Rule_`
+Name | Value
+-|-
+FT_RFork_Rule_apple_double | `0`
+FT_RFork_Rule_apple_single | `1`
+FT_RFork_Rule_darwin_ufs_export | `2`
+FT_RFork_Rule_darwin_newvfs | `3`
+FT_RFork_Rule_darwin_hfsplus | `4`
+FT_RFork_Rule_vfat | `5`
+FT_RFork_Rule_linux_cap | `6`
+FT_RFork_Rule_linux_double | `7`
+FT_RFork_Rule_linux_netatalk | `8`
+FT_RFork_Rule_invalid | `18446744073709551614`
+FT_RFork_Rule_uknown | `18446744073709551615`
+
+
+### `FT_Render_Mode_`
+Name | Value
+-|-
+FT_RENDER_MODE_NORMAL | `0`
+FT_RENDER_MODE_LIGHT | `1`
+FT_RENDER_MODE_MONO | `2`
+FT_RENDER_MODE_LCD | `3`
+FT_RENDER_MODE_LCD_V | `4`
+FT_RENDER_MODE_MAX | `5`
+
+
+### `FT_TrueTypeEngineType_`
+Name | Value
+-|-
+FT_TRUETYPE_ENGINE_TYPE_NONE | `0`
+FT_TRUETYPE_ENGINE_TYPE_UNPATENTED | `1`
+FT_TRUETYPE_ENGINE_TYPE_PATENTED | `2`
+
+
+### `float_format_type`
+Name | Value
+-|-
+unknown_format | `0`
+ieee_big_endian_format | `1`
+ieee_little_endian_format | `2`
+
+
+### `filetype`
+Name | Value
+-|-
+SEARCH_ERROR | `0`
+? | `1`
+? | `2`
+C_EXTENSION | `3`
+? | `4`
+PKG_DIRECTORY | `5`
+C_BUILTIN | `6`
+? | `7`
+? | `8`
+IMP_HOOK | `9`
+
+
+### `FilterParamType`
+Name | Value
+-|-
+
+
+### `FilterParamRequirement`
+Name | Value
+-|-
+Required | `0`
+Optional | `1`
+
+
+### `FilterParamOption`
+Name | Value
+-|-
+
+
+### `FT_Glyph_Format_`
+Name | Value
+-|-
+FT_GLYPH_FORMAT_NONE | `0`
+FT_GLYPH_FORMAT_BITMAP | `1651078259`
+FT_GLYPH_FORMAT_COMPOSITE | `1668246896`
+FT_GLYPH_FORMAT_OUTLINE | `1869968492`
+FT_GLYPH_FORMAT_PLOTTER | `1886154612`
+
+
+### `FakeHDRSetting`
+Name | Value
+-|-
+EnableFakeHDR | `0`
+DisableFakeHDR | `1`
+
+
+### `FrustumCullerType`
+Name | Value
+-|-
+Perspective | `0`
+RayTracing | `1`
+
+
+### `FogManager::LayerType`
+Name | Value
+-|-
+DATA_DEFAULT | `0`
+BIOME | `1`
+SERVER_DIRECTED | `2`
+
+
+### `FlightingToggleId`
+Name | Value
+-|-
+CoreUiTechValidation | `0`
+
+
+### `FileArchiver::Outcome`
+Name | Value
+-|-
+
+
+### `FilterGroup::CollectionType`
+Name | Value
+-|-
+AND | `0`
+OR | `1`
+NOT | `2`
+
+
+### `FilterSubject`
+Name | Value
+-|-
+
+
+### `FileReadResult`
+Name | Value
+-|-
+INITIAL | `0`
+PROCESSING | `1`
+FAIL | `2`
+SUCCESS | `3`
+
+
+### `FlowerBlock::Type`
+Name | Value
+-|-
+
+
+### `FlowerType`
+Name | Value
+-|-
+
+
+### `FT_Size_Request_Type_`
+Name | Value
+-|-
+FT_SIZE_REQUEST_TYPE_NOMINAL | `0`
+FT_SIZE_REQUEST_TYPE_REAL_DIM | `1`
+FT_SIZE_REQUEST_TYPE_BBOX | `2`
+FT_SIZE_REQUEST_TYPE_CELL | `3`
+FT_SIZE_REQUEST_TYPE_SCALES | `4`
+FT_SIZE_REQUEST_TYPE_MAX | `5`
+
+
+### `FT_Encoding_`
+Name | Value
+-|-
+FT_ENCODING_NONE | `0`
+FT_ENCODING_ADOBE_CUSTOM | `1094992451`
+FT_ENCODING_ADOBE_EXPERT | `1094992453`
+FT_ENCODING_ADOBE_STANDARD | `1094995778`
+FT_ENCODING_APPLE_ROMAN | `1634889070`
+FT_ENCODING_BIG5 | `1651074869`
+FT_ENCODING_MS_BIG5 | `1651074869`
+FT_ENCODING_PRC | `1734484000`
+FT_ENCODING_GB2312 | `1734484000`
+FT_ENCODING_MS_GB2312 | `1734484000`
+FT_ENCODING_JOHAB | `1785686113`
+FT_ENCODING_MS_JOHAB | `1785686113`
+FT_ENCODING_ADOBE_LATIN_1 | `1818326065`
+FT_ENCODING_OLD_LATIN_2 | `1818326066`
+FT_ENCODING_SJIS | `1936353651`
+FT_ENCODING_MS_SJIS | `1936353651`
+FT_ENCODING_MS_SYMBOL | `1937337698`
+FT_ENCODING_UNICODE | `1970170211`
+FT_ENCODING_WANSUNG | `2002873971`
+FT_ENCODING_MS_WANSUNG | `2002873971`
+
+
+### `Frustum::FrustumSide`
+```
+enum Frustum::FrustumSide : __int8
+{
+  Right = 0x0,
+  Left = 0x1,
+  Bottom = 0x2,
+  Top = 0x3,
+  Back = 0x4,
+  Front = 0x5,
+  NumFrustumPlanes = 0x6,
+};
+
+```
+
+### `Frustum::Plane`
+```
+enum Frustum::Plane : __int8
+{
+  PlaneNormalX = 0x0,
+  PlaneNormalY = 0x1,
+  PlaneNormalZ = 0x2,
+  PlaneToOriginDistance = 0x3,
+};
+
+```
+
+### `FileStorageDirectory`
+```
+typedef Rotation FileStorageDirectory;
+
+```
+
+### `FullscreenMode`
+```
+enum FullscreenMode : __int32
+{
+  Windowed = 0x0,
+  Fullscreen = 0x1,
+};
+
+```
+
+### `FogDefinition::DistanceSettingType`
+```
+enum FogDefinition::DistanceSettingType : __int32
+{
+  AIR = 0x0,
+  WEATHER = 0x1,
+  WATER = 0x2,
+  LAVA = 0x3,
+  LAVA_RESIST = 0x4,
+};
+
+```
+
+### `FogDefinition::DensitySettingType`
+```
+typedef FogDefinition::DistanceSettingType FogDefinition::DensitySettingType;
+
+```
+
+### `FogDefinition::CoefficientSettingType`
+```
+typedef FogDefinition::DistanceSettingType FogDefinition::CoefficientSettingType;
+
+```
+
+### `FileArchiver::State`
+```
+typedef ClientInstanceState FileArchiver::State;
+
+```
+
+### `FileArchiver::ExportType`
+```
+enum FileArchiver::ExportType : __int32
+{
+  Level = 0x0,
+  Template = 0x1,
+};
+
+```
+
+### `FeatureOptionID`
+```
+typedef Rotation FeatureOptionID;
+
+```
+
+### `FlightingService::FetchState`
+```
+enum FlightingService::FetchState : __int32
+{
+  NotStarted = 0x0,
+  Fetching = 0x1,
+  Complete = 0x2,
+};
+
+```
+
+### `Fulfillment`
+```
+typedef ItemInstallState Fulfillment;
+
+```
+
+### `FT_Orientation_`
+```
+enum FT_Orientation_ : __int32
+{
+  FT_ORIENTATION_TRUETYPE = 0x0,
+  FT_ORIENTATION_POSTSCRIPT = 0x1,
+  FT_ORIENTATION_FILL_RIGHT = 0x0,
+  FT_ORIENTATION_FILL_LEFT = 0x1,
+  FT_ORIENTATION_NONE = 0x2,
+};
+
+```
+
+### `FoliageColor::PaletteName`
+```
+typedef TaskOptions FoliageColor::PaletteName;
+
+```
+
+### `FocusNavigationMode`
+```
+typedef Rotation FocusNavigationMode;
+
+```
+
+### `FileSystemMode`
+```
+typedef Core::FileAccessType FileSystemMode;
+
+```
+
+### `FilterResult`
+```
+enum FilterResult : __int32
+{
+  ShowPrioritized = 0x0,
+  Show = 0x1,
+  Disable = 0x2,
+  Hide = 0x3,
+};
+
+```
+
+### `FilePickerSettings::PickerType`
+```
+typedef TransformSpace FilePickerSettings::PickerType;
+
+```
+
+### `FeedbackDialogChoice`
+```
+enum FeedbackDialogChoice : __int32
+{
+  Suggestion = 0x0,
+  Bug = 0x1,
+  Help = 0x2,
+  HelpXbox = 0x3,
+};
+
+```
+
+### `FriendStatus`
+```
+typedef ActorEvent FriendStatus;
+
+```
+
+### `FireworkChargeItem::Shape`
+```
+enum FireworkChargeItem::Shape : __int32
+{
+  SHAPE_NONE = 0x0,
+  SHAPE_LARGE_BALL = 0x1,
+  SHAPE_STAR = 0x2,
+  SHAPE_HEAD_CREEPER = 0x3,
+  SHAPE_BURST = 0x4,
+  SHAPE_COUNT = 0x5,
+};
+
+```
+
+### `FallingBlock::State`
+```
+enum FallingBlock::State : __int32
+{
+  Falling = 0x0,
+  WaitRemoval = 0x1,
+};
+
+```
+
+### `FreezeOnHitSubcomponent::Shape`
+```
+enum FreezeOnHitSubcomponent::Shape : __int8
+{
+  Cube = 0x0,
+  Sphere = 0x1,
+};
+
+```
+
+### `FogCommand::Mode`
+```
+typedef hbui::Router::QueuedRouteAction FogCommand::Mode;
+
+```
+
+### `FunctionState`
+```
+typedef Realms::World::State FunctionState;
+
+```
+
+### `FoodItemComponentLegacy::OnUseAction`
+```
+typedef ActorEvent FoodItemComponentLegacy::OnUseAction;
+
+```
+
+### `FurnaceBlockActor::<unnamed_enum_SLOT_INGREDIENT>`
+```
+enum FurnaceBlockActor::<unnamed_enum_SLOT_INGREDIENT> : __int32
+{
+  SLOT_INGREDIENT = 0x0,
+  SLOT_FUEL = 0x1,
+  SLOT_RESULT = 0x2,
+  NUM_ITEMS = 0x3,
+};
+
+```
+
+### `FileType`
+```
+typedef TransformSpace FileType;
+
+```
+
+### `FillCommand::FillMode`
+```
+typedef hbui::Router::QueuedRouteAction FillCommand::FillMode;
+
+```
+
+### `FilterTestDimensionWeather::WeatherType`
+```
+typedef DimensionId FilterTestDimensionWeather::WeatherType;
+
+```
+
+### `FishPattern`
+```
+typedef OptionID FishPattern;
+
+```
+
+### `FlowerPlacementType`
+```
+typedef DimensionId FlowerPlacementType;
+
+```
+
+### `FILE_USAGE_TYPE`
+```
+enum FILE_USAGE_TYPE : __int32
+{
+  FUT_PLAYING = 0x0,
+  FUT_EDITING = 0x1,
+  FUT_GENERIC = 0x2,
+};
+
+```
+
+### `FFFP_MODE`
+```
+enum FFFP_MODE : __int32
+{
+  FFFP_EXACTMATCH = 0x0,
+  FFFP_NEARESTPARENTMATCH = 0x1,
+};
+
+```
+
+### `FurnaceContainerData`
+```
+enum FurnaceContainerData : __int32
+{
+  SetTickCount = 0x0,
+  SetLitTime = 0x1,
+  SetLitDuration = 0x2,
+  SetStoredXP = 0x3,
+};
+
+```
+
+### `FMOD_DEBUG_MODE`
+```
+enum FMOD_DEBUG_MODE : __int32
+{
+  FMOD_DEBUG_MODE_TTY = 0x0,
+  FMOD_DEBUG_MODE_FILE = 0x1,
+  FMOD_DEBUG_MODE_CALLBACK = 0x2,
+  FMOD_DEBUG_MODE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_DSPCONNECTION_TYPE`
+```
+enum FMOD_DSPCONNECTION_TYPE : __int32
+{
+  FMOD_DSPCONNECTION_TYPE_STANDARD = 0x0,
+  FMOD_DSPCONNECTION_TYPE_SIDECHAIN = 0x1,
+  FMOD_DSPCONNECTION_TYPE_SEND = 0x2,
+  FMOD_DSPCONNECTION_TYPE_SEND_SIDECHAIN = 0x3,
+  FMOD_DSPCONNECTION_TYPE_MAX = 0x4,
+  FMOD_DSPCONNECTION_TYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_RESULT`
+```
+enum FMOD_RESULT : __int32
+{
+  FMOD_OK = 0x0,
+  FMOD_ERR_BADCOMMAND = 0x1,
+  FMOD_ERR_CHANNEL_ALLOC = 0x2,
+  FMOD_ERR_CHANNEL_STOLEN = 0x3,
+  FMOD_ERR_DMA = 0x4,
+  FMOD_ERR_DSP_CONNECTION = 0x5,
+  FMOD_ERR_DSP_DONTPROCESS = 0x6,
+  FMOD_ERR_DSP_FORMAT = 0x7,
+  FMOD_ERR_DSP_INUSE = 0x8,
+  FMOD_ERR_DSP_NOTFOUND = 0x9,
+  FMOD_ERR_DSP_RESERVED = 0xA,
+  FMOD_ERR_DSP_SILENCE = 0xB,
+  FMOD_ERR_DSP_TYPE = 0xC,
+  FMOD_ERR_FILE_BAD = 0xD,
+  FMOD_ERR_FILE_COULDNOTSEEK = 0xE,
+  FMOD_ERR_FILE_DISKEJECTED = 0xF,
+  FMOD_ERR_FILE_EOF = 0x10,
+  FMOD_ERR_FILE_ENDOFDATA = 0x11,
+  FMOD_ERR_FILE_NOTFOUND = 0x12,
+  FMOD_ERR_FORMAT = 0x13,
+  FMOD_ERR_HEADER_MISMATCH = 0x14,
+  FMOD_ERR_HTTP = 0x15,
+  FMOD_ERR_HTTP_ACCESS = 0x16,
+  FMOD_ERR_HTTP_PROXY_AUTH = 0x17,
+  FMOD_ERR_HTTP_SERVER_ERROR = 0x18,
+  FMOD_ERR_HTTP_TIMEOUT = 0x19,
+  FMOD_ERR_INITIALIZATION = 0x1A,
+  FMOD_ERR_INITIALIZED = 0x1B,
+  FMOD_ERR_INTERNAL = 0x1C,
+  FMOD_ERR_INVALID_FLOAT = 0x1D,
+  FMOD_ERR_INVALID_HANDLE = 0x1E,
+  FMOD_ERR_INVALID_PARAM = 0x1F,
+  FMOD_ERR_INVALID_POSITION = 0x20,
+  FMOD_ERR_INVALID_SPEAKER = 0x21,
+  FMOD_ERR_INVALID_SYNCPOINT = 0x22,
+  FMOD_ERR_INVALID_THREAD = 0x23,
+  FMOD_ERR_INVALID_VECTOR = 0x24,
+  FMOD_ERR_MAXAUDIBLE = 0x25,
+  FMOD_ERR_MEMORY = 0x26,
+  FMOD_ERR_MEMORY_CANTPOINT = 0x27,
+  FMOD_ERR_NEEDS3D = 0x28,
+  FMOD_ERR_NEEDSHARDWARE = 0x29,
+  FMOD_ERR_NET_CONNECT = 0x2A,
+  FMOD_ERR_NET_SOCKET_ERROR = 0x2B,
+  FMOD_ERR_NET_URL = 0x2C,
+  FMOD_ERR_NET_WOULD_BLOCK = 0x2D,
+  FMOD_ERR_NOTREADY = 0x2E,
+  FMOD_ERR_OUTPUT_ALLOCATED = 0x2F,
+  FMOD_ERR_OUTPUT_CREATEBUFFER = 0x30,
+  FMOD_ERR_OUTPUT_DRIVERCALL = 0x31,
+  FMOD_ERR_OUTPUT_FORMAT = 0x32,
+  FMOD_ERR_OUTPUT_INIT = 0x33,
+  FMOD_ERR_OUTPUT_NODRIVERS = 0x34,
+  FMOD_ERR_PLUGIN = 0x35,
+  FMOD_ERR_PLUGIN_MISSING = 0x36,
+  FMOD_ERR_PLUGIN_RESOURCE = 0x37,
+  FMOD_ERR_PLUGIN_VERSION = 0x38,
+  FMOD_ERR_RECORD = 0x39,
+  FMOD_ERR_REVERB_CHANNELGROUP = 0x3A,
+  FMOD_ERR_REVERB_INSTANCE = 0x3B,
+  FMOD_ERR_SUBSOUNDS = 0x3C,
+  FMOD_ERR_SUBSOUND_ALLOCATED = 0x3D,
+  FMOD_ERR_SUBSOUND_CANTMOVE = 0x3E,
+  FMOD_ERR_TAGNOTFOUND = 0x3F,
+  FMOD_ERR_TOOMANYCHANNELS = 0x40,
+  FMOD_ERR_TRUNCATED = 0x41,
+  FMOD_ERR_UNIMPLEMENTED = 0x42,
+  FMOD_ERR_UNINITIALIZED = 0x43,
+  FMOD_ERR_UNSUPPORTED = 0x44,
+  FMOD_ERR_VERSION = 0x45,
+  FMOD_ERR_EVENT_ALREADY_LOADED = 0x46,
+  FMOD_ERR_EVENT_LIVEUPDATE_BUSY = 0x47,
+  FMOD_ERR_EVENT_LIVEUPDATE_MISMATCH = 0x48,
+  FMOD_ERR_EVENT_LIVEUPDATE_TIMEOUT = 0x49,
+  FMOD_ERR_EVENT_NOTFOUND = 0x4A,
+  FMOD_ERR_STUDIO_UNINITIALIZED = 0x4B,
+  FMOD_ERR_STUDIO_NOT_LOADED = 0x4C,
+  FMOD_ERR_INVALID_STRING = 0x4D,
+  FMOD_ERR_ALREADY_LOCKED = 0x4E,
+  FMOD_ERR_NOT_LOCKED = 0x4F,
+  FMOD_ERR_RECORD_DISCONNECTED = 0x50,
+  FMOD_ERR_TOOMANYSAMPLES = 0x51,
+  FMOD_RESULT_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_CHANNELCONTROL_TYPE`
+```
+enum FMOD_CHANNELCONTROL_TYPE : __int32
+{
+  FMOD_CHANNELCONTROL_CHANNEL = 0x0,
+  FMOD_CHANNELCONTROL_CHANNELGROUP = 0x1,
+  FMOD_CHANNELCONTROL_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_OUTPUTTYPE`
+```
+enum FMOD_OUTPUTTYPE : __int32
+{
+  FMOD_OUTPUTTYPE_AUTODETECT = 0x0,
+  FMOD_OUTPUTTYPE_UNKNOWN = 0x1,
+  FMOD_OUTPUTTYPE_NOSOUND = 0x2,
+  FMOD_OUTPUTTYPE_WAVWRITER = 0x3,
+  FMOD_OUTPUTTYPE_NOSOUND_NRT = 0x4,
+  FMOD_OUTPUTTYPE_WAVWRITER_NRT = 0x5,
+  FMOD_OUTPUTTYPE_DSOUND = 0x6,
+  FMOD_OUTPUTTYPE_WINMM = 0x7,
+  FMOD_OUTPUTTYPE_WASAPI = 0x8,
+  FMOD_OUTPUTTYPE_ASIO = 0x9,
+  FMOD_OUTPUTTYPE_PULSEAUDIO = 0xA,
+  FMOD_OUTPUTTYPE_ALSA = 0xB,
+  FMOD_OUTPUTTYPE_COREAUDIO = 0xC,
+  FMOD_OUTPUTTYPE_XAUDIO = 0xD,
+  FMOD_OUTPUTTYPE_PS3 = 0xE,
+  FMOD_OUTPUTTYPE_AUDIOTRACK = 0xF,
+  FMOD_OUTPUTTYPE_OPENSL = 0x10,
+  FMOD_OUTPUTTYPE_WIIU = 0x11,
+  FMOD_OUTPUTTYPE_AUDIOOUT = 0x12,
+  FMOD_OUTPUTTYPE_AUDIO3D = 0x13,
+  FMOD_OUTPUTTYPE_ATMOS = 0x14,
+  FMOD_OUTPUTTYPE_WEBAUDIO = 0x15,
+  FMOD_OUTPUTTYPE_NNAUDIO = 0x16,
+  FMOD_OUTPUTTYPE_MAX = 0x17,
+  FMOD_OUTPUTTYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_SPEAKERMODE`
+```
+enum FMOD_SPEAKERMODE : __int32
+{
+  FMOD_SPEAKERMODE_DEFAULT = 0x0,
+  FMOD_SPEAKERMODE_RAW = 0x1,
+  FMOD_SPEAKERMODE_MONO = 0x2,
+  FMOD_SPEAKERMODE_STEREO = 0x3,
+  FMOD_SPEAKERMODE_QUAD = 0x4,
+  FMOD_SPEAKERMODE_SURROUND = 0x5,
+  FMOD_SPEAKERMODE_5POINT1 = 0x6,
+  FMOD_SPEAKERMODE_7POINT1 = 0x7,
+  FMOD_SPEAKERMODE_MAX = 0x8,
+  FMOD_SPEAKERMODE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_SPEAKER`
+```
+enum FMOD_SPEAKER : __int32
+{
+  FMOD_SPEAKER_FRONT_LEFT = 0x0,
+  FMOD_SPEAKER_FRONT_RIGHT = 0x1,
+  FMOD_SPEAKER_FRONT_CENTER = 0x2,
+  FMOD_SPEAKER_LOW_FREQUENCY = 0x3,
+  FMOD_SPEAKER_SURROUND_LEFT = 0x4,
+  FMOD_SPEAKER_SURROUND_RIGHT = 0x5,
+  FMOD_SPEAKER_BACK_LEFT = 0x6,
+  FMOD_SPEAKER_BACK_RIGHT = 0x7,
+  FMOD_SPEAKER_MAX = 0x8,
+  FMOD_SPEAKER_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_PLUGINTYPE`
+```
+enum FMOD_PLUGINTYPE : __int32
+{
+  FMOD_PLUGINTYPE_OUTPUT = 0x0,
+  FMOD_PLUGINTYPE_CODEC = 0x1,
+  FMOD_PLUGINTYPE_DSP = 0x2,
+  FMOD_PLUGINTYPE_MAX = 0x3,
+  FMOD_PLUGINTYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_SOUND_TYPE`
+```
+enum FMOD_SOUND_TYPE : __int32
+{
+  FMOD_SOUND_TYPE_UNKNOWN = 0x0,
+  FMOD_SOUND_TYPE_AIFF = 0x1,
+  FMOD_SOUND_TYPE_ASF = 0x2,
+  FMOD_SOUND_TYPE_DLS = 0x3,
+  FMOD_SOUND_TYPE_FLAC = 0x4,
+  FMOD_SOUND_TYPE_FSB = 0x5,
+  FMOD_SOUND_TYPE_IT = 0x6,
+  FMOD_SOUND_TYPE_MIDI = 0x7,
+  FMOD_SOUND_TYPE_MOD = 0x8,
+  FMOD_SOUND_TYPE_MPEG = 0x9,
+  FMOD_SOUND_TYPE_OGGVORBIS = 0xA,
+  FMOD_SOUND_TYPE_PLAYLIST = 0xB,
+  FMOD_SOUND_TYPE_RAW = 0xC,
+  FMOD_SOUND_TYPE_S3M = 0xD,
+  FMOD_SOUND_TYPE_USER = 0xE,
+  FMOD_SOUND_TYPE_WAV = 0xF,
+  FMOD_SOUND_TYPE_XM = 0x10,
+  FMOD_SOUND_TYPE_XMA = 0x11,
+  FMOD_SOUND_TYPE_AUDIOQUEUE = 0x12,
+  FMOD_SOUND_TYPE_AT9 = 0x13,
+  FMOD_SOUND_TYPE_VORBIS = 0x14,
+  FMOD_SOUND_TYPE_MEDIA_FOUNDATION = 0x15,
+  FMOD_SOUND_TYPE_MEDIACODEC = 0x16,
+  FMOD_SOUND_TYPE_FADPCM = 0x17,
+  FMOD_SOUND_TYPE_MAX = 0x18,
+  FMOD_SOUND_TYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_SOUND_FORMAT`
+```
+enum FMOD_SOUND_FORMAT : __int32
+{
+  FMOD_SOUND_FORMAT_NONE = 0x0,
+  FMOD_SOUND_FORMAT_PCM8 = 0x1,
+  FMOD_SOUND_FORMAT_PCM16 = 0x2,
+  FMOD_SOUND_FORMAT_PCM24 = 0x3,
+  FMOD_SOUND_FORMAT_PCM32 = 0x4,
+  FMOD_SOUND_FORMAT_PCMFLOAT = 0x5,
+  FMOD_SOUND_FORMAT_BITSTREAM = 0x6,
+  FMOD_SOUND_FORMAT_MAX = 0x7,
+  FMOD_SOUND_FORMAT_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_OPENSTATE`
+```
+enum FMOD_OPENSTATE : __int32
+{
+  FMOD_OPENSTATE_READY = 0x0,
+  FMOD_OPENSTATE_LOADING = 0x1,
+  FMOD_OPENSTATE_ERROR = 0x2,
+  FMOD_OPENSTATE_CONNECTING = 0x3,
+  FMOD_OPENSTATE_BUFFERING = 0x4,
+  FMOD_OPENSTATE_SEEKING = 0x5,
+  FMOD_OPENSTATE_PLAYING = 0x6,
+  FMOD_OPENSTATE_SETPOSITION = 0x7,
+  FMOD_OPENSTATE_MAX = 0x8,
+  FMOD_OPENSTATE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_SOUNDGROUP_BEHAVIOR`
+```
+enum FMOD_SOUNDGROUP_BEHAVIOR : __int32
+{
+  FMOD_SOUNDGROUP_BEHAVIOR_FAIL = 0x0,
+  FMOD_SOUNDGROUP_BEHAVIOR_MUTE = 0x1,
+  FMOD_SOUNDGROUP_BEHAVIOR_STEALLOWEST = 0x2,
+  FMOD_SOUNDGROUP_BEHAVIOR_MAX = 0x3,
+  FMOD_SOUNDGROUP_BEHAVIOR_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_CHANNELCONTROL_CALLBACK_TYPE`
+```
+enum FMOD_CHANNELCONTROL_CALLBACK_TYPE : __int32
+{
+  FMOD_CHANNELCONTROL_CALLBACK_END = 0x0,
+  FMOD_CHANNELCONTROL_CALLBACK_VIRTUALVOICE = 0x1,
+  FMOD_CHANNELCONTROL_CALLBACK_SYNCPOINT = 0x2,
+  FMOD_CHANNELCONTROL_CALLBACK_OCCLUSION = 0x3,
+  FMOD_CHANNELCONTROL_CALLBACK_MAX = 0x4,
+  FMOD_CHANNELCONTROL_CALLBACK_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_DSP_RESAMPLER`
+```
+enum FMOD_DSP_RESAMPLER : __int32
+{
+  FMOD_DSP_RESAMPLER_DEFAULT = 0x0,
+  FMOD_DSP_RESAMPLER_NOINTERP = 0x1,
+  FMOD_DSP_RESAMPLER_LINEAR = 0x2,
+  FMOD_DSP_RESAMPLER_CUBIC = 0x3,
+  FMOD_DSP_RESAMPLER_SPLINE = 0x4,
+  FMOD_DSP_RESAMPLER_MAX = 0x5,
+  FMOD_DSP_RESAMPLER_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_TAGTYPE`
+```
+enum FMOD_TAGTYPE : __int32
+{
+  FMOD_TAGTYPE_UNKNOWN = 0x0,
+  FMOD_TAGTYPE_ID3V1 = 0x1,
+  FMOD_TAGTYPE_ID3V2 = 0x2,
+  FMOD_TAGTYPE_VORBISCOMMENT = 0x3,
+  FMOD_TAGTYPE_SHOUTCAST = 0x4,
+  FMOD_TAGTYPE_ICECAST = 0x5,
+  FMOD_TAGTYPE_ASF = 0x6,
+  FMOD_TAGTYPE_MIDI = 0x7,
+  FMOD_TAGTYPE_PLAYLIST = 0x8,
+  FMOD_TAGTYPE_FMOD = 0x9,
+  FMOD_TAGTYPE_USER = 0xA,
+  FMOD_TAGTYPE_MAX = 0xB,
+  FMOD_TAGTYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_TAGDATATYPE`
+```
+enum FMOD_TAGDATATYPE : __int32
+{
+  FMOD_TAGDATATYPE_BINARY = 0x0,
+  FMOD_TAGDATATYPE_INT = 0x1,
+  FMOD_TAGDATATYPE_FLOAT = 0x2,
+  FMOD_TAGDATATYPE_STRING = 0x3,
+  FMOD_TAGDATATYPE_STRING_UTF16 = 0x4,
+  FMOD_TAGDATATYPE_STRING_UTF16BE = 0x5,
+  FMOD_TAGDATATYPE_STRING_UTF8 = 0x6,
+  FMOD_TAGDATATYPE_CDTOC = 0x7,
+  FMOD_TAGDATATYPE_MAX = 0x8,
+  FMOD_TAGDATATYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_DSP_TYPE`
+```
+enum FMOD_DSP_TYPE : __int32
+{
+  FMOD_DSP_TYPE_UNKNOWN = 0x0,
+  FMOD_DSP_TYPE_MIXER = 0x1,
+  FMOD_DSP_TYPE_OSCILLATOR = 0x2,
+  FMOD_DSP_TYPE_LOWPASS = 0x3,
+  FMOD_DSP_TYPE_ITLOWPASS = 0x4,
+  FMOD_DSP_TYPE_HIGHPASS = 0x5,
+  FMOD_DSP_TYPE_ECHO = 0x6,
+  FMOD_DSP_TYPE_FADER = 0x7,
+  FMOD_DSP_TYPE_FLANGE = 0x8,
+  FMOD_DSP_TYPE_DISTORTION = 0x9,
+  FMOD_DSP_TYPE_NORMALIZE = 0xA,
+  FMOD_DSP_TYPE_LIMITER = 0xB,
+  FMOD_DSP_TYPE_PARAMEQ = 0xC,
+  FMOD_DSP_TYPE_PITCHSHIFT = 0xD,
+  FMOD_DSP_TYPE_CHORUS = 0xE,
+  FMOD_DSP_TYPE_VSTPLUGIN = 0xF,
+  FMOD_DSP_TYPE_WINAMPPLUGIN = 0x10,
+  FMOD_DSP_TYPE_ITECHO = 0x11,
+  FMOD_DSP_TYPE_COMPRESSOR = 0x12,
+  FMOD_DSP_TYPE_SFXREVERB = 0x13,
+  FMOD_DSP_TYPE_LOWPASS_SIMPLE = 0x14,
+  FMOD_DSP_TYPE_DELAY = 0x15,
+  FMOD_DSP_TYPE_TREMOLO = 0x16,
+  FMOD_DSP_TYPE_LADSPAPLUGIN = 0x17,
+  FMOD_DSP_TYPE_SEND = 0x18,
+  FMOD_DSP_TYPE_RETURN = 0x19,
+  FMOD_DSP_TYPE_HIGHPASS_SIMPLE = 0x1A,
+  FMOD_DSP_TYPE_PAN = 0x1B,
+  FMOD_DSP_TYPE_THREE_EQ = 0x1C,
+  FMOD_DSP_TYPE_FFT = 0x1D,
+  FMOD_DSP_TYPE_LOUDNESS_METER = 0x1E,
+  FMOD_DSP_TYPE_ENVELOPEFOLLOWER = 0x1F,
+  FMOD_DSP_TYPE_CONVOLUTIONREVERB = 0x20,
+  FMOD_DSP_TYPE_CHANNELMIX = 0x21,
+  FMOD_DSP_TYPE_TRANSCEIVER = 0x22,
+  FMOD_DSP_TYPE_OBJECTPAN = 0x23,
+  FMOD_DSP_TYPE_MULTIBAND_EQ = 0x24,
+  FMOD_DSP_TYPE_MAX = 0x25,
+  FMOD_DSP_TYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_DSP_PAN_3D_ROLLOFF_TYPE`
+```
+enum FMOD_DSP_PAN_3D_ROLLOFF_TYPE : __int32
+{
+  FMOD_DSP_PAN_3D_ROLLOFF_LINEARSQUARED = 0x0,
+  FMOD_DSP_PAN_3D_ROLLOFF_LINEAR = 0x1,
+  FMOD_DSP_PAN_3D_ROLLOFF_INVERSE = 0x2,
+  FMOD_DSP_PAN_3D_ROLLOFF_INVERSETAPERED = 0x3,
+  FMOD_DSP_PAN_3D_ROLLOFF_CUSTOM = 0x4,
+};
+
+```
+
+### `FMOD_DSP_PROCESS_OPERATION`
+```
+enum FMOD_DSP_PROCESS_OPERATION : __int32
+{
+  FMOD_DSP_PROCESS_PERFORM = 0x0,
+  FMOD_DSP_PROCESS_QUERY = 0x1,
+};
+
+```
+
+### `FMOD_DSP_PAN_SURROUND_FLAGS`
+```
+enum FMOD_DSP_PAN_SURROUND_FLAGS : __int32
+{
+  FMOD_DSP_PAN_SURROUND_DEFAULT = 0x0,
+  FMOD_DSP_PAN_SURROUND_ROTATION_NOT_BIASED = 0x1,
+  FMOD_DSP_PAN_SURROUND_FLAGS_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_DSP_PARAMETER_TYPE`
+```
+enum FMOD_DSP_PARAMETER_TYPE : __int32
+{
+  FMOD_DSP_PARAMETER_TYPE_FLOAT = 0x0,
+  FMOD_DSP_PARAMETER_TYPE_INT = 0x1,
+  FMOD_DSP_PARAMETER_TYPE_BOOL = 0x2,
+  FMOD_DSP_PARAMETER_TYPE_DATA = 0x3,
+  FMOD_DSP_PARAMETER_TYPE_MAX = 0x4,
+  FMOD_DSP_PARAMETER_TYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE`
+```
+enum FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE : __int32
+{
+  FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE_LINEAR = 0x0,
+  FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE_AUTO = 0x1,
+  FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE_PIECEWISE_LINEAR = 0x2,
+  FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE_FORCEINT = 0x10000,
+};
+
+```
+
+### `FMOD_CHANNELORDER`
+```
+enum FMOD_CHANNELORDER : __int32
+{
+  FMOD_CHANNELORDER_DEFAULT = 0x0,
+  FMOD_CHANNELORDER_WAVEFORMAT = 0x1,
+  FMOD_CHANNELORDER_PROTOOLS = 0x2,
+  FMOD_CHANNELORDER_ALLMONO = 0x3,
+  FMOD_CHANNELORDER_ALLSTEREO = 0x4,
+  FMOD_CHANNELORDER_ALSA = 0x5,
+  FMOD_CHANNELORDER_MAX = 0x6,
+  FMOD_CHANNELORDER_FORCEINT = 0x10000,
+};
+
+```
+
+### `FT_Kerning_Mode_`
+```
+enum FT_Kerning_Mode_ : __int32
+{
+  FT_KERNING_DEFAULT = 0x0,
+  FT_KERNING_UNFITTED = 0x1,
+  FT_KERNING_UNSCALED = 0x2,
+};
+
+```
+
+### `FT_Frame_Op_`
+```
+enum FT_Frame_Op_ : __int32
+{
+  ft_frame_end = 0x0,
+  ft_frame_start = 0x4,
+  ft_frame_byte = 0x8,
+  ft_frame_schar = 0x9,
+  ft_frame_ushort_be = 0xC,
+  ft_frame_short_be = 0xD,
+  ft_frame_ushort_le = 0xE,
+  ft_frame_short_le = 0xF,
+  ft_frame_ulong_be = 0x10,
+  ft_frame_long_be = 0x11,
+  ft_frame_ulong_le = 0x12,
+  ft_frame_long_le = 0x13,
+  ft_frame_uoff3_be = 0x14,
+  ft_frame_off3_be = 0x15,
+  ft_frame_uoff3_le = 0x16,
+  ft_frame_off3_le = 0x17,
+  ft_frame_bytes = 0x18,
+  ft_frame_skip = 0x19,
+};
+
+```
+
+### `FT_Pixel_Mode_`
+```
+enum FT_Pixel_Mode_ : __int32
+{
+  FT_PIXEL_MODE_NONE = 0x0,
+  FT_PIXEL_MODE_MONO = 0x1,
+  FT_PIXEL_MODE_GRAY = 0x2,
+  FT_PIXEL_MODE_GRAY2 = 0x3,
+  FT_PIXEL_MODE_GRAY4 = 0x4,
+  FT_PIXEL_MODE_LCD = 0x5,
+  FT_PIXEL_MODE_LCD_V = 0x6,
+  FT_PIXEL_MODE_BGRA = 0x7,
+  FT_PIXEL_MODE_MAX = 0x8,
+};
+
+```
+
+### `FT_ValidationLevel_`
+```
+enum FT_ValidationLevel_ : __int32
+{
+  FT_VALIDATE_DEFAULT = 0x0,
+  FT_VALIDATE_TIGHT = 0x1,
+  FT_VALIDATE_PARANOID = 0x2,
+};
+
+```
+
+### `FT_Sfnt_Tag_`
+```
+enum FT_Sfnt_Tag_ : __int32
+{
+  FT_SFNT_HEAD = 0x0,
+  FT_SFNT_MAXP = 0x1,
+  FT_SFNT_OS2 = 0x2,
+  FT_SFNT_HHEA = 0x3,
+  FT_SFNT_VHEA = 0x4,
+  FT_SFNT_POST = 0x5,
+  FT_SFNT_PCLT = 0x6,
+  FT_SFNT_MAX = 0x7,
+};
+
+```
+
+### `FT_LcdFilter_`
+```
+enum FT_LcdFilter_ : __int32
+{
+  FT_LCD_FILTER_NONE = 0x0,
+  FT_LCD_FILTER_DEFAULT = 0x1,
+  FT_LCD_FILTER_LIGHT = 0x2,
+  FT_LCD_FILTER_LEGACY1 = 0x3,
+  FT_LCD_FILTER_LEGACY = 0x10,
+  FT_LCD_FILTER_MAX = 0x11,
+};
+
+```
+
+### `FT_Glyph_BBox_Mode_`
+```
+enum FT_Glyph_BBox_Mode_ : __int32
+{
+  FT_GLYPH_BBOX_UNSCALED = 0x0,
+  FT_GLYPH_BBOX_SUBPIXELS = 0x0,
+  FT_GLYPH_BBOX_GRIDFIT = 0x1,
+  FT_GLYPH_BBOX_TRUNCATE = 0x2,
+  FT_GLYPH_BBOX_PIXELS = 0x3,
+};
+
+```
+
+### `FT_Stroker_LineCap_`
+```
+enum FT_Stroker_LineCap_ : __int32
+{
+  FT_STROKER_LINECAP_BUTT = 0x0,
+  FT_STROKER_LINECAP_ROUND = 0x1,
+  FT_STROKER_LINECAP_SQUARE = 0x2,
+};
+
+```
+
+### `FT_Stroker_LineJoin_`
+```
+enum FT_Stroker_LineJoin_ : __int32
+{
+  FT_STROKER_LINEJOIN_ROUND = 0x0,
+  FT_STROKER_LINEJOIN_BEVEL = 0x1,
+  FT_STROKER_LINEJOIN_MITER_VARIABLE = 0x2,
+  FT_STROKER_LINEJOIN_MITER = 0x2,
+  FT_STROKER_LINEJOIN_MITER_FIXED = 0x3,
+};
+
+```
+
+### `FT_StrokerBorder_`
+```
+enum FT_StrokerBorder_ : __int32
+{
+  FT_STROKER_BORDER_LEFT = 0x0,
+  FT_STROKER_BORDER_RIGHT = 0x1,
+};
+
+```
+
+### `FT_StrokeTags_`
+```
+enum FT_StrokeTags_ : __int32
+{
+  FT_STROKE_TAG_ON = 0x1,
+  FT_STROKE_TAG_CUBIC = 0x2,
+  FT_STROKE_TAG_BEGIN = 0x4,
+  FT_STROKE_TAG_END = 0x8,
+};
+
+```
+
+### `FT_LzwPhase_`
+```
+enum FT_LzwPhase_ : __int32
+{
+  FT_LZW_PHASE_START = 0x0,
+  FT_LZW_PHASE_CODE = 0x1,
+  FT_LZW_PHASE_STACK = 0x2,
+  FT_LZW_PHASE_EOF = 0x3,
+};
+
+```
+
+### `fblocktype`
+```
+typedef Category fblocktype;
+
+```
+
