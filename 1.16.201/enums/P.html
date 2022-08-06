@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>P | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/78.0e00fef4.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" aria-current="page" class="active sidebar-link">P</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="p"><a href="#p" class="header-anchor">#</a> P</h1> <h3 id="profanityfiltercontext"><a href="#profanityfiltercontext" class="header-anchor">#</a> <code>ProfanityFilterContext</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="packlisttype"><a href="#packlisttype" class="header-anchor">#</a> <code>PackListType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="personascreen-navigatetopersonafrom"><a href="#personascreen-navigatetopersonafrom" class="header-anchor">#</a> <code>personaScreen::NavigateToPersonaFrom</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Store</td> <td><code>0</code></td></tr> <tr><td>DressingRoom</td> <td><code>1</code></td></tr></tbody></table> <h3 id="particlelayer"><a href="#particlelayer" class="header-anchor">#</a> <code>ParticleLayer</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Standard</td> <td><code>0</code></td></tr> <tr><td>SingleTriggerGearVR</td> <td><code>1</code></td></tr> <tr><td>GearVR</td> <td><code>2</code></td></tr> <tr><td>MotionController</td> <td><code>3</code></td></tr> <tr><td>_count</td> <td><code>4</code></td></tr></tbody></table> <h3 id="persona-pieceside"><a href="#persona-pieceside" class="header-anchor">#</a> <code>persona::PieceSide</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="persona-piecetype"><a href="#persona-piecetype" class="header-anchor">#</a> <code>persona::PieceType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="persona-rarity"><a href="#persona-rarity" class="header-anchor">#</a> <code>persona::Rarity</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="purchasepath"><a href="#purchasepath" class="header-anchor">#</a> <code>PurchasePath</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="packetpriority"><a href="#packetpriority" class="header-anchor">#</a> <code>PacketPriority</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>IMMEDIATE_PRIORITY</td> <td><code>0</code></td></tr> <tr><td>HIGH_PRIORITY</td> <td><code>1</code></td></tr> <tr><td>MEDIUM_PRIORITY</td> <td><code>2</code></td></tr> <tr><td>LOW_PRIORITY</td> <td><code>3</code></td></tr> <tr><td>NUMBER_OF_PRIORITIES</td> <td><code>4</code></td></tr></tbody></table> <h3 id="packmanifestformat"><a href="#packmanifestformat" class="header-anchor">#</a> <code>PackManifestFormat</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>V0</td> <td><code>0</code></td></tr> <tr><td>V1</td> <td><code>1</code></td></tr> <tr><td>V2</td> <td><code>2</code></td></tr></tbody></table> <h3 id="packtype"><a href="#packtype" class="header-anchor">#</a> <code>PackType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="packorigin"><a href="#packorigin" class="header-anchor">#</a> <code>PackOrigin</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NotInstalled</td> <td><code>0</code></td></tr> <tr><td>Installed</td> <td><code>1</code></td></tr> <tr><td>UpdateAvailable</td> <td><code>2</code></td></tr> <tr><td>_Unknown</td> <td><code>3</code></td></tr></tbody></table> <h3 id="projection"><a href="#projection" class="header-anchor">#</a> <code>Projection</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="postprocesssettings"><a href="#postprocesssettings" class="header-anchor">#</a> <code>PostProcessSettings</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="playerscoresetfunction"><a href="#playerscoresetfunction" class="header-anchor">#</a> <code>PlayerScoreSetFunction</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Add</td> <td><code>0</code></td></tr> <tr><td>PlayerAdded</td> <td><code>1</code></td></tr> <tr><td>Remove</td> <td><code>2</code></td></tr> <tr><td>PlayerRemoved</td> <td><code>3</code></td></tr> <tr><td>Update_Percent</td> <td><code>4</code></td></tr> <tr><td>Update_Name</td> <td><code>5</code></td></tr> <tr><td>Update_Properties</td> <td><code>6</code></td></tr> <tr><td>Update_Style</td> <td><code>7</code></td></tr></tbody></table> <h3 id="pathcompletiontype"><a href="#pathcompletiontype" class="header-anchor">#</a> <code>PathCompletionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>EMPTY</td> <td><code>0</code></td></tr> <tr><td>PARTIAL</td> <td><code>1</code></td></tr> <tr><td>FULL</td> <td><code>2</code></td></tr></tbody></table> <h3 id="packetreliability"><a href="#packetreliability" class="header-anchor">#</a> <code>PacketReliability</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>UNRELIABLE</td> <td><code>0</code></td></tr> <tr><td>UNRELIABLE_SEQUENCED</td> <td><code>1</code></td></tr> <tr><td>RELIABLE</td> <td><code>2</code></td></tr> <tr><td>RELIABLE_ORDERED</td> <td><code>3</code></td></tr> <tr><td>RELIABLE_SEQUENCED</td> <td><code>4</code></td></tr> <tr><td>UNRELIABLE_WITH_ACK_RECEIPT</td> <td><code>5</code></td></tr> <tr><td>RELIABLE_WITH_ACK_RECEIPT</td> <td><code>6</code></td></tr> <tr><td>RELIABLE_ORDERED_WITH_ACK_RECEIPT</td> <td><code>7</code></td></tr> <tr><td>NUMBER_OF_RELIABILITIES</td> <td><code>8</code></td></tr></tbody></table> <h3 id="persona-profiletype"><a href="#persona-profiletype" class="header-anchor">#</a> <code>persona::ProfileType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="playertickconfig-tickpolicy"><a href="#playertickconfig-tickpolicy" class="header-anchor">#</a> <code>PlayerTickConfig::TickPolicy</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Greedy</td> <td><code>0</code></td></tr> <tr><td>Throttled</td> <td><code>1</code></td></tr></tbody></table> <h3 id="persona-ownershipfiltertype"><a href="#persona-ownershipfiltertype" class="header-anchor">#</a> <code>persona::OwnershipFilterType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>OwnedOnly</td> <td><code>0</code></td></tr> <tr><td>Everything</td> <td><code>1</code></td></tr> <tr><td>FilteredOwnToBack</td> <td><code>2</code></td></tr> <tr><td>FilterOwnedToFront</td> <td><code>3</code></td></tr> <tr><td>UnownedOnly</td> <td><code>4</code></td></tr> <tr><td>OwnedCapes</td> <td><code>5</code></td></tr></tbody></table> <h3 id="persona-animatedtexturetype"><a href="#persona-animatedtexturetype" class="header-anchor">#</a> <code>persona::AnimatedTextureType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="playerpermissionlevel"><a href="#playerpermissionlevel" class="header-anchor">#</a> <code>PlayerPermissionLevel</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Visitor</td> <td><code>0</code></td></tr> <tr><td>Member</td> <td><code>1</code></td></tr> <tr><td>Operator</td> <td><code>2</code></td></tr> <tr><td>Custom</td> <td><code>3</code></td></tr></tbody></table> <h3 id="playscreendefaulttab"><a href="#playscreendefaulttab" class="header-anchor">#</a> <code>PlayScreenDefaultTab</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="playscreencontroller-servercollectionname"><a href="#playscreencontroller-servercollectionname" class="header-anchor">#</a> <code>PlayScreenController::ServerCollectionName</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="playscreencontroller-convertprogressstate"><a href="#playscreencontroller-convertprogressstate" class="header-anchor">#</a> <code>PlayScreenController::ConvertProgressState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="packselectresult"><a href="#packselectresult" class="header-anchor">#</a> <code>PackSelectResult</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="packcategory"><a href="#packcategory" class="header-anchor">#</a> <code>PackCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="persona-reactanimationtype"><a href="#persona-reactanimationtype" class="header-anchor">#</a> <code>persona::ReactAnimationType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>idle</td> <td><code>0</code></td></tr> <tr><td>idle_torso</td> <td><code>1</code></td></tr> <tr><td>idle_head</td> <td><code>2</code></td></tr> <tr><td>idle_bottom</td> <td><code>3</code></td></tr> <tr><td>idle_arm</td> <td><code>4</code></td></tr> <tr><td>idle_back</td> <td><code>5</code></td></tr> <tr><td>react_head</td> <td><code>6</code></td></tr> <tr><td>react_torso</td> <td><code>7</code></td></tr> <tr><td>react_bottom</td> <td><code>8</code></td></tr> <tr><td>react_arm</td> <td><code>9</code></td></tr> <tr><td>react_back</td> <td><code>10</code></td></tr> <tr><td>react_confirm</td> <td><code>11</code></td></tr> <tr><td>react_bored</td> <td><code>12</code></td></tr> <tr><td>react_bored_torso</td> <td><code>13</code></td></tr> <tr><td>react_bored_head</td> <td><code>14</code></td></tr> <tr><td>react_bored_bottom</td> <td><code>15</code></td></tr> <tr><td>react_bored_arm</td> <td><code>16</code></td></tr> <tr><td>react_bored_back</td> <td><code>17</code></td></tr> <tr><td>react_offer</td> <td><code>18</code></td></tr> <tr><td>react_offer_torso</td> <td><code>19</code></td></tr> <tr><td>react_offer_head</td> <td><code>20</code></td></tr> <tr><td>react_offer_bottom</td> <td><code>21</code></td></tr> <tr><td>react_offer_arm</td> <td><code>22</code></td></tr> <tr><td>react_offer_back</td> <td><code>23</code></td></tr> <tr><td>zoom</td> <td><code>24</code></td></tr></tbody></table> <h3 id="particletype"><a href="#particletype" class="header-anchor">#</a> <code>ParticleType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="personarepository-pendingpersonaappearancestatus"><a href="#personarepository-pendingpersonaappearancestatus" class="header-anchor">#</a> <code>PersonaRepository::PendingPersonaAppearanceStatus</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>DownloadingPiecesInProgress</td> <td><code>0</code></td></tr> <tr><td>LoadingPiecesInProgress</td> <td><code>1</code></td></tr> <tr><td>LoadingPiecesComplete</td> <td><code>2</code></td></tr> <tr><td>Processing</td> <td><code>3</code></td></tr> <tr><td>ReadyToRemove</td> <td><code>4</code></td></tr></tbody></table> <h3 id="persona-personaerror"><a href="#persona-personaerror" class="header-anchor">#</a> <code>persona::PersonaError</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NoError</td> <td><code>0</code></td></tr> <tr><td>ControllerRequired</td> <td><code>1</code></td></tr> <tr><td>InvalidConfiguration</td> <td><code>2</code></td></tr> <tr><td>AdhocOverWirelessConnectionLimit</td> <td><code>3</code></td></tr> <tr><td>AdhocInvalidConfiguration</td> <td><code>4</code></td></tr></tbody></table> <h3 id="packaccessstrategytype"><a href="#packaccessstrategytype" class="header-anchor">#</a> <code>PackAccessStrategyType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="packstorage-pendingtask-type"><a href="#packstorage-pendingtask-type" class="header-anchor">#</a> <code>PackStorage::PendingTask::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>File</td> <td><code>1</code></td></tr> <tr><td>Deleted</td> <td><code>18446744073709551488</code></td></tr></tbody></table> <h3 id="projectileanchor"><a href="#projectileanchor" class="header-anchor">#</a> <code>ProjectileAnchor</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="persona-animationexpression"><a href="#persona-animationexpression" class="header-anchor">#</a> <code>persona::AnimationExpression</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="playersuspension-state"><a href="#playersuspension-state" class="header-anchor">#</a> <code>PlayerSuspension::State</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Suspend</td> <td><code>0</code></td></tr> <tr><td>Resume</td> <td><code>1</code></td></tr></tbody></table> <h3 id="poitype"><a href="#poitype" class="header-anchor">#</a> <code>POIType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="playerarmorexchangeeventtriggeredlocation"><a href="#playerarmorexchangeeventtriggeredlocation" class="header-anchor">#</a> <code>PlayerArmorExchangeEventTriggeredLocation</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ServerPlayerSetArmor</td> <td><code>0</code></td></tr> <tr><td>MobHurtArmor</td> <td><code>1</code></td></tr></tbody></table> <h3 id="potion-potiontype"><a href="#potion-potiontype" class="header-anchor">#</a> <code>Potion::PotionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="pistonblock-type"><a href="#pistonblock-type" class="header-anchor">#</a> <code>PistonBlock::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="pressureplateblock-sensitivity"><a href="#pressureplateblock-sensitivity" class="header-anchor">#</a> <code>PressurePlateBlock::Sensitivity</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>EVERYTHING</td> <td><code>0</code></td></tr> <tr><td>MOBS</td> <td><code>1</code></td></tr> <tr><td>PLAYERS</td> <td><code>2</code></td></tr></tbody></table> <h3 id="prismarineblocktype"><a href="#prismarineblocktype" class="header-anchor">#</a> <code>PrismarineBlockType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="pillaraxis"><a href="#pillaraxis" class="header-anchor">#</a> <code>PillarAxis</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="portalaxis"><a href="#portalaxis" class="header-anchor">#</a> <code>PortalAxis</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace PortalAxis;
+
+</code></pre></div><h3 id="palettecolor"><a href="#palettecolor" class="header-anchor">#</a> <code>PaletteColor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId PaletteColor;
+
+</code></pre></div><h3 id="permissionrequestreason"><a href="#permissionrequestreason" class="header-anchor">#</a> <code>PermissionRequestReason</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PermissionRequestReason : __int32
+{
+  ImportSkin = 0x0,
+  ImportPack = 0x1,
+  ChangeStorageLocation = 0x2,
+  DebugCopySettingsFile = 0x3,
+  ExportPDF = 0x4,
+  ExpansionFile = 0x5,
+};
+
+</code></pre></div><h3 id="platformtype"><a href="#platformtype" class="header-anchor">#</a> <code>PlatformType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef UIScalingRules PlatformType;
+
+</code></pre></div><h3 id="packetviolationresponse"><a href="#packetviolationresponse" class="header-anchor">#</a> <code>PacketViolationResponse</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation PacketViolationResponse;
+
+</code></pre></div><h3 id="player-dimensionstate"><a href="#player-dimensionstate" class="header-anchor">#</a> <code>Player::DimensionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Player::DimensionState : __int32
+{
+  Ready = 0x0,
+  Pending = 0x1,
+  WaitingServerResponse = 0x2,
+  WaitingArea = 0x3,
+};
+
+</code></pre></div><h3 id="player-positionmode"><a href="#player-positionmode" class="header-anchor">#</a> <code>Player::PositionMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftPacketIds Player::PositionMode;
+
+</code></pre></div><h3 id="playeruislot"><a href="#playeruislot" class="header-anchor">#</a> <code>PlayerUISlot</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType PlayerUISlot;
+
+</code></pre></div><h3 id="player-spawnpositionstate"><a href="#player-spawnpositionstate" class="header-anchor">#</a> <code>Player::SpawnPositionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftPacketIds Player::SpawnPositionState;
+
+</code></pre></div><h3 id="player-spawnpositionsource"><a href="#player-spawnpositionsource" class="header-anchor">#</a> <code>Player::SpawnPositionSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftPacketIds Player::SpawnPositionSource;
+
+</code></pre></div><h3 id="playerrespawnstate"><a href="#playerrespawnstate" class="header-anchor">#</a> <code>PlayerRespawnState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayerRespawnState : __int8
+{
+  SearchingForSpawn = 0x0,
+  ReadyToSpawn = 0x1,
+  ClientReadyToSpawn = 0x2,
+};
+
+</code></pre></div><h3 id="persona-personapiececollectionmodel-retrievaltype"><a href="#persona-personapiececollectionmodel-retrievaltype" class="header-anchor">#</a> <code>persona::PersonaPieceCollectionModel::RetrievalType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace persona::PersonaPieceCollectionModel::RetrievalType;
+
+</code></pre></div><h3 id="persona-piecesubtype"><a href="#persona-piecesubtype" class="header-anchor">#</a> <code>persona::PieceSubType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace persona::PieceSubType;
+
+</code></pre></div><h3 id="packerrortype"><a href="#packerrortype" class="header-anchor">#</a> <code>PackErrorType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation PackErrorType;
+
+</code></pre></div><h3 id="playerlistpackettype"><a href="#playerlistpackettype" class="header-anchor">#</a> <code>PlayerListPacketType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BossEventUpdateType PlayerListPacketType;
+
+</code></pre></div><h3 id="predictedmovementcomponent-historyitem-itemtype"><a href="#predictedmovementcomponent-historyitem-itemtype" class="header-anchor">#</a> <code>PredictedMovementComponent::HistoryItem::ItemType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MovePredictionType PredictedMovementComponent::HistoryItem::ItemType;
+
+</code></pre></div><h3 id="progressanimation"><a href="#progressanimation" class="header-anchor">#</a> <code>ProgressAnimation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ProgressAnimation;
+
+</code></pre></div><h3 id="progresshandlertype"><a href="#progresshandlertype" class="header-anchor">#</a> <code>ProgressHandlerType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ProgressHandlerType;
+
+</code></pre></div><h3 id="personascreen-customizationstate"><a href="#personascreen-customizationstate" class="header-anchor">#</a> <code>personaScreen::CustomizationState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation personaScreen::CustomizationState;
+
+</code></pre></div><h3 id="packmanifest-packredownloadablestate"><a href="#packmanifest-packredownloadablestate" class="header-anchor">#</a> <code>PackManifest::PackRedownloadableState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace PackManifest::PackRedownloadableState;
+
+</code></pre></div><h3 id="packscope"><a href="#packscope" class="header-anchor">#</a> <code>PackScope</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BedrockLog::LogChannel PackScope;
+
+</code></pre></div><h3 id="pdpsectiontype"><a href="#pdpsectiontype" class="header-anchor">#</a> <code>PDPSectionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId PDPSectionType;
+
+</code></pre></div><h3 id="personacharacter-status"><a href="#personacharacter-status" class="header-anchor">#</a> <code>PersonaCharacter::Status</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation PersonaCharacter::Status;
+
+</code></pre></div><h3 id="persona-personacoloroption"><a href="#persona-personacoloroption" class="header-anchor">#</a> <code>persona::PersonaColorOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorLocation persona::PersonaColorOption;
+
+</code></pre></div><h3 id="personapiecehandle-deserializedpiecemetadata-pieceidtype"><a href="#personapiecehandle-deserializedpiecemetadata-pieceidtype" class="header-anchor">#</a> <code>PersonaPieceHandle::DeserializedPieceMetaData::PieceIdType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace PersonaPieceHandle::DeserializedPieceMetaData::PieceIdType;
+
+</code></pre></div><h3 id="personascreen-classicskinstate"><a href="#personascreen-classicskinstate" class="header-anchor">#</a> <code>personaScreen::ClassicSkinState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum personaScreen::ClassicSkinState : __int8
+{
+  OwnedPacks = 0x0,
+  PurchasablePacks = 0x1,
+  RealmsPlusPacks = 0x2,
+  Category = 0x3,
+  Skins = 0x4,
+};
+
+</code></pre></div><h3 id="personascreen-tabstate"><a href="#personascreen-tabstate" class="header-anchor">#</a> <code>personaScreen::TabState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation personaScreen::TabState;
+
+</code></pre></div><h3 id="persona-selectedoffersectiontype"><a href="#persona-selectedoffersectiontype" class="header-anchor">#</a> <code>persona::SelectedOfferSectionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation persona::SelectedOfferSectionType;
+
+</code></pre></div><h3 id="purchaseenabledscreencontroller-purchasestatus"><a href="#purchaseenabledscreencontroller-purchasestatus" class="header-anchor">#</a> <code>PurchaseEnabledScreenController::PurchaseStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PurchaseEnabledScreenController::PurchaseStatus : __int32
+{
+  NoPurchaseAttemptActive = 0x0,
+  CoinPurchaseInProgress = 0x1,
+  DownloadInProgress = 0x2,
+  InsufficientFundsInProgress = 0x3,
+  PurchaseAttemptFinished = 0x4,
+  PurchaseInProgress = 0x5,
+};
+
+</code></pre></div><h3 id="personascreen-classicskinpackorigin"><a href="#personascreen-classicskinpackorigin" class="header-anchor">#</a> <code>personaScreen::ClassicSkinPackOrigin</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum personaScreen::ClassicSkinPackOrigin : __int8
+{
+  Owned = 0x0,
+  Purchaseable = 0x1,
+  RealmsPlus = 0x2,
+};
+
+</code></pre></div><h3 id="packreportstate"><a href="#packreportstate" class="header-anchor">#</a> <code>PackReportState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ChunkState PackReportState;
+
+</code></pre></div><h3 id="playeractiontype"><a href="#playeractiontype" class="header-anchor">#</a> <code>PlayerActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace PlayerActionType;
+
+</code></pre></div><h3 id="playerauthinputpacket-inputdata"><a href="#playerauthinputpacket-inputdata" class="header-anchor">#</a> <code>PlayerAuthInputPacket::InputData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Frustum::FrustumSide PlayerAuthInputPacket::InputData;
+
+</code></pre></div><h3 id="playersnapshotstateflag"><a href="#playersnapshotstateflag" class="header-anchor">#</a> <code>PlayerSnapshotStateFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId PlayerSnapshotStateFlag;
+
+</code></pre></div><h3 id="particlerenderdata-facecameramode"><a href="#particlerenderdata-facecameramode" class="header-anchor">#</a> <code>ParticleRenderData::FaceCameraMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ParticleRenderData::FaceCameraMode;
+
+</code></pre></div><h3 id="packicontype"><a href="#packicontype" class="header-anchor">#</a> <code>PackIconType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions PackIconType;
+
+</code></pre></div><h3 id="pidmsi-status-value"><a href="#pidmsi-status-value" class="header-anchor">#</a> <code>PIDMSI_STATUS_VALUE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PIDMSI_STATUS_VALUE : __int32
+{
+  PIDMSI_STATUS_NORMAL = 0x0,
+  PIDMSI_STATUS_NEW = 0x1,
+  PIDMSI_STATUS_PRELIM = 0x2,
+  PIDMSI_STATUS_DRAFT = 0x3,
+  PIDMSI_STATUS_INPROGRESS = 0x4,
+  PIDMSI_STATUS_EDIT = 0x5,
+  PIDMSI_STATUS_REVIEW = 0x6,
+  PIDMSI_STATUS_PROOF = 0x7,
+  PIDMSI_STATUS_FINAL = 0x8,
+  PIDMSI_STATUS_OTHER = 0x7FFF,
+};
+
+</code></pre></div><h3 id="power-information-level"><a href="#power-information-level" class="header-anchor">#</a> <code>POWER_INFORMATION_LEVEL</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum POWER_INFORMATION_LEVEL : __int32
+{
+  SystemPowerPolicyAc = 0x0,
+  SystemPowerPolicyDc = 0x1,
+  VerifySystemPolicyAc = 0x2,
+  VerifySystemPolicyDc = 0x3,
+  SystemPowerCapabilities = 0x4,
+  SystemBatteryState = 0x5,
+  SystemPowerStateHandler = 0x6,
+  ProcessorStateHandler = 0x7,
+  SystemPowerPolicyCurrent = 0x8,
+  AdministratorPowerPolicy = 0x9,
+  SystemReserveHiberFile = 0xA,
+  ProcessorInformation = 0xB,
+  SystemPowerInformation = 0xC,
+  ProcessorStateHandler2 = 0xD,
+  LastWakeTime = 0xE,
+  LastSleepTime = 0xF,
+  SystemExecutionState = 0x10,
+  SystemPowerStateNotifyHandler = 0x11,
+  ProcessorPowerPolicyAc = 0x12,
+  ProcessorPowerPolicyDc = 0x13,
+  VerifyProcessorPowerPolicyAc = 0x14,
+  VerifyProcessorPowerPolicyDc = 0x15,
+  ProcessorPowerPolicyCurrent = 0x16,
+  SystemPowerStateLogging = 0x17,
+  SystemPowerLoggingEntry = 0x18,
+  SetPowerSettingValue = 0x19,
+  NotifyUserPowerSetting = 0x1A,
+  PowerInformationLevelUnused0 = 0x1B,
+  SystemMonitorHiberBootPowerOff = 0x1C,
+  SystemVideoState = 0x1D,
+  TraceApplicationPowerMessage = 0x1E,
+  TraceApplicationPowerMessageEnd = 0x1F,
+  ProcessorPerfStates = 0x20,
+  ProcessorIdleStates = 0x21,
+  ProcessorCap = 0x22,
+  SystemWakeSource = 0x23,
+  SystemHiberFileInformation = 0x24,
+  TraceServicePowerMessage = 0x25,
+  ProcessorLoad = 0x26,
+  PowerShutdownNotification = 0x27,
+  MonitorCapabilities = 0x28,
+  SessionPowerInit = 0x29,
+  SessionDisplayState = 0x2A,
+  PowerRequestCreate = 0x2B,
+  PowerRequestAction = 0x2C,
+  GetPowerRequestList = 0x2D,
+  ProcessorInformationEx = 0x2E,
+  NotifyUserModeLegacyPowerEvent = 0x2F,
+  GroupPark = 0x30,
+  ProcessorIdleDomains = 0x31,
+  WakeTimerList = 0x32,
+  SystemHiberFileSize = 0x33,
+  ProcessorIdleStatesHv = 0x34,
+  ProcessorPerfStatesHv = 0x35,
+  ProcessorPerfCapHv = 0x36,
+  ProcessorSetIdle = 0x37,
+  LogicalProcessorIdling = 0x38,
+  UserPresence = 0x39,
+  PowerSettingNotificationName = 0x3A,
+  GetPowerSettingValue = 0x3B,
+  IdleResiliency = 0x3C,
+  SessionRITState = 0x3D,
+  SessionConnectNotification = 0x3E,
+  SessionPowerCleanup = 0x3F,
+  SessionLockState = 0x40,
+  SystemHiberbootState = 0x41,
+  PlatformInformation = 0x42,
+  PdcInvocation = 0x43,
+  MonitorInvocation = 0x44,
+  FirmwareTableInformationRegistered = 0x45,
+  SetShutdownSelectedTime = 0x46,
+  SuspendResumeInvocation = 0x47,
+  PlmPowerRequestCreate = 0x48,
+  ScreenOff = 0x49,
+  CsDeviceNotification = 0x4A,
+  PlatformRole = 0x4B,
+  LastResumePerformance = 0x4C,
+  DisplayBurst = 0x4D,
+  ExitLatencySamplingPercentage = 0x4E,
+  RegisterSpmPowerSettings = 0x4F,
+  PlatformIdleStates = 0x50,
+  ProcessorIdleVeto = 0x51,
+  PlatformIdleVeto = 0x52,
+  SystemBatteryStatePrecise = 0x53,
+  ThermalEvent = 0x54,
+  PowerRequestActionInternal = 0x55,
+  BatteryDeviceState = 0x56,
+  PowerInformationInternal = 0x57,
+  ThermalStandby = 0x58,
+  SystemHiberFileType = 0x59,
+  PhysicalPowerButtonPress = 0x5A,
+  QueryPotentialDripsConstraint = 0x5B,
+  EnergyTrackerCreate = 0x5C,
+  EnergyTrackerQuery = 0x5D,
+  UpdateBlackBoxRecorder = 0x5E,
+  SessionAllowExternalDmaDevices = 0x5F,
+  PowerInformationLevelMaximum = 0x60,
+};
+
+</code></pre></div><h3 id="power-action"><a href="#power-action" class="header-anchor">#</a> <code>POWER_ACTION</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum POWER_ACTION : __int32
+{
+  PowerActionNone = 0x0,
+  PowerActionReserved = 0x1,
+  PowerActionSleep = 0x2,
+  PowerActionHibernate = 0x3,
+  PowerActionShutdown = 0x4,
+  PowerActionShutdownReset = 0x5,
+  PowerActionShutdownOff = 0x6,
+  PowerActionWarmEject = 0x7,
+  PowerActionDisplayOff = 0x8,
+};
+
+</code></pre></div><h3 id="power-monitor-request-reason"><a href="#power-monitor-request-reason" class="header-anchor">#</a> <code>POWER_MONITOR_REQUEST_REASON</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum POWER_MONITOR_REQUEST_REASON : __int32
+{
+  MonitorRequestReasonUnknown = 0x0,
+  MonitorRequestReasonPowerButton = 0x1,
+  MonitorRequestReasonRemoteConnection = 0x2,
+  MonitorRequestReasonScMonitorpower = 0x3,
+  MonitorRequestReasonUserInput = 0x4,
+  MonitorRequestReasonAcDcDisplayBurst = 0x5,
+  MonitorRequestReasonUserDisplayBurst = 0x6,
+  MonitorRequestReasonPoSetSystemState = 0x7,
+  MonitorRequestReasonSetThreadExecutionState = 0x8,
+  MonitorRequestReasonFullWake = 0x9,
+  MonitorRequestReasonSessionUnlock = 0xA,
+  MonitorRequestReasonScreenOffRequest = 0xB,
+  MonitorRequestReasonIdleTimeout = 0xC,
+  MonitorRequestReasonPolicyChange = 0xD,
+  MonitorRequestReasonSleepButton = 0xE,
+  MonitorRequestReasonLid = 0xF,
+  MonitorRequestReasonBatteryCountChange = 0x10,
+  MonitorRequestReasonGracePeriod = 0x11,
+  MonitorRequestReasonPnP = 0x12,
+  MonitorRequestReasonDP = 0x13,
+  MonitorRequestReasonSxTransition = 0x14,
+  MonitorRequestReasonSystemIdle = 0x15,
+  MonitorRequestReasonNearProximity = 0x16,
+  MonitorRequestReasonThermalStandby = 0x17,
+  MonitorRequestReasonResumePdc = 0x18,
+  MonitorRequestReasonResumeS4 = 0x19,
+  MonitorRequestReasonTerminal = 0x1A,
+  MonitorRequestReasonPdcSignal = 0x1B,
+  MonitorRequestReasonAcDcDisplayBurstSuppressed = 0x1C,
+  MonitorRequestReasonSystemStateEntered = 0x1D,
+  MonitorRequestReasonWinrt = 0x1E,
+  MonitorRequestReasonUserInputKeyboard = 0x1F,
+  MonitorRequestReasonUserInputMouse = 0x20,
+  MonitorRequestReasonUserInputTouch = 0x21,
+  MonitorRequestReasonUserInputPen = 0x22,
+  MonitorRequestReasonUserInputAccelerometer = 0x23,
+  MonitorRequestReasonUserInputHid = 0x24,
+  MonitorRequestReasonUserInputPoUserPresent = 0x25,
+  MonitorRequestReasonUserInputSessionSwitch = 0x26,
+  MonitorRequestReasonUserInputInitialization = 0x27,
+  MonitorRequestReasonPdcSignalWindowsMobilePwrNotif = 0x28,
+  MonitorRequestReasonPdcSignalWindowsMobileShell = 0x29,
+  MonitorRequestReasonPdcSignalHeyCortana = 0x2A,
+  MonitorRequestReasonPdcSignalHolographicShell = 0x2B,
+  MonitorRequestReasonPdcSignalFingerprint = 0x2C,
+  MonitorRequestReasonDirectedDrips = 0x2D,
+  MonitorRequestReasonDim = 0x2E,
+  MonitorRequestReasonBuiltinPanel = 0x2F,
+  MonitorRequestReasonDisplayRequiredUnDim = 0x30,
+  MonitorRequestReasonBatteryCountChangeSuppressed = 0x31,
+  MonitorRequestReasonResumeModernStandby = 0x32,
+  MonitorRequestReasonMax = 0x33,
+};
+
+</code></pre></div><h3 id="power-user-presence-type"><a href="#power-user-presence-type" class="header-anchor">#</a> <code>POWER_USER_PRESENCE_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum POWER_USER_PRESENCE_TYPE : __int32
+{
+  UserNotPresent = 0x0,
+  UserPresent = 0x1,
+  UserUnknown = 0xFF,
+};
+
+</code></pre></div><h3 id="proxy-phase"><a href="#proxy-phase" class="header-anchor">#</a> <code>PROXY_PHASE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PROXY_PHASE : __int32
+{
+  PROXY_CALCSIZE = 0x0,
+  PROXY_GETBUFFER = 0x1,
+  PROXY_MARSHAL = 0x2,
+  PROXY_SENDRECEIVE = 0x3,
+  PROXY_UNMARSHAL = 0x4,
+};
+
+</code></pre></div><h3 id="playerviewmode"><a href="#playerviewmode" class="header-anchor">#</a> <code>PlayerViewMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId PlayerViewMode;
+
+</code></pre></div><h3 id="persona-synctype"><a href="#persona-synctype" class="header-anchor">#</a> <code>persona::SyncType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace persona::SyncType;
+
+</code></pre></div><h3 id="pistonblockactor-pistonstate"><a href="#pistonblockactor-pistonstate" class="header-anchor">#</a> <code>PistonBlockActor::PistonState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PistonBlockActor::PistonState : __int8
+{
+  Retracted = 0x0,
+  Expanding = 0x1,
+  Expanded = 0x2,
+  Retracting = 0x3,
+};
+
+</code></pre></div><h3 id="profilerlite-scopetag"><a href="#profilerlite-scopetag" class="header-anchor">#</a> <code>ProfilerLite::ScopeTag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ProfilerLite::ScopeTag;
+
+</code></pre></div><h3 id="packstorage-packstoragemode"><a href="#packstorage-packstoragemode" class="header-anchor">#</a> <code>PackStorage::PackStorageMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PackStorage::PackStorageMode : __int8
+{
+  AppendedFiles = 0x0,
+  Raw = 0x1,
+};
+
+</code></pre></div><h3 id="persona-statuscode"><a href="#persona-statuscode" class="header-anchor">#</a> <code>persona::StatusCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation persona::StatusCode;
+
+</code></pre></div><h3 id="patchrequestsource"><a href="#patchrequestsource" class="header-anchor">#</a> <code>PatchRequestSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId PatchRequestSource;
+
+</code></pre></div><h3 id="producttype"><a href="#producttype" class="header-anchor">#</a> <code>ProductType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Realms::SubscriptionInfo::PurchaseType ProductType;
+
+</code></pre></div><h3 id="purchaseresult"><a href="#purchaseresult" class="header-anchor">#</a> <code>PurchaseResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome PurchaseResult;
+
+</code></pre></div><h3 id="packaccessassetgenerationresult"><a href="#packaccessassetgenerationresult" class="header-anchor">#</a> <code>PackAccessAssetGenerationResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome PackAccessAssetGenerationResult;
+
+</code></pre></div><h3 id="perfcontextevent"><a href="#perfcontextevent" class="header-anchor">#</a> <code>PerfContextEvent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID PerfContextEvent;
+
+</code></pre></div><h3 id="particlesystem-effectcomponentbase-effectcomponenttype"><a href="#particlesystem-effectcomponentbase-effectcomponenttype" class="header-anchor">#</a> <code>ParticleSystem::EffectComponentBase::EffectComponentType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace ParticleSystem::EffectComponentBase::EffectComponentType;
+
+</code></pre></div><h3 id="panoramarenderer-rotationstyle"><a href="#panoramarenderer-rotationstyle" class="header-anchor">#</a> <code>PanoramaRenderer::RotationStyle</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation PanoramaRenderer::RotationStyle;
+
+</code></pre></div><h3 id="paperdollrenderer-rotationstyle"><a href="#paperdollrenderer-rotationstyle" class="header-anchor">#</a> <code>PaperDollRenderer::RotationStyle</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation PaperDollRenderer::RotationStyle;
+
+</code></pre></div><h3 id="panbuttonstate"><a href="#panbuttonstate" class="header-anchor">#</a> <code>PanButtonState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PanButtonState : __int32
+{
+  PanNone = 0x0,
+  PanLeft = 0x1,
+  PanRight = 0x2,
+};
+
+</code></pre></div><h3 id="pagecontent-pagetype"><a href="#pagecontent-pagetype" class="header-anchor">#</a> <code>PageContent::PageType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftPacketIds PageContent::PageType;
+
+</code></pre></div><h3 id="positiontrackingdb-resultcode"><a href="#positiontrackingdb-resultcode" class="header-anchor">#</a> <code>PositionTrackingDB::ResultCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BedSleepingResult PositionTrackingDB::ResultCode;
+
+</code></pre></div><h3 id="positiontrackingdb-trackingrecord-recordstatus"><a href="#positiontrackingdb-trackingrecord-recordstatus" class="header-anchor">#</a> <code>PositionTrackingDB::TrackingRecord::RecordStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BedSleepingResult PositionTrackingDB::TrackingRecord::RecordStatus;
+
+</code></pre></div><h3 id="pickcustomskinresult"><a href="#pickcustomskinresult" class="header-anchor">#</a> <code>PickCustomSkinResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome PickCustomSkinResult;
+
+</code></pre></div><h3 id="packparseerrortype"><a href="#packparseerrortype" class="header-anchor">#</a> <code>PackParseErrorType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation PackParseErrorType;
+
+</code></pre></div><h3 id="processstate"><a href="#processstate" class="header-anchor">#</a> <code>ProcessState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ResourcePackResponse ProcessState;
+
+</code></pre></div><h3 id="portfolioscreencontroller-captionstate"><a href="#portfolioscreencontroller-captionstate" class="header-anchor">#</a> <code>PortfolioScreenController::CaptionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ChunkState PortfolioScreenController::CaptionState;
+
+</code></pre></div><h3 id="processsortorder"><a href="#processsortorder" class="header-anchor">#</a> <code>ProcessSortOrder</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace ProcessSortOrder;
+
+</code></pre></div><h3 id="postcreateworldaction"><a href="#postcreateworldaction" class="header-anchor">#</a> <code>PostCreateWorldAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::EducationLessonAction PostCreateWorldAction;
+
+</code></pre></div><h3 id="pushnotificationtype"><a href="#pushnotificationtype" class="header-anchor">#</a> <code>PushNotificationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace PushNotificationType;
+
+</code></pre></div><h3 id="playstatus"><a href="#playstatus" class="header-anchor">#</a> <code>PlayStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayStatus : __int32
+{
+  LoginSuccess = 0x0,
+  LoginFailed_ClientOld = 0x1,
+  LoginFailed_ServerOld = 0x2,
+  PlayerSpawn = 0x3,
+  LoginFailed_InvalidTenant = 0x4,
+  LoginFailed_EditionMismatchEduToVanilla = 0x5,
+  LoginFailed_EditionMismatchVanillaToEdu = 0x6,
+  LoginFailed_ServerFullSubClient = 0x7,
+};
+
+</code></pre></div><h3 id="positiontrackingdbserverbroadcastpacket-action"><a href="#positiontrackingdbserverbroadcastpacket-action" class="header-anchor">#</a> <code>PositionTrackingDBServerBroadcastPacket::Action</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef RealmsAllowListScreenController::SearchState PositionTrackingDBServerBroadcastPacket::Action;
+
+</code></pre></div><h3 id="positiontrackingdbclientrequestpacket-action"><a href="#positiontrackingdbclientrequestpacket-action" class="header-anchor">#</a> <code>PositionTrackingDBClientRequestPacket::Action</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PositionTrackingDBClientRequestPacket::Action : __int8
+{
+  Query = 0x0,
+};
+
+</code></pre></div><h3 id="packetviolationseverity"><a href="#packetviolationseverity" class="header-anchor">#</a> <code>PacketViolationSeverity</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace PacketViolationSeverity;
+
+</code></pre></div><h3 id="packetviolationtype"><a href="#packetviolationtype" class="header-anchor">#</a> <code>PacketViolationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace PacketViolationType;
+
+</code></pre></div><h3 id="particlesystem-particleappearancebillboardbasecomponent-directionsettings-mode"><a href="#particlesystem-particleappearancebillboardbasecomponent-directionsettings-mode" class="header-anchor">#</a> <code>ParticleSystem::ParticleAppearanceBillboardBaseComponent::DirectionSettings::Mode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PlayerPermissionLevel ParticleSystem::ParticleAppearanceBillboardBaseComponent::DirectionSettings::Mode;
+
+</code></pre></div><h3 id="particlesystem-particlevisualeffectevent-particleeffecttype"><a href="#particlesystem-particlevisualeffectevent-particleeffecttype" class="header-anchor">#</a> <code>ParticleSystem::ParticleVisualEffectEvent::ParticleEffectType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ParticleSystem::ParticleVisualEffectEvent::ParticleEffectType;
+
+</code></pre></div><h3 id="projectilecomponent-eaxis"><a href="#projectilecomponent-eaxis" class="header-anchor">#</a> <code>ProjectileComponent::EAxis</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent ProjectileComponent::EAxis;
+
+</code></pre></div><h3 id="personavalidationresponse-piececreationstatus"><a href="#personavalidationresponse-piececreationstatus" class="header-anchor">#</a> <code>PersonaValidationResponse::PieceCreationStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome PersonaValidationResponse::PieceCreationStatus;
+
+</code></pre></div><h3 id="potion-potionvariant"><a href="#potion-potionvariant" class="header-anchor">#</a> <code>Potion::PotionVariant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent Potion::PotionVariant;
+
+</code></pre></div><h3 id="permissioncommand-action"><a href="#permissioncommand-action" class="header-anchor">#</a> <code>PermissionCommand::Action</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PermissionCommand::Action : __int32
+{
+  List = 0x0,
+  Reload = 0x1,
+  Set = 0x2,
+};
+
+</code></pre></div><h3 id="permissioncommand-availablecommandpermissionpresets"><a href="#permissioncommand-availablecommandpermissionpresets" class="header-anchor">#</a> <code>PermissionCommand::AvailableCommandPermissionPresets</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PlayerPermissionLevel PermissionCommand::AvailableCommandPermissionPresets;
+
+</code></pre></div><h3 id="pandavariant"><a href="#pandavariant" class="header-anchor">#</a> <code>PandaVariant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Skeleton::SkeletonType PandaVariant;
+
+</code></pre></div><h3 id="profession"><a href="#profession" class="header-anchor">#</a> <code>Profession</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Profession : __int32
+{
+};
+
+</code></pre></div><h3 id="placetype"><a href="#placetype" class="header-anchor">#</a> <code>PlaceType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef mce::SwapEffect PlaceType;
+
+</code></pre></div><h3 id="positiontrackingdb-asyncoperationbase-internalstate"><a href="#positiontrackingdb-asyncoperationbase-internalstate" class="header-anchor">#</a> <code>PositionTrackingDB::AsyncOperationBase::InternalState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FlightingService::FetchState PositionTrackingDB::AsyncOperationBase::InternalState;
+
+</code></pre></div><h3 id="placeholder-states"><a href="#placeholder-states" class="header-anchor">#</a> <code>PLACEHOLDER_STATES</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PLACEHOLDER_STATES : __int32
+{
+  PS_NONE = 0x0,
+  PS_MARKED_FOR_OFFLINE_AVAILABILITY = 0x1,
+  PS_FULL_PRIMARY_STREAM_AVAILABLE = 0x2,
+  PS_CREATE_FILE_ACCESSIBLE = 0x4,
+  PS_CLOUDFILE_PLACEHOLDER = 0x8,
+  PS_DEFAULT = 0x7,
+  PS_ALL = 0xF,
+};
+
+</code></pre></div><h3 id="pka-flags"><a href="#pka-flags" class="header-anchor">#</a> <code>PKA_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PKA_FLAGS : __int32
+{
+  PKA_SET = 0x0,
+  PKA_APPEND = 0x1,
+  PKA_DELETE = 0x2,
+};
+
+</code></pre></div><h3 id="pytypetraits-char-const-unnamed-enum-type-desc"><a href="#pytypetraits-char-const-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; : __int32
+{
+  type_desc = 0x73,
+};
+
+</code></pre></div><h3 id="pytypetraits-float-unnamed-enum-type-desc"><a href="#pytypetraits-float-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;float&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;float&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="pytypetraits-object-unnamed-enum-type-desc"><a href="#pytypetraits-object-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;_object *&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;_object *&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="pytypetraits-int-unnamed-enum-type-desc"><a href="#pytypetraits-int-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;int&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;int&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="pytypetraits-unsigned-int-unnamed-enum-type-desc"><a href="#pytypetraits-unsigned-int-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;unsigned int&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;unsigned int&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="pytypetraits-pystringobject-const-unnamed-enum-type-desc"><a href="#pytypetraits-pystringobject-const-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;PyStringObject const *&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;PyStringObject const *&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="pytypetraits-long-unnamed-enum-type-desc"><a href="#pytypetraits-long-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;long&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;long&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="pytypetraits-unsigned-long-unnamed-enum-type-desc"><a href="#pytypetraits-unsigned-long-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;unsigned long&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;unsigned long&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="pytypetraits-double-unnamed-enum-type-desc"><a href="#pytypetraits-double-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;double&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;double&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="pytypetraits-char-unnamed-enum-type-desc"><a href="#pytypetraits-char-unnamed-enum-type-desc" class="header-anchor">#</a> <code>PyTypeTraits&lt;char&gt;::&lt;unnamed_enum_type_desc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PyTypeTraits&lt;char const *&gt;::&lt;unnamed_enum_type_desc&gt; PyTypeTraits&lt;char&gt;::&lt;unnamed_enum_type_desc&gt;;
+
+</code></pre></div><h3 id="patchupdater-state"><a href="#patchupdater-state" class="header-anchor">#</a> <code>PatchUpdater::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PatchUpdater::State : __int32
+{
+  INIT = 0x0,
+  UNCHECKED = 0x1,
+  CHECKING = 0x2,
+  NEED_UPDATE = 0x3,
+  UPDATING = 0x4,
+  UP_TO_DATE = 0x5,
+  UPDATE_FAILURE = 0x6,
+  UPDATE_ERROR = 0x7,
+  ENGINE_VERSION_ERROR = 0x8,
+  VERIFY = 0x9,
+  APPLY = 0xA,
+};
+
+</code></pre></div><h3 id="playfab-playfaberrorcode"><a href="#playfab-playfaberrorcode" class="header-anchor">#</a> <code>PlayFab::PlayFabErrorCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::PlayFabErrorCode : __int32
+{
+  PlayFabErrorHostnameNotFound = 0x1,
+  PlayFabErrorConnectionTimeout = 0x2,
+  PlayFabErrorConnectionRefused = 0x3,
+  PlayFabErrorSocketError = 0x4,
+  PlayFabErrorSuccess = 0x0,
+  PlayFabErrorUnkownError = 0x1F4,
+  PlayFabErrorInvalidParams = 0x3E8,
+  PlayFabErrorAccountNotFound = 0x3E9,
+  PlayFabErrorAccountBanned = 0x3EA,
+  PlayFabErrorInvalidUsernameOrPassword = 0x3EB,
+  PlayFabErrorInvalidTitleId = 0x3EC,
+  PlayFabErrorInvalidEmailAddress = 0x3ED,
+  PlayFabErrorEmailAddressNotAvailable = 0x3EE,
+  PlayFabErrorInvalidUsername = 0x3EF,
+  PlayFabErrorInvalidPassword = 0x3F0,
+  PlayFabErrorUsernameNotAvailable = 0x3F1,
+  PlayFabErrorInvalidSteamTicket = 0x3F2,
+  PlayFabErrorAccountAlreadyLinked = 0x3F3,
+  PlayFabErrorLinkedAccountAlreadyClaimed = 0x3F4,
+  PlayFabErrorInvalidFacebookToken = 0x3F5,
+  PlayFabErrorAccountNotLinked = 0x3F6,
+  PlayFabErrorFailedByPaymentProvider = 0x3F7,
+  PlayFabErrorCouponCodeNotFound = 0x3F8,
+  PlayFabErrorInvalidContainerItem = 0x3F9,
+  PlayFabErrorContainerNotOwned = 0x3FA,
+  PlayFabErrorKeyNotOwned = 0x3FB,
+  PlayFabErrorInvalidItemIdInTable = 0x3FC,
+  PlayFabErrorInvalidReceipt = 0x3FD,
+  PlayFabErrorReceiptAlreadyUsed = 0x3FE,
+  PlayFabErrorReceiptCancelled = 0x3FF,
+  PlayFabErrorGameNotFound = 0x400,
+  PlayFabErrorGameModeNotFound = 0x401,
+  PlayFabErrorInvalidGoogleToken = 0x402,
+  PlayFabErrorUserIsNotPartOfDeveloper = 0x403,
+  PlayFabErrorInvalidTitleForDeveloper = 0x404,
+  PlayFabErrorTitleNameConflicts = 0x405,
+  PlayFabErrorUserisNotValid = 0x406,
+  PlayFabErrorValueAlreadyExists = 0x407,
+  PlayFabErrorBuildNotFound = 0x408,
+  PlayFabErrorPlayerNotInGame = 0x409,
+  PlayFabErrorInvalidTicket = 0x40A,
+  PlayFabErrorInvalidDeveloper = 0x40B,
+  PlayFabErrorInvalidOrderInfo = 0x40C,
+  PlayFabErrorRegistrationIncomplete = 0x40D,
+  PlayFabErrorInvalidPlatform = 0x40E,
+  PlayFabErrorUnknownError = 0x40F,
+  PlayFabErrorSteamApplicationNotOwned = 0x410,
+  PlayFabErrorWrongSteamAccount = 0x411,
+  PlayFabErrorTitleNotActivated = 0x412,
+  PlayFabErrorRegistrationSessionNotFound = 0x413,
+  PlayFabErrorNoSuchMod = 0x414,
+  PlayFabErrorFileNotFound = 0x415,
+  PlayFabErrorDuplicateEmail = 0x416,
+  PlayFabErrorItemNotFound = 0x417,
+  PlayFabErrorItemNotOwned = 0x418,
+  PlayFabErrorItemNotRecycleable = 0x419,
+  PlayFabErrorItemNotAffordable = 0x41A,
+  PlayFabErrorInvalidVirtualCurrency = 0x41B,
+  PlayFabErrorWrongVirtualCurrency = 0x41C,
+  PlayFabErrorWrongPrice = 0x41D,
+  PlayFabErrorNonPositiveValue = 0x41E,
+  PlayFabErrorInvalidRegion = 0x41F,
+  PlayFabErrorRegionAtCapacity = 0x420,
+  PlayFabErrorServerFailedToStart = 0x421,
+  PlayFabErrorNameNotAvailable = 0x422,
+  PlayFabErrorInsufficientFunds = 0x423,
+  PlayFabErrorInvalidDeviceID = 0x424,
+  PlayFabErrorInvalidPushNotificationToken = 0x425,
+  PlayFabErrorNoRemainingUses = 0x426,
+  PlayFabErrorInvalidPaymentProvider = 0x427,
+  PlayFabErrorPurchaseInitializationFailure = 0x428,
+  PlayFabErrorDuplicateUsername = 0x429,
+  PlayFabErrorInvalidBuyerInfo = 0x42A,
+  PlayFabErrorNoGameModeParamsSet = 0x42B,
+  PlayFabErrorBodyTooLarge = 0x42C,
+  PlayFabErrorReservedWordInBody = 0x42D,
+  PlayFabErrorInvalidTypeInBody = 0x42E,
+  PlayFabErrorInvalidRequest = 0x42F,
+  PlayFabErrorReservedEventName = 0x430,
+  PlayFabErrorInvalidUserStatistics = 0x431,
+  PlayFabErrorNotAuthenticated = 0x432,
+  PlayFabErrorStreamAlreadyExists = 0x433,
+  PlayFabErrorErrorCreatingStream = 0x434,
+  PlayFabErrorStreamNotFound = 0x435,
+  PlayFabErrorInvalidAccount = 0x436,
+  PlayFabErrorPurchaseDoesNotExist = 0x438,
+  PlayFabErrorInvalidPurchaseTransactionStatus = 0x439,
+  PlayFabErrorAPINotEnabledForGameClientAccess = 0x43A,
+  PlayFabErrorNoPushNotificationARNForTitle = 0x43B,
+  PlayFabErrorBuildAlreadyExists = 0x43C,
+  PlayFabErrorBuildPackageDoesNotExist = 0x43D,
+  PlayFabErrorCustomAnalyticsEventsNotEnabledForTitle = 0x43F,
+  PlayFabErrorInvalidSharedGroupId = 0x440,
+  PlayFabErrorNotAuthorized = 0x441,
+  PlayFabErrorMissingTitleGoogleProperties = 0x442,
+  PlayFabErrorInvalidItemProperties = 0x443,
+  PlayFabErrorInvalidPSNAuthCode = 0x444,
+  PlayFabErrorInvalidItemId = 0x445,
+  PlayFabErrorPushNotEnabledForAccount = 0x446,
+  PlayFabErrorPushServiceError = 0x447,
+  PlayFabErrorReceiptDoesNotContainInAppItems = 0x448,
+  PlayFabErrorReceiptContainsMultipleInAppItems = 0x449,
+  PlayFabErrorInvalidBundleID = 0x44A,
+  PlayFabErrorJavascriptException = 0x44B,
+  PlayFabErrorInvalidSessionTicket = 0x44C,
+  PlayFabErrorUnableToConnectToDatabase = 0x44D,
+  PlayFabErrorInternalServerError = 0x456,
+  PlayFabErrorInvalidReportDate = 0x457,
+  PlayFabErrorReportNotAvailable = 0x458,
+  PlayFabErrorDatabaseThroughputExceeded = 0x459,
+  PlayFabErrorInvalidGameTicket = 0x45B,
+  PlayFabErrorExpiredGameTicket = 0x45C,
+  PlayFabErrorGameTicketDoesNotMatchLobby = 0x45D,
+  PlayFabErrorLinkedDeviceAlreadyClaimed = 0x45E,
+  PlayFabErrorDeviceAlreadyLinked = 0x45F,
+  PlayFabErrorDeviceNotLinked = 0x460,
+  PlayFabErrorPartialFailure = 0x461,
+  PlayFabErrorPublisherNotSet = 0x462,
+  PlayFabErrorServiceUnavailable = 0x463,
+  PlayFabErrorVersionNotFound = 0x464,
+  PlayFabErrorRevisionNotFound = 0x465,
+  PlayFabErrorInvalidPublisherId = 0x466,
+  PlayFabErrorDownstreamServiceUnavailable = 0x467,
+  PlayFabErrorAPINotIncludedInTitleUsageTier = 0x468,
+  PlayFabErrorDAULimitExceeded = 0x469,
+  PlayFabErrorAPIRequestLimitExceeded = 0x46A,
+  PlayFabErrorInvalidAPIEndpoint = 0x46B,
+  PlayFabErrorBuildNotAvailable = 0x46C,
+  PlayFabErrorConcurrentEditError = 0x46D,
+  PlayFabErrorContentNotFound = 0x46E,
+  PlayFabErrorCharacterNotFound = 0x46F,
+  PlayFabErrorCloudScriptNotFound = 0x470,
+  PlayFabErrorContentQuotaExceeded = 0x471,
+  PlayFabErrorInvalidCharacterStatistics = 0x472,
+  PlayFabErrorPhotonNotEnabledForTitle = 0x473,
+  PlayFabErrorPhotonApplicationNotFound = 0x474,
+  PlayFabErrorPhotonApplicationNotAssociatedWithTitle = 0x475,
+  PlayFabErrorInvalidEmailOrPassword = 0x476,
+  PlayFabErrorFacebookAPIError = 0x477,
+  PlayFabErrorInvalidContentType = 0x478,
+  PlayFabErrorKeyLengthExceeded = 0x479,
+  PlayFabErrorDataLengthExceeded = 0x47A,
+  PlayFabErrorTooManyKeys = 0x47B,
+  PlayFabErrorFreeTierCannotHaveVirtualCurrency = 0x47C,
+  PlayFabErrorMissingAmazonSharedKey = 0x47D,
+  PlayFabErrorAmazonValidationError = 0x47E,
+  PlayFabErrorInvalidPSNIssuerId = 0x47F,
+  PlayFabErrorPSNInaccessible = 0x480,
+  PlayFabErrorExpiredAuthToken = 0x481,
+  PlayFabErrorFailedToGetEntitlements = 0x482,
+  PlayFabErrorFailedToConsumeEntitlement = 0x483,
+  PlayFabErrorTradeAcceptingUserNotAllowed = 0x484,
+  PlayFabErrorTradeInventoryItemIsAssignedToCharacter = 0x485,
+  PlayFabErrorTradeInventoryItemIsBundle = 0x486,
+  PlayFabErrorTradeStatusNotValidForCancelling = 0x487,
+  PlayFabErrorTradeStatusNotValidForAccepting = 0x488,
+  PlayFabErrorTradeDoesNotExist = 0x489,
+  PlayFabErrorTradeCancelled = 0x48A,
+  PlayFabErrorTradeAlreadyFilled = 0x48B,
+  PlayFabErrorTradeWaitForStatusTimeout = 0x48C,
+  PlayFabErrorTradeInventoryItemExpired = 0x48D,
+  PlayFabErrorTradeMissingOfferedAndAcceptedItems = 0x48E,
+  PlayFabErrorTradeAcceptedItemIsBundle = 0x48F,
+  PlayFabErrorTradeAcceptedItemIsStackable = 0x490,
+  PlayFabErrorTradeInventoryItemInvalidStatus = 0x491,
+  PlayFabErrorTradeAcceptedCatalogItemInvalid = 0x492,
+  PlayFabErrorTradeAllowedUsersInvalid = 0x493,
+  PlayFabErrorTradeInventoryItemDoesNotExist = 0x494,
+  PlayFabErrorTradeInventoryItemIsConsumed = 0x495,
+  PlayFabErrorTradeInventoryItemIsStackable = 0x496,
+  PlayFabErrorTradeAcceptedItemsMismatch = 0x497,
+  PlayFabErrorInvalidKongregateToken = 0x498,
+  PlayFabErrorFeatureNotConfiguredForTitle = 0x499,
+  PlayFabErrorNoMatchingCatalogItemForReceipt = 0x49A,
+  PlayFabErrorInvalidCurrencyCode = 0x49B,
+  PlayFabErrorNoRealMoneyPriceForCatalogItem = 0x49C,
+  PlayFabErrorTradeInventoryItemIsNotTradable = 0x49D,
+  PlayFabErrorTradeAcceptedCatalogItemIsNotTradable = 0x49E,
+  PlayFabErrorUsersAlreadyFriends = 0x49F,
+  PlayFabErrorLinkedIdentifierAlreadyClaimed = 0x4A0,
+  PlayFabErrorCustomIdNotLinked = 0x4A1,
+  PlayFabErrorTotalDataSizeExceeded = 0x4A2,
+  PlayFabErrorDeleteKeyConflict = 0x4A3,
+  PlayFabErrorInvalidXboxLiveToken = 0x4A4,
+  PlayFabErrorExpiredXboxLiveToken = 0x4A5,
+  PlayFabErrorResettableStatisticVersionRequired = 0x4A6,
+  PlayFabErrorNotAuthorizedByTitle = 0x4A7,
+  PlayFabErrorNoPartnerEnabled = 0x4A8,
+  PlayFabErrorInvalidPartnerResponse = 0x4A9,
+  PlayFabErrorAPINotEnabledForGameServerAccess = 0x4AA,
+  PlayFabErrorStatisticNotFound = 0x4AB,
+  PlayFabErrorStatisticNameConflict = 0x4AC,
+  PlayFabErrorStatisticVersionClosedForWrites = 0x4AD,
+  PlayFabErrorStatisticVersionInvalid = 0x4AE,
+  PlayFabErrorAPIClientRequestRateLimitExceeded = 0x4AF,
+  PlayFabErrorInvalidJSONContent = 0x4B0,
+  PlayFabErrorInvalidDropTable = 0x4B1,
+  PlayFabErrorStatisticVersionAlreadyIncrementedForScheduledInterval = 0x4B2,
+  PlayFabErrorStatisticCountLimitExceeded = 0x4B3,
+  PlayFabErrorStatisticVersionIncrementRateExceeded = 0x4B4,
+  PlayFabErrorContainerKeyInvalid = 0x4B5,
+  PlayFabErrorCloudScriptExecutionTimeLimitExceeded = 0x4B6,
+  PlayFabErrorNoWritePermissionsForEvent = 0x4B7,
+  PlayFabErrorCloudScriptFunctionArgumentSizeExceeded = 0x4B8,
+  PlayFabErrorCloudScriptAPIRequestCountExceeded = 0x4B9,
+  PlayFabErrorCloudScriptAPIRequestError = 0x4BA,
+  PlayFabErrorCloudScriptHTTPRequestError = 0x4BB,
+  PlayFabErrorInsufficientGuildRole = 0x4BC,
+  PlayFabErrorGuildNotFound = 0x4BD,
+  PlayFabErrorOverLimit = 0x4BE,
+  PlayFabErrorEventNotFound = 0x4BF,
+  PlayFabErrorInvalidEventField = 0x4C0,
+  PlayFabErrorInvalidEventName = 0x4C1,
+  PlayFabErrorCatalogNotConfigured = 0x4C2,
+  PlayFabErrorOperationNotSupportedForPlatform = 0x4C3,
+  PlayFabErrorSegmentNotFound = 0x4C4,
+  PlayFabErrorStoreNotFound = 0x4C5,
+  PlayFabErrorInvalidStatisticName = 0x4C6,
+  PlayFabErrorTitleNotQualifiedForLimit = 0x4C7,
+  PlayFabErrorInvalidServiceLimitLevel = 0x4C8,
+  PlayFabErrorServiceLimitLevelInTransition = 0x4C9,
+  PlayFabErrorCouponAlreadyRedeemed = 0x4CA,
+  PlayFabErrorGameServerBuildSizeLimitExceeded = 0x4CB,
+  PlayFabErrorGameServerBuildCountLimitExceeded = 0x4CC,
+  PlayFabErrorVirtualCurrencyCountLimitExceeded = 0x4CD,
+  PlayFabErrorVirtualCurrencyCodeExists = 0x4CE,
+  PlayFabErrorTitleNewsItemCountLimitExceeded = 0x4CF,
+  PlayFabErrorInvalidTwitchToken = 0x4D0,
+  PlayFabErrorTwitchResponseError = 0x4D1,
+  PlayFabErrorProfaneDisplayName = 0x4D2,
+  PlayFabErrorUserAlreadyAdded = 0x4D3,
+  PlayFabErrorInvalidVirtualCurrencyCode = 0x4D4,
+  PlayFabErrorVirtualCurrencyCannotBeDeleted = 0x4D5,
+  PlayFabErrorIdentifierAlreadyClaimed = 0x4D6,
+  PlayFabErrorIdentifierNotLinked = 0x4D7,
+  PlayFabErrorInvalidContinuationToken = 0x4D8,
+  PlayFabErrorExpiredContinuationToken = 0x4D9,
+  PlayFabErrorInvalidSegment = 0x4DA,
+  PlayFabErrorInvalidSessionId = 0x4DB,
+  PlayFabErrorSessionLogNotFound = 0x4DC,
+  PlayFabErrorInvalidSearchTerm = 0x4DD,
+  PlayFabErrorTwoFactorAuthenticationTokenRequired = 0x4DE,
+  PlayFabErrorGameServerHostCountLimitExceeded = 0x4DF,
+  PlayFabErrorPlayerTagCountLimitExceeded = 0x4E0,
+  PlayFabErrorRequestAlreadyRunning = 0x4E1,
+  PlayFabErrorActionGroupNotFound = 0x4E2,
+  PlayFabErrorMaximumSegmentBulkActionJobsRunning = 0x4E3,
+  PlayFabErrorNoActionsOnPlayersInSegmentJob = 0x4E4,
+  PlayFabErrorDuplicateStatisticName = 0x4E5,
+  PlayFabErrorScheduledTaskNameConflict = 0x4E6,
+  PlayFabErrorScheduledTaskCreateConflict = 0x4E7,
+  PlayFabErrorInvalidScheduledTaskName = 0x4E8,
+  PlayFabErrorInvalidTaskSchedule = 0x4E9,
+  PlayFabErrorSteamNotEnabledForTitle = 0x4EA,
+  PlayFabErrorLimitNotAnUpgradeOption = 0x4EB,
+  PlayFabErrorNoSecretKeyEnabledForCloudScript = 0x4EC,
+  PlayFabErrorTaskNotFound = 0x4ED,
+  PlayFabErrorTaskInstanceNotFound = 0x4EE,
+  PlayFabErrorInvalidIdentityProviderId = 0x4EF,
+  PlayFabErrorMisconfiguredIdentityProvider = 0x4F0,
+  PlayFabErrorInvalidScheduledTaskType = 0x4F1,
+  PlayFabErrorBillingInformationRequired = 0x4F2,
+  PlayFabErrorLimitedEditionItemUnavailable = 0x4F3,
+  PlayFabErrorInvalidAdPlacementAndReward = 0x4F4,
+  PlayFabErrorAllAdPlacementViewsAlreadyConsumed = 0x4F5,
+  PlayFabErrorGoogleOAuthNotConfiguredForTitle = 0x4F6,
+  PlayFabErrorGoogleOAuthError = 0x4F7,
+  PlayFabErrorUserNotFriend = 0x4F8,
+  PlayFabErrorInvalidSignature = 0x4F9,
+  PlayFabErrorInvalidPublicKey = 0x4FA,
+  PlayFabErrorGoogleOAuthNoIdTokenIncludedInResponse = 0x4FB,
+  PlayFabErrorStatisticUpdateInProgress = 0x4FC,
+  PlayFabErrorLeaderboardVersionNotAvailable = 0x4FD,
+  PlayFabErrorStatisticAlreadyHasPrizeTable = 0x4FF,
+  PlayFabErrorPrizeTableHasOverlappingRanks = 0x500,
+  PlayFabErrorPrizeTableHasMissingRanks = 0x501,
+  PlayFabErrorPrizeTableRankStartsAtZero = 0x502,
+  PlayFabErrorInvalidStatistic = 0x503,
+  PlayFabErrorExpressionParseFailure = 0x504,
+  PlayFabErrorExpressionInvokeFailure = 0x505,
+  PlayFabErrorExpressionTooLong = 0x506,
+  PlayFabErrorDataUpdateRateExceeded = 0x507,
+  PlayFabErrorRestrictedEmailDomain = 0x508,
+  PlayFabErrorEncryptionKeyDisabled = 0x509,
+  PlayFabErrorEncryptionKeyMissing = 0x50A,
+  PlayFabErrorEncryptionKeyBroken = 0x50B,
+  PlayFabErrorNoSharedSecretKeyConfigured = 0x50C,
+  PlayFabErrorSecretKeyNotFound = 0x50D,
+  PlayFabErrorPlayerSecretAlreadyConfigured = 0x50E,
+  PlayFabErrorAPIRequestsDisabledForTitle = 0x50F,
+  PlayFabErrorInvalidSharedSecretKey = 0x510,
+  PlayFabErrorPrizeTableHasNoRanks = 0x511,
+  PlayFabErrorProfileDoesNotExist = 0x512,
+  PlayFabErrorContentS3OriginBucketNotConfigured = 0x513,
+  PlayFabErrorInvalidEnvironmentForReceipt = 0x514,
+  PlayFabErrorEncryptedRequestNotAllowed = 0x515,
+  PlayFabErrorSignedRequestNotAllowed = 0x516,
+  PlayFabErrorRequestViewConstraintParamsNotAllowed = 0x517,
+  PlayFabErrorBadPartnerConfiguration = 0x518,
+  PlayFabErrorXboxBPCertificateFailure = 0x519,
+  PlayFabErrorXboxXASSExchangeFailure = 0x51A,
+  PlayFabErrorInvalidEntityId = 0x51B,
+  PlayFabErrorStatisticValueAggregationOverflow = 0x51C,
+  PlayFabErrorEmailMessageFromAddressIsMissing = 0x51D,
+  PlayFabErrorEmailMessageToAddressIsMissing = 0x51E,
+  PlayFabErrorSmtpServerAuthenticationError = 0x51F,
+  PlayFabErrorSmtpServerLimitExceeded = 0x520,
+  PlayFabErrorSmtpServerInsufficientStorage = 0x521,
+  PlayFabErrorSmtpServerCommunicationError = 0x522,
+  PlayFabErrorSmtpServerGeneralFailure = 0x523,
+  PlayFabErrorEmailClientTimeout = 0x524,
+  PlayFabErrorEmailClientCanceledTask = 0x525,
+  PlayFabErrorEmailTemplateMissing = 0x526,
+  PlayFabErrorInvalidHostForTitleId = 0x527,
+  PlayFabErrorEmailConfirmationTokenDoesNotExist = 0x528,
+  PlayFabErrorEmailConfirmationTokenExpired = 0x529,
+  PlayFabErrorAccountDeleted = 0x52A,
+  PlayFabErrorPlayerSecretNotConfigured = 0x52B,
+  PlayFabErrorInvalidSignatureTime = 0x52C,
+  PlayFabErrorNoContactEmailAddressFound = 0x52D,
+  PlayFabErrorInvalidAuthToken = 0x52E,
+  PlayFabErrorAuthTokenDoesNotExist = 0x52F,
+  PlayFabErrorAuthTokenExpired = 0x530,
+  PlayFabErrorAuthTokenAlreadyUsedToResetPassword = 0x531,
+  PlayFabErrorMembershipNameTooLong = 0x532,
+  PlayFabErrorMembershipNotFound = 0x533,
+  PlayFabErrorGoogleServiceAccountInvalid = 0x534,
+  PlayFabErrorGoogleServiceAccountParseFailure = 0x535,
+  PlayFabErrorEntityTokenMissing = 0x536,
+  PlayFabErrorEntityTokenInvalid = 0x537,
+  PlayFabErrorEntityTokenExpired = 0x538,
+  PlayFabErrorEntityTokenRevoked = 0x539,
+  PlayFabErrorInvalidProductForSubscription = 0x53A,
+  PlayFabErrorXboxInaccessible = 0x53B,
+  PlayFabErrorSubscriptionAlreadyTaken = 0x53C,
+  PlayFabErrorSmtpAddonNotEnabled = 0x53D,
+  PlayFabErrorAPIConcurrentRequestLimitExceeded = 0x53E,
+  PlayFabErrorXboxRejectedXSTSExchangeRequest = 0x53F,
+  PlayFabErrorVariableNotDefined = 0x540,
+  PlayFabErrorTemplateVersionNotDefined = 0x541,
+  PlayFabErrorFileTooLarge = 0x542,
+  PlayFabErrorTitleDeleted = 0x543,
+  PlayFabErrorTitleContainsUserAccounts = 0x544,
+  PlayFabErrorTitleDeletionPlayerCleanupFailure = 0x545,
+  PlayFabErrorEntityFileOperationPending = 0x546,
+  PlayFabErrorNoEntityFileOperationPending = 0x547,
+  PlayFabErrorEntityProfileVersionMismatch = 0x548,
+  PlayFabErrorTemplateVersionTooOld = 0x549,
+  PlayFabErrorMembershipDefinitionInUse = 0x54A,
+  PlayFabErrorPaymentPageNotConfigured = 0x54B,
+  PlayFabErrorFailedLoginAttemptRateLimitExceeded = 0x54C,
+  PlayFabErrorEntityBlockedByGroup = 0x54D,
+  PlayFabErrorRoleDoesNotExist = 0x54E,
+  PlayFabErrorEntityIsAlreadyMember = 0x54F,
+  PlayFabErrorDuplicateRoleId = 0x550,
+  PlayFabErrorGroupInvitationNotFound = 0x551,
+  PlayFabErrorGroupApplicationNotFound = 0x552,
+  PlayFabErrorOutstandingInvitationAcceptedInstead = 0x553,
+  PlayFabErrorOutstandingApplicationAcceptedInstead = 0x554,
+  PlayFabErrorRoleIsGroupDefaultMember = 0x555,
+  PlayFabErrorRoleIsGroupAdmin = 0x556,
+  PlayFabErrorRoleNameNotAvailable = 0x557,
+  PlayFabErrorGroupNameNotAvailable = 0x558,
+  PlayFabErrorEmailReportAlreadySent = 0x559,
+  PlayFabErrorEmailReportRecipientBlacklisted = 0x55A,
+  PlayFabErrorEventNamespaceNotAllowed = 0x55B,
+  PlayFabErrorEventEntityNotAllowed = 0x55C,
+  PlayFabErrorInvalidEntityType = 0x55D,
+  PlayFabErrorNullTokenResultFromAad = 0x55E,
+  PlayFabErrorInvalidTokenResultFromAad = 0x55F,
+  PlayFabErrorNoValidCertificateForAad = 0x560,
+  PlayFabErrorInvalidCertificateForAad = 0x561,
+  PlayFabErrorDuplicateDropTableId = 0x562,
+  PlayFabErrorMultiplayerServerError = 0x563,
+  PlayFabErrorMultiplayerServerTooManyRequests = 0x564,
+  PlayFabErrorMultiplayerServerNoContent = 0x565,
+  PlayFabErrorMultiplayerServerBadRequest = 0x566,
+  PlayFabErrorMultiplayerServerUnauthorized = 0x567,
+  PlayFabErrorMultiplayerServerForbidden = 0x568,
+  PlayFabErrorMultiplayerServerNotFound = 0x569,
+  PlayFabErrorMultiplayerServerConflict = 0x56A,
+  PlayFabErrorMultiplayerServerInternalServerError = 0x56B,
+  PlayFabErrorMultiplayerServerUnavailable = 0x56C,
+  PlayFabErrorExplicitContentDetected = 0x56D,
+  PlayFabErrorPIIContentDetected = 0x56E,
+  PlayFabErrorInvalidScheduledTaskParameter = 0x56F,
+  PlayFabErrorPerEntityEventRateLimitExceeded = 0x570,
+  PlayFabErrorTitleDefaultLanguageNotSet = 0x571,
+  PlayFabErrorEmailTemplateMissingDefaultVersion = 0x572,
+  PlayFabErrorFacebookInstantGamesIdNotLinked = 0x573,
+  PlayFabErrorInvalidFacebookInstantGamesSignature = 0x574,
+  PlayFabErrorFacebookInstantGamesAuthNotConfiguredForTitle = 0x575,
+  PlayFabErrorEntityProfileConstraintValidationFailed = 0x576,
+  PlayFabErrorTelemetryIngestionKeyPending = 0x577,
+  PlayFabErrorTelemetryIngestionKeyNotFound = 0x578,
+  PlayFabErrorStatisticTagRequired = 0x579,
+  PlayFabErrorStatisticTagInvalid = 0x57A,
+  PlayFabErrorDataIntegrityError = 0x57B,
+  PlayFabErrorVirtualCurrencyCannotBeSetToOlderVersion = 0x57C,
+  PlayFabErrorVirtualCurrencyMustBeWithinIntegerRange = 0x57D,
+  PlayFabErrorEmailTemplateInvalidSyntax = 0x57E,
+  PlayFabErrorEmailTemplateMissingCallback = 0x57F,
+  PlayFabErrorPushNotificationTemplateInvalidPayload = 0x580,
+  PlayFabErrorInvalidLocalizedPushNotificationLanguage = 0x581,
+  PlayFabErrorMissingLocalizedPushNotificationMessage = 0x582,
+  PlayFabErrorPushNotificationTemplateMissingPlatformPayload = 0x583,
+  PlayFabErrorPushNotificationTemplatePayloadContainsInvalidJson = 0x584,
+  PlayFabErrorPushNotificationTemplateContainsInvalidIosPayload = 0x585,
+  PlayFabErrorPushNotificationTemplateContainsInvalidAndroidPayload = 0x586,
+  PlayFabErrorPushNotificationTemplateIosPayloadMissingNotificationBody = 0x587,
+  PlayFabErrorPushNotificationTemplateAndroidPayloadMissingNotificationBody = 0x588,
+  PlayFabErrorPushNotificationTemplateNotFound = 0x589,
+  PlayFabErrorPushNotificationTemplateMissingDefaultVersion = 0x58A,
+  PlayFabErrorPushNotificationTemplateInvalidSyntax = 0x58B,
+  PlayFabErrorPushNotificationTemplateNoCustomPayloadForV1 = 0x58C,
+  PlayFabErrorNoLeaderboardForStatistic = 0x58D,
+  PlayFabErrorTitleNewsMissingDefaultLanguage = 0x58E,
+  PlayFabErrorTitleNewsNotFound = 0x58F,
+  PlayFabErrorTitleNewsDuplicateLanguage = 0x590,
+  PlayFabErrorTitleNewsMissingTitleOrBody = 0x591,
+  PlayFabErrorTitleNewsInvalidLanguage = 0x592,
+  PlayFabErrorEmailRecipientBlacklisted = 0x593,
+  PlayFabErrorInvalidGameCenterAuthRequest = 0x594,
+  PlayFabErrorGameCenterAuthenticationFailed = 0x595,
+  PlayFabErrorCannotEnablePartiesForTitle = 0x596,
+  PlayFabErrorPartyError = 0x597,
+  PlayFabErrorPartyRequests = 0x598,
+  PlayFabErrorPartyNoContent = 0x599,
+  PlayFabErrorPartyBadRequest = 0x59A,
+  PlayFabErrorPartyUnauthorized = 0x59B,
+  PlayFabErrorPartyForbidden = 0x59C,
+  PlayFabErrorPartyNotFound = 0x59D,
+  PlayFabErrorPartyConflict = 0x59E,
+  PlayFabErrorPartyInternalServerError = 0x59F,
+  PlayFabErrorPartyUnavailable = 0x5A0,
+  PlayFabErrorPartyTooManyRequests = 0x5A1,
+  PlayFabErrorPushNotificationTemplateMissingName = 0x5A2,
+  PlayFabErrorCannotEnableMultiplayerServersForTitle = 0x5A3,
+  PlayFabErrorWriteAttemptedDuringExport = 0x5A4,
+  PlayFabErrorMatchmakingEntityInvalid = 0x7D1,
+  PlayFabErrorMatchmakingPlayerAttributesInvalid = 0x7D2,
+  PlayFabErrorMatchmakingCreateTicketRequestMissing = 0x7D3,
+  PlayFabErrorMatchmakingCreateTicketCreatorMissing = 0x7D4,
+  PlayFabErrorMatchmakingCreateTicketCreatorIdMissing = 0x7D5,
+  PlayFabErrorMatchmakingCreateTicketMemberListMissing = 0x7D6,
+  PlayFabErrorMatchmakingCreateTicketGiveUpAfterInvalid = 0x7D7,
+  PlayFabErrorMatchmakingTicketIdMissing = 0x7D8,
+  PlayFabErrorMatchmakingMatchIdMissing = 0x7D9,
+  PlayFabErrorMatchmakingMatchIdIdMissing = 0x7DA,
+  PlayFabErrorMatchmakingQueueNameMissing = 0x7DB,
+  PlayFabErrorMatchmakingTitleIdMissing = 0x7DC,
+  PlayFabErrorMatchmakingTicketIdIdMissing = 0x7DD,
+  PlayFabErrorMatchmakingPlayerIdMissing = 0x7DE,
+  PlayFabErrorMatchmakingJoinTicketPlayerMissing = 0x7DF,
+  PlayFabErrorMatchmakingQueueConfigNotFound = 0x7E0,
+  PlayFabErrorMatchmakingMatchNotFound = 0x7E1,
+  PlayFabErrorMatchmakingTicketNotFound = 0x7E2,
+  PlayFabErrorMatchmakingCreateTicketServerIdentityInvalid = 0x7E3,
+  PlayFabErrorMatchmakingCreateTicketClientIdentityInvalid = 0x7E4,
+  PlayFabErrorMatchmakingGetTicketPlayerMismatch = 0x7E5,
+  PlayFabErrorMatchmakingJoinTicketServerIdentityInvalid = 0x7E6,
+  PlayFabErrorMatchmakingJoinTicketPlayerIdentityMismatch = 0x7E7,
+  PlayFabErrorMatchmakingCancelTicketServerIdentityInvalid = 0x7E8,
+  PlayFabErrorMatchmakingCancelTicketPlayerIdentityMismatch = 0x7E9,
+  PlayFabErrorMatchmakingGetMatchIdentityMismatch = 0x7EA,
+  PlayFabErrorMatchmakingPlayerIdentityMismatch = 0x7EB,
+  PlayFabErrorMatchmakingAlreadyJoinedTicket = 0x7EC,
+  PlayFabErrorMatchmakingTicketAlreadyCompleted = 0x7ED,
+  PlayFabErrorMatchmakingClientTimeout = 0x7EE,
+  PlayFabErrorMatchmakingQueueConfigInvalid = 0x7EF,
+  PlayFabErrorMatchmakingMemberProfileInvalid = 0x7F0,
+  PlayFabErrorNintendoSwitchDeviceIdNotLinked = 0x7F2,
+  PlayFabErrorMatchmakingNotEnabled = 0x7F3,
+  PlayFabErrorMatchmakingGetStatisticsIdentityInvalid = 0x7F4,
+  PlayFabErrorMatchmakingBucketOwnerNotFound = 0x7F5,
+  PlayFabErrorMatchmakingCancelAllTicketsUnauthorized = 0x7F9,
+  PlayFabErrorMatchmakingListTicketsUnauthorized = 0x7FA,
+  PlayFabErrorMatchmakingPlayerAttributesTooLarge = 0x7FB,
+  PlayFabErrorMatchmakingNumberOfPlayersInTicketTooLarge = 0x7FC,
+  PlayFabErrorMatchmakingMatchTotalAttributeIsNegative = 0x7FD,
+  PlayFabErrorMatchmakingAttributeTypeInvalid = 0x7FE,
+  PlayFabErrorMatchmakingMatchTotalAttributeTooLarge = 0x7FF,
+  PlayFabErrorMatchmakingMatchTotalAttributeSumTooLarge = 0x800,
+  PlayFabErrorMatchmakingTicketUnmatchable = 0x801,
+  PlayFabErrorMatchmakingCommonRegionMissing = 0x802,
+  PlayFabErrorMatchmakingLatencyMeasurementMissing = 0x803,
+  PlayFabErrorMatchmakingStatisticsNotFound = 0x804,
+  PlayFabErrorMatchmakingPlayerHasNotJoinedTicket = 0x805,
+  PlayFabErrorMatchmakingRateLimitExceeded = 0x806,
+  PlayFabErrorMatchmakingTicketMembershipLimitExceeded = 0x807,
+  PlayFabErrorTitleConfigNotFound = 0xBB9,
+  PlayFabErrorTitleConfigUpdateConflict = 0xBBA,
+  PlayFabErrorTitleConfigSerializationError = 0xBBB,
+  PlayFabErrorCatalogEntityInvalid = 0xFA1,
+  PlayFabErrorCatalogTitleIdMissing = 0xFA2,
+  PlayFabErrorCatalogPlayerIdMissing = 0xFA3,
+  PlayFabErrorCatalogClientIdentityInvalid = 0xFA4,
+  PlayFabErrorCatalogOneOrMoreFilesInvalid = 0xFA5,
+  PlayFabErrorCatalogItemMetadataInvalid = 0xFA6,
+  PlayFabErrorCatalogItemIdInvalid = 0xFA7,
+  PlayFabErrorCatalogSearchParameterInvalid = 0xFA8,
+  PlayFabErrorCatalogFeatureDisabled = 0xFA9,
+  PlayFabErrorCatalogConfigMissing = 0x1004,
+  PlayFabErrorCatalogConfigTooManyContentTypes = 0x1005,
+  PlayFabErrorCatalogConfigContentTypeTooLong = 0x1006,
+  PlayFabErrorCatalogConfigTooManyTags = 0x1007,
+  PlayFabErrorCatalogConfigTagTooLong = 0x1008,
+};
+
+</code></pre></div><h3 id="playfab-playfabeventtype"><a href="#playfab-playfabeventtype" class="header-anchor">#</a> <code>PlayFab::PlayFabEventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions PlayFab::PlayFabEventType;
+
+</code></pre></div><h3 id="playfab-emiteventresult"><a href="#playfab-emiteventresult" class="header-anchor">#</a> <code>PlayFab::EmitEventResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome PlayFab::EmitEventResult;
+
+</code></pre></div><h3 id="playfab-playfabeventbuffer-eventproducingresult"><a href="#playfab-playfabeventbuffer-eventproducingresult" class="header-anchor">#</a> <code>PlayFab::PlayFabEventBuffer::EventProducingResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome PlayFab::PlayFabEventBuffer::EventProducingResult;
+
+</code></pre></div><h3 id="playfab-playfabeventbuffer-eventconsumingresult"><a href="#playfab-playfabeventbuffer-eventconsumingresult" class="header-anchor">#</a> <code>PlayFab::PlayFabEventBuffer::EventConsumingResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome PlayFab::PlayFabEventBuffer::EventConsumingResult;
+
+</code></pre></div><h3 id="playfab-playfabplugincontract"><a href="#playfab-playfabplugincontract" class="header-anchor">#</a> <code>PlayFab::PlayFabPluginContract</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::PlayFabPluginContract : __int32
+{
+  PlayFab_Serializer = 0x0,
+  PlayFab_Transport = 0x1,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-currency"><a href="#playfab-clientmodels-currency" class="header-anchor">#</a> <code>PlayFab::ClientModels::Currency</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::Currency : __int32
+{
+  CurrencyAED = 0x0,
+  CurrencyAFN = 0x1,
+  CurrencyALL = 0x2,
+  CurrencyAMD = 0x3,
+  CurrencyANG = 0x4,
+  CurrencyAOA = 0x5,
+  CurrencyARS = 0x6,
+  CurrencyAUD = 0x7,
+  CurrencyAWG = 0x8,
+  CurrencyAZN = 0x9,
+  CurrencyBAM = 0xA,
+  CurrencyBBD = 0xB,
+  CurrencyBDT = 0xC,
+  CurrencyBGN = 0xD,
+  CurrencyBHD = 0xE,
+  CurrencyBIF = 0xF,
+  CurrencyBMD = 0x10,
+  CurrencyBND = 0x11,
+  CurrencyBOB = 0x12,
+  CurrencyBRL = 0x13,
+  CurrencyBSD = 0x14,
+  CurrencyBTN = 0x15,
+  CurrencyBWP = 0x16,
+  CurrencyBYR = 0x17,
+  CurrencyBZD = 0x18,
+  CurrencyCAD = 0x19,
+  CurrencyCDF = 0x1A,
+  CurrencyCHF = 0x1B,
+  CurrencyCLP = 0x1C,
+  CurrencyCNY = 0x1D,
+  CurrencyCOP = 0x1E,
+  CurrencyCRC = 0x1F,
+  CurrencyCUC = 0x20,
+  CurrencyCUP = 0x21,
+  CurrencyCVE = 0x22,
+  CurrencyCZK = 0x23,
+  CurrencyDJF = 0x24,
+  CurrencyDKK = 0x25,
+  CurrencyDOP = 0x26,
+  CurrencyDZD = 0x27,
+  CurrencyEGP = 0x28,
+  CurrencyERN = 0x29,
+  CurrencyETB = 0x2A,
+  CurrencyEUR = 0x2B,
+  CurrencyFJD = 0x2C,
+  CurrencyFKP = 0x2D,
+  CurrencyGBP = 0x2E,
+  CurrencyGEL = 0x2F,
+  CurrencyGGP = 0x30,
+  CurrencyGHS = 0x31,
+  CurrencyGIP = 0x32,
+  CurrencyGMD = 0x33,
+  CurrencyGNF = 0x34,
+  CurrencyGTQ = 0x35,
+  CurrencyGYD = 0x36,
+  CurrencyHKD = 0x37,
+  CurrencyHNL = 0x38,
+  CurrencyHRK = 0x39,
+  CurrencyHTG = 0x3A,
+  CurrencyHUF = 0x3B,
+  CurrencyIDR = 0x3C,
+  CurrencyILS = 0x3D,
+  CurrencyIMP = 0x3E,
+  CurrencyINR = 0x3F,
+  CurrencyIQD = 0x40,
+  CurrencyIRR = 0x41,
+  CurrencyISK = 0x42,
+  CurrencyJEP = 0x43,
+  CurrencyJMD = 0x44,
+  CurrencyJOD = 0x45,
+  CurrencyJPY = 0x46,
+  CurrencyKES = 0x47,
+  CurrencyKGS = 0x48,
+  CurrencyKHR = 0x49,
+  CurrencyKMF = 0x4A,
+  CurrencyKPW = 0x4B,
+  CurrencyKRW = 0x4C,
+  CurrencyKWD = 0x4D,
+  CurrencyKYD = 0x4E,
+  CurrencyKZT = 0x4F,
+  CurrencyLAK = 0x50,
+  CurrencyLBP = 0x51,
+  CurrencyLKR = 0x52,
+  CurrencyLRD = 0x53,
+  CurrencyLSL = 0x54,
+  CurrencyLYD = 0x55,
+  CurrencyMAD = 0x56,
+  CurrencyMDL = 0x57,
+  CurrencyMGA = 0x58,
+  CurrencyMKD = 0x59,
+  CurrencyMMK = 0x5A,
+  CurrencyMNT = 0x5B,
+  CurrencyMOP = 0x5C,
+  CurrencyMRO = 0x5D,
+  CurrencyMUR = 0x5E,
+  CurrencyMVR = 0x5F,
+  CurrencyMWK = 0x60,
+  CurrencyMXN = 0x61,
+  CurrencyMYR = 0x62,
+  CurrencyMZN = 0x63,
+  CurrencyNAD = 0x64,
+  CurrencyNGN = 0x65,
+  CurrencyNIO = 0x66,
+  CurrencyNOK = 0x67,
+  CurrencyNPR = 0x68,
+  CurrencyNZD = 0x69,
+  CurrencyOMR = 0x6A,
+  CurrencyPAB = 0x6B,
+  CurrencyPEN = 0x6C,
+  CurrencyPGK = 0x6D,
+  CurrencyPHP = 0x6E,
+  CurrencyPKR = 0x6F,
+  CurrencyPLN = 0x70,
+  CurrencyPYG = 0x71,
+  CurrencyQAR = 0x72,
+  CurrencyRON = 0x73,
+  CurrencyRSD = 0x74,
+  CurrencyRUB = 0x75,
+  CurrencyRWF = 0x76,
+  CurrencySAR = 0x77,
+  CurrencySBD = 0x78,
+  CurrencySCR = 0x79,
+  CurrencySDG = 0x7A,
+  CurrencySEK = 0x7B,
+  CurrencySGD = 0x7C,
+  CurrencySHP = 0x7D,
+  CurrencySLL = 0x7E,
+  CurrencySOS = 0x7F,
+  CurrencySPL = 0x80,
+  CurrencySRD = 0x81,
+  CurrencySTD = 0x82,
+  CurrencySVC = 0x83,
+  CurrencySYP = 0x84,
+  CurrencySZL = 0x85,
+  CurrencyTHB = 0x86,
+  CurrencyTJS = 0x87,
+  CurrencyTMT = 0x88,
+  CurrencyTND = 0x89,
+  CurrencyTOP = 0x8A,
+  CurrencyTRY = 0x8B,
+  CurrencyTTD = 0x8C,
+  CurrencyTVD = 0x8D,
+  CurrencyTWD = 0x8E,
+  CurrencyTZS = 0x8F,
+  CurrencyUAH = 0x90,
+  CurrencyUGX = 0x91,
+  CurrencyUSD = 0x92,
+  CurrencyUYU = 0x93,
+  CurrencyUZS = 0x94,
+  CurrencyVEF = 0x95,
+  CurrencyVND = 0x96,
+  CurrencyVUV = 0x97,
+  CurrencyWST = 0x98,
+  CurrencyXAF = 0x99,
+  CurrencyXCD = 0x9A,
+  CurrencyXDR = 0x9B,
+  CurrencyXOF = 0x9C,
+  CurrencyXPF = 0x9D,
+  CurrencyYER = 0x9E,
+  CurrencyZAR = 0x9F,
+  CurrencyZMW = 0xA0,
+  CurrencyZWD = 0xA1,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-countrycode"><a href="#playfab-clientmodels-countrycode" class="header-anchor">#</a> <code>PlayFab::ClientModels::CountryCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::CountryCode : __int32
+{
+  CountryCodeAF = 0x0,
+  CountryCodeAX = 0x1,
+  CountryCodeAL = 0x2,
+  CountryCodeDZ = 0x3,
+  CountryCodeAS = 0x4,
+  CountryCodeAD = 0x5,
+  CountryCodeAO = 0x6,
+  CountryCodeAI = 0x7,
+  CountryCodeAQ = 0x8,
+  CountryCodeAG = 0x9,
+  CountryCodeAR = 0xA,
+  CountryCodeAM = 0xB,
+  CountryCodeAW = 0xC,
+  CountryCodeAU = 0xD,
+  CountryCodeAT = 0xE,
+  CountryCodeAZ = 0xF,
+  CountryCodeBS = 0x10,
+  CountryCodeBH = 0x11,
+  CountryCodeBD = 0x12,
+  CountryCodeBB = 0x13,
+  CountryCodeBY = 0x14,
+  CountryCodeBE = 0x15,
+  CountryCodeBZ = 0x16,
+  CountryCodeBJ = 0x17,
+  CountryCodeBM = 0x18,
+  CountryCodeBT = 0x19,
+  CountryCodeBO = 0x1A,
+  CountryCodeBQ = 0x1B,
+  CountryCodeBA = 0x1C,
+  CountryCodeBW = 0x1D,
+  CountryCodeBV = 0x1E,
+  CountryCodeBR = 0x1F,
+  CountryCodeIO = 0x20,
+  CountryCodeBN = 0x21,
+  CountryCodeBG = 0x22,
+  CountryCodeBF = 0x23,
+  CountryCodeBI = 0x24,
+  CountryCodeKH = 0x25,
+  CountryCodeCM = 0x26,
+  CountryCodeCA = 0x27,
+  CountryCodeCV = 0x28,
+  CountryCodeKY = 0x29,
+  CountryCodeCF = 0x2A,
+  CountryCodeTD = 0x2B,
+  CountryCodeCL = 0x2C,
+  CountryCodeCN = 0x2D,
+  CountryCodeCX = 0x2E,
+  CountryCodeCC = 0x2F,
+  CountryCodeCO = 0x30,
+  CountryCodeKM = 0x31,
+  CountryCodeCG = 0x32,
+  CountryCodeCD = 0x33,
+  CountryCodeCK = 0x34,
+  CountryCodeCR = 0x35,
+  CountryCodeCI = 0x36,
+  CountryCodeHR = 0x37,
+  CountryCodeCU = 0x38,
+  CountryCodeCW = 0x39,
+  CountryCodeCY = 0x3A,
+  CountryCodeCZ = 0x3B,
+  CountryCodeDK = 0x3C,
+  CountryCodeDJ = 0x3D,
+  CountryCodeDM = 0x3E,
+  CountryCodeDO = 0x3F,
+  CountryCodeEC = 0x40,
+  CountryCodeEG = 0x41,
+  CountryCodeSV = 0x42,
+  CountryCodeGQ = 0x43,
+  CountryCodeER = 0x44,
+  CountryCodeEE = 0x45,
+  CountryCodeET = 0x46,
+  CountryCodeFK = 0x47,
+  CountryCodeFO = 0x48,
+  CountryCodeFJ = 0x49,
+  CountryCodeFI = 0x4A,
+  CountryCodeFR = 0x4B,
+  CountryCodeGF = 0x4C,
+  CountryCodePF = 0x4D,
+  CountryCodeTF = 0x4E,
+  CountryCodeGA = 0x4F,
+  CountryCodeGM = 0x50,
+  CountryCodeGE = 0x51,
+  CountryCodeDE = 0x52,
+  CountryCodeGH = 0x53,
+  CountryCodeGI = 0x54,
+  CountryCodeGR = 0x55,
+  CountryCodeGL = 0x56,
+  CountryCodeGD = 0x57,
+  CountryCodeGP = 0x58,
+  CountryCodeGU = 0x59,
+  CountryCodeGT = 0x5A,
+  CountryCodeGG = 0x5B,
+  CountryCodeGN = 0x5C,
+  CountryCodeGW = 0x5D,
+  CountryCodeGY = 0x5E,
+  CountryCodeHT = 0x5F,
+  CountryCodeHM = 0x60,
+  CountryCodeVA = 0x61,
+  CountryCodeHN = 0x62,
+  CountryCodeHK = 0x63,
+  CountryCodeHU = 0x64,
+  CountryCodeIS = 0x65,
+  CountryCodeIN = 0x66,
+  CountryCodeID = 0x67,
+  CountryCodeIR = 0x68,
+  CountryCodeIQ = 0x69,
+  CountryCodeIE = 0x6A,
+  CountryCodeIM = 0x6B,
+  CountryCodeIL = 0x6C,
+  CountryCodeIT = 0x6D,
+  CountryCodeJM = 0x6E,
+  CountryCodeJP = 0x6F,
+  CountryCodeJE = 0x70,
+  CountryCodeJO = 0x71,
+  CountryCodeKZ = 0x72,
+  CountryCodeKE = 0x73,
+  CountryCodeKI = 0x74,
+  CountryCodeKP = 0x75,
+  CountryCodeKR = 0x76,
+  CountryCodeKW = 0x77,
+  CountryCodeKG = 0x78,
+  CountryCodeLA = 0x79,
+  CountryCodeLV = 0x7A,
+  CountryCodeLB = 0x7B,
+  CountryCodeLS = 0x7C,
+  CountryCodeLR = 0x7D,
+  CountryCodeLY = 0x7E,
+  CountryCodeLI = 0x7F,
+  CountryCodeLT = 0x80,
+  CountryCodeLU = 0x81,
+  CountryCodeMO = 0x82,
+  CountryCodeMK = 0x83,
+  CountryCodeMG = 0x84,
+  CountryCodeMW = 0x85,
+  CountryCodeMY = 0x86,
+  CountryCodeMV = 0x87,
+  CountryCodeML = 0x88,
+  CountryCodeMT = 0x89,
+  CountryCodeMH = 0x8A,
+  CountryCodeMQ = 0x8B,
+  CountryCodeMR = 0x8C,
+  CountryCodeMU = 0x8D,
+  CountryCodeYT = 0x8E,
+  CountryCodeMX = 0x8F,
+  CountryCodeFM = 0x90,
+  CountryCodeMD = 0x91,
+  CountryCodeMC = 0x92,
+  CountryCodeMN = 0x93,
+  CountryCodeME = 0x94,
+  CountryCodeMS = 0x95,
+  CountryCodeMA = 0x96,
+  CountryCodeMZ = 0x97,
+  CountryCodeMM = 0x98,
+  CountryCodeNA = 0x99,
+  CountryCodeNR = 0x9A,
+  CountryCodeNP = 0x9B,
+  CountryCodeNL = 0x9C,
+  CountryCodeNC = 0x9D,
+  CountryCodeNZ = 0x9E,
+  CountryCodeNI = 0x9F,
+  CountryCodeNE = 0xA0,
+  CountryCodeNG = 0xA1,
+  CountryCodeNU = 0xA2,
+  CountryCodeNF = 0xA3,
+  CountryCodeMP = 0xA4,
+  CountryCodeNO = 0xA5,
+  CountryCodeOM = 0xA6,
+  CountryCodePK = 0xA7,
+  CountryCodePW = 0xA8,
+  CountryCodePS = 0xA9,
+  CountryCodePA = 0xAA,
+  CountryCodePG = 0xAB,
+  CountryCodePY = 0xAC,
+  CountryCodePE = 0xAD,
+  CountryCodePH = 0xAE,
+  CountryCodePN = 0xAF,
+  CountryCodePL = 0xB0,
+  CountryCodePT = 0xB1,
+  CountryCodePR = 0xB2,
+  CountryCodeQA = 0xB3,
+  CountryCodeRE = 0xB4,
+  CountryCodeRO = 0xB5,
+  CountryCodeRU = 0xB6,
+  CountryCodeRW = 0xB7,
+  CountryCodeBL = 0xB8,
+  CountryCodeSH = 0xB9,
+  CountryCodeKN = 0xBA,
+  CountryCodeLC = 0xBB,
+  CountryCodeMF = 0xBC,
+  CountryCodePM = 0xBD,
+  CountryCodeVC = 0xBE,
+  CountryCodeWS = 0xBF,
+  CountryCodeSM = 0xC0,
+  CountryCodeST = 0xC1,
+  CountryCodeSA = 0xC2,
+  CountryCodeSN = 0xC3,
+  CountryCodeRS = 0xC4,
+  CountryCodeSC = 0xC5,
+  CountryCodeSL = 0xC6,
+  CountryCodeSG = 0xC7,
+  CountryCodeSX = 0xC8,
+  CountryCodeSK = 0xC9,
+  CountryCodeSI = 0xCA,
+  CountryCodeSB = 0xCB,
+  CountryCodeSO = 0xCC,
+  CountryCodeZA = 0xCD,
+  CountryCodeGS = 0xCE,
+  CountryCodeSS = 0xCF,
+  CountryCodeES = 0xD0,
+  CountryCodeLK = 0xD1,
+  CountryCodeSD = 0xD2,
+  CountryCodeSR = 0xD3,
+  CountryCodeSJ = 0xD4,
+  CountryCodeSZ = 0xD5,
+  CountryCodeSE = 0xD6,
+  CountryCodeCH = 0xD7,
+  CountryCodeSY = 0xD8,
+  CountryCodeTW = 0xD9,
+  CountryCodeTJ = 0xDA,
+  CountryCodeTZ = 0xDB,
+  CountryCodeTH = 0xDC,
+  CountryCodeTL = 0xDD,
+  CountryCodeTG = 0xDE,
+  CountryCodeTK = 0xDF,
+  CountryCodeTO = 0xE0,
+  CountryCodeTT = 0xE1,
+  CountryCodeTN = 0xE2,
+  CountryCodeTR = 0xE3,
+  CountryCodeTM = 0xE4,
+  CountryCodeTC = 0xE5,
+  CountryCodeTV = 0xE6,
+  CountryCodeUG = 0xE7,
+  CountryCodeUA = 0xE8,
+  CountryCodeAE = 0xE9,
+  CountryCodeGB = 0xEA,
+  CountryCodeUS = 0xEB,
+  CountryCodeUM = 0xEC,
+  CountryCodeUY = 0xED,
+  CountryCodeUZ = 0xEE,
+  CountryCodeVU = 0xEF,
+  CountryCodeVE = 0xF0,
+  CountryCodeVN = 0xF1,
+  CountryCodeVG = 0xF2,
+  CountryCodeVI = 0xF3,
+  CountryCodeWF = 0xF4,
+  CountryCodeEH = 0xF5,
+  CountryCodeYE = 0xF6,
+  CountryCodeZM = 0xF7,
+  CountryCodeZW = 0xF8,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-subscriptionproviderstatus"><a href="#playfab-clientmodels-subscriptionproviderstatus" class="header-anchor">#</a> <code>PlayFab::ClientModels::SubscriptionProviderStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::SubscriptionProviderStatus : __int32
+{
+  SubscriptionProviderStatusNoError = 0x0,
+  SubscriptionProviderStatusCancelled = 0x1,
+  SubscriptionProviderStatusUnknownError = 0x2,
+  SubscriptionProviderStatusBillingError = 0x3,
+  SubscriptionProviderStatusProductUnavailable = 0x4,
+  SubscriptionProviderStatusCustomerDidNotAcceptPriceChange = 0x5,
+  SubscriptionProviderStatusFreeTrial = 0x6,
+  SubscriptionProviderStatusPaymentPending = 0x7,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-userorigination"><a href="#playfab-clientmodels-userorigination" class="header-anchor">#</a> <code>PlayFab::ClientModels::UserOrigination</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::UserOrigination : __int32
+{
+  UserOriginationOrganic = 0x0,
+  UserOriginationSteam = 0x1,
+  UserOriginationGoogle = 0x2,
+  UserOriginationAmazon = 0x3,
+  UserOriginationFacebook = 0x4,
+  UserOriginationKongregate = 0x5,
+  UserOriginationGamersFirst = 0x6,
+  UserOriginationUnknown = 0x7,
+  UserOriginationIOS = 0x8,
+  UserOriginationLoadTest = 0x9,
+  UserOriginationAndroid = 0xA,
+  UserOriginationPSN = 0xB,
+  UserOriginationGameCenter = 0xC,
+  UserOriginationCustomId = 0xD,
+  UserOriginationXboxLive = 0xE,
+  UserOriginationParse = 0xF,
+  UserOriginationTwitch = 0x10,
+  UserOriginationWindowsHello = 0x11,
+  UserOriginationServerCustomId = 0x12,
+  UserOriginationNintendoSwitchDeviceId = 0x13,
+  UserOriginationFacebookInstantGamesId = 0x14,
+  UserOriginationOpenIdConnect = 0x15,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-transactionstatus"><a href="#playfab-clientmodels-transactionstatus" class="header-anchor">#</a> <code>PlayFab::ClientModels::TransactionStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::TransactionStatus : __int32
+{
+  TransactionStatusCreateCart = 0x0,
+  TransactionStatusInit = 0x1,
+  TransactionStatusApproved = 0x2,
+  TransactionStatusSucceeded = 0x3,
+  TransactionStatusFailedByProvider = 0x4,
+  TransactionStatusDisputePending = 0x5,
+  TransactionStatusRefundPending = 0x6,
+  TransactionStatusRefunded = 0x7,
+  TransactionStatusRefundFailed = 0x8,
+  TransactionStatusChargedBack = 0x9,
+  TransactionStatusFailedByUber = 0xA,
+  TransactionStatusFailedByPlayFab = 0xB,
+  TransactionStatusRevoked = 0xC,
+  TransactionStatusTradePending = 0xD,
+  TransactionStatusTraded = 0xE,
+  TransactionStatusUpgraded = 0xF,
+  TransactionStatusStackPending = 0x10,
+  TransactionStatusStacked = 0x11,
+  TransactionStatusOther = 0x12,
+  TransactionStatusFailed = 0x13,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-matchmakestatus"><a href="#playfab-clientmodels-matchmakestatus" class="header-anchor">#</a> <code>PlayFab::ClientModels::MatchmakeStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::MatchmakeStatus : __int32
+{
+  MatchmakeStatusComplete = 0x0,
+  MatchmakeStatusWaiting = 0x1,
+  MatchmakeStatusGameNotFound = 0x2,
+  MatchmakeStatusNoAvailableSlots = 0x3,
+  MatchmakeStatusSessionClosed = 0x4,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-region"><a href="#playfab-clientmodels-region" class="header-anchor">#</a> <code>PlayFab::ClientModels::Region</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::Region : __int32
+{
+  RegionUSCentral = 0x0,
+  RegionUSEast = 0x1,
+  RegionEUWest = 0x2,
+  RegionSingapore = 0x3,
+  RegionJapan = 0x4,
+  RegionBrazil = 0x5,
+  RegionAustralia = 0x6,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-loginidentityprovider"><a href="#playfab-clientmodels-loginidentityprovider" class="header-anchor">#</a> <code>PlayFab::ClientModels::LoginIdentityProvider</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::LoginIdentityProvider : __int32
+{
+  LoginIdentityProviderUnknown = 0x0,
+  LoginIdentityProviderPlayFab = 0x1,
+  LoginIdentityProviderCustom = 0x2,
+  LoginIdentityProviderGameCenter = 0x3,
+  LoginIdentityProviderGooglePlay = 0x4,
+  LoginIdentityProviderSteam = 0x5,
+  LoginIdentityProviderXBoxLive = 0x6,
+  LoginIdentityProviderPSN = 0x7,
+  LoginIdentityProviderKongregate = 0x8,
+  LoginIdentityProviderFacebook = 0x9,
+  LoginIdentityProviderIOSDevice = 0xA,
+  LoginIdentityProviderAndroidDevice = 0xB,
+  LoginIdentityProviderTwitch = 0xC,
+  LoginIdentityProviderWindowsHello = 0xD,
+  LoginIdentityProviderGameServer = 0xE,
+  LoginIdentityProviderCustomServer = 0xF,
+  LoginIdentityProviderNintendoSwitch = 0x10,
+  LoginIdentityProviderFacebookInstantGames = 0x11,
+  LoginIdentityProviderOpenIdConnect = 0x12,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-continentcode"><a href="#playfab-clientmodels-continentcode" class="header-anchor">#</a> <code>PlayFab::ClientModels::ContinentCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::ContinentCode : __int32
+{
+  ContinentCodeAF = 0x0,
+  ContinentCodeAN = 0x1,
+  ContinentCodeAS = 0x2,
+  ContinentCodeEU = 0x3,
+  ContinentCodeNA = 0x4,
+  ContinentCodeOC = 0x5,
+  ContinentCodeSA = 0x6,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-sourcetype"><a href="#playfab-clientmodels-sourcetype" class="header-anchor">#</a> <code>PlayFab::ClientModels::SourceType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::SourceType : __int32
+{
+  SourceTypeAdmin = 0x0,
+  SourceTypeBackEnd = 0x1,
+  SourceTypeGameClient = 0x2,
+  SourceTypeGameServer = 0x3,
+  SourceTypePartner = 0x4,
+  SourceTypeCustom = 0x5,
+  SourceTypeAPI = 0x6,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-titleactivationstatus"><a href="#playfab-clientmodels-titleactivationstatus" class="header-anchor">#</a> <code>PlayFab::ClientModels::TitleActivationStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::TitleActivationStatus : __int32
+{
+  TitleActivationStatusNone = 0x0,
+  TitleActivationStatusActivatedTitleKey = 0x1,
+  TitleActivationStatusPendingSteam = 0x2,
+  TitleActivationStatusActivatedSteam = 0x3,
+  TitleActivationStatusRevokedSteam = 0x4,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-gameinstancestate"><a href="#playfab-clientmodels-gameinstancestate" class="header-anchor">#</a> <code>PlayFab::ClientModels::GameInstanceState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::GameInstanceState : __int32
+{
+  GameInstanceStateOpen = 0x0,
+  GameInstanceStateClosed = 0x1,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-pushnotificationplatform"><a href="#playfab-clientmodels-pushnotificationplatform" class="header-anchor">#</a> <code>PlayFab::ClientModels::PushNotificationPlatform</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::PushNotificationPlatform : __int32
+{
+  PushNotificationPlatformApplePushNotificationService = 0x0,
+  PushNotificationPlatformGoogleCloudMessaging = 0x1,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-tradestatus"><a href="#playfab-clientmodels-tradestatus" class="header-anchor">#</a> <code>PlayFab::ClientModels::TradeStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::TradeStatus : __int32
+{
+  TradeStatusInvalid = 0x0,
+  TradeStatusOpening = 0x1,
+  TradeStatusOpen = 0x2,
+  TradeStatusAccepting = 0x3,
+  TradeStatusAccepted = 0x4,
+  TradeStatusFilled = 0x5,
+  TradeStatusCancelled = 0x6,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-userdatapermission"><a href="#playfab-clientmodels-userdatapermission" class="header-anchor">#</a> <code>PlayFab::ClientModels::UserDataPermission</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::UserDataPermission : __int32
+{
+  UserDataPermissionPrivate = 0x0,
+  UserDataPermissionPublic = 0x1,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-cloudscriptrevisionoption"><a href="#playfab-clientmodels-cloudscriptrevisionoption" class="header-anchor">#</a> <code>PlayFab::ClientModels::CloudScriptRevisionOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::CloudScriptRevisionOption : __int32
+{
+  CloudScriptRevisionOptionLive = 0x0,
+  CloudScriptRevisionOptionLatest = 0x1,
+  CloudScriptRevisionOptionSpecific = 0x2,
+};
+
+</code></pre></div><h3 id="playfab-clientmodels-emailverificationstatus"><a href="#playfab-clientmodels-emailverificationstatus" class="header-anchor">#</a> <code>PlayFab::ClientModels::EmailVerificationStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ClientModels::EmailVerificationStatus : __int32
+{
+  EmailVerificationStatusUnverified = 0x0,
+  EmailVerificationStatusPending = 0x1,
+  EmailVerificationStatusConfirmed = 0x2,
+};
+
+</code></pre></div><h3 id="playfab-cloudscriptmodels-cloudscriptrevisionoption"><a href="#playfab-cloudscriptmodels-cloudscriptrevisionoption" class="header-anchor">#</a> <code>PlayFab::CloudScriptModels::CloudScriptRevisionOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PlayFab::ClientModels::CloudScriptRevisionOption PlayFab::CloudScriptModels::CloudScriptRevisionOption;
+
+</code></pre></div><h3 id="playfab-datamodels-operationtypes"><a href="#playfab-datamodels-operationtypes" class="header-anchor">#</a> <code>PlayFab::DataModels::OperationTypes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::DataModels::OperationTypes : __int32
+{
+  OperationTypesCreated = 0x0,
+  OperationTypesUpdated = 0x1,
+  OperationTypesDeleted = 0x2,
+  OperationTypesNone = 0x3,
+};
+
+</code></pre></div><h3 id="playfab-eventpipelinekey"><a href="#playfab-eventpipelinekey" class="header-anchor">#</a> <code>PlayFab::EventPipelineKey</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CatalogProviderId PlayFab::EventPipelineKey;
+
+</code></pre></div><h3 id="playfab-groupsmodels-operationtypes"><a href="#playfab-groupsmodels-operationtypes" class="header-anchor">#</a> <code>PlayFab::GroupsModels::OperationTypes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PlayFab::DataModels::OperationTypes PlayFab::GroupsModels::OperationTypes;
+
+</code></pre></div><h3 id="playfab-multiplayermodels-azureregion"><a href="#playfab-multiplayermodels-azureregion" class="header-anchor">#</a> <code>PlayFab::MultiplayerModels::AzureRegion</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::MultiplayerModels::AzureRegion : __int32
+{
+  AzureRegionAustraliaEast = 0x0,
+  AzureRegionAustraliaSoutheast = 0x1,
+  AzureRegionBrazilSouth = 0x2,
+  AzureRegionCentralUs = 0x3,
+  AzureRegionEastAsia = 0x4,
+  AzureRegionEastUs = 0x5,
+  AzureRegionEastUs2 = 0x6,
+  AzureRegionJapanEast = 0x7,
+  AzureRegionJapanWest = 0x8,
+  AzureRegionNorthCentralUs = 0x9,
+  AzureRegionNorthEurope = 0xA,
+  AzureRegionSouthCentralUs = 0xB,
+  AzureRegionSoutheastAsia = 0xC,
+  AzureRegionWestEurope = 0xD,
+  AzureRegionWestUs = 0xE,
+  AzureRegionChinaEast2 = 0xF,
+  AzureRegionChinaNorth2 = 0x10,
+};
+
+</code></pre></div><h3 id="playfab-multiplayermodels-titlemultiplayerserverenabledstatus"><a href="#playfab-multiplayermodels-titlemultiplayerserverenabledstatus" class="header-anchor">#</a> <code>PlayFab::MultiplayerModels::TitleMultiplayerServerEnabledStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::MultiplayerModels::TitleMultiplayerServerEnabledStatus : __int32
+{
+  TitleMultiplayerServerEnabledStatusInitializing = 0x0,
+  TitleMultiplayerServerEnabledStatusEnabled = 0x1,
+  TitleMultiplayerServerEnabledStatusDisabled = 0x2,
+};
+
+</code></pre></div><h3 id="playfab-multiplayermodels-azurevmsize"><a href="#playfab-multiplayermodels-azurevmsize" class="header-anchor">#</a> <code>PlayFab::MultiplayerModels::AzureVmSize</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::MultiplayerModels::AzureVmSize : __int32
+{
+  AzureVmSizeStandard_D1_v2 = 0x0,
+  AzureVmSizeStandard_D2_v2 = 0x1,
+  AzureVmSizeStandard_D3_v2 = 0x2,
+  AzureVmSizeStandard_D4_v2 = 0x3,
+  AzureVmSizeStandard_D5_v2 = 0x4,
+  AzureVmSizeStandard_A1_v2 = 0x5,
+  AzureVmSizeStandard_A2_v2 = 0x6,
+  AzureVmSizeStandard_A4_v2 = 0x7,
+  AzureVmSizeStandard_A8_v2 = 0x8,
+  AzureVmSizeStandard_F1 = 0x9,
+  AzureVmSizeStandard_F2 = 0xA,
+  AzureVmSizeStandard_F4 = 0xB,
+  AzureVmSizeStandard_F8 = 0xC,
+  AzureVmSizeStandard_F16 = 0xD,
+  AzureVmSizeStandard_F2s_v2 = 0xE,
+  AzureVmSizeStandard_F4s_v2 = 0xF,
+  AzureVmSizeStandard_F8s_v2 = 0x10,
+  AzureVmSizeStandard_F16s_v2 = 0x11,
+  AzureVmSizeStandard_A1 = 0x12,
+  AzureVmSizeStandard_A2 = 0x13,
+  AzureVmSizeStandard_A3 = 0x14,
+  AzureVmSizeStandard_A4 = 0x15,
+};
+
+</code></pre></div><h3 id="playfab-multiplayermodels-protocoltype"><a href="#playfab-multiplayermodels-protocoltype" class="header-anchor">#</a> <code>PlayFab::MultiplayerModels::ProtocolType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::MultiplayerModels::ProtocolType : __int32
+{
+  ProtocolTypeTCP = 0x0,
+  ProtocolTypeUDP = 0x1,
+};
+
+</code></pre></div><h3 id="playfab-multiplayermodels-containerflavor"><a href="#playfab-multiplayermodels-containerflavor" class="header-anchor">#</a> <code>PlayFab::MultiplayerModels::ContainerFlavor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::MultiplayerModels::ContainerFlavor : __int32
+{
+  ContainerFlavorManagedWindowsServerCore = 0x0,
+  ContainerFlavorCustomLinux = 0x1,
+  ContainerFlavorManagedWindowsServerCorePreview = 0x2,
+};
+
+</code></pre></div><h3 id="playfab-profilesmodels-effecttype"><a href="#playfab-profilesmodels-effecttype" class="header-anchor">#</a> <code>PlayFab::ProfilesModels::EffectType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PlayFab::ProfilesModels::EffectType : __int32
+{
+  EffectTypeAllow = 0x0,
+  EffectTypeDeny = 0x1,
+};
+
+</code></pre></div><h3 id="playfab-profilesmodels-operationtypes"><a href="#playfab-profilesmodels-operationtypes" class="header-anchor">#</a> <code>PlayFab::ProfilesModels::OperationTypes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PlayFab::DataModels::OperationTypes PlayFab::ProfilesModels::OperationTypes;
+
+</code></pre></div><h3 id="ps-dict-keys"><a href="#ps-dict-keys" class="header-anchor">#</a> <code>PS_Dict_Keys_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PS_Dict_Keys_ : __int32
+{
+  PS_DICT_FONT_TYPE = 0x0,
+  PS_DICT_FONT_MATRIX = 0x1,
+  PS_DICT_FONT_BBOX = 0x2,
+  PS_DICT_PAINT_TYPE = 0x3,
+  PS_DICT_FONT_NAME = 0x4,
+  PS_DICT_UNIQUE_ID = 0x5,
+  PS_DICT_NUM_CHAR_STRINGS = 0x6,
+  PS_DICT_CHAR_STRING_KEY = 0x7,
+  PS_DICT_CHAR_STRING = 0x8,
+  PS_DICT_ENCODING_TYPE = 0x9,
+  PS_DICT_ENCODING_ENTRY = 0xA,
+  PS_DICT_NUM_SUBRS = 0xB,
+  PS_DICT_SUBR = 0xC,
+  PS_DICT_STD_HW = 0xD,
+  PS_DICT_STD_VW = 0xE,
+  PS_DICT_NUM_BLUE_VALUES = 0xF,
+  PS_DICT_BLUE_VALUE = 0x10,
+  PS_DICT_BLUE_FUZZ = 0x11,
+  PS_DICT_NUM_OTHER_BLUES = 0x12,
+  PS_DICT_OTHER_BLUE = 0x13,
+  PS_DICT_NUM_FAMILY_BLUES = 0x14,
+  PS_DICT_FAMILY_BLUE = 0x15,
+  PS_DICT_NUM_FAMILY_OTHER_BLUES = 0x16,
+  PS_DICT_FAMILY_OTHER_BLUE = 0x17,
+  PS_DICT_BLUE_SCALE = 0x18,
+  PS_DICT_BLUE_SHIFT = 0x19,
+  PS_DICT_NUM_STEM_SNAP_H = 0x1A,
+  PS_DICT_STEM_SNAP_H = 0x1B,
+  PS_DICT_NUM_STEM_SNAP_V = 0x1C,
+  PS_DICT_STEM_SNAP_V = 0x1D,
+  PS_DICT_FORCE_BOLD = 0x1E,
+  PS_DICT_RND_STEM_UP = 0x1F,
+  PS_DICT_MIN_FEATURE = 0x20,
+  PS_DICT_LEN_IV = 0x21,
+  PS_DICT_PASSWORD = 0x22,
+  PS_DICT_LANGUAGE_GROUP = 0x23,
+  PS_DICT_VERSION = 0x24,
+  PS_DICT_NOTICE = 0x25,
+  PS_DICT_FULL_NAME = 0x26,
+  PS_DICT_FAMILY_NAME = 0x27,
+  PS_DICT_WEIGHT = 0x28,
+  PS_DICT_IS_FIXED_PITCH = 0x29,
+  PS_DICT_UNDERLINE_POSITION = 0x2A,
+  PS_DICT_UNDERLINE_THICKNESS = 0x2B,
+  PS_DICT_FS_TYPE = 0x2C,
+  PS_DICT_ITALIC_ANGLE = 0x2D,
+  PS_DICT_MAX = 0x2D,
+};
+
+</code></pre></div><h3 id="ps-hint-type"><a href="#ps-hint-type" class="header-anchor">#</a> <code>PS_Hint_Type_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum PS_Hint_Type_ : __int32
+{
+  PS_HINT_TYPE_1 = 0x1,
+  PS_HINT_TYPE_2 = 0x2,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/O.html" class="prev">
+        O
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/R.html">
+        R
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/78.0e00fef4.js" defer></script>
+  </body>
+</html>

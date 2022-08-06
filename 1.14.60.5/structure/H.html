@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>H | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/40.6322a006.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" aria-current="page" class="active sidebar-link">H</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="h"><a href="#h" class="header-anchor">#</a> H</h1> <h3 id="hashedstring"><a href="#hashedstring" class="header-anchor">#</a> <code>HashedString</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>HashType64</code></td> <td>mStrHash</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mStr</td></tr></tbody></table> <h3 id="hellspringfeature"><a href="#hellspringfeature" class="header-anchor">#</a> <code>HellSpringFeature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>Feature</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr> <tr><td>32</td> <td>(1) <code>bool</code></td> <td>mInsideRock</td></tr></tbody></table> <h3 id="hellfirefeature"><a href="#hellfirefeature" class="header-anchor">#</a> <code>HellFireFeature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>Feature</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="herdlist"><a href="#herdlist" class="header-anchor">#</a> <code>HerdList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;MobSpawnHerdInfo&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="hoppercomponent"><a href="#hoppercomponent" class="header-anchor">#</a> <code>HopperComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Hopper</code></td> <td>baseclass_0</td></tr> <tr><td>12</td> <td>(12) <code>BlockPos</code></td> <td>mLastPosition</td></tr></tbody></table> <h3 id="hopper"><a href="#hopper" class="header-anchor">#</a> <code>Hopper</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mCooldownTime</td></tr> <tr><td>4</td> <td>(1) <code>bool</code></td> <td>mTransferedFromChestMinecart</td></tr> <tr><td>5</td> <td>(1) <code>bool</code></td> <td>mIsEntity</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mMoveItemSpeed</td></tr></tbody></table> <h3 id="hurtonconditioncomponent"><a href="#hurtonconditioncomponent" class="header-anchor">#</a> <code>HurtOnConditionComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="hitresult"><a href="#hitresult" class="header-anchor">#</a> <code>HitResult</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Vec3</code></td> <td>mStartPos</td></tr> <tr><td>12</td> <td>(12) <code>Vec3</code></td> <td>mRayDir</td></tr> <tr><td>24</td> <td>(4) <code>HitResultType</code></td> <td>mType</td></tr> <tr><td>28</td> <td>(1) <code>FacingID</code></td> <td>mFacing</td></tr> <tr><td>32</td> <td>(12) <code>BlockPos</code></td> <td>mBlock</td></tr> <tr><td>44</td> <td>(12) <code>Vec3</code></td> <td>mPos</td></tr> <tr><td>56</td> <td>(8) <code>Actor *</code></td> <td>mEntity</td></tr> <tr><td>64</td> <td>(1) <code>bool</code></td> <td>mIsHitLiquid</td></tr> <tr><td>65</td> <td>(1) <code>FacingID</code></td> <td>mLiquidFacing</td></tr> <tr><td>68</td> <td>(12) <code>BlockPos</code></td> <td>mLiquid</td></tr> <tr><td>80</td> <td>(12) <code>Vec3</code></td> <td>mLiquidPos</td></tr> <tr><td>92</td> <td>(1) <code>bool</code></td> <td>mIndirectHit</td></tr></tbody></table> <h3 id="hurtarmorpacket"><a href="#hurtarmorpacket" class="header-anchor">#</a> <code>HurtArmorPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(4) <code>int</code></td> <td>mDmg</td></tr></tbody></table> <h3 id="healabledefinition"><a href="#healabledefinition" class="header-anchor">#</a> <code>HealableDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;FeedItem&gt;</code></td> <td>mHealItems</td></tr> <tr><td>24</td> <td>(1) <code>bool</code></td> <td>mForceUse</td></tr> <tr><td>32</td> <td>(64) <code>ActorFilterGroup</code></td> <td>mFilter</td></tr></tbody></table> <h3 id="hidecomponent"><a href="#hidecomponent" class="header-anchor">#</a> <code>HideComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mIsInRaid</td></tr> <tr><td>1</td> <td>(1) <code>bool</code></td> <td>mReactToBell</td></tr></tbody></table> <h3 id="healablecomponent"><a href="#healablecomponent" class="header-anchor">#</a> <code>HealableComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="homecomponent"><a href="#homecomponent" class="header-anchor">#</a> <code>HomeComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>BlockPos</code></td> <td>mHomePos</td></tr> <tr><td>12</td> <td>(4) <code>DimensionType</code></td> <td>mDimensionId</td></tr></tbody></table> <h3 id="hugemushroomfeature"><a href="#hugemushroomfeature" class="header-anchor">#</a> <code>HugeMushroomFeature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>Feature</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(4) <code>int</code></td> <td>mForcedType</td></tr></tbody></table> <h3 id="hurtonconditiondefinition-deserializedata-b7c8591b4983496a0e79d8038f2bdad9"><a href="#hurtonconditiondefinition-deserializedata-b7c8591b4983496a0e79d8038f2bdad9" class="header-anchor">#</a> <code>HurtOnConditionDefinition::deserializeData::$B7C8591B4983496A0E79D8038F2BDAD9</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>HurtOnConditionDefinition *</code></td> <td>this</td></tr></tbody></table> <h3 id="heavyblock-animatetick-7ef7c94beab75c6cef4adfb99b570420"><a href="#heavyblock-animatetick-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>HeavyBlock::animateTick::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="hoppersystem"><a href="#hoppersystem" class="header-anchor">#</a> <code>HopperSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HopperSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="hurtonconditionsystem"><a href="#hurtonconditionsystem" class="header-anchor">#</a> <code>HurtOnConditionSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HurtOnConditionSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="hardcodedspawnarearegistry"><a href="#hardcodedspawnarearegistry" class="header-anchor">#</a> <code>HardcodedSpawnAreaRegistry</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct HardcodedSpawnAreaRegistry
+{
+  std::unordered_map&lt;HardcodedSpawnAreaType,std::vector&lt;MobSpawnerData&gt;&gt; mMap;
+};
+
+</code></pre></div><h3 id="hurtonconditiondefinition"><a href="#hurtonconditiondefinition" class="header-anchor">#</a> <code>HurtOnConditionDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct HurtOnConditionDefinition
+{
+  DamageConditionList mDamageConditions;
+};
+
+</code></pre></div><h3 id="heavyblock"><a href="#heavyblock" class="header-anchor">#</a> <code>HeavyBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HeavyBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="hudcontainermanagermodel"><a href="#hudcontainermanagermodel" class="header-anchor">#</a> <code>HudContainerManagerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HudContainerManagerModel : ContainerManagerModel
+{
+  HudContainerManagerModel::ItemInstanceVector mLastSlots;
+};
+
+</code></pre></div><h3 id="hidedescription"><a href="#hidedescription" class="header-anchor">#</a> <code>HideDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HideDescription : ComponentDescription
+{
+};
+
+</code></pre></div><h3 id="hoppercontainermanagermodel"><a href="#hoppercontainermanagermodel" class="header-anchor">#</a> <code>HopperContainerManagerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HopperContainerManagerModel : LevelContainerManagerModel
+{
+};
+
+</code></pre></div><h3 id="horsecontainermanagermodel"><a href="#horsecontainermanagermodel" class="header-anchor">#</a> <code>HorseContainerManagerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HorseContainerManagerModel : LevelContainerManagerModel
+{
+  std::weak_ptr&lt;ContainerModel&gt; mEquipContainerModel;
+};
+
+</code></pre></div><h3 id="homedefinition"><a href="#homedefinition" class="header-anchor">#</a> <code>HomeDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct HomeDefinition
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="horse"><a href="#horse" class="header-anchor">#</a> <code>Horse</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) Horse : Animal
+{
+  std::string layerTextureHashName;
+  std::string layerTextureLayers[3];
+  bool mHasReproduced;
+  float mEatAnim;
+  float mEatAnimO;
+  float mStandAnim;
+  float mStandAnimO;
+  float mMouthAnim;
+  float mMouthAnimO;
+  int mCountEating;
+  int mMouthCounter;
+  int mStandCounter;
+  int mSprintCounter;
+  int mGallopSoundCounter;
+  int mTailCounter;
+};
+
+</code></pre></div><h3 id="hangingactor"><a href="#hangingactor" class="header-anchor">#</a> <code>HangingActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HangingActor : Actor
+{
+  int mDir;
+  int mCheckInterval;
+};
+
+</code></pre></div><h3 id="hopperblockactor"><a href="#hopperblockactor" class="header-anchor">#</a> <code>HopperBlockActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HopperBlockActor : BlockActor, Container:1952, Hopper
+{
+  ItemStack mItems[5];
+  Tick mLastTick;
+};
+
+</code></pre></div><h3 id="hopmovecontrol"><a href="#hopmovecontrol" class="header-anchor">#</a> <code>HopMoveControl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HopMoveControl : MoveControl
+{
+  int mJumpDelayTicks;
+};
+
+</code></pre></div><h3 id="hovermovecontrol"><a href="#hovermovecontrol" class="header-anchor">#</a> <code>HoverMoveControl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HoverMoveControl : MoveControl
+{
+};
+
+</code></pre></div><h3 id="hoverpathnavigation"><a href="#hoverpathnavigation" class="header-anchor">#</a> <code>HoverPathNavigation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HoverPathNavigation : PathNavigation
+{
+  bool mCanPathFromAir;
+};
+
+</code></pre></div><h3 id="healthattributedelegate"><a href="#healthattributedelegate" class="header-anchor">#</a> <code>HealthAttributeDelegate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HealthAttributeDelegate : AttributeInstanceDelegate
+{
+  int32_t mTickCounter;
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="hovergoal"><a href="#hovergoal" class="header-anchor">#</a> <code>HoverGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HoverGoal : Goal
+{
+  Mob *mMob;
+  float mSpeedMultiplier;
+  Vec3 mStartPos;
+};
+
+</code></pre></div><h3 id="hurtbytargetgoal"><a href="#hurtbytargetgoal" class="header-anchor">#</a> <code>HurtByTargetGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HurtByTargetGoal : TargetGoal
+{
+};
+
+</code></pre></div><h3 id="hidegoal"><a href="#hidegoal" class="header-anchor">#</a> <code>HideGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HideGoal : MoveToPOIGoal
+{
+  __int16 mHideAttempts;
+};
+
+</code></pre></div><h3 id="holdgroundgoal"><a href="#holdgroundgoal" class="header-anchor">#</a> <code>HoldGroundGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HoldGroundGoal : Goal
+{
+  Mob *mMob;
+  TempEPtr&lt;Actor&gt; mLookAt;
+  float mHostileRadiusSqr;
+  bool mBroadcast;
+  float mBroadcastRange;
+  const DefinitionTrigger mWithinRangeEvent;
+  const DefinitionTrigger mHurtByTargetEvent;
+};
+
+</code></pre></div><h3 id="harvestfarmblockgoal"><a href="#harvestfarmblockgoal" class="header-anchor">#</a> <code>HarvestFarmBlockGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HarvestFarmBlockGoal : BaseMoveToBlockGoal
+{
+  bool mCanPlantStuff;
+  bool mWantsToReapStuff;
+  HarvestFarmBlockGoal::Task mCurrentTask;
+};
+
+</code></pre></div><h3 id="humanoidmonster"><a href="#humanoidmonster" class="header-anchor">#</a> <code>HumanoidMonster</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HumanoidMonster : Monster
+{
+};
+
+</code></pre></div><h3 id="hungerattributedelegate"><a href="#hungerattributedelegate" class="header-anchor">#</a> <code>HungerAttributeDelegate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HungerAttributeDelegate : AttributeInstanceDelegate
+{
+  int32_t mActionTickTimer;
+  int32_t mTickCounter;
+  float mLastFoodLevel;
+  Player *mPlayer;
+};
+
+</code></pre></div><h3 id="hurtownersubcomponent"><a href="#hurtownersubcomponent" class="header-anchor">#</a> <code>HurtOwnerSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) HurtOwnerSubcomponent : OnHitSubcomponent
+{
+  float mOwnerDamage;
+  bool mKnockback;
+  bool mIgnite;
+};
+
+</code></pre></div><h3 id="hudcontainermodel"><a href="#hudcontainermodel" class="header-anchor">#</a> <code>HudContainerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HudContainerModel : ContainerModel
+{
+  Player *mPlayer;
+};
+
+</code></pre></div><h3 id="hudcontainermanagermodel-iteminstancevector"><a href="#hudcontainermanagermodel-iteminstancevector" class="header-anchor">#</a> <code>HudContainerManagerModel::ItemInstanceVector</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;ContainerItemStack&gt; HudContainerManagerModel::ItemInstanceVector;
+
+</code></pre></div><h3 id="horsearmoritem"><a href="#horsearmoritem" class="header-anchor">#</a> <code>HorseArmorItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HorseArmorItem : Item
+{
+  const int mDefense;
+  const int mModelIndex;
+  HorseArmorItem::HorseArmorTier mTier;
+};
+
+</code></pre></div><h3 id="hatchetitem"><a href="#hatchetitem" class="header-anchor">#</a> <code>HatchetItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HatchetItem : DiggerItem
+{
+};
+
+</code></pre></div><h3 id="hoeitem"><a href="#hoeitem" class="header-anchor">#</a> <code>HoeItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HoeItem : Item
+{
+  Item::Tier mTier;
+};
+
+</code></pre></div><h3 id="hangingactoritem"><a href="#hangingactoritem" class="header-anchor">#</a> <code>HangingActorItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HangingActorItem : Item
+{
+  ActorType mEntityType;
+};
+
+</code></pre></div><h3 id="hillstransformationattributes"><a href="#hillstransformationattributes" class="header-anchor">#</a> <code>HillsTransformationAttributes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeightedBiomeAttributes&lt;HillsTransformation&gt; HillsTransformationAttributes;
+
+</code></pre></div><h3 id="hugemushroomblock"><a href="#hugemushroomblock" class="header-anchor">#</a> <code>HugeMushroomBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HugeMushroomBlock : BlockLegacy
+{
+  HugeMushroomBlock::Type mType;
+};
+
+</code></pre></div><h3 id="hopperblock"><a href="#hopperblock" class="header-anchor">#</a> <code>HopperBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HopperBlock : ActorBlock
+{
+};
+
+</code></pre></div><h3 id="hayblockblock"><a href="#hayblockblock" class="header-anchor">#</a> <code>HayBlockBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HayBlockBlock : RotatedPillarBlock
+{
+};
+
+</code></pre></div><h3 id="honeyblock"><a href="#honeyblock" class="header-anchor">#</a> <code>HoneyBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HoneyBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="honeycombblock"><a href="#honeycombblock" class="header-anchor">#</a> <code>HoneycombBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HoneycombBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="hopperdefinition"><a href="#hopperdefinition" class="header-anchor">#</a> <code>HopperDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct HopperDefinition
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="helpcommand"><a href="#helpcommand" class="header-anchor">#</a> <code>HelpCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) HelpCommand : Command
+{
+  std::string mCommand;
+  int mPage;
+};
+
+</code></pre></div><h3 id="horseequipcontainercontroller"><a href="#horseequipcontainercontroller" class="header-anchor">#</a> <code>HorseEquipContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj HorseEquipContainerController : ContainerController
+{
+  std::vector&lt;ItemInstance&gt; mAllowedSaddleItems;
+  std::vector&lt;ItemInstance&gt; mAllowedArmorItems;
+};
+
+</code></pre></div><h3 id="huffmanencodingtreenode"><a href="#huffmanencodingtreenode" class="header-anchor">#</a> <code>HuffmanEncodingTreeNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct HuffmanEncodingTreeNode
+{
+  unsigned __int8 value;
+  unsigned int weight;
+  HuffmanEncodingTreeNode *left;
+  HuffmanEncodingTreeNode *right;
+  HuffmanEncodingTreeNode *parent;
+};
+
+</code></pre></div><h3 id="hostent"><a href="#hostent" class="header-anchor">#</a> <code>hostent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct hostent
+{
+  char *h_name;
+  char **h_aliases;
+  int h_addrtype;
+  int h_length;
+  char **h_addr_list;
+};
+
+</code></pre></div><h3 id="hashedstring-stringhasher-const-char"><a href="#hashedstring-stringhasher-const-char" class="header-anchor">#</a> <code>HashedString::StringHasher&lt;const char *&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct HashedString::StringHasher&lt;const char *&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/G.html" class="prev">
+        G
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/I.html">
+        I
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/40.6322a006.js" defer></script>
+  </body>
+</html>

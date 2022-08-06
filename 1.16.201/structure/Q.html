@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Q | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/131.0c1d33fe.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/structure/A~1.html" class="sidebar-link">A~1</a></li><li><a href="/mcstructure/1.16.201/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/structure/B~1.html" class="sidebar-link">B~1</a></li><li><a href="/mcstructure/1.16.201/structure/B~2.html" class="sidebar-link">B~2</a></li><li><a href="/mcstructure/1.16.201/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/structure/C~1.html" class="sidebar-link">C~1</a></li><li><a href="/mcstructure/1.16.201/structure/C~2.html" class="sidebar-link">C~2</a></li><li><a href="/mcstructure/1.16.201/structure/C~3.html" class="sidebar-link">C~3</a></li><li><a href="/mcstructure/1.16.201/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/structure/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/structure/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/structure/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/structure/D~4.html" class="sidebar-link">D~4</a></li><li><a href="/mcstructure/1.16.201/structure/D~5.html" class="sidebar-link">D~5</a></li><li><a href="/mcstructure/1.16.201/structure/D~6.html" class="sidebar-link">D~6</a></li><li><a href="/mcstructure/1.16.201/structure/D~7.html" class="sidebar-link">D~7</a></li><li><a href="/mcstructure/1.16.201/structure/D~8.html" class="sidebar-link">D~8</a></li><li><a href="/mcstructure/1.16.201/structure/D~9.html" class="sidebar-link">D~9</a></li><li><a href="/mcstructure/1.16.201/structure/D~10.html" class="sidebar-link">D~10</a></li><li><a href="/mcstructure/1.16.201/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/structure/E~1.html" class="sidebar-link">E~1</a></li><li><a href="/mcstructure/1.16.201/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/structure/F~1.html" class="sidebar-link">F~1</a></li><li><a href="/mcstructure/1.16.201/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/structure/I~1.html" class="sidebar-link">I~1</a></li><li><a href="/mcstructure/1.16.201/structure/I~2.html" class="sidebar-link">I~2</a></li><li><a href="/mcstructure/1.16.201/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/structure/L~1.html" class="sidebar-link">L~1</a></li><li><a href="/mcstructure/1.16.201/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/structure/M~1.html" class="sidebar-link">M~1</a></li><li><a href="/mcstructure/1.16.201/structure/M~2.html" class="sidebar-link">M~2</a></li><li><a href="/mcstructure/1.16.201/structure/M~3.html" class="sidebar-link">M~3</a></li><li><a href="/mcstructure/1.16.201/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/structure/P~1.html" class="sidebar-link">P~1</a></li><li><a href="/mcstructure/1.16.201/structure/P~2.html" class="sidebar-link">P~2</a></li><li><a href="/mcstructure/1.16.201/structure/P~3.html" class="sidebar-link">P~3</a></li><li><a href="/mcstructure/1.16.201/structure/Q.html" aria-current="page" class="active sidebar-link">Q</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/structure/R~1.html" class="sidebar-link">R~1</a></li><li><a href="/mcstructure/1.16.201/structure/R~2.html" class="sidebar-link">R~2</a></li><li><a href="/mcstructure/1.16.201/structure/R~3.html" class="sidebar-link">R~3</a></li><li><a href="/mcstructure/1.16.201/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/structure/S~1.html" class="sidebar-link">S~1</a></li><li><a href="/mcstructure/1.16.201/structure/S~2.html" class="sidebar-link">S~2</a></li><li><a href="/mcstructure/1.16.201/structure/S~3.html" class="sidebar-link">S~3</a></li><li><a href="/mcstructure/1.16.201/structure/S~4.html" class="sidebar-link">S~4</a></li><li><a href="/mcstructure/1.16.201/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/structure/T~1.html" class="sidebar-link">T~1</a></li><li><a href="/mcstructure/1.16.201/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.16.201/structure/W~1.html" class="sidebar-link">W~1</a></li><li><a href="/mcstructure/1.16.201/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.16.201/structure/Z.html" class="sidebar-link">Z</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="q"><a href="#q" class="header-anchor">#</a> Q</h1> <h3 id="querymanifestdocument"><a href="#querymanifestdocument" class="header-anchor">#</a> <code>QueryManifestDocument</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(584) <code>CommonDocument</code></td> <td>mCommon</td></tr> <tr><td>584</td> <td>(24) <code>QueryManifestCustom</code></td> <td>mCustom</td></tr></tbody></table> <h3 id="querymanifestcustom"><a href="#querymanifestcustom" class="header-anchor">#</a> <code>QueryManifestCustom</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;std::shared_ptr&lt;StoreVisualStyle&gt;&gt;</code></td> <td>mStoreScreenLayout</td></tr></tbody></table> <h3 id="querydocument"><a href="#querydocument" class="header-anchor">#</a> <code>QueryDocument</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mContentTypes</td></tr> <tr><td>24</td> <td>(32) <code>std::string</code></td> <td>mSearchString</td></tr> <tr><td>56</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mOrTags</td></tr> <tr><td>80</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mAndTags</td></tr> <tr><td>104</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mNotTags</td></tr> <tr><td>128</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mRarityFilters</td></tr> <tr><td>152</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mPieceTypeFilters</td></tr> <tr><td>176</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mPieceTypeFilterExclusions</td></tr> <tr><td>200</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mProductIdOrder</td></tr> <tr><td>224</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mCreatorIds</td></tr> <tr><td>248</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mProductIdExclusions</td></tr> <tr><td>272</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mCreatorIdExclusions</td></tr> <tr><td>296</td> <td>(4) <code>int</code></td> <td>mItemLimit</td></tr> <tr><td>300</td> <td>(4) <code>int</code></td> <td>mTopCount</td></tr> <tr><td>304</td> <td>(32) <code>std::string</code></td> <td>mClientSort</td></tr> <tr><td>336</td> <td>(32) <code>std::string</code></td> <td>mSortBy</td></tr> <tr><td>368</td> <td>(32) <code>std::string</code></td> <td>mSortDirection</td></tr> <tr><td>400</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mUpsellQueryTags</td></tr> <tr><td>424</td> <td>(4) <code>int</code></td> <td>mCarouselRotationTime</td></tr></tbody></table> <h3 id="querypurchaseresult"><a href="#querypurchaseresult" class="header-anchor">#</a> <code>QueryPurchaseResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QueryPurchaseResult
+{
+  bool success;
+  std::vector&lt;PurchaseInfo&gt; purchaseInfo;
+};
+
+</code></pre></div><h3 id="querymanifestsearchresults"><a href="#querymanifestsearchresults" class="header-anchor">#</a> <code>QueryManifestSearchResults</code></h3> <div class="language- extra-class"><pre class="language-text"><code>const struct __cppobj QueryManifestSearchResults : CommonSearchResults
+{
+  std::vector&lt;QueryManifestDocument&gt; mDocuments;
+};
+
+</code></pre></div><h3 id="qos-object-hdr"><a href="#qos-object-hdr" class="header-anchor">#</a> <code>QOS_OBJECT_HDR</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct QOS_OBJECT_HDR
+{
+  unsigned int ObjectType;
+  unsigned int ObjectLength;
+};
+
+</code></pre></div><h3 id="queuedskinupdate"><a href="#queuedskinupdate" class="header-anchor">#</a> <code>QueuedSkinUpdate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QueuedSkinUpdate
+{
+  std::weak_ptr&lt;IClientInstance&gt; mClient;
+  const SerializedSkin mSkin;
+  mce::Image mImage;
+  mce::Image mCapeImage;
+  std::function&lt;void __cdecl(void)&gt; mGeoFinishedCallback;
+  mce::Image mBloomImage;
+};
+
+</code></pre></div><h3 id="quizscreencontroller"><a href="#quizscreencontroller" class="header-anchor">#</a> <code>QuizScreenController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController : MinecraftScreenController
+{
+  std::optional&lt;std::string &gt; mQuizUrl;
+  bool mQuizQueryInProgress;
+  bool mRefreshContent;
+  std::shared_ptr&lt;LessonProgressionService&gt; mLessonProgressionService;
+};
+
+</code></pre></div><h3 id="quizscreencontroller-vtbl"><a href="#quizscreencontroller-vtbl" class="header-anchor">#</a> <code>QuizScreenController_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ QuizScreenController_vtbl
+{
+  void (__fastcall *~IScreenController)(IScreenController *this);
+  ui::DirtyFlag (__fastcall *tick)(IScreenController *this);
+  ui::ViewRequest (__fastcall *handleEvent)(IScreenController *this, ScreenEvent *);
+  std::optional&lt;std::string &gt; *(__fastcall *getRoute)(IScreenController *this, std::optional&lt;std::string &gt; *result);
+  void (__fastcall *setScreenState)(IScreenController *this, const std::vector&lt;std::pair&lt;std::string,std::string &gt;&gt; *);
+  void (__fastcall *onOpen)(ScreenController *this);
+  void (__fastcall *onTerminate)(ScreenController *this);
+  void (__fastcall *onInit)(ScreenController *this);
+  void (__fastcall *onDelete)(ScreenController *this);
+  bool (__fastcall *canExit)(ScreenController *this);
+  ui::ViewRequest (__fastcall *tryExit)(ScreenController *this);
+  bool (__fastcall *areControllerTabsEnabled)(ScreenController *this);
+  void (__fastcall *onCreation)(ScreenController *this);
+  void (__fastcall *logCreationTime)(ScreenController *this, const std::string *, long double, long double, unsigned __int8);
+  void (__fastcall *onLeave)(ScreenController *this);
+  void (__fastcall *leaveScreen)(ScreenController *this);
+  ui::DirtyFlag (__fastcall *handleGameEventNotification)(ScreenController *this, ui::GameEventNotification);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, int, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  void (__fastcall *handleLicenseChanged)(ScreenController *this);
+  void (__fastcall *onDictationEvent)(ScreenController *this, const std::string *);
+  void (__fastcall *setAssociatedBlockPos)(ScreenController *this, const BlockPos *);
+  void (__fastcall *setAssociatedEntityUniqueID)(ScreenController *this, const ActorUniqueID);
+  void (__fastcall *setSuspendInput)(ScreenController *this, bool);
+  float (__fastcall *getCallbackInterval)(ScreenController *this);
+  void (__fastcall *onRender)(ScreenController *this);
+  void (__fastcall *addStaticScreenVars)(ScreenController *this, Json::Value *);
+  std::string *(__fastcall *getAdditionalScreenInfo)(ScreenController *this, std::string *result);
+  std::string *(__fastcall *getTelemetryOverride)(ScreenController *this, std::string *result);
+  void (__fastcall *addEventProperties)(ScreenController *this, std::unordered_map&lt;std::string,std::string&gt; *);
+  ui::SceneType (__fastcall *getSceneType)(ScreenController *this);
+  int (__fastcall *getScreenVersion)(ScreenController *this);
+  bool (__fastcall *screenHandlesGamepadMenuButton)(ScreenController *this);
+  ScreenControllerProxy *(__fastcall *getProxy)(ScreenController *this);
+  void (__fastcall *onEntered)(ScreenController *this);
+  unsigned int (__fastcall *getNameId)(ScreenController *this, const std::string *);
+  bool (__fastcall *verifySceneStack)(ScreenController *this, SceneStack *);
+  bool (__fastcall *_doesScreenHaveExitBehavior)(ScreenController *this);
+  bool (__fastcall *_isStillValid)(MinecraftScreenController *this);
+  bool (__fastcall *_getGamepadHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getMixedHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getKeyboardHelperVisible)(MinecraftScreenController *this);
+  std::string *(__fastcall *_getButtonADescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonBDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonXDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonYDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonKeyboardDescription)(MinecraftScreenController *this, std::string *result);
+};
+
+</code></pre></div><h3 id="quizscreencontroller-registereventhandlers-l2-lambda-19db060bb133f580aa0ada1b0c788eb3"><a href="#quizscreencontroller-registereventhandlers-l2-lambda-19db060bb133f580aa0ada1b0c788eb3" class="header-anchor">#</a> <code>QuizScreenController::_registerEventHandlers::__l2::&lt;lambda_19db060bb133f580aa0ada1b0c788eb3&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController::_registerEventHandlers::__l2::&lt;lambda_19db060bb133f580aa0ada1b0c788eb3&gt;
+{
+  QuizScreenController *const __this;
+};
+
+</code></pre></div><h3 id="quizscreencontroller-registereventhandlers-l2-lambda-5ccd21d441fae808a53a99816163fe2f"><a href="#quizscreencontroller-registereventhandlers-l2-lambda-5ccd21d441fae808a53a99816163fe2f" class="header-anchor">#</a> <code>QuizScreenController::_registerEventHandlers::__l2::&lt;lambda_5ccd21d441fae808a53a99816163fe2f&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController::_registerEventHandlers::__l2::&lt;lambda_5ccd21d441fae808a53a99816163fe2f&gt;
+{
+  QuizScreenController *const __this;
+};
+
+</code></pre></div><h3 id="quizscreencontroller-registereventhandlers-l2-lambda-42779dfb5d8240c2eca679c36f0e47ec"><a href="#quizscreencontroller-registereventhandlers-l2-lambda-42779dfb5d8240c2eca679c36f0e47ec" class="header-anchor">#</a> <code>QuizScreenController::_registerEventHandlers::__l2::&lt;lambda_42779dfb5d8240c2eca679c36f0e47ec&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController::_registerEventHandlers::__l2::&lt;lambda_42779dfb5d8240c2eca679c36f0e47ec&gt;
+{
+  QuizScreenController *const __this;
+};
+
+</code></pre></div><h3 id="quizscreencontroller-registereventhandlers-l2-lambda-42779dfb5d8240c2eca679c36f0e47ec-l5-lambda-b97e973a9c9a256cd35be5d64c92d3bc"><a href="#quizscreencontroller-registereventhandlers-l2-lambda-42779dfb5d8240c2eca679c36f0e47ec-l5-lambda-b97e973a9c9a256cd35be5d64c92d3bc" class="header-anchor">#</a> <code>QuizScreenController::_registerEventHandlers::__l2::&lt;lambda_42779dfb5d8240c2eca679c36f0e47ec&gt;::()::__l5::&lt;lambda_b97e973a9c9a256cd35be5d64c92d3bc&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController::_registerEventHandlers::__l2::&lt;lambda_42779dfb5d8240c2eca679c36f0e47ec&gt;::()::__l5::&lt;lambda_b97e973a9c9a256cd35be5d64c92d3bc&gt;
+{
+  std::weak_ptr&lt;QuizScreenController&gt; weakThis;
+};
+
+</code></pre></div><h3 id="quizscreencontroller-registerbindings-l2-lambda-88613c7e5be06e8dd46ac14e04ed9555"><a href="#quizscreencontroller-registerbindings-l2-lambda-88613c7e5be06e8dd46ac14e04ed9555" class="header-anchor">#</a> <code>QuizScreenController::_registerBindings::__l2::&lt;lambda_88613c7e5be06e8dd46ac14e04ed9555&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController::_registerBindings::__l2::&lt;lambda_88613c7e5be06e8dd46ac14e04ed9555&gt;
+{
+  QuizScreenController *const __this;
+};
+
+</code></pre></div><h3 id="quizscreencontroller-registerbindings-l2-lambda-301f24380ff1da8505d841fdf272fca9"><a href="#quizscreencontroller-registerbindings-l2-lambda-301f24380ff1da8505d841fdf272fca9" class="header-anchor">#</a> <code>QuizScreenController::_registerBindings::__l2::&lt;lambda_301f24380ff1da8505d841fdf272fca9&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController::_registerBindings::__l2::&lt;lambda_301f24380ff1da8505d841fdf272fca9&gt;
+{
+  QuizScreenController *const __this;
+};
+
+</code></pre></div><h3 id="quizscreencontroller-registerbindings-l2-lambda-b22d950e82f3710b33fce59b40fe6367"><a href="#quizscreencontroller-registerbindings-l2-lambda-b22d950e82f3710b33fce59b40fe6367" class="header-anchor">#</a> <code>QuizScreenController::_registerBindings::__l2::&lt;lambda_b22d950e82f3710b33fce59b40fe6367&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController::_registerBindings::__l2::&lt;lambda_b22d950e82f3710b33fce59b40fe6367&gt;
+{
+  QuizScreenController *const __this;
+};
+
+</code></pre></div><h3 id="quizscreencontroller-registerbindings-l2-lambda-739ba1f0bcea3bf4f0a39a571fec5161"><a href="#quizscreencontroller-registerbindings-l2-lambda-739ba1f0bcea3bf4f0a39a571fec5161" class="header-anchor">#</a> <code>QuizScreenController::_registerBindings::__l2::&lt;lambda_739ba1f0bcea3bf4f0a39a571fec5161&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuizScreenController::_registerBindings::__l2::&lt;lambda_739ba1f0bcea3bf4f0a39a571fec5161&gt;
+{
+  QuizScreenController *const __this;
+};
+
+</code></pre></div><h3 id="querytargetcommand"><a href="#querytargetcommand" class="header-anchor">#</a> <code>QueryTargetCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QueryTargetCommand : Command
+{
+  CommandSelector&lt;Actor&gt; mTargets;
+};
+
+</code></pre></div><h3 id="querytargetcommand-vtbl"><a href="#querytargetcommand-vtbl" class="header-anchor">#</a> <code>QueryTargetCommand_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ QueryTargetCommand_vtbl
+{
+  void (__fastcall *~Command)(Command *this);
+  void (__fastcall *execute)(Command *this, const CommandOrigin *, CommandOutput *);
+};
+
+</code></pre></div><h3 id="quartzblockblock"><a href="#quartzblockblock" class="header-anchor">#</a> <code>QuartzBlockBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj QuartzBlockBlock : RotatedPillarBlock
+{
+};
+
+</code></pre></div><h3 id="quartzblockblock-vtbl"><a href="#quartzblockblock-vtbl" class="header-anchor">#</a> <code>QuartzBlockBlock_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ QuartzBlockBlock_vtbl
+{
+  void (__fastcall *~BlockLegacy)(BlockLegacy *this);
+  const Block *(__fastcall *getStateFromLegacyData)(BlockLegacy *this, unsigned __int16);
+  const Block *(__fastcall *getModBlockStateFromLegacyData)(BlockLegacy *this, unsigned __int16);
+  std::shared_ptr&lt;BlockActor&gt; *(__fastcall *newBlockEntity)(BlockLegacy *this, std::shared_ptr&lt;BlockActor&gt; *result, const BlockPos *, const Block *);
+  const Block *(__fastcall *getNextBlockPermutation)(BlockLegacy *this, const Block *);
+  bool (__fastcall *hasTag)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *, const std::string *);
+  bool (__fastcall *getCollisionShape)(BlockLegacy *this, AABB *, const Block *, BlockSource *, const BlockPos *, Actor *);
+  bool (__fastcall *isObstructingChests)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  Vec3 *(__fastcall *randomlyModifyPosition)(BlockLegacy *this, Vec3 *result, const BlockPos *);
+  Vec3 *(__fastcall *randomlyModifyPosition)(BlockLegacy *this, Vec3 *result, const BlockPos *, int *);
+  void (__fastcall *addAABBs)(BlockLegacy *this, const Block *, BlockSource *, const BlockPos *, const AABB *, std::vector&lt;AABB&gt; *);
+  const AABB *(__fastcall *getAABB)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *, AABB *, bool);
+  bool (__fastcall *addCollisionShapes)(BlockLegacy *this, const Block *, BlockSource *, const BlockPos *, const AABB *, std::vector&lt;AABB&gt; *, Actor *);
+  const AABB *(__fastcall *getOutline)(BlockLegacy *this, BlockSource *, const BlockPos *, AABB *);
+  bool (__fastcall *getLiquidClipVolume)(BlockLegacy *this, BlockSource *, const BlockPos *, AABB *);
+  void (__fastcall *onProjectileHit)(BlockLegacy *this, BlockSource *, const BlockPos *, const Actor *);
+  bool (__fastcall *liquidCanFlowIntoFromDirection)(BlockLegacy *this, unsigned __int8, const std::function&lt;Block const &amp; __cdecl(BlockPos const &amp;)&gt; *, const BlockPos *);
+  bool (__fastcall *hasVariableLighting)(BlockLegacy *this);
+  bool (__fastcall *isStrippable)(BlockLegacy *this, const Block *);
+  const Block *(__fastcall *getStrippedBlock)(BlockLegacy *this, const Block *);
+  bool (__fastcall *canProvideSupport)(BlockLegacy *this, const Block *, unsigned __int8, BlockSupportType);
+  bool (__fastcall *canConnect)(BlockLegacy *this, const Block *, unsigned __int8, const Block *);
+  void (__fastcall *getConnectedDirections)(BlockLegacy *this, const Block *, const BlockPos *, BlockSource *, bool *, bool *, bool *, bool *);
+  bool (__fastcall *isStemBlock)(BlockLegacy *this);
+  bool (__fastcall *isContainerBlock)(BlockLegacy *this);
+  bool (__fastcall *isCraftingBlock)(BlockLegacy *this);
+  bool (__fastcall *isWaterBlocking)(BlockLegacy *this);
+  bool (__fastcall *isHurtableBlock)(BlockLegacy *this);
+  bool (__fastcall *isFenceBlock)(BlockLegacy *this);
+  bool (__fastcall *isFenceGateBlock)(BlockLegacy *this);
+  bool (__fastcall *isThinFenceBlock)(BlockLegacy *this);
+  bool (__fastcall *isWallBlock)(BlockLegacy *this);
+  bool (__fastcall *isStairBlock)(BlockLegacy *this);
+  bool (__fastcall *isSlabBlock)(BlockLegacy *this);
+  bool (__fastcall *isDoubleSlabBlock)(BlockLegacy *this);
+  bool (__fastcall *isDoorBlock)(BlockLegacy *this);
+  bool (__fastcall *isRailBlock)(BlockLegacy *this);
+  bool (__fastcall *isButtonBlock)(BlockLegacy *this);
+  bool (__fastcall *canHurtAndBreakItem)(BlockLegacy *this);
+  bool (__fastcall *isSignalSource)(BlockLegacy *this);
+  bool (__fastcall *canBeOriginalSurface)(BlockLegacy *this);
+  bool (__fastcall *isValidAuxValue)(BlockLegacy *this, int);
+  void (__fastcall *setTargetLandBlocks)(BlockLegacy *this, const std::vector&lt;std::string&gt; *);
+  bool (__fastcall *canFillAtPos)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *);
+  const Block *(__fastcall *sanitizeFillBlock)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *);
+  void (__fastcall *onFillBlock)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *);
+  int (__fastcall *getDirectSignal)(BlockLegacy *this, BlockSource *, const BlockPos *, int);
+  bool (__fastcall *waterSpreadCausesSpawn)(BlockLegacy *this);
+  bool (__fastcall *canContainLiquid)(BlockLegacy *this);
+  bool (__fastcall *shouldConnectToRedstone)(BlockLegacy *this, BlockSource *, const BlockPos *, int);
+  void (__fastcall *handleRain)(BlockLegacy *this, BlockSource *, const BlockPos *, float);
+  bool (__fastcall *canBeUsedInCommands)(BlockLegacy *this, const BaseGameVersion *);
+  float (__fastcall *getThickness)(BlockLegacy *this);
+  float (__fastcall *getFlexibility)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  bool (__fastcall *checkIsPathable)(BlockLegacy *this, Actor *, const BlockPos *, const BlockPos *);
+  bool (__fastcall *shouldDispense)(BlockLegacy *this, BlockSource *, Container *);
+  bool (__fastcall *dispense)(BlockLegacy *this, BlockSource *, Container *, int, const Vec3 *, unsigned __int8);
+  void (__fastcall *transformOnFall)(BlockLegacy *this, BlockSource *, const BlockPos *, Actor *, float);
+  void (__fastcall *onRedstoneUpdate)(BlockLegacy *this, BlockSource *, const BlockPos *, int, bool);
+  void (__fastcall *onMove)(BlockLegacy *this, BlockSource *, const BlockPos *, const BlockPos *);
+  bool (__fastcall *detachesOnPistonMove)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  void (__fastcall *movedByPiston)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  void (__fastcall *onStructureBlockPlace)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  void (__fastcall *onStructureNeighborBlockPlace)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  void (__fastcall *setupRedstoneComponent)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  bool (__fastcall *specialUse)(BlockLegacy *this, Player *, const BlockPos *, ItemStack *);
+  BlockProperty (__fastcall *getRedstoneProperty)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  void (__fastcall *updateEntityAfterFallOn)(BlockLegacy *this, IActorMovementProxy *);
+  bool (__fastcall *isBounceBlock)(BlockLegacy *this);
+  bool (__fastcall *ignoreEntitiesOnPistonMove)(BlockLegacy *this, const Block *);
+  bool (__fastcall *onFertilized)(BlockLegacy *this, BlockSource *, const BlockPos *, Actor *, FertilizerType);
+  bool (__fastcall *mayConsumeFertilizer)(BlockLegacy *this, BlockSource *);
+  bool (__fastcall *canBeFertilized)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *);
+  bool (__fastcall *mayPick)(BlockLegacy *this, BlockSource *, const Block *, bool);
+  bool (__fastcall *mayPick)(BlockLegacy *this);
+  bool (__fastcall *mayPlace)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  bool (__fastcall *mayPlace)(BlockLegacy *this, BlockSource *, const BlockPos *, unsigned __int8);
+  bool (__fastcall *mayPlaceOn)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  bool (__fastcall *tryToPlace)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *, const ActorBlockSyncMessage *);
+  bool (__fastcall *breaksFallingBlocks)(BlockLegacy *this, const Block *);
+  void (__fastcall *destroy)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *, Actor *);
+  bool (__fastcall *playerWillDestroy)(BlockLegacy *this, Player *, const BlockPos *, const Block *);
+  bool (__fastcall *getIgnoresDestroyPermissions)(BlockLegacy *this, Actor *, const BlockPos *);
+  void (__fastcall *neighborChanged)(BlockLegacy *this, BlockSource *, const BlockPos *, const BlockPos *);
+  bool (__fastcall *getSecondPart)(BlockLegacy *this, BlockSource *, const BlockPos *, BlockPos *);
+  int (__fastcall *getResourceCount)(BlockLegacy *this, Random *, const Block *, int, bool);
+  ItemInstance *(__fastcall *getResourceItem)(BlockLegacy *this, ItemInstance *result, Random *, const Block *, int);
+  ItemInstance *(__fastcall *asItemInstance)(BlockLegacy *this, ItemInstance *result, BlockSource *, const BlockPos *, const Block *);
+  void (__fastcall *spawnResources)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *, std::vector&lt;Item const *&gt; *, float, int, bool);
+  void (__fastcall *trySpawnResourcesOnExplosion)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *, std::vector&lt;Item const *&gt; *, float, int, bool);
+  bool (__fastcall *spawnBurnResources)(BlockLegacy *this, BlockSource *, float, float, float);
+  const Block *(__fastcall *getPlacementBlock)(BlockLegacy *this, Actor *, const BlockPos *, unsigned __int8, const Vec3 *, int);
+  int (__fastcall *calcVariant)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  bool (__fastcall *isAttachedTo)(BlockLegacy *this, BlockSource *, const BlockPos *, BlockPos *);
+  bool (__fastcall *attack)(BlockLegacy *this, Player *, const BlockPos *);
+  void (__fastcall *handleEntityInside)(BlockLegacy *this, BlockSource *, const BlockPos *, Actor *, Vec3 *);
+  void (__fastcall *entityInside)(BlockLegacy *this, BlockSource *, const BlockPos *, Actor *);
+  int (__fastcall *getExperienceDrop)(BlockLegacy *this, Random *);
+  bool (__fastcall *canBeBuiltOver)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  void (__fastcall *triggerEvent)(BlockLegacy *this, BlockSource *, const BlockPos *, int, int);
+  void (__fastcall *executeEvent)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *, const std::string *, Actor *);
+  void (__fastcall *executeEvent)(BlockLegacy *this, const std::string *, RenderParams *);
+  bool (__fastcall *executeTrigger)(BlockLegacy *this, const DefinitionTrigger *, RenderParams *);
+  bool (__fastcall *executeTriggerChain)(BlockLegacy *this, const DefinitionTrigger *, std::vector&lt;std::pair&lt;std::string const ,std::string const &gt;&gt; *, RenderParams *);
+  void (__fastcall *forceExecuteTrigger)(BlockLegacy *this, const DefinitionTrigger *, RenderParams *);
+  const MobSpawnerData *(__fastcall *getMobToSpawn)(BlockLegacy *this, const SpawnConditions *, BlockSource *);
+  bool (__fastcall *shouldStopFalling)(BlockLegacy *this, Actor *);
+  bool (__fastcall *pushesUpFallingBlocks)(BlockLegacy *this);
+  float (__fastcall *calcGroundFriction)(BlockLegacy *this, Mob *, const BlockPos *);
+  bool (__fastcall *canHaveExtraData)(BlockLegacy *this);
+  bool (__fastcall *hasComparatorSignal)(BlockLegacy *this);
+  int (__fastcall *getComparatorSignal)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *, unsigned __int8);
+  bool (__fastcall *onDig)(BlockLegacy *this, const Block *, Actor *, ItemStack *, const BlockPos *);
+  bool (__fastcall *canSlide)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  bool (__fastcall *canSpawnAt)(BlockLegacy *this, const BlockSource *, const BlockPos *);
+  void (__fastcall *notifySpawnedAt)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  int (__fastcall *getIconYOffset)(BlockLegacy *this);
+  std::string *(__fastcall *buildDescriptionId)(BlockLegacy *this, std::string *result, const Block *);
+  bool (__fastcall *isAuxValueRelevantForPicking)(BlockLegacy *this);
+  int (__fastcall *getColor)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *);
+  int (__fastcall *getColor)(BlockLegacy *this, const Block *);
+  int (__fastcall *getColorAtPos)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  int (__fastcall *getColorForParticle)(BlockLegacy *this, BlockSource *, const BlockPos *, const Block *);
+  bool (__fastcall *isSeasonTinted)(BlockLegacy *this, const Block *, BlockSource *, const BlockPos *);
+  void (__fastcall *onGraphicsModeChanged)(BlockLegacy *this, const BlockGraphicsModeChangeContext *);
+  float (__fastcall *getShadeBrightness)(BlockLegacy *this, const Block *);
+  const AABB *(__fastcall *getVisualShapeInWorld)(BlockLegacy *this, const Block *, BlockSource *, const BlockPos *, AABB *, bool);
+  const AABB *(__fastcall *getVisualShape)(BlockLegacy *this, const Block *, AABB *, bool);
+  const AABB *(__fastcall *getUIShape)(BlockLegacy *this, const Block *, AABB *);
+  int (__fastcall *telemetryVariant)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  int (__fastcall *getVariant)(BlockLegacy *this, const Block *);
+  bool (__fastcall *canSpawnOn)(BlockLegacy *this);
+  const Block *(__fastcall *getRenderBlock)(BlockLegacy *this);
+  unsigned __int8 (__fastcall *getMappedFace)(BlockLegacy *this, unsigned __int8, const Block *);
+  bool (__fastcall *renderTwoFaced)(BlockLegacy *this);
+  Flip (__fastcall *getFaceFlip)(BlockLegacy *this, unsigned __int8, const Block *);
+  void (__fastcall *animateTick)(BlockLegacy *this, BlockSource *, const BlockPos *, Random *);
+  BlockLegacy *(__fastcall *init)(BlockLegacy *this);
+  BlockLegacy *(__fastcall *setLightBlock)(BlockLegacy *this, Brightness);
+  BlockLegacy *(__fastcall *setLightEmission)(BlockLegacy *this, float);
+  BlockLegacy *(__fastcall *setExplodeable)(BlockLegacy *this, float);
+  BlockLegacy *(__fastcall *setFlammable)(BlockLegacy *this, FlameOdds, BurnOdds);
+  BlockLegacy *(__fastcall *setDestroyTime)(BlockLegacy *this, float);
+  BlockLegacy *(__fastcall *setFriction)(BlockLegacy *this, float);
+  BlockLegacy *(__fastcall *addProperty)(BlockLegacy *this, BlockProperty);
+  BlockLegacy *(__fastcall *addState)(BlockLegacy *this, const ItemState *, unsigned __int64);
+  BlockLegacy *(__fastcall *addState)(BlockLegacy *this, const ItemState *);
+  BlockLegacy *(__fastcall *setAllowsRunes)(BlockLegacy *this, bool);
+  BlockLegacy *(__fastcall *setMapColor)(BlockLegacy *this, const mce::Color *);
+  bool (__fastcall *canBeSilkTouched)(BlockLegacy *this);
+  ItemInstance *(__fastcall *getSilkTouchItemInstance)(BlockLegacy *this, ItemInstance *result, const Block *);
+  void (__fastcall *setVisualShape)(BlockLegacy *this, const Vec3 *, const Vec3 *);
+  void (__fastcall *setVisualShape)(BlockLegacy *this, const AABB *);
+  const Block *(__fastcall *tryLegacyUpgrade)(BlockLegacy *this, unsigned __int16);
+  bool (__fastcall *dealsContactDamage)(BlockLegacy *this, const Actor *, const Block *, bool);
+  void (__fastcall *onRemove)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  void (__fastcall *onExploded)(BlockLegacy *this, BlockSource *, const BlockPos *, Actor *);
+  void (__fastcall *onStandOn)(BlockLegacy *this, Actor *, const BlockPos *);
+  void (__fastcall *onStepOn)(BlockLegacy *this, Actor *, const BlockPos *);
+  void (__fastcall *onStepOff)(BlockLegacy *this, Actor *, const BlockPos *);
+  void (__fastcall *onPlayerPlacing)(BlockLegacy *this, BlockSource *, const BlockPos *, Actor *, unsigned __int8);
+  void (__fastcall *onPlace)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  void (__fastcall *onFallOn)(BlockLegacy *this, BlockSource *, const BlockPos *, Actor *, float);
+  void (__fastcall *playerDestroy)(BlockLegacy *this, Player *, const BlockPos *, const Block *);
+  void (__fastcall *tick)(BlockLegacy *this, BlockSource *, const BlockPos *, Random *);
+  bool (__fastcall *shouldRandomTick)(BlockLegacy *this);
+  bool (__fastcall *isInteractiveBlock)(BlockLegacy *this);
+  HitResult *(__fastcall *clip)(BlockLegacy *this, HitResult *result, BlockSource *, const BlockPos *, const Vec3 *, const Vec3 *, bool);
+  bool (__fastcall *use)(BlockLegacy *this, Player *, const BlockPos *, unsigned __int8);
+  bool (__fastcall *canSurvive)(BlockLegacy *this, BlockSource *, const BlockPos *);
+  BlockRenderLayer (__fastcall *getRenderLayer)(BlockLegacy *this, const Block *, BlockSource *, const BlockPos *);
+  BlockRenderLayer (__fastcall *getRenderLayer)(BlockLegacy *this);
+  int (__fastcall *getExtraRenderLayers)(BlockLegacy *this);
+  float (__fastcall *getExplosionResistance)(BlockLegacy *this, Actor *);
+  Brightness *(__fastcall *getLightEmission)(BlockLegacy *this, Brightness *result, const Block *);
+  mce::Color *(__fastcall *getMapColor)(BlockLegacy *this, mce::Color *result, BlockSource *, const BlockPos *);
+  mce::Color *(__fastcall *getMapColor)(BlockLegacy *this, mce::Color *result);
+  bool (__fastcall *isCropBlock)(BlockLegacy *this);
+  void (__fastcall *_executeEvent)(BlockLegacy *this, const std::string *, std::vector&lt;std::pair&lt;std::string const ,std::string const &gt;&gt; *, RenderParams *);
+  bool (__fastcall *_executeTrigger)(BlockLegacy *this, const DefinitionTrigger *, std::vector&lt;std::pair&lt;std::string const ,std::string const &gt;&gt; *, RenderParams *);
+  void (__fastcall *_forceExecuteTrigger)(BlockLegacy *this, const DefinitionTrigger *, std::vector&lt;std::pair&lt;std::string const ,std::string const &gt;&gt; *, RenderParams *);
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/structure/P~3.html" class="prev">
+        P~3
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/structure/R.html">
+        R
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/131.0c1d33fe.js" defer></script>
+  </body>
+</html>

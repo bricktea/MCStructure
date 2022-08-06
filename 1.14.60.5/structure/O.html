@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>O | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/47.fd3ae547.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" aria-current="page" class="active sidebar-link">O</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="o"><a href="#o" class="header-anchor">#</a> O</h1> <h3 id="overworldgenerator-makelayers-2867ea52f754a99bbf15cbcdf29df3e2"><a href="#overworldgenerator-makelayers-2867ea52f754a99bbf15cbcdf29df3e2" class="header-anchor">#</a> <code>OverworldGenerator::_makeLayers::$2867EA52F754A99BBF15CBCDF29DF3E2</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const BiomeRegistry *</code></td> <td>biomeRegistry</td></tr></tbody></table> <h3 id="ownedactorset"><a href="#ownedactorset" class="header-anchor">#</a> <code>OwnedActorSet</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;std::unique_ptr&lt;Actor&gt;&gt;</code></td> <td>c</td></tr></tbody></table> <h3 id="ownerstorageentity-entitycontextowned"><a href="#ownerstorageentity-entitycontextowned" class="header-anchor">#</a> <code>OwnerStorageEntity::EntityContextOwned</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>EntityContext</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="opendoorannotationcomponent"><a href="#opendoorannotationcomponent" class="header-anchor">#</a> <code>OpenDoorAnnotationComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>std::queue&lt;BlockPos&gt;</code></td> <td>mPassedDoorPositions</td></tr></tbody></table> <h3 id="optionalstring"><a href="#optionalstring" class="header-anchor">#</a> <code>OptionalString</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>valid</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>string</td></tr></tbody></table> <h3 id="option-stringfilter"><a href="#option-stringfilter" class="header-anchor">#</a> <code>Option::StringFilter</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::string (const std::string &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="option-boolfilter"><a href="#option-boolfilter" class="header-anchor">#</a> <code>Option::BoolFilter</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;bool (bool)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="option-saveintcallback"><a href="#option-saveintcallback" class="header-anchor">#</a> <code>Option::SaveIntCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;int (int)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="onscreentextureanimationpacket"><a href="#onscreentextureanimationpacket" class="header-anchor">#</a> <code>OnScreenTextureAnimationPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(4) <code>unsigned int</code></td> <td>mEffectID</td></tr></tbody></table> <h3 id="ownerptr-entityid"><a href="#ownerptr-entityid" class="header-anchor">#</a> <code>OwnerPtr&lt;EntityId&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>EntityRefTraits::OwnerStorage</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="overworldheightattributes"><a href="#overworldheightattributes" class="header-anchor">#</a> <code>OverworldHeightAttributes</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>BiomeHeight</code></td> <td>mHeightParams</td></tr></tbody></table> <h3 id="oceanmixerlayer-oceandata"><a href="#oceanmixerlayer-oceandata" class="header-anchor">#</a> <code>OceanMixerLayer::OceanData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::unique_ptr&lt;char []&gt;</code></td> <td>mResult</td></tr></tbody></table> <h3 id="optional-ref-int"><a href="#optional-ref-int" class="header-anchor">#</a> <code>optional_ref&lt;int&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int *</code></td> <td>ptr</td></tr></tbody></table> <h3 id="overworlddimension"><a href="#overworlddimension" class="header-anchor">#</a> <code>OverworldDimension</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1216) <code>Dimension</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="oceanruinconfiguration"><a href="#oceanruinconfiguration" class="header-anchor">#</a> <code>OceanRuinConfiguration</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>OceanTempCategory</code></td> <td>type</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>largeProbability</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>clusterProbability</td></tr></tbody></table> <h3 id="ownerptr-perlinsimplexnoise"><a href="#ownerptr-perlinsimplexnoise" class="header-anchor">#</a> <code>OwnerPtr&lt;PerlinSimplexNoise&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SharePtrRefTraits&lt;PerlinSimplexNoise&gt;::OwnerStorage</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="optional-ref-const-localization"><a href="#optional-ref-const-localization" class="header-anchor">#</a> <code>optional_ref&lt;const Localization&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const Localization *</code></td> <td>ptr</td></tr></tbody></table> <h3 id="ocelot-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#ocelot-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Ocelot::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="ownerptrt-featurereftraits"><a href="#ownerptrt-featurereftraits" class="header-anchor">#</a> <code>OwnerPtrT&lt;FeatureRefTraits&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>FeatureRefTraits::OwnerStorage</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="objectivecriteria"><a href="#objectivecriteria" class="header-anchor">#</a> <code>ObjectiveCriteria</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>const std::string</code></td> <td>mName</td></tr> <tr><td>32</td> <td>(1) <code>const bool</code></td> <td>mReadOnly</td></tr> <tr><td>33</td> <td>(1) <code>const ObjectiveRenderType_0</code></td> <td>mRenderType</td></tr></tbody></table> <h3 id="opendoorannotationsystem"><a href="#opendoorannotationsystem" class="header-anchor">#</a> <code>OpenDoorAnnotationSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OpenDoorAnnotationSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="ownerstorageshareptr-entityregistryowned"><a href="#ownerstorageshareptr-entityregistryowned" class="header-anchor">#</a> <code>OwnerStorageSharePtr&lt;EntityRegistryOwned&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OwnerStorageSharePtr&lt;EntityRegistryOwned&gt;
+{
+  std::shared_ptr&lt;EntityRegistryOwned&gt; mValue;
+};
+
+</code></pre></div><h3 id="ownerptrt-entityregistryreftraits"><a href="#ownerptrt-entityregistryreftraits" class="header-anchor">#</a> <code>OwnerPtrT&lt;EntityRegistryRefTraits&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OwnerPtrT&lt;EntityRegistryRefTraits&gt; : EntityRegistryRefTraits::OwnerStorage
+{
+};
+
+</code></pre></div><h3 id="ownerptrt-entityregistryreftraits-ownerstackref"><a href="#ownerptrt-entityregistryreftraits-ownerstackref" class="header-anchor">#</a> <code>OwnerPtrT&lt;EntityRegistryRefTraits&gt;::OwnerStackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef EntityRegistryRefTraits::OwnerStackRef OwnerPtrT&lt;EntityRegistryRefTraits&gt;::OwnerStackRef;
+
+</code></pre></div><h3 id="ownerstorageentity"><a href="#ownerstorageentity" class="header-anchor">#</a> <code>OwnerStorageEntity</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OwnerStorageEntity
+{
+  std::optional&lt;OwnerStorageEntity::EntityContextOwned&gt; mContext;
+};
+
+</code></pre></div><h3 id="ownerptrt-entityreftraits"><a href="#ownerptrt-entityreftraits" class="header-anchor">#</a> <code>OwnerPtrT&lt;EntityRefTraits&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OwnerPtrT&lt;EntityRefTraits&gt; : EntityRefTraits::OwnerStorage
+{
+};
+
+</code></pre></div><h3 id="ownerptrt-entityreftraits-ownerstackref"><a href="#ownerptrt-entityreftraits-ownerstackref" class="header-anchor">#</a> <code>OwnerPtrT&lt;EntityRefTraits&gt;::OwnerStackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef EntityRefTraits::OwnerStackRef OwnerPtrT&lt;EntityRefTraits&gt;::OwnerStackRef;
+
+</code></pre></div><h3 id="ownerstoragefeature"><a href="#ownerstoragefeature" class="header-anchor">#</a> <code>OwnerStorageFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OwnerStorageFeature
+{
+  std::optional&lt;std::reference_wrapper&lt;FeatureRegistry&gt; &gt; mRegistry;
+  size_t mIndex;
+};
+
+</code></pre></div><h3 id="orefeature"><a href="#orefeature" class="header-anchor">#</a> <code>OreFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OreFeature : IFeature
+{
+  int mCount;
+  float mCountf;
+  float mCountfInv;
+  const Block *mBlock;
+  std::vector&lt;const Block *&gt; mMayReplace;
+};
+
+</code></pre></div><h3 id="oakfeature"><a href="#oakfeature" class="header-anchor">#</a> <code>OakFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) OakFeature : TreeFeature
+{
+};
+
+</code></pre></div><h3 id="ownerptrt-featurereftraits-ownerstackref"><a href="#ownerptrt-featurereftraits-ownerstackref" class="header-anchor">#</a> <code>OwnerPtrT&lt;FeatureRefTraits&gt;::OwnerStackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FeatureRefTraits::OwnerStackRef OwnerPtrT&lt;FeatureRefTraits&gt;::OwnerStackRef;
+
+</code></pre></div><h3 id="overworldgenerator"><a href="#overworldgenerator" class="header-anchor">#</a> <code>OverworldGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OverworldGenerator : ChunkSource, WorldGenerator
+{
+  const bool legacyDevice;
+  BeardKernel mBeardKernel;
+  PerlinNoisePtr minLimitPerlinNoise;
+  PerlinNoisePtr maxLimitPerlinNoise;
+  PerlinNoisePtr mainPerlinNoise;
+  Unique&lt;PerlinSimplexNoise&gt; surfaceNoise;
+  PerlinNoisePtr scaleNoise;
+  PerlinNoisePtr depthNoise;
+  PerlinNoisePtr forestNoise;
+  float biomeWeights[25];
+  ThreadLocal&lt;OverworldGenerator::ThreadData&gt; generatorHelpersPool;
+  VillageFeature villageFeature;
+  StrongholdFeature strongholdFeature;
+  RandomScatteredLargeFeature scatteredFeature;
+  MineshaftFeature mineshaftFeature;
+  MonsterRoomFeature monsterRoomFeature;
+  OceanMonumentFeature oceanMonumentFeature;
+  OceanRuinFeature oceanRuinFeature;
+  WoodlandMansionFeature woodlandMansionFeature;
+  ShipwreckFeature shipwreckFeature;
+  BuriedTreasureFeature buriedChestFeature;
+  LargeCaveFeature caveFeature;
+  CanyonFeature canyonFeature;
+  UnderwaterLargeCaveFeature underwaterCaveFeature;
+  UnderwaterCanyonFeature underwaterCanyonFeature;
+  PillagerOutpostFeature pillagerOutpostFeature;
+  ConstLayerPtr&lt;Biome *&gt; mBlockResolutionLayer;
+  ConstLayerPtr&lt;Biome *&gt; m4x4ResolutionLayer;
+  std::shared_ptr&lt;BiomeSourceGetBiomeCache&gt; mBiomeSourceCache;
+};
+
+</code></pre></div><h3 id="overworldgenerator-threaddata"><a href="#overworldgenerator-threaddata" class="header-anchor">#</a> <code>OverworldGenerator::ThreadData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) OverworldGenerator::ThreadData
+{
+  float buffer[1024];
+  float depthBuffer[256];
+  float dataBuffer[256];
+  std::array&lt;long,32768&gt; blockBuffer;
+  float *fi;
+  float *fis;
+  Random random;
+};
+
+</code></pre></div><h3 id="oceanmixerlayer"><a href="#oceanmixerlayer" class="header-anchor">#</a> <code>OceanMixerLayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMixerLayer : MixerLayer&lt;Biome *,Biome *,BiomeTemperatureCategory&gt;
+{
+  Biome *mGenericShallowOcean;
+  Biome *mGenericDeepOcean;
+  std::vector&lt;std::pair&lt;Biome *,unsigned int&gt;&gt; mShallowOceanBiomes[5];
+  std::vector&lt;std::pair&lt;Biome *,unsigned int&gt;&gt; mDeepOceanBiomes[5];
+};
+
+</code></pre></div><h3 id="oceanmonumentfeature"><a href="#oceanmonumentfeature" class="header-anchor">#</a> <code>OceanMonumentFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentFeature : StructureFeature:1760
+{
+  int mMonumentSpacing;
+  int mMinMonumentSeparation;
+  std::vector&lt;int&gt; allowedBiomes;
+  std::vector&lt;int&gt; allowedSpawnBiomes;
+};
+
+</code></pre></div><h3 id="oceanruinfeature"><a href="#oceanruinfeature" class="header-anchor">#</a> <code>OceanRuinFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanRuinFeature : StructureFeature:1760
+{
+  int mRuinSpacing;
+  int mMinRuinSeparation;
+  std::vector&lt;int&gt; allowedBiomes;
+  OverworldGenerator *mLevelSource;
+  OceanMonumentFeature *mMonument;
+};
+
+</code></pre></div><h3 id="oceanruinstart"><a href="#oceanruinstart" class="header-anchor">#</a> <code>OceanRuinStart</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) OceanRuinStart : StructureStart
+{
+  OceanRuinConfiguration mConfig;
+};
+
+</code></pre></div><h3 id="oceanruinpieces-oceanruinpiece"><a href="#oceanruinpieces-oceanruinpiece" class="header-anchor">#</a> <code>OceanRuinPieces::OceanRuinPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanRuinPieces::OceanRuinPiece : TemplateStructurePiece
+{
+  StructureManager *mStructureManager;
+  std::string mTemplateName;
+  OceanTempCategory mBiomeType;
+  float mIntegrity;
+  bool mIsLarge;
+  Rotation_0 mRotation;
+  BlockPos mPosition;
+};
+
+</code></pre></div><h3 id="oceanruinpieces"><a href="#oceanruinpieces" class="header-anchor">#</a> <code>OceanRuinPieces</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OceanRuinPieces
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="option"><a href="#option" class="header-anchor">#</a> <code>Option</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Option
+{
+  int (**_vptr$Option)(void);
+  std::unique_ptr&lt;OptionLock&gt; mLock;
+  std::vector&lt;OptionObserver&gt; mObservers;
+  std::string mSaveTag;
+  std::string mTelemetryProperty;
+  const OptionID mID;
+  const OptionOwnerType mOwnerType;
+  OptionType mOptionType;
+  const std::string mCaptionId;
+  const OptionResetFlags mOptionResetFlags;
+  Option *mOverrideSource;
+  std::function&lt;void (bool)&gt; mRequestSaveCallback;
+};
+
+</code></pre></div><h3 id="onfriendlyangerdescription"><a href="#onfriendlyangerdescription" class="header-anchor">#</a> <code>OnFriendlyAngerDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnFriendlyAngerDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="onhitsubcomponent"><a href="#onhitsubcomponent" class="header-anchor">#</a> <code>OnHitSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OnHitSubcomponent
+{
+  int (**_vptr$OnHitSubcomponent)(void);
+};
+
+</code></pre></div><h3 id="ownerptr-entityregistry"><a href="#ownerptr-entityregistry" class="header-anchor">#</a> <code>OwnerPtr&lt;EntityRegistry&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OwnerPtrT&lt;EntityRegistryRefTraits&gt; OwnerPtr&lt;EntityRegistry&gt;;
+
+</code></pre></div><h3 id="objective"><a href="#objective" class="header-anchor">#</a> <code>Objective</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Objective
+{
+  std::unordered_map&lt;ScoreboardId,int&gt; mScores;
+  const std::string mName;
+  std::string mDisplayName;
+  const ObjectiveCriteria *mCriteria;
+};
+
+</code></pre></div><h3 id="optionobserver"><a href="#optionobserver" class="header-anchor">#</a> <code>OptionObserver</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OptionObserver
+{
+  void *mToken;
+  ValueChangedCallback mOnValueChangeCallback;
+  InputModeValueChangedCallback mOnInputModeValueChangeCallback;
+};
+
+</code></pre></div><h3 id="optionlock"><a href="#optionlock" class="header-anchor">#</a> <code>OptionLock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OptionLock
+{
+  std::function&lt;bool ()&gt; isModifiableCondition;
+  void *mToken;
+};
+
+</code></pre></div><h3 id="ownedactorlist"><a href="#ownedactorlist" class="header-anchor">#</a> <code>OwnedActorList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::unique_ptr&lt;Actor&gt;&gt; OwnedActorList;
+
+</code></pre></div><h3 id="ondeathdescription"><a href="#ondeathdescription" class="header-anchor">#</a> <code>OnDeathDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnDeathDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="onhurtbyplayerdescription"><a href="#onhurtbyplayerdescription" class="header-anchor">#</a> <code>OnHurtByPlayerDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnHurtByPlayerDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="onhurtdescription"><a href="#onhurtdescription" class="header-anchor">#</a> <code>OnHurtDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnHurtDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="onignitedescription"><a href="#onignitedescription" class="header-anchor">#</a> <code>OnIgniteDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnIgniteDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="onstartlandingdescription"><a href="#onstartlandingdescription" class="header-anchor">#</a> <code>OnStartLandingDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnStartLandingDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="onstarttakeoffdescription"><a href="#onstarttakeoffdescription" class="header-anchor">#</a> <code>OnStartTakeoffDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnStartTakeoffDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="ontargetacquireddescription"><a href="#ontargetacquireddescription" class="header-anchor">#</a> <code>OnTargetAcquiredDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnTargetAcquiredDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="ontargetescapedescription"><a href="#ontargetescapedescription" class="header-anchor">#</a> <code>OnTargetEscapeDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnTargetEscapeDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="onwakewithownerdescription"><a href="#onwakewithownerdescription" class="header-anchor">#</a> <code>OnWakeWithOwnerDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OnWakeWithOwnerDescription : TriggerDescription
+{
+};
+
+</code></pre></div><h3 id="opendoorannotationdescription"><a href="#opendoorannotationdescription" class="header-anchor">#</a> <code>OpenDoorAnnotationDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OpenDoorAnnotationDescription : ComponentDescription
+{
+};
+
+</code></pre></div><h3 id="overloadsyntaxinformation"><a href="#overloadsyntaxinformation" class="header-anchor">#</a> <code>OverloadSyntaxInformation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OverloadSyntaxInformation
+{
+  std::string text;
+  OverloadSyntaxInformation::CursorPos start;
+  OverloadSyntaxInformation::CursorPos length;
+};
+
+</code></pre></div><h3 id="ocelot"><a href="#ocelot" class="header-anchor">#</a> <code>Ocelot</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Ocelot : Animal
+{
+};
+
+</code></pre></div><h3 id="ownerhurtbytargetgoal"><a href="#ownerhurtbytargetgoal" class="header-anchor">#</a> <code>OwnerHurtByTargetGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OwnerHurtByTargetGoal : TargetGoal
+{
+  TempEPtr&lt;Mob&gt; mOwnerHurtBy;
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="ownerhurttargetgoal"><a href="#ownerhurttargetgoal" class="header-anchor">#</a> <code>OwnerHurtTargetGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) OwnerHurtTargetGoal : TargetGoal
+{
+  TempEPtr&lt;Mob&gt; mLastOwnerHurt;
+  Mob *mMob;
+  int mTimestamp;
+};
+
+</code></pre></div><h3 id="ocelotattackgoal"><a href="#ocelotattackgoal" class="header-anchor">#</a> <code>OcelotAttackGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) OcelotAttackGoal : Goal:96
+{
+  int mAttackTime;
+  Mob *mMob;
+  float mWalkSpeedModifier;
+  float mSprintSpeedModifier;
+  float mSneakSpeedModifier;
+};
+
+</code></pre></div><h3 id="ocelotsitonblockgoal"><a href="#ocelotsitonblockgoal" class="header-anchor">#</a> <code>OcelotSitOnBlockGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OcelotSitOnBlockGoal : BaseMoveToBlockGoal
+{
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="offerflowergoal"><a href="#offerflowergoal" class="header-anchor">#</a> <code>OfferFlowerGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OfferFlowerGoal : Goal
+{
+  TempEPtr&lt;Mob&gt; mOfferedToMob;
+  int mGameTicks;
+  IronGolem *mGolem;
+};
+
+</code></pre></div><h3 id="opendoorgoal"><a href="#opendoorgoal" class="header-anchor">#</a> <code>OpenDoorGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OpenDoorGoal : DoorInteractGoal
+{
+  bool mCloseDoor;
+  int mForgetTime;
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="ownerptrt-shareptrreftraits-perlinsimplexnoise"><a href="#ownerptrt-shareptrreftraits-perlinsimplexnoise" class="header-anchor">#</a> <code>OwnerPtrT&lt;SharePtrRefTraits&lt;PerlinSimplexNoise&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OwnerPtrT&lt;SharePtrRefTraits&lt;PerlinSimplexNoise&gt; &gt; : SharePtrRefTraits&lt;PerlinSimplexNoise&gt;::OwnerStorage
+{
+};
+
+</code></pre></div><h3 id="ownerstorageshareptr-perlinsimplexnoise"><a href="#ownerstorageshareptr-perlinsimplexnoise" class="header-anchor">#</a> <code>OwnerStorageSharePtr&lt;PerlinSimplexNoise&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct OwnerStorageSharePtr&lt;PerlinSimplexNoise&gt;
+{
+  std::shared_ptr&lt;PerlinSimplexNoise&gt; mValue;
+};
+
+</code></pre></div><h3 id="ownerptrt-shareptrreftraits-perlinsimplexnoise-ownerstackref"><a href="#ownerptrt-shareptrreftraits-perlinsimplexnoise-ownerstackref" class="header-anchor">#</a> <code>OwnerPtrT&lt;SharePtrRefTraits&lt;PerlinSimplexNoise&gt; &gt;::OwnerStackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SharePtrRefTraits&lt;PerlinSimplexNoise&gt;::OwnerStackRef OwnerPtrT&lt;SharePtrRefTraits&lt;PerlinSimplexNoise&gt; &gt;::OwnerStackRef;
+
+</code></pre></div><h3 id="oreblock"><a href="#oreblock" class="header-anchor">#</a> <code>OreBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OreBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="oldlogblock"><a href="#oldlogblock" class="header-anchor">#</a> <code>OldLogBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OldLogBlock : LogBlock
+{
+};
+
+</code></pre></div><h3 id="oldleafblock"><a href="#oldleafblock" class="header-anchor">#</a> <code>OldLeafBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OldLeafBlock : LeafBlock
+{
+};
+
+</code></pre></div><h3 id="obsidianblock"><a href="#obsidianblock" class="header-anchor">#</a> <code>ObsidianBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ObsidianBlock : BlockLegacy
+{
+  bool mIsGlowing;
+};
+
+</code></pre></div><h3 id="observerblock"><a href="#observerblock" class="header-anchor">#</a> <code>ObserverBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ObserverBlock : FaceDirectionalBlock
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentstart"><a href="#oceanmonumentstart" class="header-anchor">#</a> <code>OceanMonumentStart</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) OceanMonumentStart : StructureStart
+{
+  bool isCreated;
+};
+
+</code></pre></div><h3 id="oceanmonumentpiece"><a href="#oceanmonumentpiece" class="header-anchor">#</a> <code>OceanMonumentPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentPiece : StructurePiece
+{
+  bool mDoFill;
+  Shared&lt;RoomDefinition&gt; mRoomDefinition;
+};
+
+</code></pre></div><h3 id="oceanmonumententryroom"><a href="#oceanmonumententryroom" class="header-anchor">#</a> <code>OceanMonumentEntryRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentEntryRoom : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentcoreroom"><a href="#oceanmonumentcoreroom" class="header-anchor">#</a> <code>OceanMonumentCoreRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentCoreRoom : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentwingroom"><a href="#oceanmonumentwingroom" class="header-anchor">#</a> <code>OceanMonumentWingRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) OceanMonumentWingRoom : OceanMonumentPiece
+{
+  int mMainDesign;
+  bool mIsRightWing;
+};
+
+</code></pre></div><h3 id="oceanmonumentpenthouse"><a href="#oceanmonumentpenthouse" class="header-anchor">#</a> <code>OceanMonumentPenthouse</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentPenthouse : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentsimpleroom"><a href="#oceanmonumentsimpleroom" class="header-anchor">#</a> <code>OceanMonumentSimpleRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) OceanMonumentSimpleRoom : OceanMonumentPiece
+{
+  int mMainDesign;
+};
+
+</code></pre></div><h3 id="oceanmonumentsimpletoproom"><a href="#oceanmonumentsimpletoproom" class="header-anchor">#</a> <code>OceanMonumentSimpleTopRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentSimpleTopRoom : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentdoubleyroom"><a href="#oceanmonumentdoubleyroom" class="header-anchor">#</a> <code>OceanMonumentDoubleYRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentDoubleYRoom : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentdoublexroom"><a href="#oceanmonumentdoublexroom" class="header-anchor">#</a> <code>OceanMonumentDoubleXRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentDoubleXRoom : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentdoublezroom"><a href="#oceanmonumentdoublezroom" class="header-anchor">#</a> <code>OceanMonumentDoubleZRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentDoubleZRoom : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentdoublexyroom"><a href="#oceanmonumentdoublexyroom" class="header-anchor">#</a> <code>OceanMonumentDoubleXYRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentDoubleXYRoom : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="oceanmonumentdoubleyzroom"><a href="#oceanmonumentdoubleyzroom" class="header-anchor">#</a> <code>OceanMonumentDoubleYZRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OceanMonumentDoubleYZRoom : OceanMonumentPiece
+{
+};
+
+</code></pre></div><h3 id="opcommand"><a href="#opcommand" class="header-anchor">#</a> <code>OpCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OpCommand : ServerCommand
+{
+  PlayerSelector mTargets;
+};
+
+</code></pre></div><h3 id="offhandcontainercontroller"><a href="#offhandcontainercontroller" class="header-anchor">#</a> <code>OffhandContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OffhandContainerController : ContainerController
+{
+};
+
+</code></pre></div><h3 id="outputcontainercontroller"><a href="#outputcontainercontroller" class="header-anchor">#</a> <code>OutputContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj OutputContainerController : ContainerController
+{
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/N.html" class="prev">
+        N
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/P.html">
+        P
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/47.fd3ae547.js" defer></script>
+  </body>
+</html>

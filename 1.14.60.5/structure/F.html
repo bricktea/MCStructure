@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>F | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/38.c03d5dee.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" aria-current="page" class="active sidebar-link">F</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="f"><a href="#f" class="header-anchor">#</a> F</h1> <h3 id="filteredtransformationattributes-legacyprehillsedgetransformation"><a href="#filteredtransformationattributes-legacyprehillsedgetransformation" class="header-anchor">#</a> <code>FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;PosibleTransformation&gt;</code></td> <td>mTransformations</td></tr></tbody></table> <h3 id="factory-dimension-level-scheduler-typecreator"><a href="#factory-dimension-level-scheduler-typecreator" class="header-anchor">#</a> <code>Factory&lt;Dimension,Level &amp;,Scheduler &amp;&gt;::TypeCreator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;Dimension&gt; (Level &amp;,Scheduler &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="featurereftraits-stackresultstorage"><a href="#featurereftraits-stackresultstorage" class="header-anchor">#</a> <code>FeatureRefTraits::StackResultStorage</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::optional&lt;std::reference_wrapper&lt;FeatureRegistry&gt; &gt;</code></td> <td>mRegistry</td></tr> <tr><td>16</td> <td>(8) <code>size_t</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="featurereftraits-weakstorage"><a href="#featurereftraits-weakstorage" class="header-anchor">#</a> <code>FeatureRefTraits::WeakStorage</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::optional&lt;std::reference_wrapper&lt;FeatureRegistry&gt; &gt;</code></td> <td>mRegistry</td></tr> <tr><td>16</td> <td>(8) <code>size_t</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="feature"><a href="#feature" class="header-anchor">#</a> <code>Feature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>IFeature</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>Actor *</code></td> <td>mPlacer</td></tr> <tr><td>16</td> <td>(8) <code>WorldChangeTransaction *</code></td> <td>mTransaction</td></tr></tbody></table> <h3 id="flowerfeature"><a href="#flowerfeature" class="header-anchor">#</a> <code>FlowerFeature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>Feature</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr></tbody></table> <h3 id="fixedbiomesource"><a href="#fixedbiomesource" class="header-anchor">#</a> <code>FixedBiomeSource</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>BiomeSource</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>const Biome *</code></td> <td>mFixedBiome</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addisland-readertype"><a href="#filterlayer-layerfilters-addisland-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddIsland&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;LayerValues::Terrain&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-removetoomuchocean-readertype"><a href="#filterlayer-layerfilters-removetoomuchocean-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RemoveTooMuchOcean&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;LayerValues::Terrain&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addsnow-readertype"><a href="#filterlayer-layerfilters-addsnow-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddSnow&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;LayerValues::Terrain&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addislandwithtemperature-readertype"><a href="#filterlayer-layerfilters-addislandwithtemperature-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddIslandWithTemperature&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;LayerValues::PreBiome&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addedgecoolwarm-readertype"><a href="#filterlayer-layerfilters-addedgecoolwarm-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeCoolWarm&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;LayerValues::PreBiome&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addedgeheatice-readertype"><a href="#filterlayer-layerfilters-addedgeheatice-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeHeatIce&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;LayerValues::PreBiome&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addedgespecial-readertype"><a href="#filterlayer-layerfilters-addedgespecial-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeSpecial&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;LayerValues::PreBiome&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-biomeinit-readertype"><a href="#filterlayer-layerfilters-biomeinit-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::BiomeInit&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;LayerValues::PreBiome&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addmushroomisland-readertype"><a href="#filterlayer-layerfilters-addmushroomisland-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddMushroomIsland&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-promotecenter-readertype"><a href="#filterlayer-layerfilters-promotecenter-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::PromoteCenter&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-riverinit-readertype"><a href="#filterlayer-layerfilters-riverinit-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RiverInit&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-river-readertype"><a href="#filterlayer-layerfilters-river-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::River&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;int&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-smooth-bool-readertype"><a href="#filterlayer-layerfilters-smooth-bool-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Smooth&lt;bool&gt; &gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;bool&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-rarebiomespot-readertype"><a href="#filterlayer-layerfilters-rarebiomespot-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RareBiomeSpot&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-prehillsedgetransformation-readertype"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-prehillsedgetransformation-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt; &gt; &gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filtercontextset"><a href="#filtercontextset" class="header-anchor">#</a> <code>FilterContextSet</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(616) <code>std::__array_traits&lt;FilterContext,7&gt;::_Type</code></td> <td>_M_elems</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-legacyprehillsedgetransformation-readertype"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-legacyprehillsedgetransformation-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt; &gt; &gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addbiomeisland-readertype"><a href="#filterlayer-layerfilters-addbiomeisland-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddBiomeIsland&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-shore-readertype"><a href="#filterlayer-layerfilters-shore-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Shore&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-postshoreedgetransformation-readertype"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-postshoreedgetransformation-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt; &gt; &gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-smooth-biome-readertype"><a href="#filterlayer-layerfilters-smooth-biome-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Smooth&lt;Biome *&gt; &gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;Biome *&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="filterlayer-layerfilters-addoceanedge-readertype"><a href="#filterlayer-layerfilters-addoceanedge-readertype" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddOceanEdge&gt;::ReaderType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const LayerDetails::BufferAccessor&lt;BiomeTemperatureCategory&gt; *</code></td> <td>mSourceData</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mTopLeft</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mW</td></tr></tbody></table> <h3 id="flagcomponent-actortickedflag"><a href="#flagcomponent-actortickedflag" class="header-anchor">#</a> <code>FlagComponent&lt;ActorTickedFlag&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtergroup"><a href="#filtergroup" class="header-anchor">#</a> <code>FilterGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$FilterGroup</td></tr> <tr><td>8</td> <td>(4) <code>FilterGroup::CollectionType</code></td> <td>mCollectionType</td></tr> <tr><td>16</td> <td>(24) <code>std::vector&lt;std::shared_ptr&lt;FilterGroup&gt;&gt;</code></td> <td>mChildren</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;std::shared_ptr&lt;FilterTest&gt;&gt;</code></td> <td>mMembers</td></tr></tbody></table> <h3 id="flockingcomponent"><a href="#flockingcomponent" class="header-anchor">#</a> <code>FlockingComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;ActorUniqueID&gt;</code></td> <td>mNeighborhood</td></tr> <tr><td>24</td> <td>(12) <code>Vec3</code></td> <td>mCenterOfMass</td></tr> <tr><td>36</td> <td>(12) <code>Vec3</code></td> <td>mGroupVelocity</td></tr> <tr><td>48</td> <td>(12) <code>Vec3</code></td> <td>mGoalHeading</td></tr> <tr><td>60</td> <td>(12) <code>Vec3</code></td> <td>mCurrentHeading</td></tr> <tr><td>72</td> <td>(1) <code>bool</code></td> <td>mInWater</td></tr> <tr><td>73</td> <td>(1) <code>bool</code></td> <td>mMatchVariant</td></tr> <tr><td>74</td> <td>(1) <code>bool</code></td> <td>mUseCenterOfMass</td></tr> <tr><td>75</td> <td>(1) <code>bool</code></td> <td>mIsLeader</td></tr> <tr><td>76</td> <td>(1) <code>bool</code></td> <td>mInFlock</td></tr> <tr><td>77</td> <td>(1) <code>bool</code></td> <td>mIsEnabled</td></tr> <tr><td>78</td> <td>(1) <code>bool</code></td> <td>mHasTargetGoal</td></tr> <tr><td>79</td> <td>(1) <code>bool</code></td> <td>mUsingDirection</td></tr> <tr><td>80</td> <td>(4) <code>int</code></td> <td>mFlockLimit</td></tr> <tr><td>84</td> <td>(4) <code>float</code></td> <td>mLonerChance</td></tr> <tr><td>88</td> <td>(4) <code>float</code></td> <td>mGoalWeight</td></tr> <tr><td>92</td> <td>(4) <code>float</code></td> <td>mInfluenceRadius</td></tr> <tr><td>96</td> <td>(4) <code>float</code></td> <td>mBreachInfluence</td></tr> <tr><td>100</td> <td>(4) <code>float</code></td> <td>mSeparationWeight</td></tr> <tr><td>104</td> <td>(4) <code>float</code></td> <td>mSeparationThreshold</td></tr> <tr><td>108</td> <td>(4) <code>float</code></td> <td>mCohesionWeight</td></tr> <tr><td>112</td> <td>(4) <code>float</code></td> <td>mCohesionThreshold</td></tr> <tr><td>116</td> <td>(4) <code>float</code></td> <td>mInnerCohesionThreshold</td></tr> <tr><td>120</td> <td>(4) <code>float</code></td> <td>mMinHeight</td></tr> <tr><td>124</td> <td>(4) <code>float</code></td> <td>mMaxHeight</td></tr> <tr><td>128</td> <td>(4) <code>float</code></td> <td>mBlockDist</td></tr> <tr><td>132</td> <td>(4) <code>float</code></td> <td>mBlockWeight</td></tr> <tr><td>136</td> <td>(1) <code>bool</code></td> <td>mOverspeedRequired</td></tr></tbody></table> <h3 id="featuretoggles-setupfunction"><a href="#featuretoggles-setupfunction" class="header-anchor">#</a> <code>FeatureToggles::SetupFunction</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (Option *)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="featuretoggles-lockfunction"><a href="#featuretoggles-lockfunction" class="header-anchor">#</a> <code>FeatureToggles::LockFunction</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;bool ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="featuretoggles-featuretoggle"><a href="#featuretoggles-featuretoggle" class="header-anchor">#</a> <code>FeatureToggles::FeatureToggle</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>FeatureOptionID</code></td> <td>featureID</td></tr> <tr><td>4</td> <td>(4) <code>FeatureOptionID</code></td> <td>dependencyFeatureID</td></tr> <tr><td>8</td> <td>(8) <code>std::unique_ptr&lt;Option&gt;</code></td> <td>option</td></tr> <tr><td>16</td> <td>(32) <code>FeatureToggles::SetupFunction</code></td> <td>setup</td></tr> <tr><td>48</td> <td>(32) <code>FeatureToggles::LockFunction</code></td> <td>lock</td></tr></tbody></table> <h3 id="functionmanager-queuedcommand"><a href="#functionmanager-queuedcommand" class="header-anchor">#</a> <code>FunctionManager::QueuedCommand</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>IFunctionEntry *</code></td> <td>mFunction</td></tr> <tr><td>8</td> <td>(8) <code>const CommandOrigin *</code></td> <td>mOrigin</td></tr></tbody></table> <h3 id="floatrange"><a href="#floatrange" class="header-anchor">#</a> <code>FloatRange</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>rangeMin</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>rangeMax</td></tr></tbody></table> <h3 id="fileinfo"><a href="#fileinfo" class="header-anchor">#</a> <code>FileInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>Core::HeapPathBuffer</code></td> <td>filePath</td></tr> <tr><td>32</td> <td>(8) <code>uint64_t</code></td> <td>fileSize</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>fileHash</td></tr></tbody></table> <h3 id="filechunkinfo"><a href="#filechunkinfo" class="header-anchor">#</a> <code>FileChunkInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>chunkID</td></tr> <tr><td>8</td> <td>(8) <code>uint64_t</code></td> <td>startByte</td></tr> <tr><td>16</td> <td>(8) <code>uint64_t</code></td> <td>endByte</td></tr></tbody></table> <h3 id="filechunk"><a href="#filechunk" class="header-anchor">#</a> <code>FileChunk</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;unsigned char&gt;</code></td> <td>data</td></tr> <tr><td>24</td> <td>(24) <code>FileChunkInfo</code></td> <td>info</td></tr></tbody></table> <h3 id="filearchiver-result"><a href="#filearchiver-result" class="header-anchor">#</a> <code>FileArchiver::Result</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>FileArchiver::Outcome</code></td> <td>outcome</td></tr> <tr><td>8</td> <td>(32) <code>Core::HeapPathBuffer</code></td> <td>fileName</td></tr></tbody></table> <h3 id="filterinputs"><a href="#filterinputs" class="header-anchor">#</a> <code>FilterInputs</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>FilterSubject</code></td> <td>mSubject</td></tr> <tr><td>8</td> <td>(48) <code>FilterInput</code></td> <td>mDomain</td></tr> <tr><td>56</td> <td>(2) <code>FilterOperator</code></td> <td>mOperator</td></tr> <tr><td>64</td> <td>(48) <code>FilterInput</code></td> <td>mValue</td></tr></tbody></table> <h3 id="filterinput"><a href="#filterinput" class="header-anchor">#</a> <code>FilterInput</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>FilterParamType</code></td> <td>mType</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mString</td></tr> <tr><td>40</td> <td>(4) <code>int</code></td> <td>mIValue</td></tr> <tr><td>44</td> <td>(4) <code>float</code></td> <td>mFValue</td></tr></tbody></table> <h3 id="floatarray"><a href="#floatarray" class="header-anchor">#</a> <code>floatArray</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;float&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filterstringmap"><a href="#filterstringmap" class="header-anchor">#</a> <code>FilterStringMap</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;std::string,FilterInputDefinition&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtergroup-ptr"><a href="#filtergroup-ptr" class="header-anchor">#</a> <code>FilterGroup::Ptr</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::__shared_ptr&lt;FilterGroup,__gnu_cxx::_S_atomic&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="fooditemcomponent-effect"><a href="#fooditemcomponent-effect" class="header-anchor">#</a> <code>FoodItemComponent::Effect</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const char *</code></td> <td>descriptionId</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>id</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>duration</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>amplifier</td></tr> <tr><td>20</td> <td>(4) <code>float</code></td> <td>chance</td></tr></tbody></table> <h3 id="filearchiver-operationcallback"><a href="#filearchiver-operationcallback" class="header-anchor">#</a> <code>FileArchiver::OperationCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (FileArchiver::Result &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="flagcomponent-ignoreautomaticfeaturerules"><a href="#flagcomponent-ignoreautomaticfeaturerules" class="header-anchor">#</a> <code>FlagComponent&lt;IgnoreAutomaticFeatureRules&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="flagcomponent-datadrivenbiomesurface"><a href="#flagcomponent-datadrivenbiomesurface" class="header-anchor">#</a> <code>FlagComponent&lt;DataDrivenBiomeSurface&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="flagcomponent-swampbiomesurface"><a href="#flagcomponent-swampbiomesurface" class="header-anchor">#</a> <code>FlagComponent&lt;SwampBiomeSurface&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="flagcomponent-oceanfrozenbiomesurface"><a href="#flagcomponent-oceanfrozenbiomesurface" class="header-anchor">#</a> <code>FlagComponent&lt;OceanFrozenBiomeSurface&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="flagcomponent-netherbiomesurface"><a href="#flagcomponent-netherbiomesurface" class="header-anchor">#</a> <code>FlagComponent&lt;NetherBiomeSurface&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="flagcomponent-theendbiomesurface"><a href="#flagcomponent-theendbiomesurface" class="header-anchor">#</a> <code>FlagComponent&lt;TheEndBiomeSurface&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filteredtransformationattributes-prehillsedgetransformation"><a href="#filteredtransformationattributes-prehillsedgetransformation" class="header-anchor">#</a> <code>FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;PosibleTransformation&gt;</code></td> <td>mTransformations</td></tr></tbody></table> <h3 id="filteredtransformationattributes-postshoreedgetransformation"><a href="#filteredtransformationattributes-postshoreedgetransformation" class="header-anchor">#</a> <code>FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;PosibleTransformation&gt;</code></td> <td>mTransformations</td></tr></tbody></table> <h3 id="flagcomponent-noisebasedcolorpalette"><a href="#flagcomponent-noisebasedcolorpalette" class="header-anchor">#</a> <code>FlagComponent&lt;NoiseBasedColorPalette&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="featureloading-featurerootparsecontext"><a href="#featureloading-featurerootparsecontext" class="header-anchor">#</a> <code>FeatureLoading::FeatureRootParseContext</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::reference_wrapper&lt;std::string &gt;</code></td> <td>mFeatureName</td></tr> <tr><td>8</td> <td>(8) <code>std::reference_wrapper&lt;IWorldRegistriesProvider&gt;</code></td> <td>mRegistryProvider</td></tr> <tr><td>16</td> <td>(8) <code>std::unique_ptr&lt;FeatureLoading::AbstractFeatureHolder&gt;</code></td> <td>mFeatureHolder</td></tr></tbody></table> <h3 id="flatworldgeneratoroptions"><a href="#flatworldgeneratoroptions" class="header-anchor">#</a> <code>FlatWorldGeneratorOptions</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mEncodingVersion</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;BlockLayer&gt;</code></td> <td>mBlockLayers</td></tr> <tr><td>32</td> <td>(4) <code>int</code></td> <td>mBiomeId</td></tr> <tr><td>40</td> <td>(16) <code>Json::Value</code></td> <td>mStructureOptions</td></tr> <tr><td>56</td> <td>(4) <code>int</code></td> <td>mTotalLayers</td></tr></tbody></table> <h3 id="feeditem"><a href="#feeditem" class="header-anchor">#</a> <code>FeedItem</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const Item *</code></td> <td>mItem</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mValue</td></tr> <tr><td>16</td> <td>(24) <code>std::vector&lt;FeedItem::Effect&gt;</code></td> <td>mEffects</td></tr></tbody></table> <h3 id="feeditem-effect"><a href="#feeditem-effect" class="header-anchor">#</a> <code>FeedItem::Effect</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>descriptionId</td></tr> <tr><td>32</td> <td>(4) <code>int</code></td> <td>id</td></tr> <tr><td>36</td> <td>(4) <code>int</code></td> <td>duration</td></tr> <tr><td>40</td> <td>(4) <code>int</code></td> <td>amplifier</td></tr> <tr><td>44</td> <td>(4) <code>float</code></td> <td>chance</td></tr></tbody></table> <h3 id="fullplayerinventorywrapper"><a href="#fullplayerinventorywrapper" class="header-anchor">#</a> <code>FullPlayerInventoryWrapper</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>PlayerInventoryProxy *</code></td> <td>mPlayerInventory</td></tr> <tr><td>8</td> <td>(8) <code>SimpleContainer *</code></td> <td>mArmorInventory</td></tr> <tr><td>16</td> <td>(8) <code>SimpleContainer *</code></td> <td>mHandInventory</td></tr> <tr><td>24</td> <td>(8) <code>InventoryTransactionManager *</code></td> <td>mTransactionManager</td></tr> <tr><td>32</td> <td>(8) <code>Player *</code></td> <td>mPlayer</td></tr></tbody></table> <h3 id="foliagecolor-palette"><a href="#foliagecolor-palette" class="header-anchor">#</a> <code>FoliageColor::Palette</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(262144) <code>std::__array_traits&lt;int,65536&gt;::_Type</code></td> <td>_M_elems</td></tr></tbody></table> <h3 id="fd-set"><a href="#fd-set" class="header-anchor">#</a> <code>fd_set</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(128) <code>__fd_mask[16]</code></td> <td>fds_bits</td></tr></tbody></table> <h3 id="filesystemfileaccess"><a href="#filesystemfileaccess" class="header-anchor">#</a> <code>FileSystemFileAccess</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>IFileAccess</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(4) <code>FileSystemMode</code></td> <td>mMode</td></tr> <tr><td>16</td> <td>(8) <code>FileSystemFileAccess::FileSystemFileReadAccess</code></td> <td>mReadInterface</td></tr> <tr><td>24</td> <td>(8) <code>FileSystemFileAccess::FileSystemFileWriteAccess</code></td> <td>mWriteInterface</td></tr></tbody></table> <h3 id="filesystemfileaccess-filesystemfilereadaccess"><a href="#filesystemfileaccess-filesystemfilereadaccess" class="header-anchor">#</a> <code>FileSystemFileAccess::FileSystemFileReadAccess</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>IFileReadAccess</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filesystemfileaccess-filesystemfilewriteaccess"><a href="#filesystemfileaccess-filesystemfilewriteaccess" class="header-anchor">#</a> <code>FileSystemFileAccess::FileSystemFileWriteAccess</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>IFileWriteAccess</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filterparamdefinition"><a href="#filterparamdefinition" class="header-anchor">#</a> <code>FilterParamDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>FilterParamType</code></td> <td>mType</td></tr> <tr><td>4</td> <td>(4) <code>FilterParamRequirement</code></td> <td>mRequirement</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mDescription</td></tr> <tr><td>40</td> <td>(48) <code>FilterInput</code></td> <td>mDefault</td></tr> <tr><td>88</td> <td>(56) <code>FilterStringMap</code></td> <td>mStringMap</td></tr> <tr><td>144</td> <td>(1) <code>FilterParamOption</code></td> <td>mParamOption</td></tr></tbody></table> <h3 id="fileaccesstransforms"><a href="#fileaccesstransforms" class="header-anchor">#</a> <code>FileAccessTransforms</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$FileAccessTransforms</td></tr></tbody></table> <h3 id="filterinputdefinition"><a href="#filterinputdefinition" class="header-anchor">#</a> <code>FilterInputDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(48) <code>FilterInput</code></td> <td>mInput</td></tr> <tr><td>48</td> <td>(32) <code>std::string</code></td> <td>mDescription</td></tr></tbody></table> <h3 id="friendlysize"><a href="#friendlysize" class="header-anchor">#</a> <code>FriendlySize</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>size_t</code></td> <td>bytes</td></tr></tbody></table> <h3 id="filearchiver"><a href="#filearchiver" class="header-anchor">#</a> <code>FileArchiver</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::enable_shared_from_this&lt;FileArchiver&gt;</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(12) <code>Core::ZipUtils::ZipProgress</code></td> <td>mProgress</td></tr> <tr><td>32</td> <td>(24) <code>std::promise&lt;FileArchiver::Result&gt;</code></td> <td>mLastResult</td></tr> <tr><td>56</td> <td>(4) <code>FileArchiver::State</code></td> <td>mCurrentState</td></tr> <tr><td>64</td> <td>(8) <code>Core::FilePathManager *</code></td> <td>mFilePathManager</td></tr> <tr><td>72</td> <td>(32) <code>std::function&lt;void (const std::string &amp;)&gt;</code></td> <td>mDisplayMessageCallback</td></tr> <tr><td>104</td> <td>(8) <code>ResourcePackRepository *</code></td> <td>mResourcePackRepository</td></tr> <tr><td>112</td> <td>(8) <code>std::unique_ptr&lt;TaskGroup&gt;</code></td> <td>mIOTaskGroup</td></tr></tbody></table> <h3 id="fishinghook-fishposevent-7ef7c94beab75c6cef4adfb99b570420"><a href="#fishinghook-fishposevent-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>FishingHook::_fishPosEvent::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="fishinghook-fishhookevent-7ef7c94beab75c6cef4adfb99b570420"><a href="#fishinghook-fishhookevent-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>FishingHook::_fishhookEvent::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="fishinghook-fishteaseevent-7ef7c94beab75c6cef4adfb99b570420"><a href="#fishinghook-fishteaseevent-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>FishingHook::_fishTeaseEvent::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="fish-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#fish-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Fish::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="filtertest-definition"><a href="#filtertest-definition" class="header-anchor">#</a> <code>FilterTest::Definition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>mDescription</td></tr> <tr><td>64</td> <td>(8) <code>const FilterParamDefinition *</code></td> <td>mSubjectDefinition</td></tr> <tr><td>72</td> <td>(8) <code>const FilterParamDefinition *</code></td> <td>mDomainDefinition</td></tr> <tr><td>80</td> <td>(8) <code>const FilterParamDefinition *</code></td> <td>mOperatorDefinition</td></tr> <tr><td>88</td> <td>(8) <code>const FilterParamDefinition *</code></td> <td>mValueDefinition</td></tr> <tr><td>96</td> <td>(32) <code>std::function&lt;std::shared_ptr&lt;FilterTest&gt; ()&gt;</code></td> <td>mFactory</td></tr></tbody></table> <h3 id="filtertestdaytime"><a href="#filtertestdaytime" class="header-anchor">#</a> <code>FilterTestDaytime</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertest-96"><a href="#filtertest-96" class="header-anchor">#</a> <code>FilterTest:96</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$FilterTest</td></tr> <tr><td>8</td> <td>(2) <code>FilterSubject</code></td> <td>mSubject</td></tr> <tr><td>10</td> <td>(2) <code>FilterOperator</code></td> <td>mOperator</td></tr></tbody></table> <h3 id="filtertestclock"><a href="#filtertestclock" class="header-anchor">#</a> <code>FilterTestClock</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleFloatFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestmoonintensity"><a href="#filtertestmoonintensity" class="header-anchor">#</a> <code>FilterTestMoonIntensity</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleFloatFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestmoonphase"><a href="#filtertestmoonphase" class="header-anchor">#</a> <code>FilterTestMoonPhase</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleFloatFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestdistancetonearestplayer"><a href="#filtertestdistancetonearestplayer" class="header-anchor">#</a> <code>FilterTestDistanceToNearestPlayer</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleFloatFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertest"><a href="#filtertest" class="header-anchor">#</a> <code>FilterTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$FilterTest</td></tr> <tr><td>8</td> <td>(2) <code>FilterSubject</code></td> <td>mSubject</td></tr> <tr><td>10</td> <td>(2) <code>FilterOperator</code></td> <td>mOperator</td></tr></tbody></table> <h3 id="filtertestdifficulty"><a href="#filtertestdifficulty" class="header-anchor">#</a> <code>FilterTestDifficulty</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestgamerule"><a href="#filtertestgamerule" class="header-anchor">#</a> <code>FilterTestGameRule</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>FilterTest</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(32) <code>std::string</code></td> <td>mGameRule</td></tr> <tr><td>48</td> <td>(1) <code>bool</code></td> <td>mValue</td></tr></tbody></table> <h3 id="filtertesthourlyclock"><a href="#filtertesthourlyclock" class="header-anchor">#</a> <code>FilterTestHourlyClock</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>mValue</td></tr></tbody></table> <h3 id="filtertestbiome"><a href="#filtertestbiome" class="header-anchor">#</a> <code>FilterTestBiome</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestbiomehastag"><a href="#filtertestbiomehastag" class="header-anchor">#</a> <code>FilterTestBiomeHasTag</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(72) <code>SimpleTagIDFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestbiomesnowcovered"><a href="#filtertestbiomesnowcovered" class="header-anchor">#</a> <code>FilterTestBiomeSnowCovered</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestbiomehumid"><a href="#filtertestbiomehumid" class="header-anchor">#</a> <code>FilterTestBiomeHumid</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertesttemperaturetype"><a href="#filtertesttemperaturetype" class="header-anchor">#</a> <code>FilterTestTemperatureType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertesttemperaturevalue"><a href="#filtertesttemperaturevalue" class="header-anchor">#</a> <code>FilterTestTemperatureValue</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleFloatFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestbrightness"><a href="#filtertestbrightness" class="header-anchor">#</a> <code>FilterTestBrightness</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleFloatFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertestaltitude"><a href="#filtertestaltitude" class="header-anchor">#</a> <code>FilterTestAltitude</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="filtertesthastradesupply"><a href="#filtertesthastradesupply" class="header-anchor">#</a> <code>FilterTestHasTradeSupply</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="fancytreefeature-foliagecoords"><a href="#fancytreefeature-foliagecoords" class="header-anchor">#</a> <code>FancyTreeFeature::FoliageCoords</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>BlockPos</code></td> <td>baseclass_0</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>mBranchBase</td></tr></tbody></table> <h3 id="featurereftraits-ownerstorage"><a href="#featurereftraits-ownerstorage" class="header-anchor">#</a> <code>FeatureRefTraits::OwnerStorage</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::optional&lt;std::reference_wrapper&lt;FeatureRegistry&gt; &gt;</code></td> <td>mRegistry</td></tr> <tr><td>16</td> <td>(8) <code>size_t</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="file"><a href="#file" class="header-anchor">#</a> <code>FILE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef _IO_FILE FILE;
+
+</code></pre></div><h3 id="flockingsystem"><a href="#flockingsystem" class="header-anchor">#</a> <code>FlockingSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlockingSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="factory-dimension-level-scheduler"><a href="#factory-dimension-level-scheduler" class="header-anchor">#</a> <code>Factory&lt;Dimension,Level &amp;,Scheduler &amp;&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Factory&lt;Dimension,Level &amp;,Scheduler &amp;&gt;
+{
+  Factory&lt;Dimension,Level &amp;,Scheduler &amp;&gt;::FactoryMap mFactoryMap;
+};
+
+</code></pre></div><h3 id="factory-dimension-level-scheduler-factorymap"><a href="#factory-dimension-level-scheduler-factorymap" class="header-anchor">#</a> <code>Factory&lt;Dimension,Level &amp;,Scheduler &amp;&gt;::FactoryMap</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::unordered_map&lt;std::string,std::function&lt;std::unique_ptr&lt;Dimension&gt; (Level &amp;,Scheduler &amp;)&gt;&gt; Factory&lt;Dimension,Level &amp;,Scheduler &amp;&gt;::FactoryMap;
+
+</code></pre></div><h3 id="featureregistry"><a href="#featureregistry" class="header-anchor">#</a> <code>FeatureRegistry</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureRegistry
+{
+  std::vector&lt;std::unique_ptr&lt;IFeature&gt;&gt; mFeatureRegistry;
+  std::vector&lt;OwnerPtrT&lt;FeatureRefTraits&gt;&gt; mFeatureSlots;
+  std::unordered_map&lt;StringKey,unsigned long&gt; mFeatureLookupMap;
+};
+
+</code></pre></div><h3 id="featureloading-abstractfeatureholder"><a href="#featureloading-abstractfeatureholder" class="header-anchor">#</a> <code>FeatureLoading::AbstractFeatureHolder</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureLoading::AbstractFeatureHolder
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="featureloading-concretefeatureholder-aggregatefeature-placetype-arbitrary"><a href="#featureloading-concretefeatureholder-aggregatefeature-placetype-arbitrary" class="header-anchor">#</a> <code>FeatureLoading::ConcreteFeatureHolder&lt;AggregateFeature&lt;PlaceType::Arbitrary&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureLoading::ConcreteFeatureHolder&lt;AggregateFeature&lt;PlaceType::Arbitrary&gt; &gt;
+{
+  AggregateFeature&lt;PlaceType::Arbitrary&gt; *mFeaturePtr;
+};
+
+</code></pre></div><h3 id="featureloading-concretefeatureholder-aggregatefeature-placetype-sequential"><a href="#featureloading-concretefeatureholder-aggregatefeature-placetype-sequential" class="header-anchor">#</a> <code>FeatureLoading::ConcreteFeatureHolder&lt;AggregateFeature&lt;PlaceType::Sequential&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureLoading::ConcreteFeatureHolder&lt;AggregateFeature&lt;PlaceType::Sequential&gt; &gt;
+{
+  AggregateFeature&lt;PlaceType::Sequential&gt; *mFeaturePtr;
+};
+
+</code></pre></div><h3 id="featureloading-concretefeatureholder-orefeature"><a href="#featureloading-concretefeatureholder-orefeature" class="header-anchor">#</a> <code>FeatureLoading::ConcreteFeatureHolder&lt;OreFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureLoading::ConcreteFeatureHolder&lt;OreFeature&gt;
+{
+  OreFeature *mFeaturePtr;
+};
+
+</code></pre></div><h3 id="featureloading-concretefeatureholder-scatterfeature"><a href="#featureloading-concretefeatureholder-scatterfeature" class="header-anchor">#</a> <code>FeatureLoading::ConcreteFeatureHolder&lt;ScatterFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureLoading::ConcreteFeatureHolder&lt;ScatterFeature&gt;
+{
+  ScatterFeature *mFeaturePtr;
+};
+
+</code></pre></div><h3 id="featureloading-concretefeatureholder-singleblockfeature"><a href="#featureloading-concretefeatureholder-singleblockfeature" class="header-anchor">#</a> <code>FeatureLoading::ConcreteFeatureHolder&lt;SingleBlockFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureLoading::ConcreteFeatureHolder&lt;SingleBlockFeature&gt;
+{
+  SingleBlockFeature *mFeaturePtr;
+};
+
+</code></pre></div><h3 id="featureloading-concretefeatureholder-structuretemplatefeature"><a href="#featureloading-concretefeatureholder-structuretemplatefeature" class="header-anchor">#</a> <code>FeatureLoading::ConcreteFeatureHolder&lt;StructureTemplateFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureLoading::ConcreteFeatureHolder&lt;StructureTemplateFeature&gt;
+{
+  StructureTemplateFeature *mFeaturePtr;
+};
+
+</code></pre></div><h3 id="featureloading-concretefeatureholder-weightedrandomfeature"><a href="#featureloading-concretefeatureholder-weightedrandomfeature" class="header-anchor">#</a> <code>FeatureLoading::ConcreteFeatureHolder&lt;WeightedRandomFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureLoading::ConcreteFeatureHolder&lt;WeightedRandomFeature&gt;
+{
+  WeightedRandomFeature *mFeaturePtr;
+};
+
+</code></pre></div><h3 id="fossilfeature"><a href="#fossilfeature" class="header-anchor">#</a> <code>FossilFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FossilFeature : Feature
+{
+};
+
+</code></pre></div><h3 id="fancytreefeature"><a href="#fancytreefeature" class="header-anchor">#</a> <code>FancyTreeFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FancyTreeFeature : TreeFeature:288
+{
+  const int mHeightVariance;
+  const float mTrunkHeightScale;
+  const float mBranchSlope;
+  const float mWidthScale;
+  const float mFoliageDensity;
+  const int mTrunkWidth;
+  const int mFoliageHeight;
+  const int mMinAllowedHeight;
+};
+
+</code></pre></div><h3 id="featurereftraits-ownerstackref"><a href="#featurereftraits-ownerstackref" class="header-anchor">#</a> <code>FeatureRefTraits::OwnerStackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FeatureRefTraits::StackRef FeatureRefTraits::OwnerStackRef;
+
+</code></pre></div><h3 id="featurereftraits-stackref"><a href="#featurereftraits-stackref" class="header-anchor">#</a> <code>FeatureRefTraits::StackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IFeature FeatureRefTraits::StackRef;
+
+</code></pre></div><h3 id="featurereftraits"><a href="#featurereftraits" class="header-anchor">#</a> <code>FeatureRefTraits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureRefTraits
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="featuretypefactory"><a href="#featuretypefactory" class="header-anchor">#</a> <code>FeatureTypeFactory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureTypeFactory
+{
+  JsonUtil::JsonSchemaRoot&lt;FeatureLoading::FeatureRootParseContext&gt; mSchema;
+};
+
+</code></pre></div><h3 id="facing"><a href="#facing" class="header-anchor">#</a> <code>Facing</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Facing
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="flatworldgenerator"><a href="#flatworldgenerator" class="header-anchor">#</a> <code>FlatWorldGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlatWorldGenerator : ChunkSource, WorldGenerator
+{
+  std::vector&lt;const Block *&gt; mPrototypeBlocks;
+  Height mPrototypeHeight;
+  const Biome *mBiome;
+  const PerlinSimplexNoise noise;
+  std::unique_ptr&lt;RandomScatteredLargeFeature&gt; mScatteredFeature;
+  std::unique_ptr&lt;OceanMonumentFeature&gt; mOceanMonumentFeature;
+};
+
+</code></pre></div><h3 id="featurepoolelement"><a href="#featurepoolelement" class="header-anchor">#</a> <code>FeaturePoolElement</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FeaturePoolElement : StructurePoolElement
+{
+  const Feature *mFeature;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addisland"><a href="#filterlayer-layerfilters-addisland" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddIsland&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::AddIsland&gt; : UnaryLayer&lt;typename AddIsland::OutputType,typename AddIsland::InputType&gt;:328
+{
+  LayerFilters::AddIsland mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-removetoomuchocean"><a href="#filterlayer-layerfilters-removetoomuchocean" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RemoveTooMuchOcean&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::RemoveTooMuchOcean&gt; : UnaryLayer&lt;typename RemoveTooMuchOcean::OutputType,typename RemoveTooMuchOcean::InputType&gt;:328
+{
+  LayerFilters::RemoveTooMuchOcean mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addsnow"><a href="#filterlayer-layerfilters-addsnow" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddSnow&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::AddSnow&gt; : UnaryLayer&lt;typename AddSnow::OutputType,typename AddSnow::InputType&gt;:328
+{
+  LayerFilters::AddSnow mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addislandwithtemperature"><a href="#filterlayer-layerfilters-addislandwithtemperature" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddIslandWithTemperature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::AddIslandWithTemperature&gt; : UnaryLayer&lt;typename AddIslandWithTemperature::OutputType,typename AddIslandWithTemperature::InputType&gt;:328
+{
+  LayerFilters::AddIslandWithTemperature mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addedgecoolwarm"><a href="#filterlayer-layerfilters-addedgecoolwarm" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeCoolWarm&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::AddEdgeCoolWarm&gt; : UnaryLayer&lt;typename AddEdgeCoolWarm::OutputType,typename AddEdgeCoolWarm::InputType&gt;:328
+{
+  LayerFilters::AddEdgeCoolWarm mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addedgeheatice"><a href="#filterlayer-layerfilters-addedgeheatice" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeHeatIce&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::AddEdgeHeatIce&gt; : UnaryLayer&lt;typename AddEdgeHeatIce::OutputType,typename AddEdgeHeatIce::InputType&gt;:328
+{
+  LayerFilters::AddEdgeHeatIce mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addedgespecial"><a href="#filterlayer-layerfilters-addedgespecial" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeSpecial&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::AddEdgeSpecial&gt; : UnaryLayer&lt;typename AddEdgeSpecial::OutputType,typename AddEdgeSpecial::InputType&gt;:328
+{
+  LayerFilters::AddEdgeSpecial mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-biomeinit"><a href="#filterlayer-layerfilters-biomeinit" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::BiomeInit&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::BiomeInit&gt; : UnaryLayer&lt;typename BiomeInit::OutputType,typename BiomeInit::InputType&gt;
+{
+  LayerFilters::BiomeInit mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addmushroomisland"><a href="#filterlayer-layerfilters-addmushroomisland" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddMushroomIsland&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::AddMushroomIsland&gt; : UnaryLayer&lt;typename AddMushroomIsland::OutputType,typename AddMushroomIsland::InputType&gt;
+{
+  LayerFilters::AddMushroomIsland mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-promotecenter"><a href="#filterlayer-layerfilters-promotecenter" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::PromoteCenter&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::PromoteCenter&gt; : UnaryLayer&lt;typename PromoteCenter::OutputType,typename PromoteCenter::InputType&gt;
+{
+  LayerFilters::PromoteCenter mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-riverinit"><a href="#filterlayer-layerfilters-riverinit" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RiverInit&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::RiverInit&gt; : UnaryLayer&lt;typename RiverInit::OutputType,typename RiverInit::InputType&gt;
+{
+  LayerFilters::RiverInit mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-river"><a href="#filterlayer-layerfilters-river" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::River&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::River&gt; : UnaryLayer&lt;typename River::OutputType,typename River::InputType&gt;:328
+{
+  LayerFilters::River mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-smooth-bool"><a href="#filterlayer-layerfilters-smooth-bool" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Smooth&lt;bool&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::Smooth&lt;bool&gt; &gt; : UnaryLayer&lt;typename Smooth&lt;bool&gt;::OutputType,typename Smooth&lt;bool&gt;::InputType&gt;:328
+{
+  LayerFilters::Smooth&lt;bool&gt; mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-rarebiomespot"><a href="#filterlayer-layerfilters-rarebiomespot" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RareBiomeSpot&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::RareBiomeSpot&gt; : UnaryLayer&lt;typename RareBiomeSpot::OutputType,typename RareBiomeSpot::InputType&gt;
+{
+  LayerFilters::RareBiomeSpot mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-prehillsedgetransformation"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-prehillsedgetransformation" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt; &gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt; &gt; &gt; : UnaryLayer&lt;typename FilteredTransformation&lt;FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt; &gt;::OutputType,typename FilteredTransformation&lt;FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt; &gt;::InputType&gt;
+{
+  LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt; &gt; mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-legacyprehillsedgetransformation"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-legacyprehillsedgetransformation" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt; &gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt; &gt; &gt; : UnaryLayer&lt;typename FilteredTransformation&lt;FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt; &gt;::OutputType,typename FilteredTransformation&lt;FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt; &gt;::InputType&gt;
+{
+  LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt; &gt; mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addbiomeisland"><a href="#filterlayer-layerfilters-addbiomeisland" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddBiomeIsland&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::AddBiomeIsland&gt; : UnaryLayer&lt;typename AddBiomeIsland::OutputType,typename AddBiomeIsland::InputType&gt;
+{
+  LayerFilters::AddBiomeIsland mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-shore"><a href="#filterlayer-layerfilters-shore" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Shore&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::Shore&gt; : UnaryLayer&lt;typename Shore::OutputType,typename Shore::InputType&gt;
+{
+  LayerFilters::Shore mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-postshoreedgetransformation"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-postshoreedgetransformation" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt; &gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt; &gt; &gt; : UnaryLayer&lt;typename FilteredTransformation&lt;FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt; &gt;::OutputType,typename FilteredTransformation&lt;FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt; &gt;::InputType&gt;
+{
+  LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt; &gt; mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-smooth-biome"><a href="#filterlayer-layerfilters-smooth-biome" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Smooth&lt;Biome *&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::Smooth&lt;Biome *&gt; &gt; : UnaryLayer&lt;typename Smooth&lt;Biome *&gt;::OutputType,typename Smooth&lt;Biome *&gt;::InputType&gt;:328
+{
+  LayerFilters::Smooth&lt;Biome *&gt; mFilter;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addoceanedge"><a href="#filterlayer-layerfilters-addoceanedge" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddOceanEdge&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FilterLayer&lt;LayerFilters::AddOceanEdge&gt; : UnaryLayer&lt;typename AddOceanEdge::OutputType,typename AddOceanEdge::InputType&gt;:328
+{
+  LayerFilters::AddOceanEdge mFilter;
+};
+
+</code></pre></div><h3 id="filtercontext"><a href="#filtercontext" class="header-anchor">#</a> <code>FilterContext</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FilterContext
+{
+  const Actor *mHost;
+  const Actor *mSubject;
+  const VariantParameterList *mParams;
+  const BlockSource *mRegion;
+  const Dimension *mDimension;
+  const Level *mLevel;
+  const Biome *mBiome;
+  BlockPos mPos;
+  const Block *mBlock;
+  const TagRegistry *mTagRegistry;
+};
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addisland-layerdata"><a href="#filterlayer-layerfilters-addisland-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddIsland&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;LayerValues::Terrain,LayerValues::Terrain&gt; FilterLayer&lt;LayerFilters::AddIsland&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-removetoomuchocean-layerdata"><a href="#filterlayer-layerfilters-removetoomuchocean-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RemoveTooMuchOcean&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;LayerValues::Terrain,LayerValues::Terrain&gt; FilterLayer&lt;LayerFilters::RemoveTooMuchOcean&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addsnow-layerdata"><a href="#filterlayer-layerfilters-addsnow-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddSnow&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;LayerValues::PreBiome,LayerValues::Terrain&gt; FilterLayer&lt;LayerFilters::AddSnow&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addislandwithtemperature-layerdata"><a href="#filterlayer-layerfilters-addislandwithtemperature-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddIslandWithTemperature&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;LayerValues::PreBiome,LayerValues::PreBiome&gt; FilterLayer&lt;LayerFilters::AddIslandWithTemperature&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addedgecoolwarm-layerdata"><a href="#filterlayer-layerfilters-addedgecoolwarm-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeCoolWarm&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;LayerValues::PreBiome,LayerValues::PreBiome&gt; FilterLayer&lt;LayerFilters::AddEdgeCoolWarm&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addedgeheatice-layerdata"><a href="#filterlayer-layerfilters-addedgeheatice-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeHeatIce&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;LayerValues::PreBiome,LayerValues::PreBiome&gt; FilterLayer&lt;LayerFilters::AddEdgeHeatIce&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addedgespecial-layerdata"><a href="#filterlayer-layerfilters-addedgespecial-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddEdgeSpecial&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;LayerValues::PreBiome,LayerValues::PreBiome&gt; FilterLayer&lt;LayerFilters::AddEdgeSpecial&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-biomeinit-layerdata"><a href="#filterlayer-layerfilters-biomeinit-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::BiomeInit&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,LayerValues::PreBiome&gt; FilterLayer&lt;LayerFilters::BiomeInit&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addmushroomisland-layerdata"><a href="#filterlayer-layerfilters-addmushroomisland-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddMushroomIsland&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::AddMushroomIsland&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-promotecenter-layerdata"><a href="#filterlayer-layerfilters-promotecenter-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::PromoteCenter&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::PromoteCenter&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-riverinit-layerdata"><a href="#filterlayer-layerfilters-riverinit-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RiverInit&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;int,Biome *&gt; FilterLayer&lt;LayerFilters::RiverInit&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-river-layerdata"><a href="#filterlayer-layerfilters-river-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::River&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;bool,int&gt; FilterLayer&lt;LayerFilters::River&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-smooth-bool-layerdata"><a href="#filterlayer-layerfilters-smooth-bool-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Smooth&lt;bool&gt; &gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;bool,bool&gt; FilterLayer&lt;LayerFilters::Smooth&lt;bool&gt; &gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-rarebiomespot-layerdata"><a href="#filterlayer-layerfilters-rarebiomespot-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::RareBiomeSpot&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::RareBiomeSpot&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-prehillsedgetransformation-layerdata"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-prehillsedgetransformation-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt; &gt; &gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PreHillsEdgeTransformation&gt; &gt; &gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-legacyprehillsedgetransformation-layerdata"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-legacyprehillsedgetransformation-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt; &gt; &gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;LegacyPreHillsEdgeTransformation&gt; &gt; &gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addbiomeisland-layerdata"><a href="#filterlayer-layerfilters-addbiomeisland-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddBiomeIsland&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::AddBiomeIsland&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-shore-layerdata"><a href="#filterlayer-layerfilters-shore-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Shore&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::Shore&gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-postshoreedgetransformation-layerdata"><a href="#filterlayer-layerfilters-filteredtransformation-filteredtransformationattributes-postshoreedgetransformation-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt; &gt; &gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::FilteredTransformation&lt;FilteredTransformationAttributes&lt;PostShoreEdgeTransformation&gt; &gt; &gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-smooth-biome-layerdata"><a href="#filterlayer-layerfilters-smooth-biome-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::Smooth&lt;Biome *&gt; &gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;Biome *,Biome *&gt; FilterLayer&lt;LayerFilters::Smooth&lt;Biome *&gt; &gt;::LayerData;
+
+</code></pre></div><h3 id="filterlayer-layerfilters-addoceanedge-layerdata"><a href="#filterlayer-layerfilters-addoceanedge-layerdata" class="header-anchor">#</a> <code>FilterLayer&lt;LayerFilters::AddOceanEdge&gt;::LayerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayerDetails::WorkingData&lt;BiomeTemperatureCategory,BiomeTemperatureCategory&gt; FilterLayer&lt;LayerFilters::AddOceanEdge&gt;::LayerData;
+
+</code></pre></div><h3 id="floattag"><a href="#floattag" class="header-anchor">#</a> <code>FloatTag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FloatTag : Tag
+{
+  float data;
+};
+
+</code></pre></div><h3 id="featuretoggles"><a href="#featuretoggles" class="header-anchor">#</a> <code>FeatureToggles</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FeatureToggles
+{
+  FeatureToggles::FeatureTogglesArray mFeatures;
+  Core::HeapPathBuffer mFilePath;
+};
+
+</code></pre></div><h3 id="featuretoggles-featuretogglesarray"><a href="#featuretoggles-featuretogglesarray" class="header-anchor">#</a> <code>FeatureToggles::FeatureTogglesArray</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;FeatureToggles::FeatureToggle&gt; FeatureToggles::FeatureTogglesArray;
+
+</code></pre></div><h3 id="fireworksrecipe"><a href="#fireworksrecipe" class="header-anchor">#</a> <code>FireworksRecipe</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FireworksRecipe : MultiRecipe
+{
+  Recipe::ResultList mResult;
+};
+
+</code></pre></div><h3 id="floatoption"><a href="#floatoption" class="header-anchor">#</a> <code>FloatOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FloatOption : Option
+{
+  const float VALUE_MIN;
+  const float VALUE_MAX;
+  float mValue;
+  float mDefaultValue;
+  const float DELTA;
+};
+
+</code></pre></div><h3 id="functionmanager"><a href="#functionmanager" class="header-anchor">#</a> <code>FunctionManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FunctionManager
+{
+  int (**_vptr$FunctionManager)(void);
+  const GameRule *mGameRule;
+  bool mIsProcessingStack;
+  std::vector&lt;FunctionManager::QueuedCommand&gt; mCommandList;
+  std::unordered_map&lt;const CommandOrigin *,FunctionManager::OriginMapping&gt; mOriginMap;
+  std::unique_ptr&lt;ICommandDispatcher&gt; mCommandDispatcher;
+  std::unique_ptr&lt;CommandOrigin&gt; mTickOrigin;
+  std::unordered_map&lt;std::string,std::unique_ptr&lt;FunctionEntry&gt;&gt; mFunctions;
+  std::vector&lt;FunctionEntry *&gt; mTickFunctions;
+};
+
+</code></pre></div><h3 id="familytypedescription"><a href="#familytypedescription" class="header-anchor">#</a> <code>FamilyTypeDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FamilyTypeDescription : PropertyDescription
+{
+  Util::hashStringSet mFamilySet;
+};
+
+</code></pre></div><h3 id="fireimmunedescription"><a href="#fireimmunedescription" class="header-anchor">#</a> <code>FireImmuneDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FireImmuneDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="floatsinliquiddescription"><a href="#floatsinliquiddescription" class="header-anchor">#</a> <code>FloatsInLiquidDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FloatsInLiquidDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="flyingspeeddescription"><a href="#flyingspeeddescription" class="header-anchor">#</a> <code>FlyingSpeedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FlyingSpeedDescription : PropertyDescription
+{
+  float mValue;
+};
+
+</code></pre></div><h3 id="footsizedescription"><a href="#footsizedescription" class="header-anchor">#</a> <code>FootSizeDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FootSizeDescription : PropertyDescription
+{
+  float mValue;
+};
+
+</code></pre></div><h3 id="frictionmodifierdescription"><a href="#frictionmodifierdescription" class="header-anchor">#</a> <code>FrictionModifierDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FrictionModifierDescription : PropertyDescription
+{
+  float mValue;
+};
+
+</code></pre></div><h3 id="furnacecontainermanagermodel"><a href="#furnacecontainermanagermodel" class="header-anchor">#</a> <code>FurnaceContainerManagerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FurnaceContainerManagerModel : ContainerManagerModel
+{
+  BlockPos mBlockPos;
+  int mLastTickCount;
+  int mLastLitTime;
+  int mLastLitDuration;
+  int mLastStoredXP;
+  int mLastInputId;
+  int mLastInputAux;
+  std::string mLastOutputName;
+  int mLastResultDisplayId;
+  const BlockActorType mBlockActorType;
+  const ContainerEnumName mIngredientContainerName;
+  const Util::HashString mRecipeTag;
+};
+
+</code></pre></div><h3 id="fillingcontainer"><a href="#fillingcontainer" class="header-anchor">#</a> <code>FillingContainer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FillingContainer : Container
+{
+  FillingContainer::ItemList mItems;
+  Player *mPlayer;
+};
+
+</code></pre></div><h3 id="functionmanager-originmapping"><a href="#functionmanager-originmapping" class="header-anchor">#</a> <code>FunctionManager::OriginMapping</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) FunctionManager::OriginMapping
+{
+  std::unique_ptr&lt;CommandOrigin&gt; mOrigin;
+  uint32_t mRefCount;
+};
+
+</code></pre></div><h3 id="functionentry"><a href="#functionentry" class="header-anchor">#</a> <code>FunctionEntry</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FunctionEntry : IFunctionEntry
+{
+  std::vector&lt;std::unique_ptr&lt;IFunctionEntry&gt;&gt; mCommandList;
+  FunctionState mState;
+};
+
+</code></pre></div><h3 id="fileuploadmanager"><a href="#fileuploadmanager" class="header-anchor">#</a> <code>FileUploadManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FileUploadManager : std::enable_shared_from_this&lt;FileUploadManager&gt;
+{
+  int (**_vptr$FileUploadManager)(void);
+  FileInfo mFile;
+  FileUploadManager::MultiPartStreamHelper mMultiPartHelper;
+  UploadState mState;
+  UploadError mUploadError;
+  std::shared_ptr&lt;IFilePicker&gt; mFilePicker;
+  std::shared_ptr&lt;IFileChunkUploader&gt; mFileUploader;
+  TaskGroup *mIOTaskGroup;
+  std::weak_ptr&lt;FileArchiver&gt; mFileArchiver;
+  bool mUploadAllAtOnce;
+  bool mContinueOnReception;
+  bool mUseStream;
+  MPMCQueue&lt;std::function&lt;void ()&gt; &gt; mCallbackQueue;
+};
+
+</code></pre></div><h3 id="fileuploadmanager-multipartstreamhelper"><a href="#fileuploadmanager-multipartstreamhelper" class="header-anchor">#</a> <code>FileUploadManager::MultiPartStreamHelper</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FileUploadManager::MultiPartStreamHelper
+{
+  bool needHeader;
+  bool needTrailer;
+  std::string header;
+  std::string trailer;
+  uint64_t currentFileByte;
+  uint64_t totalFileByte;
+  uint64_t totalStreamSize;
+};
+
+</code></pre></div><h3 id="filechunkmanager"><a href="#filechunkmanager" class="header-anchor">#</a> <code>FileChunkManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FileChunkManager
+{
+  uint64_t mTotalSize;
+  uint32_t mChunkSize;
+  int mTotalNbChunks;
+  int mRequestedChunks;
+  int mReceivedChunks;
+  int mWrittenChunks;
+  std::vector&lt;FileChunkInfo&gt; mChunkInfo;
+  MovePriorityQueue&lt;FileChunk,std::less&lt;FileChunk&gt; &gt; mChunkQueue;
+};
+
+</code></pre></div><h3 id="fishinghook"><a href="#fishinghook" class="header-anchor">#</a> <code>FishingHook</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FishingHook : Actor
+{
+  const float SHOOT_SPEED;
+  const float SHOOT_POWER;
+  const int NUM_PERCENTAGE_STEPS;
+  bool mInGround;
+  BlockPos mBlockPos;
+  float mFishAngle;
+  int mLife;
+  int mFlightTime;
+  int mTimeUntilHooked;
+  int mTimeUntilLured;
+  int mTimeUntilNibble;
+  int mFishingSpeed;
+  int mLerpSteps;
+  Vec3 mLerpPos;
+  Vec3 mLerpDir;
+  float mLerpRotX;
+  float mLerpRotY;
+  double mBobTimer;
+};
+
+</code></pre></div><h3 id="fish"><a href="#fish" class="header-anchor">#</a> <code>Fish</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Fish : WaterAnimal
+{
+  float mAnimationAmount;
+  float mAnimationAmountPrev;
+};
+
+</code></pre></div><h3 id="fallingblock"><a href="#fallingblock" class="header-anchor">#</a> <code>FallingBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FallingBlock : Actor
+{
+  bool mCreative;
+  FallingBlock::State mState;
+  int mWaitTicks;
+  int mTime;
+  bool mCancelDrop;
+  bool mHurtEntities;
+  int mFallDamageMax;
+  float mFallDamageAmount;
+  std::unique_ptr&lt;CompoundTag&gt; mFallingBlockSerId;
+  NewBlockID mFallingBlockId;
+  DataID mFallingBlockData;
+};
+
+</code></pre></div><h3 id="fireworksrocketactor"><a href="#fireworksrocketactor" class="header-anchor">#</a> <code>FireworksRocketActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FireworksRocketActor : Actor
+{
+  int mLife;
+  int mLifeTime;
+  bool mDispensed;
+};
+
+</code></pre></div><h3 id="furnaceblockactor"><a href="#furnaceblockactor" class="header-anchor">#</a> <code>FurnaceBlockActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FurnaceBlockActor : BlockActor, Container:1952
+{
+  int mLitTime;
+  int mLitDuration;
+  int mCookingProgress;
+  unsigned int mStoredXP;
+  ItemStack mItems[3];
+  bool mDirty[3];
+  std::unordered_set&lt;ActorUniqueID&gt; mPlayers;
+  const Util::HashString mRecipeTag;
+  const int mBurnInterval;
+  LevelSoundEvent mSmeltSoundEvent;
+  int mSoundTick;
+  int mSoundTickTarget;
+  Random mRandom;
+  const Block *mUnlitFurnace;
+  const Block *mLitFurnace;
+  ItemInstance mLastFuelItem;
+  bool mCanBeFinished;
+  bool mFinished;
+  bool mNoDrop;
+};
+
+</code></pre></div><h3 id="flymovecontrol"><a href="#flymovecontrol" class="header-anchor">#</a> <code>FlyMoveControl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlyMoveControl : MoveControl
+{
+};
+
+</code></pre></div><h3 id="floatnavigation"><a href="#floatnavigation" class="header-anchor">#</a> <code>FloatNavigation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FloatNavigation : PathNavigation
+{
+};
+
+</code></pre></div><h3 id="flyingpathnavigation"><a href="#flyingpathnavigation" class="header-anchor">#</a> <code>FlyingPathNavigation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FlyingPathNavigation : PathNavigation
+{
+  bool mHadGravity;
+  bool mCanPathFromAir;
+};
+
+</code></pre></div><h3 id="findunderwatertreasuregoal"><a href="#findunderwatertreasuregoal" class="header-anchor">#</a> <code>FindUnderwaterTreasureGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FindUnderwaterTreasureGoal : Goal
+{
+  Mob *mMob;
+  BlockPos mDestination;
+  Vec3 mLastPos;
+  int mBlocksCounter;
+  int mBlocksToTravel;
+  int mTimeToRecalcPath;
+  int mFailedPathing;
+  int mTotalFailedPathing;
+  float mSpeed;
+  int mSearchArea;
+};
+
+</code></pre></div><h3 id="findcovergoal"><a href="#findcovergoal" class="header-anchor">#</a> <code>FindCoverGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FindCoverGoal : Goal
+{
+  Mob *mMob;
+  float mSpeed;
+  int mCooldownTicks;
+  Tick mCooldownTimer;
+  Vec3 mWantedPosition;
+};
+
+</code></pre></div><h3 id="fleesungoal"><a href="#fleesungoal" class="header-anchor">#</a> <code>FleeSunGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FleeSunGoal : FindCoverGoal
+{
+};
+
+</code></pre></div><h3 id="floatgoal"><a href="#floatgoal" class="header-anchor">#</a> <code>FloatGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FloatGoal : Goal
+{
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="followownergoal"><a href="#followownergoal" class="header-anchor">#</a> <code>FollowOwnerGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FollowOwnerGoal : Goal
+{
+  Mob *mMob;
+  TempEPtr&lt;Mob&gt; mOwner;
+  float mSpeed;
+  int mTimeToRecalcPath;
+  float mStartDistance;
+  float mStopDistance;
+  bool mOldAvoidWater;
+  bool mOldAvoidPortals;
+};
+
+</code></pre></div><h3 id="followparentgoal"><a href="#followparentgoal" class="header-anchor">#</a> <code>FollowParentGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FollowParentGoal : Goal
+{
+  Mob *mMob;
+  TempEPtr&lt;Mob&gt; mParent;
+  float mSpeed;
+  int mTimeToRecalcPath;
+};
+
+</code></pre></div><h3 id="followcaravangoal"><a href="#followcaravangoal" class="header-anchor">#</a> <code>FollowCaravanGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FollowCaravanGoal : Goal
+{
+  Mob *mMob;
+  TempEPtr&lt;Mob&gt; mParent;
+  float mSpeedModifier;
+  float mSpeedModifierO;
+  int mDistanceCheckCounter;
+  int mCaravanSize;
+  const std::vector&lt;MobDescriptor&gt; mTargetTypes;
+};
+
+</code></pre></div><h3 id="followmobgoal"><a href="#followmobgoal" class="header-anchor">#</a> <code>FollowMobGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FollowMobGoal : Goal
+{
+  Mob *mMob;
+  TempEPtr&lt;Mob&gt; mFollowingMob;
+  float mSpeed;
+  int mTimeToRecalcPath;
+  float mStopDistance;
+  int mSearchArea;
+};
+
+</code></pre></div><h3 id="followtargetcaptaingoal"><a href="#followtargetcaptaingoal" class="header-anchor">#</a> <code>FollowTargetCaptainGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FollowTargetCaptainGoal : MoveTowardsTargetGoal:672
+{
+  __int16 mLocateAttempts;
+  float mFollowDistSq;
+};
+
+</code></pre></div><h3 id="findmountgoal"><a href="#findmountgoal" class="header-anchor">#</a> <code>FindMountGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FindMountGoal : Goal
+{
+  TempEPtr&lt;Actor&gt; mTarget;
+  float mTargetDist;
+  int mTimeToRecalcPath;
+  int mStartCounter;
+  int mStartDelay;
+  bool mAvoidWater;
+  bool mTargetNeeded;
+  float mMountDistance;
+  int mFailedAttemptsCounter;
+  int mMaxFailedAttempts;
+  Mob *mMob;
+  Unique&lt;Path&gt; mPath;
+};
+
+</code></pre></div><h3 id="floatwandergoal"><a href="#floatwandergoal" class="header-anchor">#</a> <code>FloatWanderGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FloatWanderGoal : Goal
+{
+  Mob *mMob;
+  Vec3 mTargetPos;
+  int mFloatDuration;
+  float mFloatXZDist;
+  float mFloatYDist;
+  float mYOffset;
+  bool mMustReach;
+  bool mRandomReselect;
+  FloatRange mFloatDurationRange;
+};
+
+</code></pre></div><h3 id="followflockgoal"><a href="#followflockgoal" class="header-anchor">#</a> <code>FollowFlockGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FollowFlockGoal : Goal
+{
+  Mob *mMob;
+  int mCooldownTicks;
+  int mNotInFlockTicks;
+  float mSpeed;
+};
+
+</code></pre></div><h3 id="fireworkchargeitem"><a href="#fireworkchargeitem" class="header-anchor">#</a> <code>FireworkChargeItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FireworkChargeItem : Item
+{
+};
+
+</code></pre></div><h3 id="fillingcontainer-itemlist"><a href="#fillingcontainer-itemlist" class="header-anchor">#</a> <code>FillingContainer::ItemList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;ItemStack&gt; FillingContainer::ItemList;
+
+</code></pre></div><h3 id="fooditemcomponent"><a href="#fooditemcomponent" class="header-anchor">#</a> <code>FoodItemComponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FoodItemComponent
+{
+  const Item *mOwner;
+  int mNutrition;
+  float mSaturationModifier;
+  std::string mUsingConvertsTo;
+  FoodItemComponent::OnUseAction mOnUseAction;
+  Vec3 mOnUseRange;
+  CooldownType mCoolDownType;
+  int mCooldownTime;
+  bool mCanAlwaysEat;
+  std::vector&lt;FoodItemComponent::Effect&gt; mEffects;
+  std::vector&lt;unsigned int&gt; mRemoveEffects;
+};
+
+</code></pre></div><h3 id="fireball"><a href="#fireball" class="header-anchor">#</a> <code>Fireball</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) Fireball : Actor
+{
+  ActorUniqueID ownerId;
+  bool mInGround;
+  MovementInterpolator mInterpolation;
+};
+
+</code></pre></div><h3 id="fireball-17696"><a href="#fireball-17696" class="header-anchor">#</a> <code>Fireball:17696</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((packed)) __attribute__((aligned(4))) Fireball:17696 : Actor
+{
+  ActorUniqueID ownerId;
+  bool mInGround;
+  __attribute__((aligned(4))) MovementInterpolator mInterpolation;
+};
+
+</code></pre></div><h3 id="freezeonhitsubcomponent"><a href="#freezeonhitsubcomponent" class="header-anchor">#</a> <code>FreezeOnHitSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FreezeOnHitSubcomponent : OnHitSubcomponent
+{
+  FreezeOnHitSubcomponent::Shape mShape;
+  float mSize;
+  bool mSnapToBlock;
+};
+
+</code></pre></div><h3 id="filteredcontainermodel"><a href="#filteredcontainermodel" class="header-anchor">#</a> <code>FilteredContainerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FilteredContainerModel : ExpandoContainerModel
+{
+  bool mDoExpandoGroups;
+  bool mIsFiltering;
+  int mFilteredItemCount;
+  std::vector&lt;ContainerItemStack&gt; mSavedItems;
+  std::vector&lt;ContainerItemStack&gt; mActiveFilteredExpandableSetHeads;
+  std::function&lt;FilterResult (const ContainerItemStack &amp;)&gt; mFilterRule;
+};
+
+</code></pre></div><h3 id="filtertest-ptr"><a href="#filtertest-ptr" class="header-anchor">#</a> <code>FilterTest::Ptr</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::shared_ptr&lt;FilterTest&gt; FilterTest::Ptr;
+
+</code></pre></div><h3 id="fertilizeritem"><a href="#fertilizeritem" class="header-anchor">#</a> <code>FertilizerItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FertilizerItem : Item
+{
+  FertilizerType mType;
+};
+
+</code></pre></div><h3 id="fireworksitem"><a href="#fireworksitem" class="header-anchor">#</a> <code>FireworksItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FireworksItem : Item
+{
+};
+
+</code></pre></div><h3 id="flintandsteelitem"><a href="#flintandsteelitem" class="header-anchor">#</a> <code>FlintAndSteelItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlintAndSteelItem : Item
+{
+};
+
+</code></pre></div><h3 id="fishingroditem"><a href="#fishingroditem" class="header-anchor">#</a> <code>FishingRodItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FishingRodItem : Item
+{
+  TextureUVCoordinateSet mFrame[2];
+};
+
+</code></pre></div><h3 id="firechargeitem"><a href="#firechargeitem" class="header-anchor">#</a> <code>FireChargeItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FireChargeItem : Item
+{
+};
+
+</code></pre></div><h3 id="fishingenchant"><a href="#fishingenchant" class="header-anchor">#</a> <code>FishingEnchant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FishingEnchant : Enchant
+{
+};
+
+</code></pre></div><h3 id="frostwalkerenchant"><a href="#frostwalkerenchant" class="header-anchor">#</a> <code>FrostWalkerEnchant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FrostWalkerEnchant : Enchant
+{
+};
+
+</code></pre></div><h3 id="filepickersettings"><a href="#filepickersettings" class="header-anchor">#</a> <code>FilePickerSettings</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FilePickerSettings
+{
+  std::function&lt;void (std::shared_ptr&lt;FilePickerSettings&gt;)&gt; onCancel;
+  std::function&lt;void (bool)&gt; onOperationComplete;
+  std::function&lt;void (std::shared_ptr&lt;FilePickerSettings&gt;,const Core::Path &amp;)&gt; onPick;
+  std::vector&lt;FilePickerSettings::FileDescription&gt; mFileDescriptions;
+  size_t mDefaultFileExtensionIndex;
+  FilePickerSettings::PickerType mPickerType;
+  std::string mDefaultFileName;
+  std::string mDefaultAlbumName;
+  std::string mFilePickerTitle;
+};
+
+</code></pre></div><h3 id="filepickersettings-filedescription"><a href="#filepickersettings-filedescription" class="header-anchor">#</a> <code>FilePickerSettings::FileDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FilePickerSettings::FileDescription
+{
+  std::string Extension;
+  std::string Name;
+};
+
+</code></pre></div><h3 id="fireblock"><a href="#fireblock" class="header-anchor">#</a> <code>FireBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FireBlock : BlockLegacy
+{
+  AABB mAabb;
+};
+
+</code></pre></div><h3 id="farmblock"><a href="#farmblock" class="header-anchor">#</a> <code>FarmBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FarmBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="flowerpotblockactor"><a href="#flowerpotblockactor" class="header-anchor">#</a> <code>FlowerPotBlockActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlowerPotBlockActor : BlockActor
+{
+  const Block *mPlant;
+};
+
+</code></pre></div><h3 id="flowerblock"><a href="#flowerblock" class="header-anchor">#</a> <code>FlowerBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FlowerBlock : BushBlock
+{
+  FlowerBlock::Type mType;
+};
+
+</code></pre></div><h3 id="furnaceblock"><a href="#furnaceblock" class="header-anchor">#</a> <code>FurnaceBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FurnaceBlock : ActorBlock
+{
+  const bool mLit;
+};
+
+</code></pre></div><h3 id="fenceblock"><a href="#fenceblock" class="header-anchor">#</a> <code>FenceBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FenceBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="fencegateblock"><a href="#fencegateblock" class="header-anchor">#</a> <code>FenceGateBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FenceGateBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="flowerpotblock"><a href="#flowerpotblock" class="header-anchor">#</a> <code>FlowerPotBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlowerPotBlock : ActorBlock
+{
+};
+
+</code></pre></div><h3 id="frostediceblock"><a href="#frostediceblock" class="header-anchor">#</a> <code>FrostedIceBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FrostedIceBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="featureloading-featureschemanode-aggregatefeature-placetype-0"><a href="#featureloading-featureschemanode-aggregatefeature-placetype-0" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;AggregateFeature&lt;(PlaceType)0&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;AggregateFeature&lt;PlaceType::Arbitrary&gt; &gt; &gt; FeatureLoading::FeatureSchemaNode&lt;AggregateFeature&lt;(PlaceType)0&gt; &gt;;
+
+</code></pre></div><h3 id="featureloading-featureschemanode-aggregatefeature-placetype-1"><a href="#featureloading-featureschemanode-aggregatefeature-placetype-1" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;AggregateFeature&lt;(PlaceType)1&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;AggregateFeature&lt;PlaceType::Sequential&gt; &gt; &gt; FeatureLoading::FeatureSchemaNode&lt;AggregateFeature&lt;(PlaceType)1&gt; &gt;;
+
+</code></pre></div><h3 id="featureloading-featureschemanode-aggregatefeature-placetype-arbitrary"><a href="#featureloading-featureschemanode-aggregatefeature-placetype-arbitrary" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;AggregateFeature&lt;PlaceType::Arbitrary&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;AggregateFeature&lt;PlaceType::Arbitrary&gt; &gt; &gt; FeatureLoading::FeatureSchemaNode&lt;AggregateFeature&lt;PlaceType::Arbitrary&gt; &gt;;
+
+</code></pre></div><h3 id="featureloading-featureschemanode-aggregatefeature-placetype-sequential"><a href="#featureloading-featureschemanode-aggregatefeature-placetype-sequential" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;AggregateFeature&lt;PlaceType::Sequential&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;AggregateFeature&lt;PlaceType::Sequential&gt; &gt; &gt; FeatureLoading::FeatureSchemaNode&lt;AggregateFeature&lt;PlaceType::Sequential&gt; &gt;;
+
+</code></pre></div><h3 id="featureloading-featureschemanode-orefeature"><a href="#featureloading-featureschemanode-orefeature" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;OreFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;OreFeature&gt; &gt; FeatureLoading::FeatureSchemaNode&lt;OreFeature&gt;;
+
+</code></pre></div><h3 id="featureloading-featureschemanode-scatterfeature"><a href="#featureloading-featureschemanode-scatterfeature" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;ScatterFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;ScatterFeature&gt; &gt; FeatureLoading::FeatureSchemaNode&lt;ScatterFeature&gt;;
+
+</code></pre></div><h3 id="featureloading-featureschemanode-singleblockfeature"><a href="#featureloading-featureschemanode-singleblockfeature" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;SingleBlockFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;SingleBlockFeature&gt; &gt; FeatureLoading::FeatureSchemaNode&lt;SingleBlockFeature&gt;;
+
+</code></pre></div><h3 id="featureloading-featureschemanode-structuretemplatefeature"><a href="#featureloading-featureschemanode-structuretemplatefeature" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;StructureTemplateFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;StructureTemplateFeature&gt; &gt; FeatureLoading::FeatureSchemaNode&lt;StructureTemplateFeature&gt;;
+
+</code></pre></div><h3 id="featureloading-featureschemanode-weightedrandomfeature"><a href="#featureloading-featureschemanode-weightedrandomfeature" class="header-anchor">#</a> <code>FeatureLoading::FeatureSchemaNode&lt;WeightedRandomFeature&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef JsonUtil::JsonSchemaObjectNode&lt;JsonUtil::JsonParseState&lt;JsonUtil::EmptyClass,FeatureLoading::FeatureRootParseContext&gt;,FeatureLoading::ConcreteFeatureHolder&lt;WeightedRandomFeature&gt; &gt; FeatureLoading::FeatureSchemaNode&lt;WeightedRandomFeature&gt;;
+
+</code></pre></div><h3 id="flatworldgeneratoroptions-getdefault-7ef7c94beab75c6cef4adfb99b570420"><a href="#flatworldgeneratoroptions-getdefault-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>FlatWorldGeneratorOptions::getDefault::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FlatWorldGeneratorOptions::getDefault::$7EF7C94BEAB75C6CEF4ADFB99B570420
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="fitdoublexyroom"><a href="#fitdoublexyroom" class="header-anchor">#</a> <code>FitDoubleXYRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FitDoubleXYRoom : MonumentRoomFitter
+{
+};
+
+</code></pre></div><h3 id="fitdoubleyzroom"><a href="#fitdoubleyzroom" class="header-anchor">#</a> <code>FitDoubleYZRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FitDoubleYZRoom : MonumentRoomFitter
+{
+};
+
+</code></pre></div><h3 id="fitdoublezroom"><a href="#fitdoublezroom" class="header-anchor">#</a> <code>FitDoubleZRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FitDoubleZRoom : MonumentRoomFitter
+{
+};
+
+</code></pre></div><h3 id="fitdoublexroom"><a href="#fitdoublexroom" class="header-anchor">#</a> <code>FitDoubleXRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FitDoubleXRoom : MonumentRoomFitter
+{
+};
+
+</code></pre></div><h3 id="fitdoubleyroom"><a href="#fitdoubleyroom" class="header-anchor">#</a> <code>FitDoubleYRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FitDoubleYRoom : MonumentRoomFitter
+{
+};
+
+</code></pre></div><h3 id="fitsimpletoproom"><a href="#fitsimpletoproom" class="header-anchor">#</a> <code>FitSimpleTopRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FitSimpleTopRoom : MonumentRoomFitter
+{
+};
+
+</code></pre></div><h3 id="fitsimpleroom"><a href="#fitsimpleroom" class="header-anchor">#</a> <code>FitSimpleRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FitSimpleRoom : MonumentRoomFitter
+{
+};
+
+</code></pre></div><h3 id="flockingdefinition"><a href="#flockingdefinition" class="header-anchor">#</a> <code>FlockingDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FlockingDefinition
+{
+  bool mInWater;
+  bool mMatchVariant;
+  bool mUseCenterOfMass;
+  int mLowFlockLimit;
+  int mHighFlockLimit;
+  float mGoalWeight;
+  float mLonerChance;
+  float mInfluenceRadius;
+  float mBreachInfluence;
+  float mSeparationWeight;
+  float mSeparationThreshold;
+  float mCohesionWeight;
+  float mCohesionThreshold;
+  float mInnerCohesionThres;
+  float mMinHeight;
+  float mMaxHeight;
+  float mBlockDistance;
+  float mBlockWeight;
+};
+
+</code></pre></div><h3 id="fillcommand"><a href="#fillcommand" class="header-anchor">#</a> <code>FillCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FillCommand : Command
+{
+  CommandPosition mFrom;
+  CommandPosition mTo;
+  const Block *mBlock;
+  const Block *mReplaceBlock;
+  FillCommand::FillMode mMode;
+  int mBlockData;
+  int mReplaceBlockData;
+};
+
+</code></pre></div><h3 id="functioncommand"><a href="#functioncommand" class="header-anchor">#</a> <code>FunctionCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FunctionCommand : Command
+{
+  CommandFilePath mFilePath;
+};
+
+</code></pre></div><h3 id="formjsonvalidator"><a href="#formjsonvalidator" class="header-anchor">#</a> <code>FormJsonValidator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FormJsonValidator
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="facing-plane"><a href="#facing-plane" class="header-anchor">#</a> <code>Facing::Plane</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Facing::Plane
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="findblockdefinition"><a href="#findblockdefinition" class="header-anchor">#</a> <code>FindBlockDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FindBlockDefinition : BehaviorDefinition
+{
+  std::string mBlockName;
+  std::string mBlockNameId;
+  int mSearchRadius;
+  std::string mSearchRadiusId;
+};
+
+</code></pre></div><h3 id="findblocknode"><a href="#findblocknode" class="header-anchor">#</a> <code>FindBlockNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) FindBlockNode : BehaviorNode
+{
+  const Block *mBlock;
+  int mSearchRadius;
+  bool mJumping;
+};
+
+</code></pre></div><h3 id="findactordefinition"><a href="#findactordefinition" class="header-anchor">#</a> <code>FindActorDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FindActorDefinition : BehaviorDefinition
+{
+  std::string mEntityName;
+  std::string mEntityType;
+  int mSearchRadius;
+  std::string mSearchRadiusId;
+};
+
+</code></pre></div><h3 id="findactornode"><a href="#findactornode" class="header-anchor">#</a> <code>FindActorNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FindActorNode : BehaviorNode:480
+{
+  ActorType mActorType;
+  int mSearchRadius;
+};
+
+</code></pre></div><h3 id="flydefinition"><a href="#flydefinition" class="header-anchor">#</a> <code>FlyDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlyDefinition : BehaviorDefinition
+{
+  bool mShouldBeFlying;
+  std::string mShouldBeFlyingId;
+  bool mShouldThrowEventIfNoStateChangeNecessary;
+  std::string mShouldThrowEventIfNoStateChangeNecessaryId;
+};
+
+</code></pre></div><h3 id="flynode"><a href="#flynode" class="header-anchor">#</a> <code>FlyNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) FlyNode : BehaviorNode:480
+{
+  bool mHaveCheckedFlightStatus;
+  bool mJumpedLastTick;
+  bool mJumpedOnce;
+  bool mShouldBeFlying;
+  bool mShouldThrowEventIfNoStateChangeNecessary;
+};
+
+</code></pre></div><h3 id="furnacefuelcontainercontroller"><a href="#furnacefuelcontainercontroller" class="header-anchor">#</a> <code>FurnaceFuelContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FurnaceFuelContainerController : ContainerController
+{
+};
+
+</code></pre></div><h3 id="furnaceinputcontainercontroller"><a href="#furnaceinputcontainercontroller" class="header-anchor">#</a> <code>FurnaceInputContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FurnaceInputContainerController : ContainerController
+{
+  Util::HashString mRecipeTag;
+};
+
+</code></pre></div><h3 id="furnaceresultcontainercontroller"><a href="#furnaceresultcontainercontroller" class="header-anchor">#</a> <code>FurnaceResultContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FurnaceResultContainerController : ContainerController
+{
+};
+
+</code></pre></div><h3 id="foliagecolor"><a href="#foliagecolor" class="header-anchor">#</a> <code>FoliageColor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct FoliageColor
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="facedirectionalblock"><a href="#facedirectionalblock" class="header-anchor">#</a> <code>FaceDirectionalBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FaceDirectionalBlock : BlockLegacy
+{
+  bool mHorizontalOnly;
+  float mYRotOffset;
+};
+
+</code></pre></div><h3 id="facedirectionalactorblock"><a href="#facedirectionalactorblock" class="header-anchor">#</a> <code>FaceDirectionalActorBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FaceDirectionalActorBlock : ActorBlock
+{
+  bool mHorizontalOnly;
+  float mYRotOffset;
+};
+
+</code></pre></div><h3 id="flushableenv"><a href="#flushableenv" class="header-anchor">#</a> <code>FlushableEnv</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlushableEnv : leveldb::EnvWrapper
+{
+};
+
+</code></pre></div><h3 id="flushablestorageareaenv"><a href="#flushablestorageareaenv" class="header-anchor">#</a> <code>FlushableStorageAreaEnv</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FlushableStorageAreaEnv : FlushableEnv
+{
+  std::shared_ptr&lt;Core::FileStorageArea&gt; mStorageArea;
+};
+
+</code></pre></div><h3 id="fillcontainerfunction"><a href="#fillcontainerfunction" class="header-anchor">#</a> <code>FillContainerFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj FillContainerFunction : LootItemFunction
+{
+  std::string mLootTable;
+};
+
+</code></pre></div><h3 id="file-in-zip64-read-info-s"><a href="#file-in-zip64-read-info-s" class="header-anchor">#</a> <code>file_in_zip64_read_info_s</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) file_in_zip64_read_info_s
+{
+  char *read_buffer;
+  z_stream stream;
+  ZPOS64_T pos_in_zipfile;
+  uLong stream_initialised;
+  ZPOS64_T offset_local_extrafield;
+  uInt size_local_extrafield;
+  ZPOS64_T pos_local_extrafield;
+  ZPOS64_T total_out_64;
+  uLong crc32;
+  uLong crc32_wait;
+  ZPOS64_T rest_read_compressed;
+  ZPOS64_T rest_read_uncompressed;
+  zlib_filefunc64_32_def z_filefunc;
+  voidpf filestream;
+  uLong compression_method;
+  ZPOS64_T byte_before_the_zipfile;
+  int raw;
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/E.html" class="prev">
+        E
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/G.html">
+        G
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/38.c03d5dee.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>S | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/81.33a53399.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" aria-current="page" class="active sidebar-link">S</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="s"><a href="#s" class="header-anchor">#</a> S</h1> <h3 id="storenavigationorigin"><a href="#storenavigationorigin" class="header-anchor">#</a> <code>StoreNavigationOrigin</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Overworld</td> <td><code>0</code></td></tr> <tr><td>Nether</td> <td><code>1</code></td></tr> <tr><td>TheEnd</td> <td><code>2</code></td></tr> <tr><td>New_3</td> <td><code>3</code></td></tr> <tr><td>New_4</td> <td><code>4</code></td></tr> <tr><td>New_5</td> <td><code>5</code></td></tr> <tr><td>New_6</td> <td><code>6</code></td></tr> <tr><td>New_7</td> <td><code>7</code></td></tr> <tr><td>New_8</td> <td><code>8</code></td></tr> <tr><td>New_9</td> <td><code>9</code></td></tr> <tr><td>New_10</td> <td><code>10</code></td></tr> <tr><td>New_11</td> <td><code>11</code></td></tr> <tr><td>New_12</td> <td><code>12</code></td></tr> <tr><td>New_13</td> <td><code>13</code></td></tr> <tr><td>New_14</td> <td><code>14</code></td></tr> <tr><td>New_15</td> <td><code>15</code></td></tr> <tr><td>New_16</td> <td><code>16</code></td></tr> <tr><td>New_17</td> <td><code>17</code></td></tr> <tr><td>New_18</td> <td><code>18</code></td></tr> <tr><td>New_19</td> <td><code>19</code></td></tr> <tr><td>New_20</td> <td><code>20</code></td></tr> <tr><td>Count</td> <td><code>21</code></td></tr> <tr><td>Undefined</td> <td><code>21</code></td></tr></tbody></table> <h3 id="startintent"><a href="#startintent" class="header-anchor">#</a> <code>StartIntent</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>JoinWorld</td> <td><code>0</code></td></tr> <tr><td>UploadToRealm</td> <td><code>1</code></td></tr></tbody></table> <h3 id="screeneventscope"><a href="#screeneventscope" class="header-anchor">#</a> <code>ScreenEventScope</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Controller</td> <td><code>0</code></td></tr> <tr><td>View</td> <td><code>1</code></td></tr></tbody></table> <h3 id="social-multiplayerserviceidentifier"><a href="#social-multiplayerserviceidentifier" class="header-anchor">#</a> <code>Social::MultiplayerServiceIdentifier</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="social-gamepublishsetting"><a href="#social-gamepublishsetting" class="header-anchor">#</a> <code>Social::GamePublishSetting</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NoMultiPlay</td> <td><code>0</code></td></tr> <tr><td>InviteOnly</td> <td><code>1</code></td></tr> <tr><td>FriendsOnly</td> <td><code>2</code></td></tr> <tr><td>FriendsOfFriends</td> <td><code>3</code></td></tr> <tr><td>Public</td> <td><code>4</code></td></tr></tbody></table> <h3 id="structuretemplaterequestoperation"><a href="#structuretemplaterequestoperation" class="header-anchor">#</a> <code>StructureTemplateRequestOperation</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="side"><a href="#side" class="header-anchor">#</a> <code>Side</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="skin-skintype"><a href="#skin-skintype" class="header-anchor">#</a> <code>Skin::SkinType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>CustomDummy</td> <td><code>0</code></td></tr> <tr><td>CustomUser</td> <td><code>1</code></td></tr> <tr><td>Free</td> <td><code>2</code></td></tr> <tr><td>Paid</td> <td><code>3</code></td></tr> <tr><td>Persona</td> <td><code>4</code></td></tr></tbody></table> <h3 id="skullblockactor-skulltype"><a href="#skullblockactor-skulltype" class="header-anchor">#</a> <code>SkullBlockActor::SkullType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="searchrequesturltype"><a href="#searchrequesturltype" class="header-anchor">#</a> <code>SearchRequestURLType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Search</td> <td><code>0</code></td></tr> <tr><td>SearchStore</td> <td><code>1</code></td></tr></tbody></table> <h3 id="soundformat"><a href="#soundformat" class="header-anchor">#</a> <code>SoundFormat</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>SOUND_FORMAT_NONE</td> <td><code>0</code></td></tr> <tr><td>SOUND_FORMAT_PCM8</td> <td><code>1</code></td></tr> <tr><td>SOUND_FORMAT_PCM16</td> <td><code>2</code></td></tr> <tr><td>SOUND_FORMAT_PCM24</td> <td><code>3</code></td></tr> <tr><td>SOUND_FORMAT_PCM32</td> <td><code>4</code></td></tr> <tr><td>SOUND_FORMAT_PCMFLOAT</td> <td><code>5</code></td></tr> <tr><td>SOUND_FORMAT_BITSTREAM</td> <td><code>6</code></td></tr></tbody></table> <h3 id="storecatalogcategory"><a href="#storecatalogcategory" class="header-anchor">#</a> <code>StoreCatalogCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Position</td> <td><code>0</code></td></tr> <tr><td>Rotation</td> <td><code>1</code></td></tr> <tr><td>Scale</td> <td><code>2</code></td></tr> <tr><td>_Count</td> <td><code>3</code></td></tr></tbody></table> <h3 id="searchquery-sortdirection"><a href="#searchquery-sortdirection" class="header-anchor">#</a> <code>SearchQuery::SortDirection</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Ascending</td> <td><code>0</code></td></tr> <tr><td>Descending</td> <td><code>1</code></td></tr></tbody></table> <h3 id="social-signinresult"><a href="#social-signinresult" class="header-anchor">#</a> <code>Social::SignInResult</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="semanticconstraint"><a href="#semanticconstraint" class="header-anchor">#</a> <code>SemanticConstraint</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="soliditychecktype"><a href="#soliditychecktype" class="header-anchor">#</a> <code>SolidityCheckType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>CheckSolidBlocking</td> <td><code>0</code></td></tr> <tr><td>CheckCollisionShape</td> <td><code>1</code></td></tr></tbody></table> <h3 id="signblockactor-signtype"><a href="#signblockactor-signtype" class="header-anchor">#</a> <code>SignBlockActor::SignType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Oak</td> <td><code>0</code></td></tr> <tr><td>Spruce</td> <td><code>1</code></td></tr> <tr><td>Birch</td> <td><code>2</code></td></tr> <tr><td>Jungle</td> <td><code>3</code></td></tr> <tr><td>Acacia</td> <td><code>4</code></td></tr> <tr><td>DarkOak</td> <td><code>5</code></td></tr> <tr><td>RedBigNetherShroom</td> <td><code>6</code></td></tr> <tr><td>BlueBigNetherShroom</td> <td><code>7</code></td></tr></tbody></table> <h3 id="storageversion"><a href="#storageversion" class="header-anchor">#</a> <code>StorageVersion</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="strongholdpiece-smalldoortype"><a href="#strongholdpiece-smalldoortype" class="header-anchor">#</a> <code>StrongholdPiece::SmallDoorType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>OPENING</td> <td><code>0</code></td></tr> <tr><td>WOOD_DOOR</td> <td><code>1</code></td></tr> <tr><td>GRATES</td> <td><code>2</code></td></tr> <tr><td>IRON_DOOR</td> <td><code>3</code></td></tr></tbody></table> <h3 id="stbir-datatype"><a href="#stbir-datatype" class="header-anchor">#</a> <code>stbir_datatype</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>STBIR_TYPE_UINT8</td> <td><code>0</code></td></tr> <tr><td>STBIR_TYPE_UINT16</td> <td><code>1</code></td></tr> <tr><td>STBIR_TYPE_UINT32</td> <td><code>2</code></td></tr> <tr><td>STBIR_TYPE_FLOAT</td> <td><code>3</code></td></tr> <tr><td>STBIR_MAX_TYPES</td> <td><code>4</code></td></tr></tbody></table> <h3 id="stbir-edge"><a href="#stbir-edge" class="header-anchor">#</a> <code>stbir_edge</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>STBIR_EDGE_CLAMP</td> <td><code>1</code></td></tr> <tr><td>STBIR_EDGE_REFLECT</td> <td><code>2</code></td></tr> <tr><td>STBIR_EDGE_WRAP</td> <td><code>3</code></td></tr> <tr><td>STBIR_EDGE_ZERO</td> <td><code>4</code></td></tr></tbody></table> <h3 id="stbir-colorspace"><a href="#stbir-colorspace" class="header-anchor">#</a> <code>stbir_colorspace</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>STBIR_COLORSPACE_LINEAR</td> <td><code>0</code></td></tr> <tr><td>STBIR_COLORSPACE_SRGB</td> <td><code>1</code></td></tr> <tr><td>STBIR_MAX_COLORSPACES</td> <td><code>2</code></td></tr></tbody></table> <h3 id="stbir-filter"><a href="#stbir-filter" class="header-anchor">#</a> <code>stbir_filter</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>STBIR_FILTER_DEFAULT</td> <td><code>0</code></td></tr> <tr><td>STBIR_FILTER_BOX</td> <td><code>1</code></td></tr> <tr><td>STBIR_FILTER_TRIANGLE</td> <td><code>2</code></td></tr> <tr><td>STBIR_FILTER_CUBICBSPLINE</td> <td><code>3</code></td></tr> <tr><td>STBIR_FILTER_CATMULLROM</td> <td><code>4</code></td></tr> <tr><td>STBIR_FILTER_MITCHELL</td> <td><code>5</code></td></tr></tbody></table> <h3 id="serverauthmovementmode"><a href="#serverauthmovementmode" class="header-anchor">#</a> <code>ServerAuthMovementMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ClientAuthoritative</td> <td><code>0</code></td></tr> <tr><td>ServerAuthoritative</td> <td><code>1</code></td></tr> <tr><td>ServerAuthoritativeWithRewind</td> <td><code>2</code></td></tr></tbody></table> <h3 id="subchunkformat"><a href="#subchunkformat" class="header-anchor">#</a> <code>SubChunkFormat</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="structureblocktype"><a href="#structureblocktype" class="header-anchor">#</a> <code>StructureBlockType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="structureredstonesavemode"><a href="#structureredstonesavemode" class="header-anchor">#</a> <code>StructureRedstoneSaveMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>SavesToMemory</td> <td><code>0</code></td></tr> <tr><td>SavesToDisk</td> <td><code>1</code></td></tr></tbody></table> <h3 id="searchquery-sortby"><a href="#searchquery-sortby" class="header-anchor">#</a> <code>SearchQuery::SortBy</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="searchquery-inventoryfilter"><a href="#searchquery-inventoryfilter" class="header-anchor">#</a> <code>SearchQuery::InventoryFilter</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="searchcacheduration"><a href="#searchcacheduration" class="header-anchor">#</a> <code>SearchCacheDuration</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="screeneventtype"><a href="#screeneventtype" class="header-anchor">#</a> <code>ScreenEventType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="screenexitbehavior"><a href="#screenexitbehavior" class="header-anchor">#</a> <code>ScreenExitBehavior</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>LeaveScreen</td> <td><code>0</code></td></tr> <tr><td>ExitGame</td> <td><code>1</code></td></tr> <tr><td>GoToStartScreen</td> <td><code>2</code></td></tr> <tr><td>DoNothing</td> <td><code>3</code></td></tr></tbody></table> <h3 id="settingstabindex"><a href="#settingstabindex" class="header-anchor">#</a> <code>SettingsTabIndex</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="social-identitytype"><a href="#social-identitytype" class="header-anchor">#</a> <code>Social::IdentityType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="social-connectiontype"><a href="#social-connectiontype" class="header-anchor">#</a> <code>Social::ConnectionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="scriptapi-scriptreportitemtype"><a href="#scriptapi-scriptreportitemtype" class="header-anchor">#</a> <code>ScriptApi::ScriptReportItemType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="serializerdirection"><a href="#serializerdirection" class="header-anchor">#</a> <code>SerializerDirection</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Saving</td> <td><code>0</code></td></tr> <tr><td>Loading</td> <td><code>1</code></td></tr></tbody></table> <h3 id="streamreadresult"><a href="#streamreadresult" class="header-anchor">#</a> <code>StreamReadResult</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Malformed</td> <td><code>0</code></td></tr> <tr><td>Valid</td> <td><code>1</code></td></tr></tbody></table> <h3 id="structuretemplateresponsetype"><a href="#structuretemplateresponsetype" class="header-anchor">#</a> <code>StructureTemplateResponseType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="scriptquerycomponent-viewtype"><a href="#scriptquerycomponent-viewtype" class="header-anchor">#</a> <code>ScriptQueryComponent::ViewType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Plain</td> <td><code>0</code></td></tr> <tr><td>Spatial</td> <td><code>1</code></td></tr></tbody></table> <h3 id="skeletalhierarchyindex"><a href="#skeletalhierarchyindex" class="header-anchor">#</a> <code>SkeletalHierarchyIndex</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="sparsecontainerbackingsettype"><a href="#sparsecontainerbackingsettype" class="header-anchor">#</a> <code>SparseContainerBackingSetType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ClientScratchContainer</td> <td><code>0</code></td></tr> <tr><td>SetItem</td> <td><code>1</code></td></tr> <tr><td>PlayerSetArmor</td> <td><code>2</code></td></tr> <tr><td>PlayerSetOffhand</td> <td><code>3</code></td></tr> <tr><td>PlayerSetUIItem</td> <td><code>4</code></td></tr></tbody></table> <h3 id="stonetype"><a href="#stonetype" class="header-anchor">#</a> <code>StoneType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="sandtype"><a href="#sandtype" class="header-anchor">#</a> <code>SandType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="spongetype"><a href="#spongetype" class="header-anchor">#</a> <code>SpongeType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="sandstonetype"><a href="#sandstonetype" class="header-anchor">#</a> <code>SandStoneType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="stoneslabtype"><a href="#stoneslabtype" class="header-anchor">#</a> <code>StoneSlabType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="stoneslabtype2"><a href="#stoneslabtype2" class="header-anchor">#</a> <code>StoneSlabType2</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="stoneslabtype3"><a href="#stoneslabtype3" class="header-anchor">#</a> <code>StoneSlabType3</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="stoneslabtype4"><a href="#stoneslabtype4" class="header-anchor">#</a> <code>StoneSlabType4</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="stonebricktype"><a href="#stonebricktype" class="header-anchor">#</a> <code>StoneBrickType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="seagrasstype"><a href="#seagrasstype" class="header-anchor">#</a> <code>SeaGrassType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="scatterparams-randomdistributiontype"><a href="#scatterparams-randomdistributiontype" class="header-anchor">#</a> <code>ScatterParams::RandomDistributionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>SingleValued</td> <td><code>0</code></td></tr> <tr><td>Uniform</td> <td><code>1</code></td></tr> <tr><td>Gaussian</td> <td><code>2</code></td></tr> <tr><td>InverseGaussian</td> <td><code>3</code></td></tr> <tr><td>FixedGrid</td> <td><code>4</code></td></tr> <tr><td>JitteredGrid</td> <td><code>5</code></td></tr></tbody></table> <h3 id="scatterparams-coordinateevaluationorder"><a href="#scatterparams-coordinateevaluationorder" class="header-anchor">#</a> <code>ScatterParams::CoordinateEvaluationOrder</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>XYZ</td> <td><code>0</code></td></tr> <tr><td>XZY</td> <td><code>1</code></td></tr> <tr><td>YXZ</td> <td><code>2</code></td></tr> <tr><td>YZX</td> <td><code>3</code></td></tr> <tr><td>ZXY</td> <td><code>4</code></td></tr> <tr><td>ZYX</td> <td><code>5</code></td></tr></tbody></table> <h3 id="structurefeaturetype"><a href="#structurefeaturetype" class="header-anchor">#</a> <code>StructureFeatureType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="sensitivewordslog-contenttype"><a href="#sensitivewordslog-contenttype" class="header-anchor">#</a> <code>SensitiveWordsLog::ContentType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>EntityName</td> <td><code>0</code></td></tr> <tr><td>ItemName</td> <td><code>1</code></td></tr> <tr><td>ArmorStandName</td> <td><code>2</code></td></tr> <tr><td>SignBlockContent</td> <td><code>3</code></td></tr> <tr><td>BookName</td> <td><code>4</code></td></tr> <tr><td>BookAuthor</td> <td><code>5</code></td></tr> <tr><td>BookContent</td> <td><code>6</code></td></tr> <tr><td>CommandBlockTag</td> <td><code>7</code></td></tr> <tr><td>CommandBlockContent</td> <td><code>8</code></td></tr> <tr><td>Scoreboard</td> <td><code>9</code></td></tr> <tr><td>StructureName</td> <td><code>10</code></td></tr></tbody></table> <h3 id="stickmappingglobals-unnamed-enum-move-stick-id"><a href="#stickmappingglobals-unnamed-enum-move-stick-id" class="header-anchor">#</a> <code>StickMappingGlobals::&lt;unnamed_enum_MOVE_STICK_ID&gt;</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>MOVE_STICK_ID</td> <td><code>0</code></td></tr> <tr><td>TURN_STICK_ID</td> <td><code>1</code></td></tr></tbody></table> <h3 id="spawnruleenum"><a href="#spawnruleenum" class="header-anchor">#</a> <code>SpawnRuleEnum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId SpawnRuleEnum;
+
+</code></pre></div><h3 id="splitscreendirection"><a href="#splitscreendirection" class="header-anchor">#</a> <code>SplitScreenDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId SplitScreenDirection;
+
+</code></pre></div><h3 id="spscqueue-std-shared-ptr-backgroundtaskbase-512-allocationmode"><a href="#spscqueue-std-shared-ptr-backgroundtaskbase-512-allocationmode" class="header-anchor">#</a> <code>SPSCQueue&lt;std::shared_ptr&lt;BackgroundTaskBase&gt;,512&gt;::AllocationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SPSCQueue&lt;std::shared_ptr&lt;BackgroundTaskBase&gt;,512&gt;::AllocationMode : __int32
+{
+  CanAlloc = 0x0,
+  CannotAlloc = 0x1,
+};
+
+</code></pre></div><h3 id="semversion-parseoption"><a href="#semversion-parseoption" class="header-anchor">#</a> <code>SemVersion::ParseOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SemVersion::ParseOption : __int32
+{
+  AllowWildcards = 0x0,
+  NoWildcards = 0x1,
+};
+
+</code></pre></div><h3 id="semversion-matchtype"><a href="#semversion-matchtype" class="header-anchor">#</a> <code>SemVersion::MatchType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation SemVersion::MatchType;
+
+</code></pre></div><h3 id="storagepermissionresult"><a href="#storagepermissionresult" class="header-anchor">#</a> <code>StoragePermissionResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum StoragePermissionResult : __int8
+{
+  PermissionGranted = 0x0,
+  PermissionDenied = 0x1,
+};
+
+</code></pre></div><h3 id="storecatalogitemtype"><a href="#storecatalogitemtype" class="header-anchor">#</a> <code>StoreCatalogItemType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation StoreCatalogItemType;
+
+</code></pre></div><h3 id="social-events-measurement-aggregationtype"><a href="#social-events-measurement-aggregationtype" class="header-anchor">#</a> <code>Social::Events::Measurement::AggregationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef mce::ValidityCheckType Social::Events::Measurement::AggregationType;
+
+</code></pre></div><h3 id="subchunkinitmode"><a href="#subchunkinitmode" class="header-anchor">#</a> <code>SubChunkInitMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation SubChunkInitMode;
+
+</code></pre></div><h3 id="subchunkblockstorage-prunetype"><a href="#subchunkblockstorage-prunetype" class="header-anchor">#</a> <code>SubChunkBlockStorage::PruneType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize SubChunkBlockStorage::PruneType;
+
+</code></pre></div><h3 id="subchunkblockstorage-type"><a href="#subchunkblockstorage-type" class="header-anchor">#</a> <code>SubChunkBlockStorage::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SubChunkBlockStorage::Type : __int8
+{
+  Paletted1 = 0x1,
+  Paletted2 = 0x2,
+  Paletted3 = 0x3,
+  Paletted4 = 0x4,
+  Paletted5 = 0x5,
+  Paletted6 = 0x6,
+  Paletted8 = 0x8,
+  Paletted16 = 0x10,
+};
+
+</code></pre></div><h3 id="subchunk-blocklayer"><a href="#subchunk-blocklayer" class="header-anchor">#</a> <code>SubChunk::BlockLayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType SubChunk::BlockLayer;
+
+</code></pre></div><h3 id="spawnblockrequirements"><a href="#spawnblockrequirements" class="header-anchor">#</a> <code>SpawnBlockRequirements</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation SpawnBlockRequirements;
+
+</code></pre></div><h3 id="social-multiplayerstate"><a href="#social-multiplayerstate" class="header-anchor">#</a> <code>Social::MultiplayerState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Social::MultiplayerState;
+
+</code></pre></div><h3 id="spawnbiometype"><a href="#spawnbiometype" class="header-anchor">#</a> <code>SpawnBiomeType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions SpawnBiomeType;
+
+</code></pre></div><h3 id="skinadjustments-animbits"><a href="#skinadjustments-animbits" class="header-anchor">#</a> <code>SkinAdjustments::AnimBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SkinAdjustments::AnimBits : __int32
+{
+  Anim_ArmsDown = 0x0,
+  Anim_ArmsOutFront = 0x1,
+  Anim_NoLegAnim = 0x2,
+  Anim_SingleLegs = 0x3,
+  Anim_SingleArms = 0x4,
+  Anim_StatueOfLiberty = 0x5,
+  Anim_DontRenderArmour = 0x6,
+  Anim_NoBobbing = 0x7,
+  Anim_UpsideDown = 0x8,
+  Anim_InvertedCrouch = 0x9,
+};
+
+</code></pre></div><h3 id="social-userpermissioncheckresult"><a href="#social-userpermissioncheckresult" class="header-anchor">#</a> <code>Social::UserPermissionCheckResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CommandExecuteFlag Social::UserPermissionCheckResult;
+
+</code></pre></div><h3 id="social-reportreason"><a href="#social-reportreason" class="header-anchor">#</a> <code>Social::ReportReason</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent Social::ReportReason;
+
+</code></pre></div><h3 id="social-xboxliveuserprofiledata-fetcheddata"><a href="#social-xboxliveuserprofiledata-fetcheddata" class="header-anchor">#</a> <code>Social::XboxLiveUserProfileData::FetchedData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Social::XboxLiveUserProfileData::FetchedData;
+
+</code></pre></div><h3 id="social-userpresenceresult"><a href="#social-userpresenceresult" class="header-anchor">#</a> <code>Social::UserPresenceResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace Social::UserPresenceResult;
+
+</code></pre></div><h3 id="social-xboxliveprivacyvalue"><a href="#social-xboxliveprivacyvalue" class="header-anchor">#</a> <code>Social::XboxLivePrivacyValue</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace Social::XboxLivePrivacyValue;
+
+</code></pre></div><h3 id="soundactiontype"><a href="#soundactiontype" class="header-anchor">#</a> <code>SoundActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SoundActionType : __int32
+{
+  InvalidActionType = 0xFFFFFFFF,
+  TriggerSoundEvent = 0x0,
+  MixChange = 0x1,
+  StopAction = 0x2,
+  StopSoundEvent = 0x3,
+  ParameterControlChange = 0x4,
+  FadeTrigger = 0x5,
+};
+
+</code></pre></div><h3 id="social-userplatformconnectionresult"><a href="#social-userplatformconnectionresult" class="header-anchor">#</a> <code>Social::UserPlatformConnectionResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Social::UserPlatformConnectionResult : __int32
+{
+  Anonymous = 0x0,
+  NotConnected = 0x1,
+  Connected = 0x2,
+  ConnectionFailed = 0x3,
+  OfflineOnly = 0x4,
+  UserBanned = 0x5,
+};
+
+</code></pre></div><h3 id="storecatalogitem-imageid"><a href="#storecatalogitem-imageid" class="header-anchor">#</a> <code>StoreCatalogItem::ImageId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent StoreCatalogItem::ImageId;
+
+</code></pre></div><h3 id="screencontroller-previousbuttonstaterequirement"><a href="#screencontroller-previousbuttonstaterequirement" class="header-anchor">#</a> <code>ScreenController::PreviousButtonStateRequirement</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MaterialType ScreenController::PreviousButtonStateRequirement;
+
+</code></pre></div><h3 id="safezonebuffer"><a href="#safezonebuffer" class="header-anchor">#</a> <code>SafeZoneBuffer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SafeZoneBuffer : __int32
+{
+  Outer_Top = 0x1,
+  Outer_Right = 0x2,
+  Outer_Bottom = 0x4,
+  Outer_Left = 0x8,
+  Inner_Top = 0x10,
+  Inner_Right = 0x20,
+  Inner_Bottom = 0x40,
+  Inner_Left = 0x80,
+};
+
+</code></pre></div><h3 id="splitscreenposition"><a href="#splitscreenposition" class="header-anchor">#</a> <code>SplitScreenPosition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SplitScreenPosition : __int32
+{
+  Center = 0x0,
+  Horizontal_Top = 0x1,
+  Horizontal_Bottom = 0x2,
+  Vertical_Left = 0x3,
+  Vertical_Right = 0x4,
+  Top_Left = 0x5,
+  Top_Right = 0x6,
+  Bottom_Left = 0x7,
+  Bottom_Right = 0x8,
+};
+
+</code></pre></div><h3 id="storeplatform"><a href="#storeplatform" class="header-anchor">#</a> <code>StorePlatform</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace StorePlatform;
+
+</code></pre></div><h3 id="screenshotsectiontype"><a href="#screenshotsectiontype" class="header-anchor">#</a> <code>ScreenshotSectionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId ScreenshotSectionType;
+
+</code></pre></div><h3 id="searchquery-tagtype"><a href="#searchquery-tagtype" class="header-anchor">#</a> <code>SearchQuery::TagType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SearchQuery::TagType : __int8
+{
+  And = 0x0,
+  Or = 0x1,
+  Not = 0x2,
+  Sale = 0x3,
+};
+
+</code></pre></div><h3 id="storesearchquery-flag"><a href="#storesearchquery-flag" class="header-anchor">#</a> <code>StoreSearchQuery::Flag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation StoreSearchQuery::Flag;
+
+</code></pre></div><h3 id="social-userplatformconnectionstate"><a href="#social-userplatformconnectionstate" class="header-anchor">#</a> <code>Social::UserPlatformConnectionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Social::UserPlatformConnectionResult Social::UserPlatformConnectionState;
+
+</code></pre></div><h3 id="storefilter-menuscreentype"><a href="#storefilter-menuscreentype" class="header-anchor">#</a> <code>StoreFilter::MenuScreenType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef HoloUIToPoseSource StoreFilter::MenuScreenType;
+
+</code></pre></div><h3 id="slidermanagerbehavior"><a href="#slidermanagerbehavior" class="header-anchor">#</a> <code>SliderManagerBehavior</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ToggleManagerBehavior SliderManagerBehavior;
+
+</code></pre></div><h3 id="screenview-delayedcommandlocation"><a href="#screenview-delayedcommandlocation" class="header-anchor">#</a> <code>ScreenView::DelayedCommandLocation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ScreenView::DelayedCommandLocation : __int32
+{
+  DirtyVisualTree = 0x0,
+  PostLayout = 0x1,
+};
+
+</code></pre></div><h3 id="social-identityeventresponse"><a href="#social-identityeventresponse" class="header-anchor">#</a> <code>Social::IdentityEventResponse</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Social::IdentityEventResponse;
+
+</code></pre></div><h3 id="storevisualstylecategory"><a href="#storevisualstylecategory" class="header-anchor">#</a> <code>StoreVisualStyleCategory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID StoreVisualStyleCategory;
+
+</code></pre></div><h3 id="scenestack-scenestackevent-eventtype"><a href="#scenestack-scenestackevent-eventtype" class="header-anchor">#</a> <code>SceneStack::SceneStackEvent::EventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef hbui::Router::QueuedRouteAction SceneStack::SceneStackEvent::EventType;
+
+</code></pre></div><h3 id="screencontrollerproxytype"><a href="#screencontrollerproxytype" class="header-anchor">#</a> <code>ScreenControllerProxyType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef GameRules::GameRulesIndex ScreenControllerProxyType;
+
+</code></pre></div><h3 id="social-playfabenvironment"><a href="#social-playfabenvironment" class="header-anchor">#</a> <code>Social::PlayFabEnvironment</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef RealmsEnvironment Social::PlayFabEnvironment;
+
+</code></pre></div><h3 id="summonshape"><a href="#summonshape" class="header-anchor">#</a> <code>SummonShape</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId SummonShape;
+
+</code></pre></div><h3 id="summontarget"><a href="#summontarget" class="header-anchor">#</a> <code>SummonTarget</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId SummonTarget;
+
+</code></pre></div><h3 id="statetransitionevent"><a href="#statetransitionevent" class="header-anchor">#</a> <code>StateTransitionEvent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum StateTransitionEvent : __int32
+{
+  Entry = 0x0,
+  Exit = 0x1,
+  NumCategories = 0x2,
+};
+
+</code></pre></div><h3 id="social-invitehandlecheck"><a href="#social-invitehandlecheck" class="header-anchor">#</a> <code>Social::InviteHandleCheck</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FlightingService::FetchState Social::InviteHandleCheck;
+
+</code></pre></div><h3 id="social-joingamestatus"><a href="#social-joingamestatus" class="header-anchor">#</a> <code>Social::JoinGameStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Social::JoinGameStatus : __int32
+{
+  MultiplayerNotEnabled = 0x0,
+  Succeeded = 0x1,
+  Succeeded_Realm = 0x2,
+  Succeeded_ThirdPartyServer = 0x3,
+  NotSignedIntoMultiplayerService = 0x4,
+  BlockedByXBLPermissions = 0x5,
+  BlockedByPlatformPermissions = 0x6,
+  SessionFull = 0x7,
+  SessionNotFound = 0x8,
+  SessionAccessDenied = 0x9,
+};
+
+</code></pre></div><h3 id="sendreceiptrealmsresult"><a href="#sendreceiptrealmsresult" class="header-anchor">#</a> <code>SendReceiptRealmsResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BedSleepingResult SendReceiptRealmsResult;
+
+</code></pre></div><h3 id="sysgeotype"><a href="#sysgeotype" class="header-anchor">#</a> <code>SYSGEOTYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SYSGEOTYPE : __int32
+{
+  GEO_NATION = 0x1,
+  GEO_LATITUDE = 0x2,
+  GEO_LONGITUDE = 0x3,
+  GEO_ISO2 = 0x4,
+  GEO_ISO3 = 0x5,
+  GEO_RFC1766 = 0x6,
+  GEO_LCID = 0x7,
+  GEO_FRIENDLYNAME = 0x8,
+  GEO_OFFICIALNAME = 0x9,
+  GEO_TIMEZONES = 0xA,
+  GEO_OFFICIALLANGUAGES = 0xB,
+  GEO_ISO_UN_NUMBER = 0xC,
+  GEO_PARENT = 0xD,
+  GEO_DIALINGCODE = 0xE,
+  GEO_CURRENCYCODE = 0xF,
+  GEO_CURRENCYSYMBOL = 0x10,
+};
+
+</code></pre></div><h3 id="shstockiconid"><a href="#shstockiconid" class="header-anchor">#</a> <code>SHSTOCKICONID</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SHSTOCKICONID : __int32
+{
+  SIID_DOCNOASSOC = 0x0,
+  SIID_DOCASSOC = 0x1,
+  SIID_APPLICATION = 0x2,
+  SIID_FOLDER = 0x3,
+  SIID_FOLDEROPEN = 0x4,
+  SIID_DRIVE525 = 0x5,
+  SIID_DRIVE35 = 0x6,
+  SIID_DRIVEREMOVE = 0x7,
+  SIID_DRIVEFIXED = 0x8,
+  SIID_DRIVENET = 0x9,
+  SIID_DRIVENETDISABLED = 0xA,
+  SIID_DRIVECD = 0xB,
+  SIID_DRIVERAM = 0xC,
+  SIID_WORLD = 0xD,
+  SIID_SERVER = 0xF,
+  SIID_PRINTER = 0x10,
+  SIID_MYNETWORK = 0x11,
+  SIID_FIND = 0x16,
+  SIID_HELP = 0x17,
+  SIID_SHARE = 0x1C,
+  SIID_LINK = 0x1D,
+  SIID_SLOWFILE = 0x1E,
+  SIID_RECYCLER = 0x1F,
+  SIID_RECYCLERFULL = 0x20,
+  SIID_MEDIACDAUDIO = 0x28,
+  SIID_LOCK = 0x2F,
+  SIID_AUTOLIST = 0x31,
+  SIID_PRINTERNET = 0x32,
+  SIID_SERVERSHARE = 0x33,
+  SIID_PRINTERFAX = 0x34,
+  SIID_PRINTERFAXNET = 0x35,
+  SIID_PRINTERFILE = 0x36,
+  SIID_STACK = 0x37,
+  SIID_MEDIASVCD = 0x38,
+  SIID_STUFFEDFOLDER = 0x39,
+  SIID_DRIVEUNKNOWN = 0x3A,
+  SIID_DRIVEDVD = 0x3B,
+  SIID_MEDIADVD = 0x3C,
+  SIID_MEDIADVDRAM = 0x3D,
+  SIID_MEDIADVDRW = 0x3E,
+  SIID_MEDIADVDR = 0x3F,
+  SIID_MEDIADVDROM = 0x40,
+  SIID_MEDIACDAUDIOPLUS = 0x41,
+  SIID_MEDIACDRW = 0x42,
+  SIID_MEDIACDR = 0x43,
+  SIID_MEDIACDBURN = 0x44,
+  SIID_MEDIABLANKCD = 0x45,
+  SIID_MEDIACDROM = 0x46,
+  SIID_AUDIOFILES = 0x47,
+  SIID_IMAGEFILES = 0x48,
+  SIID_VIDEOFILES = 0x49,
+  SIID_MIXEDFILES = 0x4A,
+  SIID_FOLDERBACK = 0x4B,
+  SIID_FOLDERFRONT = 0x4C,
+  SIID_SHIELD = 0x4D,
+  SIID_WARNING = 0x4E,
+  SIID_INFO = 0x4F,
+  SIID_ERROR = 0x50,
+  SIID_KEY = 0x51,
+  SIID_SOFTWARE = 0x52,
+  SIID_RENAME = 0x53,
+  SIID_DELETE = 0x54,
+  SIID_MEDIAAUDIODVD = 0x55,
+  SIID_MEDIAMOVIEDVD = 0x56,
+  SIID_MEDIAENHANCEDCD = 0x57,
+  SIID_MEDIAENHANCEDDVD = 0x58,
+  SIID_MEDIAHDDVD = 0x59,
+  SIID_MEDIABLURAY = 0x5A,
+  SIID_MEDIAVCD = 0x5B,
+  SIID_MEDIADVDPLUSR = 0x5C,
+  SIID_MEDIADVDPLUSRW = 0x5D,
+  SIID_DESKTOPPC = 0x5E,
+  SIID_MOBILEPC = 0x5F,
+  SIID_USERS = 0x60,
+  SIID_MEDIASMARTMEDIA = 0x61,
+  SIID_MEDIACOMPACTFLASH = 0x62,
+  SIID_DEVICECELLPHONE = 0x63,
+  SIID_DEVICECAMERA = 0x64,
+  SIID_DEVICEVIDEOCAMERA = 0x65,
+  SIID_DEVICEAUDIOPLAYER = 0x66,
+  SIID_NETWORKCONNECT = 0x67,
+  SIID_INTERNET = 0x68,
+  SIID_ZIPFILE = 0x69,
+  SIID_SETTINGS = 0x6A,
+  SIID_DRIVEHDDVD = 0x84,
+  SIID_DRIVEBD = 0x85,
+  SIID_MEDIAHDDVDROM = 0x86,
+  SIID_MEDIAHDDVDR = 0x87,
+  SIID_MEDIAHDDVDRAM = 0x88,
+  SIID_MEDIABDROM = 0x89,
+  SIID_MEDIABDR = 0x8A,
+  SIID_MEDIABDRE = 0x8B,
+  SIID_CLUSTEREDDRIVE = 0x8C,
+  SIID_MAX_ICONS = 0xB5,
+};
+
+</code></pre></div><h3 id="sysgeoclass"><a href="#sysgeoclass" class="header-anchor">#</a> <code>SYSGEOCLASS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SYSGEOCLASS : __int32
+{
+  GEOCLASS_NATION = 0x10,
+  GEOCLASS_REGION = 0xE,
+  GEOCLASS_ALL = 0x0,
+};
+
+</code></pre></div><h3 id="scope-level"><a href="#scope-level" class="header-anchor">#</a> <code>SCOPE_LEVEL</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SCOPE_LEVEL : __int32
+{
+  ScopeLevelInterface = 0x1,
+  ScopeLevelLink = 0x2,
+  ScopeLevelSubnet = 0x3,
+  ScopeLevelAdmin = 0x4,
+  ScopeLevelSite = 0x5,
+  ScopeLevelOrganization = 0x8,
+  ScopeLevelGlobal = 0xE,
+  ScopeLevelCount = 0x10,
+};
+
+</code></pre></div><h3 id="stub-phase"><a href="#stub-phase" class="header-anchor">#</a> <code>STUB_PHASE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum STUB_PHASE : __int32
+{
+  STUB_UNMARSHAL = 0x0,
+  STUB_CALL_SERVER = 0x1,
+  STUB_MARSHAL = 0x2,
+  STUB_CALL_SERVER_NO_HRESULT = 0x3,
+};
+
+</code></pre></div><h3 id="system-power-condition"><a href="#system-power-condition" class="header-anchor">#</a> <code>SYSTEM_POWER_CONDITION</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SYSTEM_POWER_CONDITION : __int32
+{
+  PoAc = 0x0,
+  PoDc = 0x1,
+  PoHot = 0x2,
+  PoConditionMaximum = 0x3,
+};
+
+</code></pre></div><h3 id="sysnls-function"><a href="#sysnls-function" class="header-anchor">#</a> <code>SYSNLS_FUNCTION</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SYSNLS_FUNCTION : __int32
+{
+  COMPARE_STRING = 0x1,
+};
+
+</code></pre></div><h3 id="serialworklist-workresult"><a href="#serialworklist-workresult" class="header-anchor">#</a> <code>SerialWorkList::WorkResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef mce::TextureWrapping SerialWorkList::WorkResult;
+
+</code></pre></div><h3 id="skinrepositoryclientinterface-syncstate"><a href="#skinrepositoryclientinterface-syncstate" class="header-anchor">#</a> <code>SkinRepositoryClientInterface::SyncState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SkinRepositoryClientInterface::SyncState : __int32
+{
+  CanSync = 0x0,
+  SyncingWithService = 0x1,
+};
+
+</code></pre></div><h3 id="spawnpositiontype"><a href="#spawnpositiontype" class="header-anchor">#</a> <code>SpawnPositionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SpawnPositionType : __int32
+{
+  PlayerRespawn = 0x0,
+  WorldSpawn = 0x1,
+};
+
+</code></pre></div><h3 id="skinrepositoryclientinterface-personaprofileloadingstate-state"><a href="#skinrepositoryclientinterface-personaprofileloadingstate-state" class="header-anchor">#</a> <code>SkinRepositoryClientInterface::PersonaProfileLoadingState::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation SkinRepositoryClientInterface::PersonaProfileLoadingState::State;
+
+</code></pre></div><h3 id="serverinstance-instancestate"><a href="#serverinstance-instancestate" class="header-anchor">#</a> <code>ServerInstance::InstanceState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NetworkSuspendResumeListener::State ServerInstance::InstanceState;
+
+</code></pre></div><h3 id="spscqueue-std-function-void-cdecl-void-512-allocationmode"><a href="#spscqueue-std-function-void-cdecl-void-512-allocationmode" class="header-anchor">#</a> <code>SPSCQueue&lt;std::function&lt;void __cdecl(void)&gt;,512&gt;::AllocationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SPSCQueue&lt;std::shared_ptr&lt;BackgroundTaskBase&gt;,512&gt;::AllocationMode SPSCQueue&lt;std::function&lt;void __cdecl(void)&gt;,512&gt;::AllocationMode;
+
+</code></pre></div><h3 id="serverplayer-nearbyactor-state"><a href="#serverplayer-nearbyactor-state" class="header-anchor">#</a> <code>ServerPlayer::NearbyActor::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace ServerPlayer::NearbyActor::State;
+
+</code></pre></div><h3 id="scriptapi-scriptobjecttype"><a href="#scriptapi-scriptobjecttype" class="header-anchor">#</a> <code>ScriptApi::ScriptObjectType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ScriptApi::ScriptObjectType : __int32
+{
+  UndefinedType = 0x0,
+  NullType = 0x1,
+  NumberType = 0x2,
+  StringType = 0x3,
+  BooleanType = 0x4,
+  ObjectType = 0x5,
+  ArrayType = 0x6,
+  FunctionType = 0x7,
+};
+
+</code></pre></div><h3 id="scriptlogtype"><a href="#scriptlogtype" class="header-anchor">#</a> <code>ScriptLogType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Bedrock::Threading::AsyncStatus ScriptLogType;
+
+</code></pre></div><h3 id="scriptapi-apiscripttype"><a href="#scriptapi-apiscripttype" class="header-anchor">#</a> <code>ScriptApi::ApiScriptType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AnimationComponentGroup ScriptApi::ApiScriptType;
+
+</code></pre></div><h3 id="sfxtype"><a href="#sfxtype" class="header-anchor">#</a> <code>SfxType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftPacketIds SfxType;
+
+</code></pre></div><h3 id="spscqueue-unsigned-int-512-allocationmode"><a href="#spscqueue-unsigned-int-512-allocationmode" class="header-anchor">#</a> <code>SPSCQueue&lt;unsigned int,512&gt;::AllocationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SPSCQueue&lt;std::shared_ptr&lt;BackgroundTaskBase&gt;,512&gt;::AllocationMode SPSCQueue&lt;unsigned int,512&gt;::AllocationMode;
+
+</code></pre></div><h3 id="storecatalogconfig-state"><a href="#storecatalogconfig-state" class="header-anchor">#</a> <code>StoreCatalogConfig::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState StoreCatalogConfig::State;
+
+</code></pre></div><h3 id="screenrenderer-screenmaterial"><a href="#screenrenderer-screenmaterial" class="header-anchor">#</a> <code>ScreenRenderer::ScreenMaterial</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ScreenRenderer::ScreenMaterial : __int32
+{
+  BLIT = 0x0,
+  FILL = 0x1,
+  FILL_GRADIENT = 0x2,
+  COLOR_BLIT = 0x3,
+  COLOR_BLIT_BLUR = 0x4,
+  BLIT_CURRENT_SHADER_COLOR = 0x5,
+  STENCIL_FILL = 0x6,
+  SCREEN_MAT_COUNT = 0x7,
+};
+
+</code></pre></div><h3 id="social-multiplayeredu-contextrequirement"><a href="#social-multiplayeredu-contextrequirement" class="header-anchor">#</a> <code>Social::MultiplayerEDU::ContextRequirement</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Social::MultiplayerEDU::ContextRequirement;
+
+</code></pre></div><h3 id="social-presencetickabletype"><a href="#social-presencetickabletype" class="header-anchor">#</a> <code>Social::PresenceTickableType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NetworkIdentifier::Type Social::PresenceTickableType;
+
+</code></pre></div><h3 id="social-servicestate"><a href="#social-servicestate" class="header-anchor">#</a> <code>Social::ServiceState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef HolographicPlatform::GestureMode Social::ServiceState;
+
+</code></pre></div><h3 id="selectionwheelcomponent-selectionwheeliteratedir"><a href="#selectionwheelcomponent-selectionwheeliteratedir" class="header-anchor">#</a> <code>SelectionWheelComponent::SelectionWheelIterateDir</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Frustum::FrustumSide SelectionWheelComponent::SelectionWheelIterateDir;
+
+</code></pre></div><h3 id="storescreentype"><a href="#storescreentype" class="header-anchor">#</a> <code>StoreScreenType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize StoreScreenType;
+
+</code></pre></div><h3 id="social-enableresult"><a href="#social-enableresult" class="header-anchor">#</a> <code>Social::EnableResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::ChunkCacheResultType Social::EnableResult;
+
+</code></pre></div><h3 id="syncedphotoview-viewstatus"><a href="#syncedphotoview-viewstatus" class="header-anchor">#</a> <code>SyncedPhotoView::ViewStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SerializerDirection SyncedPhotoView::ViewStatus;
+
+</code></pre></div><h3 id="syncedphotoview-photostatus"><a href="#syncedphotoview-photostatus" class="header-anchor">#</a> <code>SyncedPhotoView::PhotoStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation SyncedPhotoView::PhotoStatus;
+
+</code></pre></div><h3 id="skinpackcollectionstatus"><a href="#skinpackcollectionstatus" class="header-anchor">#</a> <code>SkinPackCollectionStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ItemInstallState SkinPackCollectionStatus;
+
+</code></pre></div><h3 id="softenumupdatetype"><a href="#softenumupdatetype" class="header-anchor">#</a> <code>SoftEnumUpdateType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BossEventUpdateType SoftEnumUpdateType;
+
+</code></pre></div><h3 id="settingsscreenmode"><a href="#settingsscreenmode" class="header-anchor">#</a> <code>SettingsScreenMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SettingsScreenMode : __int32
+{
+  SETTINGS = 0x0,
+  CREATE_WORLD = 0x1,
+  CREATE_FROM_TEMPLATE = 0x2,
+  EDIT_WORLD = 0x3,
+  REALMS_SETTINGS = 0x4,
+};
+
+</code></pre></div><h3 id="storeinventoryscreencontroller-inventorytabindex"><a href="#storeinventoryscreencontroller-inventorytabindex" class="header-anchor">#</a> <code>StoreInventoryScreenController::InventoryTabIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID StoreInventoryScreenController::InventoryTabIndex;
+
+</code></pre></div><h3 id="storeinventoryscreencontroller-packcategory"><a href="#storeinventoryscreencontroller-packcategory" class="header-anchor">#</a> <code>StoreInventoryScreenController::PackCategory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent StoreInventoryScreenController::PackCategory;
+
+</code></pre></div><h3 id="startscreencapabilities-playbuttontarget"><a href="#startscreencapabilities-playbuttontarget" class="header-anchor">#</a> <code>StartScreenCapabilities::PlayButtonTarget</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation StartScreenCapabilities::PlayButtonTarget;
+
+</code></pre></div><h3 id="storesearchobject-searchstate"><a href="#storesearchobject-searchstate" class="header-anchor">#</a> <code>StoreSearchObject::SearchState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum StoreSearchObject::SearchState : __int32
+{
+  DefaultContent = 0x0,
+  AllContent = 0x1,
+  Searching = 0x2,
+};
+
+</code></pre></div><h3 id="storesearchobject-searchscreen"><a href="#storesearchobject-searchscreen" class="header-anchor">#</a> <code>StoreSearchObject::SearchScreen</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum StoreSearchObject::SearchScreen : __int32
+{
+  SearchScreen = 0x0,
+  FilterScreen = 0x1,
+  SortScreen = 0x2,
+};
+
+</code></pre></div><h3 id="simpleeventpacket-subtype"><a href="#simpleeventpacket-subtype" class="header-anchor">#</a> <code>SimpleEventPacket::Subtype</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SimpleEventPacket::Subtype : __int32
+{
+  UninitializedSubtype = 0x0,
+  EnableCommands = 0x1,
+  DisableCommands = 0x2,
+  UnlockWorldTemplateSettings = 0x3,
+};
+
+</code></pre></div><h3 id="structureblockpaletteloadresult"><a href="#structureblockpaletteloadresult" class="header-anchor">#</a> <code>StructureBlockPaletteLoadResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome StructureBlockPaletteLoadResult;
+
+</code></pre></div><h3 id="structureloadresult"><a href="#structureloadresult" class="header-anchor">#</a> <code>StructureLoadResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome StructureLoadResult;
+
+</code></pre></div><h3 id="screensetupstrategyid"><a href="#screensetupstrategyid" class="header-anchor">#</a> <code>ScreenSetupStrategyId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ScreenSetupStrategyId : __int32
+{
+  DefaultUIScreen = 0x0,
+  DefaultLevelDraw = 0x1,
+  HoloMonoscopicScreen = 0x2,
+  HoloUIScreen = 0x3,
+  HoloIngameUIScreen = 0x4,
+  HoloPlayspace = 0x5,
+  HoloScreen = 0x6,
+  HoloViewer = 0x7,
+  HoloReality = 0x8,
+  HUD = 0x9,
+};
+
+</code></pre></div><h3 id="splitscreenjoinlistener-splitscreenjoininputstate"><a href="#splitscreenjoinlistener-splitscreenjoininputstate" class="header-anchor">#</a> <code>SplitscreenJoinListener::SplitscreenJoinInputState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation SplitscreenJoinListener::SplitscreenJoinInputState;
+
+</code></pre></div><h3 id="showcreditspacket-creditsstate"><a href="#showcreditspacket-creditsstate" class="header-anchor">#</a> <code>ShowCreditsPacket::CreditsState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::EducationLessonAction ShowCreditsPacket::CreditsState;
+
+</code></pre></div><h3 id="scoreboardidentitypackettype"><a href="#scoreboardidentitypackettype" class="header-anchor">#</a> <code>ScoreboardIdentityPacketType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BossEventUpdateType ScoreboardIdentityPacketType;
+
+</code></pre></div><h3 id="scorepackettype"><a href="#scorepackettype" class="header-anchor">#</a> <code>ScorePacketType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BossEventUpdateType ScorePacketType;
+
+</code></pre></div><h3 id="settitlepacket-titletype"><a href="#settitlepacket-titletype" class="header-anchor">#</a> <code>SetTitlePacket::TitleType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LabTablePacket::Type SetTitlePacket::TitleType;
+
+</code></pre></div><h3 id="sparsecontainer-pushslotpredictionresult"><a href="#sparsecontainer-pushslotpredictionresult" class="header-anchor">#</a> <code>SparseContainer::PushSlotPredictionResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Social::JoinGameStatus SparseContainer::PushSlotPredictionResult;
+
+</code></pre></div><h3 id="skeleton-skeletontype"><a href="#skeleton-skeletontype" class="header-anchor">#</a> <code>Skeleton::SkeletonType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Skeleton::SkeletonType : __int32
+{
+  DEFAULT = 0x0,
+  WITHER = 0x1,
+  STRAY = 0x2,
+};
+
+</code></pre></div><h3 id="stalkthickness"><a href="#stalkthickness" class="header-anchor">#</a> <code>StalkThickness</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType StalkThickness;
+
+</code></pre></div><h3 id="seapicklecount"><a href="#seapicklecount" class="header-anchor">#</a> <code>SeaPickleCount</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType SeaPickleCount;
+
+</code></pre></div><h3 id="scriptapi-screenoptions"><a href="#scriptapi-screenoptions" class="header-anchor">#</a> <code>ScriptApi::ScreenOptions</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ScriptApi::ScreenOptions;
+
+</code></pre></div><h3 id="social-imageservice-image-size"><a href="#social-imageservice-image-size" class="header-anchor">#</a> <code>Social::ImageService::image_size</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize Social::ImageService::image_size;
+
+</code></pre></div><h3 id="social-imageservice-image-priority"><a href="#social-imageservice-image-priority" class="header-anchor">#</a> <code>Social::ImageService::image_priority</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize Social::ImageService::image_priority;
+
+</code></pre></div><h3 id="spscqueue-gamecontrollerhandler-windows-inputstate-windows-512-allocationmode"><a href="#spscqueue-gamecontrollerhandler-windows-inputstate-windows-512-allocationmode" class="header-anchor">#</a> <code>SPSCQueue&lt;GameControllerHandler_Windows::InputState_Windows,512&gt;::AllocationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SPSCQueue&lt;std::shared_ptr&lt;BackgroundTaskBase&gt;,512&gt;::AllocationMode SPSCQueue&lt;GameControllerHandler_Windows::InputState_Windows,512&gt;::AllocationMode;
+
+</code></pre></div><h3 id="serverplayerblockusehandler-predictionvalidationerror"><a href="#serverplayerblockusehandler-predictionvalidationerror" class="header-anchor">#</a> <code>ServerPlayerBlockUseHandler::PredictionValidationError</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ServerPlayerBlockUseHandler::PredictionValidationError;
+
+</code></pre></div><h3 id="schedulecommand-scheduleaction"><a href="#schedulecommand-scheduleaction" class="header-anchor">#</a> <code>ScheduleCommand::ScheduleAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ScheduleCommand::ScheduleAction : __int32
+{
+  OnAreaLoaded = 0x0,
+};
+
+</code></pre></div><h3 id="schedulecommand-onarealoadedaction"><a href="#schedulecommand-onarealoadedaction" class="header-anchor">#</a> <code>ScheduleCommand::OnAreaLoadedAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BossEventUpdateType ScheduleCommand::OnAreaLoadedAction;
+
+</code></pre></div><h3 id="slime-clientevent"><a href="#slime-clientevent" class="header-anchor">#</a> <code>Slime::ClientEvent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Slime::ClientEvent;
+
+</code></pre></div><h3 id="suspiciousstewitem-suspiciousstewtype"><a href="#suspiciousstewitem-suspiciousstewtype" class="header-anchor">#</a> <code>SuspiciousStewItem::SuspiciousStewType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID SuspiciousStewItem::SuspiciousStewType;
+
+</code></pre></div><h3 id="structurepiecetype"><a href="#structurepiecetype" class="header-anchor">#</a> <code>StructurePieceType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace StructurePieceType;
+
+</code></pre></div><h3 id="spscqueue-std-string-512-allocationmode"><a href="#spscqueue-std-string-512-allocationmode" class="header-anchor">#</a> <code>SPSCQueue&lt;std::string,512&gt;::AllocationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SPSCQueue&lt;std::shared_ptr&lt;BackgroundTaskBase&gt;,512&gt;::AllocationMode SPSCQueue&lt;std::string,512&gt;::AllocationMode;
+
+</code></pre></div><h3 id="spscqueue-batchednetworkpeer-datacallback-512-allocationmode"><a href="#spscqueue-batchednetworkpeer-datacallback-512-allocationmode" class="header-anchor">#</a> <code>SPSCQueue&lt;BatchedNetworkPeer::DataCallback,512&gt;::AllocationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SPSCQueue&lt;std::shared_ptr&lt;BackgroundTaskBase&gt;,512&gt;::AllocationMode SPSCQueue&lt;BatchedNetworkPeer::DataCallback,512&gt;::AllocationMode;
+
+</code></pre></div><h3 id="scoreboardcommand-category"><a href="#scoreboardcommand-category" class="header-anchor">#</a> <code>ScoreboardCommand::Category</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Library::OptionalProductInfo ScoreboardCommand::Category;
+
+</code></pre></div><h3 id="scoreboardcommand-action"><a href="#scoreboardcommand-action" class="header-anchor">#</a> <code>ScoreboardCommand::Action</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace ScoreboardCommand::Action;
+
+</code></pre></div><h3 id="setblockcommand-setblockmode"><a href="#setblockcommand-setblockmode" class="header-anchor">#</a> <code>SetBlockCommand::SetBlockMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef hbui::Router::QueuedRouteAction SetBlockCommand::SetBlockMode;
+
+</code></pre></div><h3 id="spider-type"><a href="#spider-type" class="header-anchor">#</a> <code>Spider::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize Spider::Type;
+
+</code></pre></div><h3 id="selectitemnode-state"><a href="#selectitemnode-state" class="header-anchor">#</a> <code>SelectItemNode::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SelectItemNode::State : __int32
+{
+  Preconditions = 0x0,
+  MoveToolToHotbar = 0x1,
+  SelectToolInHotbar = 0x2,
+};
+
+</code></pre></div><h3 id="saplingtype"><a href="#saplingtype" class="header-anchor">#</a> <code>SaplingType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions SaplingType;
+
+</code></pre></div><h3 id="scatterparams-needsmolang"><a href="#scatterparams-needsmolang" class="header-anchor">#</a> <code>ScatterParams::NeedsMolang</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IsMissingTexture ScatterParams::NeedsMolang;
+
+</code></pre></div><h3 id="slabblock-slabtype"><a href="#slabblock-slabtype" class="header-anchor">#</a> <code>SlabBlock::SlabType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SlabBlock::SlabType : __int32
+{
+  WoodSlab = 0x0,
+  StoneSlab = 0x1,
+};
+
+</code></pre></div><h3 id="sweetberrybushblock-berrystage"><a href="#sweetberrybushblock-berrystage" class="header-anchor">#</a> <code>SweetBerryBushBlock::BerryStage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SweetBerryBushBlock::BerryStage : __int32
+{
+  Sapling = 0x0,
+  NoBerries = 0x1,
+  SomeBerries = 0x2,
+  FullBerries = 0x3,
+};
+
+</code></pre></div><h3 id="structurevoidtype"><a href="#structurevoidtype" class="header-anchor">#</a> <code>StructureVoidType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MaterialType StructureVoidType;
+
+</code></pre></div><h3 id="subchunkrelighter-subchunktodobitsclearmode"><a href="#subchunkrelighter-subchunktodobitsclearmode" class="header-anchor">#</a> <code>SubChunkRelighter::SubChunkToDoBitsClearMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SubChunkRelighter::SubChunkToDoBitsClearMode : __int32
+{
+  AllSubChunkBorderBitsExceptTheOuterEdgeOfComputationBits = 0x0,
+  SetOuterEdgeOfComputationBits = 0x1,
+};
+
+</code></pre></div><h3 id="searchfeature-searchaxis"><a href="#searchfeature-searchaxis" class="header-anchor">#</a> <code>SearchFeature::SearchAxis</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SearchFeature::SearchAxis : __int32
+{
+  NegativeX = 0x0,
+  PositiveX = 0x1,
+  NegativeY = 0x2,
+  PositiveY = 0x3,
+  NegativeZ = 0x4,
+  PositiveZ = 0x5,
+};
+
+</code></pre></div><h3 id="sensibledirections"><a href="#sensibledirections" class="header-anchor">#</a> <code>SensibleDirections</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Direction::Type SensibleDirections;
+
+</code></pre></div><h3 id="sync-engine-state-flags"><a href="#sync-engine-state-flags" class="header-anchor">#</a> <code>SYNC_ENGINE_STATE_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SYNC_ENGINE_STATE_FLAGS : __int32
+{
+  SESF_NONE = 0x0,
+  SESF_SERVICE_QUOTA_NEARING_LIMIT = 0x1,
+  SESF_SERVICE_QUOTA_EXCEEDED_LIMIT = 0x2,
+  SESF_AUTHENTICATION_ERROR = 0x4,
+  SESF_PAUSED_DUE_TO_METERED_NETWORK = 0x8,
+  SESF_PAUSED_DUE_TO_DISK_SPACE_FULL = 0x10,
+  SESF_PAUSED_DUE_TO_CLIENT_POLICY = 0x20,
+  SESF_PAUSED_DUE_TO_SERVICE_POLICY = 0x40,
+  SESF_SERVICE_UNAVAILABLE = 0x80,
+  SESF_PAUSED_DUE_TO_USER_REQUEST = 0x100,
+  SESF_ALL_FLAGS = 0x1FF,
+};
+
+</code></pre></div><h3 id="shell-link-data-flags"><a href="#shell-link-data-flags" class="header-anchor">#</a> <code>SHELL_LINK_DATA_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SHELL_LINK_DATA_FLAGS : __int32
+{
+  SLDF_DEFAULT = 0x0,
+  SLDF_HAS_ID_LIST = 0x1,
+  SLDF_HAS_LINK_INFO = 0x2,
+  SLDF_HAS_NAME = 0x4,
+  SLDF_HAS_RELPATH = 0x8,
+  SLDF_HAS_WORKINGDIR = 0x10,
+  SLDF_HAS_ARGS = 0x20,
+  SLDF_HAS_ICONLOCATION = 0x40,
+  SLDF_UNICODE = 0x80,
+  SLDF_FORCE_NO_LINKINFO = 0x100,
+  SLDF_HAS_EXP_SZ = 0x200,
+  SLDF_RUN_IN_SEPARATE = 0x400,
+  SLDF_HAS_DARWINID = 0x1000,
+  SLDF_RUNAS_USER = 0x2000,
+  SLDF_HAS_EXP_ICON_SZ = 0x4000,
+  SLDF_NO_PIDL_ALIAS = 0x8000,
+  SLDF_FORCE_UNCNAME = 0x10000,
+  SLDF_RUN_WITH_SHIMLAYER = 0x20000,
+  SLDF_FORCE_NO_LINKTRACK = 0x40000,
+  SLDF_ENABLE_TARGET_METADATA = 0x80000,
+  SLDF_DISABLE_LINK_PATH_TRACKING = 0x100000,
+  SLDF_DISABLE_KNOWNFOLDER_RELATIVE_TRACKING = 0x200000,
+  SLDF_NO_KF_ALIAS = 0x400000,
+  SLDF_ALLOW_LINK_TO_LINK = 0x800000,
+  SLDF_UNALIAS_ON_SAVE = 0x1000000,
+  SLDF_PREFER_ENVIRONMENT_PATH = 0x2000000,
+  SLDF_KEEP_LOCAL_IDLIST_FOR_UNC_TARGET = 0x4000000,
+  SLDF_VALID = 0x7FFF7FF,
+  SLDF_RESERVED = 0x80000000,
+};
+
+</code></pre></div><h3 id="scriptsimulator-state"><a href="#scriptsimulator-state" class="header-anchor">#</a> <code>ScriptSimulator::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ScriptSimulator::State : __int32
+{
+  NOSTATE = 0x0,
+  PATCHLIST = 0x1,
+  PATCHING = 0x2,
+  ALLDONE = 0x3,
+};
+
+</code></pre></div><h3 id="smithingtablescreencontroller-slotindex"><a href="#smithingtablescreencontroller-slotindex" class="header-anchor">#</a> <code>SmithingTableScreenController::SlotIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AnvilScreenController::SlotIndex SmithingTableScreenController::SlotIndex;
+
+</code></pre></div><h3 id="stonecutterscreencontroller-lefttabindex"><a href="#stonecutterscreencontroller-lefttabindex" class="header-anchor">#</a> <code>StonecutterScreenController::LeftTabIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CraftingType StonecutterScreenController::LeftTabIndex;
+
+</code></pre></div><h3 id="shulkerpeekgoal-peekgoalids"><a href="#shulkerpeekgoal-peekgoalids" class="header-anchor">#</a> <code>ShulkerPeekGoal::PeekGoalIds</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ShulkerPeekGoal::PeekGoalIds : __int32
+{
+  DATA_PEEK_ID = 0x15,
+};
+
+</code></pre></div><h3 id="stalkandpounceontargetgoal-stalkandpouncestate"><a href="#stalkandpounceontargetgoal-stalkandpouncestate" class="header-anchor">#</a> <code>StalkAndPounceOnTargetGoal::StalkAndPounceState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskRunResult StalkAndPounceOnTargetGoal::StalkAndPounceState;
+
+</code></pre></div><h3 id="swimwithentitygoal-entitygoals"><a href="#swimwithentitygoal-entitygoals" class="header-anchor">#</a> <code>SwimWithEntityGoal::EntityGoals</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SwimWithEntityGoal::EntityGoals : __int32
+{
+  CATCH_UP_TO_ENTITY = 0x0,
+  MATCH_ENTITY_DIRECTION = 0x1,
+};
+
+</code></pre></div><h3 id="servertoservercommands"><a href="#servertoservercommands" class="header-anchor">#</a> <code>ServerToServerCommands</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ServerToServerCommands : __int32
+{
+  STSC_PROCESS_GET_REQUEST = 0x0,
+  STSC_PROCESS_GET_RESPONSE = 0x1,
+  STSC_ADD_UPLOADED_AND_SUBSCRIBED_KEYS = 0x2,
+  STSC_ADD_UPLOADED_KEY = 0x3,
+  STSC_ADD_SUBSCRIBED_KEY = 0x4,
+  STSC_REMOVE_UPLOADED_KEY = 0x5,
+  STSC_REMOVE_SUBSCRIBED_KEY = 0x6,
+  STSC_DATA_CHANGED = 0x7,
+};
+
+</code></pre></div><h3 id="sfat-clustervalues"><a href="#sfat-clustervalues" class="header-anchor">#</a> <code>SFAT::ClusterValues</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::ClusterValues : __int32
+{
+  ROOT_START_CLUSTER_INDEX = 0x0,
+  FREE_CLUSTER = 0x0,
+  CLUSTER_INDEX_BITS_COUNT = 0x16,
+  CLUSTER_SHORT_INDEX_BITS_COUNT = 0xE,
+  CLUSTER_INDEX_MASK = 0x3FFFFF,
+  CLUSTER_SHORT_INDEX_MASK = 0x3FFF,
+  LAST_CLUSTER_INDEX_VALUE = 0x3FFFFE,
+  START_END_VALUE_FLAG = 0x80000000,
+  INVALID_VALUE = 0x3FFFFF,
+  CHAIN_START_END_MASK = 0x80000000,
+  FLAGS_AND_INDEX_MASK = 0x803FFFFF,
+  FLAGS_AND_SHORT_INDEX_MASK = 0x80003FFF,
+  START_OF_CHAIN = 0x80000000,
+  END_OF_CHAIN = 0x80000000,
+  FDRI_START_BIT = 0x17,
+  HIGH_POSITION_OF_8_CRC_BITS = 0x17,
+  LOW_POSITION_OF_8_CRC_BITS = 0xE,
+  FDRI_BITS_COUNT = 0x8,
+  FDRI_MASK = 0xFF,
+  FDRI_SHIFTED_MASK = 0x7F800000,
+  CRC_LOW_POSITION_8_BITS_MASK = 0x3FC000,
+  CRC_INITIALIZED_MASK = 0x400000,
+  CRC_BIT_COUNT = 0x10,
+  CLUSTER_NOT_INITIALIZED = 0x400000,
+};
+
+</code></pre></div><h3 id="sfat-blockindexvalues"><a href="#sfat-blockindexvalues" class="header-anchor">#</a> <code>SFAT::BlockIndexValues</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SFAT::ClusterValues SFAT::BlockIndexValues;
+
+</code></pre></div><h3 id="sfat-errorcode"><a href="#sfat-errorcode" class="header-anchor">#</a> <code>SFAT::ErrorCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::ErrorCode : __int32
+{
+  RESULT_OK = 0x0,
+  UNKNOWN_ERROR = 0x1,
+  ERROR_LOW_LEVEL_STORAGE_IS_NOT_SETUP = 0x2,
+  ERROR_CLUSTER_DATA_STORAGE_NOT_AVAILABLE = 0x3,
+  ERROR_CAN_NOT_GET_AVAILABLE_STORAGE_SPACE = 0x4,
+  ERROR_CREATING_FILE = 0x5,
+  ERROR_CREATING_FILE_LOW_LEVEL = 0x6,
+  ERROR_OPENING_FILE_LOW_LEVEL = 0x7,
+  ERROR_OPENING_FILE_NOT_FOUND = 0x8,
+  ERROR_FILE_COULD_NOT_BE_FOUND = 0x9,
+  ERROR_DIRECTORY_NOT_FOUND = 0xA,
+  ERROR_CLOSING_FILE_LOW_LEVEL = 0xB,
+  ERROR_CLOSING_NOT_OPENED_LOW_LEVEL = 0xC,
+  ERROR_FILE_NOT_OPENED_LOW_LEVEL = 0xD,
+  ERROR_POSITIONING_IN_FILE_LOW_LEVEL = 0xE,
+  ERROR_POSITIONING_OUT_OF_RANGE = 0xF,
+  ERROR_FLUSH_LOW_LEVEL = 0x10,
+  ERROR_GETTING_FILE_SIZE = 0x11,
+  ERROR_CAN_NOT_GET_FILE_SIZE_OF_DIRECTORY = 0x12,
+  ERROR_GETTING_FILE_STATUS = 0x13,
+  ERROR_WRITING = 0x14,
+  ERROR_WRITING__INVALID_CACHE = 0x15,
+  ERROR_WRITING_LOW_LEVEL = 0x16,
+  ERROR_READING = 0x17,
+  ERROR_READING_LOW_LEVEL = 0x18,
+  ERROR_READING_CLUSTER_DATA = 0x19,
+  ERROR_READING_CLUSTER_DATA_CRC_DOES_NOT_MATCH = 0x1A,
+  ERROR_WRITING_CLUSTER_DATA = 0x1B,
+  ERROR_DELETING_FILE_LOW_LEVEL = 0x1C,
+  ERROR_REMOVING_DIRECTORY_LOW_LEVEL = 0x1D,
+  ERROR_RENAMING_FILE_LOW_LEVEL = 0x1E,
+  ERROR_RENAMING_DIRECTORY_LOW_LEVEL = 0x1F,
+  ERROR_VOLUME_CAN_NOT_EXPAND = 0x20,
+  ERROR_VOLUME_CAN_NOT_BE_OPENED = 0x21,
+  ERROR_VOLUME_TRANSACTION_ERROR = 0x22,
+  ERROR_VOLUME_RESTORE_FROM_TRANSACTION_ERROR = 0x23,
+  ERROR_EXPANDING_DATA_BLOCK = 0x24,
+  ERROR_BLOCK_INDEX_OUT_OF_RANGE = 0x25,
+  ERROR_FAT_NOT_CACHED = 0x26,
+  ERROR_INVALID_FAT_BLOCK_INDEX = 0x27,
+  ERROR_TRYING_TO_READ_NOT_ALLOCATED_FAT_BLOCK = 0x28,
+  ERROR_SFAT_CANT_RECOVER = 0x29,
+  ERROR_SFAT_CANT_BE_RECREATED = 0x2A,
+  ERROR_WRITING_INVALID_FAT_CELL_VALUE = 0x2B,
+  ERROR_INVALID_CLUSTER_INDEX = 0x2C,
+  ERROR_ITERATING_THROUGH_CLUSTER_CHAIN = 0x2D,
+  ERROR_INCONSISTENCY = 0x2E,
+  ERROR_INCONSISTENCY_POINTING_TO_FREE_CLUSTER = 0x2F,
+  ERROR_CAN_NOT_MOVE_CLUSTER = 0x30,
+  ERROR_FILE_ACCESS_MODE_UNSPECIFIED = 0x31,
+  ERROR_TRYING_TO_READ_FILE_WITHOUT_READ_ACCESS_MODE = 0x32,
+  ERROR_EXPANDING_FILE_IN_READ_ACCESS_MODE = 0x33,
+  ERROR_REACHED_MAX_DIRECTORY_DEPTH = 0x34,
+  ERROR_INVALID_FILE_MANIPULATOR = 0x35,
+  ERROR_NOT_ENOUGH_BUFFER_SIZE = 0x36,
+  ERROR_NULL_POINTER_MEMORY_BUFFER = 0x37,
+  ERROR_ALLOCATING_MEMORY_BUFFER = 0x38,
+  ERROR_INVALID_SEEK_PARAMETERS = 0x39,
+  ERROR_MAXIMUM_ALLOWED_FILES_PER_DIRECTORY_REACHED = 0x3A,
+  ERROR_FILE_OR_DIRECTORY_WITH_SAME_NAME_ALREADY_EXISTS = 0x3B,
+  ERROR_PARENT_DIRECTORY_DOES_NOT_EXIST = 0x3C,
+  ERROR_INVALID_FILE_PATH = 0x3D,
+  ERROR_CAN_NOT_TRUNCATE_FILE_TO_BIGGER_SIZE = 0x3E,
+  ERROR_CAN_NOT_DELETE_ROOT_DIRECTORY = 0x3F,
+  ERROR_CANT_REMOVE_NOT_EMPTY_DIRECTORY = 0x40,
+  ERROR_CANT_RENAME_A_FILE__NAME_DUPLICATION = 0x41,
+  ERROR_CAN_NOT_GET_FILE_POSITION = 0x42,
+  ERROR_FILE_NOT_OPENED = 0x43,
+  ERROR_FEATURE_NOT_SUPPORTED = 0x44,
+  ERROR_TRANSACTION_IS_ALREADY_STARTED = 0x45,
+  ERROR_NO_TRANSACTION_HAS_BEEN_STARTED = 0x46,
+  ERROR_NO_TRANSACTION_FILE_FOUND = 0x47,
+  ERROR_FATAL_ERROR = 0x48,
+  ERROR_FAT_INTEGRITY = 0x49,
+  ERROR_FILES_INTEGRITY = 0x4A,
+  ERROR_INTEGRITY = 0x4B,
+  NOT_IMPLEMENTED = 0xFFFFFFFF,
+};
+
+</code></pre></div><h3 id="sfat-directoryiterationflags"><a href="#sfat-directoryiterationflags" class="header-anchor">#</a> <code>SFAT::DirectoryIterationFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::DirectoryIterationFlags : __int32
+{
+  DI_FILE = 0x1,
+  DI_DIRECTORY = 0x2,
+  DI_ALL = 0x3,
+  DI_RECURSIVE = 0x4,
+};
+
+</code></pre></div><h3 id="sfat-seekmode"><a href="#sfat-seekmode" class="header-anchor">#</a> <code>SFAT::SeekMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::SeekMode : __int32
+{
+  SM_SET = 0x0,
+  SM_CURRENT = 0x1,
+  SM_END = 0x2,
+};
+
+</code></pre></div><h3 id="sfat-filedescriptorenums"><a href="#sfat-filedescriptorenums" class="header-anchor">#</a> <code>SFAT::FileDescriptorEnums</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::FileDescriptorEnums : __int32
+{
+  ENTITY_NAME_SIZE = 0x80,
+};
+
+</code></pre></div><h3 id="sfat-fileattributes"><a href="#sfat-fileattributes" class="header-anchor">#</a> <code>SFAT::FileAttributes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Manifest::DiffType SFAT::FileAttributes;
+
+</code></pre></div><h3 id="sfat-accessmode"><a href="#sfat-accessmode" class="header-anchor">#</a> <code>SFAT::AccessMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::AccessMode : __int32
+{
+  AM_UNSPECIFIED = 0x0,
+  AM_READ = 0x1,
+  AM_WRITE = 0x2,
+  AM_UPDATE = 0x4,
+  AM_APPEND = 0x8,
+  AM_TEXT = 0x10,
+  AM_BINARY = 0x20,
+  AM_TRUNCATE = 0x40,
+  AM_CREATE_IF_DOES_NOT_EXIST = 0x80,
+};
+
+</code></pre></div><h3 id="sfat-transactioneventtype"><a href="#sfat-transactioneventtype" class="header-anchor">#</a> <code>SFAT::TransactionEventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::TransactionEventType : __int32
+{
+  FAT_BLOCK_CHANGED = 0x0,
+  DIRECTORY_CLUSTER_CHANGED = 0x1,
+  FILE_CLUSTER_CHANGED = 0x2,
+  BLOCK_VIRTUALIZATION_TABLE_CHANGED = 0x3,
+};
+
+</code></pre></div><h3 id="sfat-logarea"><a href="#sfat-logarea" class="header-anchor">#</a> <code>SFAT::LogArea</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::LogArea : __int32
+{
+  LA_PHYSICAL_DISK = 0x0,
+  LA_FAT_READ = 0x1,
+  LA_FAT_WRITE = 0x2,
+  LA_VOLUME_MANAGER = 0x3,
+  LA_VIRTUAL_DISK = 0x4,
+  LA_LARGE_WRITES = 0x5,
+  LA_TRANSACTION = 0x6,
+  LA_BLOCK_VIRTUALIZATION = 0x7,
+  LA_EXTERNAL_AREA_FILE = 0x8,
+  LA_EXTERNAL_AREA_PLATFORM = 0x9,
+  LA_AREAS_COUNT = 0xA,
+};
+
+</code></pre></div><h3 id="sfat-filesystemstate"><a href="#sfat-filesystemstate" class="header-anchor">#</a> <code>SFAT::FileSystemState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::FileSystemState : __int32
+{
+  FSS_UNKNOWN = 0x0,
+  FSS_ERROR = 0x1,
+  FSS_STORAGE_SETUP = 0x2,
+  FSS_CREATED = 0x3,
+  FSS_READY = 0x4,
+};
+
+</code></pre></div><h3 id="sfat-volumedescriptor-fixedconstants"><a href="#sfat-volumedescriptor-fixedconstants" class="header-anchor">#</a> <code>SFAT::VolumeDescriptor::FixedConstants</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::VolumeDescriptor::FixedConstants : __int32
+{
+  FUTURE_PARAMETERS_BUFFER_SIZE = 0x200,
+  TOTAL_BLOCKS_COUNT_VERSION_7 = 0x18,
+};
+
+</code></pre></div><h3 id="sfat-blockvirtualizationheader-unnamed-enum-max-id-count"><a href="#sfat-blockvirtualizationheader-unnamed-enum-max-id-count" class="header-anchor">#</a> <code>SFAT::BlockVirtualizationHeader::&lt;unnamed_enum_MAX_ID_COUNT&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::BlockVirtualizationHeader::&lt;unnamed_enum_MAX_ID_COUNT&gt; : __int32
+{
+  MAX_ID_COUNT = 0x8,
+  MAX_ALLOWED_BLOCKS_COUNT = 0x40,
+};
+
+</code></pre></div><h3 id="sfat-eventtype"><a href="#sfat-eventtype" class="header-anchor">#</a> <code>SFAT::EventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::EventType : __int32
+{
+  ET_ERROR = 0x0,
+  ET_WARNING = 0x1,
+  ET_INFO = 0x2,
+  ET_COUNT = 0x3,
+};
+
+</code></pre></div><h3 id="sfat-integritystatus"><a href="#sfat-integritystatus" class="header-anchor">#</a> <code>SFAT::IntegrityStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::IntegrityStatus : __int32
+{
+  NO_ERROR = 0x0,
+  INTERNAL_ERROR = 0x1,
+  CLUSTER_CHAIN_START_MISMATCH = 0x2,
+  CLUSTER_CHAIN_END_MISMATCH = 0x3,
+  INVALID_CELL_INDEX_FOR_PREVIOUS_CELL = 0x4,
+  INVALID_CELL_INDEX_FOR_NEXT_CELL = 0x5,
+  ALLOCATED_CELL_BELONGS_TO_DELETED_FILE = 0x6,
+  MISSING_CLUSTER_CHAIN_FOR_NOT_EMPTY_FILE = 0x7,
+  CLUSTER_CHAIN_ATTACHED_TO_AN_EMPTY_FILE = 0x8,
+  FIRST_CHAIN_CLUSTER_NOT_MARKED_AS_A_CHAIN_START = 0x9,
+  MIDDLE_CHAIN_CLUSTER_MARKED_AS_A_CHAIN_START = 0xA,
+  PREVIOUS_CLUSTER_OF_A_MIDDLE_CHAIN_CLUSTER_IS_INVALID = 0xB,
+  PREVIOUS_CLUSTER_OF_A_MIDDLE_CHAIN_CLUSTER_IS_WRONG = 0xC,
+  FILE_SIZE_DOES_NOT_MATCH_THE_COUNT_OF_CLUSTER = 0xD,
+  INVALID_FILE_START_CLUSTER_INDEX = 0xE,
+  INVALID_FILE_END_CLUSTER_INDEX = 0xF,
+  FILE_END_CLUSTER_INDEX_MISMATCH = 0x10,
+  REFERENCE_TO_NOT_ALLOCATED_CLUSTER_FOR_CHAIN_START = 0x11,
+  REFERENCE_TO_NOT_ALLOCATED_CLUSTER_FOR_CHAIN_END = 0x12,
+  CRC_DOES_NOT_MATCH_FOR_CLUSTER = 0x13,
+};
+
+</code></pre></div><h3 id="sfat-defaultsetupvalues"><a href="#sfat-defaultsetupvalues" class="header-anchor">#</a> <code>SFAT::DefaultSetupValues</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::DefaultSetupValues : __int32
+{
+  CLUSTER_SIZE = 0x2000,
+  CHUNK_SIZE = 0x40000,
+  DATA_BLOCK_SIZE = 0x10000000,
+  FIRST_FILE_DATA_BLOCK_INDEX = 0x1,
+};
+
+</code></pre></div><h3 id="sfat-volumedescriptorflags"><a href="#sfat-volumedescriptorflags" class="header-anchor">#</a> <code>SFAT::VolumeDescriptorFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum SFAT::VolumeDescriptorFlags : __int32
+{
+  VDF_DEFAULT = 0x0,
+  VDF_SINGLE_FILE_VOLUME = 0x1,
+  VDF_SCRATCH_BLOCK_SUPPORT = 0x2,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/R.html" class="prev">
+        R
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/T.html">
+        T
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/81.33a53399.js" defer></script>
+  </body>
+</html>

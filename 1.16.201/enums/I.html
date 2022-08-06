@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>I | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/71.3cf65839.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" aria-current="page" class="active sidebar-link">I</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="i"><a href="#i" class="header-anchor">#</a> I</h1> <h3 id="inputmode"><a href="#inputmode" class="header-anchor">#</a> <code>InputMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="iconblitglint"><a href="#iconblitglint" class="header-anchor">#</a> <code>IconBlitGlint</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NoGlint</td> <td><code>0</code></td></tr> <tr><td>Glint</td> <td><code>1</code></td></tr> <tr><td>UnGlint</td> <td><code>2</code></td></tr></tbody></table> <h3 id="itemcontextflags"><a href="#itemcontextflags" class="header-anchor">#</a> <code>ItemContextFlags</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="iminecrafteventing-purchaseresult"><a href="#iminecrafteventing-purchaseresult" class="header-anchor">#</a> <code>IMinecraftEventing::PurchaseResult</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Started</td> <td><code>0</code></td></tr> <tr><td>Completed</td> <td><code>1</code></td></tr> <tr><td>Canceled</td> <td><code>2</code></td></tr> <tr><td>Error</td> <td><code>3</code></td></tr></tbody></table> <h3 id="iminecrafteventing-promotiontype"><a href="#iminecrafteventing-promotiontype" class="header-anchor">#</a> <code>IMinecraftEventing::PromotionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="iminecrafteventing-storetype"><a href="#iminecrafteventing-storetype" class="header-anchor">#</a> <code>IMinecraftEventing::StoreType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="iminecrafteventing-signinstage"><a href="#iminecrafteventing-signinstage" class="header-anchor">#</a> <code>IMinecraftEventing::SignInStage</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="iminecrafteventing-educationlessonaction"><a href="#iminecrafteventing-educationlessonaction" class="header-anchor">#</a> <code>IMinecraftEventing::EducationLessonAction</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Start</td> <td><code>0</code></td></tr> <tr><td>Continue</td> <td><code>1</code></td></tr> <tr><td>Restart</td> <td><code>2</code></td></tr> <tr><td>Host</td> <td><code>3</code></td></tr> <tr><td>Join</td> <td><code>4</code></td></tr> <tr><td>Finish</td> <td><code>5</code></td></tr></tbody></table> <h3 id="intellisenseutils-matcheroptions"><a href="#intellisenseutils-matcheroptions" class="header-anchor">#</a> <code>IntellisenseUtils::MatcherOptions</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="itemacquisitionmethod"><a href="#itemacquisitionmethod" class="header-anchor">#</a> <code>ItemAcquisitionMethod</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="itemcolor"><a href="#itemcolor" class="header-anchor">#</a> <code>ItemColor</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ismissingtexture"><a href="#ismissingtexture" class="header-anchor">#</a> <code>IsMissingTexture</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Yes</td> <td><code>0</code></td></tr> <tr><td>No</td> <td><code>1</code></td></tr></tbody></table> <h3 id="itemuseinventorytransaction-actiontype"><a href="#itemuseinventorytransaction-actiontype" class="header-anchor">#</a> <code>ItemUseInventoryTransaction::ActionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="inventorytipid"><a href="#inventorytipid" class="header-anchor">#</a> <code>InventoryTipId</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>SHOW_SELECTWOOD_FOR_MAKEPLANK_TIP</td> <td><code>0</code></td></tr> <tr><td>SHOW_SELECTGRID_FOR_MAKEPLANK_TIP</td> <td><code>1</code></td></tr> <tr><td>SHOW_SELECT_OUTPUTSLOT_FOR_PLANK_TIP</td> <td><code>2</code></td></tr> <tr><td>SHOW_SELECT_INVENTORY_FOR_PLANK_TIP</td> <td><code>3</code></td></tr> <tr><td>SHOW_OPEN_RECIPE_BOOK</td> <td><code>4</code></td></tr> <tr><td>SHOW_MAKE_CRAFTING_TABLE</td> <td><code>5</code></td></tr> <tr><td>SHOW_SELECT_OUTPUTSLOT_CRAFTING_TABLE</td> <td><code>6</code></td></tr> <tr><td>SHOW_SELECT_HOTBAR_CRAFTING_TABLE</td> <td><code>7</code></td></tr> <tr><td>SHOW_CLOSE_INVENTORY</td> <td><code>8</code></td></tr> <tr><td>SHOW_NEED_PLANKS_AND_STICKS</td> <td><code>9</code></td></tr> <tr><td>SHOW_OPEN_SEARCH_TAB</td> <td><code>10</code></td></tr> <tr><td>SHOW_SELECT_WOODEN_PICKAXE</td> <td><code>11</code></td></tr> <tr><td>SHOW_SELECT_OUTPUTSLOT_FOR_WOODEN_PICKAXE</td> <td><code>12</code></td></tr> <tr><td>SHOW_SELECT_HOTBAR_WOODEN_PICKAXE</td> <td><code>13</code></td></tr></tbody></table> <h3 id="inventorytipstatus"><a href="#inventorytipstatus" class="header-anchor">#</a> <code>InventoryTipStatus</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>TIP_AVAILABLE</td> <td><code>0</code></td></tr> <tr><td>TIP_HIDDEN</td> <td><code>1</code></td></tr> <tr><td>TIP_IS_VISIBLE</td> <td><code>2</code></td></tr> <tr><td>TIP_COMPLETED</td> <td><code>3</code></td></tr></tbody></table> <h3 id="iminecrafteventing-realmconnectionflow"><a href="#iminecrafteventing-realmconnectionflow" class="header-anchor">#</a> <code>IMinecraftEventing::RealmConnectionFlow</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>PlayScreen</td> <td><code>0</code></td></tr> <tr><td>PauseScreen</td> <td><code>1</code></td></tr></tbody></table> <h3 id="iminecrafteventing-realmconnectionresult"><a href="#iminecrafteventing-realmconnectionresult" class="header-anchor">#</a> <code>IMinecraftEventing::RealmConnectionResult</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Success</td> <td><code>0</code></td></tr> <tr><td>Failed</td> <td><code>1</code></td></tr> <tr><td>AccountRequired</td> <td><code>2</code></td></tr></tbody></table> <h3 id="ifilechunkuploader-uploadstatus"><a href="#ifilechunkuploader-uploadstatus" class="header-anchor">#</a> <code>IFileChunkUploader::UploadStatus</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Initialized</td> <td><code>0</code></td></tr> <tr><td>ArchivingStarted</td> <td><code>1</code></td></tr> <tr><td>ArchivingFailed</td> <td><code>2</code></td></tr> <tr><td>ArchivingSucceeded</td> <td><code>3</code></td></tr> <tr><td>UploadFailed</td> <td><code>4</code></td></tr> <tr><td>ValidationStarted</td> <td><code>5</code></td></tr> <tr><td>ValidationProgress</td> <td><code>6</code></td></tr> <tr><td>ValidationFailed</td> <td><code>7</code></td></tr> <tr><td>ValidationCancelled</td> <td><code>8</code></td></tr> <tr><td>ValidationSucceeded</td> <td><code>9</code></td></tr> <tr><td>UnknownError</td> <td><code>10</code></td></tr></tbody></table> <h3 id="ifilechunkuploader-uploadstreamresult"><a href="#ifilechunkuploader-uploadstreamresult" class="header-anchor">#</a> <code>IFileChunkUploader::UploadStreamResult</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="inventorysourcetype"><a href="#inventorysourcetype" class="header-anchor">#</a> <code>InventorySourceType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ContainerInventory</td> <td><code>0</code></td></tr> <tr><td>GlobalInventory</td> <td><code>1</code></td></tr> <tr><td>WorldInteraction</td> <td><code>2</code></td></tr> <tr><td>CreativeInventory</td> <td><code>3</code></td></tr> <tr><td>NonImplementedFeatureTODO</td> <td><code>99999</code></td></tr> <tr><td>InvalidInventory</td> <td><code>18446744073709551615</code></td></tr></tbody></table> <h3 id="inventorysource-inventorysourceflags"><a href="#inventorysource-inventorysourceflags" class="header-anchor">#</a> <code>InventorySource::InventorySourceFlags</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NoFlag</td> <td><code>0</code></td></tr> <tr><td>WorldInteraction_Random</td> <td><code>1</code></td></tr></tbody></table> <h3 id="itemcreativeregistrationmode"><a href="#itemcreativeregistrationmode" class="header-anchor">#</a> <code>ItemCreativeRegistrationMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="itemtransferamount-itemtransferamounttag"><a href="#itemtransferamount-itemtransferamounttag" class="header-anchor">#</a> <code>ItemTransferAmount::ItemTransferAmountTag</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>RequestAmount</td> <td><code>0</code></td></tr> <tr><td>TakeType</td> <td><code>1</code></td></tr> <tr><td>PlaceType</td> <td><code>2</code></td></tr></tbody></table> <h3 id="itemtaketype"><a href="#itemtaketype" class="header-anchor">#</a> <code>ItemTakeType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>All</td> <td><code>0</code></td></tr> <tr><td>One</td> <td><code>1</code></td></tr></tbody></table> <h3 id="itemplacetype"><a href="#itemplacetype" class="header-anchor">#</a> <code>ItemPlaceType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="if-oper-status"><a href="#if-oper-status" class="header-anchor">#</a> <code>IF_OPER_STATUS</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>IfOperStatusUp</td> <td><code>1</code></td></tr> <tr><td>IfOperStatusDown</td> <td><code>2</code></td></tr> <tr><td>IfOperStatusTesting</td> <td><code>3</code></td></tr> <tr><td>IfOperStatusUnknown</td> <td><code>4</code></td></tr> <tr><td>IfOperStatusDormant</td> <td><code>5</code></td></tr> <tr><td>IfOperStatusNotPresent</td> <td><code>6</code></td></tr> <tr><td>IfOperStatusLowerLayerDown</td> <td><code>7</code></td></tr></tbody></table> <h3 id="inputeventtype"><a href="#inputeventtype" class="header-anchor">#</a> <code>InputEventType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Button</td> <td><code>0</code></td></tr> <tr><td>OnClose</td> <td><code>1</code></td></tr></tbody></table> <h3 id="inputbindingmode"><a href="#inputbindingmode" class="header-anchor">#</a> <code>InputBindingMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="isa-availability"><a href="#isa-availability" class="header-anchor">#</a> <code>ISA_AVAILABILITY</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ISA_AVAILABILITY : __int32
+{
+  __ISA_AVAILABLE_X86 = 0x0,
+  __ISA_AVAILABLE_SSE2 = 0x1,
+  __ISA_AVAILABLE_SSE42 = 0x2,
+  __ISA_AVAILABLE_AVX = 0x3,
+  __ISA_AVAILABLE_ENFSTRG = 0x4,
+  __ISA_AVAILABLE_AVX2 = 0x5,
+  __ISA_AVAILABLE_ARMNT = 0x0,
+  __ISA_AVAILABLE_NEON = 0x1,
+  __ISA_AVAILABLE_NEON_ARM64 = 0x2,
+};
+
+</code></pre></div><h3 id="itemusemethod"><a href="#itemusemethod" class="header-anchor">#</a> <code>ItemUseMethod</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace ItemUseMethod;
+
+</code></pre></div><h3 id="iminecrafteventing-connectionfailurereason"><a href="#iminecrafteventing-connectionfailurereason" class="header-anchor">#</a> <code>IMinecraftEventing::ConnectionFailureReason</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace IMinecraftEventing::ConnectionFailureReason;
+
+</code></pre></div><h3 id="iminecrafteventing-signinaccounttype"><a href="#iminecrafteventing-signinaccounttype" class="header-anchor">#</a> <code>IMinecraftEventing::SignInAccountType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace IMinecraftEventing::SignInAccountType;
+
+</code></pre></div><h3 id="iminecrafteventing-signintrigger"><a href="#iminecrafteventing-signintrigger" class="header-anchor">#</a> <code>IMinecraftEventing::SignInTrigger</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace IMinecraftEventing::SignInTrigger;
+
+</code></pre></div><h3 id="iminecrafteventing-deviceaccountfailurephase"><a href="#iminecrafteventing-deviceaccountfailurephase" class="header-anchor">#</a> <code>IMinecraftEventing::DeviceAccountFailurePhase</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace IMinecraftEventing::DeviceAccountFailurePhase;
+
+</code></pre></div><h3 id="iminecrafteventing-edusigninstage"><a href="#iminecrafteventing-edusigninstage" class="header-anchor">#</a> <code>IMinecraftEventing::EduSignInStage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace IMinecraftEventing::EduSignInStage;
+
+</code></pre></div><h3 id="iminecrafteventing-networktype"><a href="#iminecrafteventing-networktype" class="header-anchor">#</a> <code>IMinecraftEventing::NetworkType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef RealmsEnvironment IMinecraftEventing::NetworkType;
+
+</code></pre></div><h3 id="iminecrafteventing-filetransmissiondirection"><a href="#iminecrafteventing-filetransmissiondirection" class="header-anchor">#</a> <code>IMinecraftEventing::FileTransmissionDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::FileTransmissionDirection : __int32
+{
+  Download = 0x0,
+  Upload = 0x1,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-filetransmissionstate"><a href="#iminecrafteventing-filetransmissionstate" class="header-anchor">#</a> <code>IMinecraftEventing::FileTransmissionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Bedrock::Threading::AsyncStatus IMinecraftEventing::FileTransmissionState;
+
+</code></pre></div><h3 id="iminecrafteventing-filetransmissiontype"><a href="#iminecrafteventing-filetransmissiontype" class="header-anchor">#</a> <code>IMinecraftEventing::FileTransmissionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::FileTransmissionType : __int32
+{
+  Realm_file = 0x1,
+  Dlc = 0x2,
+  Remix3D_DEPRECATED = 0x3,
+  DlcUpdate_Auto = 0x4,
+  DlcUpdate_User = 0x5,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-purchasestage"><a href="#iminecrafteventing-purchasestage" class="header-anchor">#</a> <code>IMinecraftEventing::PurchaseStage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace IMinecraftEventing::PurchaseStage;
+
+</code></pre></div><h3 id="iminecrafteventing-sharemode"><a href="#iminecrafteventing-sharemode" class="header-anchor">#</a> <code>IMinecraftEventing::ShareMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::ShareMode : __int32
+{
+  Share = 0x1,
+  Copy = 0x2,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-authenticationoutcome"><a href="#iminecrafteventing-authenticationoutcome" class="header-anchor">#</a> <code>IMinecraftEventing::AuthenticationOutcome</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::AuthenticationOutcome : __int32
+{
+  Success = 0x0,
+  Failed = 0x1,
+  AccountRequired = 0x2,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-exportoutcome"><a href="#iminecrafteventing-exportoutcome" class="header-anchor">#</a> <code>IMinecraftEventing::ExportOutcome</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome IMinecraftEventing::ExportOutcome;
+
+</code></pre></div><h3 id="iminecrafteventing-exportstage"><a href="#iminecrafteventing-exportstage" class="header-anchor">#</a> <code>IMinecraftEventing::ExportStage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Bedrock::Threading::AsyncStatus IMinecraftEventing::ExportStage;
+
+</code></pre></div><h3 id="iminecrafteventing-serverconnectionoutcome"><a href="#iminecrafteventing-serverconnectionoutcome" class="header-anchor">#</a> <code>IMinecraftEventing::ServerConnectionOutcome</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome IMinecraftEventing::ServerConnectionOutcome;
+
+</code></pre></div><h3 id="iminecrafteventing-clubsfeedscreensource"><a href="#iminecrafteventing-clubsfeedscreensource" class="header-anchor">#</a> <code>IMinecraftEventing::ClubsFeedScreenSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::ClubsFeedScreenSource : __int32
+{
+  PlayScreen = 0x0,
+  PauseScreen = 0x1,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-clubsengagementaction"><a href="#iminecrafteventing-clubsengagementaction" class="header-anchor">#</a> <code>IMinecraftEventing::ClubsEngagementAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::ClubsEngagementAction : __int32
+{
+  Like = 0x0,
+  Unlike = 0x1,
+  Post = 0x2,
+  Delete = 0x3,
+  Report = 0x4,
+  Comment = 0x5,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-clubsengagementtargettype"><a href="#iminecrafteventing-clubsengagementtargettype" class="header-anchor">#</a> <code>IMinecraftEventing::ClubsEngagementTargetType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace IMinecraftEventing::ClubsEngagementTargetType;
+
+</code></pre></div><h3 id="iminecrafteventing-dayoneexperiencestate"><a href="#iminecrafteventing-dayoneexperiencestate" class="header-anchor">#</a> <code>IMinecraftEventing::DayOneExperienceState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Bedrock::Threading::AsyncStatus IMinecraftEventing::DayOneExperienceState;
+
+</code></pre></div><h3 id="iminecrafteventing-elementconstructorusetype"><a href="#iminecrafteventing-elementconstructorusetype" class="header-anchor">#</a> <code>IMinecraftEventing::ElementConstructorUseType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::ElementConstructorUseType : __int32
+{
+  Created = 0x0,
+  Entered = 0x1,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-realmconnectionlambda"><a href="#iminecrafteventing-realmconnectionlambda" class="header-anchor">#</a> <code>IMinecraftEventing::RealmConnectionLambda</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::RealmConnectionLambda : __int32
+{
+  CompletedCallback = 0x0,
+  RetryCallback = 0x1,
+  ProgressScreenTickCallback = 0x2,
+  ProgressScreenOnCancelCallback = 0x3,
+  GameServerConnectProgressCallback = 0x4,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-multiplayersessionupdatetrigger"><a href="#iminecrafteventing-multiplayersessionupdatetrigger" class="header-anchor">#</a> <code>IMinecraftEventing::MultiplayerSessionUpdateTrigger</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation IMinecraftEventing::MultiplayerSessionUpdateTrigger;
+
+</code></pre></div><h3 id="iminecrafteventing-opencodemethod"><a href="#iminecrafteventing-opencodemethod" class="header-anchor">#</a> <code>IMinecraftEventing::OpenCodeMethod</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::OpenCodeMethod : __int32
+{
+  TouchHUD = 0x0,
+  Keypress = 0x1,
+  Command = 0x2,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-petdeathcontext"><a href="#iminecrafteventing-petdeathcontext" class="header-anchor">#</a> <code>IMinecraftEventing::PetDeathContext</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::PetDeathContext : __int32
+{
+  DiedOfOtherCause = 0x0,
+  PlayerMurdered = 0x1,
+  OwnerMurdered = 0x2,
+  MobMurdered = 0x3,
+};
+
+</code></pre></div><h3 id="iminecrafteventing-structureblockactiontype"><a href="#iminecrafteventing-structureblockactiontype" class="header-anchor">#</a> <code>IMinecraftEventing::StructureBlockActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace IMinecraftEventing::StructureBlockActionType;
+
+</code></pre></div><h3 id="iminecrafteventing-chunkcacheresulttype"><a href="#iminecrafteventing-chunkcacheresulttype" class="header-anchor">#</a> <code>IMinecraftEventing::ChunkCacheResultType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMinecraftEventing::ChunkCacheResultType : __int32
+{
+  SuccessFromCache = 0x0,
+  SuccessFromNetwork = 0x1,
+  Failure = 0x2,
+};
+
+</code></pre></div><h3 id="iteminstallstate"><a href="#iteminstallstate" class="header-anchor">#</a> <code>ItemInstallState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ItemInstallState : __int32
+{
+  NotInstalled = 0x0,
+  Installed = 0x1,
+  UpdateAvailable = 0x2,
+  _Unknown = 0x3,
+};
+
+</code></pre></div><h3 id="initiatorcategory"><a href="#initiatorcategory" class="header-anchor">#</a> <code>InitiatorCategory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace InitiatorCategory;
+
+</code></pre></div><h3 id="itemtype"><a href="#itemtype" class="header-anchor">#</a> <code>ItemType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ItemType : __int32
+{
+  Legacy = 0x0,
+  DataDriven = 0x1,
+};
+
+</code></pre></div><h3 id="inventorytransactionerror"><a href="#inventorytransactionerror" class="header-anchor">#</a> <code>InventoryTransactionError</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace InventoryTransactionError;
+
+</code></pre></div><h3 id="icamerabehavior-updateorder"><a href="#icamerabehavior-updateorder" class="header-anchor">#</a> <code>ICameraBehavior::UpdateOrder</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ICameraBehavior::UpdateOrder : __int32
+{
+  First = 0x0,
+  Second = 0x1,
+  Third = 0x2,
+  Fourth = 0x3,
+  Fifth = 0x4,
+  Sixth = 0x5,
+  Seventh = 0x6,
+  Eighth = 0x7,
+  Ninth = 0x8,
+  Tenth = 0x9,
+  Eleventh = 0xA,
+};
+
+</code></pre></div><h3 id="inhandupdatetype"><a href="#inhandupdatetype" class="header-anchor">#</a> <code>InHandUpdateType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent InHandUpdateType;
+
+</code></pre></div><h3 id="itemspeciallocation"><a href="#itemspeciallocation" class="header-anchor">#</a> <code>ItemSpecialLocation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace ItemSpecialLocation;
+
+</code></pre></div><h3 id="itemsettype"><a href="#itemsettype" class="header-anchor">#</a> <code>ItemSetType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftEventing::ItemInteractMethod ItemSetType;
+
+</code></pre></div><h3 id="itemaddtype"><a href="#itemaddtype" class="header-anchor">#</a> <code>ItemAddType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ItemPlaceType ItemAddType;
+
+</code></pre></div><h3 id="ipproto"><a href="#ipproto" class="header-anchor">#</a> <code>IPPROTO</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IPPROTO : __int32
+{
+  IPPROTO_HOPOPTS = 0x0,
+  IPPROTO_ICMP = 0x1,
+  IPPROTO_IGMP = 0x2,
+  IPPROTO_GGP = 0x3,
+  IPPROTO_IPV4 = 0x4,
+  IPPROTO_ST = 0x5,
+  IPPROTO_TCP = 0x6,
+  IPPROTO_CBT = 0x7,
+  IPPROTO_EGP = 0x8,
+  IPPROTO_IGP = 0x9,
+  IPPROTO_PUP = 0xC,
+  IPPROTO_UDP = 0x11,
+  IPPROTO_IDP = 0x16,
+  IPPROTO_RDP = 0x1B,
+  IPPROTO_IPV6 = 0x29,
+  IPPROTO_ROUTING = 0x2B,
+  IPPROTO_FRAGMENT = 0x2C,
+  IPPROTO_ESP = 0x32,
+  IPPROTO_AH = 0x33,
+  IPPROTO_ICMPV6 = 0x3A,
+  IPPROTO_NONE = 0x3B,
+  IPPROTO_DSTOPTS = 0x3C,
+  IPPROTO_ND = 0x4D,
+  IPPROTO_ICLFXBM = 0x4E,
+  IPPROTO_PIM = 0x67,
+  IPPROTO_PGM = 0x71,
+  IPPROTO_L2TP = 0x73,
+  IPPROTO_SCTP = 0x84,
+  IPPROTO_RAW = 0xFF,
+  IPPROTO_MAX = 0x100,
+  IPPROTO_RESERVED_RAW = 0x101,
+  IPPROTO_RESERVED_IPSEC = 0x102,
+  IPPROTO_RESERVED_IPSECOFFLOAD = 0x103,
+  IPPROTO_RESERVED_WNV = 0x104,
+  IPPROTO_RESERVED_MAX = 0x105,
+};
+
+</code></pre></div><h3 id="import-object-type"><a href="#import-object-type" class="header-anchor">#</a> <code>IMPORT_OBJECT_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMPORT_OBJECT_TYPE : __int32
+{
+  IMPORT_OBJECT_CODE = 0x0,
+  IMPORT_OBJECT_DATA = 0x1,
+  IMPORT_OBJECT_CONST = 0x2,
+};
+
+</code></pre></div><h3 id="import-object-name-type"><a href="#import-object-name-type" class="header-anchor">#</a> <code>IMPORT_OBJECT_NAME_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMPORT_OBJECT_NAME_TYPE : __int32
+{
+  IMPORT_OBJECT_ORDINAL = 0x0,
+  IMPORT_OBJECT_NAME = 0x1,
+  IMPORT_OBJECT_NAME_NO_PREFIX = 0x2,
+  IMPORT_OBJECT_NAME_UNDECORATE = 0x3,
+  IMPORT_OBJECT_NAME_EXPORTAS = 0x4,
+};
+
+</code></pre></div><h3 id="image-aux-symbol-type"><a href="#image-aux-symbol-type" class="header-anchor">#</a> <code>IMAGE_AUX_SYMBOL_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IMAGE_AUX_SYMBOL_TYPE : __int32
+{
+  IMAGE_AUX_SYMBOL_TYPE_TOKEN_DEF = 0x1,
+};
+
+</code></pre></div><h3 id="imagecachemode"><a href="#imagecachemode" class="header-anchor">#</a> <code>ImageCacheMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef HolographicPlatform::GestureMode ImageCacheMode;
+
+</code></pre></div><h3 id="itemrenderchunktype"><a href="#itemrenderchunktype" class="header-anchor">#</a> <code>ItemRenderChunkType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MaterialType ItemRenderChunkType;
+
+</code></pre></div><h3 id="interactpacket-action"><a href="#interactpacket-action" class="header-anchor">#</a> <code>InteractPacket::Action</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace InteractPacket::Action;
+
+</code></pre></div><h3 id="itemlockmode"><a href="#itemlockmode" class="header-anchor">#</a> <code>ItemLockMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ItemLockMode;
+
+</code></pre></div><h3 id="inputcomponent-presstype"><a href="#inputcomponent-presstype" class="header-anchor">#</a> <code>InputComponent::PressType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum InputComponent::PressType : __int32
+{
+  Single = 0x0,
+  Double = 0x1,
+};
+
+</code></pre></div><h3 id="importsuccess"><a href="#importsuccess" class="header-anchor">#</a> <code>ImportSuccess</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions ImportSuccess;
+
+</code></pre></div><h3 id="importfailure"><a href="#importfailure" class="header-anchor">#</a> <code>ImportFailure</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions ImportFailure;
+
+</code></pre></div><h3 id="interactionmodel"><a href="#interactionmodel" class="header-anchor">#</a> <code>InteractionModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum InteractionModel : __int32
+{
+  CombinedInventory = 0x0,
+  SeparateInventoryAndHotbar = 0x1,
+};
+
+</code></pre></div><h3 id="itemtransfertype"><a href="#itemtransfertype" class="header-anchor">#</a> <code>ItemTransferType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftEventing::ItemInteractMethod ItemTransferType;
+
+</code></pre></div><h3 id="itemcrafttype"><a href="#itemcrafttype" class="header-anchor">#</a> <code>ItemCraftType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ItemPlaceType ItemCraftType;
+
+</code></pre></div><h3 id="inventorylefttabindex"><a href="#inventorylefttabindex" class="header-anchor">#</a> <code>InventoryLeftTabIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation InventoryLeftTabIndex;
+
+</code></pre></div><h3 id="inventoryrighttabindex"><a href="#inventoryrighttabindex" class="header-anchor">#</a> <code>InventoryRightTabIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation InventoryRightTabIndex;
+
+</code></pre></div><h3 id="inventorylayout"><a href="#inventorylayout" class="header-anchor">#</a> <code>InventoryLayout</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation InventoryLayout;
+
+</code></pre></div><h3 id="instantiationresult"><a href="#instantiationresult" class="header-anchor">#</a> <code>InstantiationResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome InstantiationResult;
+
+</code></pre></div><h3 id="identitydefinition-type"><a href="#identitydefinition-type" class="header-anchor">#</a> <code>IdentityDefinition::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace IdentityDefinition::Type;
+
+</code></pre></div><h3 id="immersivereaderscreencontroller-immersivereadererrortype"><a href="#immersivereaderscreencontroller-immersivereadererrortype" class="header-anchor">#</a> <code>ImmersiveReaderScreenController::ImmersiveReaderErrorType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImmersiveReaderScreenController::ImmersiveReaderErrorType : __int8
+{
+  WebviewFailure = 0x0,
+  IdentityFailure = 0x1,
+};
+
+</code></pre></div><h3 id="immersivereaderscreencontroller-immersivereaderstatuscodes"><a href="#immersivereaderscreencontroller-immersivereaderstatuscodes" class="header-anchor">#</a> <code>ImmersiveReaderScreenController::ImmersiveReaderStatusCodes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ChunkState ImmersiveReaderScreenController::ImmersiveReaderStatusCodes;
+
+</code></pre></div><h3 id="immersivereaderscreencontroller-immersivereaderstage"><a href="#immersivereaderscreencontroller-immersivereaderstage" class="header-anchor">#</a> <code>ImmersiveReaderScreenController::ImmersiveReaderStage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef UIAnim::State ImmersiveReaderScreenController::ImmersiveReaderStage;
+
+</code></pre></div><h3 id="ipjoinscreencontroller-joinrequest"><a href="#ipjoinscreencontroller-joinrequest" class="header-anchor">#</a> <code>IPJoinScreenController::JoinRequest</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef StartIntent IPJoinScreenController::JoinRequest;
+
+</code></pre></div><h3 id="inputs"><a href="#inputs" class="header-anchor">#</a> <code>Inputs</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Inputs;
+
+</code></pre></div><h3 id="igpsturningmode"><a href="#igpsturningmode" class="header-anchor">#</a> <code>IGPSTurningMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IGPSTurningMode : __int32
+{
+  STANDARD = 0x0,
+  STUTTER = 0x1,
+  DIRECT = 0x2,
+  ROLL = 0x4,
+  STUTTER_DIRECT = 0x3,
+  STUTTER_ROLL = 0x5,
+  DIRECT_ROLL = 0x6,
+  STUTTER_DIRECT_ROLL = 0x7,
+};
+
+</code></pre></div><h3 id="ingamerealitymodescreen-vroptionpresetmode"><a href="#ingamerealitymodescreen-vroptionpresetmode" class="header-anchor">#</a> <code>InGameRealityModeScreen::VROptionPresetMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Realms::World::State InGameRealityModeScreen::VROptionPresetMode;
+
+</code></pre></div><h3 id="imguiitemflags"><a href="#imguiitemflags" class="header-anchor">#</a> <code>ImGuiItemFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiItemFlags_ : __int32
+{
+  ImGuiItemFlags_NoTabStop = 0x1,
+  ImGuiItemFlags_ButtonRepeat = 0x2,
+  ImGuiItemFlags_Disabled = 0x4,
+  ImGuiItemFlags_NoNav = 0x8,
+  ImGuiItemFlags_NoNavDefaultFocus = 0x10,
+  ImGuiItemFlags_SelectableDontClosePopup = 0x20,
+  ImGuiItemFlags_Default_ = 0x0,
+};
+
+</code></pre></div><h3 id="imguilayouttype"><a href="#imguilayouttype" class="header-anchor">#</a> <code>ImGuiLayoutType_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiLayoutType_ : __int32
+{
+  ImGuiLayoutType_Vertical = 0x0,
+  ImGuiLayoutType_Horizontal = 0x1,
+};
+
+</code></pre></div><h3 id="imguinavforward"><a href="#imguinavforward" class="header-anchor">#</a> <code>ImGuiNavForward</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiNavForward : __int32
+{
+  ImGuiNavForward_None = 0x0,
+  ImGuiNavForward_ForwardQueued = 0x1,
+  ImGuiNavForward_ForwardActive = 0x2,
+};
+
+</code></pre></div><h3 id="imguiinputsource"><a href="#imguiinputsource" class="header-anchor">#</a> <code>ImGuiInputSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiInputSource : __int32
+{
+  ImGuiInputSource_None = 0x0,
+  ImGuiInputSource_Mouse = 0x1,
+  ImGuiInputSource_Nav = 0x2,
+  ImGuiInputSource_NavKeyboard = 0x3,
+  ImGuiInputSource_NavGamepad = 0x4,
+  ImGuiInputSource_COUNT = 0x5,
+};
+
+</code></pre></div><h3 id="imguicoloreditflags"><a href="#imguicoloreditflags" class="header-anchor">#</a> <code>ImGuiColorEditFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiColorEditFlags_ : __int32
+{
+  ImGuiColorEditFlags_None = 0x0,
+  ImGuiColorEditFlags_NoAlpha = 0x2,
+  ImGuiColorEditFlags_NoPicker = 0x4,
+  ImGuiColorEditFlags_NoOptions = 0x8,
+  ImGuiColorEditFlags_NoSmallPreview = 0x10,
+  ImGuiColorEditFlags_NoInputs = 0x20,
+  ImGuiColorEditFlags_NoTooltip = 0x40,
+  ImGuiColorEditFlags_NoLabel = 0x80,
+  ImGuiColorEditFlags_NoSidePreview = 0x100,
+  ImGuiColorEditFlags_NoDragDrop = 0x200,
+  ImGuiColorEditFlags_AlphaBar = 0x10000,
+  ImGuiColorEditFlags_AlphaPreview = 0x20000,
+  ImGuiColorEditFlags_AlphaPreviewHalf = 0x40000,
+  ImGuiColorEditFlags_HDR = 0x80000,
+  ImGuiColorEditFlags_RGB = 0x100000,
+  ImGuiColorEditFlags_HSV = 0x200000,
+  ImGuiColorEditFlags_HEX = 0x400000,
+  ImGuiColorEditFlags_Uint8 = 0x800000,
+  ImGuiColorEditFlags_Float = 0x1000000,
+  ImGuiColorEditFlags_PickerHueBar = 0x2000000,
+  ImGuiColorEditFlags_PickerHueWheel = 0x4000000,
+  ImGuiColorEditFlags__InputsMask = 0x700000,
+  ImGuiColorEditFlags__DataTypeMask = 0x1800000,
+  ImGuiColorEditFlags__PickerMask = 0x6000000,
+  ImGuiColorEditFlags__OptionsDefault = 0x2900000,
+};
+
+</code></pre></div><h3 id="imguimousecursor"><a href="#imguimousecursor" class="header-anchor">#</a> <code>ImGuiMouseCursor_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiMouseCursor_ : __int32
+{
+  ImGuiMouseCursor_None = 0xFFFFFFFF,
+  ImGuiMouseCursor_Arrow = 0x0,
+  ImGuiMouseCursor_TextInput = 0x1,
+  ImGuiMouseCursor_ResizeAll = 0x2,
+  ImGuiMouseCursor_ResizeNS = 0x3,
+  ImGuiMouseCursor_ResizeEW = 0x4,
+  ImGuiMouseCursor_ResizeNESW = 0x5,
+  ImGuiMouseCursor_ResizeNWSE = 0x6,
+  ImGuiMouseCursor_Hand = 0x7,
+  ImGuiMouseCursor_COUNT = 0x8,
+  ImGuiMouseCursor_Count_ = 0x8,
+};
+
+</code></pre></div><h3 id="imguidir"><a href="#imguidir" class="header-anchor">#</a> <code>ImGuiDir_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiDir_ : __int32
+{
+  ImGuiDir_None = 0xFFFFFFFF,
+  ImGuiDir_Left = 0x0,
+  ImGuiDir_Right = 0x1,
+  ImGuiDir_Up = 0x2,
+  ImGuiDir_Down = 0x3,
+  ImGuiDir_COUNT = 0x4,
+};
+
+</code></pre></div><h3 id="imguipopuppositionpolicy"><a href="#imguipopuppositionpolicy" class="header-anchor">#</a> <code>ImGuiPopupPositionPolicy</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiPopupPositionPolicy : __int32
+{
+  ImGuiPopupPositionPolicy_Default = 0x0,
+  ImGuiPopupPositionPolicy_ComboBox = 0x1,
+};
+
+</code></pre></div><h3 id="imguiwindowflags"><a href="#imguiwindowflags" class="header-anchor">#</a> <code>ImGuiWindowFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiWindowFlags_ : __int32
+{
+  ImGuiWindowFlags_None = 0x0,
+  ImGuiWindowFlags_NoTitleBar = 0x1,
+  ImGuiWindowFlags_NoResize = 0x2,
+  ImGuiWindowFlags_NoMove = 0x4,
+  ImGuiWindowFlags_NoScrollbar = 0x8,
+  ImGuiWindowFlags_NoScrollWithMouse = 0x10,
+  ImGuiWindowFlags_NoCollapse = 0x20,
+  ImGuiWindowFlags_AlwaysAutoResize = 0x40,
+  ImGuiWindowFlags_NoBackground = 0x80,
+  ImGuiWindowFlags_NoSavedSettings = 0x100,
+  ImGuiWindowFlags_NoMouseInputs = 0x200,
+  ImGuiWindowFlags_MenuBar = 0x400,
+  ImGuiWindowFlags_HorizontalScrollbar = 0x800,
+  ImGuiWindowFlags_NoFocusOnAppearing = 0x1000,
+  ImGuiWindowFlags_NoBringToFrontOnFocus = 0x2000,
+  ImGuiWindowFlags_AlwaysVerticalScrollbar = 0x4000,
+  ImGuiWindowFlags_AlwaysHorizontalScrollbar = 0x8000,
+  ImGuiWindowFlags_AlwaysUseWindowPadding = 0x10000,
+  ImGuiWindowFlags_NoNavInputs = 0x40000,
+  ImGuiWindowFlags_NoNavFocus = 0x80000,
+  ImGuiWindowFlags_NoNav = 0xC0000,
+  ImGuiWindowFlags_NoDecoration = 0x2B,
+  ImGuiWindowFlags_NoInputs = 0xC0200,
+  ImGuiWindowFlags_NavFlattened = 0x800000,
+  ImGuiWindowFlags_ChildWindow = 0x1000000,
+  ImGuiWindowFlags_Tooltip = 0x2000000,
+  ImGuiWindowFlags_Popup = 0x4000000,
+  ImGuiWindowFlags_Modal = 0x8000000,
+  ImGuiWindowFlags_ChildMenu = 0x10000000,
+};
+
+</code></pre></div><h3 id="imguinavhighlightflags"><a href="#imguinavhighlightflags" class="header-anchor">#</a> <code>ImGuiNavHighlightFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiNavHighlightFlags_ : __int32
+{
+  ImGuiNavHighlightFlags_None = 0x0,
+  ImGuiNavHighlightFlags_TypeDefault = 0x1,
+  ImGuiNavHighlightFlags_TypeThin = 0x2,
+  ImGuiNavHighlightFlags_AlwaysDraw = 0x4,
+  ImGuiNavHighlightFlags_NoRounding = 0x8,
+};
+
+</code></pre></div><h3 id="imguicol"><a href="#imguicol" class="header-anchor">#</a> <code>ImGuiCol_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiCol_ : __int32
+{
+  ImGuiCol_Text = 0x0,
+  ImGuiCol_TextDisabled = 0x1,
+  ImGuiCol_WindowBg = 0x2,
+  ImGuiCol_ChildBg = 0x3,
+  ImGuiCol_PopupBg = 0x4,
+  ImGuiCol_Border = 0x5,
+  ImGuiCol_BorderShadow = 0x6,
+  ImGuiCol_FrameBg = 0x7,
+  ImGuiCol_FrameBgHovered = 0x8,
+  ImGuiCol_FrameBgActive = 0x9,
+  ImGuiCol_TitleBg = 0xA,
+  ImGuiCol_TitleBgActive = 0xB,
+  ImGuiCol_TitleBgCollapsed = 0xC,
+  ImGuiCol_MenuBarBg = 0xD,
+  ImGuiCol_ScrollbarBg = 0xE,
+  ImGuiCol_ScrollbarGrab = 0xF,
+  ImGuiCol_ScrollbarGrabHovered = 0x10,
+  ImGuiCol_ScrollbarGrabActive = 0x11,
+  ImGuiCol_CheckMark = 0x12,
+  ImGuiCol_SliderGrab = 0x13,
+  ImGuiCol_SliderGrabActive = 0x14,
+  ImGuiCol_Button = 0x15,
+  ImGuiCol_ButtonHovered = 0x16,
+  ImGuiCol_ButtonActive = 0x17,
+  ImGuiCol_Header = 0x18,
+  ImGuiCol_HeaderHovered = 0x19,
+  ImGuiCol_HeaderActive = 0x1A,
+  ImGuiCol_Separator = 0x1B,
+  ImGuiCol_SeparatorHovered = 0x1C,
+  ImGuiCol_SeparatorActive = 0x1D,
+  ImGuiCol_ResizeGrip = 0x1E,
+  ImGuiCol_ResizeGripHovered = 0x1F,
+  ImGuiCol_ResizeGripActive = 0x20,
+  ImGuiCol_PlotLines = 0x21,
+  ImGuiCol_PlotLinesHovered = 0x22,
+  ImGuiCol_PlotHistogram = 0x23,
+  ImGuiCol_PlotHistogramHovered = 0x24,
+  ImGuiCol_TextSelectedBg = 0x25,
+  ImGuiCol_DragDropTarget = 0x26,
+  ImGuiCol_NavHighlight = 0x27,
+  ImGuiCol_NavWindowingHighlight = 0x28,
+  ImGuiCol_NavWindowingDimBg = 0x29,
+  ImGuiCol_ModalWindowDimBg = 0x2A,
+  ImGuiCol_COUNT = 0x2B,
+  ImGuiCol_ChildWindowBg = 0x3,
+  ImGuiCol_Column = 0x1B,
+  ImGuiCol_ColumnHovered = 0x1C,
+  ImGuiCol_ColumnActive = 0x1D,
+  ImGuiCol_ModalWindowDarkening = 0x2A,
+};
+
+</code></pre></div><h3 id="imguinavinput"><a href="#imguinavinput" class="header-anchor">#</a> <code>ImGuiNavInput_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiNavInput_ : __int32
+{
+  ImGuiNavInput_Activate = 0x0,
+  ImGuiNavInput_Cancel = 0x1,
+  ImGuiNavInput_Input = 0x2,
+  ImGuiNavInput_Menu = 0x3,
+  ImGuiNavInput_DpadLeft = 0x4,
+  ImGuiNavInput_DpadRight = 0x5,
+  ImGuiNavInput_DpadUp = 0x6,
+  ImGuiNavInput_DpadDown = 0x7,
+  ImGuiNavInput_LStickLeft = 0x8,
+  ImGuiNavInput_LStickRight = 0x9,
+  ImGuiNavInput_LStickUp = 0xA,
+  ImGuiNavInput_LStickDown = 0xB,
+  ImGuiNavInput_FocusPrev = 0xC,
+  ImGuiNavInput_FocusNext = 0xD,
+  ImGuiNavInput_TweakSlow = 0xE,
+  ImGuiNavInput_TweakFast = 0xF,
+  ImGuiNavInput_KeyMenu_ = 0x10,
+  ImGuiNavInput_KeyLeft_ = 0x11,
+  ImGuiNavInput_KeyRight_ = 0x12,
+  ImGuiNavInput_KeyUp_ = 0x13,
+  ImGuiNavInput_KeyDown_ = 0x14,
+  ImGuiNavInput_COUNT = 0x15,
+  ImGuiNavInput_InternalStart_ = 0x10,
+};
+
+</code></pre></div><h3 id="imguidragdropflags"><a href="#imguidragdropflags" class="header-anchor">#</a> <code>ImGuiDragDropFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiDragDropFlags_ : __int32
+{
+  ImGuiDragDropFlags_None = 0x0,
+  ImGuiDragDropFlags_SourceNoPreviewTooltip = 0x1,
+  ImGuiDragDropFlags_SourceNoDisableHover = 0x2,
+  ImGuiDragDropFlags_SourceNoHoldToOpenOthers = 0x4,
+  ImGuiDragDropFlags_SourceAllowNullID = 0x8,
+  ImGuiDragDropFlags_SourceExtern = 0x10,
+  ImGuiDragDropFlags_SourceAutoExpirePayload = 0x20,
+  ImGuiDragDropFlags_AcceptBeforeDelivery = 0x400,
+  ImGuiDragDropFlags_AcceptNoDrawDefaultRect = 0x800,
+  ImGuiDragDropFlags_AcceptNoPreviewTooltip = 0x1000,
+  ImGuiDragDropFlags_AcceptPeekOnly = 0xC00,
+};
+
+</code></pre></div><h3 id="imguihoveredflags"><a href="#imguihoveredflags" class="header-anchor">#</a> <code>ImGuiHoveredFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiHoveredFlags_ : __int32
+{
+  ImGuiHoveredFlags_None = 0x0,
+  ImGuiHoveredFlags_ChildWindows = 0x1,
+  ImGuiHoveredFlags_RootWindow = 0x2,
+  ImGuiHoveredFlags_AnyWindow = 0x4,
+  ImGuiHoveredFlags_AllowWhenBlockedByPopup = 0x8,
+  ImGuiHoveredFlags_AllowWhenBlockedByActiveItem = 0x20,
+  ImGuiHoveredFlags_AllowWhenOverlapped = 0x40,
+  ImGuiHoveredFlags_AllowWhenDisabled = 0x80,
+  ImGuiHoveredFlags_RectOnly = 0x68,
+  ImGuiHoveredFlags_RootAndChildWindows = 0x3,
+};
+
+</code></pre></div><h3 id="imguifocusedflags"><a href="#imguifocusedflags" class="header-anchor">#</a> <code>ImGuiFocusedFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiFocusedFlags_ : __int32
+{
+  ImGuiFocusedFlags_None = 0x0,
+  ImGuiFocusedFlags_ChildWindows = 0x1,
+  ImGuiFocusedFlags_RootWindow = 0x2,
+  ImGuiFocusedFlags_AnyWindow = 0x4,
+  ImGuiFocusedFlags_RootAndChildWindows = 0x3,
+};
+
+</code></pre></div><h3 id="imguicomboflags"><a href="#imguicomboflags" class="header-anchor">#</a> <code>ImGuiComboFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiComboFlags_ : __int32
+{
+  ImGuiComboFlags_None = 0x0,
+  ImGuiComboFlags_PopupAlignLeft = 0x1,
+  ImGuiComboFlags_HeightSmall = 0x2,
+  ImGuiComboFlags_HeightRegular = 0x4,
+  ImGuiComboFlags_HeightLarge = 0x8,
+  ImGuiComboFlags_HeightLargest = 0x10,
+  ImGuiComboFlags_NoArrowButton = 0x20,
+  ImGuiComboFlags_NoPreview = 0x40,
+  ImGuiComboFlags_HeightMask_ = 0x1E,
+};
+
+</code></pre></div><h3 id="imguicond"><a href="#imguicond" class="header-anchor">#</a> <code>ImGuiCond_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiCond_ : __int32
+{
+  ImGuiCond_Always = 0x1,
+  ImGuiCond_Once = 0x2,
+  ImGuiCond_FirstUseEver = 0x4,
+  ImGuiCond_Appearing = 0x8,
+  ImGuiSetCond_Always = 0x1,
+  ImGuiSetCond_Once = 0x2,
+  ImGuiSetCond_FirstUseEver = 0x4,
+  ImGuiSetCond_Appearing = 0x8,
+};
+
+</code></pre></div><h3 id="imguikey"><a href="#imguikey" class="header-anchor">#</a> <code>ImGuiKey_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiKey_ : __int32
+{
+  ImGuiKey_Tab = 0x0,
+  ImGuiKey_LeftArrow = 0x1,
+  ImGuiKey_RightArrow = 0x2,
+  ImGuiKey_UpArrow = 0x3,
+  ImGuiKey_DownArrow = 0x4,
+  ImGuiKey_PageUp = 0x5,
+  ImGuiKey_PageDown = 0x6,
+  ImGuiKey_Home = 0x7,
+  ImGuiKey_End = 0x8,
+  ImGuiKey_Insert = 0x9,
+  ImGuiKey_Delete = 0xA,
+  ImGuiKey_Backspace = 0xB,
+  ImGuiKey_Space = 0xC,
+  ImGuiKey_Enter = 0xD,
+  ImGuiKey_Escape = 0xE,
+  ImGuiKey_A = 0xF,
+  ImGuiKey_C = 0x10,
+  ImGuiKey_V = 0x11,
+  ImGuiKey_X = 0x12,
+  ImGuiKey_Y = 0x13,
+  ImGuiKey_Z = 0x14,
+  ImGuiKey_COUNT = 0x15,
+};
+
+</code></pre></div><h3 id="imguistylevar"><a href="#imguistylevar" class="header-anchor">#</a> <code>ImGuiStyleVar_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiStyleVar_ : __int32
+{
+  ImGuiStyleVar_Alpha = 0x0,
+  ImGuiStyleVar_WindowPadding = 0x1,
+  ImGuiStyleVar_WindowRounding = 0x2,
+  ImGuiStyleVar_WindowBorderSize = 0x3,
+  ImGuiStyleVar_WindowMinSize = 0x4,
+  ImGuiStyleVar_WindowTitleAlign = 0x5,
+  ImGuiStyleVar_ChildRounding = 0x6,
+  ImGuiStyleVar_ChildBorderSize = 0x7,
+  ImGuiStyleVar_PopupRounding = 0x8,
+  ImGuiStyleVar_PopupBorderSize = 0x9,
+  ImGuiStyleVar_FramePadding = 0xA,
+  ImGuiStyleVar_FrameRounding = 0xB,
+  ImGuiStyleVar_FrameBorderSize = 0xC,
+  ImGuiStyleVar_ItemSpacing = 0xD,
+  ImGuiStyleVar_ItemInnerSpacing = 0xE,
+  ImGuiStyleVar_IndentSpacing = 0xF,
+  ImGuiStyleVar_ScrollbarSize = 0x10,
+  ImGuiStyleVar_ScrollbarRounding = 0x11,
+  ImGuiStyleVar_GrabMinSize = 0x12,
+  ImGuiStyleVar_GrabRounding = 0x13,
+  ImGuiStyleVar_ButtonTextAlign = 0x14,
+  ImGuiStyleVar_COUNT = 0x15,
+  ImGuiStyleVar_Count_ = 0x15,
+  ImGuiStyleVar_ChildWindowRounding = 0x6,
+};
+
+</code></pre></div><h3 id="imdrawcornerflags"><a href="#imdrawcornerflags" class="header-anchor">#</a> <code>ImDrawCornerFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImDrawCornerFlags_ : __int32
+{
+  ImDrawCornerFlags_TopLeft = 0x1,
+  ImDrawCornerFlags_TopRight = 0x2,
+  ImDrawCornerFlags_BotLeft = 0x4,
+  ImDrawCornerFlags_BotRight = 0x8,
+  ImDrawCornerFlags_Top = 0x3,
+  ImDrawCornerFlags_Bot = 0xC,
+  ImDrawCornerFlags_Left = 0x5,
+  ImDrawCornerFlags_Right = 0xA,
+  ImDrawCornerFlags_All = 0xF,
+};
+
+</code></pre></div><h3 id="imguitreenodeflags"><a href="#imguitreenodeflags" class="header-anchor">#</a> <code>ImGuiTreeNodeFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiTreeNodeFlags_ : __int32
+{
+  ImGuiTreeNodeFlags_None = 0x0,
+  ImGuiTreeNodeFlags_Selected = 0x1,
+  ImGuiTreeNodeFlags_Framed = 0x2,
+  ImGuiTreeNodeFlags_AllowItemOverlap = 0x4,
+  ImGuiTreeNodeFlags_NoTreePushOnOpen = 0x8,
+  ImGuiTreeNodeFlags_NoAutoOpenOnLog = 0x10,
+  ImGuiTreeNodeFlags_DefaultOpen = 0x20,
+  ImGuiTreeNodeFlags_OpenOnDoubleClick = 0x40,
+  ImGuiTreeNodeFlags_OpenOnArrow = 0x80,
+  ImGuiTreeNodeFlags_Leaf = 0x100,
+  ImGuiTreeNodeFlags_Bullet = 0x200,
+  ImGuiTreeNodeFlags_FramePadding = 0x400,
+  ImGuiTreeNodeFlags_NavLeftJumpsBackHere = 0x2000,
+  ImGuiTreeNodeFlags_CollapsingHeader = 0x1A,
+  ImGuiTreeNodeFlags_AllowOverlapMode = 0x4,
+};
+
+</code></pre></div><h3 id="itemstackrequestscreen"><a href="#itemstackrequestscreen" class="header-anchor">#</a> <code>ItemStackRequestScreen</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Frustum::FrustumSide ItemStackRequestScreen;
+
+</code></pre></div><h3 id="itemstacknetresult"><a href="#itemstacknetresult" class="header-anchor">#</a> <code>ItemStackNetResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome ItemStackNetResult;
+
+</code></pre></div><h3 id="importcontexttype"><a href="#importcontexttype" class="header-anchor">#</a> <code>ImportContextType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Skeleton::SkeletonType ImportContextType;
+
+</code></pre></div><h3 id="itemstackrequestactiontype"><a href="#itemstackrequestactiontype" class="header-anchor">#</a> <code>ItemStackRequestActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftEventing::ItemInteractMethod ItemStackRequestActionType;
+
+</code></pre></div><h3 id="iplayertickpolicy-tickaction"><a href="#iplayertickpolicy-tickaction" class="header-anchor">#</a> <code>IPlayerTickPolicy::TickAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef EventResult IPlayerTickPolicy::TickAction;
+
+</code></pre></div><h3 id="itemstacknetmanagerserver-textfilterstate"><a href="#itemstacknetmanagerserver-textfilterstate" class="header-anchor">#</a> <code>ItemStackNetManagerServer::TextFilterState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ItemStackNetManagerServer::TextFilterState;
+
+</code></pre></div><h3 id="itemstackrequestactionmineblock-prevalidationstatus"><a href="#itemstackrequestactionmineblock-prevalidationstatus" class="header-anchor">#</a> <code>ItemStackRequestActionMineBlock::PreValidationStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef StreamReadResult ItemStackRequestActionMineBlock::PreValidationStatus;
+
+</code></pre></div><h3 id="ipackstoragepolicy-cacheinvalidationmode"><a href="#ipackstoragepolicy-cacheinvalidationmode" class="header-anchor">#</a> <code>IPackStoragePolicy::CacheInvalidationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation IPackStoragePolicy::CacheInvalidationMode;
+
+</code></pre></div><h3 id="ichunkloadedaction-chunkloadedactiontype"><a href="#ichunkloadedaction-chunkloadedactiontype" class="header-anchor">#</a> <code>IChunkLoadedAction::ChunkLoadedActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IChunkLoadedAction::ChunkLoadedActionType : __int8
+{
+  FunctionAction = 0x0,
+  TestAction = 0x1,
+  StructureAnimationAction = 0x2,
+};
+
+</code></pre></div><h3 id="itemreleaseinventorytransaction-actiontype"><a href="#itemreleaseinventorytransaction-actiontype" class="header-anchor">#</a> <code>ItemReleaseInventoryTransaction::ActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Lockless::MemoryOrder ItemReleaseInventoryTransaction::ActionType;
+
+</code></pre></div><h3 id="itemuseonactorinventorytransaction-actiontype"><a href="#itemuseonactorinventorytransaction-actiontype" class="header-anchor">#</a> <code>ItemUseOnActorInventoryTransaction::ActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftPacketIds ItemUseOnActorInventoryTransaction::ActionType;
+
+</code></pre></div><h3 id="inmemoryaccessmode"><a href="#inmemoryaccessmode" class="header-anchor">#</a> <code>InMemoryAccessMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum InMemoryAccessMode : __int32
+{
+  Read = 0x0,
+  Write = 0x1,
+};
+
+</code></pre></div><h3 id="ieobjecttype"><a href="#ieobjecttype" class="header-anchor">#</a> <code>IEObjectType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum IEObjectType : __int32
+{
+  IE_EPM_OBJECT_EVENT = 0x0,
+  IE_EPM_OBJECT_MUTEX = 0x1,
+  IE_EPM_OBJECT_SEMAPHORE = 0x2,
+  IE_EPM_OBJECT_SHARED_MEMORY = 0x3,
+  IE_EPM_OBJECT_WAITABLE_TIMER = 0x4,
+  IE_EPM_OBJECT_FILE = 0x5,
+  IE_EPM_OBJECT_NAMED_PIPE = 0x6,
+  IE_EPM_OBJECT_REGISTRY = 0x7,
+};
+
+</code></pre></div><h3 id="innerassetinstaller-einstallstatus"><a href="#innerassetinstaller-einstallstatus" class="header-anchor">#</a> <code>InnerAssetInstaller::eInstallStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum InnerAssetInstaller::eInstallStatus : __int32
+{
+  INSTALL_NONE = 0x0,
+  INSTALL_START = 0x1,
+  INSTALL_WAIT = 0x2,
+  INSTALL_DONE = 0x3,
+  INSTALL_FAIL = 0x4,
+};
+
+</code></pre></div><h3 id="inflate-codes-mode"><a href="#inflate-codes-mode" class="header-anchor">#</a> <code>inflate_codes_mode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Category inflate_codes_mode;
+
+</code></pre></div><h3 id="inflate-block-mode"><a href="#inflate-block-mode" class="header-anchor">#</a> <code>inflate_block_mode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef codetype inflate_block_mode;
+
+</code></pre></div><h3 id="imguiitemstatusflags"><a href="#imguiitemstatusflags" class="header-anchor">#</a> <code>ImGuiItemStatusFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiItemStatusFlags_ : __int32
+{
+  ImGuiItemStatusFlags_None = 0x0,
+  ImGuiItemStatusFlags_HoveredRect = 0x1,
+  ImGuiItemStatusFlags_HasDisplayRect = 0x2,
+  ImGuiItemStatusFlags_Edited = 0x4,
+};
+
+</code></pre></div><h3 id="imguiconfigflags"><a href="#imguiconfigflags" class="header-anchor">#</a> <code>ImGuiConfigFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiConfigFlags_ : __int32
+{
+  ImGuiConfigFlags_None = 0x0,
+  ImGuiConfigFlags_NavEnableKeyboard = 0x1,
+  ImGuiConfigFlags_NavEnableGamepad = 0x2,
+  ImGuiConfigFlags_NavEnableSetMousePos = 0x4,
+  ImGuiConfigFlags_NavNoCaptureKeyboard = 0x8,
+  ImGuiConfigFlags_NoMouse = 0x10,
+  ImGuiConfigFlags_NoMouseCursorChange = 0x20,
+  ImGuiConfigFlags_IsSRGB = 0x100000,
+  ImGuiConfigFlags_IsTouchScreen = 0x200000,
+};
+
+</code></pre></div><h3 id="imguiinputreadmode"><a href="#imguiinputreadmode" class="header-anchor">#</a> <code>ImGuiInputReadMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiInputReadMode : __int32
+{
+  ImGuiInputReadMode_Down = 0x0,
+  ImGuiInputReadMode_Pressed = 0x1,
+  ImGuiInputReadMode_Released = 0x2,
+  ImGuiInputReadMode_Repeat = 0x3,
+  ImGuiInputReadMode_RepeatSlow = 0x4,
+  ImGuiInputReadMode_RepeatFast = 0x5,
+};
+
+</code></pre></div><h3 id="imguibuttonflags"><a href="#imguibuttonflags" class="header-anchor">#</a> <code>ImGuiButtonFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiButtonFlags_ : __int32
+{
+  ImGuiButtonFlags_None = 0x0,
+  ImGuiButtonFlags_Repeat = 0x1,
+  ImGuiButtonFlags_PressedOnClickRelease = 0x2,
+  ImGuiButtonFlags_PressedOnClick = 0x4,
+  ImGuiButtonFlags_PressedOnRelease = 0x8,
+  ImGuiButtonFlags_PressedOnDoubleClick = 0x10,
+  ImGuiButtonFlags_FlattenChildren = 0x20,
+  ImGuiButtonFlags_AllowItemOverlap = 0x40,
+  ImGuiButtonFlags_DontClosePopups = 0x80,
+  ImGuiButtonFlags_Disabled = 0x100,
+  ImGuiButtonFlags_AlignTextBaseLine = 0x200,
+  ImGuiButtonFlags_NoKeyModifiers = 0x400,
+  ImGuiButtonFlags_NoHoldingActiveID = 0x800,
+  ImGuiButtonFlags_PressedOnDragDropHold = 0x1000,
+  ImGuiButtonFlags_NoNavFocus = 0x2000,
+};
+
+</code></pre></div><h3 id="imguibackendflags"><a href="#imguibackendflags" class="header-anchor">#</a> <code>ImGuiBackendFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiBackendFlags_ : __int32
+{
+  ImGuiBackendFlags_None = 0x0,
+  ImGuiBackendFlags_HasGamepad = 0x1,
+  ImGuiBackendFlags_HasMouseCursors = 0x2,
+  ImGuiBackendFlags_HasSetMousePos = 0x4,
+};
+
+</code></pre></div><h3 id="imguicolumnsflags"><a href="#imguicolumnsflags" class="header-anchor">#</a> <code>ImGuiColumnsFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiColumnsFlags_ : __int32
+{
+  ImGuiColumnsFlags_None = 0x0,
+  ImGuiColumnsFlags_NoBorder = 0x1,
+  ImGuiColumnsFlags_NoResize = 0x2,
+  ImGuiColumnsFlags_NoPreserveWidths = 0x4,
+  ImGuiColumnsFlags_NoForceWithinWindow = 0x8,
+  ImGuiColumnsFlags_GrowParentContentsSize = 0x10,
+};
+
+</code></pre></div><h3 id="imguidatatype"><a href="#imguidatatype" class="header-anchor">#</a> <code>ImGuiDataType_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiDataType_ : __int32
+{
+  ImGuiDataType_S32 = 0x0,
+  ImGuiDataType_U32 = 0x1,
+  ImGuiDataType_S64 = 0x2,
+  ImGuiDataType_U64 = 0x3,
+  ImGuiDataType_Float = 0x4,
+  ImGuiDataType_Double = 0x5,
+  ImGuiDataType_COUNT = 0x6,
+};
+
+</code></pre></div><h3 id="imguinavmoveflags"><a href="#imguinavmoveflags" class="header-anchor">#</a> <code>ImGuiNavMoveFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiNavMoveFlags_ : __int32
+{
+  ImGuiNavMoveFlags_None = 0x0,
+  ImGuiNavMoveFlags_LoopX = 0x1,
+  ImGuiNavMoveFlags_LoopY = 0x2,
+  ImGuiNavMoveFlags_WrapX = 0x4,
+  ImGuiNavMoveFlags_WrapY = 0x8,
+  ImGuiNavMoveFlags_AllowCurrentNavId = 0x10,
+  ImGuiNavMoveFlags_AlsoScoreVisibleSet = 0x20,
+};
+
+</code></pre></div><h3 id="imguinavdirsourceflags"><a href="#imguinavdirsourceflags" class="header-anchor">#</a> <code>ImGuiNavDirSourceFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiNavDirSourceFlags_ : __int32
+{
+  ImGuiNavDirSourceFlags_None = 0x0,
+  ImGuiNavDirSourceFlags_Keyboard = 0x1,
+  ImGuiNavDirSourceFlags_PadDPad = 0x2,
+  ImGuiNavDirSourceFlags_PadLStick = 0x4,
+};
+
+</code></pre></div><h3 id="imguiaxis"><a href="#imguiaxis" class="header-anchor">#</a> <code>ImGuiAxis</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiAxis : __int32
+{
+  ImGuiAxis_None = 0xFFFFFFFF,
+  ImGuiAxis_X = 0x0,
+  ImGuiAxis_Y = 0x1,
+};
+
+</code></pre></div><h3 id="imdrawlistflags"><a href="#imdrawlistflags" class="header-anchor">#</a> <code>ImDrawListFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImDrawListFlags_ : __int32
+{
+  ImDrawListFlags_AntiAliasedLines = 0x1,
+  ImDrawListFlags_AntiAliasedFill = 0x2,
+};
+
+</code></pre></div><h3 id="imguiinputtextflags"><a href="#imguiinputtextflags" class="header-anchor">#</a> <code>ImGuiInputTextFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiInputTextFlags_ : __int32
+{
+  ImGuiInputTextFlags_None = 0x0,
+  ImGuiInputTextFlags_CharsDecimal = 0x1,
+  ImGuiInputTextFlags_CharsHexadecimal = 0x2,
+  ImGuiInputTextFlags_CharsUppercase = 0x4,
+  ImGuiInputTextFlags_CharsNoBlank = 0x8,
+  ImGuiInputTextFlags_AutoSelectAll = 0x10,
+  ImGuiInputTextFlags_EnterReturnsTrue = 0x20,
+  ImGuiInputTextFlags_CallbackCompletion = 0x40,
+  ImGuiInputTextFlags_CallbackHistory = 0x80,
+  ImGuiInputTextFlags_CallbackAlways = 0x100,
+  ImGuiInputTextFlags_CallbackCharFilter = 0x200,
+  ImGuiInputTextFlags_AllowTabInput = 0x400,
+  ImGuiInputTextFlags_CtrlEnterForNewLine = 0x800,
+  ImGuiInputTextFlags_NoHorizontalScroll = 0x1000,
+  ImGuiInputTextFlags_AlwaysInsertMode = 0x2000,
+  ImGuiInputTextFlags_ReadOnly = 0x4000,
+  ImGuiInputTextFlags_Password = 0x8000,
+  ImGuiInputTextFlags_NoUndoRedo = 0x10000,
+  ImGuiInputTextFlags_CharsScientific = 0x20000,
+  ImGuiInputTextFlags_CallbackResize = 0x40000,
+  ImGuiInputTextFlags_Multiline = 0x100000,
+};
+
+</code></pre></div><h3 id="imguiselectableflags"><a href="#imguiselectableflags" class="header-anchor">#</a> <code>ImGuiSelectableFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiSelectableFlags_ : __int32
+{
+  ImGuiSelectableFlags_None = 0x0,
+  ImGuiSelectableFlags_DontClosePopups = 0x1,
+  ImGuiSelectableFlags_SpanAllColumns = 0x2,
+  ImGuiSelectableFlags_AllowDoubleClick = 0x4,
+  ImGuiSelectableFlags_Disabled = 0x8,
+};
+
+</code></pre></div><h3 id="imfontatlasflags"><a href="#imfontatlasflags" class="header-anchor">#</a> <code>ImFontAtlasFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImFontAtlasFlags_ : __int32
+{
+  ImFontAtlasFlags_None = 0x0,
+  ImFontAtlasFlags_NoPowerOfTwoHeight = 0x1,
+  ImFontAtlasFlags_NoMouseCursors = 0x2,
+};
+
+</code></pre></div><h3 id="imguisliderflags"><a href="#imguisliderflags" class="header-anchor">#</a> <code>ImGuiSliderFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiSliderFlags_ : __int32
+{
+  ImGuiSliderFlags_None = 0x0,
+  ImGuiSliderFlags_Vertical = 0x1,
+};
+
+</code></pre></div><h3 id="imguiplottype"><a href="#imguiplottype" class="header-anchor">#</a> <code>ImGuiPlotType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiPlotType : __int32
+{
+  ImGuiPlotType_Lines = 0x0,
+  ImGuiPlotType_Histogram = 0x1,
+};
+
+</code></pre></div><h3 id="imguiselectableflagsprivate"><a href="#imguiselectableflagsprivate" class="header-anchor">#</a> <code>ImGuiSelectableFlagsPrivate_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiSelectableFlagsPrivate_ : __int32
+{
+  ImGuiSelectableFlags_NoHoldingActiveID = 0x400,
+  ImGuiSelectableFlags_PressedOnClick = 0x800,
+  ImGuiSelectableFlags_PressedOnRelease = 0x1000,
+  ImGuiSelectableFlags_DrawFillAvailWidth = 0x2000,
+};
+
+</code></pre></div><h3 id="imguiseparatorflags"><a href="#imguiseparatorflags" class="header-anchor">#</a> <code>ImGuiSeparatorFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiSeparatorFlags_ : __int32
+{
+  ImGuiSeparatorFlags_None = 0x0,
+  ImGuiSeparatorFlags_Horizontal = 0x1,
+  ImGuiSeparatorFlags_Vertical = 0x2,
+};
+
+</code></pre></div><h3 id="imguidragflags"><a href="#imguidragflags" class="header-anchor">#</a> <code>ImGuiDragFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ImGuiDragFlags_ : __int32
+{
+  ImGuiDragFlags_None = 0x0,
+  ImGuiDragFlags_Vertical = 0x1,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/H.html" class="prev">
+        H
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/J.html">
+        J
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/71.3cf65839.js" defer></script>
+  </body>
+</html>

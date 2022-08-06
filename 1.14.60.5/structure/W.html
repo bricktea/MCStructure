@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>W | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/55.8b419ad8.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" aria-current="page" class="active sidebar-link">W</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="w"><a href="#w" class="header-anchor">#</a> W</h1> <h3 id="whitelistfile"><a href="#whitelistfile" class="header-anchor">#</a> <code>WhitelistFile</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>const Core::HeapPathBuffer</code></td> <td>mFilePath</td></tr> <tr><td>32</td> <td>(8) <code>std::unique_ptr&lt;Whitelist&gt;</code></td> <td>mWhitelist</td></tr></tbody></table> <h3 id="worldtemplatemanager"><a href="#worldtemplatemanager" class="header-anchor">#</a> <code>WorldTemplateManager</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>PackManifestFactory *</code></td> <td>mPackManifestFactory</td></tr> <tr><td>8</td> <td>(8) <code>const IContentKeyProvider *</code></td> <td>mKeyProvider</td></tr> <tr><td>16</td> <td>(8) <code>PackSourceFactory *</code></td> <td>mPackSourceFactory</td></tr> <tr><td>24</td> <td>(8) <code>const Core::FilePathManager *</code></td> <td>mFilePathManager</td></tr> <tr><td>32</td> <td>(8) <code>std::unique_ptr&lt;PackSource&gt;</code></td> <td>mLocalWorldSources</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;std::unique_ptr&lt;WorldTemplateInfo&gt;&gt;</code></td> <td>mWorldTemplates</td></tr> <tr><td>64</td> <td>(24) <code>std::vector&lt;PackIdVersion&gt;</code></td> <td>mLocalPremiumPackIds</td></tr> <tr><td>88</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mInitializeMutex</td></tr> <tr><td>128</td> <td>(1) <code>std::atomic&lt;bool&gt;</code></td> <td>mInitialized</td></tr> <tr><td>129</td> <td>(1) <code>std::atomic&lt;bool&gt;</code></td> <td>mStorageDirectoryChangeRequest</td></tr> <tr><td>136</td> <td>(1000) <code>WorldTemplatePackManifest</code></td> <td>mInvalidManifest</td></tr> <tr><td>1136</td> <td>(264) <code>WorldTemplateInfo</code></td> <td>mInvalidWorldTemplate</td></tr> <tr><td>1400</td> <td>(8) <code>std::unique_ptr&lt;WorldTemplateManagerProxy&gt;</code></td> <td>mProxy</td></tr> <tr><td>1408</td> <td>(8) <code>std::unique_ptr&lt;TaskGroup&gt;</code></td> <td>mInitTaskGroup</td></tr> <tr><td>1416</td> <td>(32) <code>WorldTemplateManager::SortMethod</code></td> <td>mSort</td></tr></tbody></table> <h3 id="worldtemplatepackmanifest"><a href="#worldtemplatepackmanifest" class="header-anchor">#</a> <code>WorldTemplatePackManifest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(992) <code>PackManifest</code></td> <td>baseclass_0</td></tr> <tr><td>992</td> <td>(4) <code>GameType</code></td> <td>mGameType</td></tr></tbody></table> <h3 id="worldtemplateinfo"><a href="#worldtemplateinfo" class="header-anchor">#</a> <code>WorldTemplateInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>mDescription</td></tr> <tr><td>64</td> <td>(32) <code>std::string</code></td> <td>mAuthors</td></tr> <tr><td>96</td> <td>(32) <code>std::string</code></td> <td>mVersion</td></tr> <tr><td>128</td> <td>(32) <code>Core::HeapPathBuffer</code></td> <td>mPath</td></tr> <tr><td>160</td> <td>(32) <code>std::string</code></td> <td>mGameType</td></tr> <tr><td>192</td> <td>(32) <code>Core::HeapPathBuffer</code></td> <td>mWorldIconPath</td></tr> <tr><td>224</td> <td>(1) <code>bool</code></td> <td>mWorldIconOverride</td></tr> <tr><td>232</td> <td>(8) <code>const WorldTemplatePackManifest *</code></td> <td>mManifest</td></tr> <tr><td>240</td> <td>(24) <code>std::vector&lt;std::reference_wrapper&lt;WorldTemplatePackSource&gt;&gt;</code></td> <td>mPacksInWorldTemplate</td></tr></tbody></table> <h3 id="worldtemplatemanager-sortmethod"><a href="#worldtemplatemanager-sortmethod" class="header-anchor">#</a> <code>WorldTemplateManager::SortMethod</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;bool (const std::unique_ptr&lt;WorldTemplateInfo&gt; &amp;,const std::unique_ptr&lt;WorldTemplateInfo&gt; &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="worldtemplateleveldata"><a href="#worldtemplateleveldata" class="header-anchor">#</a> <code>WorldTemplateLevelData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>ContentIdentity</code></td> <td>mPremiumTemplateContentIdentity</td></tr> <tr><td>24</td> <td>(136) <code>PackIdVersion</code></td> <td>mWorldTemplateIdentity</td></tr> <tr><td>160</td> <td>(112) <code>BaseGameVersion</code></td> <td>mBaseGameVersion</td></tr> <tr><td>272</td> <td>(1) <code>bool</code></td> <td>mIsFromWorldTemplate</td></tr> <tr><td>273</td> <td>(1) <code>bool</code></td> <td>mIsWorldTemplateOptionLocked</td></tr></tbody></table> <h3 id="whitelistentry"><a href="#whitelistentry" class="header-anchor">#</a> <code>WhitelistEntry</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>IJsonSerializable</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>40</td> <td>(16) <code>mce::UUID</code></td> <td>mUuid</td></tr> <tr><td>56</td> <td>(32) <code>std::string</code></td> <td>mXuid</td></tr> <tr><td>88</td> <td>(1) <code>bool</code></td> <td>mIgnoresPlayerLimit</td></tr></tbody></table> <h3 id="weakptr-item"><a href="#weakptr-item" class="header-anchor">#</a> <code>WeakPtr&lt;Item&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;Item&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakref-ifeature"><a href="#weakref-ifeature" class="header-anchor">#</a> <code>WeakRef&lt;IFeature&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>FeatureRefTraits::WeakStorage</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="weakptr-blocklegacy"><a href="#weakptr-blocklegacy" class="header-anchor">#</a> <code>WeakPtr&lt;BlockLegacy&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BlockLegacy&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="worldblocktarget"><a href="#worldblocktarget" class="header-anchor">#</a> <code>WorldBlockTarget</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>IBlockPlacementTarget</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>BlockSource *</code></td> <td>mBlockSource</td></tr></tbody></table> <h3 id="webtoken"><a href="#webtoken" class="header-anchor">#</a> <code>WebToken</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mHeader</td></tr> <tr><td>32</td> <td>(16) <code>Json::Value</code></td> <td>mHeaderInfo</td></tr> <tr><td>48</td> <td>(32) <code>std::string</code></td> <td>mData</td></tr> <tr><td>80</td> <td>(16) <code>Json::Value</code></td> <td>mDataInfo</td></tr> <tr><td>96</td> <td>(32) <code>std::string</code></td> <td>mSignature</td></tr></tbody></table> <h3 id="weak-village"><a href="#weak-village" class="header-anchor">#</a> <code>Weak&lt;Village&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::__weak_ptr&lt;Village,__gnu_cxx::_S_atomic&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="weightedchoices-float"><a href="#weightedchoices-float" class="header-anchor">#</a> <code>WeightedChoices&lt;float&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;WeightedChoice&lt;float&gt;&gt;</code></td> <td>mChoices</td></tr></tbody></table> <h3 id="websocketpacketdata"><a href="#websocketpacketdata" class="header-anchor">#</a> <code>WebSocketPacketData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mIP</td></tr></tbody></table> <h3 id="workerconfiguration"><a href="#workerconfiguration" class="header-anchor">#</a> <code>WorkerConfiguration</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(28) <code>ThreadConfiguration:224</code></td> <td>baseclass_0</td></tr> <tr><td>28</td> <td>(4) <code>uint32_t</code></td> <td>NumWorkers</td></tr> <tr><td>32</td> <td>(1) <code>bool</code></td> <td>SuppressProfiling</td></tr></tbody></table> <h3 id="worldpackhistory"><a href="#worldpackhistory" class="header-anchor">#</a> <code>WorldPackHistory</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(136) <code>PackIdVersion</code></td> <td>mPackIdVersion</td></tr> <tr><td>136</td> <td>(32) <code>std::string</code></td> <td>mUnlocalizedName</td></tr> <tr><td>168</td> <td>(56) <code>std::unordered_map&lt;std::string,std::string&gt;</code></td> <td>mLocalizedNames</td></tr> <tr><td>224</td> <td>(4) <code>int</code></td> <td>mSubpackCount</td></tr> <tr><td>228</td> <td>(1) <code>bool</code></td> <td>mCanBeRedownloaded</td></tr> <tr><td>232</td> <td>(16) <code>mce::UUID</code></td> <td>mSourceUUID</td></tr></tbody></table> <h3 id="worldtemplatemanagerproxycallbacks"><a href="#worldtemplatemanagerproxycallbacks" class="header-anchor">#</a> <code>WorldTemplateManagerProxyCallbacks</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::function&lt;int (const std::string &amp;)&gt;</code></td> <td>mFindTemplateIndexWithName</td></tr></tbody></table> <h3 id="whitelist-whitelistentrymatcher"><a href="#whitelist-whitelistentrymatcher" class="header-anchor">#</a> <code>Whitelist::WhitelistEntryMatcher</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>mXuid</td></tr></tbody></table> <h3 id="watermovementcomponent"><a href="#watermovementcomponent" class="header-anchor">#</a> <code>WaterMovementComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mDragFactor</td></tr></tbody></table> <h3 id="weak-poiinstance"><a href="#weak-poiinstance" class="header-anchor">#</a> <code>Weak&lt;POIInstance&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::__weak_ptr&lt;POIInstance,__gnu_cxx::_S_atomic&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="weak-village-0"><a href="#weak-village-0" class="header-anchor">#</a> <code>Weak&lt;Village&gt;_0</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::__weak_ptr&lt;Village,__gnu_cxx::_S_atomic&gt;_0</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="witherboss-candestroy-fe6d2ca3cb829b3d63f7d33f5a8b933e"><a href="#witherboss-candestroy-fe6d2ca3cb829b3d63f7d33f5a8b933e" class="header-anchor">#</a> <code>WitherBoss::canDestroy::$FE6D2CA3CB829B3D63F7D33F5A8B933E</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const BlockLegacy *</code></td> <td>legacyBlock</td></tr></tbody></table> <h3 id="weakptr-blockitem"><a href="#weakptr-blockitem" class="header-anchor">#</a> <code>WeakPtr&lt;BlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weighedrandom-weighedrandomitem"><a href="#weighedrandom-weighedrandomitem" class="header-anchor">#</a> <code>WeighedRandom::WeighedRandomItem</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mRandomWeight</td></tr></tbody></table> <h3 id="weightedbiomevector"><a href="#weightedbiomevector" class="header-anchor">#</a> <code>WeightedBiomeVector</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::pair&lt;Biome *,unsigned int&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="weightedbiomeattributes-hillstransformation"><a href="#weightedbiomeattributes-hillstransformation" class="header-anchor">#</a> <code>WeightedBiomeAttributes&lt;HillsTransformation&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>WeightedBiomeVector</code></td> <td>mBiomes</td></tr></tbody></table> <h3 id="weightedbiomeattributes-mutatebiometransformation"><a href="#weightedbiomeattributes-mutatebiometransformation" class="header-anchor">#</a> <code>WeightedBiomeAttributes&lt;MutateBiomeTransformation&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>WeightedBiomeVector</code></td> <td>mBiomes</td></tr></tbody></table> <h3 id="worldgenclimatemappingattributes"><a href="#worldgenclimatemappingattributes" class="header-anchor">#</a> <code>WorldGenClimateMappingAttributes</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;WorldGenClimateMappingAttributes::WeightedTemperatureCategory&gt;</code></td> <td>mClimateMappings</td></tr></tbody></table> <h3 id="weightedbiomeattributes-rivertransformation"><a href="#weightedbiomeattributes-rivertransformation" class="header-anchor">#</a> <code>WeightedBiomeAttributes&lt;RiverTransformation&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>WeightedBiomeVector</code></td> <td>mBiomes</td></tr></tbody></table> <h3 id="weightedbiomeattributes-shoretransformation"><a href="#weightedbiomeattributes-shoretransformation" class="header-anchor">#</a> <code>WeightedBiomeAttributes&lt;ShoreTransformation&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>WeightedBiomeVector</code></td> <td>mBiomes</td></tr></tbody></table> <h3 id="worldchangetransaction"><a href="#worldchangetransaction" class="header-anchor">#</a> <code>WorldChangeTransaction</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>BlockSource *</code></td> <td>mSource</td></tr> <tr><td>8</td> <td>(8) <code>std::unique_ptr&lt;WorldChangeTransaction::Data&gt;</code></td> <td>mData</td></tr></tbody></table> <h3 id="weakref-perlinsimplexnoise"><a href="#weakref-perlinsimplexnoise" class="header-anchor">#</a> <code>WeakRef&lt;PerlinSimplexNoise&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SharePtrRefTraits&lt;PerlinSimplexNoise&gt;::WeakStorage</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="woodlandmansionpieces-placementdata"><a href="#woodlandmansionpieces-placementdata" class="header-anchor">#</a> <code>WoodlandMansionPieces::PlacementData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>Rotation_0</code></td> <td>mRotation</td></tr> <tr><td>4</td> <td>(12) <code>BlockPos</code></td> <td>mPosition</td></tr> <tr><td>16</td> <td>(32) <code>std::string</code></td> <td>mWallType</td></tr></tbody></table> <h3 id="wellknownbiometags"><a href="#wellknownbiometags" class="header-anchor">#</a> <code>WellKnownBiomeTags</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>WellKnownTagID</code></td> <td>MONSTER_TAG_ID</td></tr> <tr><td>16</td> <td>(16) <code>WellKnownTagID</code></td> <td>ANIMAL_TAG_ID</td></tr> <tr><td>32</td> <td>(16) <code>WellKnownTagID</code></td> <td>OCEAN_TAG_ID</td></tr> <tr><td>48</td> <td>(16) <code>WellKnownTagID</code></td> <td>NETHER_TAG_ID</td></tr> <tr><td>64</td> <td>(16) <code>WellKnownTagID</code></td> <td>END_TAG_ID</td></tr> <tr><td>80</td> <td>(16) <code>WellKnownTagID</code></td> <td>MOOSHROOM_TAG_ID</td></tr> <tr><td>96</td> <td>(16) <code>WellKnownTagID</code></td> <td>PLAINS_TAG_ID</td></tr> <tr><td>112</td> <td>(16) <code>WellKnownTagID</code></td> <td>DESERT_TAG_ID</td></tr> <tr><td>128</td> <td>(16) <code>WellKnownTagID</code></td> <td>JUNGLE_TAG_ID</td></tr> <tr><td>144</td> <td>(16) <code>WellKnownTagID</code></td> <td>BAMBOO_JUNGLE_TAG_ID</td></tr> <tr><td>160</td> <td>(16) <code>WellKnownTagID</code></td> <td>TAIGA_TAG_ID</td></tr> <tr><td>176</td> <td>(16) <code>WellKnownTagID</code></td> <td>EXTREME_HILLS_TAG_ID</td></tr> <tr><td>192</td> <td>(16) <code>WellKnownTagID</code></td> <td>SAVANNA_TAG_ID</td></tr> <tr><td>208</td> <td>(16) <code>WellKnownTagID</code></td> <td>FROZEN_TAG_ID</td></tr> <tr><td>224</td> <td>(16) <code>WellKnownTagID</code></td> <td>COLD_TAG_ID</td></tr> <tr><td>240</td> <td>(16) <code>WellKnownTagID</code></td> <td>LUKEWARM_TAG_ID</td></tr> <tr><td>256</td> <td>(16) <code>WellKnownTagID</code></td> <td>WARM_TAG_ID</td></tr> <tr><td>272</td> <td>(16) <code>WellKnownTagID</code></td> <td>RIVER_TAG_ID</td></tr> <tr><td>288</td> <td>(16) <code>WellKnownTagID</code></td> <td>SWAMP_TAG_ID</td></tr> <tr><td>304</td> <td>(16) <code>WellKnownTagID</code></td> <td>BEACH_TAG_ID</td></tr> <tr><td>320</td> <td>(16) <code>WellKnownTagID</code></td> <td>FLOWER_FOREST_TAG_ID</td></tr> <tr><td>336</td> <td>(16) <code>WellKnownTagID</code></td> <td>FOREST_TAG_ID</td></tr> <tr><td>352</td> <td>(16) <code>WellKnownTagID</code></td> <td>BIRCH_TAG_ID</td></tr> <tr><td>368</td> <td>(16) <code>WellKnownTagID</code></td> <td>HILLS_TAG_ID</td></tr> <tr><td>384</td> <td>(16) <code>WellKnownTagID</code></td> <td>MUTATED_TAG_ID</td></tr> <tr><td>400</td> <td>(16) <code>WellKnownTagID</code></td> <td>EDGE_TAG_ID</td></tr> <tr><td>416</td> <td>(16) <code>WellKnownTagID</code></td> <td>PLATEAU_TAG_ID</td></tr> <tr><td>432</td> <td>(16) <code>WellKnownTagID</code></td> <td>DEEP_TAG_ID</td></tr> <tr><td>448</td> <td>(16) <code>WellKnownTagID</code></td> <td>MESA_TAG_ID</td></tr> <tr><td>464</td> <td>(16) <code>WellKnownTagID</code></td> <td>ICE_PLAINS_TAG_ID</td></tr> <tr><td>480</td> <td>(16) <code>WellKnownTagID</code></td> <td>ICE_TAG_ID</td></tr> <tr><td>496</td> <td>(16) <code>WellKnownTagID</code></td> <td>MOUNTAIN_TAG_ID</td></tr> <tr><td>512</td> <td>(16) <code>WellKnownTagID</code></td> <td>SHORE_TAG_ID</td></tr> <tr><td>528</td> <td>(16) <code>WellKnownTagID</code></td> <td>STONE_TAG_ID</td></tr> <tr><td>544</td> <td>(16) <code>WellKnownTagID</code></td> <td>ROOFED_TAG_ID</td></tr> <tr><td>560</td> <td>(16) <code>WellKnownTagID</code></td> <td>MEGA_TAG_ID</td></tr> <tr><td>576</td> <td>(16) <code>WellKnownTagID</code></td> <td>RARE_TAG_ID</td></tr> <tr><td>592</td> <td>(16) <code>WellKnownTagID</code></td> <td>NO_LEGACY_WORLDGEN_TAG_ID</td></tr> <tr><td>608</td> <td>(16) <code>WellKnownTagID</code></td> <td>OVERWORLD_TAG_ID</td></tr> <tr><td>624</td> <td>(16) <code>WellKnownTagID</code></td> <td>OVERWORLD_GEN_TAG_ID</td></tr> <tr><td>640</td> <td>(16) <code>WellKnownTagID</code></td> <td>FOREST_GEN_TAG_ID</td></tr></tbody></table> <h3 id="wellknowntagid"><a href="#wellknowntagid" class="header-anchor">#</a> <code>WellKnownTagID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>TagID</code></td> <td>mTagID</td></tr> <tr><td>8</td> <td>(8) <code>TagRegistry *</code></td> <td>mTagRegistry</td></tr></tbody></table> <h3 id="weak-ropesystem"><a href="#weak-ropesystem" class="header-anchor">#</a> <code>Weak&lt;RopeSystem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::__weak_ptr&lt;RopeSystem,__gnu_cxx::_S_atomic&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="webviewobserver"><a href="#webviewobserver" class="header-anchor">#</a> <code>WebviewObserver</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>Core::Observer&lt;WebviewObserver,Core::SingleThreadedLock&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="weakreft-featurereftraits"><a href="#weakreft-featurereftraits" class="header-anchor">#</a> <code>WeakRefT&lt;FeatureRefTraits&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>FeatureRefTraits::WeakStorage</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="wanderingtraderscheduler"><a href="#wanderingtraderscheduler" class="header-anchor">#</a> <code>WanderingTraderScheduler</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Level *</code></td> <td>mLevel</td></tr> <tr><td>8</td> <td>(8) <code>uint64_t</code></td> <td>mTickToCheckIfSpawning</td></tr> <tr><td>16</td> <td>(1) <code>bool</code></td> <td>mSpawnWanderingTrader</td></tr> <tr><td>20</td> <td>(4) <code>int</code></td> <td>mDaysSinceLastSpawn</td></tr> <tr><td>24</td> <td>(8) <code>ActorUniqueID</code></td> <td>mWanderingTraderUUID</td></tr></tbody></table> <h3 id="workerpool"><a href="#workerpool" class="header-anchor">#</a> <code>WorkerPool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>const bool</code></td> <td>mAsync</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;std::unique_ptr&lt;BackgroundWorker&gt;&gt;</code></td> <td>mWorkers</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>64</td> <td>(64) <code>BackgroundWorkerPerfInfo</code></td> <td>mPerfInfo</td></tr> <tr><td>128</td> <td>(8) <code>std::chrono::_V2::system_clock::time_point</code></td> <td>mLastPerfInfoUpdate</td></tr> <tr><td>136</td> <td>(8) <code>Scheduler *</code></td> <td>mOwnerScheduler</td></tr> <tr><td>144</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mSuspendLock</td></tr> <tr><td>184</td> <td>(4) <code>Bedrock::Threading::OSThreadPriority</code></td> <td>mPoolPriority</td></tr> <tr><td>188</td> <td>(4) <code>float</code></td> <td>mMinBacklogDurationSeconds</td></tr> <tr><td>192</td> <td>(32) <code>SpinLock</code></td> <td>mPendingWorkQueueLock</td></tr> <tr><td>224</td> <td>(24) <code>WorkerPool::PendingJobQueue</code></td> <td>mPendingWorkQueue</td></tr> <tr><td>248</td> <td>(8) <code>std::chrono::_V2::steady_clock::time_point</code></td> <td>mNextPendingWorkTime</td></tr> <tr><td>256</td> <td>(248) <code>BackgroundTaskQueue</code></td> <td>mTaskQueue</td></tr></tbody></table> <h3 id="workerpool-pendingjobqueue"><a href="#workerpool-pendingjobqueue" class="header-anchor">#</a> <code>WorkerPool::PendingJobQueue</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>MovePriorityQueue&lt;std::shared_ptr&lt;BackgroundTask&gt;,BackgroundTask::PendingComparer&gt;::Base</code></td> <td>mC</td></tr></tbody></table> <h3 id="wolf-normaltick-7ef7c94beab75c6cef4adfb99b570420"><a href="#wolf-normaltick-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Wolf::normalTick::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="witherboss-aistep-7ef7c94beab75c6cef4adfb99b570420"><a href="#witherboss-aistep-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>WitherBoss::aiStep::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="weightedchoice-definitiontrigger"><a href="#weightedchoice-definitiontrigger" class="header-anchor">#</a> <code>WeightedChoice&lt;DefinitionTrigger&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(128) <code>DefinitionTrigger</code></td> <td>mValue</td></tr> <tr><td>128</td> <td>(4) <code>WeighedRandom::WeighedRandomItem</code></td> <td>mRandomItem</td></tr></tbody></table> <h3 id="witch-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#witch-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Witch::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="weakptr-shovelitem"><a href="#weakptr-shovelitem" class="header-anchor">#</a> <code>WeakPtr&lt;ShovelItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ShovelItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-pickaxeitem"><a href="#weakptr-pickaxeitem" class="header-anchor">#</a> <code>WeakPtr&lt;PickaxeItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;PickaxeItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-hatchetitem"><a href="#weakptr-hatchetitem" class="header-anchor">#</a> <code>WeakPtr&lt;HatchetItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;HatchetItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-flintandsteelitem"><a href="#weakptr-flintandsteelitem" class="header-anchor">#</a> <code>WeakPtr&lt;FlintAndSteelItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;FlintAndSteelItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-bowitem"><a href="#weakptr-bowitem" class="header-anchor">#</a> <code>WeakPtr&lt;BowItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BowItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-arrowitem"><a href="#weakptr-arrowitem" class="header-anchor">#</a> <code>WeakPtr&lt;ArrowItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ArrowItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-coalitem"><a href="#weakptr-coalitem" class="header-anchor">#</a> <code>WeakPtr&lt;CoalItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;CoalItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-weaponitem"><a href="#weakptr-weaponitem" class="header-anchor">#</a> <code>WeakPtr&lt;WeaponItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;WeaponItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-blockplanteritem"><a href="#weakptr-blockplanteritem" class="header-anchor">#</a> <code>WeakPtr&lt;BlockPlanterItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BlockPlanterItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-hoeitem"><a href="#weakptr-hoeitem" class="header-anchor">#</a> <code>WeakPtr&lt;HoeItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;HoeItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-shielditem"><a href="#weakptr-shielditem" class="header-anchor">#</a> <code>WeakPtr&lt;ShieldItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ShieldItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-bucketitem"><a href="#weakptr-bucketitem" class="header-anchor">#</a> <code>WeakPtr&lt;BucketItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BucketItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-minecartitem"><a href="#weakptr-minecartitem" class="header-anchor">#</a> <code>WeakPtr&lt;MinecartItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;MinecartItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-redstonedustitem"><a href="#weakptr-redstonedustitem" class="header-anchor">#</a> <code>WeakPtr&lt;RedStoneDustItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;RedStoneDustItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-snowballitem"><a href="#weakptr-snowballitem" class="header-anchor">#</a> <code>WeakPtr&lt;SnowballItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;SnowballItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-boatitem"><a href="#weakptr-boatitem" class="header-anchor">#</a> <code>WeakPtr&lt;BoatItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BoatItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-enchantedbookitem"><a href="#weakptr-enchantedbookitem" class="header-anchor">#</a> <code>WeakPtr&lt;EnchantedBookItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;EnchantedBookItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-eggitem"><a href="#weakptr-eggitem" class="header-anchor">#</a> <code>WeakPtr&lt;EggItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;EggItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-compassitem"><a href="#weakptr-compassitem" class="header-anchor">#</a> <code>WeakPtr&lt;CompassItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;CompassItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-fishingroditem"><a href="#weakptr-fishingroditem" class="header-anchor">#</a> <code>WeakPtr&lt;FishingRodItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;FishingRodItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-clockitem"><a href="#weakptr-clockitem" class="header-anchor">#</a> <code>WeakPtr&lt;ClockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ClockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-dyepowderitem"><a href="#weakptr-dyepowderitem" class="header-anchor">#</a> <code>WeakPtr&lt;DyePowderItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;DyePowderItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-beditem"><a href="#weakptr-beditem" class="header-anchor">#</a> <code>WeakPtr&lt;BedItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BedItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-mapitem"><a href="#weakptr-mapitem" class="header-anchor">#</a> <code>WeakPtr&lt;MapItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;MapItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-shearsitem"><a href="#weakptr-shearsitem" class="header-anchor">#</a> <code>WeakPtr&lt;ShearsItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ShearsItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-enderpearlitem"><a href="#weakptr-enderpearlitem" class="header-anchor">#</a> <code>WeakPtr&lt;EnderpearlItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;EnderpearlItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-potionitem"><a href="#weakptr-potionitem" class="header-anchor">#</a> <code>WeakPtr&lt;PotionItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;PotionItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-bottleitem"><a href="#weakptr-bottleitem" class="header-anchor">#</a> <code>WeakPtr&lt;BottleItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BottleItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-endereyeitem"><a href="#weakptr-endereyeitem" class="header-anchor">#</a> <code>WeakPtr&lt;EnderEyeItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;EnderEyeItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-mobplaceritem"><a href="#weakptr-mobplaceritem" class="header-anchor">#</a> <code>WeakPtr&lt;MobPlacerItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;MobPlacerItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-experiencepotionitem"><a href="#weakptr-experiencepotionitem" class="header-anchor">#</a> <code>WeakPtr&lt;ExperiencePotionItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ExperiencePotionItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-firechargeitem"><a href="#weakptr-firechargeitem" class="header-anchor">#</a> <code>WeakPtr&lt;FireChargeItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;FireChargeItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-writablebookitem"><a href="#weakptr-writablebookitem" class="header-anchor">#</a> <code>WeakPtr&lt;WritableBookItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;WritableBookItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-writtenbookitem"><a href="#weakptr-writtenbookitem" class="header-anchor">#</a> <code>WeakPtr&lt;WrittenBookItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;WrittenBookItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-emptymapitem"><a href="#weakptr-emptymapitem" class="header-anchor">#</a> <code>WeakPtr&lt;EmptyMapItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;EmptyMapItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-skullitem"><a href="#weakptr-skullitem" class="header-anchor">#</a> <code>WeakPtr&lt;SkullItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;SkullItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-carrotonastickitem"><a href="#weakptr-carrotonastickitem" class="header-anchor">#</a> <code>WeakPtr&lt;CarrotOnAStickItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;CarrotOnAStickItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-fireworksitem"><a href="#weakptr-fireworksitem" class="header-anchor">#</a> <code>WeakPtr&lt;FireworksItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;FireworksItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-tridentitem"><a href="#weakptr-tridentitem" class="header-anchor">#</a> <code>WeakPtr&lt;TridentItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;TridentItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-armorstanditem"><a href="#weakptr-armorstanditem" class="header-anchor">#</a> <code>WeakPtr&lt;ArmorStandItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ArmorStandItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-dooritem"><a href="#weakptr-dooritem" class="header-anchor">#</a> <code>WeakPtr&lt;DoorItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;DoorItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-splashpotionitem"><a href="#weakptr-splashpotionitem" class="header-anchor">#</a> <code>WeakPtr&lt;SplashPotionItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;SplashPotionItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-armoritem"><a href="#weakptr-armoritem" class="header-anchor">#</a> <code>WeakPtr&lt;ArmorItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ArmorItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-banneritem"><a href="#weakptr-banneritem" class="header-anchor">#</a> <code>WeakPtr&lt;BannerItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BannerItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-suspiciousstewitem"><a href="#weakptr-suspiciousstewitem" class="header-anchor">#</a> <code>WeakPtr&lt;SuspiciousStewItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;SuspiciousStewItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-cameraitem"><a href="#weakptr-cameraitem" class="header-anchor">#</a> <code>WeakPtr&lt;CameraItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;CameraItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-compounditem"><a href="#weakptr-compounditem" class="header-anchor">#</a> <code>WeakPtr&lt;CompoundItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;CompoundItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-icebombitem"><a href="#weakptr-icebombitem" class="header-anchor">#</a> <code>WeakPtr&lt;IceBombItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;IceBombItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-balloonitem"><a href="#weakptr-balloonitem" class="header-anchor">#</a> <code>WeakPtr&lt;BalloonItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BalloonItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-medicineitem"><a href="#weakptr-medicineitem" class="header-anchor">#</a> <code>WeakPtr&lt;MedicineItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;MedicineItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-sparkleritem"><a href="#weakptr-sparkleritem" class="header-anchor">#</a> <code>WeakPtr&lt;SparklerItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;SparklerItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-glowstickitem"><a href="#weakptr-glowstickitem" class="header-anchor">#</a> <code>WeakPtr&lt;GlowStickItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;GlowStickItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-auxdatablockitem"><a href="#weakptr-auxdatablockitem" class="header-anchor">#</a> <code>WeakPtr&lt;AuxDataBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;AuxDataBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-clothblockitem"><a href="#weakptr-clothblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;ClothBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ClothBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-stoneslabblockitem"><a href="#weakptr-stoneslabblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;StoneSlabBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;StoneSlabBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-coralfanblockitem"><a href="#weakptr-coralfanblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;CoralFanBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;CoralFanBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-seapickleblockitem"><a href="#weakptr-seapickleblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;SeaPickleBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;SeaPickleBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-saplingblockitem"><a href="#weakptr-saplingblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;SaplingBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;SaplingBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-leafblockitem"><a href="#weakptr-leafblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;LeafBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;LeafBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-woodslabblockitem"><a href="#weakptr-woodslabblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;WoodSlabBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;WoodSlabBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-waterlilyblockitem"><a href="#weakptr-waterlilyblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;WaterLilyBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;WaterLilyBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-topsnowblockitem"><a href="#weakptr-topsnowblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;TopSnowBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;TopSnowBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-shulkerboxblockitem"><a href="#weakptr-shulkerboxblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;ShulkerBoxBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ShulkerBoxBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-bambooblockitem"><a href="#weakptr-bambooblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;BambooBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BambooBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-scaffoldingblockitem"><a href="#weakptr-scaffoldingblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;ScaffoldingBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ScaffoldingBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-bellblockitem"><a href="#weakptr-bellblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;BellBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;BellBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakptr-chemistryauxdatablockitem"><a href="#weakptr-chemistryauxdatablockitem" class="header-anchor">#</a> <code>WeakPtr&lt;ChemistryAuxDataBlockItem&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>SharedCounter&lt;ChemistryAuxDataBlockItem&gt; *</code></td> <td>pc</td></tr></tbody></table> <h3 id="weakreft-shareptrreftraits-perlinsimplexnoise"><a href="#weakreft-shareptrreftraits-perlinsimplexnoise" class="header-anchor">#</a> <code>WeakRefT&lt;SharePtrRefTraits&lt;PerlinSimplexNoise&gt; &gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SharePtrRefTraits&lt;PerlinSimplexNoise&gt;::WeakStorage</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="weightedrandomfeature-weightedfeaturereference"><a href="#weightedrandomfeature-weightedfeaturereference" class="header-anchor">#</a> <code>WeightedRandomFeature::WeightedFeatureReference</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>WeakRef&lt;IFeature&gt;</code></td> <td>mFeature</td></tr> <tr><td>24</td> <td>(4) <code>float</code></td> <td>mWeight</td></tr></tbody></table> <h3 id="weightedchoice-float"><a href="#weightedchoice-float" class="header-anchor">#</a> <code>WeightedChoice&lt;float&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mValue</td></tr> <tr><td>4</td> <td>(4) <code>WeighedRandom::WeighedRandomItem</code></td> <td>mRandomItem</td></tr></tbody></table> <h3 id="weakreft-entityregistryreftraits"><a href="#weakreft-entityregistryreftraits" class="header-anchor">#</a> <code>WeakRefT&lt;EntityRegistryRefTraits&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>EntityRegistryRefTraits::WeakStorage</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="wildcardcommandselector-actor"><a href="#wildcardcommandselector-actor" class="header-anchor">#</a> <code>WildcardCommandSelector&lt;Actor&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(168) <code>CommandSelectorBase</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="wanderingtrader-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#wanderingtrader-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>WanderingTrader::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="worldtemplatemanagerproxy"><a href="#worldtemplatemanagerproxy" class="header-anchor">#</a> <code>WorldTemplateManagerProxy</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WorldTemplateManagerProxy
+{
+  const WorldTemplateManagerProxyCallbacks mCallbacks;
+};
+
+</code></pre></div><h3 id="whitelist"><a href="#whitelist" class="header-anchor">#</a> <code>Whitelist</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Whitelist : IJsonSerializable
+{
+  std::vector&lt;WhitelistEntry&gt; mEntries;
+  std::function&lt;void ()&gt; mSyncCallback;
+};
+
+</code></pre></div><h3 id="worldtemplatepacksource"><a href="#worldtemplatepacksource" class="header-anchor">#</a> <code>WorldTemplatePackSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WorldTemplatePackSource : DirectoryPackSource
+{
+  const WorldTemplateManager *mWorldTemplateManager;
+  mce::UUID mWorldTemplateId;
+  bool mHasValidPathSet;
+};
+
+</code></pre></div><h3 id="worldhistorypacksource"><a href="#worldhistorypacksource" class="header-anchor">#</a> <code>WorldHistoryPackSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WorldHistoryPackSource : PackSource
+{
+  Core::HeapPathBuffer mPathToHistoryFile;
+  PackType mPackType;
+  std::vector&lt;std::unique_ptr&lt;Pack&gt;&gt; mPacks;
+  WorldPacksHistoryFile mWorldHistoryPacksFile;
+  bool mDiscovered;
+  bool mNeedsSaving;
+};
+
+</code></pre></div><h3 id="whitelistcommand"><a href="#whitelistcommand" class="header-anchor">#</a> <code>WhitelistCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WhitelistCommand : Command
+{
+  WhitelistCommand::Action mAction;
+  std::string mName;
+};
+
+</code></pre></div><h3 id="weakstorageentity"><a href="#weakstorageentity" class="header-anchor">#</a> <code>WeakStorageEntity</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakStorageEntity
+{
+  WeakRefT&lt;EntityRegistryRefTraits&gt; mRegistry;
+  std::optional&lt;EntityId&gt; mEntity;
+};
+
+</code></pre></div><h3 id="weakstorageshareptr-entityregistry"><a href="#weakstorageshareptr-entityregistry" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;EntityRegistry&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakStorageSharePtr&lt;EntityRegistry&gt;
+{
+  std::weak_ptr&lt;EntityRegistry&gt; mHandle;
+};
+
+</code></pre></div><h3 id="weakreft-entityreftraits"><a href="#weakreft-entityreftraits" class="header-anchor">#</a> <code>WeakRefT&lt;EntityRefTraits&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WeakRefT&lt;EntityRefTraits&gt; : EntityRefTraits::WeakStorage
+{
+};
+
+</code></pre></div><h3 id="weightedrandomfeature"><a href="#weightedrandomfeature" class="header-anchor">#</a> <code>WeightedRandomFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WeightedRandomFeature : IFeature
+{
+  std::vector&lt;WeightedRandomFeature::WeightedFeatureReference&gt; mFeatureReferences;
+};
+
+</code></pre></div><h3 id="waterlilyfeature"><a href="#waterlilyfeature" class="header-anchor">#</a> <code>WaterlilyFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WaterlilyFeature : Feature
+{
+};
+
+</code></pre></div><h3 id="worldchangetransaction-data"><a href="#worldchangetransaction-data" class="header-anchor">#</a> <code>WorldChangeTransaction::Data</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WorldChangeTransaction::Data
+{
+  std::unordered_map&lt;BlockPos,BlockChange&gt; changes;
+};
+
+</code></pre></div><h3 id="weakstoragefeature"><a href="#weakstoragefeature" class="header-anchor">#</a> <code>WeakStorageFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakStorageFeature
+{
+  std::optional&lt;std::reference_wrapper&lt;FeatureRegistry&gt; &gt; mRegistry;
+  size_t mIndex;
+};
+
+</code></pre></div><h3 id="worldgenerator"><a href="#worldgenerator" class="header-anchor">#</a> <code>WorldGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WorldGenerator
+{
+  int (**_vptr$WorldGenerator)(void);
+  std::unique_ptr&lt;HardcodedSpawnAreaRegistry&gt; mHardcodedSpawnTypes;
+};
+
+</code></pre></div><h3 id="weather"><a href="#weather" class="header-anchor">#</a> <code>Weather</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Weather : LevelListener
+{
+  PerlinSimplexNoise mNoise;
+  int mTick;
+  float mORainLevel;
+  float mRainLevel;
+  float mTargetRainLevel;
+  float mOLightningLevel;
+  float mLightningLevel;
+  float mTargetLightningLevel;
+  float mFogLevel;
+  int mSkyFlashTime;
+  Dimension *mDimension;
+};
+
+</code></pre></div><h3 id="weighedrandom"><a href="#weighedrandom" class="header-anchor">#</a> <code>WeighedRandom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeighedRandom
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="woodlandmansionfeature"><a href="#woodlandmansionfeature" class="header-anchor">#</a> <code>WoodlandMansionFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodlandMansionFeature : StructureFeature:1760
+{
+  int mFeatureSpacing;
+  int mMinFeatureSeparation;
+  std::vector&lt;int&gt; mAllowedBiomes;
+  OverworldGenerator *mLevelSource;
+};
+
+</code></pre></div><h3 id="woodlandmansionstart"><a href="#woodlandmansionstart" class="header-anchor">#</a> <code>WoodlandMansionStart</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodlandMansionStart : StructureStart
+{
+  Rotation_0 mRotationGenerated;
+  BlockPos mPositionGenerated;
+};
+
+</code></pre></div><h3 id="webviewdownloadinfo"><a href="#webviewdownloadinfo" class="header-anchor">#</a> <code>WebviewDownloadInfo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WebviewDownloadInfo
+{
+  std::string mContentDisposition;
+  std::string mMimeType;
+  std::string mOriginalURL;
+  std::string mURL;
+  uint32_t mId;
+  std::string mSuggestedFileName;
+  std::string mFullPath;
+  int64_t mReceivedBytes;
+  int64_t mTotalBytes;
+  int64_t mCurrentSpeed;
+  int mPercentComplete;
+  time_t mStartTime;
+  time_t mEndTime;
+};
+
+</code></pre></div><h3 id="weightedchoices-definitiontrigger"><a href="#weightedchoices-definitiontrigger" class="header-anchor">#</a> <code>WeightedChoices&lt;DefinitionTrigger&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeightedChoices&lt;DefinitionTrigger&gt;
+{
+  std::vector&lt;WeightedChoice&lt;DefinitionTrigger&gt;&gt; mChoices;
+};
+
+</code></pre></div><h3 id="worldpackshistoryfile"><a href="#worldpackshistoryfile" class="header-anchor">#</a> <code>WorldPacksHistoryFile</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WorldPacksHistoryFile
+{
+  std::vector&lt;WorldPackHistory&gt; mPacks;
+};
+
+</code></pre></div><h3 id="worldsessionendpoint"><a href="#worldsessionendpoint" class="header-anchor">#</a> <code>WorldSessionEndPoint</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WorldSessionEndPoint : ContentLogEndPoint
+{
+  IMinecraftEventing *mEventing;
+  bool mIsEnabled;
+};
+
+</code></pre></div><h3 id="wireframequeue"><a href="#wireframequeue" class="header-anchor">#</a> <code>WireframeQueue</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WireframeQueue
+{
+  std::unordered_map&lt;BlockPos,Wireframe&gt; mQueue;
+};
+
+</code></pre></div><h3 id="weak-villagelegacy"><a href="#weak-villagelegacy" class="header-anchor">#</a> <code>Weak&lt;VillageLegacy&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::weak_ptr&lt;VillageLegacy&gt; Weak&lt;VillageLegacy&gt;;
+
+</code></pre></div><h3 id="walkanimationspeeddescription"><a href="#walkanimationspeeddescription" class="header-anchor">#</a> <code>WalkAnimationSpeedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WalkAnimationSpeedDescription : PropertyDescription
+{
+  float mValue;
+};
+
+</code></pre></div><h3 id="wantsjockeydescription"><a href="#wantsjockeydescription" class="header-anchor">#</a> <code>WantsJockeyDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WantsJockeyDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="wasdcontrolleddescription"><a href="#wasdcontrolleddescription" class="header-anchor">#</a> <code>WASDControlledDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WASDControlledDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="watermovementdescription"><a href="#watermovementdescription" class="header-anchor">#</a> <code>WaterMovementDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WaterMovementDescription : ComponentDescription
+{
+  float mDragFactor;
+};
+
+</code></pre></div><h3 id="worldsystems"><a href="#worldsystems" class="header-anchor">#</a> <code>WorldSystems</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WorldSystems
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="wolf"><a href="#wolf" class="header-anchor">#</a> <code>Wolf</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) Wolf : Animal
+{
+  float mShakeAnim;
+  float mShakeAnimO;
+  float mInterestedAngle;
+  float mInterestedAngleO;
+  bool mIsWet;
+  bool mIsShaking;
+};
+
+</code></pre></div><h3 id="witch"><a href="#witch" class="header-anchor">#</a> <code>Witch</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) Witch : HumanoidMonster
+{
+  int mUsingTime;
+};
+
+</code></pre></div><h3 id="witherboss"><a href="#witherboss" class="header-anchor">#</a> <code>WitherBoss</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WitherBoss : Monster
+{
+  int MAX_SHIELD_HEALTH;
+  int mTimeBeforeMoving;
+  float mNewXPos;
+  int mShieldHealth;
+  Vec2 mHeadRots[3];
+  Vec2 mOldHeadRots[3];
+  int mNextHeadUpdate[3];
+  int mIdleHeadUpdates[3];
+  int mDestroyBlocksTick;
+  int mHealthThreshold;
+  int mPhase;
+  bool mWantsToExplode;
+  bool mCharging;
+  Vec3 mChargeDirection;
+  int mChargeFrames;
+  int mPreparingCharge;
+  int mProjectileCounter;
+  int mSpawningFrames;
+  int mShieldFlicker;
+  int mTimeTillNextShot;
+  int mFireRate;
+  float mSpinSpeed;
+  float mOverlayAlpha;
+  int mStunTimer;
+  int mFramesTillMove;
+  bool mWantsMove;
+  bool mIsPathing;
+  int mMaxHealth;
+  int mNumSkeletons;
+  int mMaxSkeletons;
+  int mDyingFrames;
+  int mMovementTime;
+  int mHealthIntervals;
+  int mLastHealthValue;
+  int mDelayShot;
+  int mTimeSinceLastShot;
+  float mAttackRange;
+  bool mSecondVolley;
+  float mSwellAmount;
+  float mOldSwellAmount;
+  int mMainHeadAttackCountdown;
+  std::unique_ptr&lt;ActorDamageSource&gt; mDeathSource;
+  int mlastFiredHead;
+};
+
+</code></pre></div><h3 id="witherskull"><a href="#witherskull" class="header-anchor">#</a> <code>WitherSkull</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WitherSkull : Fireball:17696
+{
+  int mLifetime;
+};
+
+</code></pre></div><h3 id="wallclimberpathnavigation"><a href="#wallclimberpathnavigation" class="header-anchor">#</a> <code>WallClimberPathNavigation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WallClimberPathNavigation : PathNavigation
+{
+  BlockPos mPathToPosition;
+};
+
+</code></pre></div><h3 id="waterboundpathnavigation"><a href="#waterboundpathnavigation" class="header-anchor">#</a> <code>WaterBoundPathNavigation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WaterBoundPathNavigation : PathNavigation
+{
+  bool mAllowRiverFollow;
+  bool mFollowingRiver;
+  int mHeadingTicks;
+  float mCenteredThreshold;
+  float mLookAheadDistance;
+  float mMinDepth;
+  float mMaxDepth;
+  float mSteerDampening;
+  float mTerrainAvoidDistance;
+  float mXBodyRotation;
+  float mYBodyRotation;
+  float mZBodyRotation;
+};
+
+</code></pre></div><h3 id="workgoal"><a href="#workgoal" class="header-anchor">#</a> <code>WorkGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WorkGoal : MoveToPOIGoal
+{
+  POIType mPOIType;
+  int mGoalCooldownMax;
+  int mCooldownTick;
+  int mGoalActiveMax;
+  int mActiveTick;
+  int mSoundIntervalMin;
+  int mSoundIntervalMax;
+  int mSoundTick;
+  int mSoundTickMax;
+  bool mCanWorkInRain;
+  bool mCanRainAtLocation;
+  int mRainCheckCooldownTick;
+  int mWorkInRainTolerance;
+  const DefinitionTrigger mOnArrival;
+  bool mHasEverReachedJobsite;
+  LevelSoundEvent mSoundEvent;
+};
+
+</code></pre></div><h3 id="witherrandomattackposgoal"><a href="#witherrandomattackposgoal" class="header-anchor">#</a> <code>WitherRandomAttackPosGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WitherRandomAttackPosGoal : RandomStrollGoal:528
+{
+  bool mIsPathing;
+};
+
+</code></pre></div><h3 id="withertargethighestdamage"><a href="#withertargethighestdamage" class="header-anchor">#</a> <code>WitherTargetHighestDamage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WitherTargetHighestDamage : TargetGoal
+{
+  WitherBoss *mWitherBoss;
+  Mob *mTarget;
+};
+
+</code></pre></div><h3 id="wateranimal"><a href="#wateranimal" class="header-anchor">#</a> <code>WaterAnimal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WaterAnimal : Mob
+{
+};
+
+</code></pre></div><h3 id="witherdonothinggoal"><a href="#witherdonothinggoal" class="header-anchor">#</a> <code>WitherDoNothingGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WitherDoNothingGoal : Goal
+{
+  WitherBoss *mWitherBoss;
+};
+
+</code></pre></div><h3 id="wanderingtrader"><a href="#wanderingtrader" class="header-anchor">#</a> <code>WanderingTrader</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WanderingTrader : Mob
+{
+  float mRaiseArmValue;
+};
+
+</code></pre></div><h3 id="weakptr-airblockitem"><a href="#weakptr-airblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;AirBlockItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;AirBlockItem&gt;
+{
+  SharedCounter&lt;AirBlockItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weaponitem"><a href="#weaponitem" class="header-anchor">#</a> <code>WeaponItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WeaponItem : Item
+{
+  int mDamage;
+  const Item::Tier *mTier;
+};
+
+</code></pre></div><h3 id="weakptr-hangingactoritem"><a href="#weakptr-hangingactoritem" class="header-anchor">#</a> <code>WeakPtr&lt;HangingActorItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;HangingActorItem&gt;
+{
+  SharedCounter&lt;HangingActorItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-signitem"><a href="#weakptr-signitem" class="header-anchor">#</a> <code>WeakPtr&lt;SignItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;SignItem&gt;
+{
+  SharedCounter&lt;SignItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="writablebookitem"><a href="#writablebookitem" class="header-anchor">#</a> <code>WritableBookItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WritableBookItem : Item
+{
+};
+
+</code></pre></div><h3 id="writtenbookitem"><a href="#writtenbookitem" class="header-anchor">#</a> <code>WrittenBookItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WrittenBookItem : Item
+{
+};
+
+</code></pre></div><h3 id="weakptr-fireworkchargeitem"><a href="#weakptr-fireworkchargeitem" class="header-anchor">#</a> <code>WeakPtr&lt;FireworkChargeItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;FireworkChargeItem&gt;
+{
+  SharedCounter&lt;FireworkChargeItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-horsearmoritem"><a href="#weakptr-horsearmoritem" class="header-anchor">#</a> <code>WeakPtr&lt;HorseArmorItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;HorseArmorItem&gt;
+{
+  SharedCounter&lt;HorseArmorItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-recorditem"><a href="#weakptr-recorditem" class="header-anchor">#</a> <code>WeakPtr&lt;RecordItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;RecordItem&gt;
+{
+  SharedCounter&lt;RecordItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-leaditem"><a href="#weakptr-leaditem" class="header-anchor">#</a> <code>WeakPtr&lt;LeadItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;LeadItem&gt;
+{
+  SharedCounter&lt;LeadItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-endcrystalitem"><a href="#weakptr-endcrystalitem" class="header-anchor">#</a> <code>WeakPtr&lt;EndCrystalItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;EndCrystalItem&gt;
+{
+  SharedCounter&lt;EndCrystalItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-lingeringpotionitem"><a href="#weakptr-lingeringpotionitem" class="header-anchor">#</a> <code>WeakPtr&lt;LingeringPotionItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;LingeringPotionItem&gt;
+{
+  SharedCounter&lt;LingeringPotionItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-crossbowitem"><a href="#weakptr-crossbowitem" class="header-anchor">#</a> <code>WeakPtr&lt;CrossbowItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;CrossbowItem&gt;
+{
+  SharedCounter&lt;CrossbowItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-bannerpatternitem"><a href="#weakptr-bannerpatternitem" class="header-anchor">#</a> <code>WeakPtr&lt;BannerPatternItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;BannerPatternItem&gt;
+{
+  SharedCounter&lt;BannerPatternItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-chemistryitem"><a href="#weakptr-chemistryitem" class="header-anchor">#</a> <code>WeakPtr&lt;ChemistryItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;ChemistryItem&gt;
+{
+  SharedCounter&lt;ChemistryItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weakptr-rapidfertilizeritem"><a href="#weakptr-rapidfertilizeritem" class="header-anchor">#</a> <code>WeakPtr&lt;RapidFertilizerItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;RapidFertilizerItem&gt;
+{
+  SharedCounter&lt;RapidFertilizerItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="woodslabblockitem"><a href="#woodslabblockitem" class="header-anchor">#</a> <code>WoodSlabBlockItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodSlabBlockItem : SlabBlockItem
+{
+};
+
+</code></pre></div><h3 id="waterlilyblockitem"><a href="#waterlilyblockitem" class="header-anchor">#</a> <code>WaterLilyBlockItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WaterLilyBlockItem : BlockItem
+{
+};
+
+</code></pre></div><h3 id="weakptr-elementblockitem"><a href="#weakptr-elementblockitem" class="header-anchor">#</a> <code>WeakPtr&lt;ElementBlockItem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakPtr&lt;ElementBlockItem&gt;
+{
+  SharedCounter&lt;ElementBlockItem&gt; *pc;
+};
+
+</code></pre></div><h3 id="weaponrecipes"><a href="#weaponrecipes" class="header-anchor">#</a> <code>WeaponRecipes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeaponRecipes
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="weakref-entityid"><a href="#weakref-entityid" class="header-anchor">#</a> <code>WeakRef&lt;EntityId&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakRefT&lt;EntityRefTraits&gt; WeakRef&lt;EntityId&gt;;
+
+</code></pre></div><h3 id="wireframe"><a href="#wireframe" class="header-anchor">#</a> <code>Wireframe</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Wireframe
+{
+  BlockPos mPos;
+  BlockPos mBox;
+  std::array&lt;WireframeQuad,24&gt; mQuadList;
+};
+
+</code></pre></div><h3 id="wireframequad"><a href="#wireframequad" class="header-anchor">#</a> <code>WireframeQuad</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WireframeQuad
+{
+  std::array&lt;Vec3,4&gt; mQuad;
+  int mColor;
+};
+
+</code></pre></div><h3 id="weakstorageshareptr-perlinsimplexnoise"><a href="#weakstorageshareptr-perlinsimplexnoise" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;PerlinSimplexNoise&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WeakStorageSharePtr&lt;PerlinSimplexNoise&gt;
+{
+  std::weak_ptr&lt;PerlinSimplexNoise&gt; mHandle;
+};
+
+</code></pre></div><h3 id="worldgenclimatemappingattributes-weightedtemperaturecategory"><a href="#worldgenclimatemappingattributes-weightedtemperaturecategory" class="header-anchor">#</a> <code>WorldGenClimateMappingAttributes::WeightedTemperatureCategory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WorldGenClimateMappingAttributes::WeightedTemperatureCategory
+{
+  BiomeTemperatureCategory mTemperature;
+  uint32_t mWeight;
+};
+
+</code></pre></div><h3 id="webblock"><a href="#webblock" class="header-anchor">#</a> <code>WebBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WebBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="workbenchblock"><a href="#workbenchblock" class="header-anchor">#</a> <code>WorkbenchBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WorkbenchBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="waterlilyblock"><a href="#waterlilyblock" class="header-anchor">#</a> <code>WaterlilyBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WaterlilyBlock : BushBlock
+{
+};
+
+</code></pre></div><h3 id="wallblock"><a href="#wallblock" class="header-anchor">#</a> <code>WallBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WallBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="woodbuttonblock"><a href="#woodbuttonblock" class="header-anchor">#</a> <code>WoodButtonBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WoodButtonBlock : ButtonBlock
+{
+};
+
+</code></pre></div><h3 id="weightedpressureplateblock"><a href="#weightedpressureplateblock" class="header-anchor">#</a> <code>WeightedPressurePlateBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WeightedPressurePlateBlock : BasePressurePlateBlock
+{
+  const int maxWeight;
+};
+
+</code></pre></div><h3 id="woodslabblock"><a href="#woodslabblock" class="header-anchor">#</a> <code>WoodSlabBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodSlabBlock : SlabBlock
+{
+};
+
+</code></pre></div><h3 id="woolcarpetblock"><a href="#woolcarpetblock" class="header-anchor">#</a> <code>WoolCarpetBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoolCarpetBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="woodblock"><a href="#woodblock" class="header-anchor">#</a> <code>WoodBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodBlock : RotatedPillarBlock
+{
+};
+
+</code></pre></div><h3 id="witherroseblock"><a href="#witherroseblock" class="header-anchor">#</a> <code>WitherRoseBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WitherRoseBlock : FlowerBlock
+{
+};
+
+</code></pre></div><h3 id="worldlimitchunksource"><a href="#worldlimitchunksource" class="header-anchor">#</a> <code>WorldLimitChunkSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WorldLimitChunkSource : ChunkSource
+{
+  std::shared_ptr&lt;LevelChunk&gt; mInvisibleWallChunk;
+  const Bounds mLimitArea;
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-mansiongrid"><a href="#woodlandmansionpieces-mansiongrid" class="header-anchor">#</a> <code>WoodlandMansionPieces::MansionGrid</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WoodlandMansionPieces::MansionGrid
+{
+  Unique&lt;WoodlandMansionPieces::SimpleGrid&gt; mBaseGrid;
+  Unique&lt;WoodlandMansionPieces::SimpleGrid&gt; mThirdFloorGrid;
+  std::vector&lt;std::unique_ptr&lt;WoodlandMansionPieces::SimpleGrid&gt;&gt; mFloorRooms;
+  int mEntranceX;
+  int mEntranceY;
+  Random *mRandom;
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-simplegrid"><a href="#woodlandmansionpieces-simplegrid" class="header-anchor">#</a> <code>WoodlandMansionPieces::SimpleGrid</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) WoodlandMansionPieces::SimpleGrid
+{
+  std::vector&lt;std::vector&lt;int&gt;&gt; mGrid;
+  int mWidth;
+  int mHeight;
+  int mValueIfOutside;
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-mansionpieceplacer"><a href="#woodlandmansionpieces-mansionpieceplacer" class="header-anchor">#</a> <code>WoodlandMansionPieces::MansionPiecePlacer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WoodlandMansionPieces::MansionPiecePlacer
+{
+  StructureManager *mStructureManager;
+  Random *mRandom;
+  int mStartX;
+  int mStartY;
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-floorroomcollection"><a href="#woodlandmansionpieces-floorroomcollection" class="header-anchor">#</a> <code>WoodlandMansionPieces::FloorRoomCollection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WoodlandMansionPieces::FloorRoomCollection
+{
+  int (**_vptr$FloorRoomCollection)(void);
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-firstfloorroomcollection"><a href="#woodlandmansionpieces-firstfloorroomcollection" class="header-anchor">#</a> <code>WoodlandMansionPieces::FirstFloorRoomCollection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodlandMansionPieces::FirstFloorRoomCollection : WoodlandMansionPieces::FloorRoomCollection
+{
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-secondfloorroomcollection"><a href="#woodlandmansionpieces-secondfloorroomcollection" class="header-anchor">#</a> <code>WoodlandMansionPieces::SecondFloorRoomCollection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodlandMansionPieces::SecondFloorRoomCollection : WoodlandMansionPieces::FloorRoomCollection
+{
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-thirdfloorroomcollection"><a href="#woodlandmansionpieces-thirdfloorroomcollection" class="header-anchor">#</a> <code>WoodlandMansionPieces::ThirdFloorRoomCollection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodlandMansionPieces::ThirdFloorRoomCollection : WoodlandMansionPieces::SecondFloorRoomCollection
+{
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-woodlandmansionpiece"><a href="#woodlandmansionpieces-woodlandmansionpiece" class="header-anchor">#</a> <code>WoodlandMansionPieces::WoodlandMansionPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WoodlandMansionPieces::WoodlandMansionPiece : TemplateStructurePiece
+{
+  StructureManager *mStructureManager;
+  std::string mTemplateName;
+  Rotation_0 mRotation;
+  Mirror_0 mMirror;
+  BlockPos mPosition;
+  std::vector&lt;BlockPos&gt; mVindicatorPositions;
+  std::vector&lt;BlockPos&gt; mEvokerPositions;
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces"><a href="#woodlandmansionpieces" class="header-anchor">#</a> <code>WoodlandMansionPieces</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WoodlandMansionPieces
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="weightedbiomereference"><a href="#weightedbiomereference" class="header-anchor">#</a> <code>WeightedBiomeReference</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::pair&lt;Biome *,unsigned int&gt; WeightedBiomeReference;
+
+</code></pre></div><h3 id="worldbuildercommand"><a href="#worldbuildercommand" class="header-anchor">#</a> <code>WorldBuilderCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WorldBuilderCommand : Command
+{
+};
+
+</code></pre></div><h3 id="wildcardactorselector"><a href="#wildcardactorselector" class="header-anchor">#</a> <code>WildcardActorSelector</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WildcardCommandSelector&lt;Actor&gt; WildcardActorSelector;
+
+</code></pre></div><h3 id="wsservercommand"><a href="#wsservercommand" class="header-anchor">#</a> <code>WSServerCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WSServerCommand : Command
+{
+  CommandRawText mServerIP;
+};
+
+</code></pre></div><h3 id="weathercommand"><a href="#weathercommand" class="header-anchor">#</a> <code>WeatherCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WeatherCommand : Command
+{
+  WeatherCommand::WeatherRequest mRequest;
+  WeatherCommand::WeatherType mType;
+  int mDuration;
+};
+
+</code></pre></div><h3 id="waitdefinition"><a href="#waitdefinition" class="header-anchor">#</a> <code>WaitDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WaitDefinition : BehaviorDefinition
+{
+  int mDuration;
+  std::string mDurationId;
+};
+
+</code></pre></div><h3 id="waitnode"><a href="#waitnode" class="header-anchor">#</a> <code>WaitNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WaitNode : BehaviorNode
+{
+  std::chrono::seconds mDuration;
+  std::chrono::_V2::steady_clock::time_point mStart;
+};
+
+</code></pre></div><h3 id="waitticksdefinition"><a href="#waitticksdefinition" class="header-anchor">#</a> <code>WaitTicksDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj WaitTicksDefinition : BehaviorDefinition
+{
+  int mTicks;
+  std::string mTicksId;
+};
+
+</code></pre></div><h3 id="waitticksnode"><a href="#waitticksnode" class="header-anchor">#</a> <code>WaitTicksNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) WaitTicksNode : BehaviorNode:480
+{
+  int mMaxTicks;
+  int mCurrTicks;
+};
+
+</code></pre></div><h3 id="wsastartupsingleton"><a href="#wsastartupsingleton" class="header-anchor">#</a> <code>WSAStartupSingleton</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct WSAStartupSingleton
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/V.html" class="prev">
+        V
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/X.html">
+        X
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/55.8b419ad8.js" defer></script>
+  </body>
+</html>

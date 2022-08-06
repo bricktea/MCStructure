@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>H | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/70.1ea3abef.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" aria-current="page" class="active sidebar-link">H</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="h"><a href="#h" class="header-anchor">#</a> H</h1> <h3 id="holouiinputmode"><a href="#holouiinputmode" class="header-anchor">#</a> <code>HoloUIInputMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Unknown</td> <td><code>0</code></td></tr> <tr><td>sRGB</td> <td><code>1</code></td></tr> <tr><td>Linear</td> <td><code>2</code></td></tr></tbody></table> <h3 id="hbui-routemode"><a href="#hbui-routemode" class="header-anchor">#</a> <code>hbui::RouteMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="holoscenerenderer-inworldcursormode"><a href="#holoscenerenderer-inworldcursormode" class="header-anchor">#</a> <code>HolosceneRenderer::InWorldCursorMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Interactible</td> <td><code>0</code></td></tr> <tr><td>NoHit</td> <td><code>1</code></td></tr> <tr><td>EntityTooFar</td> <td><code>2</code></td></tr> <tr><td>ForceFull</td> <td><code>3</code></td></tr></tbody></table> <h3 id="handslot"><a href="#handslot" class="header-anchor">#</a> <code>HandSlot</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Drift</td> <td><code>0</code></td></tr> <tr><td>Fixed</td> <td><code>1</code></td></tr> <tr><td>Offhand</td> <td><code>2</code></td></tr></tbody></table> <h3 id="httprequest-method"><a href="#httprequest-method" class="header-anchor">#</a> <code>HTTPRequest::Method</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Like</td> <td><code>0</code></td></tr> <tr><td>Unlike</td> <td><code>1</code></td></tr> <tr><td>Post</td> <td><code>2</code></td></tr> <tr><td>Delete</td> <td><code>3</code></td></tr> <tr><td>Report</td> <td><code>4</code></td></tr> <tr><td>Comment</td> <td><code>5</code></td></tr></tbody></table> <h3 id="hitresulttype"><a href="#hitresulttype" class="header-anchor">#</a> <code>HitResultType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>TILE</td> <td><code>0</code></td></tr> <tr><td>ENTITY_OUT_OF_RANGE</td> <td><code>2</code></td></tr> <tr><td>NO_HIT</td> <td><code>3</code></td></tr></tbody></table> <h3 id="holouitoposesource"><a href="#holouitoposesource" class="header-anchor">#</a> <code>HoloUIToPoseSource</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NonVR</td> <td><code>0</code></td></tr> <tr><td>MainMenu</td> <td><code>1</code></td></tr> <tr><td>LivingRoom</td> <td><code>2</code></td></tr> <tr><td>VRTransition</td> <td><code>3</code></td></tr> <tr><td>VRHeadlocked</td> <td><code>4</code></td></tr> <tr><td>VRFloatingHUD</td> <td><code>5</code></td></tr> <tr><td>VRHandheldHUD</td> <td><code>6</code></td></tr></tbody></table> <h3 id="hbui-routetype"><a href="#hbui-routetype" class="header-anchor">#</a> <code>hbui::RouteType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Gameface</td> <td><code>0</code></td></tr> <tr><td>Bedrock</td> <td><code>1</code></td></tr></tbody></table> <h3 id="hbui-hybridresourcefilesystem"><a href="#hbui-hybridresourcefilesystem" class="header-anchor">#</a> <code>hbui::HybridResourceFileSystem</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AppPackage</td> <td><code>0</code></td></tr> <tr><td>TrustedPack</td> <td><code>1</code></td></tr></tbody></table> <h3 id="hbui-router-queuedrouteaction"><a href="#hbui-router-queuedrouteaction" class="header-anchor">#</a> <code>hbui::Router::QueuedRouteAction</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Push</td> <td><code>0</code></td></tr> <tr><td>IgnoreStackPop</td> <td><code>1</code></td></tr> <tr><td>ReplaceOnPop</td> <td><code>2</code></td></tr> <tr><td>GoBackAndReplaceOnPop</td> <td><code>3</code></td></tr> <tr><td>Replace</td> <td><code>4</code></td></tr> <tr><td>ReplaceWithNonGameface</td> <td><code>5</code></td></tr></tbody></table> <h3 id="hudscreencontroller-tooltip-type"><a href="#hudscreencontroller-tooltip-type" class="header-anchor">#</a> <code>HudScreenController::Tooltip::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>KeyboardOnly</td> <td><code>0</code></td></tr> <tr><td>GamepadOnly</td> <td><code>1</code></td></tr> <tr><td>Mixed</td> <td><code>2</code></td></tr></tbody></table> <h3 id="howtoplaytopicindex"><a href="#howtoplaytopicindex" class="header-anchor">#</a> <code>HowToPlayTopicIndex</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>COMMAND_BLOCK_OUTPUT</td> <td><code>0</code></td></tr> <tr><td>DO_DAYLIGHT_CYCLE</td> <td><code>1</code></td></tr> <tr><td>DO_ENTITY_DROPS</td> <td><code>2</code></td></tr> <tr><td>DO_FIRE_TICK</td> <td><code>3</code></td></tr> <tr><td>DO_MOB_LOOT</td> <td><code>4</code></td></tr> <tr><td>DO_MOB_SPAWNING</td> <td><code>5</code></td></tr> <tr><td>DO_TILE_DROPS</td> <td><code>6</code></td></tr> <tr><td>DO_WEATHER_CYCLE</td> <td><code>7</code></td></tr> <tr><td>DROWNING_DAMAGE</td> <td><code>8</code></td></tr> <tr><td>FALL_DAMAGE</td> <td><code>9</code></td></tr> <tr><td>FIRE_DAMAGE</td> <td><code>10</code></td></tr> <tr><td>KEEP_INVENTORY</td> <td><code>11</code></td></tr> <tr><td>MOB_GRIEFING</td> <td><code>12</code></td></tr> <tr><td>PVP</td> <td><code>13</code></td></tr> <tr><td>SHOW_COORDINATES</td> <td><code>14</code></td></tr> <tr><td>DO_NATURAL_REGENERATION</td> <td><code>15</code></td></tr> <tr><td>DO_TNT_EXPLODE</td> <td><code>16</code></td></tr> <tr><td>SEND_COMMAND_FEEDBACK</td> <td><code>17</code></td></tr> <tr><td>MAX_COMMAND_CHAIN_LENGTH</td> <td><code>18</code></td></tr> <tr><td>DO_INSOMNIA</td> <td><code>19</code></td></tr> <tr><td>COMMAND_BLOCKS_ENABLED</td> <td><code>20</code></td></tr> <tr><td>RANDOM_TICK_SPEED</td> <td><code>21</code></td></tr> <tr><td>DO_IMMEDIATE_RESPAWN</td> <td><code>22</code></td></tr> <tr><td>SHOW_DEATH_MESSAGES</td> <td><code>23</code></td></tr> <tr><td>FUNCTION_COMMAND_LIMIT</td> <td><code>24</code></td></tr> <tr><td>PLAYER_SPAWN_RADIUS</td> <td><code>25</code></td></tr> <tr><td>SHOW_TAGS</td> <td><code>26</code></td></tr> <tr><td>VANILLA_GAME_RULE_COUNT</td> <td><code>27</code></td></tr> <tr><td>GLOBAL_MUTE</td> <td><code>27</code></td></tr> <tr><td>ALLOW_DESTRUCTIVE_OBJECTS</td> <td><code>28</code></td></tr> <tr><td>ALLOW_MOBS</td> <td><code>29</code></td></tr> <tr><td>CODE_BUILDER</td> <td><code>30</code></td></tr> <tr><td>EDU_GAME_RULE_COUNT</td> <td><code>31</code></td></tr> <tr><td>INVALID_GAME_RULE</td> <td><code>18446744073709551615</code></td></tr></tbody></table> <h3 id="horsearmoritem-tier"><a href="#horsearmoritem-tier" class="header-anchor">#</a> <code>HorseArmorItem::Tier</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="hugemushroomblock-type"><a href="#hugemushroomblock-type" class="header-anchor">#</a> <code>HugeMushroomBlock::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="hardcodedspawnareatype"><a href="#hardcodedspawnareatype" class="header-anchor">#</a> <code>HardcodedSpawnAreaType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="httpresponse-status"><a href="#httpresponse-status" class="header-anchor">#</a> <code>HTTPResponse::Status</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="holographicplatform-mclocation"><a href="#holographicplatform-mclocation" class="header-anchor">#</a> <code>HolographicPlatform::MCLocation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HolographicPlatform::MCLocation : __int32
+{
+  Pose = 0x0,
+  FocusScreen = 0x1,
+  Holoviewer = 0x2,
+  Reality = 0x3,
+  Logo = 0x4,
+  EnvironmentScan = 0x5,
+};
+
+</code></pre></div><h3 id="holographicplatform-gesturemode"><a href="#holographicplatform-gesturemode" class="header-anchor">#</a> <code>HolographicPlatform::GestureMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HolographicPlatform::GestureMode : __int32
+{
+  Disabled = 0x0,
+  Pan = 0x1,
+  Rotate = 0x2,
+  Tilt = 0x3,
+  Pivot = 0x4,
+  Zoom = 0x5,
+  GazeOffset = 0x6,
+  Joystick = 0x7,
+  Abstract = 0x8,
+};
+
+</code></pre></div><h3 id="holographicplatform-holographicfeatures"><a href="#holographicplatform-holographicfeatures" class="header-anchor">#</a> <code>HolographicPlatform::HolographicFeatures</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HolographicPlatform::HolographicFeatures : __int32
+{
+  LivingRoomFeature = 0x1,
+  HoloViewerFeature = 0x2,
+  HoloScreenFeature = 0x4,
+  VirtualRealityFeature = 0x8,
+  RealityModeFeature = 0x10,
+  TransitionInsideBlocksEnabled = 0x20,
+  HeadInsideBlocksEnabled = 0x40,
+  GazeOverridesMouse = 0x80,
+  MouseEnabled = 0x100,
+  PauseMenuOnFocusLostDisabled = 0x200,
+  FilePickingSupported = 0x400,
+  ImagePickingSupported = 0x800,
+  RollTurningSupported = 0x1000,
+  IsRecenterable = 0x2000,
+  HandControllersEnabled = 0x4000,
+};
+
+</code></pre></div><h3 id="holographicplatform-aimfromspace"><a href="#holographicplatform-aimfromspace" class="header-anchor">#</a> <code>HolographicPlatform::AimFromSpace</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HolographicPlatform::AimFromSpace : __int32
+{
+  Gaze = 0x0,
+  LeftHand = 0x1,
+  RightHand = 0x2,
+};
+
+</code></pre></div><h3 id="hbui-routeprerequisitestate"><a href="#hbui-routeprerequisitestate" class="header-anchor">#</a> <code>hbui::RoutePrerequisiteState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum hbui::RoutePrerequisiteState : __int32
+{
+  InvalidInput_Route = 0x0,
+  RouteHasNoPrerequisites = 0x1,
+  AllConditionsMet_NoFurtherActionsNeeded = 0x2,
+  ConditionsNotMet_NewScreenPushed = 0x3,
+};
+
+</code></pre></div><h3 id="hbui-routeraction"><a href="#hbui-routeraction" class="header-anchor">#</a> <code>hbui::RouterAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef hbui::Router::QueuedRouteAction hbui::RouterAction;
+
+</code></pre></div><h3 id="handlerresult"><a href="#handlerresult" class="header-anchor">#</a> <code>HandlerResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HandlerResult : __int32
+{
+  BypassListeners = 0x0,
+  NotifyListeners = 0x1,
+};
+
+</code></pre></div><h3 id="hbui-scene-screenstate"><a href="#hbui-scene-screenstate" class="header-anchor">#</a> <code>hbui::Scene::ScreenState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace hbui::Scene::ScreenState;
+
+</code></pre></div><h3 id="httpheaders-parsestate"><a href="#httpheaders-parsestate" class="header-anchor">#</a> <code>HttpHeaders::ParseState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HttpHeaders::ParseState : __int32
+{
+  PS_PROCESS_STATUS_LINE = 0x0,
+  PS_STATUS_LINE_DONE = 0x1,
+  PS_NEW_FIELD = 0x2,
+  PS_NAME = 0x3,
+  PS_VALUE = 0x4,
+  PS_ADD_FIELD = 0x5,
+  PS_PROCESS_FIELDS = 0x6,
+  PS_DONE = 0x7,
+  PS_ABORT = 0x8,
+};
+
+</code></pre></div><h3 id="hbui-resourceregistry-registerresult"><a href="#hbui-resourceregistry-registerresult" class="header-anchor">#</a> <code>hbui::ResourceRegistry::RegisterResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome hbui::ResourceRegistry::RegisterResult;
+
+</code></pre></div><h3 id="hbui-screenscope"><a href="#hbui-screenscope" class="header-anchor">#</a> <code>hbui::ScreenScope</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation hbui::ScreenScope;
+
+</code></pre></div><h3 id="hudcamerarenderer-state"><a href="#hudcamerarenderer-state" class="header-anchor">#</a> <code>HudCameraRenderer::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation HudCameraRenderer::State;
+
+</code></pre></div><h3 id="hbui-achievementsfacet-achievementfacetstatus"><a href="#hbui-achievementsfacet-achievementfacetstatus" class="header-anchor">#</a> <code>hbui::AchievementsFacet::AchievementFacetStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Actor::InitializationMethod hbui::AchievementsFacet::AchievementFacetStatus;
+
+</code></pre></div><h3 id="hbui-deviceinformationfacet-platform"><a href="#hbui-deviceinformationfacet-platform" class="header-anchor">#</a> <code>hbui::DeviceInformationFacet::Platform</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType hbui::DeviceInformationFacet::Platform;
+
+</code></pre></div><h3 id="hbui-inputmethod"><a href="#hbui-inputmethod" class="header-anchor">#</a> <code>hbui::InputMethod</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType hbui::InputMethod;
+
+</code></pre></div><h3 id="hbui-screenreaderfacetinterruptibleflag"><a href="#hbui-screenreaderfacetinterruptibleflag" class="header-anchor">#</a> <code>hbui::ScreenReaderFacetInterruptibleFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum hbui::ScreenReaderFacetInterruptibleFlag : __int32
+{
+  NotInterruptible = 0x0,
+  Interruptible = 0x1,
+};
+
+</code></pre></div><h3 id="hbui-screenreaderfacetrequiredflag"><a href="#hbui-screenreaderfacetrequiredflag" class="header-anchor">#</a> <code>hbui::ScreenReaderFacetRequiredFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FilterParamRequirement hbui::ScreenReaderFacetRequiredFlag;
+
+</code></pre></div><h3 id="hbui-screenreaderfacetplayinbackgroundflag"><a href="#hbui-screenreaderfacetplayinbackgroundflag" class="header-anchor">#</a> <code>hbui::ScreenReaderFacetPlayInBackgroundFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum hbui::ScreenReaderFacetPlayInBackgroundFlag : __int32
+{
+  DoNotPlayInBackground = 0x0,
+  PlayInBackground = 0x1,
+};
+
+</code></pre></div><h3 id="hbui-ifacetregistry-error"><a href="#hbui-ifacetregistry-error" class="header-anchor">#</a> <code>hbui::IFacetRegistry::Error</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum hbui::IFacetRegistry::Error : __int32
+{
+  ALREADY_ACTIVE = 0x0,
+  ALREADY_INACTIVE = 0x1,
+  ACTIVATE_NOT_FOUND = 0x2,
+  DEACTIVATE_NOT_FOUND = 0x3,
+};
+
+</code></pre></div><h3 id="hbui-toucheventdata-eventtype"><a href="#hbui-toucheventdata-eventtype" class="header-anchor">#</a> <code>hbui::TouchEventData::EventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum hbui::TouchEventData::EventType : __int32
+{
+  TouchMove = 0x0,
+  TouchDown = 0x1,
+  TouchUp = 0x2,
+};
+
+</code></pre></div><h3 id="hbui-gestureeventdata-eventtype"><a href="#hbui-gestureeventdata-eventtype" class="header-anchor">#</a> <code>hbui::GestureEventData::EventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace hbui::GestureEventData::EventType;
+
+</code></pre></div><h3 id="hbui-gesturerecognizerbase-gesturerecognizerstate"><a href="#hbui-gesturerecognizerbase-gesturerecognizerstate" class="header-anchor">#</a> <code>hbui::GestureRecognizerBase::GestureRecognizerState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum hbui::GestureRecognizerBase::GestureRecognizerState : __int32
+{
+  Possible = 0x0,
+  Began = 0x1,
+  CanceledOrDone = 0x2,
+  Recognized = 0x3,
+  RecognizedAndStillRecognizing = 0x4,
+};
+
+</code></pre></div><h3 id="hbui-webapibutton"><a href="#hbui-webapibutton" class="header-anchor">#</a> <code>hbui::WebApiButton</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum hbui::WebApiButton : __int8
+{
+  A_BUTTON = 0x0,
+  B_BUTTON = 0x1,
+  X_BUTTON = 0x2,
+  Y_BUTTON = 0x3,
+  DPAD_UP = 0xC,
+  DPAD_DOWN = 0xD,
+  DPAD_LEFT = 0xE,
+  DPAD_RIGHT = 0xF,
+  LEFT_STICK = 0xA,
+  RIGHT_STICK = 0xB,
+  LEFT_SHOULDER = 0x4,
+  RIGHT_SOULDER = 0x5,
+  BACK_BUTTON = 0x8,
+  START_BUTTON = 0x9,
+  HEADSET_TAP = 0x10,
+  GENERIC_BUTTON_1 = 0x11,
+  GENERIC_BUTTON_2 = 0x12,
+  GENERIC_BUTTON_3 = 0x13,
+  GENERIC_BUTTON_4 = 0x14,
+  GENERIC_BUTTON_5 = 0x15,
+  GENERIC_BUTTON_6 = 0x16,
+  GENERIC_BUTTON_7 = 0x17,
+  GENERIC_BUTTON_8 = 0x18,
+  GENERIC_BUTTON_9 = 0x19,
+  GENERIC_BUTTON_10 = 0x1A,
+  GENERIC_BUTTON_11 = 0x1B,
+  GENERIC_BUTTON_12 = 0x1C,
+  GENERIC_BUTTON_13 = 0x1D,
+  GENERIC_BUTTON_14 = 0x1E,
+  GENERIC_BUTTON_15 = 0x1F,
+};
+
+</code></pre></div><h3 id="hbui-gamepadbuttonstate"><a href="#hbui-gamepadbuttonstate" class="header-anchor">#</a> <code>hbui::GamepadButtonState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef GameControllerButtonState hbui::GamepadButtonState;
+
+</code></pre></div><h3 id="hostoptionstates"><a href="#hostoptionstates" class="header-anchor">#</a> <code>HostOptionStates</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation HostOptionStates;
+
+</code></pre></div><h3 id="handlerangeresult"><a href="#handlerangeresult" class="header-anchor">#</a> <code>HandleRangeResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ButtonHandleResult HandleRangeResult;
+
+</code></pre></div><h3 id="horseflags"><a href="#horseflags" class="header-anchor">#</a> <code>HorseFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HorseFlags : __int32
+{
+  FLAG_SADDLE = 0x4,
+  FLAG_BRED = 0x10,
+  FLAG_EATING = 0x20,
+  FLAG_STANDING = 0x40,
+  FLAG_OPEN_MOUTH = 0x80,
+};
+
+</code></pre></div><h3 id="horsetype"><a href="#horsetype" class="header-anchor">#</a> <code>HorseType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HorseType : __int32
+{
+  TYPE_UNSET = 0xFFFFFFFF,
+  TYPE_HORSE = 0x0,
+  TYPE_DONKEY = 0x1,
+  TYPE_MULE = 0x2,
+  TYPE_UNDEAD = 0x3,
+  TYPE_SKELETON = 0x4,
+  TYPE_COUNT = 0x5,
+};
+
+</code></pre></div><h3 id="horsevariant"><a href="#horsevariant" class="header-anchor">#</a> <code>HorseVariant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HorseVariant : __int32
+{
+  VARIANT_WHITE = 0x0,
+  VARIANT_CREAMY = 0x1,
+  VARIANT_CHESTNUT = 0x2,
+  VARIANT_BROWN = 0x3,
+  VARIANT_BLACK = 0x4,
+  VARIANT_GRAY = 0x5,
+  VARIANT_DARKBROWN = 0x6,
+  VARIANT_COUNT = 0x7,
+};
+
+</code></pre></div><h3 id="horsemarkings"><a href="#horsemarkings" class="header-anchor">#</a> <code>HorseMarkings</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HorseMarkings : __int32
+{
+  MARKING_NONE = 0x0,
+  MARKING_WHITE_DETAILS = 0x1,
+  MARKING_WHITE_FIELDS = 0x2,
+  MARKING_WHITE_DOTS = 0x3,
+  MARKING_BLACK_DOTS = 0x4,
+  MARKING_COUNT = 0x5,
+};
+
+</code></pre></div><h3 id="hatchlevel"><a href="#hatchlevel" class="header-anchor">#</a> <code>HatchLevel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType HatchLevel;
+
+</code></pre></div><h3 id="hurtbytype"><a href="#hurtbytype" class="header-anchor">#</a> <code>HurtByType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Direction::Type HurtByType;
+
+</code></pre></div><h3 id="horseinventoryenum"><a href="#horseinventoryenum" class="header-anchor">#</a> <code>HorseInventoryEnum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HorseInventoryEnum : __int32
+{
+  INV_SLOT_SADDLE = 0x0,
+  INV_SLOT_ARMOR = 0x1,
+  INV_BASE_COUNT = 0x2,
+};
+
+</code></pre></div><h3 id="horseids"><a href="#horseids" class="header-anchor">#</a> <code>HorseIds</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum HorseIds : __int32
+{
+  DATA_ID_HORSE_FLAGS = 0x10,
+  DATA_ID_TYPE = 0x13,
+  DATA_ID_TYPE_VARIANT = 0x14,
+  DATA_ID_OWNER_UUID = 0x15,
+};
+
+</code></pre></div><h3 id="horsetabindex"><a href="#horsetabindex" class="header-anchor">#</a> <code>HorseTabIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation HorseTabIndex;
+
+</code></pre></div><h3 id="harvestfarmblockgoal-task"><a href="#harvestfarmblockgoal-task" class="header-anchor">#</a> <code>HarvestFarmBlockGoal::Task</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent HarvestFarmBlockGoal::Task;
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/G.html" class="prev">
+        G
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/I.html">
+        I
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/70.1ea3abef.js" defer></script>
+  </body>
+</html>

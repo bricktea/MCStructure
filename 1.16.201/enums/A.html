@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>A | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/60.5c5afc8c.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" aria-current="page" class="active sidebar-link">A</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="a"><a href="#a" class="header-anchor">#</a> A</h1> <h3 id="armorslot"><a href="#armorslot" class="header-anchor">#</a> <code>ArmorSlot</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Feet</td> <td><code>0</code></td></tr> <tr><td>Body</td> <td><code>1</code></td></tr> <tr><td>WeaponAttachPoint</td> <td><code>2</code></td></tr> <tr><td>Head</td> <td><code>3</code></td></tr> <tr><td>DropAttachPoint</td> <td><code>4</code></td></tr> <tr><td>ExplosionPoint</td> <td><code>5</code></td></tr> <tr><td>Eyes</td> <td><code>6</code></td></tr> <tr><td>BreathingPoint</td> <td><code>7</code></td></tr> <tr><td>Mouth</td> <td><code>8</code></td></tr></tbody></table> <h3 id="activedirectoryaction"><a href="#activedirectoryaction" class="header-anchor">#</a> <code>ActiveDirectoryAction</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>DismissAndStartGame</td> <td><code>1</code></td></tr> <tr><td>DismissAndExitGame</td> <td><code>2</code></td></tr> <tr><td>DismissAndDisplayDemoChoice</td> <td><code>3</code></td></tr></tbody></table> <h3 id="actordamagecause"><a href="#actordamagecause" class="header-anchor">#</a> <code>ActorDamageCause</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="actortype"><a href="#actortype" class="header-anchor">#</a> <code>ActorType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="actorfiltergroup-processing"><a href="#actorfiltergroup-processing" class="header-anchor">#</a> <code>ActorFilterGroup::Processing</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="af-dimension"><a href="#af-dimension" class="header-anchor">#</a> <code>AF_Dimension_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AF_DIMENSION_HORZ</td> <td><code>0</code></td></tr> <tr><td>AF_DIMENSION_VERT</td> <td><code>1</code></td></tr> <tr><td>AF_DIMENSION_MAX</td> <td><code>2</code></td></tr></tbody></table> <h3 id="af-style"><a href="#af-style" class="header-anchor">#</a> <code>AF_Style_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AF_STYLE_ADLM_DFLT</td> <td><code>0</code></td></tr> <tr><td>AF_STYLE_ARAB_DFLT</td> <td><code>1</code></td></tr> <tr><td>AF_STYLE_ARMN_DFLT</td> <td><code>2</code></td></tr> <tr><td>AF_STYLE_AVST_DFLT</td> <td><code>3</code></td></tr> <tr><td>AF_STYLE_BAMU_DFLT</td> <td><code>4</code></td></tr> <tr><td>AF_STYLE_BENG_DFLT</td> <td><code>5</code></td></tr> <tr><td>AF_STYLE_BUHD_DFLT</td> <td><code>6</code></td></tr> <tr><td>AF_STYLE_CAKM_DFLT</td> <td><code>7</code></td></tr> <tr><td>AF_STYLE_CANS_DFLT</td> <td><code>8</code></td></tr> <tr><td>AF_STYLE_CARI_DFLT</td> <td><code>9</code></td></tr> <tr><td>AF_STYLE_CHER_DFLT</td> <td><code>10</code></td></tr> <tr><td>AF_STYLE_COPT_DFLT</td> <td><code>11</code></td></tr> <tr><td>AF_STYLE_CPRT_DFLT</td> <td><code>12</code></td></tr> <tr><td>AF_STYLE_CYRL_C2CP</td> <td><code>13</code></td></tr> <tr><td>AF_STYLE_CYRL_C2SC</td> <td><code>14</code></td></tr> <tr><td>AF_STYLE_CYRL_ORDN</td> <td><code>15</code></td></tr> <tr><td>AF_STYLE_CYRL_PCAP</td> <td><code>16</code></td></tr> <tr><td>AF_STYLE_CYRL_SINF</td> <td><code>17</code></td></tr> <tr><td>AF_STYLE_CYRL_SMCP</td> <td><code>18</code></td></tr> <tr><td>AF_STYLE_CYRL_SUBS</td> <td><code>19</code></td></tr> <tr><td>AF_STYLE_CYRL_SUPS</td> <td><code>20</code></td></tr> <tr><td>AF_STYLE_CYRL_TITL</td> <td><code>21</code></td></tr> <tr><td>AF_STYLE_CYRL_DFLT</td> <td><code>22</code></td></tr> <tr><td>AF_STYLE_DEVA_DFLT</td> <td><code>23</code></td></tr> <tr><td>AF_STYLE_DSRT_DFLT</td> <td><code>24</code></td></tr> <tr><td>AF_STYLE_ETHI_DFLT</td> <td><code>25</code></td></tr> <tr><td>AF_STYLE_GEOR_DFLT</td> <td><code>26</code></td></tr> <tr><td>AF_STYLE_GEOK_DFLT</td> <td><code>27</code></td></tr> <tr><td>AF_STYLE_GLAG_DFLT</td> <td><code>28</code></td></tr> <tr><td>AF_STYLE_GOTH_DFLT</td> <td><code>29</code></td></tr> <tr><td>AF_STYLE_GREK_C2CP</td> <td><code>30</code></td></tr> <tr><td>AF_STYLE_GREK_C2SC</td> <td><code>31</code></td></tr> <tr><td>AF_STYLE_GREK_ORDN</td> <td><code>32</code></td></tr> <tr><td>AF_STYLE_GREK_PCAP</td> <td><code>33</code></td></tr> <tr><td>AF_STYLE_GREK_SINF</td> <td><code>34</code></td></tr> <tr><td>AF_STYLE_GREK_SMCP</td> <td><code>35</code></td></tr> <tr><td>AF_STYLE_GREK_SUBS</td> <td><code>36</code></td></tr> <tr><td>AF_STYLE_GREK_SUPS</td> <td><code>37</code></td></tr> <tr><td>AF_STYLE_GREK_TITL</td> <td><code>38</code></td></tr> <tr><td>AF_STYLE_GREK_DFLT</td> <td><code>39</code></td></tr> <tr><td>AF_STYLE_GUJR_DFLT</td> <td><code>40</code></td></tr> <tr><td>AF_STYLE_GURU_DFLT</td> <td><code>41</code></td></tr> <tr><td>AF_STYLE_HEBR_DFLT</td> <td><code>42</code></td></tr> <tr><td>AF_STYLE_KALI_DFLT</td> <td><code>43</code></td></tr> <tr><td>AF_STYLE_KHMR_DFLT</td> <td><code>44</code></td></tr> <tr><td>AF_STYLE_KHMS_DFLT</td> <td><code>45</code></td></tr> <tr><td>AF_STYLE_KNDA_DFLT</td> <td><code>46</code></td></tr> <tr><td>AF_STYLE_LAO_DFLT</td> <td><code>47</code></td></tr> <tr><td>AF_STYLE_LATN_C2CP</td> <td><code>48</code></td></tr> <tr><td>AF_STYLE_LATN_C2SC</td> <td><code>49</code></td></tr> <tr><td>AF_STYLE_LATN_ORDN</td> <td><code>50</code></td></tr> <tr><td>AF_STYLE_LATN_PCAP</td> <td><code>51</code></td></tr> <tr><td>AF_STYLE_LATN_SINF</td> <td><code>52</code></td></tr> <tr><td>AF_STYLE_LATN_SMCP</td> <td><code>53</code></td></tr> <tr><td>AF_STYLE_LATN_SUBS</td> <td><code>54</code></td></tr> <tr><td>AF_STYLE_LATN_SUPS</td> <td><code>55</code></td></tr> <tr><td>AF_STYLE_LATN_TITL</td> <td><code>56</code></td></tr> <tr><td>AF_STYLE_LATN_DFLT</td> <td><code>57</code></td></tr> <tr><td>AF_STYLE_LATB_DFLT</td> <td><code>58</code></td></tr> <tr><td>AF_STYLE_LATP_DFLT</td> <td><code>59</code></td></tr> <tr><td>AF_STYLE_LISU_DFLT</td> <td><code>60</code></td></tr> <tr><td>AF_STYLE_MLYM_DFLT</td> <td><code>61</code></td></tr> <tr><td>AF_STYLE_MONG_DFLT</td> <td><code>62</code></td></tr> <tr><td>AF_STYLE_MYMR_DFLT</td> <td><code>63</code></td></tr> <tr><td>AF_STYLE_NKOO_DFLT</td> <td><code>64</code></td></tr> <tr><td>AF_STYLE_NONE_DFLT</td> <td><code>65</code></td></tr> <tr><td>AF_STYLE_OLCK_DFLT</td> <td><code>66</code></td></tr> <tr><td>AF_STYLE_ORKH_DFLT</td> <td><code>67</code></td></tr> <tr><td>AF_STYLE_OSGE_DFLT</td> <td><code>68</code></td></tr> <tr><td>AF_STYLE_OSMA_DFLT</td> <td><code>69</code></td></tr> <tr><td>AF_STYLE_SAUR_DFLT</td> <td><code>70</code></td></tr> <tr><td>AF_STYLE_SHAW_DFLT</td> <td><code>71</code></td></tr> <tr><td>AF_STYLE_SINH_DFLT</td> <td><code>72</code></td></tr> <tr><td>AF_STYLE_SUND_DFLT</td> <td><code>73</code></td></tr> <tr><td>AF_STYLE_TAML_DFLT</td> <td><code>74</code></td></tr> <tr><td>AF_STYLE_TAVT_DFLT</td> <td><code>75</code></td></tr> <tr><td>AF_STYLE_TELU_DFLT</td> <td><code>76</code></td></tr> <tr><td>AF_STYLE_TFNG_DFLT</td> <td><code>77</code></td></tr> <tr><td>AF_STYLE_THAI_DFLT</td> <td><code>78</code></td></tr> <tr><td>AF_STYLE_VAII_DFLT</td> <td><code>79</code></td></tr> <tr><td>AF_STYLE_LIMB_DFLT</td> <td><code>80</code></td></tr> <tr><td>AF_STYLE_ORYA_DFLT</td> <td><code>81</code></td></tr> <tr><td>AF_STYLE_SYLO_DFLT</td> <td><code>82</code></td></tr> <tr><td>AF_STYLE_TIBT_DFLT</td> <td><code>83</code></td></tr> <tr><td>AF_STYLE_HANI_DFLT</td> <td><code>84</code></td></tr> <tr><td>AF_STYLE_MAX</td> <td><code>85</code></td></tr></tbody></table> <h3 id="af-writingsystem"><a href="#af-writingsystem" class="header-anchor">#</a> <code>AF_WritingSystem_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AF_WRITING_SYSTEM_DUMMY</td> <td><code>0</code></td></tr> <tr><td>AF_WRITING_SYSTEM_LATIN</td> <td><code>1</code></td></tr> <tr><td>AF_WRITING_SYSTEM_CJK</td> <td><code>2</code></td></tr> <tr><td>AF_WRITING_SYSTEM_INDIC</td> <td><code>3</code></td></tr> <tr><td>AF_WRITING_SYSTEM_MAX</td> <td><code>4</code></td></tr></tbody></table> <h3 id="af-script"><a href="#af-script" class="header-anchor">#</a> <code>AF_Script_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AF_SCRIPT_ADLM</td> <td><code>0</code></td></tr> <tr><td>AF_SCRIPT_ARAB</td> <td><code>1</code></td></tr> <tr><td>AF_SCRIPT_ARMN</td> <td><code>2</code></td></tr> <tr><td>AF_SCRIPT_AVST</td> <td><code>3</code></td></tr> <tr><td>AF_SCRIPT_BAMU</td> <td><code>4</code></td></tr> <tr><td>AF_SCRIPT_BENG</td> <td><code>5</code></td></tr> <tr><td>AF_SCRIPT_BUHD</td> <td><code>6</code></td></tr> <tr><td>AF_SCRIPT_CAKM</td> <td><code>7</code></td></tr> <tr><td>AF_SCRIPT_CANS</td> <td><code>8</code></td></tr> <tr><td>AF_SCRIPT_CARI</td> <td><code>9</code></td></tr> <tr><td>AF_SCRIPT_CHER</td> <td><code>10</code></td></tr> <tr><td>AF_SCRIPT_COPT</td> <td><code>11</code></td></tr> <tr><td>AF_SCRIPT_CPRT</td> <td><code>12</code></td></tr> <tr><td>AF_SCRIPT_CYRL</td> <td><code>13</code></td></tr> <tr><td>AF_SCRIPT_DEVA</td> <td><code>14</code></td></tr> <tr><td>AF_SCRIPT_DSRT</td> <td><code>15</code></td></tr> <tr><td>AF_SCRIPT_ETHI</td> <td><code>16</code></td></tr> <tr><td>AF_SCRIPT_GEOR</td> <td><code>17</code></td></tr> <tr><td>AF_SCRIPT_GEOK</td> <td><code>18</code></td></tr> <tr><td>AF_SCRIPT_GLAG</td> <td><code>19</code></td></tr> <tr><td>AF_SCRIPT_GOTH</td> <td><code>20</code></td></tr> <tr><td>AF_SCRIPT_GREK</td> <td><code>21</code></td></tr> <tr><td>AF_SCRIPT_GUJR</td> <td><code>22</code></td></tr> <tr><td>AF_SCRIPT_GURU</td> <td><code>23</code></td></tr> <tr><td>AF_SCRIPT_HEBR</td> <td><code>24</code></td></tr> <tr><td>AF_SCRIPT_KALI</td> <td><code>25</code></td></tr> <tr><td>AF_SCRIPT_KHMR</td> <td><code>26</code></td></tr> <tr><td>AF_SCRIPT_KHMS</td> <td><code>27</code></td></tr> <tr><td>AF_SCRIPT_KNDA</td> <td><code>28</code></td></tr> <tr><td>AF_SCRIPT_LAO</td> <td><code>29</code></td></tr> <tr><td>AF_SCRIPT_LATN</td> <td><code>30</code></td></tr> <tr><td>AF_SCRIPT_LATB</td> <td><code>31</code></td></tr> <tr><td>AF_SCRIPT_LATP</td> <td><code>32</code></td></tr> <tr><td>AF_SCRIPT_LISU</td> <td><code>33</code></td></tr> <tr><td>AF_SCRIPT_MLYM</td> <td><code>34</code></td></tr> <tr><td>AF_SCRIPT_MONG</td> <td><code>35</code></td></tr> <tr><td>AF_SCRIPT_MYMR</td> <td><code>36</code></td></tr> <tr><td>AF_SCRIPT_NKOO</td> <td><code>37</code></td></tr> <tr><td>AF_SCRIPT_NONE</td> <td><code>38</code></td></tr> <tr><td>AF_SCRIPT_OLCK</td> <td><code>39</code></td></tr> <tr><td>AF_SCRIPT_ORKH</td> <td><code>40</code></td></tr> <tr><td>AF_SCRIPT_OSGE</td> <td><code>41</code></td></tr> <tr><td>AF_SCRIPT_OSMA</td> <td><code>42</code></td></tr> <tr><td>AF_SCRIPT_SAUR</td> <td><code>43</code></td></tr> <tr><td>AF_SCRIPT_SHAW</td> <td><code>44</code></td></tr> <tr><td>AF_SCRIPT_SINH</td> <td><code>45</code></td></tr> <tr><td>AF_SCRIPT_SUND</td> <td><code>46</code></td></tr> <tr><td>AF_SCRIPT_TAML</td> <td><code>47</code></td></tr> <tr><td>AF_SCRIPT_TAVT</td> <td><code>48</code></td></tr> <tr><td>AF_SCRIPT_TELU</td> <td><code>49</code></td></tr> <tr><td>AF_SCRIPT_TFNG</td> <td><code>50</code></td></tr> <tr><td>AF_SCRIPT_THAI</td> <td><code>51</code></td></tr> <tr><td>AF_SCRIPT_VAII</td> <td><code>52</code></td></tr> <tr><td>AF_SCRIPT_LIMB</td> <td><code>53</code></td></tr> <tr><td>AF_SCRIPT_ORYA</td> <td><code>54</code></td></tr> <tr><td>AF_SCRIPT_SYLO</td> <td><code>55</code></td></tr> <tr><td>AF_SCRIPT_TIBT</td> <td><code>56</code></td></tr> <tr><td>AF_SCRIPT_HANI</td> <td><code>57</code></td></tr> <tr><td>AF_SCRIPT_MAX</td> <td><code>58</code></td></tr></tbody></table> <h3 id="af-blue-stringset"><a href="#af-blue-stringset" class="header-anchor">#</a> <code>AF_Blue_Stringset_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AF_BLUE_STRINGSET_ADLM</td> <td><code>0</code></td></tr> <tr><td>AF_BLUE_STRINGSET_ARAB</td> <td><code>5</code></td></tr> <tr><td>AF_BLUE_STRINGSET_ARMN</td> <td><code>9</code></td></tr> <tr><td>AF_BLUE_STRINGSET_AVST</td> <td><code>16</code></td></tr> <tr><td>AF_BLUE_STRINGSET_BAMU</td> <td><code>19</code></td></tr> <tr><td>AF_BLUE_STRINGSET_BENG</td> <td><code>22</code></td></tr> <tr><td>AF_BLUE_STRINGSET_BUHD</td> <td><code>27</code></td></tr> <tr><td>AF_BLUE_STRINGSET_CAKM</td> <td><code>32</code></td></tr> <tr><td>AF_BLUE_STRINGSET_CANS</td> <td><code>36</code></td></tr> <tr><td>AF_BLUE_STRINGSET_CARI</td> <td><code>43</code></td></tr> <tr><td>AF_BLUE_STRINGSET_CHER</td> <td><code>46</code></td></tr> <tr><td>AF_BLUE_STRINGSET_COPT</td> <td><code>53</code></td></tr> <tr><td>AF_BLUE_STRINGSET_CPRT</td> <td><code>58</code></td></tr> <tr><td>AF_BLUE_STRINGSET_CYRL</td> <td><code>63</code></td></tr> <tr><td>AF_BLUE_STRINGSET_DEVA</td> <td><code>69</code></td></tr> <tr><td>AF_BLUE_STRINGSET_DSRT</td> <td><code>75</code></td></tr> <tr><td>AF_BLUE_STRINGSET_ETHI</td> <td><code>80</code></td></tr> <tr><td>AF_BLUE_STRINGSET_GEOR</td> <td><code>83</code></td></tr> <tr><td>AF_BLUE_STRINGSET_GEOK</td> <td><code>90</code></td></tr> <tr><td>AF_BLUE_STRINGSET_GLAG</td> <td><code>97</code></td></tr> <tr><td>AF_BLUE_STRINGSET_GOTH</td> <td><code>102</code></td></tr> <tr><td>AF_BLUE_STRINGSET_GREK</td> <td><code>105</code></td></tr> <tr><td>AF_BLUE_STRINGSET_GUJR</td> <td><code>112</code></td></tr> <tr><td>AF_BLUE_STRINGSET_GURU</td> <td><code>118</code></td></tr> <tr><td>AF_BLUE_STRINGSET_HEBR</td> <td><code>124</code></td></tr> <tr><td>AF_BLUE_STRINGSET_KALI</td> <td><code>128</code></td></tr> <tr><td>AF_BLUE_STRINGSET_KHMR</td> <td><code>134</code></td></tr> <tr><td>AF_BLUE_STRINGSET_KHMS</td> <td><code>140</code></td></tr> <tr><td>AF_BLUE_STRINGSET_KNDA</td> <td><code>143</code></td></tr> <tr><td>AF_BLUE_STRINGSET_LAO</td> <td><code>146</code></td></tr> <tr><td>AF_BLUE_STRINGSET_LATN</td> <td><code>152</code></td></tr> <tr><td>AF_BLUE_STRINGSET_LATB</td> <td><code>159</code></td></tr> <tr><td>AF_BLUE_STRINGSET_LATP</td> <td><code>166</code></td></tr> <tr><td>AF_BLUE_STRINGSET_LISU</td> <td><code>173</code></td></tr> <tr><td>AF_BLUE_STRINGSET_MLYM</td> <td><code>176</code></td></tr> <tr><td>AF_BLUE_STRINGSET_MONG</td> <td><code>179</code></td></tr> <tr><td>AF_BLUE_STRINGSET_MYMR</td> <td><code>182</code></td></tr> <tr><td>AF_BLUE_STRINGSET_NKOO</td> <td><code>187</code></td></tr> <tr><td>AF_BLUE_STRINGSET_NONE</td> <td><code>192</code></td></tr> <tr><td>AF_BLUE_STRINGSET_OLCK</td> <td><code>193</code></td></tr> <tr><td>AF_BLUE_STRINGSET_ORKH</td> <td><code>196</code></td></tr> <tr><td>AF_BLUE_STRINGSET_OSGE</td> <td><code>199</code></td></tr> <tr><td>AF_BLUE_STRINGSET_OSMA</td> <td><code>207</code></td></tr> <tr><td>AF_BLUE_STRINGSET_SAUR</td> <td><code>210</code></td></tr> <tr><td>AF_BLUE_STRINGSET_SHAW</td> <td><code>213</code></td></tr> <tr><td>AF_BLUE_STRINGSET_SINH</td> <td><code>219</code></td></tr> <tr><td>AF_BLUE_STRINGSET_SUND</td> <td><code>223</code></td></tr> <tr><td>AF_BLUE_STRINGSET_TAML</td> <td><code>227</code></td></tr> <tr><td>AF_BLUE_STRINGSET_TAVT</td> <td><code>230</code></td></tr> <tr><td>AF_BLUE_STRINGSET_TELU</td> <td><code>233</code></td></tr> <tr><td>AF_BLUE_STRINGSET_TFNG</td> <td><code>236</code></td></tr> <tr><td>AF_BLUE_STRINGSET_THAI</td> <td><code>239</code></td></tr> <tr><td>AF_BLUE_STRINGSET_VAII</td> <td><code>247</code></td></tr> <tr><td>af_blue_2_1</td> <td><code>250</code></td></tr> <tr><td>AF_BLUE_STRINGSET_HANI</td> <td><code>250</code></td></tr> <tr><td>af_blue_2_1_1</td> <td><code>252</code></td></tr> <tr><td>af_blue_2_1_2</td> <td><code>252</code></td></tr> <tr><td>af_blue_2_2</td> <td><code>253</code></td></tr> <tr><td>AF_BLUE_STRINGSET_MAX</td> <td><code>254</code></td></tr></tbody></table> <h3 id="af-coverage"><a href="#af-coverage" class="header-anchor">#</a> <code>AF_Coverage_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AF_COVERAGE_PETITE_CAPITALS_FROM_CAPITALS</td> <td><code>0</code></td></tr> <tr><td>AF_COVERAGE_SMALL_CAPITALS_FROM_CAPITALS</td> <td><code>1</code></td></tr> <tr><td>AF_COVERAGE_ORDINALS</td> <td><code>2</code></td></tr> <tr><td>AF_COVERAGE_PETITE_CAPITALS</td> <td><code>3</code></td></tr> <tr><td>AF_COVERAGE_RUBY</td> <td><code>4</code></td></tr> <tr><td>AF_COVERAGE_SCIENTIFIC_INFERIORS</td> <td><code>5</code></td></tr> <tr><td>AF_COVERAGE_SMALL_CAPITALS</td> <td><code>6</code></td></tr> <tr><td>AF_COVERAGE_SUBSCRIPT</td> <td><code>7</code></td></tr> <tr><td>AF_COVERAGE_SUPERSCRIPT</td> <td><code>8</code></td></tr> <tr><td>AF_COVERAGE_TITLING</td> <td><code>9</code></td></tr> <tr><td>AF_COVERAGE_DEFAULT</td> <td><code>10</code></td></tr></tbody></table> <h3 id="af-blue-string"><a href="#af-blue-string" class="header-anchor">#</a> <code>AF_Blue_String_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AF_BLUE_STRING_ADLAM_CAPITAL_TOP</td> <td><code>0</code></td></tr> <tr><td>AF_BLUE_STRING_ADLAM_CAPITAL_BOTTOM</td> <td><code>30</code></td></tr> <tr><td>AF_BLUE_STRING_ADLAM_SMALL_TOP</td> <td><code>40</code></td></tr> <tr><td>AF_BLUE_STRING_ADLAM_SMALL_BOTTOM</td> <td><code>65</code></td></tr> <tr><td>AF_BLUE_STRING_ARABIC_TOP</td> <td><code>105</code></td></tr> <tr><td>AF_BLUE_STRING_ARABIC_BOTTOM</td> <td><code>123</code></td></tr> <tr><td>AF_BLUE_STRING_ARABIC_JOIN</td> <td><code>138</code></td></tr> <tr><td>AF_BLUE_STRING_ARMENIAN_CAPITAL_TOP</td> <td><code>141</code></td></tr> <tr><td>AF_BLUE_STRING_ARMENIAN_CAPITAL_BOTTOM</td> <td><code>165</code></td></tr> <tr><td>AF_BLUE_STRING_ARMENIAN_SMALL_ASCENDER</td> <td><code>189</code></td></tr> <tr><td>AF_BLUE_STRING_ARMENIAN_SMALL_TOP</td> <td><code>210</code></td></tr> <tr><td>AF_BLUE_STRING_ARMENIAN_SMALL_BOTTOM</td> <td><code>234</code></td></tr> <tr><td>AF_BLUE_STRING_ARMENIAN_SMALL_DESCENDER</td> <td><code>258</code></td></tr> <tr><td>AF_BLUE_STRING_AVESTAN_TOP</td> <td><code>282</code></td></tr> <tr><td>AF_BLUE_STRING_AVESTAN_BOTTOM</td> <td><code>302</code></td></tr> <tr><td>AF_BLUE_STRING_BAMUM_TOP</td> <td><code>312</code></td></tr> <tr><td>AF_BLUE_STRING_BAMUM_BOTTOM</td> <td><code>344</code></td></tr> <tr><td>AF_BLUE_STRING_BENGALI_BASE</td> <td><code>376</code></td></tr> <tr><td>AF_BLUE_STRING_BENGALI_TOP</td> <td><code>408</code></td></tr> <tr><td>AF_BLUE_STRING_BENGALI_HEAD</td> <td><code>436</code></td></tr> <tr><td>AF_BLUE_STRING_BUHID_TOP</td> <td><code>468</code></td></tr> <tr><td>AF_BLUE_STRING_BUHID_LARGE</td> <td><code>476</code></td></tr> <tr><td>AF_BLUE_STRING_BUHID_SMALL</td> <td><code>488</code></td></tr> <tr><td>AF_BLUE_STRING_BUHID_BOTTOM</td> <td><code>504</code></td></tr> <tr><td>AF_BLUE_STRING_CANADIAN_SYLLABICS_TOP</td> <td><code>532</code></td></tr> <tr><td>AF_BLUE_STRING_CANADIAN_SYLLABICS_BOTTOM</td> <td><code>564</code></td></tr> <tr><td>AF_BLUE_STRING_CANADIAN_SYLLABICS_SMALL_TOP</td> <td><code>596</code></td></tr> <tr><td>AF_BLUE_STRING_CANADIAN_SYLLABICS_SMALL_BOTTOM</td> <td><code>628</code></td></tr> <tr><td>AF_BLUE_STRING_CANADIAN_SYLLABICS_SUPS_TOP</td> <td><code>660</code></td></tr> <tr><td>AF_BLUE_STRING_CANADIAN_SYLLABICS_SUPS_BOTTOM</td> <td><code>688</code></td></tr> <tr><td>AF_BLUE_STRING_CARIAN_TOP</td> <td><code>720</code></td></tr> <tr><td>AF_BLUE_STRING_CARIAN_BOTTOM</td> <td><code>760</code></td></tr> <tr><td>AF_BLUE_STRING_CHAKMA_TOP</td> <td><code>795</code></td></tr> <tr><td>AF_BLUE_STRING_CHAKMA_BOTTOM</td> <td><code>820</code></td></tr> <tr><td>AF_BLUE_STRING_CHAKMA_DESCENDER</td> <td><code>845</code></td></tr> <tr><td>AF_BLUE_STRING_CHEROKEE_CAPITAL</td> <td><code>910</code></td></tr> <tr><td>AF_BLUE_STRING_CHEROKEE_SMALL_ASCENDER</td> <td><code>942</code></td></tr> <tr><td>AF_BLUE_STRING_CHEROKEE_SMALL</td> <td><code>974</code></td></tr> <tr><td>AF_BLUE_STRING_CHEROKEE_SMALL_DESCENDER</td> <td><code>1006</code></td></tr> <tr><td>AF_BLUE_STRING_COPTIC_CAPITAL_TOP</td> <td><code>1022</code></td></tr> <tr><td>AF_BLUE_STRING_COPTIC_CAPITAL_BOTTOM</td> <td><code>1054</code></td></tr> <tr><td>AF_BLUE_STRING_COPTIC_SMALL_TOP</td> <td><code>1086</code></td></tr> <tr><td>AF_BLUE_STRING_COPTIC_SMALL_BOTTOM</td> <td><code>1118</code></td></tr> <tr><td>AF_BLUE_STRING_CYPRIOT_TOP</td> <td><code>1150</code></td></tr> <tr><td>AF_BLUE_STRING_CYPRIOT_BOTTOM</td> <td><code>1190</code></td></tr> <tr><td>AF_BLUE_STRING_CYPRIOT_SMALL</td> <td><code>1225</code></td></tr> <tr><td>AF_BLUE_STRING_CYRILLIC_CAPITAL_TOP</td> <td><code>1240</code></td></tr> <tr><td>AF_BLUE_STRING_CYRILLIC_CAPITAL_BOTTOM</td> <td><code>1264</code></td></tr> <tr><td>AF_BLUE_STRING_CYRILLIC_SMALL</td> <td><code>1288</code></td></tr> <tr><td>AF_BLUE_STRING_CYRILLIC_SMALL_DESCENDER</td> <td><code>1312</code></td></tr> <tr><td>AF_BLUE_STRING_DESERET_CAPITAL_TOP</td> <td><code>1321</code></td></tr> <tr><td>AF_BLUE_STRING_DESERET_CAPITAL_BOTTOM</td> <td><code>1346</code></td></tr> <tr><td>AF_BLUE_STRING_DESERET_SMALL_TOP</td> <td><code>1371</code></td></tr> <tr><td>AF_BLUE_STRING_DESERET_SMALL_BOTTOM</td> <td><code>1396</code></td></tr> <tr><td>AF_BLUE_STRING_DEVANAGARI_BASE</td> <td><code>1421</code></td></tr> <tr><td>AF_BLUE_STRING_DEVANAGARI_TOP</td> <td><code>1453</code></td></tr> <tr><td>AF_BLUE_STRING_DEVANAGARI_HEAD</td> <td><code>1485</code></td></tr> <tr><td>AF_BLUE_STRING_DEVANAGARI_BOTTOM</td> <td><code>1517</code></td></tr> <tr><td>AF_BLUE_STRING_ETHIOPIC_TOP</td> <td><code>1525</code></td></tr> <tr><td>AF_BLUE_STRING_ETHIOPIC_BOTTOM</td> <td><code>1557</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_MKHEDRULI_TOP</td> <td><code>1589</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_MKHEDRULI_BOTTOM</td> <td><code>1621</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_MKHEDRULI_ASCENDER</td> <td><code>1653</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_MKHEDRULI_DESCENDER</td> <td><code>1685</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_ASOMTAVRULI_TOP</td> <td><code>1717</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_ASOMTAVRULI_BOTTOM</td> <td><code>1749</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_NUSKHURI_TOP</td> <td><code>1781</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_NUSKHURI_BOTTOM</td> <td><code>1813</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_NUSKHURI_ASCENDER</td> <td><code>1845</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_NUSKHURI_DESCENDER</td> <td><code>1877</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_MTAVRULI_TOP</td> <td><code>1909</code></td></tr> <tr><td>AF_BLUE_STRING_GEORGIAN_MTAVRULI_BOTTOM</td> <td><code>1941</code></td></tr> <tr><td>AF_BLUE_STRING_GLAGOLITIC_CAPITAL_TOP</td> <td><code>1973</code></td></tr> <tr><td>AF_BLUE_STRING_GLAGOLITIC_CAPITAL_BOTTOM</td> <td><code>2005</code></td></tr> <tr><td>AF_BLUE_STRING_GLAGOLITIC_SMALL_TOP</td> <td><code>2037</code></td></tr> <tr><td>AF_BLUE_STRING_GLAGOLITIC_SMALL_BOTTOM</td> <td><code>2069</code></td></tr> <tr><td>AF_BLUE_STRING_GOTHIC_TOP</td> <td><code>2101</code></td></tr> <tr><td>AF_BLUE_STRING_GOTHIC_BOTTOM</td> <td><code>2141</code></td></tr> <tr><td>AF_BLUE_STRING_GREEK_CAPITAL_TOP</td> <td><code>2161</code></td></tr> <tr><td>AF_BLUE_STRING_GREEK_CAPITAL_BOTTOM</td> <td><code>2182</code></td></tr> <tr><td>AF_BLUE_STRING_GREEK_SMALL_BETA_TOP</td> <td><code>2200</code></td></tr> <tr><td>AF_BLUE_STRING_GREEK_SMALL</td> <td><code>2218</code></td></tr> <tr><td>AF_BLUE_STRING_GREEK_SMALL_DESCENDER</td> <td><code>2242</code></td></tr> <tr><td>AF_BLUE_STRING_GUJARATI_TOP</td> <td><code>2266</code></td></tr> <tr><td>AF_BLUE_STRING_GUJARATI_BOTTOM</td> <td><code>2298</code></td></tr> <tr><td>AF_BLUE_STRING_GUJARATI_ASCENDER</td> <td><code>2330</code></td></tr> <tr><td>AF_BLUE_STRING_GUJARATI_DESCENDER</td> <td><code>2380</code></td></tr> <tr><td>AF_BLUE_STRING_GUJARATI_DIGIT_TOP</td> <td><code>2413</code></td></tr> <tr><td>AF_BLUE_STRING_GURMUKHI_BASE</td> <td><code>2433</code></td></tr> <tr><td>AF_BLUE_STRING_GURMUKHI_HEAD</td> <td><code>2465</code></td></tr> <tr><td>AF_BLUE_STRING_GURMUKHI_TOP</td> <td><code>2497</code></td></tr> <tr><td>AF_BLUE_STRING_GURMUKHI_BOTTOM</td> <td><code>2529</code></td></tr> <tr><td>AF_BLUE_STRING_GURMUKHI_DIGIT_TOP</td> <td><code>2561</code></td></tr> <tr><td>AF_BLUE_STRING_HEBREW_TOP</td> <td><code>2581</code></td></tr> <tr><td>AF_BLUE_STRING_HEBREW_BOTTOM</td> <td><code>2605</code></td></tr> <tr><td>AF_BLUE_STRING_HEBREW_DESCENDER</td> <td><code>2623</code></td></tr> <tr><td>AF_BLUE_STRING_KANNADA_TOP</td> <td><code>2638</code></td></tr> <tr><td>AF_BLUE_STRING_KANNADA_BOTTOM</td> <td><code>2682</code></td></tr> <tr><td>AF_BLUE_STRING_KAYAH_LI_TOP</td> <td><code>2714</code></td></tr> <tr><td>AF_BLUE_STRING_KAYAH_LI_BOTTOM</td> <td><code>2738</code></td></tr> <tr><td>AF_BLUE_STRING_KAYAH_LI_ASCENDER</td> <td><code>2758</code></td></tr> <tr><td>AF_BLUE_STRING_KAYAH_LI_DESCENDER</td> <td><code>2766</code></td></tr> <tr><td>AF_BLUE_STRING_KAYAH_LI_LARGE_DESCENDER</td> <td><code>2778</code></td></tr> <tr><td>AF_BLUE_STRING_KHMER_TOP</td> <td><code>2799</code></td></tr> <tr><td>AF_BLUE_STRING_KHMER_SUBSCRIPT_TOP</td> <td><code>2823</code></td></tr> <tr><td>AF_BLUE_STRING_KHMER_BOTTOM</td> <td><code>2863</code></td></tr> <tr><td>AF_BLUE_STRING_KHMER_DESCENDER</td> <td><code>2895</code></td></tr> <tr><td>AF_BLUE_STRING_KHMER_LARGE_DESCENDER</td> <td><code>2929</code></td></tr> <tr><td>AF_BLUE_STRING_KHMER_SYMBOLS_WAXING_TOP</td> <td><code>3016</code></td></tr> <tr><td>AF_BLUE_STRING_KHMER_SYMBOLS_WANING_BOTTOM</td> <td><code>3024</code></td></tr> <tr><td>AF_BLUE_STRING_LAO_TOP</td> <td><code>3032</code></td></tr> <tr><td>AF_BLUE_STRING_LAO_BOTTOM</td> <td><code>3064</code></td></tr> <tr><td>AF_BLUE_STRING_LAO_ASCENDER</td> <td><code>3096</code></td></tr> <tr><td>AF_BLUE_STRING_LAO_LARGE_ASCENDER</td> <td><code>3112</code></td></tr> <tr><td>AF_BLUE_STRING_LAO_DESCENDER</td> <td><code>3124</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_CAPITAL_TOP</td> <td><code>3148</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_CAPITAL_BOTTOM</td> <td><code>3164</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SMALL_F_TOP</td> <td><code>3180</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SMALL_TOP</td> <td><code>3194</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SMALL_BOTTOM</td> <td><code>3210</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SMALL_DESCENDER</td> <td><code>3226</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUBS_CAPITAL_TOP</td> <td><code>3236</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUBS_CAPITAL_BOTTOM</td> <td><code>3256</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUBS_SMALL_F_TOP</td> <td><code>3276</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUBS_SMALL</td> <td><code>3296</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUBS_SMALL_DESCENDER</td> <td><code>3332</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUPS_CAPITAL_TOP</td> <td><code>3352</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUPS_CAPITAL_BOTTOM</td> <td><code>3383</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUPS_SMALL_F_TOP</td> <td><code>3412</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUPS_SMALL</td> <td><code>3438</code></td></tr> <tr><td>AF_BLUE_STRING_LATIN_SUPS_SMALL_DESCENDER</td> <td><code>3463</code></td></tr> <tr><td>AF_BLUE_STRING_LISU_TOP</td> <td><code>3474</code></td></tr> <tr><td>AF_BLUE_STRING_LISU_BOTTOM</td> <td><code>3506</code></td></tr> <tr><td>AF_BLUE_STRING_MALAYALAM_TOP</td> <td><code>3538</code></td></tr> <tr><td>AF_BLUE_STRING_MALAYALAM_BOTTOM</td> <td><code>3582</code></td></tr> <tr><td>AF_BLUE_STRING_MONGOLIAN_TOP_BASE</td> <td><code>3614</code></td></tr> <tr><td>AF_BLUE_STRING_MONGOLIAN_BOTTOM_BASE</td> <td><code>3658</code></td></tr> <tr><td>AF_BLUE_STRING_MYANMAR_TOP</td> <td><code>3662</code></td></tr> <tr><td>AF_BLUE_STRING_MYANMAR_BOTTOM</td> <td><code>3694</code></td></tr> <tr><td>AF_BLUE_STRING_MYANMAR_ASCENDER</td> <td><code>3726</code></td></tr> <tr><td>AF_BLUE_STRING_MYANMAR_DESCENDER</td> <td><code>3754</code></td></tr> <tr><td>AF_BLUE_STRING_NKO_TOP</td> <td><code>3786</code></td></tr> <tr><td>AF_BLUE_STRING_NKO_BOTTOM</td> <td><code>3810</code></td></tr> <tr><td>AF_BLUE_STRING_NKO_SMALL_TOP</td> <td><code>3825</code></td></tr> <tr><td>AF_BLUE_STRING_NKO_SMALL_BOTTOM</td> <td><code>3834</code></td></tr> <tr><td>AF_BLUE_STRING_OL_CHIKI</td> <td><code>3846</code></td></tr> <tr><td>AF_BLUE_STRING_OLD_TURKIC_TOP</td> <td><code>3870</code></td></tr> <tr><td>AF_BLUE_STRING_OLD_TURKIC_BOTTOM</td> <td><code>3885</code></td></tr> <tr><td>AF_BLUE_STRING_OSAGE_CAPITAL_TOP</td> <td><code>3905</code></td></tr> <tr><td>AF_BLUE_STRING_OSAGE_CAPITAL_BOTTOM</td> <td><code>3945</code></td></tr> <tr><td>AF_BLUE_STRING_OSAGE_CAPITAL_DESCENDER</td> <td><code>3975</code></td></tr> <tr><td>AF_BLUE_STRING_OSAGE_SMALL_TOP</td> <td><code>3990</code></td></tr> <tr><td>AF_BLUE_STRING_OSAGE_SMALL_BOTTOM</td> <td><code>4030</code></td></tr> <tr><td>AF_BLUE_STRING_OSAGE_SMALL_ASCENDER</td> <td><code>4070</code></td></tr> <tr><td>AF_BLUE_STRING_OSAGE_SMALL_DESCENDER</td> <td><code>4095</code></td></tr> <tr><td>AF_BLUE_STRING_OSMANYA_TOP</td> <td><code>4110</code></td></tr> <tr><td>AF_BLUE_STRING_OSMANYA_BOTTOM</td> <td><code>4150</code></td></tr> <tr><td>AF_BLUE_STRING_SAURASHTRA_TOP</td> <td><code>4190</code></td></tr> <tr><td>AF_BLUE_STRING_SAURASHTRA_BOTTOM</td> <td><code>4222</code></td></tr> <tr><td>AF_BLUE_STRING_SHAVIAN_TOP</td> <td><code>4242</code></td></tr> <tr><td>AF_BLUE_STRING_SHAVIAN_BOTTOM</td> <td><code>4252</code></td></tr> <tr><td>AF_BLUE_STRING_SHAVIAN_DESCENDER</td> <td><code>4277</code></td></tr> <tr><td>AF_BLUE_STRING_SHAVIAN_SMALL_TOP</td> <td><code>4287</code></td></tr> <tr><td>AF_BLUE_STRING_SHAVIAN_SMALL_BOTTOM</td> <td><code>4322</code></td></tr> <tr><td>AF_BLUE_STRING_SINHALA_TOP</td> <td><code>4337</code></td></tr> <tr><td>AF_BLUE_STRING_SINHALA_BOTTOM</td> <td><code>4369</code></td></tr> <tr><td>AF_BLUE_STRING_SINHALA_DESCENDER</td> <td><code>4401</code></td></tr> <tr><td>AF_BLUE_STRING_SUNDANESE_TOP</td> <td><code>4445</code></td></tr> <tr><td>AF_BLUE_STRING_SUNDANESE_BOTTOM</td> <td><code>4469</code></td></tr> <tr><td>AF_BLUE_STRING_SUNDANESE_DESCENDER</td> <td><code>4501</code></td></tr> <tr><td>AF_BLUE_STRING_TAI_VIET_TOP</td> <td><code>4509</code></td></tr> <tr><td>AF_BLUE_STRING_TAI_VIET_BOTTOM</td> <td><code>4529</code></td></tr> <tr><td>AF_BLUE_STRING_TAMIL_TOP</td> <td><code>4541</code></td></tr> <tr><td>AF_BLUE_STRING_TAMIL_BOTTOM</td> <td><code>4573</code></td></tr> <tr><td>AF_BLUE_STRING_TELUGU_TOP</td> <td><code>4605</code></td></tr> <tr><td>AF_BLUE_STRING_TELUGU_BOTTOM</td> <td><code>4633</code></td></tr> <tr><td>AF_BLUE_STRING_THAI_TOP</td> <td><code>4661</code></td></tr> <tr><td>AF_BLUE_STRING_THAI_BOTTOM</td> <td><code>4685</code></td></tr> <tr><td>AF_BLUE_STRING_THAI_ASCENDER</td> <td><code>4713</code></td></tr> <tr><td>AF_BLUE_STRING_THAI_LARGE_ASCENDER</td> <td><code>4725</code></td></tr> <tr><td>AF_BLUE_STRING_THAI_DESCENDER</td> <td><code>4737</code></td></tr> <tr><td>AF_BLUE_STRING_THAI_LARGE_DESCENDER</td> <td><code>4753</code></td></tr> <tr><td>AF_BLUE_STRING_THAI_DIGIT_TOP</td> <td><code>4761</code></td></tr> <tr><td>AF_BLUE_STRING_TIFINAGH</td> <td><code>4773</code></td></tr> <tr><td>AF_BLUE_STRING_VAI_TOP</td> <td><code>4805</code></td></tr> <tr><td>AF_BLUE_STRING_VAI_BOTTOM</td> <td><code>4837</code></td></tr> <tr><td>af_blue_1_1</td> <td><code>4868</code></td></tr> <tr><td>AF_BLUE_STRING_CJK_TOP</td> <td><code>4869</code></td></tr> <tr><td>AF_BLUE_STRING_CJK_BOTTOM</td> <td><code>5071</code></td></tr> <tr><td>af_blue_1_1_1</td> <td><code>5272</code></td></tr> <tr><td>af_blue_1_1_2</td> <td><code>5272</code></td></tr> <tr><td>af_blue_1_2</td> <td><code>5272</code></td></tr> <tr><td>AF_BLUE_STRING_MAX</td> <td><code>5273</code></td></tr></tbody></table> <h3 id="ability-options"><a href="#ability-options" class="header-anchor">#</a> <code>Ability::Options</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="actorlinktype"><a href="#actorlinktype" class="header-anchor">#</a> <code>ActorLinkType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="assetcachecategory"><a href="#assetcachecategory" class="header-anchor">#</a> <code>AssetCacheCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>LanguageData</td> <td><code>0</code></td></tr> <tr><td>InitialPackResources</td> <td><code>1</code></td></tr> <tr><td>AdditionalPackResources</td> <td><code>2</code></td></tr> <tr><td>SoundAndMusic</td> <td><code>3</code></td></tr></tbody></table> <h3 id="animationeventtype"><a href="#animationeventtype" class="header-anchor">#</a> <code>AnimationEventType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="actorterraininterlockdata-visibilitystate"><a href="#actorterraininterlockdata-visibilitystate" class="header-anchor">#</a> <code>ActorTerrainInterlockData::VisibilityState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Visible</td> <td><code>0</code></td></tr> <tr><td>HiddenFromCommandBlockOrigin</td> <td><code>2</code></td></tr> <tr><td>HiddenFromPlayerOrigin</td> <td><code>4</code></td></tr> <tr><td>Hidden</td> <td><code>6</code></td></tr></tbody></table> <h3 id="arvrplatform"><a href="#arvrplatform" class="header-anchor">#</a> <code>ARVRPlatform</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ARVR_None</td> <td><code>0</code></td></tr> <tr><td>ARVR_Rift</td> <td><code>1</code></td></tr> <tr><td>ARVR_Holographic</td> <td><code>2</code></td></tr> <tr><td>ARVR_WindowsMR</td> <td><code>3</code></td></tr> <tr><td>ARVR_PSVR</td> <td><code>4</code></td></tr> <tr><td>ARVR_GearVR</td> <td><code>5</code></td></tr> <tr><td>ARVR_DesktopXR</td> <td><code>6</code></td></tr></tbody></table> <h3 id="animationeventstate"><a href="#animationeventstate" class="header-anchor">#</a> <code>AnimationEventState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="areatype"><a href="#areatype" class="header-anchor">#</a> <code>AreaType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Circle</td> <td><code>1</code></td></tr> <tr><td>TickingArea</td> <td><code>2</code></td></tr></tbody></table> <h3 id="automation-messagepurpose"><a href="#automation-messagepurpose" class="header-anchor">#</a> <code>Automation::MessagePurpose</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="actordefinitiongroup-loadstatus"><a href="#actordefinitiongroup-loadstatus" class="header-anchor">#</a> <code>ActorDefinitionGroup::LoadStatus</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="attributemodifieroperation"><a href="#attributemodifieroperation" class="header-anchor">#</a> <code>AttributeModifierOperation</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>OPERATION_ADDITION</td> <td><code>0</code></td></tr> <tr><td>OPERATION_MULTIPLY_BASE</td> <td><code>1</code></td></tr> <tr><td>OPERATION_MULTIPLY_TOTAL</td> <td><code>2</code></td></tr> <tr><td>OPERATION_CAP</td> <td><code>3</code></td></tr> <tr><td>TOTAL_OPERATIONS</td> <td><code>4</code></td></tr> <tr><td>OPERATION_INVALID</td> <td><code>4</code></td></tr></tbody></table> <h3 id="attributeoperands"><a href="#attributeoperands" class="header-anchor">#</a> <code>AttributeOperands</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>OPERAND_MIN</td> <td><code>0</code></td></tr> <tr><td>OPERAND_MAX</td> <td><code>1</code></td></tr> <tr><td>OPERAND_CURRENT</td> <td><code>2</code></td></tr> <tr><td>TOTAL_OPERANDS</td> <td><code>3</code></td></tr> <tr><td>OPERAND_INVALID</td> <td><code>3</code></td></tr></tbody></table> <h3 id="actoraddeffectevent-effectstate"><a href="#actoraddeffectevent-effectstate" class="header-anchor">#</a> <code>ActorAddEffectEvent::EffectState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="actorcontainertype"><a href="#actorcontainertype" class="header-anchor">#</a> <code>ActorContainerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Armor</td> <td><code>0</code></td></tr> <tr><td>Hand</td> <td><code>1</code></td></tr> <tr><td>PlayerUI</td> <td><code>3</code></td></tr> <tr><td>PlayerInventory</td> <td><code>4</code></td></tr> <tr><td>PlayerEnderChest</td> <td><code>5</code></td></tr></tbody></table> <h3 id="armoritem-tier"><a href="#armoritem-tier" class="header-anchor">#</a> <code>ArmorItem::Tier</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>TIER_LEATHER</td> <td><code>0</code></td></tr> <tr><td>TIER_CHAIN</td> <td><code>1</code></td></tr> <tr><td>TIER_IRON</td> <td><code>2</code></td></tr> <tr><td>TIER_DIAMOND</td> <td><code>3</code></td></tr> <tr><td>TIER_GOLD</td> <td><code>4</code></td></tr> <tr><td>TIER_ELYTRA</td> <td><code>5</code></td></tr> <tr><td>TIER_TURTLE</td> <td><code>6</code></td></tr> <tr><td>TIER_NETHERITE</td> <td><code>7</code></td></tr></tbody></table> <h3 id="actorflags"><a href="#actorflags" class="header-anchor">#</a> <code>ActorFlags</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="actionevent-unnamed-enum-action-move-left"><a href="#actionevent-unnamed-enum-action-move-left" class="header-anchor">#</a> <code>ActionEvent::&lt;unnamed_enum_ACTION_MOVE_LEFT&gt;</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ACTION_MOVE_LEFT</td> <td><code>1</code></td></tr> <tr><td>ACTION_MOVE_RIGHT</td> <td><code>2</code></td></tr> <tr><td>ACTION_MOVE_FORWARD</td> <td><code>3</code></td></tr> <tr><td>ACTION_MOVE_BACKWARD</td> <td><code>4</code></td></tr> <tr><td>ACTION_ASCEND</td> <td><code>5</code></td></tr> <tr><td>ACTION_DESCEND</td> <td><code>6</code></td></tr> <tr><td>ACTION_PADDLE_LEFT</td> <td><code>7</code></td></tr> <tr><td>ACTION_PADDLE_RIGHT</td> <td><code>8</code></td></tr> <tr><td>ACTION_SNEAK</td> <td><code>10</code></td></tr> <tr><td>ACTION_JUMP</td> <td><code>11</code></td></tr> <tr><td>ACTION_SPRINT</td> <td><code>12</code></td></tr> <tr><td>ACTION_DISMOUNT</td> <td><code>14</code></td></tr> <tr><td>ACTION_MOB_EFFECTS</td> <td><code>20</code></td></tr> <tr><td>ACTION_DROP</td> <td><code>21</code></td></tr> <tr><td>ACTION_INVENTORY</td> <td><code>22</code></td></tr> <tr><td>ACTION_BUILD</td> <td><code>23</code></td></tr> <tr><td>ACTION_DESTROY</td> <td><code>24</code></td></tr> <tr><td>ACTION_INTERACT</td> <td><code>25</code></td></tr> <tr><td>ACTION_ATTACK</td> <td><code>26</code></td></tr> <tr><td>ACTION_PAUSE</td> <td><code>30</code></td></tr> <tr><td>ACTION_CHAT</td> <td><code>31</code></td></tr> <tr><td>ACTION_CONSOLE</td> <td><code>32</code></td></tr> <tr><td>ACTION_THIRD_PERSON_VIEW</td> <td><code>33</code></td></tr> <tr><td>ACTION_SCOREBOARD</td> <td><code>34</code></td></tr> <tr><td>ACTION_CODE_BUILDER</td> <td><code>35</code></td></tr> <tr><td>ACTION_SLOT_0</td> <td><code>50</code></td></tr> <tr><td>ACTION_SLOT_1</td> <td><code>51</code></td></tr> <tr><td>ACTION_SLOT_2</td> <td><code>52</code></td></tr> <tr><td>ACTION_SLOT_3</td> <td><code>53</code></td></tr> <tr><td>ACTION_SLOT_4</td> <td><code>54</code></td></tr> <tr><td>ACTION_SLOT_5</td> <td><code>55</code></td></tr> <tr><td>ACTION_SLOT_6</td> <td><code>56</code></td></tr> <tr><td>ACTION_SLOT_7</td> <td><code>57</code></td></tr> <tr><td>ACTION_SLOT_8</td> <td><code>58</code></td></tr> <tr><td>ACTION_SLOT_9</td> <td><code>59</code></td></tr> <tr><td>ACTION_MENU_UP</td> <td><code>100</code></td></tr> <tr><td>ACTION_MENU_DOWN</td> <td><code>101</code></td></tr> <tr><td>ACTION_MENU_LEFT</td> <td><code>102</code></td></tr> <tr><td>ACTION_MENU_RIGHT</td> <td><code>103</code></td></tr> <tr><td>ACTION_MENU_OK</td> <td><code>104</code></td></tr> <tr><td>ACTION_MENU_CANCEL</td> <td><code>105</code></td></tr> <tr><td>ACTION_MENU_INVENTORY_DROP</td> <td><code>106</code></td></tr> <tr><td>ACTION_MENU_INVENTORY_CANCEL</td> <td><code>107</code></td></tr> <tr><td>ACTION_POINTER_PRESSED</td> <td><code>120</code></td></tr> <tr><td>ACTION_BUILD_OR_INTERACT</td> <td><code>130</code></td></tr> <tr><td>ACTION_DESTROY_OR_ATTACK</td> <td><code>131</code></td></tr> <tr><td>ACTION_BUILD_OR_ATTACK</td> <td><code>140</code></td></tr> <tr><td>ACTION_DESTROY_OR_INTERACT</td> <td><code>141</code></td></tr></tbody></table> <h3 id="af-direction"><a href="#af-direction" class="header-anchor">#</a> <code>AF_Direction_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AF_DIR_RIGHT</td> <td><code>1</code></td></tr> <tr><td>AF_DIR_UP</td> <td><code>2</code></td></tr> <tr><td>AF_DIR_NONE</td> <td><code>4</code></td></tr> <tr><td>AF_DIR_DOWN</td> <td><code>18446744073709551614</code></td></tr> <tr><td>AF_DIR_LEFT</td> <td><code>18446744073709551615</code></td></tr></tbody></table> <h3 id="afm-valuetype"><a href="#afm-valuetype" class="header-anchor">#</a> <code>AFM_ValueType_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AFM_VALUE_TYPE_STRING</td> <td><code>0</code></td></tr> <tr><td>AFM_VALUE_TYPE_NAME</td> <td><code>1</code></td></tr> <tr><td>AFM_VALUE_TYPE_FIXED</td> <td><code>2</code></td></tr> <tr><td>AFM_VALUE_TYPE_INTEGER</td> <td><code>3</code></td></tr> <tr><td>AFM_VALUE_TYPE_BOOL</td> <td><code>4</code></td></tr> <tr><td>AFM_VALUE_TYPE_INDEX</td> <td><code>5</code></td></tr></tbody></table> <h3 id="autonumberstate"><a href="#autonumberstate" class="header-anchor">#</a> <code>AutoNumberState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ANS_INIT</td> <td><code>0</code></td></tr> <tr><td>ANS_AUTO</td> <td><code>1</code></td></tr> <tr><td>ANS_MANUAL</td> <td><code>2</code></td></tr></tbody></table> <h3 id="actor-initializationmethod"><a href="#actor-initializationmethod" class="header-anchor">#</a> <code>Actor::InitializationMethod</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Actor::InitializationMethod : __int8
+{
+  INVALID = 0x0,
+  LOADED = 0x1,
+  SPAWNED = 0x2,
+  BORN = 0x3,
+  TRANSFORMED = 0x4,
+  UPDATED = 0x5,
+  EVENT = 0x6,
+  LEGACY = 0x7,
+};
+
+</code></pre></div><h3 id="actorcategory"><a href="#actorcategory" class="header-anchor">#</a> <code>ActorCategory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ActorCategory;
+
+</code></pre></div><h3 id="actorlocation"><a href="#actorlocation" class="header-anchor">#</a> <code>ActorLocation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ActorLocation : __int32
+{
+  Feet = 0x0,
+  Body = 0x1,
+  WeaponAttachPoint = 0x2,
+  Head = 0x3,
+  DropAttachPoint = 0x4,
+  ExplosionPoint = 0x5,
+  Eyes = 0x6,
+  BreathingPoint = 0x7,
+  Mouth = 0x8,
+};
+
+</code></pre></div><h3 id="actorevent"><a href="#actorevent" class="header-anchor">#</a> <code>ActorEvent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ActorEvent : __int8
+{
+  NONE = 0x0,
+  JUMP = 0x1,
+  HURT = 0x2,
+  DEATH = 0x3,
+  START_ATTACKING = 0x4,
+  STOP_ATTACKING = 0x5,
+  TAMING_FAILED = 0x6,
+  TAMING_SUCCEEDED = 0x7,
+  SHAKE_WETNESS = 0x8,
+  EAT_GRASS = 0xA,
+  FISHHOOK_BUBBLE = 0xB,
+  FISHHOOK_FISHPOS = 0xC,
+  FISHHOOK_HOOKTIME = 0xD,
+  FISHHOOK_TEASE = 0xE,
+  SQUID_FLEEING = 0xF,
+  ZOMBIE_CONVERTING = 0x10,
+  PLAY_AMBIENT = 0x11,
+  SPAWN_ALIVE = 0x12,
+  START_OFFER_FLOWER = 0x13,
+  STOP_OFFER_FLOWER = 0x14,
+  LOVE_HEARTS = 0x15,
+  VILLAGER_ANGRY = 0x16,
+  VILLAGER_HAPPY = 0x17,
+  WITCH_HAT_MAGIC = 0x18,
+  FIREWORKS_EXPLODE = 0x19,
+  IN_LOVE_HEARTS = 0x1A,
+  SILVERFISH_MERGE_ANIM = 0x1B,
+  GUARDIAN_ATTACK_SOUND = 0x1C,
+  DRINK_POTION = 0x1D,
+  THROW_POTION = 0x1E,
+  PRIME_TNTCART = 0x1F,
+  PRIME_CREEPER = 0x20,
+  AIR_SUPPLY = 0x21,
+  ADD_PLAYER_LEVELS = 0x22,
+  GUARDIAN_MINING_FATIGUE = 0x23,
+  AGENT_SWING_ARM = 0x24,
+  DRAGON_START_DEATH_ANIM = 0x25,
+  GROUND_DUST = 0x26,
+  SHAKE = 0x27,
+  FEED = 0x39,
+  BABY_EAT = 0x3C,
+  INSTANT_DEATH = 0x3D,
+  NOTIFY_TRADE = 0x3E,
+  LEASH_DESTROYED = 0x3F,
+  CARAVAN_UPDATED = 0x40,
+  TALISMAN_ACTIVATE = 0x41,
+  UPDATE_STRUCTURE_FEATURE = 0x42,
+  PLAYER_SPAWNED_MOB = 0x43,
+  PUKE = 0x44,
+  UPDATE_STACK_SIZE = 0x45,
+  START_SWIMMING = 0x46,
+  BALLOON_POP = 0x47,
+  TREASURE_HUNT = 0x48,
+  SUMMON_AGENT = 0x49,
+  FINISHED_CHARGING_CROSSBOW = 0x4A,
+  LANDED_ON_GROUND = 0x4B,
+};
+
+</code></pre></div><h3 id="armormaterialtype"><a href="#armormaterialtype" class="header-anchor">#</a> <code>ArmorMaterialType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ArmorMaterialType;
+
+</code></pre></div><h3 id="armortexturetype"><a href="#armortexturetype" class="header-anchor">#</a> <code>ArmorTextureType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ArmorTextureType;
+
+</code></pre></div><h3 id="attributebufftype"><a href="#attributebufftype" class="header-anchor">#</a> <code>AttributeBuffType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace AttributeBuffType;
+
+</code></pre></div><h3 id="autoupdatemode"><a href="#autoupdatemode" class="header-anchor">#</a> <code>AutoUpdateMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AutoUpdateMode : __int32
+{
+  Off = 0x0,
+  WifiOnly = 0x1,
+  WithCellular = 0x2,
+};
+
+</code></pre></div><h3 id="appaction"><a href="#appaction" class="header-anchor">#</a> <code>AppAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AppAction : __int8
+{
+  OpenKeyboard = 0x0,
+  OpenExternalResource = 0x1,
+};
+
+</code></pre></div><h3 id="appfocusstate"><a href="#appfocusstate" class="header-anchor">#</a> <code>AppFocusState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AppFocusState : __int32
+{
+  Focused = 0x0,
+  Unfocused = 0x1,
+};
+
+</code></pre></div><h3 id="adrole"><a href="#adrole" class="header-anchor">#</a> <code>ADRole</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace ADRole;
+
+</code></pre></div><h3 id="abilitiesindex"><a href="#abilitiesindex" class="header-anchor">#</a> <code>AbilitiesIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace AbilitiesIndex;
+
+</code></pre></div><h3 id="actortypenamespacerules"><a href="#actortypenamespacerules" class="header-anchor">#</a> <code>ActorTypeNamespaceRules</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ActorTypeNamespaceRules : __int32
+{
+  ReturnWithoutNamespace = 0x0,
+  ReturnWithNamespace = 0x1,
+};
+
+</code></pre></div><h3 id="allexperiments"><a href="#allexperiments" class="header-anchor">#</a> <code>AllExperiments</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AllExperiments : __int32
+{
+  DataDrivenItems = 0x0,
+  NextUpdate = 0x1,
+  DataDrivenBiomes = 0x2,
+  Scripting = 0x3,
+  DisabledExperiment = 0x4,
+  ExperimentalText = 0x5,
+  CavesAndCliffs = 0x6,
+  NumExperiments = 0x7,
+};
+
+</code></pre></div><h3 id="animationloopmode"><a href="#animationloopmode" class="header-anchor">#</a> <code>AnimationLoopMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AnimationLoopMode : __int32
+{
+  StopApplyingAnimationWhenFinished = 0x0,
+  Loop = 0x1,
+  HoldOnLastFrame = 0x2,
+};
+
+</code></pre></div><h3 id="actoranimationtype"><a href="#actoranimationtype" class="header-anchor">#</a> <code>ActorAnimationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::GameEventNotification ActorAnimationType;
+
+</code></pre></div><h3 id="actionevent-actionstate"><a href="#actionevent-actionstate" class="header-anchor">#</a> <code>ActionEvent::ActionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::EducationLessonAction ActionEvent::ActionState;
+
+</code></pre></div><h3 id="ability-type"><a href="#ability-type" class="header-anchor">#</a> <code>Ability::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace Ability::Type;
+
+</code></pre></div><h3 id="animationmode"><a href="#animationmode" class="header-anchor">#</a> <code>AnimationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation AnimationMode;
+
+</code></pre></div><h3 id="advanceframeresult"><a href="#advanceframeresult" class="header-anchor">#</a> <code>AdvanceFrameResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AdvanceFrameResult : __int8
+{
+  NoChange = 0x0,
+  ObjectModified = 0x1,
+  NotImplemented = 0x2,
+};
+
+</code></pre></div><h3 id="animationcomponentgroup"><a href="#animationcomponentgroup" class="header-anchor">#</a> <code>AnimationComponentGroup</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AnimationComponentGroup : __int32
+{
+  Client = 0x0,
+  ClientHUD = 0x1,
+  Server = 0x2,
+  ClientMap = 0x3,
+};
+
+</code></pre></div><h3 id="adventuresettingspacket-flags"><a href="#adventuresettingspacket-flags" class="header-anchor">#</a> <code>AdventureSettingsPacket::Flags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AdventureSettingsPacket::Flags : __int32
+{
+  WorldImmutable = 0x1,
+  NoPvM = 0x2,
+  NoMvP = 0x4,
+  Unused = 0x8,
+  ShowNameTags = 0x10,
+  AutoJump = 0x20,
+  PlayerMayFly = 0x40,
+  PlayerNoClip = 0x80,
+  PlayerWorldBuilder = 0x100,
+  PlayerFlying = 0x200,
+  PlayerMuted = 0x400,
+};
+
+</code></pre></div><h3 id="adventuresettingspacket-permissionsflags"><a href="#adventuresettingspacket-permissionsflags" class="header-anchor">#</a> <code>AdventureSettingsPacket::PermissionsFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AdventureSettingsPacket::PermissionsFlags : __int32
+{
+  Mine = 0x1,
+  DoorsAndSwitches = 0x2,
+  OpenContainers = 0x4,
+  AttackPlayers = 0x8,
+  AttackMobs = 0x10,
+  OP = 0x20,
+  Teleport = 0x80,
+  Build = 0x100,
+  DefaultLevelPermissions = 0x200,
+};
+
+</code></pre></div><h3 id="attachableslotindex"><a href="#attachableslotindex" class="header-anchor">#</a> <code>AttachableSlotIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorLocation AttachableSlotIndex;
+
+</code></pre></div><h3 id="actordataids"><a href="#actordataids" class="header-anchor">#</a> <code>ActorDataIDs</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID ActorDataIDs;
+
+</code></pre></div><h3 id="actctx-requested-run-level"><a href="#actctx-requested-run-level" class="header-anchor">#</a> <code>ACTCTX_REQUESTED_RUN_LEVEL</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ACTCTX_REQUESTED_RUN_LEVEL : __int32
+{
+  ACTCTX_RUN_LEVEL_UNSPECIFIED = 0x0,
+  ACTCTX_RUN_LEVEL_AS_INVOKER = 0x1,
+  ACTCTX_RUN_LEVEL_HIGHEST_AVAILABLE = 0x2,
+  ACTCTX_RUN_LEVEL_REQUIRE_ADMIN = 0x3,
+  ACTCTX_RUN_LEVEL_NUMBERS = 0x4,
+};
+
+</code></pre></div><h3 id="arm64-fnpdata-flags"><a href="#arm64-fnpdata-flags" class="header-anchor">#</a> <code>ARM64_FNPDATA_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ARM64_FNPDATA_FLAGS : __int32
+{
+  PdataRefToFullXdata = 0x0,
+  PdataPackedUnwindFunction = 0x1,
+  PdataPackedUnwindFragment = 0x2,
+};
+
+</code></pre></div><h3 id="assocclass"><a href="#assocclass" class="header-anchor">#</a> <code>ASSOCCLASS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ASSOCCLASS : __int32
+{
+  ASSOCCLASS_SHELL_KEY = 0x0,
+  ASSOCCLASS_PROGID_KEY = 0x1,
+  ASSOCCLASS_PROGID_STR = 0x2,
+  ASSOCCLASS_CLSID_KEY = 0x3,
+  ASSOCCLASS_CLSID_STR = 0x4,
+  ASSOCCLASS_APP_KEY = 0x5,
+  ASSOCCLASS_APP_STR = 0x6,
+  ASSOCCLASS_SYSTEM_STR = 0x7,
+  ASSOCCLASS_FOLDER = 0x8,
+  ASSOCCLASS_STAR = 0x9,
+};
+
+</code></pre></div><h3 id="actctx-compatibility-element-type"><a href="#actctx-compatibility-element-type" class="header-anchor">#</a> <code>ACTCTX_COMPATIBILITY_ELEMENT_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ACTCTX_COMPATIBILITY_ELEMENT_TYPE : __int32
+{
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_UNKNOWN = 0x0,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_OS = 0x1,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_MITIGATION = 0x2,
+  ACTCTX_COMPATIBILITY_ELEMENT_TYPE_MAXVERSIONTESTED = 0x3,
+};
+
+</code></pre></div><h3 id="arm64-fnpdata-cr"><a href="#arm64-fnpdata-cr" class="header-anchor">#</a> <code>ARM64_FNPDATA_CR</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ARM64_FNPDATA_CR : __int32
+{
+  PdataCrUnchained = 0x0,
+  PdataCrUnchainedSavedLr = 0x1,
+  PdataCrChainedWithPac = 0x2,
+  PdataCrChained = 0x3,
+};
+
+</code></pre></div><h3 id="actorblocksyncmessage-messageid"><a href="#actorblocksyncmessage-messageid" class="header-anchor">#</a> <code>ActorBlockSyncMessage::MessageId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent ActorBlockSyncMessage::MessageId;
+
+</code></pre></div><h3 id="activedirectoryauthenticationstate"><a href="#activedirectoryauthenticationstate" class="header-anchor">#</a> <code>ActiveDirectoryAuthenticationState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ActiveDirectoryAuthenticationState : __int32
+{
+  Unauthenticated = 0x0,
+  AuthenticationChoicePresentation = 0x1,
+  AuthenticatingDemoWithService = 0x2,
+  AuthenticatedDemoWithService = 0x3,
+  ShowingAuthenticationPage = 0x4,
+  AuthenticatedWithADAL = 0x5,
+  AuthenticatingWithService = 0x6,
+  AuthenticatedWithService = 0x7,
+  AuthenticationPendingPresentation = 0x8,
+  AuthenticationComplete = 0x9,
+  AuthenticationNoEULA = 0xA,
+  AuthenticationOfferPurchase = 0xB,
+  AuthenticationInvalid = 0xC,
+  AuthenticationMUTSNetworkError = 0xD,
+  AuthenticationADALException = 0xE,
+  AuthenticationDemoInvalid = 0xF,
+  RefreshingToken = 0x10,
+  RefreshFailed = 0x11,
+};
+
+</code></pre></div><h3 id="activedirectoryexperience"><a href="#activedirectoryexperience" class="header-anchor">#</a> <code>ActiveDirectoryExperience</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ActiveDirectoryExperience;
+
+</code></pre></div><h3 id="anvilpart"><a href="#anvilpart" class="header-anchor">#</a> <code>AnvilPart</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Frustum::FrustumSide AnvilPart;
+
+</code></pre></div><h3 id="addialogmode"><a href="#addialogmode" class="header-anchor">#</a> <code>ADDialogMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ADDialogMode : __int8
+{
+  ForcePrompt = 0x0,
+  AttemptSSO = 0x1,
+};
+
+</code></pre></div><h3 id="adtokenrefreshaction"><a href="#adtokenrefreshaction" class="header-anchor">#</a> <code>ADTokenRefreshAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Social::JoinGameStatus ADTokenRefreshAction;
+
+</code></pre></div><h3 id="animevent"><a href="#animevent" class="header-anchor">#</a> <code>AnimEvent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Realms::World::State AnimEvent;
+
+</code></pre></div><h3 id="animationtickresult"><a href="#animationtickresult" class="header-anchor">#</a> <code>AnimationTickResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef UIAnim::State AnimationTickResult;
+
+</code></pre></div><h3 id="actorportraitrenderer-rotatemode"><a href="#actorportraitrenderer-rotatemode" class="header-anchor">#</a> <code>ActorPortraitRenderer::RotateMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ActorPortraitRenderer::RotateMode;
+
+</code></pre></div><h3 id="acceptdeclineinvitationscreencontroller-acceptdeclineinvitationstate"><a href="#acceptdeclineinvitationscreencontroller-acceptdeclineinvitationstate" class="header-anchor">#</a> <code>AcceptDeclineInvitationScreenController::AcceptDeclineInvitationState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef StateTransitionEvent AcceptDeclineInvitationScreenController::AcceptDeclineInvitationState;
+
+</code></pre></div><h3 id="authenticationuistate"><a href="#authenticationuistate" class="header-anchor">#</a> <code>AuthenticationUIState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation AuthenticationUIState;
+
+</code></pre></div><h3 id="addexternalserverscreencontroller-mode"><a href="#addexternalserverscreencontroller-mode" class="header-anchor">#</a> <code>AddExternalServerScreenController::Mode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::filesystem::perm_options AddExternalServerScreenController::Mode;
+
+</code></pre></div><h3 id="animatepacket-action"><a href="#animatepacket-action" class="header-anchor">#</a> <code>AnimatePacket::Action</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AnimatePacket::Action : __int32
+{
+  NoAction = 0x0,
+  Swing = 0x1,
+  WakeUp = 0x3,
+  CriticalHit = 0x4,
+  MagicCriticalHit = 0x5,
+  RowRight = 0x80,
+  RowLeft = 0x81,
+};
+
+</code></pre></div><h3 id="arrow-data"><a href="#arrow-data" class="header-anchor">#</a> <code>Arrow::Data</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Arrow::Data : __int32
+{
+  IsCritical = 0x10,
+  TippedAuxValue = 0x12,
+};
+
+</code></pre></div><h3 id="abstractarrow-data"><a href="#abstractarrow-data" class="header-anchor">#</a> <code>AbstractArrow::Data</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AbstractArrow::Data : __int32
+{
+  OwnerID = 0x11,
+};
+
+</code></pre></div><h3 id="attackstate"><a href="#attackstate" class="header-anchor">#</a> <code>AttackState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize AttackState;
+
+</code></pre></div><h3 id="attachmenttype"><a href="#attachmenttype" class="header-anchor">#</a> <code>AttachmentType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType AttachmentType;
+
+</code></pre></div><h3 id="actortarget"><a href="#actortarget" class="header-anchor">#</a> <code>ActorTarget</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ActorTarget : __int32
+{
+  This = 0x0,
+  Killer = 0x1,
+  KillerPlayer = 0x2,
+};
+
+</code></pre></div><h3 id="agentcommands-direction"><a href="#agentcommands-direction" class="header-anchor">#</a> <code>AgentCommands::Direction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef GameControllerButtonState AgentCommands::Direction;
+
+</code></pre></div><h3 id="automation-response-type"><a href="#automation-response-type" class="header-anchor">#</a> <code>Automation::Response::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::OpenCodeMethod Automation::Response::Type;
+
+</code></pre></div><h3 id="anvildamage"><a href="#anvildamage" class="header-anchor">#</a> <code>AnvilDamage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType AnvilDamage;
+
+</code></pre></div><h3 id="agentcommand-mode"><a href="#agentcommand-mode" class="header-anchor">#</a> <code>AgentCommand::Mode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftEventing::ItemInteractMethod AgentCommand::Mode;
+
+</code></pre></div><h3 id="agentcommands-collectcommand-collectionspecification"><a href="#agentcommands-collectcommand-collectionspecification" class="header-anchor">#</a> <code>AgentCommands::CollectCommand::CollectionSpecification</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation AgentCommands::CollectCommand::CollectionSpecification;
+
+</code></pre></div><h3 id="addtickingareastatus"><a href="#addtickingareastatus" class="header-anchor">#</a> <code>AddTickingAreaStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome AddTickingAreaStatus;
+
+</code></pre></div><h3 id="actortargetfilter-conditiontype"><a href="#actortargetfilter-conditiontype" class="header-anchor">#</a> <code>ActorTargetFilter::ConditionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FilterGroup::CollectionType ActorTargetFilter::ConditionType;
+
+</code></pre></div><h3 id="actorinweathertest-weathertype"><a href="#actorinweathertest-weathertype" class="header-anchor">#</a> <code>ActorInWeatherTest::WeatherType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId ActorInWeatherTest::WeatherType;
+
+</code></pre></div><h3 id="attributemessagetypes-unnamed-enum-exhaustion"><a href="#attributemessagetypes-unnamed-enum-exhaustion" class="header-anchor">#</a> <code>AttributeMessageTypes::&lt;unnamed_enum_EXHAUSTION&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID AttributeMessageTypes::&lt;unnamed_enum_EXHAUSTION&gt;;
+
+</code></pre></div><h3 id="automaticfeaturerules-prioritybucket"><a href="#automaticfeaturerules-prioritybucket" class="header-anchor">#</a> <code>AutomaticFeatureRules::PriorityBucket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BoneTransformType AutomaticFeatureRules::PriorityBucket;
+
+</code></pre></div><h3 id="aggregatefeature-0-earlyout"><a href="#aggregatefeature-0-earlyout" class="header-anchor">#</a> <code>AggregateFeature&lt;0&gt;::EarlyOut</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation AggregateFeature&lt;0&gt;::EarlyOut;
+
+</code></pre></div><h3 id="aggregatefeature-1-earlyout"><a href="#aggregatefeature-1-earlyout" class="header-anchor">#</a> <code>AggregateFeature&lt;1&gt;::EarlyOut</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation AggregateFeature&lt;1&gt;::EarlyOut;
+
+</code></pre></div><h3 id="associationtype"><a href="#associationtype" class="header-anchor">#</a> <code>ASSOCIATIONTYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ASSOCIATIONTYPE : __int32
+{
+  AT_FILEEXTENSION = 0x0,
+  AT_URLPROTOCOL = 0x1,
+  AT_STARTMENUCLIENT = 0x2,
+  AT_MIMETYPE = 0x3,
+};
+
+</code></pre></div><h3 id="associationlevel"><a href="#associationlevel" class="header-anchor">#</a> <code>ASSOCIATIONLEVEL</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ASSOCIATIONLEVEL : __int32
+{
+  AL_MACHINE = 0x0,
+  AL_EFFECTIVE = 0x1,
+  AL_USER = 0x2,
+};
+
+</code></pre></div><h3 id="appdoclisttype"><a href="#appdoclisttype" class="header-anchor">#</a> <code>APPDOCLISTTYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum APPDOCLISTTYPE : __int32
+{
+  ADLT_RECENT = 0x0,
+  ADLT_FREQUENT = 0x1,
+};
+
+</code></pre></div><h3 id="agilereferenceoptions"><a href="#agilereferenceoptions" class="header-anchor">#</a> <code>AgileReferenceOptions</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AgileReferenceOptions : __int32
+{
+  AGILEREFERENCE_DEFAULT = 0x0,
+  AGILEREFERENCE_DELAYEDMARSHAL = 0x1,
+};
+
+</code></pre></div><h3 id="abi-windows-foundation-diagnostics-roerrorreportingflags"><a href="#abi-windows-foundation-diagnostics-roerrorreportingflags" class="header-anchor">#</a> <code>ABI::Windows::Foundation::Diagnostics::RoErrorReportingFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ABI::Windows::Foundation::Diagnostics::RoErrorReportingFlags;
+
+</code></pre></div><h3 id="anvilscreencontroller-slotindex"><a href="#anvilscreencontroller-slotindex" class="header-anchor">#</a> <code>AnvilScreenController::SlotIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AnvilScreenController::SlotIndex : __int32
+{
+  Input = 0x0,
+  Material = 0x1,
+  Result = 0x2,
+};
+
+</code></pre></div><h3 id="ariaprotocol-bond-enumerators-valuekind-valuekind"><a href="#ariaprotocol-bond-enumerators-valuekind-valuekind" class="header-anchor">#</a> <code>AriaProtocol::_bond_enumerators::ValueKind::ValueKind</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AriaProtocol::_bond_enumerators::ValueKind::ValueKind : __int32
+{
+  ValueInt64 = 0x0,
+  ValueUInt64 = 0x1,
+  ValueInt32 = 0x2,
+  ValueUInt32 = 0x3,
+  ValueDouble = 0x4,
+  ValueString = 0x5,
+  ValueBool = 0x6,
+  ValueDateTime = 0x7,
+  ValueGuid = 0x8,
+  ValueArrayInt64 = 0x9,
+  ValueArrayUInt64 = 0xA,
+  ValueArrayInt32 = 0xB,
+  ValueArrayUInt32 = 0xC,
+  ValueArrayDouble = 0xD,
+  ValueArrayString = 0xE,
+  ValueArrayBool = 0xF,
+  ValueArrayDateTime = 0x10,
+  ValueArrayGuid = 0x11,
+};
+
+</code></pre></div><h3 id="ariaprotocol-bond-enumerators-piikind-piikind"><a href="#ariaprotocol-bond-enumerators-piikind-piikind" class="header-anchor">#</a> <code>AriaProtocol::_bond_enumerators::PIIKind::PIIKind</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AriaProtocol::_bond_enumerators::PIIKind::PIIKind : __int32
+{
+  NotSet = 0x0,
+  DistinguishedName = 0x1,
+  GenericData = 0x2,
+  IPV4Address = 0x3,
+  IPv6Address = 0x4,
+  MailSubject = 0x5,
+  PhoneNumber = 0x6,
+  QueryString = 0x7,
+  SipAddress = 0x8,
+  SmtpAddress = 0x9,
+  Identity = 0xA,
+  Uri = 0xB,
+  Fqdn = 0xC,
+  IPV4AddressLegacy = 0xD,
+};
+
+</code></pre></div><h3 id="ariaprotocol-bond-enumerators-customercontentkind-customercontentkind"><a href="#ariaprotocol-bond-enumerators-customercontentkind-customercontentkind" class="header-anchor">#</a> <code>AriaProtocol::_bond_enumerators::CustomerContentKind::CustomerContentKind</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AriaProtocol::_bond_enumerators::PIIKind::PIIKind AriaProtocol::_bond_enumerators::CustomerContentKind::CustomerContentKind;
+
+</code></pre></div><h3 id="afm-token"><a href="#afm-token" class="header-anchor">#</a> <code>AFM_Token_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum AFM_Token_ : __int32
+{
+  AFM_TOKEN_ASCENDER = 0x0,
+  AFM_TOKEN_AXISLABEL = 0x1,
+  AFM_TOKEN_AXISTYPE = 0x2,
+  AFM_TOKEN_B = 0x3,
+  AFM_TOKEN_BLENDAXISTYPES = 0x4,
+  AFM_TOKEN_BLENDDESIGNMAP = 0x5,
+  AFM_TOKEN_BLENDDESIGNPOSITIONS = 0x6,
+  AFM_TOKEN_C = 0x7,
+  AFM_TOKEN_CC = 0x8,
+  AFM_TOKEN_CH = 0x9,
+  AFM_TOKEN_CAPHEIGHT = 0xA,
+  AFM_TOKEN_CHARWIDTH = 0xB,
+  AFM_TOKEN_CHARACTERSET = 0xC,
+  AFM_TOKEN_CHARACTERS = 0xD,
+  AFM_TOKEN_DESCENDER = 0xE,
+  AFM_TOKEN_ENCODINGSCHEME = 0xF,
+  AFM_TOKEN_ENDAXIS = 0x10,
+  AFM_TOKEN_ENDCHARMETRICS = 0x11,
+  AFM_TOKEN_ENDCOMPOSITES = 0x12,
+  AFM_TOKEN_ENDDIRECTION = 0x13,
+  AFM_TOKEN_ENDFONTMETRICS = 0x14,
+  AFM_TOKEN_ENDKERNDATA = 0x15,
+  AFM_TOKEN_ENDKERNPAIRS = 0x16,
+  AFM_TOKEN_ENDTRACKKERN = 0x17,
+  AFM_TOKEN_ESCCHAR = 0x18,
+  AFM_TOKEN_FAMILYNAME = 0x19,
+  AFM_TOKEN_FONTBBOX = 0x1A,
+  AFM_TOKEN_FONTNAME = 0x1B,
+  AFM_TOKEN_FULLNAME = 0x1C,
+  AFM_TOKEN_ISBASEFONT = 0x1D,
+  AFM_TOKEN_ISCIDFONT = 0x1E,
+  AFM_TOKEN_ISFIXEDPITCH = 0x1F,
+  AFM_TOKEN_ISFIXEDV = 0x20,
+  AFM_TOKEN_ITALICANGLE = 0x21,
+  AFM_TOKEN_KP = 0x22,
+  AFM_TOKEN_KPH = 0x23,
+  AFM_TOKEN_KPX = 0x24,
+  AFM_TOKEN_KPY = 0x25,
+  AFM_TOKEN_L = 0x26,
+  AFM_TOKEN_MAPPINGSCHEME = 0x27,
+  AFM_TOKEN_METRICSSETS = 0x28,
+  AFM_TOKEN_N = 0x29,
+  AFM_TOKEN_NOTICE = 0x2A,
+  AFM_TOKEN_PCC = 0x2B,
+  AFM_TOKEN_STARTAXIS = 0x2C,
+  AFM_TOKEN_STARTCHARMETRICS = 0x2D,
+  AFM_TOKEN_STARTCOMPOSITES = 0x2E,
+  AFM_TOKEN_STARTDIRECTION = 0x2F,
+  AFM_TOKEN_STARTFONTMETRICS = 0x30,
+  AFM_TOKEN_STARTKERNDATA = 0x31,
+  AFM_TOKEN_STARTKERNPAIRS = 0x32,
+  AFM_TOKEN_STARTKERNPAIRS0 = 0x33,
+  AFM_TOKEN_STARTKERNPAIRS1 = 0x34,
+  AFM_TOKEN_STARTTRACKKERN = 0x35,
+  AFM_TOKEN_STDHW = 0x36,
+  AFM_TOKEN_STDVW = 0x37,
+  AFM_TOKEN_TRACKKERN = 0x38,
+  AFM_TOKEN_UNDERLINEPOSITION = 0x39,
+  AFM_TOKEN_UNDERLINETHICKNESS = 0x3A,
+  AFM_TOKEN_VV = 0x3B,
+  AFM_TOKEN_VVECTOR = 0x3C,
+  AFM_TOKEN_VERSION = 0x3D,
+  AFM_TOKEN_W = 0x3E,
+  AFM_TOKEN_W0 = 0x3F,
+  AFM_TOKEN_W0X = 0x40,
+  AFM_TOKEN_W0Y = 0x41,
+  AFM_TOKEN_W1 = 0x42,
+  AFM_TOKEN_W1X = 0x43,
+  AFM_TOKEN_W1Y = 0x44,
+  AFM_TOKEN_WX = 0x45,
+  AFM_TOKEN_WY = 0x46,
+  AFM_TOKEN_WEIGHT = 0x47,
+  AFM_TOKEN_WEIGHTVECTOR = 0x48,
+  AFM_TOKEN_XHEIGHT = 0x49,
+  N_AFM_TOKENS = 0x4A,
+  AFM_TOKEN_UNKNOWN = 0x4B,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/structure/Z.html" class="prev">
+        Z
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/B.html">
+        B
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/60.5c5afc8c.js" defer></script>
+  </body>
+</html>

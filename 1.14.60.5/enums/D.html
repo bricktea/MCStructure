@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>D | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/11.84aff5f4.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/enums/D.html" aria-current="page" class="active sidebar-link">D</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/enums/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/enums/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/enums/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/enums/`.html" class="sidebar-link">`</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="d"><a href="#d" class="header-anchor">#</a> D</h1> <h3 id="difficulty"><a href="#difficulty" class="header-anchor">#</a> <code>Difficulty</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Peaceful</td> <td><code>0</code></td></tr> <tr><td>Easy</td> <td><code>1</code></td></tr> <tr><td>Normal_0</td> <td><code>2</code></td></tr> <tr><td>Hard</td> <td><code>3</code></td></tr> <tr><td>Count_1</td> <td><code>4</code></td></tr> <tr><td>Unknown</td> <td><code>5</code></td></tr></tbody></table> <h3 id="dedicatedserver-startresult"><a href="#dedicatedserver-startresult" class="header-anchor">#</a> <code>DedicatedServer::StartResult</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Success</td> <td><code>0</code></td></tr> <tr><td>PortOccupied</td> <td><code>1</code></td></tr> <tr><td>InvalidSettings</td> <td><code>2</code></td></tr></tbody></table> <h3 id="doubleplanttype"><a href="#doubleplanttype" class="header-anchor">#</a> <code>DoublePlantType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Sunflower</td> <td><code>0</code></td></tr> <tr><td>Syringa</td> <td><code>1</code></td></tr> <tr><td>Grass</td> <td><code>2</code></td></tr> <tr><td>Fern_0</td> <td><code>3</code></td></tr> <tr><td>Rose</td> <td><code>4</code></td></tr> <tr><td>Paeonia</td> <td><code>5</code></td></tr> <tr><td>_count_10</td> <td><code>6</code></td></tr></tbody></table> <h3 id="dataitemtype"><a href="#dataitemtype" class="header-anchor">#</a> <code>DataItemType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Byte</td> <td><code>0</code></td></tr> <tr><td>Short</td> <td><code>1</code></td></tr> <tr><td>Int_1</td> <td><code>2</code></td></tr> <tr><td>Float_1</td> <td><code>3</code></td></tr> <tr><td>String_0</td> <td><code>4</code></td></tr> <tr><td>Pos</td> <td><code>6</code></td></tr> <tr><td>Int64</td> <td><code>7</code></td></tr> <tr><td>Unknown_23</td> <td><code>9</code></td></tr></tbody></table> <h3 id="dwellercomponent-dwellingtype"><a href="#dwellercomponent-dwellingtype" class="header-anchor">#</a> <code>DwellerComponent::DwellingType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VillageDwelling</td> <td><code>0</code></td></tr> <tr><td>COUNT_2</td> <td><code>1</code></td></tr></tbody></table> <h3 id="dwellerrole"><a href="#dwellerrole" class="header-anchor">#</a> <code>DwellerRole</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>DwellingInhabitant</td> <td><code>0</code></td></tr> <tr><td>DwellingDefender</td> <td><code>1</code></td></tr> <tr><td>DwellingHostile</td> <td><code>2</code></td></tr> <tr><td>DwellingPassive</td> <td><code>3</code></td></tr> <tr><td>COUNT_3</td> <td><code>4</code></td></tr></tbody></table> <h3 id="dlcperformancetier"><a href="#dlcperformancetier" class="header-anchor">#</a> <code>DlcPerformanceTier</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="definitioneventtype"><a href="#definitioneventtype" class="header-anchor">#</a> <code>DefinitionEventType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>LEAF</td> <td><code>0</code></td></tr> <tr><td>SEQUENCE</td> <td><code>1</code></td></tr> <tr><td>RANDOM</td> <td><code>2</code></td></tr> <tr><td>NONE_0</td> <td><code>3</code></td></tr></tbody></table> <h3 id="dirttype"><a href="#dirttype" class="header-anchor">#</a> <code>DirtType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Normal_12</td> <td><code>0</code></td></tr> <tr><td>Coarse</td> <td><code>1</code></td></tr> <tr><td>_count_31</td> <td><code>2</code></td></tr></tbody></table> <h3 id="doorblock-doortype"><a href="#doorblock-doortype" class="header-anchor">#</a> <code>DoorBlock::DoorType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>OAK</td> <td><code>0</code></td></tr> <tr><td>SPRUCE</td> <td><code>1</code></td></tr> <tr><td>BIRCH</td> <td><code>2</code></td></tr> <tr><td>JUNGLE</td> <td><code>3</code></td></tr> <tr><td>ACACIA</td> <td><code>4</code></td></tr> <tr><td>DARKOAK</td> <td><code>5</code></td></tr> <tr><td>IRON</td> <td><code>6</code></td></tr> <tr><td>COUNT_13</td> <td><code>7</code></td></tr></tbody></table> <h3 id="direction-type"><a href="#direction-type" class="header-anchor">#</a> <code>Direction::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>SOUTH</td> <td><code>0</code></td></tr> <tr><td>WEST</td> <td><code>1</code></td></tr> <tr><td>NORTH</td> <td><code>2</code></td></tr> <tr><td>EAST</td> <td><code>3</code></td></tr> <tr><td>UNDEFINED</td> <td><code>18446744073709551615</code></td></tr></tbody></table> <h3 id="datemanager-timezonetype"><a href="#datemanager-timezonetype" class="header-anchor">#</a> <code>DateManager::TimeZoneType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>UTC</td> <td><code>0</code></td></tr> <tr><td>Local_4</td> <td><code>1</code></td></tr></tbody></table> <h3 id="dbchunkstorage-chunkcachestatus"><a href="#dbchunkstorage-chunkcachestatus" class="header-anchor">#</a> <code>DBChunkStorage::ChunkCacheStatus</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Missing</td> <td><code>0</code></td></tr> <tr><td>Available_0</td> <td><code>1</code></td></tr> <tr><td>DontCache</td> <td><code>2</code></td></tr></tbody></table> <h3 id="displayorientation"><a href="#displayorientation" class="header-anchor">#</a> <code>DisplayOrientation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum DisplayOrientation : __int32
+{
+  None_8 = 0x0,
+  Landscape = 0x1,
+  Portrait = 0x2,
+  LandscapeFlipped = 0x3,
+  PortraitFlipped = 0x4,
+};
+
+</code></pre></div><h3 id="defaultmessageidtypes"><a href="#defaultmessageidtypes" class="header-anchor">#</a> <code>DefaultMessageIDTypes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum DefaultMessageIDTypes : __int32
+{
+  ID_CONNECTED_PING = 0x0,
+  ID_UNCONNECTED_PING = 0x1,
+  ID_UNCONNECTED_PING_OPEN_CONNECTIONS = 0x2,
+  ID_CONNECTED_PONG = 0x3,
+  ID_DETECT_LOST_CONNECTIONS = 0x4,
+  ID_OPEN_CONNECTION_REQUEST_1 = 0x5,
+  ID_OPEN_CONNECTION_REPLY_1 = 0x6,
+  ID_OPEN_CONNECTION_REQUEST_2 = 0x7,
+  ID_OPEN_CONNECTION_REPLY_2 = 0x8,
+  ID_CONNECTION_REQUEST = 0x9,
+  ID_REMOTE_SYSTEM_REQUIRES_PUBLIC_KEY = 0xA,
+  ID_OUR_SYSTEM_REQUIRES_SECURITY = 0xB,
+  ID_PUBLIC_KEY_MISMATCH = 0xC,
+  ID_OUT_OF_BAND_INTERNAL = 0xD,
+  ID_SND_RECEIPT_ACKED = 0xE,
+  ID_SND_RECEIPT_LOSS = 0xF,
+  ID_CONNECTION_REQUEST_ACCEPTED = 0x10,
+  ID_CONNECTION_ATTEMPT_FAILED = 0x11,
+  ID_ALREADY_CONNECTED = 0x12,
+  ID_NEW_INCOMING_CONNECTION = 0x13,
+  ID_NO_FREE_INCOMING_CONNECTIONS = 0x14,
+  ID_DISCONNECTION_NOTIFICATION = 0x15,
+  ID_CONNECTION_LOST = 0x16,
+  ID_CONNECTION_BANNED = 0x17,
+  ID_INVALID_PASSWORD = 0x18,
+  ID_INCOMPATIBLE_PROTOCOL_VERSION = 0x19,
+  ID_IP_RECENTLY_CONNECTED = 0x1A,
+  ID_TIMESTAMP = 0x1B,
+  ID_UNCONNECTED_PONG = 0x1C,
+  ID_ADVERTISE_SYSTEM = 0x1D,
+  ID_DOWNLOAD_PROGRESS = 0x1E,
+  ID_REMOTE_DISCONNECTION_NOTIFICATION = 0x1F,
+  ID_REMOTE_CONNECTION_LOST = 0x20,
+  ID_REMOTE_NEW_INCOMING_CONNECTION = 0x21,
+  ID_FILE_LIST_TRANSFER_HEADER = 0x22,
+  ID_FILE_LIST_TRANSFER_FILE = 0x23,
+  ID_FILE_LIST_REFERENCE_PUSH_ACK = 0x24,
+  ID_DDT_DOWNLOAD_REQUEST = 0x25,
+  ID_TRANSPORT_STRING = 0x26,
+  ID_REPLICA_MANAGER_CONSTRUCTION = 0x27,
+  ID_REPLICA_MANAGER_SCOPE_CHANGE = 0x28,
+  ID_REPLICA_MANAGER_SERIALIZE = 0x29,
+  ID_REPLICA_MANAGER_DOWNLOAD_STARTED = 0x2A,
+  ID_REPLICA_MANAGER_DOWNLOAD_COMPLETE = 0x2B,
+  ID_RAKVOICE_OPEN_CHANNEL_REQUEST = 0x2C,
+  ID_RAKVOICE_OPEN_CHANNEL_REPLY = 0x2D,
+  ID_RAKVOICE_CLOSE_CHANNEL = 0x2E,
+  ID_RAKVOICE_DATA = 0x2F,
+  ID_AUTOPATCHER_GET_CHANGELIST_SINCE_DATE = 0x30,
+  ID_AUTOPATCHER_CREATION_LIST = 0x31,
+  ID_AUTOPATCHER_DELETION_LIST = 0x32,
+  ID_AUTOPATCHER_GET_PATCH = 0x33,
+  ID_AUTOPATCHER_PATCH_LIST = 0x34,
+  ID_AUTOPATCHER_REPOSITORY_FATAL_ERROR = 0x35,
+  ID_AUTOPATCHER_CANNOT_DOWNLOAD_ORIGINAL_UNMODIFIED_FILES = 0x36,
+  ID_AUTOPATCHER_FINISHED_INTERNAL = 0x37,
+  ID_AUTOPATCHER_FINISHED = 0x38,
+  ID_AUTOPATCHER_RESTART_APPLICATION = 0x39,
+  ID_NAT_PUNCHTHROUGH_REQUEST = 0x3A,
+  ID_NAT_CONNECT_AT_TIME = 0x3B,
+  ID_NAT_GET_MOST_RECENT_PORT = 0x3C,
+  ID_NAT_CLIENT_READY = 0x3D,
+  ID_NAT_TARGET_NOT_CONNECTED = 0x3E,
+  ID_NAT_TARGET_UNRESPONSIVE = 0x3F,
+  ID_NAT_CONNECTION_TO_TARGET_LOST = 0x40,
+  ID_NAT_ALREADY_IN_PROGRESS = 0x41,
+  ID_NAT_PUNCHTHROUGH_FAILED = 0x42,
+  ID_NAT_PUNCHTHROUGH_SUCCEEDED = 0x43,
+  ID_READY_EVENT_SET = 0x44,
+  ID_READY_EVENT_UNSET = 0x45,
+  ID_READY_EVENT_ALL_SET = 0x46,
+  ID_READY_EVENT_QUERY = 0x47,
+  ID_LOBBY_GENERAL = 0x48,
+  ID_RPC_REMOTE_ERROR = 0x49,
+  ID_RPC_PLUGIN = 0x4A,
+  ID_FILE_LIST_REFERENCE_PUSH = 0x4B,
+  ID_READY_EVENT_FORCE_ALL_SET = 0x4C,
+  ID_ROOMS_EXECUTE_FUNC = 0x4D,
+  ID_ROOMS_LOGON_STATUS = 0x4E,
+  ID_ROOMS_HANDLE_CHANGE = 0x4F,
+  ID_LOBBY2_SEND_MESSAGE = 0x50,
+  ID_LOBBY2_SERVER_ERROR = 0x51,
+  ID_FCM2_NEW_HOST = 0x52,
+  ID_FCM2_REQUEST_FCMGUID = 0x53,
+  ID_FCM2_RESPOND_CONNECTION_COUNT = 0x54,
+  ID_FCM2_INFORM_FCMGUID = 0x55,
+  ID_FCM2_UPDATE_MIN_TOTAL_CONNECTION_COUNT = 0x56,
+  ID_FCM2_VERIFIED_JOIN_START = 0x57,
+  ID_FCM2_VERIFIED_JOIN_CAPABLE = 0x58,
+  ID_FCM2_VERIFIED_JOIN_FAILED = 0x59,
+  ID_FCM2_VERIFIED_JOIN_ACCEPTED = 0x5A,
+  ID_FCM2_VERIFIED_JOIN_REJECTED = 0x5B,
+  ID_UDP_PROXY_GENERAL = 0x5C,
+  ID_SQLite3_EXEC = 0x5D,
+  ID_SQLite3_UNKNOWN_DB = 0x5E,
+  ID_SQLLITE_LOGGER = 0x5F,
+  ID_NAT_TYPE_DETECTION_REQUEST = 0x60,
+  ID_NAT_TYPE_DETECTION_RESULT = 0x61,
+  ID_ROUTER_2_INTERNAL = 0x62,
+  ID_ROUTER_2_FORWARDING_NO_PATH = 0x63,
+  ID_ROUTER_2_FORWARDING_ESTABLISHED = 0x64,
+  ID_ROUTER_2_REROUTED = 0x65,
+  ID_TEAM_BALANCER_INTERNAL = 0x66,
+  ID_TEAM_BALANCER_REQUESTED_TEAM_FULL = 0x67,
+  ID_TEAM_BALANCER_REQUESTED_TEAM_LOCKED = 0x68,
+  ID_TEAM_BALANCER_TEAM_REQUESTED_CANCELLED = 0x69,
+  ID_TEAM_BALANCER_TEAM_ASSIGNED = 0x6A,
+  ID_LIGHTSPEED_INTEGRATION = 0x6B,
+  ID_XBOX_LOBBY = 0x6C,
+  ID_TWO_WAY_AUTHENTICATION_INCOMING_CHALLENGE_SUCCESS = 0x6D,
+  ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_SUCCESS = 0x6E,
+  ID_TWO_WAY_AUTHENTICATION_INCOMING_CHALLENGE_FAILURE = 0x6F,
+  ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_FAILURE = 0x70,
+  ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_TIMEOUT = 0x71,
+  ID_TWO_WAY_AUTHENTICATION_NEGOTIATION = 0x72,
+  ID_CLOUD_POST_REQUEST = 0x73,
+  ID_CLOUD_RELEASE_REQUEST = 0x74,
+  ID_CLOUD_GET_REQUEST = 0x75,
+  ID_CLOUD_GET_RESPONSE = 0x76,
+  ID_CLOUD_UNSUBSCRIBE_REQUEST = 0x77,
+  ID_CLOUD_SERVER_TO_SERVER_COMMAND = 0x78,
+  ID_CLOUD_SUBSCRIPTION_NOTIFICATION = 0x79,
+  ID_LIB_VOICE = 0x7A,
+  ID_RELAY_PLUGIN = 0x7B,
+  ID_NAT_REQUEST_BOUND_ADDRESSES = 0x7C,
+  ID_NAT_RESPOND_BOUND_ADDRESSES = 0x7D,
+  ID_FCM2_UPDATE_USER_CONTEXT = 0x7E,
+  ID_RESERVED_3 = 0x7F,
+  ID_RESERVED_4 = 0x80,
+  ID_RESERVED_5 = 0x81,
+  ID_RESERVED_6 = 0x82,
+  ID_RESERVED_7 = 0x83,
+  ID_RESERVED_8 = 0x84,
+  ID_RESERVED_9 = 0x85,
+  ID_PONG_ADDRESS_INFO = 0x86,
+  ID_NAT_TRAVERSAL_PING = 0x87,
+  ID_NAT_TRAVERSAL_PONG = 0x88,
+  ID_REQUEST_WEBSOCKET_CONNECTION = 0x89,
+  ID_ACK_FAILED_WEBSOCKET_REQUEST = 0x8A,
+  ID_AVAILABLE_5 = 0x8B,
+  ID_AVAILABLE_6 = 0x8C,
+  ID_AVAILABLE_7 = 0x8D,
+  ID_USER_PACKET_ENUM = 0x8E,
+};
+
+</code></pre></div><h3 id="dataloadhelpertype"><a href="#dataloadhelpertype" class="header-anchor">#</a> <code>DataLoadHelperType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum DataLoadHelperType : __int32
+{
+  Default_9 = 0x0,
+  Structure_0 = 0x1,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/enums/C.html" class="prev">
+        C
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/enums/E.html">
+        E
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/11.84aff5f4.js" defer></script>
+  </body>
+</html>

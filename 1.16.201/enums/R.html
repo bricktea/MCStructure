@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>R | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/80.2282d655.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" aria-current="page" class="active sidebar-link">R</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="r"><a href="#r" class="header-anchor">#</a> R</h1> <h3 id="resourcefilesystem"><a href="#resourcefilesystem" class="header-anchor">#</a> <code>ResourceFileSystem</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="resourcepacksscreencontroller-packrestriction"><a href="#resourcepacksscreencontroller-packrestriction" class="header-anchor">#</a> <code>ResourcePacksScreenController::PackRestriction</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Unrestricted</td> <td><code>0</code></td></tr> <tr><td>Low</td> <td><code>1</code></td></tr> <tr><td>Medium</td> <td><code>2</code></td></tr> <tr><td>High</td> <td><code>3</code></td></tr></tbody></table> <h3 id="remapping-actionenum"><a href="#remapping-actionenum" class="header-anchor">#</a> <code>Remapping::ActionEnum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Use</td> <td><code>0</code></td></tr> <tr><td>Place</td> <td><code>1</code></td></tr></tbody></table> <h3 id="realmsoffertier"><a href="#realmsoffertier" class="header-anchor">#</a> <code>RealmsOfferTier</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Offer2Player</td> <td><code>0</code></td></tr> <tr><td>Offer10Player</td> <td><code>1</code></td></tr> <tr><td>Offer16Player</td> <td><code>2</code></td></tr></tbody></table> <h3 id="realmsoffernumber"><a href="#realmsoffernumber" class="header-anchor">#</a> <code>RealmsOfferNumber</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="redefinitionmode"><a href="#redefinitionmode" class="header-anchor">#</a> <code>RedefinitionMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>KeepCurrent</td> <td><code>0</code></td></tr> <tr><td>UpdateToNewDefault</td> <td><code>1</code></td></tr></tbody></table> <h3 id="raknet-dyndnsresultcode"><a href="#raknet-dyndnsresultcode" class="header-anchor">#</a> <code>RakNet::DynDnsResultCode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>RC_SUCCESS</td> <td><code>0</code></td></tr> <tr><td>RC_DNS_ALREADY_SET</td> <td><code>1</code></td></tr> <tr><td>RC_NO_CHANGE</td> <td><code>2</code></td></tr> <tr><td>RC_NOT_DONATOR</td> <td><code>3</code></td></tr> <tr><td>RC_NO_HOST</td> <td><code>4</code></td></tr> <tr><td>RC_BAD_AUTH</td> <td><code>5</code></td></tr> <tr><td>RC_NOT_YOURS</td> <td><code>6</code></td></tr> <tr><td>RC_ABUSE</td> <td><code>7</code></td></tr> <tr><td>RC_TCP_FAILED_TO_START</td> <td><code>8</code></td></tr> <tr><td>RC_TCP_DID_NOT_CONNECT</td> <td><code>9</code></td></tr> <tr><td>RC_UNKNOWN_RESULT</td> <td><code>10</code></td></tr> <tr><td>RC_PARSING_FAILURE</td> <td><code>11</code></td></tr> <tr><td>RC_CONNECTION_LOST_WITHOUT_RESPONSE</td> <td><code>12</code></td></tr> <tr><td>RC_BAD_AGENT</td> <td><code>13</code></td></tr> <tr><td>RC_BAD_SYS</td> <td><code>14</code></td></tr> <tr><td>RC_DNS_ERROR</td> <td><code>15</code></td></tr> <tr><td>RC_NOT_FQDN</td> <td><code>16</code></td></tr> <tr><td>RC_NUM_HOST</td> <td><code>17</code></td></tr> <tr><td>RC_911</td> <td><code>18</code></td></tr> <tr><td>RC_DYNDNS_TIMEOUT</td> <td><code>19</code></td></tr></tbody></table> <h3 id="realmsapi-inviteaction"><a href="#realmsapi-inviteaction" class="header-anchor">#</a> <code>RealmsAPI::InviteAction</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="realms-world-state"><a href="#realms-world-state" class="header-anchor">#</a> <code>Realms::World::State</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Uninitialized</td> <td><code>0</code></td></tr> <tr><td>Closed</td> <td><code>1</code></td></tr> <tr><td>Open</td> <td><code>2</code></td></tr> <tr><td>End</td> <td><code>3</code></td></tr></tbody></table> <h3 id="rawinputtype"><a href="#rawinputtype" class="header-anchor">#</a> <code>RawInputType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="realmsapi-compatibility"><a href="#realmsapi-compatibility" class="header-anchor">#</a> <code>RealmsAPI::Compatibility</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Xbl</td> <td><code>1</code></td></tr> <tr><td>Guest</td> <td><code>2</code></td></tr> <tr><td>Other</td> <td><code>3</code></td></tr></tbody></table> <h3 id="realms-subscriptioninfo-purchasetype"><a href="#realms-subscriptioninfo-purchasetype" class="header-anchor">#</a> <code>Realms::SubscriptionInfo::PurchaseType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Consumable</td> <td><code>0</code></td></tr> <tr><td>Subscription</td> <td><code>1</code></td></tr></tbody></table> <h3 id="resourceinformation-resourcetype"><a href="#resourceinformation-resourcetype" class="header-anchor">#</a> <code>ResourceInformation::ResourceType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="realmspurchaseintent"><a href="#realmspurchaseintent" class="header-anchor">#</a> <code>RealmsPurchaseIntent</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>CreateRealm</td> <td><code>0</code></td></tr> <tr><td>ExtendRealm</td> <td><code>1</code></td></tr> <tr><td>RenewRealm</td> <td><code>2</code></td></tr></tbody></table> <h3 id="realmsplustabindex"><a href="#realmsplustabindex" class="header-anchor">#</a> <code>RealmsPlusTabIndex</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ropewave-direction"><a href="#ropewave-direction" class="header-anchor">#</a> <code>RopeWave::Direction</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>StartToEnd</td> <td><code>0</code></td></tr> <tr><td>EndToStart</td> <td><code>1</code></td></tr></tbody></table> <h3 id="rendergraph-resourcebinding-accesstype"><a href="#rendergraph-resourcebinding-accesstype" class="header-anchor">#</a> <code>rendergraph::ResourceBinding::AccessType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>UNSPECIFIED</td> <td><code>0</code></td></tr> <tr><td>BUFFER</td> <td><code>2</code></td></tr></tbody></table> <h3 id="rendergraph-resourcebinding-resourcetype"><a href="#rendergraph-resourcebinding-resourcetype" class="header-anchor">#</a> <code>rendergraph::ResourceBinding::ResourceType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="rendergraph-resourcebinding-shaderstage"><a href="#rendergraph-resourcebinding-shaderstage" class="header-anchor">#</a> <code>rendergraph::ResourceBinding::ShaderStage</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="realmsoffertype"><a href="#realmsoffertype" class="header-anchor">#</a> <code>RealmsOfferType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>OfferConsumable</td> <td><code>0</code></td></tr> <tr><td>OfferSubscription</td> <td><code>1</code></td></tr></tbody></table> <h3 id="realmsofferperiod"><a href="#realmsofferperiod" class="header-anchor">#</a> <code>RealmsOfferPeriod</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Offer30Days</td> <td><code>0</code></td></tr> <tr><td>Offer180Days</td> <td><code>1</code></td></tr> <tr><td>OfferMonthly</td> <td><code>2</code></td></tr></tbody></table> <h3 id="resourceloadtype"><a href="#resourceloadtype" class="header-anchor">#</a> <code>ResourceLoadType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="rapidjson-parseerrorcode"><a href="#rapidjson-parseerrorcode" class="header-anchor">#</a> <code>rapidjson::ParseErrorCode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>kParseErrorNone</td> <td><code>0</code></td></tr> <tr><td>kParseErrorDocumentEmpty</td> <td><code>1</code></td></tr> <tr><td>kParseErrorDocumentRootNotSingular</td> <td><code>2</code></td></tr> <tr><td>kParseErrorValueInvalid</td> <td><code>3</code></td></tr> <tr><td>kParseErrorObjectMissName</td> <td><code>4</code></td></tr> <tr><td>kParseErrorObjectMissColon</td> <td><code>5</code></td></tr> <tr><td>kParseErrorObjectMissCommaOrCurlyBracket</td> <td><code>6</code></td></tr> <tr><td>kParseErrorArrayMissCommaOrSquareBracket</td> <td><code>7</code></td></tr> <tr><td>kParseErrorStringUnicodeEscapeInvalidHex</td> <td><code>8</code></td></tr> <tr><td>kParseErrorStringUnicodeSurrogateInvalid</td> <td><code>9</code></td></tr> <tr><td>kParseErrorStringEscapeInvalid</td> <td><code>10</code></td></tr> <tr><td>kParseErrorStringMissQuotationMark</td> <td><code>11</code></td></tr> <tr><td>kParseErrorStringInvalidEncoding</td> <td><code>12</code></td></tr> <tr><td>kParseErrorNumberTooBig</td> <td><code>13</code></td></tr> <tr><td>kParseErrorNumberMissFraction</td> <td><code>14</code></td></tr> <tr><td>kParseErrorNumberMissExponent</td> <td><code>15</code></td></tr> <tr><td>kParseErrorTermination</td> <td><code>16</code></td></tr> <tr><td>kParseErrorUnspecificSyntaxError</td> <td><code>17</code></td></tr></tbody></table> <h3 id="rapidjson-utftype"><a href="#rapidjson-utftype" class="header-anchor">#</a> <code>rapidjson::UTFType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>kUTF8</td> <td><code>0</code></td></tr> <tr><td>kUTF16LE</td> <td><code>1</code></td></tr> <tr><td>kUTF16BE</td> <td><code>2</code></td></tr> <tr><td>kUTF32LE</td> <td><code>3</code></td></tr> <tr><td>kUTF32BE</td> <td><code>4</code></td></tr></tbody></table> <h3 id="rapidjson-genericreader-rapidjson-autoutf-unsigned-int-rapidjson-utf8-char-rapidjson-crtallocator-iterativeparsingstate"><a href="#rapidjson-genericreader-rapidjson-autoutf-unsigned-int-rapidjson-utf8-char-rapidjson-crtallocator-iterativeparsingstate" class="header-anchor">#</a> <code>rapidjson::GenericReader&lt;rapidjson::AutoUTF&lt;unsigned int&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::IterativeParsingState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>IterativeParsingFinishState</td> <td><code>0</code></td></tr> <tr><td>IterativeParsingErrorState</td> <td><code>1</code></td></tr> <tr><td>IterativeParsingStartState</td> <td><code>2</code></td></tr> <tr><td>IterativeParsingObjectInitialState</td> <td><code>3</code></td></tr> <tr><td>IterativeParsingMemberKeyState</td> <td><code>4</code></td></tr> <tr><td>IterativeParsingMemberValueState</td> <td><code>5</code></td></tr> <tr><td>IterativeParsingObjectFinishState</td> <td><code>6</code></td></tr> <tr><td>IterativeParsingArrayInitialState</td> <td><code>7</code></td></tr> <tr><td>IterativeParsingElementState</td> <td><code>8</code></td></tr> <tr><td>IterativeParsingArrayFinishState</td> <td><code>9</code></td></tr> <tr><td>IterativeParsingValueState</td> <td><code>10</code></td></tr> <tr><td>IterativeParsingElementDelimiterState</td> <td><code>11</code></td></tr> <tr><td>IterativeParsingMemberDelimiterState</td> <td><code>12</code></td></tr> <tr><td>IterativeParsingKeyValueDelimiterState</td> <td><code>13</code></td></tr> <tr><td>cIterativeParsingStateCount</td> <td><code>14</code></td></tr></tbody></table> <h3 id="rapidjson-genericreader-rapidjson-utf8-char-rapidjson-utf8-char-rapidjson-crtallocator-iterativeparsingstate"><a href="#rapidjson-genericreader-rapidjson-utf8-char-rapidjson-utf8-char-rapidjson-crtallocator-iterativeparsingstate" class="header-anchor">#</a> <code>rapidjson::GenericReader&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::IterativeParsingState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="replacescorhdrnumericdefines"><a href="#replacescorhdrnumericdefines" class="header-anchor">#</a> <code>ReplacesCorHdrNumericDefines</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ReplacesCorHdrNumericDefines : __int32
+{
+  COMIMAGE_FLAGS_ILONLY = 0x1,
+  COMIMAGE_FLAGS_32BITREQUIRED = 0x2,
+  COMIMAGE_FLAGS_IL_LIBRARY = 0x4,
+  COMIMAGE_FLAGS_STRONGNAMESIGNED = 0x8,
+  COMIMAGE_FLAGS_NATIVE_ENTRYPOINT = 0x10,
+  COMIMAGE_FLAGS_TRACKDEBUGDATA = 0x10000,
+  COMIMAGE_FLAGS_32BITPREFERRED = 0x20000,
+  COR_VERSION_MAJOR_V2 = 0x2,
+  COR_VERSION_MAJOR = 0x2,
+  COR_VERSION_MINOR = 0x5,
+  COR_DELETED_NAME_LENGTH = 0x8,
+  COR_VTABLEGAP_NAME_LENGTH = 0x8,
+  NATIVE_TYPE_MAX_CB = 0x1,
+  COR_ILMETHOD_SECT_SMALL_MAX_DATASIZE = 0xFF,
+  IMAGE_COR_MIH_METHODRVA = 0x1,
+  IMAGE_COR_MIH_EHRVA = 0x2,
+  IMAGE_COR_MIH_BASICBLOCK = 0x8,
+  COR_VTABLE_32BIT = 0x1,
+  COR_VTABLE_64BIT = 0x2,
+  COR_VTABLE_FROM_UNMANAGED = 0x4,
+  COR_VTABLE_FROM_UNMANAGED_RETAIN_APPDOMAIN = 0x8,
+  COR_VTABLE_CALL_MOST_DERIVED = 0x10,
+  IMAGE_COR_EATJ_THUNK_SIZE = 0x20,
+  MAX_CLASS_NAME = 0x400,
+  MAX_PACKAGE_NAME = 0x400,
+};
+
+</code></pre></div><h3 id="rotation"><a href="#rotation" class="header-anchor">#</a> <code>Rotation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Rotation : __int8
+{
+  None = 0x0,
+  Rotate90 = 0x1,
+  Rotate180 = 0x2,
+  Rotate270 = 0x3,
+  Total = 0x4,
+};
+
+</code></pre></div><h3 id="realmsenvironment"><a href="#realmsenvironment" class="header-anchor">#</a> <code>RealmsEnvironment</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RealmsEnvironment : __int32
+{
+  Production = 0x0,
+  Staging = 0x1,
+  Dev = 0x2,
+  Local = 0x3,
+  EnvironmentCount = 0x4,
+};
+
+</code></pre></div><h3 id="rendercapability"><a href="#rendercapability" class="header-anchor">#</a> <code>RenderCapability</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID RenderCapability;
+
+</code></pre></div><h3 id="resourcepackstacktype"><a href="#resourcepackstacktype" class="header-anchor">#</a> <code>ResourcePackStackType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ResourcePackStackType : __int32
+{
+  LEVEL = 0x0,
+  ADDON = 0x1,
+  GLOBAL = 0x2,
+  TREATMENT = 0x3,
+  BASE_GAME = 0x4,
+  SIZE = 0x5,
+};
+
+</code></pre></div><h3 id="realms-genericstatus"><a href="#realms-genericstatus" class="header-anchor">#</a> <code>Realms::GenericStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome Realms::GenericStatus;
+
+</code></pre></div><h3 id="resourcepackresponse"><a href="#resourcepackresponse" class="header-anchor">#</a> <code>ResourcePackResponse</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ResourcePackResponse : __int8
+{
+  Cancel = 0x1,
+  Downloading = 0x2,
+  DownloadingFinished = 0x3,
+  ResourcePackStackFinished = 0x4,
+};
+
+</code></pre></div><h3 id="relationshipstatus"><a href="#relationshipstatus" class="header-anchor">#</a> <code>RelationshipStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace RelationshipStatus;
+
+</code></pre></div><h3 id="realmsapi-joinstatus"><a href="#realmsapi-joinstatus" class="header-anchor">#</a> <code>RealmsAPI::JoinStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome RealmsAPI::JoinStatus;
+
+</code></pre></div><h3 id="realmsapi-failurereason"><a href="#realmsapi-failurereason" class="header-anchor">#</a> <code>RealmsAPI::FailureReason</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation RealmsAPI::FailureReason;
+
+</code></pre></div><h3 id="realmsstartpurchaseresult"><a href="#realmsstartpurchaseresult" class="header-anchor">#</a> <code>RealmsStartPurchaseResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome RealmsStartPurchaseResult;
+
+</code></pre></div><h3 id="requirementcategory"><a href="#requirementcategory" class="header-anchor">#</a> <code>RequirementCategory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ResourcePackStackType RequirementCategory;
+
+</code></pre></div><h3 id="requesteventpriority"><a href="#requesteventpriority" class="header-anchor">#</a> <code>RequestEventPriority</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation RequestEventPriority;
+
+</code></pre></div><h3 id="realmsplussectiontype"><a href="#realmsplussectiontype" class="header-anchor">#</a> <code>RealmsPlusSectionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NavButtonLinksTo RealmsPlusSectionType;
+
+</code></pre></div><h3 id="realms-contenttype"><a href="#realms-contenttype" class="header-anchor">#</a> <code>Realms::ContentType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace Realms::ContentType;
+
+</code></pre></div><h3 id="realmsallowlistscreencontroller-searchstate"><a href="#realmsallowlistscreencontroller-searchstate" class="header-anchor">#</a> <code>RealmsAllowListScreenController::SearchState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RealmsAllowListScreenController::SearchState : __int32
+{
+  NotInitialized = 0xFFFFFFFF,
+  NotFound = 0x0,
+  Found = 0x1,
+};
+
+</code></pre></div><h3 id="realmsallowlistscreencontroller-realmplayerlist"><a href="#realmsallowlistscreencontroller-realmplayerlist" class="header-anchor">#</a> <code>RealmsAllowListScreenController::RealmPlayerList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RealmsAllowListScreenController::RealmPlayerList : __int32
+{
+  InvalidMemberList = 0xFFFFFFFF,
+  MembersList = 0x0,
+  InvitedFriendsList = 0x1,
+  UninvitedFriendsList = 0x2,
+  BlockedPlayersList = 0x3,
+};
+
+</code></pre></div><h3 id="requesthandler-waitforsignin"><a href="#requesthandler-waitforsignin" class="header-anchor">#</a> <code>RequestHandler::WaitForSignIn</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation RequestHandler::WaitForSignIn;
+
+</code></pre></div><h3 id="replaystatemode"><a href="#replaystatemode" class="header-anchor">#</a> <code>ReplayStateMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AutoUpdateMode ReplayStateMode;
+
+</code></pre></div><h3 id="responseparametercontext"><a href="#responseparametercontext" class="header-anchor">#</a> <code>ResponseParameterContext</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ResponseParameterContext;
+
+</code></pre></div><h3 id="rendercontrollerarraytype"><a href="#rendercontrollerarraytype" class="header-anchor">#</a> <code>RenderControllerArrayType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId RenderControllerArrayType;
+
+</code></pre></div><h3 id="rendercontrollercolorchannels"><a href="#rendercontrollercolorchannels" class="header-anchor">#</a> <code>RenderControllerColorChannels</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId RenderControllerColorChannels;
+
+</code></pre></div><h3 id="rendercontrolleruvanimchannels"><a href="#rendercontrolleruvanimchannels" class="header-anchor">#</a> <code>RenderControllerUVAnimChannels</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId RenderControllerUVAnimChannels;
+
+</code></pre></div><h3 id="rendercontexttype"><a href="#rendercontexttype" class="header-anchor">#</a> <code>RenderContextType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace RenderContextType;
+
+</code></pre></div><h3 id="renderparam"><a href="#renderparam" class="header-anchor">#</a> <code>RenderParam</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace RenderParam;
+
+</code></pre></div><h3 id="rpcproxyperfcounters"><a href="#rpcproxyperfcounters" class="header-anchor">#</a> <code>RpcProxyPerfCounters</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RpcProxyPerfCounters : __int32
+{
+  RpcCurrentUniqueUser = 0x1,
+  RpcBackEndConnectionAttempts = 0x2,
+  RpcBackEndConnectionFailed = 0x3,
+  RpcRequestsPerSecond = 0x4,
+  RpcIncomingConnections = 0x5,
+  RpcIncomingBandwidth = 0x6,
+  RpcOutgoingBandwidth = 0x7,
+  RpcAttemptedLbsDecisions = 0x8,
+  RpcFailedLbsDecisions = 0x9,
+  RpcAttemptedLbsMessages = 0xA,
+  RpcFailedLbsMessages = 0xB,
+  RpcLastCounter = 0xC,
+};
+
+</code></pre></div><h3 id="rpc-address-change-type"><a href="#rpc-address-change-type" class="header-anchor">#</a> <code>RPC_ADDRESS_CHANGE_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RPC_ADDRESS_CHANGE_TYPE : __int32
+{
+  PROTOCOL_NOT_LOADED = 0x1,
+  PROTOCOL_LOADED = 0x2,
+  PROTOCOL_ADDRESS_CHANGE = 0x3,
+};
+
+</code></pre></div><h3 id="ro-init-type"><a href="#ro-init-type" class="header-anchor">#</a> <code>RO_INIT_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RO_INIT_TYPE : __int32
+{
+  RO_INIT_SINGLETHREADED = 0x0,
+  RO_INIT_MULTITHREADED = 0x1,
+};
+
+</code></pre></div><h3 id="raknet-connectionstate"><a href="#raknet-connectionstate" class="header-anchor">#</a> <code>RakNet::ConnectionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::ConnectionState : __int32
+{
+  IS_PENDING = 0x0,
+  IS_CONNECTING = 0x1,
+  IS_CONNECTED = 0x2,
+  IS_DISCONNECTING = 0x3,
+  IS_SILENTLY_DISCONNECTING = 0x4,
+  IS_DISCONNECTED = 0x5,
+  IS_NOT_CONNECTED = 0x6,
+};
+
+</code></pre></div><h3 id="raknet-connectionattemptresult"><a href="#raknet-connectionattemptresult" class="header-anchor">#</a> <code>RakNet::ConnectionAttemptResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::ConnectionAttemptResult : __int32
+{
+  CONNECTION_ATTEMPT_STARTED = 0x0,
+  INVALID_PARAMETER = 0x1,
+  CANNOT_RESOLVE_DOMAIN_NAME = 0x2,
+  ALREADY_CONNECTED_TO_ENDPOINT = 0x3,
+  CONNECTION_ATTEMPT_ALREADY_IN_PROGRESS = 0x4,
+  SECURITY_INITIALIZATION_FAILED = 0x5,
+};
+
+</code></pre></div><h3 id="raknet-startupresult"><a href="#raknet-startupresult" class="header-anchor">#</a> <code>RakNet::StartupResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::StartupResult : __int32
+{
+  RAKNET_STARTED = 0x0,
+  RAKNET_ALREADY_STARTED = 0x1,
+  INVALID_SOCKET_DESCRIPTORS = 0x2,
+  INVALID_MAX_CONNECTIONS = 0x3,
+  SOCKET_FAMILY_NOT_SUPPORTED = 0x4,
+  SOCKET_PORT_ALREADY_IN_USE = 0x5,
+  SOCKET_FAILED_TO_BIND = 0x6,
+  SOCKET_FAILED_TEST_SEND = 0x7,
+  PORT_CANNOT_BE_ZERO = 0x8,
+  FAILED_TO_CREATE_NETWORK_THREAD = 0x9,
+  COULD_NOT_GENERATE_GUID = 0xA,
+  STARTUP_OTHER_FAILURE = 0xB,
+};
+
+</code></pre></div><h3 id="raknet-rns2type"><a href="#raknet-rns2type" class="header-anchor">#</a> <code>RakNet::RNS2Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RNS2Type : __int32
+{
+  RNS2T_WINDOWS_STORE_8 = 0x0,
+  RNS2T_PS3 = 0x1,
+  RNS2T_PS4 = 0x2,
+  RNS2T_CHROME = 0x3,
+  RNS2T_VITA = 0x4,
+  RNS2T_XBOX_360 = 0x5,
+  RNS2T_XBOX_720 = 0x6,
+  RNS2T_WINDOWS = 0x7,
+  RNS2T_LINUX = 0x8,
+};
+
+</code></pre></div><h3 id="raknet-adapterattributes"><a href="#raknet-adapterattributes" class="header-anchor">#</a> <code>RakNet::AdapterAttributes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::AdapterAttributes : __int32
+{
+  NO_ATTRIBUTES = 0x0,
+  IS_MULTICAST = 0x1,
+  IS_LOOPBACK = 0x2,
+  HAS_NO_GATEWAY = 0x4,
+};
+
+</code></pre></div><h3 id="raknet-publickeymode"><a href="#raknet-publickeymode" class="header-anchor">#</a> <code>RakNet::PublicKeyMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::PublicKeyMode : __int32
+{
+  PKM_INSECURE_CONNECTION = 0x0,
+  PKM_ACCEPT_ANY_PUBLIC_KEY = 0x1,
+  PKM_USE_KNOWN_PUBLIC_KEY = 0x2,
+  PKM_USE_TWO_WAY_AUTHENTICATION = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-rns2recvfromresultcheck"><a href="#raknet-rns2recvfromresultcheck" class="header-anchor">#</a> <code>RakNet::RNS2RecvFromResultCheck</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RNS2RecvFromResultCheck : __int32
+{
+  RFRC_PASS_RECEIVED_DATA_TO_APP = 0x1,
+  RFRC_HANDLE_RECEIVED_EMPTY_UDP_PACKET = 0x0,
+  RFRC_HANDLE_GRACEFULLY_CLOSED_TCP_CONN = 0xFFFFFFFF,
+  RFRC_HANDLE_ENETDOWN_NETERROR = 0xFFFFFFFE,
+  RFRC_HANDLE_OTHER_NETERRORS = 0xFFFFFF9B,
+};
+
+</code></pre></div><h3 id="raknet-rns2bindresult"><a href="#raknet-rns2bindresult" class="header-anchor">#</a> <code>RakNet::RNS2BindResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RNS2BindResult : __int32
+{
+  BR_SUCCESS = 0x0,
+  BR_REQUIRES_RAKNET_SUPPORT_IPV6_DEFINE = 0x1,
+  BR_FAILED_TO_BIND_SOCKET = 0x2,
+  BR_FAILED_SEND_TEST = 0x3,
+};
+
+</code></pre></div><h3 id="rendergraph-validationresult"><a href="#rendergraph-validationresult" class="header-anchor">#</a> <code>rendergraph::ValidationResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rendergraph::ValidationResult : __int32
+{
+  VALID = 0x0,
+  UNREACHABLE_PASS = 0x1,
+  BEGIN_FAILURE = 0x2,
+  CRITICAL_FAILURE = 0x3,
+  EXTERNAL_RESOURCE_NOT_FOUND = 0x4,
+  EXTERNAL_RESOURCE_MISMATCH = 0x5,
+  TRANSIENT_RESOURCE_NOT_FOUND = 0x6,
+  INVALID_RESOURCE_ACCESS = 0x7,
+  INVALID_RESOURCE_TARGET_LINK = 0x8,
+  INVALID_RESOURCE_VIEW_LINK = 0x9,
+  DUPLICATE_RESOURCE_BINDING = 0xA,
+  DUPLICATE_FRAMEBUFFER_BINDING = 0xB,
+  INVALID_FRAMEBUFFER_LINK = 0xC,
+  INVALID_FRAMEBUFFER_REQUIREMENT = 0xD,
+  END_FAILURE = 0xE,
+};
+
+</code></pre></div><h3 id="rendergraph-passbuilderinterface-cleartarget"><a href="#rendergraph-passbuilderinterface-cleartarget" class="header-anchor">#</a> <code>rendergraph::PassBuilderInterface::ClearTarget</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation rendergraph::PassBuilderInterface::ClearTarget;
+
+</code></pre></div><h3 id="rendergraph-renderorder-passregistry-framebufferrequirement"><a href="#rendergraph-renderorder-passregistry-framebufferrequirement" class="header-anchor">#</a> <code>rendergraph::RenderOrder::PassRegistry::FrameBufferRequirement</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rendergraph::ResourceBinding::ResourceType rendergraph::RenderOrder::PassRegistry::FrameBufferRequirement;
+
+</code></pre></div><h3 id="renderchunkinstanced-sortstate"><a href="#renderchunkinstanced-sortstate" class="header-anchor">#</a> <code>RenderChunkInstanced::SortState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ClientInstanceState RenderChunkInstanced::SortState;
+
+</code></pre></div><h3 id="renderchunkshared-visibilitybuildstate"><a href="#renderchunkshared-visibilitybuildstate" class="header-anchor">#</a> <code>RenderChunkShared::VisibilityBuildState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState RenderChunkShared::VisibilityBuildState;
+
+</code></pre></div><h3 id="renderchunkshared-datastate"><a href="#renderchunkshared-datastate" class="header-anchor">#</a> <code>RenderChunkShared::DataState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SerializerDirection RenderChunkShared::DataState;
+
+</code></pre></div><h3 id="renderchunkshared-buildstate"><a href="#renderchunkshared-buildstate" class="header-anchor">#</a> <code>RenderChunkShared::BuildState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RenderChunkShared::BuildState : __int32
+{
+  Building = 0x0,
+  NotBuldingOrSorting = 0x1,
+};
+
+</code></pre></div><h3 id="rakwebsocket-packetdirection"><a href="#rakwebsocket-packetdirection" class="header-anchor">#</a> <code>RakWebSocket::PacketDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakWebSocket::PacketDirection : __int32
+{
+  INWARD = 0x1,
+  OUTWARD = 0x2,
+  BOTHWAYS = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-pluginreceiveresult"><a href="#raknet-pluginreceiveresult" class="header-anchor">#</a> <code>RakNet::PluginReceiveResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::PluginReceiveResult : __int32
+{
+  RR_STOP_PROCESSING_AND_DEALLOCATE = 0x0,
+  RR_CONTINUE_PROCESSING = 0x1,
+  RR_STOP_PROCESSING = 0x2,
+};
+
+</code></pre></div><h3 id="raknet-rnspersecondmetrics"><a href="#raknet-rnspersecondmetrics" class="header-anchor">#</a> <code>RakNet::RNSPerSecondMetrics</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RNSPerSecondMetrics : __int32
+{
+  USER_MESSAGE_BYTES_PUSHED = 0x0,
+  USER_MESSAGE_BYTES_SENT = 0x1,
+  USER_MESSAGE_BYTES_RESENT = 0x2,
+  USER_MESSAGE_BYTES_RECEIVED_PROCESSED = 0x3,
+  USER_MESSAGE_BYTES_RECEIVED_IGNORED = 0x4,
+  ACTUAL_BYTES_SENT = 0x5,
+  ACTUAL_BYTES_RECEIVED = 0x6,
+  RNS_PER_SECOND_METRICS_COUNT = 0x7,
+};
+
+</code></pre></div><h3 id="rakpeerhelper-ipversion"><a href="#rakpeerhelper-ipversion" class="header-anchor">#</a> <code>RakPeerHelper::IPVersion</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID RakPeerHelper::IPVersion;
+
+</code></pre></div><h3 id="raknetinstance-natstate"><a href="#raknetinstance-natstate" class="header-anchor">#</a> <code>RakNetInstance::NATState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FlightingService::FetchState RakNetInstance::NATState;
+
+</code></pre></div><h3 id="raknetserverlocator-protocolversion"><a href="#raknetserverlocator-protocolversion" class="header-anchor">#</a> <code>RakNetServerLocator::protocolVersion</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNetServerLocator::protocolVersion : __int32
+{
+  ipv4 = 0x4,
+  ipv6 = 0x6,
+};
+
+</code></pre></div><h3 id="rakwebsocket-connectionstate"><a href="#rakwebsocket-connectionstate" class="header-anchor">#</a> <code>RakWebSocket::ConnectionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakWebSocket::ConnectionState : __int32
+{
+  CS_NONE = 0x0,
+  CS_CLOSE_HANDSHAKE = 0x1,
+  CS_STARTING = 0x2,
+  CS_CONNECTING = 0x3,
+  CS_OPEN_HANDSHAKE_INIT = 0x4,
+  CS_OPEN_HANDSHAKE_AWAIT = 0x5,
+  CS_OPEN_AND_PROCESSING = 0x6,
+};
+
+</code></pre></div><h3 id="raknet-pi2-lostconnectionreason"><a href="#raknet-pi2-lostconnectionreason" class="header-anchor">#</a> <code>RakNet::PI2_LostConnectionReason</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::PI2_LostConnectionReason : __int32
+{
+  LCR_CLOSED_BY_USER = 0x0,
+  LCR_DISCONNECTION_NOTIFICATION = 0x1,
+  LCR_CONNECTION_LOST = 0x2,
+};
+
+</code></pre></div><h3 id="raknet-pi2-failedconnectionattemptreason"><a href="#raknet-pi2-failedconnectionattemptreason" class="header-anchor">#</a> <code>RakNet::PI2_FailedConnectionAttemptReason</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::PI2_FailedConnectionAttemptReason : __int32
+{
+  FCAR_CONNECTION_ATTEMPT_FAILED = 0x0,
+  FCAR_ALREADY_CONNECTED = 0x1,
+  FCAR_NO_FREE_INCOMING_CONNECTIONS = 0x2,
+  FCAR_SECURITY_PUBLIC_KEY_MISMATCH = 0x3,
+  FCAR_CONNECTION_BANNED = 0x4,
+  FCAR_INVALID_PASSWORD = 0x5,
+  FCAR_INCOMPATIBLE_PROTOCOL = 0x6,
+  FCAR_IP_RECENTLY_CONNECTED = 0x7,
+  FCAR_REMOTE_SYSTEM_REQUIRES_PUBLIC_KEY = 0x8,
+  FCAR_OUR_SYSTEM_REQUIRES_SECURITY = 0x9,
+  FCAR_PUBLIC_KEY_MISMATCH = 0xA,
+};
+
+</code></pre></div><h3 id="registrationtype"><a href="#registrationtype" class="header-anchor">#</a> <code>RegistrationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent RegistrationType;
+
+</code></pre></div><h3 id="realms-subscriptionservice-subscriptionquerystatus"><a href="#realms-subscriptionservice-subscriptionquerystatus" class="header-anchor">#</a> <code>Realms::SubscriptionService::SubscriptionQueryStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SerializerDirection Realms::SubscriptionService::SubscriptionQueryStatus;
+
+</code></pre></div><h3 id="remotestorageprovidersyncprogresshandler-state"><a href="#remotestorageprovidersyncprogresshandler-state" class="header-anchor">#</a> <code>RemoteStorageProviderSyncProgressHandler::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ClientInstanceState RemoteStorageProviderSyncProgressHandler::State;
+
+</code></pre></div><h3 id="ropeparams-flags"><a href="#ropeparams-flags" class="header-anchor">#</a> <code>RopeParams::Flags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation RopeParams::Flags;
+
+</code></pre></div><h3 id="realmscreatescreencontroller-state"><a href="#realmscreatescreencontroller-state" class="header-anchor">#</a> <code>RealmsCreateScreenController::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RealmsCreateScreenController::State : __int32
+{
+  INITIAL = 0x0,
+  PROCESSING = 0x1,
+  FAIL = 0x2,
+  SUCCESS = 0x3,
+};
+
+</code></pre></div><h3 id="recipecontainerbackgroundstyle"><a href="#recipecontainerbackgroundstyle" class="header-anchor">#</a> <code>RecipeContainerBackgroundStyle</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions RecipeContainerBackgroundStyle;
+
+</code></pre></div><h3 id="realmssubscriptionsloadingstate"><a href="#realmssubscriptionsloadingstate" class="header-anchor">#</a> <code>RealmsSubscriptionsLoadingState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SerializerDirection RealmsSubscriptionsLoadingState;
+
+</code></pre></div><h3 id="realmtype"><a href="#realmtype" class="header-anchor">#</a> <code>RealmType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RealmType : __int32
+{
+  Personal = 0x0,
+  Friends = 0x1,
+};
+
+</code></pre></div><h3 id="realmssettingsscreencontroller-purchaseintent"><a href="#realmssettingsscreencontroller-purchaseintent" class="header-anchor">#</a> <code>RealmsSettingsScreenController::PurchaseIntent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef mce::Font::Type RealmsSettingsScreenController::PurchaseIntent;
+
+</code></pre></div><h3 id="realms-invite-state"><a href="#realms-invite-state" class="header-anchor">#</a> <code>Realms::Invite::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Realms::World::State Realms::Invite::State;
+
+</code></pre></div><h3 id="realmsplusupgradenoticestate"><a href="#realmsplusupgradenoticestate" class="header-anchor">#</a> <code>RealmsPlusUpgradeNoticeState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IsMissingTexture RealmsPlusUpgradeNoticeState;
+
+</code></pre></div><h3 id="renderingprofileoption"><a href="#renderingprofileoption" class="header-anchor">#</a> <code>RenderingProfileOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef mce::RenderingProfile RenderingProfileOption;
+
+</code></pre></div><h3 id="railtype"><a href="#railtype" class="header-anchor">#</a> <code>RailType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId RailType;
+
+</code></pre></div><h3 id="resourceloaders-resourcefiletype"><a href="#resourceloaders-resourcefiletype" class="header-anchor">#</a> <code>ResourceLoaders::ResourceFileType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID ResourceLoaders::ResourceFileType;
+
+</code></pre></div><h3 id="ridecommand-rideaction"><a href="#ridecommand-rideaction" class="header-anchor">#</a> <code>RideCommand::RideAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RideCommand::RideAction : __int8
+{
+  StartRiding = 0x0,
+  StopRiding = 0x1,
+  EvictRiders = 0x2,
+  SummonRider = 0x3,
+  SummonRide = 0x4,
+};
+
+</code></pre></div><h3 id="ridecommand-teleportrules"><a href="#ridecommand-teleportrules" class="header-anchor">#</a> <code>RideCommand::TeleportRules</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RideCommand::TeleportRules : __int8
+{
+  TeleportRider = 0x0,
+  TeleportRide = 0x1,
+};
+
+</code></pre></div><h3 id="ridecommand-ridefilltype"><a href="#ridecommand-ridefilltype" class="header-anchor">#</a> <code>RideCommand::RideFillType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RideCommand::RideFillType : __int8
+{
+  UntilFull = 0x0,
+  IfGroupFits = 0x1,
+};
+
+</code></pre></div><h3 id="ridecommand-riderules"><a href="#ridecommand-riderules" class="header-anchor">#</a> <code>RideCommand::RideRules</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RideCommand::RideRules : __int8
+{
+  NoRideChange = 0x0,
+  ReassignRides = 0x1,
+  SkipRiders = 0x2,
+};
+
+</code></pre></div><h3 id="rapidjson-genericvalue-rapidjson-utf8-char-rapidjson-memorypoolallocator-rapidjson-crtallocator-shortstring-unnamed-enum-maxchars"><a href="#rapidjson-genericvalue-rapidjson-utf8-char-rapidjson-memorypoolallocator-rapidjson-crtallocator-shortstring-unnamed-enum-maxchars" class="header-anchor">#</a> <code>rapidjson::GenericValue&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::MemoryPoolAllocator&lt;rapidjson::CrtAllocator&gt; &gt;::ShortString::&lt;unnamed_enum_MaxChars&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::GenericValue&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::MemoryPoolAllocator&lt;rapidjson::CrtAllocator&gt; &gt;::ShortString::&lt;unnamed_enum_MaxChars&gt; : __int32
+{
+  MaxChars = 0xE,
+  MaxSize = 0xD,
+  LenPos = 0xD,
+};
+
+</code></pre></div><h3 id="rapidjson-genericvalue-rapidjson-utf8-char-rapidjson-memorypoolallocator-rapidjson-crtallocator-unnamed-enum-kboolflag"><a href="#rapidjson-genericvalue-rapidjson-utf8-char-rapidjson-memorypoolallocator-rapidjson-crtallocator-unnamed-enum-kboolflag" class="header-anchor">#</a> <code>rapidjson::GenericValue&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::MemoryPoolAllocator&lt;rapidjson::CrtAllocator&gt; &gt;::&lt;unnamed_enum_kBoolFlag&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::GenericValue&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::MemoryPoolAllocator&lt;rapidjson::CrtAllocator&gt; &gt;::&lt;unnamed_enum_kBoolFlag&gt; : __int32
+{
+  kBoolFlag = 0x8,
+  kNumberFlag = 0x10,
+  kIntFlag = 0x20,
+  kUintFlag = 0x40,
+  kInt64Flag = 0x80,
+  kUint64Flag = 0x100,
+  kDoubleFlag = 0x200,
+  kStringFlag = 0x400,
+  kCopyFlag = 0x800,
+  kInlineStrFlag = 0x1000,
+  kNullFlag = 0x0,
+  kTrueFlag = 0xA,
+  kFalseFlag = 0x9,
+  kNumberIntFlag = 0xB6,
+  kNumberUintFlag = 0x1D6,
+  kNumberInt64Flag = 0x96,
+  kNumberUint64Flag = 0x116,
+  kNumberDoubleFlag = 0x216,
+  kNumberAnyFlag = 0x3F6,
+  kConstStringFlag = 0x405,
+  kCopyStringFlag = 0xC05,
+  kShortStringFlag = 0x1C05,
+  kObjectFlag = 0x3,
+  kArrayFlag = 0x4,
+  kTypeMask = 0x7,
+};
+
+</code></pre></div><h3 id="rapidjson-type"><a href="#rapidjson-type" class="header-anchor">#</a> <code>rapidjson::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::Type : __int32
+{
+  kNullType = 0x0,
+  kFalseType = 0x1,
+  kTrueType = 0x2,
+  kObjectType = 0x3,
+  kArrayType = 0x4,
+  kStringType = 0x5,
+  kNumberType = 0x6,
+};
+
+</code></pre></div><h3 id="rapidjson-parseflag"><a href="#rapidjson-parseflag" class="header-anchor">#</a> <code>rapidjson::ParseFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::ParseFlag : __int32
+{
+  kParseNoFlags = 0x0,
+  kParseInsituFlag = 0x1,
+  kParseValidateEncodingFlag = 0x2,
+  kParseIterativeFlag = 0x4,
+  kParseStopWhenDoneFlag = 0x8,
+  kParseFullPrecisionFlag = 0x10,
+  kParseCommentsFlag = 0x20,
+  kParseNumbersAsStringsFlag = 0x40,
+  kParseTrailingCommasFlag = 0x80,
+  kParseNanAndInfFlag = 0x100,
+  kParseDefaultFlags = 0x0,
+};
+
+</code></pre></div><h3 id="rapidjson-utf8-char-unnamed-enum-supportunicode"><a href="#rapidjson-utf8-char-unnamed-enum-supportunicode" class="header-anchor">#</a> <code>rapidjson::UTF8&lt;char&gt;::&lt;unnamed_enum_supportUnicode&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::UTF8&lt;char&gt;::&lt;unnamed_enum_supportUnicode&gt; : __int32
+{
+  supportUnicode = 0x1,
+};
+
+</code></pre></div><h3 id="raid-raidstate"><a href="#raid-raidstate" class="header-anchor">#</a> <code>Raid::RaidState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CompactionStatus Raid::RaidState;
+
+</code></pre></div><h3 id="replaceitemcommand-replacemode"><a href="#replaceitemcommand-replacemode" class="header-anchor">#</a> <code>ReplaceItemCommand::ReplaceMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ReplaceItemCommand::ReplaceMode : __int32
+{
+  Destroy = 0x0,
+  Keep = 0x1,
+};
+
+</code></pre></div><h3 id="replaceitemcommand-targettype"><a href="#replaceitemcommand-targettype" class="header-anchor">#</a> <code>ReplaceItemCommand::TargetType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LevelChunkTag ReplaceItemCommand::TargetType;
+
+</code></pre></div><h3 id="readmode-t"><a href="#readmode-t" class="header-anchor">#</a> <code>ReadMode_t</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ReadMode_t : __int32
+{
+  READ_METADATA = 0x1,
+  READ_IMAGE = 0x2,
+  READ_ALL = 0x3,
+  READ_ANY = 0x5,
+};
+
+</code></pre></div><h3 id="rakwebsocketdataframe-parsestate"><a href="#rakwebsocketdataframe-parsestate" class="header-anchor">#</a> <code>RakWebSocketDataFrame::ParseState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef HttpHeaders::ParseState RakWebSocketDataFrame::ParseState;
+
+</code></pre></div><h3 id="repeatercapacitor-states"><a href="#repeatercapacitor-states" class="header-anchor">#</a> <code>RepeaterCapacitor::States</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DevConnectionQuality RepeaterCapacitor::States;
+
+</code></pre></div><h3 id="raildirection"><a href="#raildirection" class="header-anchor">#</a> <code>RailDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RailDirection : __int32
+{
+  NorthSouth = 0x0,
+  EastWest = 0x1,
+  AscendingEast = 0x2,
+  AscendingWest = 0x3,
+  AscendingNorth = 0x4,
+  AscendingSouth = 0x5,
+  SouthEast = 0x6,
+  SouthWest = 0x7,
+  NorthWest = 0x8,
+  NorthEast = 0x9,
+};
+
+</code></pre></div><h3 id="receiverid"><a href="#receiverid" class="header-anchor">#</a> <code>ReceiverId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ReceiverId : __int16
+{
+  RECEIVER_NONE = 0x0,
+  ISLAND_ID_PLATFORM = 0x1,
+  ISLAND_ID_APP = 0x2,
+  ISLAND_ID_USERMANAGER = 0x3,
+  ISLAND_ID_INPUT = 0x4,
+  ISLAND_ID_THREADING = 0x5,
+  ISLAND_ID_FILELOCAL = 0x6,
+  ISLAND_ID_FILECLOUD = 0x7,
+  ISLAND_ID_NETWORK = 0x8,
+  ISLAND_ID_AUDIO = 0x9,
+  ISLAND_ID_LOGGING = 0xA,
+  ISLAND_ID_TELEMETRY = 0xB,
+  FIRST_USER_RECEIVER = 0xC,
+};
+
+</code></pre></div><h3 id="respawnanimation"><a href="#respawnanimation" class="header-anchor">#</a> <code>RespawnAnimation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent RespawnAnimation;
+
+</code></pre></div><h3 id="ro-error-reporting-flags"><a href="#ro-error-reporting-flags" class="header-anchor">#</a> <code>RO_ERROR_REPORTING_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RO_ERROR_REPORTING_FLAGS : __int32
+{
+  RO_ERROR_REPORTING_NONE = 0x0,
+  RO_ERROR_REPORTING_SUPPRESSEXCEPTIONS = 0x1,
+  RO_ERROR_REPORTING_FORCEEXCEPTIONS = 0x2,
+  RO_ERROR_REPORTING_USESETERRORINFO = 0x4,
+  RO_ERROR_REPORTING_SUPPRESSSETERRORINFO = 0x8,
+};
+
+</code></pre></div><h3 id="rapidjson-streamtraits-rapidjson-autoutfinputstream-unsigned-int-rapidjson-memorystream-unnamed-enum-copyoptimization"><a href="#rapidjson-streamtraits-rapidjson-autoutfinputstream-unsigned-int-rapidjson-memorystream-unnamed-enum-copyoptimization" class="header-anchor">#</a> <code>rapidjson::StreamTraits&lt;rapidjson::AutoUTFInputStream&lt;unsigned int,rapidjson::MemoryStream&gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::StreamTraits&lt;rapidjson::AutoUTFInputStream&lt;unsigned int,rapidjson::MemoryStream&gt; &gt;::&lt;unnamed_enum_copyOptimization&gt; : __int32
+{
+  copyOptimization = 0x0,
+};
+
+</code></pre></div><h3 id="rapidjson-autoutf-unsigned-int-unnamed-enum-supportunicode"><a href="#rapidjson-autoutf-unsigned-int-unnamed-enum-supportunicode" class="header-anchor">#</a> <code>rapidjson::AutoUTF&lt;unsigned int&gt;::&lt;unnamed_enum_supportUnicode&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::UTF8&lt;char&gt;::&lt;unnamed_enum_supportUnicode&gt; rapidjson::AutoUTF&lt;unsigned int&gt;::&lt;unnamed_enum_supportUnicode&gt;;
+
+</code></pre></div><h3 id="rapidjson-utf16-unsigned-int-unnamed-enum-supportunicode"><a href="#rapidjson-utf16-unsigned-int-unnamed-enum-supportunicode" class="header-anchor">#</a> <code>rapidjson::UTF16&lt;unsigned int&gt;::&lt;unnamed_enum_supportUnicode&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::UTF8&lt;char&gt;::&lt;unnamed_enum_supportUnicode&gt; rapidjson::UTF16&lt;unsigned int&gt;::&lt;unnamed_enum_supportUnicode&gt;;
+
+</code></pre></div><h3 id="rapidjson-utf8-unsigned-int-unnamed-enum-supportunicode"><a href="#rapidjson-utf8-unsigned-int-unnamed-enum-supportunicode" class="header-anchor">#</a> <code>rapidjson::UTF8&lt;unsigned int&gt;::&lt;unnamed_enum_supportUnicode&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::UTF8&lt;char&gt;::&lt;unnamed_enum_supportUnicode&gt; rapidjson::UTF8&lt;unsigned int&gt;::&lt;unnamed_enum_supportUnicode&gt;;
+
+</code></pre></div><h3 id="rapidjson-utf32-unsigned-int-unnamed-enum-supportunicode"><a href="#rapidjson-utf32-unsigned-int-unnamed-enum-supportunicode" class="header-anchor">#</a> <code>rapidjson::UTF32&lt;unsigned int&gt;::&lt;unnamed_enum_supportUnicode&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::UTF8&lt;char&gt;::&lt;unnamed_enum_supportUnicode&gt; rapidjson::UTF32&lt;unsigned int&gt;::&lt;unnamed_enum_supportUnicode&gt;;
+
+</code></pre></div><h3 id="rapidjson-genericreader-rapidjson-autoutf-unsigned-int-rapidjson-utf8-char-rapidjson-crtallocator-token"><a href="#rapidjson-genericreader-rapidjson-autoutf-unsigned-int-rapidjson-utf8-char-rapidjson-crtallocator-token" class="header-anchor">#</a> <code>rapidjson::GenericReader&lt;rapidjson::AutoUTF&lt;unsigned int&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::Token</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::GenericReader&lt;rapidjson::AutoUTF&lt;unsigned int&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::Token : __int32
+{
+  LeftBracketToken = 0x0,
+  RightBracketToken = 0x1,
+  LeftCurlyBracketToken = 0x2,
+  RightCurlyBracketToken = 0x3,
+  CommaToken = 0x4,
+  ColonToken = 0x5,
+  StringToken = 0x6,
+  FalseToken = 0x7,
+  TrueToken = 0x8,
+  NullToken = 0x9,
+  NumberToken = 0xA,
+  kTokenCount = 0xB,
+};
+
+</code></pre></div><h3 id="redstonescreentype"><a href="#redstonescreentype" class="header-anchor">#</a> <code>RedstoneScreenType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecartType RedstoneScreenType;
+
+</code></pre></div><h3 id="raknet-dyndns-connectphase"><a href="#raknet-dyndns-connectphase" class="header-anchor">#</a> <code>RakNet::DynDNS::ConnectPhase</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::DynDNS::ConnectPhase : __int32
+{
+  CP_CONNECTING_TO_CHECKIP = 0x0,
+  CP_WAITING_FOR_CHECKIP_RESPONSE = 0x1,
+  CP_CONNECTING_TO_DYNDNS = 0x2,
+  CP_WAITING_FOR_DYNDNS_RESPONSE = 0x3,
+  CP_IDLE = 0x4,
+};
+
+</code></pre></div><h3 id="raknet-fullyconnectedmesh2-joininprogressstate"><a href="#raknet-fullyconnectedmesh2-joininprogressstate" class="header-anchor">#</a> <code>RakNet::FullyConnectedMesh2::JoinInProgressState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::FullyConnectedMesh2::JoinInProgressState : __int32
+{
+  JIPS_PROCESSING = 0x0,
+  JIPS_FAILED = 0x1,
+  JIPS_CONNECTED = 0x2,
+  JIPS_UNNECESSARY = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-httpconnection-responsecodes"><a href="#raknet-httpconnection-responsecodes" class="header-anchor">#</a> <code>RakNet::HTTPConnection::ResponseCodes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BedSleepingResult RakNet::HTTPConnection::ResponseCodes;
+
+</code></pre></div><h3 id="raknet-httpconnection-connectionstate"><a href="#raknet-httpconnection-connectionstate" class="header-anchor">#</a> <code>RakNet::HTTPConnection::ConnectionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef RakWebSocket::ConnectionState RakNet::HTTPConnection::ConnectionState;
+
+</code></pre></div><h3 id="raknet-nattypedetectionresult"><a href="#raknet-nattypedetectionresult" class="header-anchor">#</a> <code>RakNet::NATTypeDetectionResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::NATTypeDetectionResult : __int32
+{
+  NAT_TYPE_NONE = 0x0,
+  NAT_TYPE_FULL_CONE = 0x1,
+  NAT_TYPE_ADDRESS_RESTRICTED = 0x2,
+  NAT_TYPE_PORT_RESTRICTED = 0x3,
+  NAT_TYPE_SYMMETRIC = 0x4,
+  NAT_TYPE_UNKNOWN = 0x5,
+  NAT_TYPE_DETECTION_IN_PROGRESS = 0x6,
+  NAT_TYPE_SUPPORTS_UPNP = 0x7,
+  NAT_TYPE_COUNT = 0x8,
+};
+
+</code></pre></div><h3 id="raknet-natpunchthroughclient-unnamed-type-hasportstride"><a href="#raknet-natpunchthroughclient-unnamed-type-hasportstride" class="header-anchor">#</a> <code>RakNet::NatPunchthroughClient::&lt;unnamed_type_hasPortStride&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::NatPunchthroughClient::&lt;unnamed_type_hasPortStride&gt; : __int32
+{
+  HAS_PORT_STRIDE = 0x0,
+  UNKNOWN_PORT_STRIDE = 0x1,
+  CALCULATING_PORT_STRIDE = 0x2,
+  INCAPABLE_PORT_STRIDE = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-natpunchthroughclient-sendping-testmode"><a href="#raknet-natpunchthroughclient-sendping-testmode" class="header-anchor">#</a> <code>RakNet::NatPunchthroughClient::SendPing::TestMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::NatPunchthroughClient::SendPing::TestMode : __int32
+{
+  TESTING_INTERNAL_IPS = 0x0,
+  WAITING_FOR_INTERNAL_IPS_RESPONSE = 0x1,
+  TESTING_EXTERNAL_IPS_FACILITATOR_PORT_TO_FACILITATOR_PORT = 0x2,
+  TESTING_EXTERNAL_IPS_1024_TO_FACILITATOR_PORT = 0x3,
+  TESTING_EXTERNAL_IPS_FACILITATOR_PORT_TO_1024 = 0x4,
+  TESTING_EXTERNAL_IPS_1024_TO_1024 = 0x5,
+  WAITING_AFTER_ALL_ATTEMPTS = 0x6,
+  PUNCHING_FIXED_PORT = 0x7,
+};
+
+</code></pre></div><h3 id="raknet-nattypedetectionserver-natdetectionstate"><a href="#raknet-nattypedetectionserver-natdetectionstate" class="header-anchor">#</a> <code>RakNet::NatTypeDetectionServer::NATDetectionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::NatTypeDetectionServer::NATDetectionState : __int32
+{
+  STATE_NONE = 0x0,
+  STATE_TESTING_NONE_1 = 0x1,
+  STATE_TESTING_NONE_2 = 0x2,
+  STATE_TESTING_FULL_CONE_1 = 0x3,
+  STATE_TESTING_FULL_CONE_2 = 0x4,
+  STATE_TESTING_ADDRESS_RESTRICTED_1 = 0x5,
+  STATE_TESTING_ADDRESS_RESTRICTED_2 = 0x6,
+  STATE_TESTING_PORT_RESTRICTED_1 = 0x7,
+  STATE_TESTING_PORT_RESTRICTED_2 = 0x8,
+  STATE_DONE = 0x9,
+};
+
+</code></pre></div><h3 id="raknet-natpunchthroughserver-connectionattempt-unnamed-type-attemptphase"><a href="#raknet-natpunchthroughserver-connectionattempt-unnamed-type-attemptphase" class="header-anchor">#</a> <code>RakNet::NatPunchthroughServer::ConnectionAttempt::&lt;unnamed_type_attemptPhase&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::NatPunchthroughServer::ConnectionAttempt::&lt;unnamed_type_attemptPhase&gt; : __int32
+{
+  NAT_ATTEMPT_PHASE_NOT_STARTED = 0x0,
+  NAT_ATTEMPT_PHASE_GETTING_RECENT_PORTS = 0x1,
+};
+
+</code></pre></div><h3 id="raknet-rackspaceoperationtype"><a href="#raknet-rackspaceoperationtype" class="header-anchor">#</a> <code>RakNet::RackspaceOperationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RackspaceOperationType : __int32
+{
+  RO_CONNECT_AND_AUTHENTICATE = 0x0,
+  RO_LIST_SERVERS = 0x1,
+  RO_LIST_SERVERS_WITH_DETAILS = 0x2,
+  RO_CREATE_SERVER = 0x3,
+  RO_GET_SERVER_DETAILS = 0x4,
+  RO_UPDATE_SERVER_NAME_OR_PASSWORD = 0x5,
+  RO_DELETE_SERVER = 0x6,
+  RO_LIST_SERVER_ADDRESSES = 0x7,
+  RO_SHARE_SERVER_ADDRESS = 0x8,
+  RO_DELETE_SERVER_ADDRESS = 0x9,
+  RO_REBOOT_SERVER = 0xA,
+  RO_REBUILD_SERVER = 0xB,
+  RO_RESIZE_SERVER = 0xC,
+  RO_CONFIRM_RESIZED_SERVER = 0xD,
+  RO_REVERT_RESIZED_SERVER = 0xE,
+  RO_LIST_FLAVORS = 0xF,
+  RO_GET_FLAVOR_DETAILS = 0x10,
+  RO_LIST_IMAGES = 0x11,
+  RO_CREATE_IMAGE = 0x12,
+  RO_GET_IMAGE_DETAILS = 0x13,
+  RO_DELETE_IMAGE = 0x14,
+  RO_LIST_SHARED_IP_GROUPS = 0x15,
+  RO_LIST_SHARED_IP_GROUPS_WITH_DETAILS = 0x16,
+  RO_CREATE_SHARED_IP_GROUP = 0x17,
+  RO_GET_SHARED_IP_GROUP_DETAILS = 0x18,
+  RO_DELETE_SHARED_IP_GROUP = 0x19,
+  RO_NONE = 0x1A,
+};
+
+</code></pre></div><h3 id="raknet-rackspaceeventtype"><a href="#raknet-rackspaceeventtype" class="header-anchor">#</a> <code>RakNet::RackspaceEventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RackspaceEventType : __int32
+{
+  RET_Success_200 = 0x0,
+  RET_Success_201 = 0x1,
+  RET_Success_202 = 0x2,
+  RET_Success_203 = 0x3,
+  RET_Success_204 = 0x4,
+  RET_Cloud_Servers_Fault_500 = 0x5,
+  RET_Service_Unavailable_503 = 0x6,
+  RET_Unauthorized_401 = 0x7,
+  RET_Bad_Request_400 = 0x8,
+  RET_Over_Limit_413 = 0x9,
+  RET_Bad_Media_Type_415 = 0xA,
+  RET_Item_Not_Found_404 = 0xB,
+  RET_Build_In_Progress_409 = 0xC,
+  RET_Resize_Not_Allowed_403 = 0xD,
+  RET_Connection_Closed_Without_Reponse = 0xE,
+  RET_Unknown_Failure = 0xF,
+};
+
+</code></pre></div><h3 id="raknet-internalpacket-allocationscheme"><a href="#raknet-internalpacket-allocationscheme" class="header-anchor">#</a> <code>RakNet::InternalPacket::AllocationScheme</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CloseStatusCode RakNet::InternalPacket::AllocationScheme;
+
+</code></pre></div><h3 id="raknet-rakpeer-remotesystemstruct-connectmode"><a href="#raknet-rakpeer-remotesystemstruct-connectmode" class="header-anchor">#</a> <code>RakNet::RakPeer::RemoteSystemStruct::ConnectMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DataStructures::BPlusTree&lt;unsigned int,DataStructures::Table::Row *,16&gt;::ReturnAction::&lt;unnamed_type_action&gt; RakNet::RakPeer::RemoteSystemStruct::ConnectMode;
+
+</code></pre></div><h3 id="raknet-rakpeer-unnamed-enum-requestedconnectionlist-mutex"><a href="#raknet-rakpeer-unnamed-enum-requestedconnectionlist-mutex" class="header-anchor">#</a> <code>RakNet::RakPeer::&lt;unnamed_enum_requestedConnectionList_Mutex&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RakPeer::&lt;unnamed_enum_requestedConnectionList_Mutex&gt; : __int32
+{
+  requestedConnectionList_Mutex = 0x0,
+  offlinePingResponse_Mutex = 0x1,
+  NUMBER_OF_RAKPEER_MUTEXES = 0x2,
+};
+
+</code></pre></div><h3 id="raknet-rakpeer-bufferedcommandstruct-unnamed-type-command"><a href="#raknet-rakpeer-bufferedcommandstruct-unnamed-type-command" class="header-anchor">#</a> <code>RakNet::RakPeer::BufferedCommandStruct::&lt;unnamed_type_command&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RakPeer::BufferedCommandStruct::&lt;unnamed_type_command&gt; : __int32
+{
+  BCS_SEND = 0x0,
+  BCS_CLOSE_CONNECTION = 0x1,
+  BCS_GET_SOCKET = 0x2,
+  BCS_CHANGE_SYSTEM_ADDRESS = 0x3,
+  BCS_DO_NOTHING = 0x4,
+};
+
+</code></pre></div><h3 id="raknet-rakpeer-requestedconnectionstruct-unnamed-type-actiontotake"><a href="#raknet-rakpeer-requestedconnectionstruct-unnamed-type-actiontotake" class="header-anchor">#</a> <code>RakNet::RakPeer::RequestedConnectionStruct::&lt;unnamed_type_actionToTake&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RakPeer::RequestedConnectionStruct::&lt;unnamed_type_actionToTake&gt; : __int32
+{
+  CONNECT = 0x1,
+};
+
+</code></pre></div><h3 id="router2messageidentifiers"><a href="#router2messageidentifiers" class="header-anchor">#</a> <code>Router2MessageIdentifiers</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Router2MessageIdentifiers : __int32
+{
+  ID_ROUTER_2_QUERY_FORWARDING = 0x0,
+  ID_ROUTER_2_REPLY_FORWARDING = 0x1,
+  ID_ROUTER_2_REQUEST_FORWARDING = 0x2,
+  ID_ROUTER_2_INCREASE_TIMEOUT = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-relaypluginenums"><a href="#raknet-relaypluginenums" class="header-anchor">#</a> <code>RakNet::RelayPluginEnums</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RelayPluginEnums : __int32
+{
+  RPE_MESSAGE_TO_SERVER_FROM_CLIENT = 0x0,
+  RPE_ADD_CLIENT_REQUEST_FROM_CLIENT = 0x1,
+  RPE_REMOVE_CLIENT_REQUEST_FROM_CLIENT = 0x2,
+  RPE_GROUP_MESSAGE_FROM_CLIENT = 0x3,
+  RPE_JOIN_GROUP_REQUEST_FROM_CLIENT = 0x4,
+  RPE_LEAVE_GROUP_REQUEST_FROM_CLIENT = 0x5,
+  RPE_GET_GROUP_LIST_REQUEST_FROM_CLIENT = 0x6,
+  RPE_MESSAGE_TO_CLIENT_FROM_SERVER = 0x7,
+  RPE_ADD_CLIENT_NOT_ALLOWED = 0x8,
+  RPE_ADD_CLIENT_TARGET_NOT_CONNECTED = 0x9,
+  RPE_ADD_CLIENT_NAME_ALREADY_IN_USE = 0xA,
+  RPE_ADD_CLIENT_SUCCESS = 0xB,
+  RPE_USER_ENTERED_ROOM = 0xC,
+  RPE_USER_LEFT_ROOM = 0xD,
+  RPE_GROUP_MSG_FROM_SERVER = 0xE,
+  RPE_GET_GROUP_LIST_REPLY_FROM_SERVER = 0xF,
+  RPE_JOIN_GROUP_SUCCESS = 0x10,
+  RPE_JOIN_GROUP_FAILURE = 0x11,
+};
+
+</code></pre></div><h3 id="raknet-udpforwarderresult"><a href="#raknet-udpforwarderresult" class="header-anchor">#</a> <code>RakNet::UDPForwarderResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::UDPForwarderResult : __int32
+{
+  UDPFORWARDER_FORWARDING_ALREADY_EXISTS = 0x0,
+  UDPFORWARDER_NO_SOCKETS = 0x1,
+  UDPFORWARDER_BIND_FAILED = 0x2,
+  UDPFORWARDER_INVALID_PARAMETERS = 0x3,
+  UDPFORWARDER_NOT_RUNNING = 0x4,
+  UDPFORWARDER_SUCCESS = 0x5,
+  UDPFORWARDER_RESULT_COUNT = 0x6,
+};
+
+</code></pre></div><h3 id="raknet-rm3serializationresult"><a href="#raknet-rm3serializationresult" class="header-anchor">#</a> <code>RakNet::RM3SerializationResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RM3SerializationResult : __int32
+{
+  RM3SR_BROADCAST_IDENTICALLY = 0x0,
+  RM3SR_BROADCAST_IDENTICALLY_FORCE_SERIALIZATION = 0x1,
+  RM3SR_SERIALIZED_UNIQUELY = 0x2,
+  RM3SR_SERIALIZED_ALWAYS = 0x3,
+  RM3SR_SERIALIZED_ALWAYS_IDENTICALLY = 0x4,
+  RM3SR_DO_NOT_SERIALIZE = 0x5,
+  RM3SR_NEVER_SERIALIZE_FOR_THIS_CONNECTION = 0x6,
+  RM3SR_MAX = 0x7,
+};
+
+</code></pre></div><h3 id="raknet-rm3actiononpopconnection"><a href="#raknet-rm3actiononpopconnection" class="header-anchor">#</a> <code>RakNet::RM3ActionOnPopConnection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RM3ActionOnPopConnection : __int32
+{
+  RM3AOPC_DO_NOTHING = 0x0,
+  RM3AOPC_DELETE_REPLICA = 0x1,
+  RM3AOPC_DELETE_REPLICA_AND_BROADCAST_DESTRUCTION = 0x2,
+  RM3AOPC_MAX = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-sendserializeifchangedresult"><a href="#raknet-sendserializeifchangedresult" class="header-anchor">#</a> <code>RakNet::SendSerializeIfChangedResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::SendSerializeIfChangedResult : __int32
+{
+  SSICR_SENT_DATA = 0x0,
+  SSICR_DID_NOT_SEND_DATA = 0x1,
+  SSICR_NEVER_SERIALIZE = 0x2,
+};
+
+</code></pre></div><h3 id="raknet-replica3p2pmode"><a href="#raknet-replica3p2pmode" class="header-anchor">#</a> <code>RakNet::Replica3P2PMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::Replica3P2PMode : __int32
+{
+  R3P2PM_SINGLE_OWNER = 0x0,
+  R3P2PM_MULTI_OWNER_CURRENTLY_AUTHORITATIVE = 0x1,
+  R3P2PM_MULTI_OWNER_NOT_CURRENTLY_AUTHORITATIVE = 0x2,
+  R3P2PM_STATIC_OBJECT_CURRENTLY_AUTHORITATIVE = 0x3,
+  R3P2PM_STATIC_OBJECT_NOT_CURRENTLY_AUTHORITATIVE = 0x4,
+};
+
+</code></pre></div><h3 id="raknet-rm3destructionstate"><a href="#raknet-rm3destructionstate" class="header-anchor">#</a> <code>RakNet::RM3DestructionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RM3DestructionState : __int32
+{
+  RM3DS_SEND_DESTRUCTION = 0x0,
+  RM3DS_DO_NOT_QUERY_DESTRUCTION = 0x1,
+  RM3DS_NO_ACTION = 0x2,
+  RM3DS_MAX = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-readyeventsystemstatus"><a href="#raknet-readyeventsystemstatus" class="header-anchor">#</a> <code>RakNet::ReadyEventSystemStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::ReadyEventSystemStatus : __int32
+{
+  RES_NOT_WAITING = 0x0,
+  RES_WAITING = 0x1,
+  RES_READY = 0x2,
+  RES_ALL_READY = 0x3,
+  RES_UNKNOWN_EVENT = 0x4,
+};
+
+</code></pre></div><h3 id="raknet-rpcerrorcodes"><a href="#raknet-rpcerrorcodes" class="header-anchor">#</a> <code>RakNet::RPCErrorCodes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RPCErrorCodes : __int32
+{
+  RPC_ERROR_FUNCTION_NOT_REGISTERED = 0x0,
+};
+
+</code></pre></div><h3 id="raknet-rm3queryserializationresult"><a href="#raknet-rm3queryserializationresult" class="header-anchor">#</a> <code>RakNet::RM3QuerySerializationResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RM3QuerySerializationResult : __int32
+{
+  RM3QSR_CALL_SERIALIZE = 0x0,
+  RM3QSR_DO_NOT_CALL_SERIALIZE = 0x1,
+  RM3QSR_NEVER_CALL_SERIALIZE = 0x2,
+  RM3QSR_MAX = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-rm3constructionstate"><a href="#raknet-rm3constructionstate" class="header-anchor">#</a> <code>RakNet::RM3ConstructionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::RM3ConstructionState : __int32
+{
+  RM3CS_SEND_CONSTRUCTION = 0x0,
+  RM3CS_ALREADY_EXISTS_REMOTELY = 0x1,
+  RM3CS_ALREADY_EXISTS_REMOTELY_DO_NOT_CONSTRUCT = 0x2,
+  RM3CS_NEVER_CONSTRUCT = 0x3,
+  RM3CS_NO_ACTION = 0x4,
+  RM3CS_MAX = 0x5,
+};
+
+</code></pre></div><h3 id="rpc4identifiers"><a href="#rpc4identifiers" class="header-anchor">#</a> <code>RPC4Identifiers</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RPC4Identifiers : __int32
+{
+  ID_RPC4_CALL = 0x0,
+  ID_RPC4_RETURN = 0x1,
+  ID_RPC4_SIGNAL = 0x2,
+};
+
+</code></pre></div><h3 id="raknet-router2-router2requeststates"><a href="#raknet-router2-router2requeststates" class="header-anchor">#</a> <code>RakNet::Router2::Router2RequestStates</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::Router2::Router2RequestStates : __int32
+{
+  R2RS_REQUEST_STATE_QUERY_FORWARDING = 0x0,
+  REQUEST_STATE_REQUEST_FORWARDING = 0x1,
+};
+
+</code></pre></div><h3 id="raknet-connection-rm3-constructionmode"><a href="#raknet-connection-rm3-constructionmode" class="header-anchor">#</a> <code>RakNet::Connection_RM3::ConstructionMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::Connection_RM3::ConstructionMode : __int32
+{
+  QUERY_REPLICA_FOR_CONSTRUCTION = 0x0,
+  QUERY_REPLICA_FOR_CONSTRUCTION_AND_DESTRUCTION = 0x1,
+  QUERY_CONNECTION_FOR_REPLICA_LIST = 0x2,
+};
+
+</code></pre></div><h3 id="raknet-jointeamtype"><a href="#raknet-jointeamtype" class="header-anchor">#</a> <code>RakNet::JoinTeamType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::JoinTeamType : __int32
+{
+  JOIN_ANY_AVAILABLE_TEAM = 0x0,
+  JOIN_SPECIFIC_TEAM = 0x1,
+  JOIN_NO_TEAM = 0x2,
+};
+
+</code></pre></div><h3 id="raknet-tmtopology"><a href="#raknet-tmtopology" class="header-anchor">#</a> <code>RakNet::TMTopology</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::TMTopology : __int32
+{
+  TM_PEER_TO_PEER = 0x0,
+  TM_CLIENT_SERVER = 0x1,
+};
+
+</code></pre></div><h3 id="raknet-statisticshistory-sherrorcode"><a href="#raknet-statisticshistory-sherrorcode" class="header-anchor">#</a> <code>RakNet::StatisticsHistory::SHErrorCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::StatisticsHistory::SHErrorCode : __int32
+{
+  SH_OK = 0x0,
+  SH_UKNOWN_OBJECT = 0x1,
+  SH_UKNOWN_KEY = 0x2,
+  SH_INVALID_PARAMETER = 0x3,
+};
+
+</code></pre></div><h3 id="raknet-statisticshistory-shsortoperation"><a href="#raknet-statisticshistory-shsortoperation" class="header-anchor">#</a> <code>RakNet::StatisticsHistory::SHSortOperation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::StatisticsHistory::SHSortOperation : __int32
+{
+  SH_DO_NOT_SORT = 0x0,
+  SH_SORT_BY_RECENT_SUM_ASCENDING = 0x1,
+  SH_SORT_BY_RECENT_SUM_DESCENDING = 0x2,
+  SH_SORT_BY_LONG_TERM_SUM_ASCENDING = 0x3,
+  SH_SORT_BY_LONG_TERM_SUM_DESCENDING = 0x4,
+  SH_SORT_BY_RECENT_SUM_OF_SQUARES_ASCENDING = 0x5,
+  SH_SORT_BY_RECENT_SUM_OF_SQUARES_DESCENDING = 0x6,
+  SH_SORT_BY_RECENT_AVERAGE_ASCENDING = 0x7,
+  SH_SORT_BY_RECENT_AVERAGE_DESCENDING = 0x8,
+  SH_SORT_BY_LONG_TERM_AVERAGE_ASCENDING = 0x9,
+  SH_SORT_BY_LONG_TERM_AVERAGE_DESCENDING = 0xA,
+  SH_SORT_BY_RECENT_HIGHEST_ASCENDING = 0xB,
+  SH_SORT_BY_RECENT_HIGHEST_DESCENDING = 0xC,
+  SH_SORT_BY_RECENT_LOWEST_ASCENDING = 0xD,
+  SH_SORT_BY_RECENT_LOWEST_DESCENDING = 0xE,
+  SH_SORT_BY_LONG_TERM_HIGHEST_ASCENDING = 0xF,
+  SH_SORT_BY_LONG_TERM_HIGHEST_DESCENDING = 0x10,
+  SH_SORT_BY_LONG_TERM_LOWEST_ASCENDING = 0x11,
+  SH_SORT_BY_LONG_TERM_LOWEST_DESCENDING = 0x12,
+};
+
+</code></pre></div><h3 id="raknet-statisticshistory-shdatacategory"><a href="#raknet-statisticshistory-shdatacategory" class="header-anchor">#</a> <code>RakNet::StatisticsHistory::SHDataCategory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::StatisticsHistory::SHDataCategory : __int32
+{
+  DC_DISCRETE = 0x0,
+  DC_CONTINUOUS = 0x1,
+};
+
+</code></pre></div><h3 id="raknet-teambalancer-defaultassigmentalgorithm"><a href="#raknet-teambalancer-defaultassigmentalgorithm" class="header-anchor">#</a> <code>RakNet::TeamBalancer::DefaultAssigmentAlgorithm</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RakNet::TeamBalancer::DefaultAssigmentAlgorithm : __int32
+{
+  SMALLEST_TEAM = 0x0,
+  FILL_IN_ORDER = 0x1,
+};
+
+</code></pre></div><h3 id="rapidjson-genericreader-rapidjson-utf8-char-rapidjson-utf8-char-rapidjson-crtallocator-token"><a href="#rapidjson-genericreader-rapidjson-utf8-char-rapidjson-utf8-char-rapidjson-crtallocator-token" class="header-anchor">#</a> <code>rapidjson::GenericReader&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::Token</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::GenericReader&lt;rapidjson::AutoUTF&lt;unsigned int&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::Token rapidjson::GenericReader&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::Token;
+
+</code></pre></div><h3 id="rapidjson-genericreader-rapidjson-utf8-char-rapidjson-utf8-char-bedrock-jsonobject-document-loadstring-5-donotallocate-token"><a href="#rapidjson-genericreader-rapidjson-utf8-char-rapidjson-utf8-char-bedrock-jsonobject-document-loadstring-5-donotallocate-token" class="header-anchor">#</a> <code>rapidjson::GenericReader&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::UTF8&lt;char&gt;,</code>Bedrock::JSONObject::Document::loadString'::<code>5'::DoNotAllocate&gt;::Token</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::GenericReader&lt;rapidjson::AutoUTF&lt;unsigned int&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::Token rapidjson::GenericReader&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::UTF8&lt;char&gt;,`Bedrock::JSONObject::Document::loadString'::`5'::DoNotAllocate&gt;::Token;
+
+</code></pre></div><h3 id="rapidjson-genericreader-rapidjson-utf8-char-rapidjson-utf8-char-bedrock-jsonobject-document-loadstring-5-donotallocate-iterativeparsingstate"><a href="#rapidjson-genericreader-rapidjson-utf8-char-rapidjson-utf8-char-bedrock-jsonobject-document-loadstring-5-donotallocate-iterativeparsingstate" class="header-anchor">#</a> <code>rapidjson::GenericReader&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::UTF8&lt;char&gt;,</code>Bedrock::JSONObject::Document::loadString'::<code>5'::DoNotAllocate&gt;::IterativeParsingState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::GenericReader&lt;rapidjson::AutoUTF&lt;unsigned int&gt;,rapidjson::UTF8&lt;char&gt;,rapidjson::CrtAllocator&gt;::IterativeParsingState rapidjson::GenericReader&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::UTF8&lt;char&gt;,`Bedrock::JSONObject::Document::loadString'::`5'::DoNotAllocate&gt;::IterativeParsingState;
+
+</code></pre></div><h3 id="rapidjson-streamtraits-rapidjson-genericstringstream-rapidjson-utf8-char-unnamed-enum-copyoptimization"><a href="#rapidjson-streamtraits-rapidjson-genericstringstream-rapidjson-utf8-char-unnamed-enum-copyoptimization" class="header-anchor">#</a> <code>rapidjson::StreamTraits&lt;rapidjson::GenericStringStream&lt;rapidjson::UTF8&lt;char&gt; &gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::StreamTraits&lt;rapidjson::AutoUTFInputStream&lt;unsigned int,rapidjson::MemoryStream&gt; &gt;::&lt;unnamed_enum_copyOptimization&gt; rapidjson::StreamTraits&lt;rapidjson::GenericStringStream&lt;rapidjson::UTF8&lt;char&gt; &gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;;
+
+</code></pre></div><h3 id="rapidjson-streamtraits-rapidjson-basicistreamwrapper-std-istream-unnamed-enum-copyoptimization"><a href="#rapidjson-streamtraits-rapidjson-basicistreamwrapper-std-istream-unnamed-enum-copyoptimization" class="header-anchor">#</a> <code>rapidjson::StreamTraits&lt;rapidjson::BasicIStreamWrapper&lt;std::istream &gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::StreamTraits&lt;rapidjson::AutoUTFInputStream&lt;unsigned int,rapidjson::MemoryStream&gt; &gt;::&lt;unnamed_enum_copyOptimization&gt; rapidjson::StreamTraits&lt;rapidjson::BasicIStreamWrapper&lt;std::istream &gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;;
+
+</code></pre></div><h3 id="rapidjson-streamtraits-rapidjson-genericinsitustringstream-rapidjson-utf8-char-unnamed-enum-copyoptimization"><a href="#rapidjson-streamtraits-rapidjson-genericinsitustringstream-rapidjson-utf8-char-unnamed-enum-copyoptimization" class="header-anchor">#</a> <code>rapidjson::StreamTraits&lt;rapidjson::GenericInsituStringStream&lt;rapidjson::UTF8&lt;char&gt; &gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::StreamTraits&lt;rapidjson::AutoUTFInputStream&lt;unsigned int,rapidjson::MemoryStream&gt; &gt;::&lt;unnamed_enum_copyOptimization&gt; rapidjson::StreamTraits&lt;rapidjson::GenericInsituStringStream&lt;rapidjson::UTF8&lt;char&gt; &gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;;
+
+</code></pre></div><h3 id="rapidjson-prettyformatoptions"><a href="#rapidjson-prettyformatoptions" class="header-anchor">#</a> <code>rapidjson::PrettyFormatOptions</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::PrettyFormatOptions : __int32
+{
+  kFormatDefault = 0x0,
+  kFormatSingleLineArray = 0x1,
+};
+
+</code></pre></div><h3 id="rapidjson-writeflag"><a href="#rapidjson-writeflag" class="header-anchor">#</a> <code>rapidjson::WriteFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum rapidjson::WriteFlag : __int32
+{
+  kWriteNoFlags = 0x0,
+  kWriteValidateEncodingFlag = 0x1,
+  kWriteNanAndInfFlag = 0x2,
+  kWriteDefaultFlags = 0x0,
+};
+
+</code></pre></div><h3 id="rapidjson-streamtraits-rapidjson-encodedinputstream-rapidjson-utf8-char-rapidjson-memorystream-unnamed-enum-copyoptimization"><a href="#rapidjson-streamtraits-rapidjson-encodedinputstream-rapidjson-utf8-char-rapidjson-memorystream-unnamed-enum-copyoptimization" class="header-anchor">#</a> <code>rapidjson::StreamTraits&lt;rapidjson::EncodedInputStream&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::MemoryStream&gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef rapidjson::StreamTraits&lt;rapidjson::AutoUTFInputStream&lt;unsigned int,rapidjson::MemoryStream&gt; &gt;::&lt;unnamed_enum_copyOptimization&gt; rapidjson::StreamTraits&lt;rapidjson::EncodedInputStream&lt;rapidjson::UTF8&lt;char&gt;,rapidjson::MemoryStream&gt; &gt;::&lt;unnamed_enum_copyOptimization&gt;;
+
+</code></pre></div><h3 id="rcvall-value"><a href="#rcvall-value" class="header-anchor">#</a> <code>RCVALL_VALUE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum RCVALL_VALUE : __int32
+{
+  RCVALL_OFF = 0x0,
+  RCVALL_ON = 0x1,
+  RCVALL_SOCKETLEVELONLY = 0x2,
+  RCVALL_IPLEVEL = 0x3,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/P.html" class="prev">
+        P
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/S.html">
+        S
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/80.2282d655.js" defer></script>
+  </body>
+</html>

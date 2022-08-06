@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>C | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/62.3cb13464.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" aria-current="page" class="active sidebar-link">C</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="c"><a href="#c" class="header-anchor">#</a> C</h1> <h3 id="contentflags"><a href="#contentflags" class="header-anchor">#</a> <code>ContentFlags</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="chalkboardsize"><a href="#chalkboardsize" class="header-anchor">#</a> <code>ChalkboardSize</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="cg-texturesetlayertype"><a href="#cg-texturesetlayertype" class="header-anchor">#</a> <code>cg::TextureSetLayerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Small</td> <td><code>0</code></td></tr> <tr><td>Normal</td> <td><code>1</code></td></tr> <tr><td>Large</td> <td><code>2</code></td></tr> <tr><td>ExtraLarge</td> <td><code>3</code></td></tr></tbody></table> <h3 id="cloudrendersiderelative"><a href="#cloudrendersiderelative" class="header-anchor">#</a> <code>CloudRenderSideRelative</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Air</td> <td><code>0</code></td></tr> <tr><td>Dirt</td> <td><code>1</code></td></tr> <tr><td>Wood</td> <td><code>2</code></td></tr> <tr><td>Stone</td> <td><code>3</code></td></tr> <tr><td>Metal</td> <td><code>4</code></td></tr> <tr><td>Water</td> <td><code>5</code></td></tr> <tr><td>Lava</td> <td><code>6</code></td></tr> <tr><td>Leaves</td> <td><code>7</code></td></tr> <tr><td>Plant</td> <td><code>8</code></td></tr> <tr><td>ReplaceablePlant</td> <td><code>9</code></td></tr> <tr><td>Sponge</td> <td><code>10</code></td></tr> <tr><td>Cloth</td> <td><code>11</code></td></tr> <tr><td>Bed</td> <td><code>12</code></td></tr> <tr><td>Fire</td> <td><code>13</code></td></tr> <tr><td>Sand</td> <td><code>14</code></td></tr> <tr><td>Decoration</td> <td><code>15</code></td></tr> <tr><td>Glass</td> <td><code>16</code></td></tr> <tr><td>Explosive</td> <td><code>17</code></td></tr> <tr><td>Ice</td> <td><code>18</code></td></tr> <tr><td>PackedIce</td> <td><code>19</code></td></tr> <tr><td>TopSnow</td> <td><code>20</code></td></tr> <tr><td>Snow</td> <td><code>21</code></td></tr> <tr><td>Cactus</td> <td><code>22</code></td></tr> <tr><td>Clay</td> <td><code>23</code></td></tr> <tr><td>Vegetable</td> <td><code>24</code></td></tr> <tr><td>Portal</td> <td><code>25</code></td></tr> <tr><td>Cake</td> <td><code>26</code></td></tr> <tr><td>Web</td> <td><code>27</code></td></tr> <tr><td>RedstoneWire</td> <td><code>28</code></td></tr> <tr><td>Carpet</td> <td><code>29</code></td></tr> <tr><td>BuildableGlass</td> <td><code>30</code></td></tr> <tr><td>Slime</td> <td><code>31</code></td></tr> <tr><td>Piston</td> <td><code>32</code></td></tr> <tr><td>Allow</td> <td><code>33</code></td></tr> <tr><td>Deny</td> <td><code>34</code></td></tr> <tr><td>Netherwart</td> <td><code>35</code></td></tr> <tr><td>StoneDecoration</td> <td><code>36</code></td></tr> <tr><td>Bubble</td> <td><code>37</code></td></tr> <tr><td>Egg</td> <td><code>38</code></td></tr> <tr><td>Barrier</td> <td><code>39</code></td></tr> <tr><td>DecorationFlammable</td> <td><code>40</code></td></tr> <tr><td>Coral</td> <td><code>41</code></td></tr> <tr><td>DecorationSolid</td> <td><code>42</code></td></tr> <tr><td>SurfaceTypeTotal</td> <td><code>43</code></td></tr> <tr><td>Any</td> <td><code>44</code></td></tr></tbody></table> <h3 id="crypto-asymmetric-system"><a href="#crypto-asymmetric-system" class="header-anchor">#</a> <code>Crypto::Asymmetric::System</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>RSA_1024</td> <td><code>0</code></td></tr> <tr><td>RSA_2048</td> <td><code>1</code></td></tr> <tr><td>RSA_4096</td> <td><code>2</code></td></tr> <tr><td>EC_prime256v1</td> <td><code>3</code></td></tr> <tr><td>EC_secp256k1</td> <td><code>4</code></td></tr> <tr><td>EC_secp384r1</td> <td><code>5</code></td></tr> <tr><td>EC_secp521r1</td> <td><code>6</code></td></tr></tbody></table> <h3 id="crypto-hash-hashtype"><a href="#crypto-hash-hashtype" class="header-anchor">#</a> <code>Crypto::Hash::HashType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>MD5</td> <td><code>0</code></td></tr> <tr><td>SHA1</td> <td><code>1</code></td></tr> <tr><td>SHA256</td> <td><code>2</code></td></tr> <tr><td>SHA384</td> <td><code>3</code></td></tr> <tr><td>SHA512</td> <td><code>4</code></td></tr></tbody></table> <h3 id="commandpermissionlevel"><a href="#commandpermissionlevel" class="header-anchor">#</a> <code>CommandPermissionLevel</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="compressibility"><a href="#compressibility" class="header-anchor">#</a> <code>Compressibility</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Compressible</td> <td><code>0</code></td></tr> <tr><td>Incompressible</td> <td><code>1</code></td></tr></tbody></table> <h3 id="containerid"><a href="#containerid" class="header-anchor">#</a> <code>ContainerID</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>CONTAINER_ID_INVENTORY</td> <td><code>0</code></td></tr> <tr><td>CONTAINER_ID_FIRST</td> <td><code>1</code></td></tr> <tr><td>CONTAINER_ID_LAST</td> <td><code>100</code></td></tr> <tr><td>CONTAINER_ID_OFFHAND</td> <td><code>119</code></td></tr> <tr><td>CONTAINER_ID_ARMOR</td> <td><code>120</code></td></tr> <tr><td>CONTAINER_ID_SELECTION_SLOTS</td> <td><code>122</code></td></tr> <tr><td>CONTAINER_ID_PLAYER_ONLY_UI</td> <td><code>124</code></td></tr> <tr><td>CONTAINER_ID_NONE</td> <td><code>18446744073709551615</code></td></tr></tbody></table> <h3 id="currentcmdversion"><a href="#currentcmdversion" class="header-anchor">#</a> <code>CurrentCmdVersion</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="compoundcontainertype"><a href="#compoundcontainertype" class="header-anchor">#</a> <code>CompoundContainerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="containerenumname"><a href="#containerenumname" class="header-anchor">#</a> <code>ContainerEnumName</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AnvilInputContainer</td> <td><code>0</code></td></tr> <tr><td>AnvilMaterialContainer</td> <td><code>1</code></td></tr> <tr><td>AnvilResultPreviewContainer</td> <td><code>2</code></td></tr> <tr><td>SmithingTableInputContainer</td> <td><code>3</code></td></tr> <tr><td>SmithingTableMaterialContainer</td> <td><code>4</code></td></tr> <tr><td>SmithingTableResultPreviewContainer</td> <td><code>5</code></td></tr> <tr><td>ArmorContainer</td> <td><code>6</code></td></tr> <tr><td>LevelEntityContainer</td> <td><code>7</code></td></tr> <tr><td>BeaconPaymentContainer</td> <td><code>8</code></td></tr> <tr><td>BrewingStandInputContainer</td> <td><code>9</code></td></tr> <tr><td>BrewingStandResultContainer</td> <td><code>10</code></td></tr> <tr><td>BrewingStandFuelContainer</td> <td><code>11</code></td></tr> <tr><td>CombinedHotbarAndInventoryContainer</td> <td><code>12</code></td></tr> <tr><td>CraftingInputContainer</td> <td><code>13</code></td></tr> <tr><td>CraftingOutputPreviewContainer</td> <td><code>14</code></td></tr> <tr><td>RecipeConstructionContainer</td> <td><code>15</code></td></tr> <tr><td>RecipeNatureContainer</td> <td><code>16</code></td></tr> <tr><td>RecipeCustomContainer</td> <td><code>17</code></td></tr> <tr><td>RecipeItemsContainer</td> <td><code>18</code></td></tr> <tr><td>RecipeSearchContainer</td> <td><code>19</code></td></tr> <tr><td>RecipeSearchBarContainer</td> <td><code>20</code></td></tr> <tr><td>RecipeEquipmentContainer</td> <td><code>21</code></td></tr> <tr><td>EnchantingInputContainer</td> <td><code>22</code></td></tr> <tr><td>EnchantingMaterialContainer</td> <td><code>23</code></td></tr> <tr><td>FurnaceFuelContainer</td> <td><code>24</code></td></tr> <tr><td>FurnaceIngredientContainer</td> <td><code>25</code></td></tr> <tr><td>FurnaceResultContainer</td> <td><code>26</code></td></tr> <tr><td>HorseEquipContainer</td> <td><code>27</code></td></tr> <tr><td>HotbarContainer</td> <td><code>28</code></td></tr> <tr><td>InventoryContainer</td> <td><code>29</code></td></tr> <tr><td>ShulkerBoxContainer</td> <td><code>30</code></td></tr> <tr><td>TradeIngredient1Container</td> <td><code>31</code></td></tr> <tr><td>TradeIngredient2Container</td> <td><code>32</code></td></tr> <tr><td>TradeResultPreviewContainer</td> <td><code>33</code></td></tr> <tr><td>OffhandContainer</td> <td><code>34</code></td></tr> <tr><td>CompoundCreatorInput</td> <td><code>35</code></td></tr> <tr><td>CompoundCreatorOutputPreview</td> <td><code>36</code></td></tr> <tr><td>ElementConstructorOutputPreview</td> <td><code>37</code></td></tr> <tr><td>MaterialReducerInput</td> <td><code>38</code></td></tr> <tr><td>MaterialReducerOutput</td> <td><code>39</code></td></tr> <tr><td>LabTableInput</td> <td><code>40</code></td></tr> <tr><td>LoomInputContainer</td> <td><code>41</code></td></tr> <tr><td>LoomDyeContainer</td> <td><code>42</code></td></tr> <tr><td>LoomMaterialContainer</td> <td><code>43</code></td></tr> <tr><td>LoomResultPreviewContainer</td> <td><code>44</code></td></tr> <tr><td>BlastFurnaceIngredientContainer</td> <td><code>45</code></td></tr> <tr><td>SmokerIngredientContainer</td> <td><code>46</code></td></tr> <tr><td>Trade2Ingredient1Container</td> <td><code>47</code></td></tr> <tr><td>Trade2Ingredient2Container</td> <td><code>48</code></td></tr> <tr><td>Trade2ResultPreviewContainer</td> <td><code>49</code></td></tr> <tr><td>GrindstoneInputContainer</td> <td><code>50</code></td></tr> <tr><td>GrindstoneAdditionalContainer</td> <td><code>51</code></td></tr> <tr><td>GrindstoneResultPreviewContainer</td> <td><code>52</code></td></tr> <tr><td>StonecutterInputContainer</td> <td><code>53</code></td></tr> <tr><td>StonecutterResultPreviewContainer</td> <td><code>54</code></td></tr> <tr><td>CartographyInputContainer</td> <td><code>55</code></td></tr> <tr><td>CartographyAdditionalContainer</td> <td><code>56</code></td></tr> <tr><td>CartographyResultPreviewContainer</td> <td><code>57</code></td></tr> <tr><td>BarrelContainer</td> <td><code>58</code></td></tr> <tr><td>CursorContainer</td> <td><code>59</code></td></tr> <tr><td>CreatedOutputContainer</td> <td><code>60</code></td></tr></tbody></table> <h3 id="creativeitemcategory"><a href="#creativeitemcategory" class="header-anchor">#</a> <code>CreativeItemCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="containercategory"><a href="#containercategory" class="header-anchor">#</a> <code>ContainerCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="containertype"><a href="#containertype" class="header-anchor">#</a> <code>ContainerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="commandblockmode"><a href="#commandblockmode" class="header-anchor">#</a> <code>CommandBlockMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="cauldronliquidtype"><a href="#cauldronliquidtype" class="header-anchor">#</a> <code>CauldronLiquidType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="commandoperator"><a href="#commandoperator" class="header-anchor">#</a> <code>CommandOperator</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="clock-type-t"><a href="#clock-type-t" class="header-anchor">#</a> <code>clock_type_t</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>WALL_CLOCK</td> <td><code>0</code></td></tr> <tr><td>CPU_CLOCK</td> <td><code>1</code></td></tr></tbody></table> <h3 id="core-filebufferingmode"><a href="#core-filebufferingmode" class="header-anchor">#</a> <code>Core::FileBufferingMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Buffered</td> <td><code>0</code></td></tr> <tr><td>Unbuffered</td> <td><code>1</code></td></tr></tbody></table> <h3 id="crypto-asymmetric-padding"><a href="#crypto-asymmetric-padding" class="header-anchor">#</a> <code>Crypto::Asymmetric::Padding</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>RSA_PKCS1</td> <td><code>0</code></td></tr> <tr><td>RSA_PKCS1_OAEP</td> <td><code>1</code></td></tr></tbody></table> <h3 id="crypto-asymmetric-pubkeyformat"><a href="#crypto-asymmetric-pubkeyformat" class="header-anchor">#</a> <code>Crypto::Asymmetric::PubKeyFormat</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>X509_PUBKEY</td> <td><code>0</code></td></tr> <tr><td>MS_PUBLICKEYBLOB</td> <td><code>1</code></td></tr></tbody></table> <h3 id="controllerrefreshstate"><a href="#controllerrefreshstate" class="header-anchor">#</a> <code>ControllerRefreshState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NotStarted</td> <td><code>0</code></td></tr> <tr><td>Fetching</td> <td><code>1</code></td></tr> <tr><td>Complete</td> <td><code>2</code></td></tr></tbody></table> <h3 id="cg-colorspace"><a href="#cg-colorspace" class="header-anchor">#</a> <code>cg::ColorSpace</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="camerashaketype"><a href="#camerashaketype" class="header-anchor">#</a> <code>CameraShakeType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Positional</td> <td><code>0</code></td></tr> <tr><td>Rotational</td> <td><code>1</code></td></tr></tbody></table> <h3 id="complexinventorytransaction-type"><a href="#complexinventorytransaction-type" class="header-anchor">#</a> <code>ComplexInventoryTransaction::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NormalTransaction</td> <td><code>0</code></td></tr> <tr><td>InventoryMismatch</td> <td><code>1</code></td></tr> <tr><td>ItemUseTransaction</td> <td><code>2</code></td></tr> <tr><td>ItemUseOnEntityTransaction</td> <td><code>3</code></td></tr> <tr><td>ItemReleaseTransaction</td> <td><code>4</code></td></tr></tbody></table> <h3 id="contenttype"><a href="#contenttype" class="header-anchor">#</a> <code>ContentType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="craftingtype"><a href="#craftingtype" class="header-anchor">#</a> <code>CraftingType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Inventory</td> <td><code>0</code></td></tr> <tr><td>Crafting</td> <td><code>1</code></td></tr></tbody></table> <h3 id="core-fileuploadtype"><a href="#core-fileuploadtype" class="header-anchor">#</a> <code>Core::FileUploadType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>UnknownFile</td> <td><code>0</code></td></tr> <tr><td>WorldFile</td> <td><code>1</code></td></tr> <tr><td>PackFile</td> <td><code>2</code></td></tr></tbody></table> <h3 id="creditstype"><a href="#creditstype" class="header-anchor">#</a> <code>CreditsType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>END_POEM</td> <td><code>0</code></td></tr> <tr><td>CREDITS_ONLY</td> <td><code>1</code></td></tr></tbody></table> <h3 id="channellistquerytype"><a href="#channellistquerytype" class="header-anchor">#</a> <code>ChannelListQueryType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ChannelOfProducts</td> <td><code>0</code></td></tr> <tr><td>ChannelOfChannels</td> <td><code>1</code></td></tr></tbody></table> <h3 id="chatcategory"><a href="#chatcategory" class="header-anchor">#</a> <code>ChatCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Font</td> <td><code>0</code></td></tr> <tr><td>Color</td> <td><code>1</code></td></tr></tbody></table> <h3 id="core-fileaccesstype"><a href="#core-fileaccesstype" class="header-anchor">#</a> <code>Core::FileAccessType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="cg-texturemetadata-filtermode"><a href="#cg-texturemetadata-filtermode" class="header-anchor">#</a> <code>cg::TextureMetaData::FilterMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Filter_Point</td> <td><code>0</code></td></tr> <tr><td>Filter_Linear</td> <td><code>1</code></td></tr> <tr><td>Filter_Anisotropic</td> <td><code>2</code></td></tr></tbody></table> <h3 id="cg-texturemetadata-colorspace"><a href="#cg-texturemetadata-colorspace" class="header-anchor">#</a> <code>cg::TextureMetaData::ColorSpace</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ColorSpace_Gamma</td> <td><code>0</code></td></tr> <tr><td>ColorSpace_Linear</td> <td><code>1</code></td></tr></tbody></table> <h3 id="cg-texturemetadata-dimension"><a href="#cg-texturemetadata-dimension" class="header-anchor">#</a> <code>cg::TextureMetaData::Dimension</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Dimension_2D</td> <td><code>0</code></td></tr> <tr><td>Dimension_3D</td> <td><code>1</code></td></tr> <tr><td>Dimension_Cube</td> <td><code>2</code></td></tr></tbody></table> <h3 id="cg-texturemetadata-wrapmode"><a href="#cg-texturemetadata-wrapmode" class="header-anchor">#</a> <code>cg::TextureMetaData::WrapMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>WrapMode_Clamp</td> <td><code>0</code></td></tr> <tr><td>WrapMode_Wrap</td> <td><code>1</code></td></tr> <tr><td>WrapMode_Mirror</td> <td><code>2</code></td></tr></tbody></table> <h3 id="cg-cacheorigin"><a href="#cg-cacheorigin" class="header-anchor">#</a> <code>cg::CacheOrigin</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="commandparameterdatatype"><a href="#commandparameterdatatype" class="header-anchor">#</a> <code>CommandParameterDataType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="commandparameteroption"><a href="#commandparameteroption" class="header-anchor">#</a> <code>CommandParameterOption</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="chunkrequestlisttype"><a href="#chunkrequestlisttype" class="header-anchor">#</a> <code>ChunkRequestListType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Synch</td> <td><code>0</code></td></tr> <tr><td>Async</td> <td><code>18446744073709551488</code></td></tr></tbody></table> <h3 id="commandorigintype"><a href="#commandorigintype" class="header-anchor">#</a> <code>CommandOriginType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Version</td> <td><code>44</code></td></tr> <tr><td>Data2D</td> <td><code>45</code></td></tr> <tr><td>Data2DLegacy</td> <td><code>46</code></td></tr> <tr><td>SubChunkPrefix</td> <td><code>47</code></td></tr> <tr><td>LegacyTerrain</td> <td><code>48</code></td></tr> <tr><td>BlockEntity</td> <td><code>49</code></td></tr> <tr><td>Entity</td> <td><code>50</code></td></tr> <tr><td>PendingTicks</td> <td><code>51</code></td></tr> <tr><td>LegacyBlockExtraData</td> <td><code>52</code></td></tr> <tr><td>BiomeState</td> <td><code>53</code></td></tr> <tr><td>FinalizedState</td> <td><code>54</code></td></tr> <tr><td>ConversionData</td> <td><code>55</code></td></tr> <tr><td>BorderBlocks</td> <td><code>56</code></td></tr> <tr><td>HardcodedSpawners</td> <td><code>57</code></td></tr> <tr><td>RandomTicks</td> <td><code>58</code></td></tr> <tr><td>CheckSums</td> <td><code>59</code></td></tr> <tr><td>VersionEnchant</td> <td><code>110</code></td></tr> <tr><td>VersionMarkInsert</td> <td><code>111</code></td></tr> <tr><td>LegacyVersion</td> <td><code>118</code></td></tr></tbody></table> <h3 id="commandoutputmessagetype"><a href="#commandoutputmessagetype" class="header-anchor">#</a> <code>CommandOutputMessageType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="craftingdataentrytype"><a href="#craftingdataentrytype" class="header-anchor">#</a> <code>CraftingDataEntryType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ShapelessRecipe</td> <td><code>0</code></td></tr> <tr><td>FurnaceRecipe</td> <td><code>2</code></td></tr> <tr><td>FurnaceAuxRecipe</td> <td><code>3</code></td></tr> <tr><td>MultiRecipe</td> <td><code>4</code></td></tr> <tr><td>ShulkerBoxRecipe</td> <td><code>5</code></td></tr> <tr><td>ShapelessChemistryRecipe</td> <td><code>6</code></td></tr> <tr><td>ShapedChemistryRecipe</td> <td><code>7</code></td></tr></tbody></table> <h3 id="connectiondefinition-portbusyfallbackpolicy"><a href="#connectiondefinition-portbusyfallbackpolicy" class="header-anchor">#</a> <code>ConnectionDefinition::PortBusyFallbackPolicy</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>UseRandom</td> <td><code>0</code></td></tr> <tr><td>Fail</td> <td><code>1</code></td></tr></tbody></table> <h3 id="clientboundmapitemdatapacket-type"><a href="#clientboundmapitemdatapacket-type" class="header-anchor">#</a> <code>ClientboundMapItemDataPacket::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="commandlexer-tokentype"><a href="#commandlexer-tokentype" class="header-anchor">#</a> <code>CommandLexer::TokenType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="coalitem-type"><a href="#coalitem-type" class="header-anchor">#</a> <code>CoalItem::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>STONE_COAL</td> <td><code>0</code></td></tr> <tr><td>CHAR_COAL</td> <td><code>1</code></td></tr></tbody></table> <h3 id="chestblock-chesttype"><a href="#chestblock-chesttype" class="header-anchor">#</a> <code>ChestBlock::ChestType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>TYPE_BASIC</td> <td><code>0</code></td></tr> <tr><td>TYPE_TRAP</td> <td><code>1</code></td></tr> <tr><td>TYPE_ENDER</td> <td><code>2</code></td></tr></tbody></table> <h3 id="coloredtorchcolor"><a href="#coloredtorchcolor" class="header-anchor">#</a> <code>ColoredTorchColor</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="chiseltype"><a href="#chiseltype" class="header-anchor">#</a> <code>ChiselType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="chemistrytabletype"><a href="#chemistrytabletype" class="header-anchor">#</a> <code>ChemistryTableType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="coralcolor"><a href="#coralcolor" class="header-anchor">#</a> <code>CoralColor</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="chunkstate"><a href="#chunkstate" class="header-anchor">#</a> <code>ChunkState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Unloaded</td> <td><code>0</code></td></tr> <tr><td>Generating</td> <td><code>1</code></td></tr> <tr><td>Generated</td> <td><code>2</code></td></tr> <tr><td>PostProcessing</td> <td><code>3</code></td></tr> <tr><td>PostProcessed</td> <td><code>4</code></td></tr> <tr><td>CheckingForReplacementData</td> <td><code>5</code></td></tr> <tr><td>NeedsLighting</td> <td><code>6</code></td></tr> <tr><td>Lighting</td> <td><code>7</code></td></tr> <tr><td>LightingFinished</td> <td><code>8</code></td></tr> <tr><td>Loaded</td> <td><code>9</code></td></tr></tbody></table> <h3 id="chunkterraindatastate"><a href="#chunkterraindatastate" class="header-anchor">#</a> <code>ChunkTerrainDataState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="chunkdebugdisplaysavedstate"><a href="#chunkdebugdisplaysavedstate" class="header-anchor">#</a> <code>ChunkDebugDisplaySavedState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="chunkcacheddatastate"><a href="#chunkcacheddatastate" class="header-anchor">#</a> <code>ChunkCachedDataState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="core-levelstoragestate"><a href="#core-levelstoragestate" class="header-anchor">#</a> <code>Core::LevelStorageState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="core-filetype"><a href="#core-filetype" class="header-anchor">#</a> <code>Core::FileType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="crashdumplogsectiontype"><a href="#crashdumplogsectiontype" class="header-anchor">#</a> <code>CrashDumpLogSectionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="clientplaymode"><a href="#clientplaymode" class="header-anchor">#</a> <code>ClientPlayMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef HolographicPlatform::MCLocation ClientPlayMode;
+
+</code></pre></div><h3 id="clientinstancestate"><a href="#clientinstancestate" class="header-anchor">#</a> <code>ClientInstanceState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ClientInstanceState : __int32
+{
+  Idle = 0x0,
+  WaitingForPlayer = 0x1,
+  WaitingToPlay = 0x2,
+  Playing = 0x3,
+};
+
+</code></pre></div><h3 id="core-directoryiterationflags"><a href="#core-directoryiterationflags" class="header-anchor">#</a> <code>Core::DirectoryIterationFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Core::DirectoryIterationFlags;
+
+</code></pre></div><h3 id="core-transactionflags"><a href="#core-transactionflags" class="header-anchor">#</a> <code>Core::TransactionFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Core::TransactionFlags;
+
+</code></pre></div><h3 id="core-filestoragearea-flushableleveldbenvtype"><a href="#core-filestoragearea-flushableleveldbenvtype" class="header-anchor">#</a> <code>Core::FileStorageArea::FlushableLevelDbEnvType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Core::FileStorageArea::FlushableLevelDbEnvType;
+
+</code></pre></div><h3 id="core-flatfilemanifestinfo-flatfilemanifestinfoflags"><a href="#core-flatfilemanifestinfo-flatfilemanifestinfoflags" class="header-anchor">#</a> <code>Core::FlatFileManifestInfo::FlatFileManifestInfoFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Core::FlatFileManifestInfo::FlatFileManifestInfoFlags : __int8
+{
+  File = 0x1,
+  Deleted = 0x80,
+};
+
+</code></pre></div><h3 id="core-profile-counterflags"><a href="#core-profile-counterflags" class="header-anchor">#</a> <code>Core::Profile::CounterFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Core::Profile::CounterFlags;
+
+</code></pre></div><h3 id="commandoriginsystem"><a href="#commandoriginsystem" class="header-anchor">#</a> <code>CommandOriginSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CommandOriginSystem : __int32
+{
+  AnimationTimelineSystem = 0x0,
+  ActorEventCommandSystem = 0x1,
+};
+
+</code></pre></div><h3 id="crashdumplogstringid"><a href="#crashdumplogstringid" class="header-anchor">#</a> <code>CrashDumpLogStringID</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation CrashDumpLogStringID;
+
+</code></pre></div><h3 id="commandvisibilityflag"><a href="#commandvisibilityflag" class="header-anchor">#</a> <code>CommandVisibilityFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CommandVisibilityFlag : __int8
+{
+  Visible = 0x0,
+  HiddenFromCommandBlockOrigin = 0x2,
+  HiddenFromPlayerOrigin = 0x4,
+  Hidden = 0x6,
+};
+
+</code></pre></div><h3 id="commandasyncflag"><a href="#commandasyncflag" class="header-anchor">#</a> <code>CommandAsyncFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CommandAsyncFlag : __int8
+{
+  Synch = 0x0,
+  Async = 0x80,
+};
+
+</code></pre></div><h3 id="commandcheatflag"><a href="#commandcheatflag" class="header-anchor">#</a> <code>CommandCheatFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CommandCheatFlag : __int8
+{
+  Cheat = 0x0,
+  NotCheat = 0x40,
+};
+
+</code></pre></div><h3 id="commandtypeflag"><a href="#commandtypeflag" class="header-anchor">#</a> <code>CommandTypeFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation CommandTypeFlag;
+
+</code></pre></div><h3 id="commandexecuteflag"><a href="#commandexecuteflag" class="header-anchor">#</a> <code>CommandExecuteFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CommandExecuteFlag : __int8
+{
+  Allowed = 0x0,
+  Disallowed = 0x10,
+};
+
+</code></pre></div><h3 id="commandsyncflag"><a href="#commandsyncflag" class="header-anchor">#</a> <code>CommandSyncFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef RealmsEnvironment CommandSyncFlag;
+
+</code></pre></div><h3 id="commandusageflag"><a href="#commandusageflag" class="header-anchor">#</a> <code>CommandUsageFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize CommandUsageFlag;
+
+</code></pre></div><h3 id="changedimensionrequest-state"><a href="#changedimensionrequest-state" class="header-anchor">#</a> <code>ChangeDimensionRequest::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ChangeDimensionRequest::State : __int32
+{
+  PrepareRegion = 0x0,
+  WaitingForChunks = 0x1,
+  WaitingForRespawn = 0x2,
+};
+
+</code></pre></div><h3 id="commandoutputparameter-nocounttype"><a href="#commandoutputparameter-nocounttype" class="header-anchor">#</a> <code>CommandOutputParameter::NoCountType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CommandOutputParameter::NoCountType : __int32
+{
+  NoCount = 0x0,
+};
+
+</code></pre></div><h3 id="commandoutputtype"><a href="#commandoutputtype" class="header-anchor">#</a> <code>CommandOutputType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation CommandOutputType;
+
+</code></pre></div><h3 id="channeltransformaxistype"><a href="#channeltransformaxistype" class="header-anchor">#</a> <code>ChannelTransformAxisType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BoneTransformType ChannelTransformAxisType;
+
+</code></pre></div><h3 id="clubs-feeditem-type"><a href="#clubs-feeditem-type" class="header-anchor">#</a> <code>Clubs::FeedItem::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace Clubs::FeedItem::Type;
+
+</code></pre></div><h3 id="clubs-reporteditem-type"><a href="#clubs-reporteditem-type" class="header-anchor">#</a> <code>Clubs::ReportedItem::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::ClubsEngagementAction Clubs::ReportedItem::Type;
+
+</code></pre></div><h3 id="clubs-newfeeditem-type"><a href="#clubs-newfeeditem-type" class="header-anchor">#</a> <code>Clubs::NewFeedItem::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftPacketIds Clubs::NewFeedItem::Type;
+
+</code></pre></div><h3 id="catalogproviderid"><a href="#catalogproviderid" class="header-anchor">#</a> <code>CatalogProviderId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CatalogProviderId : __int32
+{
+  Xforge = 0x0,
+  PlayFab = 0x1,
+  PersonaService = 0x2,
+};
+
+</code></pre></div><h3 id="clientsideitemsorttype"><a href="#clientsideitemsorttype" class="header-anchor">#</a> <code>ClientSideItemSortType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ClientSideItemSortType;
+
+</code></pre></div><h3 id="catalogrequesttype"><a href="#catalogrequesttype" class="header-anchor">#</a> <code>CatalogRequestType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ItemInstallState CatalogRequestType;
+
+</code></pre></div><h3 id="componentreceiveactiontype"><a href="#componentreceiveactiontype" class="header-anchor">#</a> <code>ComponentReceiveActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ComponentReceiveActionType : __int16
+{
+  ConsumeEvent = 0x0,
+  FurtherPassEventToControls = 0x1,
+};
+
+</code></pre></div><h3 id="controlcollectionflag"><a href="#controlcollectionflag" class="header-anchor">#</a> <code>ControlCollectionFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ControlCollectionFlag : __int32
+{
+  AlwaysBindControls = 0x1,
+  InputControls = 0x2,
+  TextEditBoxControls = 0x4,
+  AnimationControls = 0x8,
+  FactoryControls = 0x10,
+  ScrollViewControls = 0x20,
+  RenderableControls = 0x40,
+  FlyingItemRendererControls = 0x80,
+  AlwaysListeningInputControls = 0x100,
+  FocusCollection = 0x200,
+  SliderControls = 0x400,
+  CustomRendererControls = 0x800,
+};
+
+</code></pre></div><h3 id="controlcollectionchange"><a href="#controlcollectionchange" class="header-anchor">#</a> <code>ControlCollectionChange</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BossEventUpdateType ControlCollectionChange;
+
+</code></pre></div><h3 id="cataloginfo-offertype"><a href="#cataloginfo-offertype" class="header-anchor">#</a> <code>CatalogInfo::OfferType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CatalogInfo::OfferType : __int16
+{
+  StoreDurable = 0x0,
+  PersonaDurable = 0x1,
+};
+
+</code></pre></div><h3 id="clientinstancescreenmodel-chatmessagerestrictions"><a href="#clientinstancescreenmodel-chatmessagerestrictions" class="header-anchor">#</a> <code>ClientInstanceScreenModel::ChatMessageRestrictions</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CommandExecuteFlag ClientInstanceScreenModel::ChatMessageRestrictions;
+
+</code></pre></div><h3 id="containerexpandstatus"><a href="#containerexpandstatus" class="header-anchor">#</a> <code>ContainerExpandStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize ContainerExpandStatus;
+
+</code></pre></div><h3 id="contentacquisition-downloadhistoryentryresult"><a href="#contentacquisition-downloadhistoryentryresult" class="header-anchor">#</a> <code>ContentAcquisition::DownloadHistoryEntryResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Bedrock::DynamicPackage::MountState ContentAcquisition::DownloadHistoryEntryResult;
+
+</code></pre></div><h3 id="contenteventtype"><a href="#contenteventtype" class="header-anchor">#</a> <code>ContentEventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ContentEventType : __int32
+{
+  DownloadStarted = 0x0,
+  DownloadResumed = 0x1,
+  DownloadCanceled = 0x2,
+  DownloadCompleted = 0x3,
+  DownloadErrorOccurred = 0x4,
+  DownloadFailed = 0x5,
+  ImportStarted = 0x6,
+  ImportCompleted = 0x7,
+};
+
+</code></pre></div><h3 id="colorformat-colorenum-availablecolors"><a href="#colorformat-colorenum-availablecolors" class="header-anchor">#</a> <code>ColorFormat::ColorEnum::AvailableColors</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID ColorFormat::ColorEnum::AvailableColors;
+
+</code></pre></div><h3 id="contentitemtype"><a href="#contentitemtype" class="header-anchor">#</a> <code>ContentItemType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ContentItemType;
+
+</code></pre></div><h3 id="correctionmethod"><a href="#correctionmethod" class="header-anchor">#</a> <code>CorrectionMethod</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation CorrectionMethod;
+
+</code></pre></div><h3 id="coordinatorresult"><a href="#coordinatorresult" class="header-anchor">#</a> <code>CoordinatorResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ResourcePackResponse CoordinatorResult;
+
+</code></pre></div><h3 id="chunksource-loadmode"><a href="#chunksource-loadmode" class="header-anchor">#</a> <code>ChunkSource::LoadMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ChunkSource::LoadMode;
+
+</code></pre></div><h3 id="clientblockpipeline-status"><a href="#clientblockpipeline-status" class="header-anchor">#</a> <code>ClientBlockPipeline::Status</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome ClientBlockPipeline::Status;
+
+</code></pre></div><h3 id="clientblockpipeline-facedimmingmethod"><a href="#clientblockpipeline-facedimmingmethod" class="header-anchor">#</a> <code>ClientBlockPipeline::FaceDimmingMethod</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ClientBlockPipeline::FaceDimmingMethod : __int32
+{
+  NDotL = 0x0,
+  Barycentric = 0x1,
+  BRDF = 0x2,
+};
+
+</code></pre></div><h3 id="clientblockpipeline-uvgenerationtype"><a href="#clientblockpipeline-uvgenerationtype" class="header-anchor">#</a> <code>ClientBlockPipeline::UvGenerationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ClientBlockPipeline::UvGenerationType;
+
+</code></pre></div><h3 id="core-deferredtask-state"><a href="#core-deferredtask-state" class="header-anchor">#</a> <code>Core::DeferredTask::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState Core::DeferredTask::State;
+
+</code></pre></div><h3 id="chunktextureidx"><a href="#chunktextureidx" class="header-anchor">#</a> <code>ChunkTextureIdx</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ChunkTextureIdx : __int8
+{
+  BrightnessTexture = 0x0,
+  EndPortalColorTexture = 0x1,
+  EndPortalTexture = 0x2,
+  FoliageTexture = 0x3,
+  BaseTextureCount = 0x4,
+  AtlasFirstLayerTexture = 0x4,
+};
+
+</code></pre></div><h3 id="cloudrenderside"><a href="#cloudrenderside" class="header-anchor">#</a> <code>CloudRenderSide</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MaterialType CloudRenderSide;
+
+</code></pre></div><h3 id="contentsourcetype"><a href="#contentsourcetype" class="header-anchor">#</a> <code>ContentSourceType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ContentSourceType;
+
+</code></pre></div><h3 id="co-marshaling-context-attributes"><a href="#co-marshaling-context-attributes" class="header-anchor">#</a> <code>CO_MARSHALING_CONTEXT_ATTRIBUTES</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CO_MARSHALING_CONTEXT_ATTRIBUTES : __int32
+{
+  CO_MARSHALING_SOURCE_IS_APP_CONTAINER = 0x0,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_1 = 0x80000000,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_2 = 0x80000001,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_3 = 0x80000002,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_4 = 0x80000003,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_5 = 0x80000004,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_6 = 0x80000005,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_7 = 0x80000006,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_8 = 0x80000007,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_9 = 0x80000008,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_10 = 0x80000009,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_11 = 0x8000000A,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_12 = 0x8000000B,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_13 = 0x8000000C,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_14 = 0x8000000D,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_15 = 0x8000000E,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_16 = 0x8000000F,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_17 = 0x80000010,
+  CO_MARSHALING_CONTEXT_ATTRIBUTE_RESERVED_18 = 0x80000011,
+};
+
+</code></pre></div><h3 id="compartment-id"><a href="#compartment-id" class="header-anchor">#</a> <code>COMPARTMENT_ID</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum COMPARTMENT_ID : __int32
+{
+  UNSPECIFIED_COMPARTMENT_ID = 0x0,
+  DEFAULT_COMPARTMENT_ID = 0x1,
+};
+
+</code></pre></div><h3 id="concurrency-policyelementkey"><a href="#concurrency-policyelementkey" class="header-anchor">#</a> <code>Concurrency::PolicyElementKey</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::PolicyElementKey : __int32
+{
+  SchedulerKind = 0x0,
+  MaxConcurrency = 0x1,
+  MinConcurrency = 0x2,
+  TargetOversubscriptionFactor = 0x3,
+  LocalContextCacheSize = 0x4,
+  ContextStackSize = 0x5,
+  ContextPriority = 0x6,
+  SchedulingProtocol = 0x7,
+  DynamicProgressFeedback = 0x8,
+  WinRTInitialization = 0x9,
+  MaxPolicyElementKey = 0xA,
+};
+
+</code></pre></div><h3 id="concurrency-agents-eventtype"><a href="#concurrency-agents-eventtype" class="header-anchor">#</a> <code>Concurrency::Agents_EventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::Agents_EventType : __int32
+{
+  AGENTS_EVENT_CREATE = 0x0,
+  AGENTS_EVENT_START = 0x1,
+  AGENTS_EVENT_END = 0x2,
+  AGENTS_EVENT_DESTROY = 0x3,
+  AGENTS_EVENT_SCHEDULE = 0x4,
+  AGENTS_EVENT_LINK = 0x5,
+  AGENTS_EVENT_UNLINK = 0x6,
+  AGENTS_EVENT_NAME = 0x7,
+};
+
+</code></pre></div><h3 id="concurrency-concrt-traceflags"><a href="#concurrency-concrt-traceflags" class="header-anchor">#</a> <code>Concurrency::Concrt_TraceFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::Concrt_TraceFlags : __int32
+{
+  SchedulerEventFlag = 0x1,
+  ContextEventFlag = 0x2,
+  VirtualProcessorEventFlag = 0x4,
+  ResourceManagerEventFlag = 0x8,
+  PPLEventFlag = 0x10,
+  AgentEventFlag = 0x20,
+  AllEventsFlag = 0xFFFFFFFF,
+};
+
+</code></pre></div><h3 id="concurrency-concrt-eventtype"><a href="#concurrency-concrt-eventtype" class="header-anchor">#</a> <code>Concurrency::ConcRT_EventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::ConcRT_EventType : __int32
+{
+  CONCRT_EVENT_GENERIC = 0x0,
+  CONCRT_EVENT_START = 0x1,
+  CONCRT_EVENT_END = 0x2,
+  CONCRT_EVENT_BLOCK = 0x3,
+  CONCRT_EVENT_UNBLOCK = 0x4,
+  CONCRT_EVENT_YIELD = 0x5,
+  CONCRT_EVENT_IDLE = 0x6,
+  CONCRT_EVENT_ATTACH = 0x7,
+  CONCRT_EVENT_DETACH = 0x8,
+};
+
+</code></pre></div><h3 id="concurrency-dynamicprogressfeedbacktype"><a href="#concurrency-dynamicprogressfeedbacktype" class="header-anchor">#</a> <code>Concurrency::DynamicProgressFeedbackType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::DynamicProgressFeedbackType : __int32
+{
+  ProgressFeedbackDisabled = 0x0,
+  ProgressFeedbackEnabled = 0x1,
+};
+
+</code></pre></div><h3 id="concurrency-task-group-status"><a href="#concurrency-task-group-status" class="header-anchor">#</a> <code>Concurrency::task_group_status</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::task_group_status : __int32
+{
+  not_complete = 0x0,
+  completed = 0x1,
+  canceled = 0x2,
+};
+
+</code></pre></div><h3 id="concurrency-schedulingprotocoltype"><a href="#concurrency-schedulingprotocoltype" class="header-anchor">#</a> <code>Concurrency::SchedulingProtocolType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::SchedulingProtocolType : __int32
+{
+  EnhanceScheduleGroupLocality = 0x0,
+  EnhanceForwardProgress = 0x1,
+};
+
+</code></pre></div><h3 id="concurrency-schedulertype"><a href="#concurrency-schedulertype" class="header-anchor">#</a> <code>Concurrency::SchedulerType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::SchedulerType : __int32
+{
+  ThreadScheduler = 0x0,
+  UmsThreadDefault = 0x0,
+};
+
+</code></pre></div><h3 id="concurrency-winrtinitializationtype"><a href="#concurrency-winrtinitializationtype" class="header-anchor">#</a> <code>Concurrency::WinRTInitializationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::WinRTInitializationType : __int32
+{
+  InitializeWinRTAsMTA = 0x0,
+  DoNotInitializeWinRT = 0x1,
+};
+
+</code></pre></div><h3 id="concurrency-details-taskinliningmode"><a href="#concurrency-details-taskinliningmode" class="header-anchor">#</a> <code>Concurrency::details::_TaskInliningMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::details::_TaskInliningMode : __int32
+{
+  _NoInline = 0x0,
+  _DefaultAutoInline = 0x10,
+  _ForceInline = 0xFFFFFFFF,
+};
+
+</code></pre></div><h3 id="concurrency-details-taskcollectionstatus"><a href="#concurrency-details-taskcollectionstatus" class="header-anchor">#</a> <code>Concurrency::details::_TaskCollectionStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::details::_TaskCollectionStatus : __int32
+{
+  _NotComplete = 0x0,
+  _Completed = 0x1,
+  _Canceled = 0x2,
+};
+
+</code></pre></div><h3 id="concurrency-details-taskcollectionbaseimpl-taskcollectionstate"><a href="#concurrency-details-taskcollectionbaseimpl-taskcollectionstate" class="header-anchor">#</a> <code>Concurrency::details::_TaskCollectionBaseImpl::_TaskCollectionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Concurrency::details::_TaskCollectionStatus Concurrency::details::_TaskCollectionBaseImpl::_TaskCollectionState;
+
+</code></pre></div><h3 id="concurrency-details-taskcollectionbase-taskcollectionbasestate"><a href="#concurrency-details-taskcollectionbase-taskcollectionbasestate" class="header-anchor">#</a> <code>Concurrency::details::_TaskCollectionBase::_TaskCollectionBaseState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::details::_TaskCollectionBase::_TaskCollectionBaseState : __int32
+{
+  _CollectionNotInitialized = 0x80000000,
+  _CollectionInitializationInProgress = 0x80000001,
+  _CollectionInitialized = 0x0,
+};
+
+</code></pre></div><h3 id="concurrency-details-task-impl-base-taskinternalstate"><a href="#concurrency-details-task-impl-base-taskinternalstate" class="header-anchor">#</a> <code>Concurrency::details::_Task_impl_base::_TaskInternalState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Concurrency::details::_TaskCollectionStatus Concurrency::details::_Task_impl_base::_TaskInternalState;
+
+</code></pre></div><h3 id="concurrency-details-readerwriterlock-state"><a href="#concurrency-details-readerwriterlock-state" class="header-anchor">#</a> <code>Concurrency::details::_ReaderWriterLock::_State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::details::_ReaderWriterLock::_State : __int32
+{
+  _Write = 0xFFFFFFFF,
+  _Free = 0x0,
+  _Read = 0x1,
+};
+
+</code></pre></div><h3 id="concurrency-location-type"><a href="#concurrency-location-type" class="header-anchor">#</a> <code>Concurrency::location::_Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef __std_fs_file_attr Concurrency::location::_Type;
+
+</code></pre></div><h3 id="commandstatus"><a href="#commandstatus" class="header-anchor">#</a> <code>CommandStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace CommandStatus;
+
+</code></pre></div><h3 id="commandregistry-hardnonterminal"><a href="#commandregistry-hardnonterminal" class="header-anchor">#</a> <code>CommandRegistry::HardNonTerminal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionType CommandRegistry::HardNonTerminal;
+
+</code></pre></div><h3 id="commandselectiontype"><a href="#commandselectiontype" class="header-anchor">#</a> <code>CommandSelectionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CommandSelectionType : __int32
+{
+  Self = 0x0,
+  Entities = 0x1,
+  Players = 0x2,
+  DefaultPlayers = 0x3,
+  OwnedAgent = 0x4,
+  Agents = 0x5,
+};
+
+</code></pre></div><h3 id="commandselectionorder"><a href="#commandselectionorder" class="header-anchor">#</a> <code>CommandSelectionOrder</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TickingQueueType CommandSelectionOrder;
+
+</code></pre></div><h3 id="crashdumplogformatcode"><a href="#crashdumplogformatcode" class="header-anchor">#</a> <code>CrashDumpLogFormatCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation CrashDumpLogFormatCode;
+
+</code></pre></div><h3 id="closestatuscode"><a href="#closestatuscode" class="header-anchor">#</a> <code>CloseStatusCode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CloseStatusCode : __int16
+{
+  NORMAL = 0x3E8,
+  ENDPOINT_GOING_AWAY = 0x3E9,
+  PROTOCOL_ERROR = 0x3EA,
+  UNSUPPORTED_DATA_TYPE = 0x3EB,
+  RESERVED_1004 = 0x3EC,
+  RESERVED_1005 = 0x3ED,
+  RESERVED_1006 = 0x3EE,
+  DATA_NOT_OF_EXPECTED_TYPE = 0x3EF,
+  POLICY_VIOLATION = 0x3F0,
+  MESSAGE_TOO_BIG = 0x3F1,
+  SERVER_DOES_NOT_SUPPORT_EXTENSION = 0x3F2,
+  UNEXPECTED_ERROR = 0x3F3,
+  RESERVED_1015 = 0x3F7,
+  HANDSHAKE_KEY_NOT_FOUND = 0x1385,
+  HANDSHAKE_TIMEOUT = 0x1386,
+  LOST_CONNECTION = 0x1387,
+};
+
+</code></pre></div><h3 id="clientgamesetupresult"><a href="#clientgamesetupresult" class="header-anchor">#</a> <code>ClientGameSetupResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome ClientGameSetupResult;
+
+</code></pre></div><h3 id="completionstate-value"><a href="#completionstate-value" class="header-anchor">#</a> <code>CompletionState::Value</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FlightingService::FetchState CompletionState::Value;
+
+</code></pre></div><h3 id="category"><a href="#category" class="header-anchor">#</a> <code>Category</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Category : __int32
+{
+  MENU = 0x0,
+  OVERWORLD = 0x1,
+  NETHER = 0x2,
+  END = 0x3,
+  ENDBOSS = 0x4,
+  CREDITS = 0x5,
+  CUSTOM = 0x6,
+  LOOP = 0x7,
+};
+
+</code></pre></div><h3 id="crypto-symmetric-system"><a href="#crypto-symmetric-system" class="header-anchor">#</a> <code>Crypto::Symmetric::System</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Crypto::Symmetric::System : __int32
+{
+  AES_128 = 0x0,
+  AES_256 = 0x1,
+};
+
+</code></pre></div><h3 id="crypto-symmetric-operationmode"><a href="#crypto-symmetric-operationmode" class="header-anchor">#</a> <code>Crypto::Symmetric::OperationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Crypto::Symmetric::OperationMode : __int32
+{
+  ECB = 0x0,
+  CBC = 0x1,
+  CFB = 0x2,
+  OFB = 0x3,
+};
+
+</code></pre></div><h3 id="creditsrenderer-creditscontent-type"><a href="#creditsrenderer-creditscontent-type" class="header-anchor">#</a> <code>CreditsRenderer::CreditsContent::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CreditsRenderer::CreditsContent::Type : __int32
+{
+  TEXT = 0x0,
+  IMAGE = 0x1,
+};
+
+</code></pre></div><h3 id="chatsettingsscreencontroller-colorsubsection"><a href="#chatsettingsscreencontroller-colorsubsection" class="header-anchor">#</a> <code>ChatSettingsScreenController::ColorSubsection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ChatSettingsScreenController::ColorSubsection;
+
+</code></pre></div><h3 id="chooserealmscreencontroller-realmssubscriptionsloadingstate"><a href="#chooserealmscreencontroller-realmssubscriptionsloadingstate" class="header-anchor">#</a> <code>ChooseRealmScreenController::RealmsSubscriptionsLoadingState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SerializerDirection ChooseRealmScreenController::RealmsSubscriptionsLoadingState;
+
+</code></pre></div><h3 id="codescreencontroller-view"><a href="#codescreencontroller-view" class="header-anchor">#</a> <code>CodeScreenController::View</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CodeScreenController::View : __int32
+{
+  EditorChooser = 0x0,
+  Webview = 0x1,
+};
+
+</code></pre></div><h3 id="codescreencontroller-modalview"><a href="#codescreencontroller-modalview" class="header-anchor">#</a> <code>CodeScreenController::ModalView</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation CodeScreenController::ModalView;
+
+</code></pre></div><h3 id="codescreenviewoption"><a href="#codescreenviewoption" class="header-anchor">#</a> <code>CodeScreenViewOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CodeScreenViewOption : __int8
+{
+  SplitRight = 0x0,
+  FullRight = 0x1,
+  SplitLeft = 0x2,
+  FullLeft = 0x3,
+};
+
+</code></pre></div><h3 id="coursescreencontroller-loadingprogress"><a href="#coursescreencontroller-loadingprogress" class="header-anchor">#</a> <code>CourseScreenController::LoadingProgress</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ClientInstanceState CourseScreenController::LoadingProgress;
+
+</code></pre></div><h3 id="containerbackgroundstyle"><a href="#containerbackgroundstyle" class="header-anchor">#</a> <code>ContainerBackgroundStyle</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRCameraMovement ContainerBackgroundStyle;
+
+</code></pre></div><h3 id="coinreceiptvalidationendpoint"><a href="#coinreceiptvalidationendpoint" class="header-anchor">#</a> <code>CoinReceiptValidationEndpoint</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CatalogProviderId CoinReceiptValidationEndpoint;
+
+</code></pre></div><h3 id="createworldorrealm"><a href="#createworldorrealm" class="header-anchor">#</a> <code>CreateWorldOrRealm</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId CreateWorldOrRealm;
+
+</code></pre></div><h3 id="core-ziputils-unzipresult"><a href="#core-ziputils-unzipresult" class="header-anchor">#</a> <code>Core::ZipUtils::UnzipResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BedSleepingResult Core::ZipUtils::UnzipResult;
+
+</code></pre></div><h3 id="cameraitemcomponentlegacy-useaction"><a href="#cameraitemcomponentlegacy-useaction" class="header-anchor">#</a> <code>CameraItemComponentLegacy::UseAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation CameraItemComponentLegacy::UseAction;
+
+</code></pre></div><h3 id="contentcatalogpacksource-fetchingstate"><a href="#contentcatalogpacksource-fetchingstate" class="header-anchor">#</a> <code>ContentCatalogPackSource::FetchingState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::EducationLessonAction ContentCatalogPackSource::FetchingState;
+
+</code></pre></div><h3 id="clubs-activityfeed-type"><a href="#clubs-activityfeed-type" class="header-anchor">#</a> <code>Clubs::ActivityFeed::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace Clubs::ActivityFeed::Type;
+
+</code></pre></div><h3 id="clientinputmappingfactory-mappingcontrollertype"><a href="#clientinputmappingfactory-mappingcontrollertype" class="header-anchor">#</a> <code>ClientInputMappingFactory::MappingControllerType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRControllerType ClientInputMappingFactory::MappingControllerType;
+
+</code></pre></div><h3 id="compactionstatus"><a href="#compactionstatus" class="header-anchor">#</a> <code>CompactionStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CompactionStatus : __int32
+{
+  Starting = 0x0,
+  Finished = 0x1,
+};
+
+</code></pre></div><h3 id="compoundtagupdaterresult"><a href="#compoundtagupdaterresult" class="header-anchor">#</a> <code>CompoundTagUpdaterResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome CompoundTagUpdaterResult;
+
+</code></pre></div><h3 id="composterblock-filllevel"><a href="#composterblock-filllevel" class="header-anchor">#</a> <code>ComposterBlock::FillLevel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MovePredictionType ComposterBlock::FillLevel;
+
+</code></pre></div><h3 id="compoundtype"><a href="#compoundtype" class="header-anchor">#</a> <code>CompoundType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MaterialType CompoundType;
+
+</code></pre></div><h3 id="clubs-clubspresencetype"><a href="#clubs-clubspresencetype" class="header-anchor">#</a> <code>Clubs::ClubsPresenceType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef GameModuleClient::ResourceLoadingPhase Clubs::ClubsPresenceType;
+
+</code></pre></div><h3 id="core-remotestoragemanifest-state"><a href="#core-remotestoragemanifest-state" class="header-anchor">#</a> <code>Core::RemoteStorageManifest::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Core::RemoteStorageManifest::State : __int8
+{
+  Good = 0x0,
+  MultiChunkProcessError = 0x1,
+  CommitLockFound = 0x2,
+};
+
+</code></pre></div><h3 id="csha1-report-type"><a href="#csha1-report-type" class="header-anchor">#</a> <code>CSHA1::REPORT_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CSHA1::REPORT_TYPE : __int32
+{
+  REPORT_HEX = 0x0,
+  REPORT_DIGIT = 0x1,
+  REPORT_HEX_SHORT = 0x2,
+};
+
+</code></pre></div><h3 id="compilerflags"><a href="#compilerflags" class="header-anchor">#</a> <code>CompilerFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CompilerFlags : __int32
+{
+  Debug = 0x1,
+  SkipValidation = 0x2,
+  SkipOptimization = 0x4,
+  PackMatrixRowMajor = 0x8,
+  PackMatrixColumnMajor = 0x10,
+  PartialPrecision = 0x20,
+  ForceVsSoftwareNoOpt = 0x40,
+  ForcePsSoftwareNoOpt = 0x80,
+  NoPreshader = 0x100,
+  AvoidFlowControl = 0x200,
+  PreferFlowControl = 0x400,
+  EnableStrictness = 0x800,
+  EnableBackwardsCompatibility = 0x1000,
+  IeeeStrictness = 0x2000,
+  OptimizationLevel0 = 0x4000,
+  OptimizationLevel1 = 0x0,
+  OptimizationLevel2 = 0xC000,
+  OptimizationLevel3 = 0x8000,
+  Reserved16 = 0x10000,
+  Reserved17 = 0x20000,
+  WarningsAreErrors = 0x40000,
+  ResourcesMayAlias = 0x80000,
+  EnableUnboundedDescriptorTables = 0x100000,
+  AllResourcesBound = 0x200000,
+};
+
+</code></pre></div><h3 id="camerashakecommand-camerashakeaction"><a href="#camerashakecommand-camerashakeaction" class="header-anchor">#</a> <code>CameraShakeCommand::CameraShakeAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BossEventUpdateType CameraShakeCommand::CameraShakeAction;
+
+</code></pre></div><h3 id="chunksloadedstatus"><a href="#chunksloadedstatus" class="header-anchor">#</a> <code>ChunksLoadedStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef dragon::res::TextureRead::Error ChunksLoadedStatus;
+
+</code></pre></div><h3 id="commondirection"><a href="#commondirection" class="header-anchor">#</a> <code>CommonDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation CommonDirection;
+
+</code></pre></div><h3 id="controlleddiskaccess-core-filesystem-windows-cda-command"><a href="#controlleddiskaccess-core-filesystem-windows-cda-command" class="header-anchor">#</a> <code>ControlledDiskAccess&lt;Core::FileSystem_windows&gt;::CDA_Command</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ControlledDiskAccess&lt;Core::FileSystem_windows&gt;::CDA_Command : __int32
+{
+  CDA_NONE = 0xFFFFFFFF,
+  CDA_COPY = 0x0,
+  CDA_DELETE_FILE = 0x1,
+  CDA_DELETE_DIRECTORY = 0x2,
+  CDA_RENAME_FILE = 0x3,
+  CDA_RENAME_DIRECTORY = 0x4,
+};
+
+</code></pre></div><h3 id="core-profile-counterformat"><a href="#core-profile-counterformat" class="header-anchor">#</a> <code>Core::Profile::CounterFormat</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions Core::Profile::CounterFormat;
+
+</code></pre></div><h3 id="core-ziputils-zipresult"><a href="#core-ziputils-zipresult" class="header-anchor">#</a> <code>Core::ZipUtils::ZipResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BedSleepingResult Core::ZipUtils::ZipResult;
+
+</code></pre></div><h3 id="core-ziputils-zipcompressionlevel"><a href="#core-ziputils-zipcompressionlevel" class="header-anchor">#</a> <code>Core::ZipUtils::ZipCompressionLevel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions Core::ZipUtils::ZipCompressionLevel;
+
+</code></pre></div><h3 id="codebuildercommand-action"><a href="#codebuildercommand-action" class="header-anchor">#</a> <code>CodeBuilderCommand::Action</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LabTablePacket::Type CodeBuilderCommand::Action;
+
+</code></pre></div><h3 id="clonecommand-maskmode"><a href="#clonecommand-maskmode" class="header-anchor">#</a> <code>CloneCommand::MaskMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef hbui::Router::QueuedRouteAction CloneCommand::MaskMode;
+
+</code></pre></div><h3 id="clonecommand-clonemode"><a href="#clonecommand-clonemode" class="header-anchor">#</a> <code>CloneCommand::CloneMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize CloneCommand::CloneMode;
+
+</code></pre></div><h3 id="comparatorcapacitor-mode"><a href="#comparatorcapacitor-mode" class="header-anchor">#</a> <code>ComparatorCapacitor::Mode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ComparatorCapacitor::Mode : __int32
+{
+  COMPARE_MODE = 0x0,
+  SUBTRACT_MODE = 0x1,
+};
+
+</code></pre></div><h3 id="customredstoneenum"><a href="#customredstoneenum" class="header-anchor">#</a> <code>CustomRedStoneEnum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace CustomRedStoneEnum;
+
+</code></pre></div><h3 id="coralfanhang-coralfanhangtype"><a href="#coralfanhang-coralfanhangtype" class="header-anchor">#</a> <code>CoralFanHang::CoralFanHangType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CoralFanHang::CoralFanHangType : __int32
+{
+  Fan_Color_1 = 0x0,
+  Fan_Color_2 = 0x1,
+};
+
+</code></pre></div><h3 id="coraldirection"><a href="#coraldirection" class="header-anchor">#</a> <code>CoralDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CoralDirection : __int32
+{
+  West = 0x0,
+  East = 0x1,
+  North = 0x2,
+  South = 0x3,
+};
+
+</code></pre></div><h3 id="cpview"><a href="#cpview" class="header-anchor">#</a> <code>CPVIEW</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CPVIEW : __int32
+{
+  CPVIEW_CLASSIC = 0x0,
+  CPVIEW_ALLITEMS = 0x0,
+  CPVIEW_CATEGORY = 0x1,
+  CPVIEW_HOME = 0x1,
+};
+
+</code></pre></div><h3 id="cwmo-flags"><a href="#cwmo-flags" class="header-anchor">#</a> <code>CWMO_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CWMO_FLAGS : __int32
+{
+  CWMO_DEFAULT = 0x0,
+  CWMO_DISPATCH_CALLS = 0x1,
+  CWMO_DISPATCH_WINDOW_MESSAGES = 0x2,
+};
+
+</code></pre></div><h3 id="curloption"><a href="#curloption" class="header-anchor">#</a> <code>CURLoption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CURLoption : __int32
+{
+  CURLOPT_WRITEDATA = 0x2711,
+  CURLOPT_URL = 0x2712,
+  CURLOPT_PORT = 0x3,
+  CURLOPT_PROXY = 0x2714,
+  CURLOPT_USERPWD = 0x2715,
+  CURLOPT_PROXYUSERPWD = 0x2716,
+  CURLOPT_RANGE = 0x2717,
+  CURLOPT_READDATA = 0x2719,
+  CURLOPT_ERRORBUFFER = 0x271A,
+  CURLOPT_WRITEFUNCTION = 0x4E2B,
+  CURLOPT_READFUNCTION = 0x4E2C,
+  CURLOPT_TIMEOUT = 0xD,
+  CURLOPT_INFILESIZE = 0xE,
+  CURLOPT_POSTFIELDS = 0x271F,
+  CURLOPT_REFERER = 0x2720,
+  CURLOPT_FTPPORT = 0x2721,
+  CURLOPT_USERAGENT = 0x2722,
+  CURLOPT_LOW_SPEED_LIMIT = 0x13,
+  CURLOPT_LOW_SPEED_TIME = 0x14,
+  CURLOPT_RESUME_FROM = 0x15,
+  CURLOPT_COOKIE = 0x2726,
+  CURLOPT_HTTPHEADER = 0x2727,
+  CURLOPT_HTTPPOST = 0x2728,
+  CURLOPT_SSLCERT = 0x2729,
+  CURLOPT_KEYPASSWD = 0x272A,
+  CURLOPT_CRLF = 0x1B,
+  CURLOPT_QUOTE = 0x272C,
+  CURLOPT_HEADERDATA = 0x272D,
+  CURLOPT_COOKIEFILE = 0x272F,
+  CURLOPT_SSLVERSION = 0x20,
+  CURLOPT_TIMECONDITION = 0x21,
+  CURLOPT_TIMEVALUE = 0x22,
+  CURLOPT_CUSTOMREQUEST = 0x2734,
+  CURLOPT_STDERR = 0x2735,
+  CURLOPT_POSTQUOTE = 0x2737,
+  CURLOPT_OBSOLETE40 = 0x2738,
+  CURLOPT_VERBOSE = 0x29,
+  CURLOPT_HEADER = 0x2A,
+  CURLOPT_NOPROGRESS = 0x2B,
+  CURLOPT_NOBODY = 0x2C,
+  CURLOPT_FAILONERROR = 0x2D,
+  CURLOPT_UPLOAD = 0x2E,
+  CURLOPT_POST = 0x2F,
+  CURLOPT_DIRLISTONLY = 0x30,
+  CURLOPT_APPEND = 0x32,
+  CURLOPT_NETRC = 0x33,
+  CURLOPT_FOLLOWLOCATION = 0x34,
+  CURLOPT_TRANSFERTEXT = 0x35,
+  CURLOPT_PUT = 0x36,
+  CURLOPT_PROGRESSFUNCTION = 0x4E58,
+  CURLOPT_XFERINFODATA = 0x2749,
+  CURLOPT_AUTOREFERER = 0x3A,
+  CURLOPT_PROXYPORT = 0x3B,
+  CURLOPT_POSTFIELDSIZE = 0x3C,
+  CURLOPT_HTTPPROXYTUNNEL = 0x3D,
+  CURLOPT_INTERFACE = 0x274E,
+  CURLOPT_KRBLEVEL = 0x274F,
+  CURLOPT_SSL_VERIFYPEER = 0x40,
+  CURLOPT_CAINFO = 0x2751,
+  CURLOPT_MAXREDIRS = 0x44,
+  CURLOPT_FILETIME = 0x45,
+  CURLOPT_TELNETOPTIONS = 0x2756,
+  CURLOPT_MAXCONNECTS = 0x47,
+  CURLOPT_OBSOLETE72 = 0x48,
+  CURLOPT_FRESH_CONNECT = 0x4A,
+  CURLOPT_FORBID_REUSE = 0x4B,
+  CURLOPT_RANDOM_FILE = 0x275C,
+  CURLOPT_EGDSOCKET = 0x275D,
+  CURLOPT_CONNECTTIMEOUT = 0x4E,
+  CURLOPT_HEADERFUNCTION = 0x4E6F,
+  CURLOPT_HTTPGET = 0x50,
+  CURLOPT_SSL_VERIFYHOST = 0x51,
+  CURLOPT_COOKIEJAR = 0x2762,
+  CURLOPT_SSL_CIPHER_LIST = 0x2763,
+  CURLOPT_HTTP_VERSION = 0x54,
+  CURLOPT_FTP_USE_EPSV = 0x55,
+  CURLOPT_SSLCERTTYPE = 0x2766,
+  CURLOPT_SSLKEY = 0x2767,
+  CURLOPT_SSLKEYTYPE = 0x2768,
+  CURLOPT_SSLENGINE = 0x2769,
+  CURLOPT_SSLENGINE_DEFAULT = 0x5A,
+  CURLOPT_DNS_USE_GLOBAL_CACHE = 0x5B,
+  CURLOPT_DNS_CACHE_TIMEOUT = 0x5C,
+  CURLOPT_PREQUOTE = 0x276D,
+  CURLOPT_DEBUGFUNCTION = 0x4E7E,
+  CURLOPT_DEBUGDATA = 0x276F,
+  CURLOPT_COOKIESESSION = 0x60,
+  CURLOPT_CAPATH = 0x2771,
+  CURLOPT_BUFFERSIZE = 0x62,
+  CURLOPT_NOSIGNAL = 0x63,
+  CURLOPT_SHARE = 0x2774,
+  CURLOPT_PROXYTYPE = 0x65,
+  CURLOPT_ACCEPT_ENCODING = 0x2776,
+  CURLOPT_PRIVATE = 0x2777,
+  CURLOPT_HTTP200ALIASES = 0x2778,
+  CURLOPT_UNRESTRICTED_AUTH = 0x69,
+  CURLOPT_FTP_USE_EPRT = 0x6A,
+  CURLOPT_HTTPAUTH = 0x6B,
+  CURLOPT_SSL_CTX_FUNCTION = 0x4E8C,
+  CURLOPT_SSL_CTX_DATA = 0x277D,
+  CURLOPT_FTP_CREATE_MISSING_DIRS = 0x6E,
+  CURLOPT_PROXYAUTH = 0x6F,
+  CURLOPT_FTP_RESPONSE_TIMEOUT = 0x70,
+  CURLOPT_IPRESOLVE = 0x71,
+  CURLOPT_MAXFILESIZE = 0x72,
+  CURLOPT_INFILESIZE_LARGE = 0x75A3,
+  CURLOPT_RESUME_FROM_LARGE = 0x75A4,
+  CURLOPT_MAXFILESIZE_LARGE = 0x75A5,
+  CURLOPT_NETRC_FILE = 0x2786,
+  CURLOPT_USE_SSL = 0x77,
+  CURLOPT_POSTFIELDSIZE_LARGE = 0x75A8,
+  CURLOPT_TCP_NODELAY = 0x79,
+  CURLOPT_FTPSSLAUTH = 0x81,
+  CURLOPT_IOCTLFUNCTION = 0x4EA2,
+  CURLOPT_IOCTLDATA = 0x2793,
+  CURLOPT_FTP_ACCOUNT = 0x2796,
+  CURLOPT_COOKIELIST = 0x2797,
+  CURLOPT_IGNORE_CONTENT_LENGTH = 0x88,
+  CURLOPT_FTP_SKIP_PASV_IP = 0x89,
+  CURLOPT_FTP_FILEMETHOD = 0x8A,
+  CURLOPT_LOCALPORT = 0x8B,
+  CURLOPT_LOCALPORTRANGE = 0x8C,
+  CURLOPT_CONNECT_ONLY = 0x8D,
+  CURLOPT_CONV_FROM_NETWORK_FUNCTION = 0x4EAE,
+  CURLOPT_CONV_TO_NETWORK_FUNCTION = 0x4EAF,
+  CURLOPT_CONV_FROM_UTF8_FUNCTION = 0x4EB0,
+  CURLOPT_MAX_SEND_SPEED_LARGE = 0x75C1,
+  CURLOPT_MAX_RECV_SPEED_LARGE = 0x75C2,
+  CURLOPT_FTP_ALTERNATIVE_TO_USER = 0x27A3,
+  CURLOPT_SOCKOPTFUNCTION = 0x4EB4,
+  CURLOPT_SOCKOPTDATA = 0x27A5,
+  CURLOPT_SSL_SESSIONID_CACHE = 0x96,
+  CURLOPT_SSH_AUTH_TYPES = 0x97,
+  CURLOPT_SSH_PUBLIC_KEYFILE = 0x27A8,
+  CURLOPT_SSH_PRIVATE_KEYFILE = 0x27A9,
+  CURLOPT_FTP_SSL_CCC = 0x9A,
+  CURLOPT_TIMEOUT_MS = 0x9B,
+  CURLOPT_CONNECTTIMEOUT_MS = 0x9C,
+  CURLOPT_HTTP_TRANSFER_DECODING = 0x9D,
+  CURLOPT_HTTP_CONTENT_DECODING = 0x9E,
+  CURLOPT_NEW_FILE_PERMS = 0x9F,
+  CURLOPT_NEW_DIRECTORY_PERMS = 0xA0,
+  CURLOPT_POSTREDIR = 0xA1,
+  CURLOPT_SSH_HOST_PUBLIC_KEY_MD5 = 0x27B2,
+  CURLOPT_OPENSOCKETFUNCTION = 0x4EC3,
+  CURLOPT_OPENSOCKETDATA = 0x27B4,
+  CURLOPT_COPYPOSTFIELDS = 0x27B5,
+  CURLOPT_PROXY_TRANSFER_MODE = 0xA6,
+  CURLOPT_SEEKFUNCTION = 0x4EC7,
+  CURLOPT_SEEKDATA = 0x27B8,
+  CURLOPT_CRLFILE = 0x27B9,
+  CURLOPT_ISSUERCERT = 0x27BA,
+  CURLOPT_ADDRESS_SCOPE = 0xAB,
+  CURLOPT_CERTINFO = 0xAC,
+  CURLOPT_USERNAME = 0x27BD,
+  CURLOPT_PASSWORD = 0x27BE,
+  CURLOPT_PROXYUSERNAME = 0x27BF,
+  CURLOPT_PROXYPASSWORD = 0x27C0,
+  CURLOPT_NOPROXY = 0x27C1,
+  CURLOPT_TFTP_BLKSIZE = 0xB2,
+  CURLOPT_SOCKS5_GSSAPI_SERVICE = 0x27C3,
+  CURLOPT_SOCKS5_GSSAPI_NEC = 0xB4,
+  CURLOPT_PROTOCOLS = 0xB5,
+  CURLOPT_REDIR_PROTOCOLS = 0xB6,
+  CURLOPT_SSH_KNOWNHOSTS = 0x27C7,
+  CURLOPT_SSH_KEYFUNCTION = 0x4ED8,
+  CURLOPT_SSH_KEYDATA = 0x27C9,
+  CURLOPT_MAIL_FROM = 0x27CA,
+  CURLOPT_MAIL_RCPT = 0x27CB,
+  CURLOPT_FTP_USE_PRET = 0xBC,
+  CURLOPT_RTSP_REQUEST = 0xBD,
+  CURLOPT_RTSP_SESSION_ID = 0x27CE,
+  CURLOPT_RTSP_STREAM_URI = 0x27CF,
+  CURLOPT_RTSP_TRANSPORT = 0x27D0,
+  CURLOPT_RTSP_CLIENT_CSEQ = 0xC1,
+  CURLOPT_RTSP_SERVER_CSEQ = 0xC2,
+  CURLOPT_INTERLEAVEDATA = 0x27D3,
+  CURLOPT_INTERLEAVEFUNCTION = 0x4EE4,
+  CURLOPT_WILDCARDMATCH = 0xC5,
+  CURLOPT_CHUNK_BGN_FUNCTION = 0x4EE6,
+  CURLOPT_CHUNK_END_FUNCTION = 0x4EE7,
+  CURLOPT_FNMATCH_FUNCTION = 0x4EE8,
+  CURLOPT_CHUNK_DATA = 0x27D9,
+  CURLOPT_FNMATCH_DATA = 0x27DA,
+  CURLOPT_RESOLVE = 0x27DB,
+  CURLOPT_TLSAUTH_USERNAME = 0x27DC,
+  CURLOPT_TLSAUTH_PASSWORD = 0x27DD,
+  CURLOPT_TLSAUTH_TYPE = 0x27DE,
+  CURLOPT_TRANSFER_ENCODING = 0xCF,
+  CURLOPT_CLOSESOCKETFUNCTION = 0x4EF0,
+  CURLOPT_CLOSESOCKETDATA = 0x27E1,
+  CURLOPT_GSSAPI_DELEGATION = 0xD2,
+  CURLOPT_DNS_SERVERS = 0x27E3,
+  CURLOPT_ACCEPTTIMEOUT_MS = 0xD4,
+  CURLOPT_TCP_KEEPALIVE = 0xD5,
+  CURLOPT_TCP_KEEPIDLE = 0xD6,
+  CURLOPT_TCP_KEEPINTVL = 0xD7,
+  CURLOPT_SSL_OPTIONS = 0xD8,
+  CURLOPT_MAIL_AUTH = 0x27E9,
+  CURLOPT_SASL_IR = 0xDA,
+  CURLOPT_XFERINFOFUNCTION = 0x4EFB,
+  CURLOPT_XOAUTH2_BEARER = 0x27EC,
+  CURLOPT_DNS_INTERFACE = 0x27ED,
+  CURLOPT_DNS_LOCAL_IP4 = 0x27EE,
+  CURLOPT_DNS_LOCAL_IP6 = 0x27EF,
+  CURLOPT_LOGIN_OPTIONS = 0x27F0,
+  CURLOPT_SSL_ENABLE_NPN = 0xE1,
+  CURLOPT_SSL_ENABLE_ALPN = 0xE2,
+  CURLOPT_EXPECT_100_TIMEOUT_MS = 0xE3,
+  CURLOPT_PROXYHEADER = 0x27F4,
+  CURLOPT_HEADEROPT = 0xE5,
+  CURLOPT_PINNEDPUBLICKEY = 0x27F6,
+  CURLOPT_UNIX_SOCKET_PATH = 0x27F7,
+  CURLOPT_SSL_VERIFYSTATUS = 0xE8,
+  CURLOPT_SSL_FALSESTART = 0xE9,
+  CURLOPT_PATH_AS_IS = 0xEA,
+  CURLOPT_PROXY_SERVICE_NAME = 0x27FB,
+  CURLOPT_SERVICE_NAME = 0x27FC,
+  CURLOPT_PIPEWAIT = 0xED,
+  CURLOPT_DEFAULT_PROTOCOL = 0x27FE,
+  CURLOPT_STREAM_WEIGHT = 0xEF,
+  CURLOPT_STREAM_DEPENDS = 0x2800,
+  CURLOPT_STREAM_DEPENDS_E = 0x2801,
+  CURLOPT_TFTP_NO_OPTIONS = 0xF2,
+  CURLOPT_CONNECT_TO = 0x2803,
+  CURLOPT_TCP_FASTOPEN = 0xF4,
+  CURLOPT_KEEP_SENDING_ON_ERROR = 0xF5,
+  CURLOPT_PROXY_CAINFO = 0x2806,
+  CURLOPT_PROXY_CAPATH = 0x2807,
+  CURLOPT_PROXY_SSL_VERIFYPEER = 0xF8,
+  CURLOPT_PROXY_SSL_VERIFYHOST = 0xF9,
+  CURLOPT_PROXY_SSLVERSION = 0xFA,
+  CURLOPT_PROXY_TLSAUTH_USERNAME = 0x280B,
+  CURLOPT_PROXY_TLSAUTH_PASSWORD = 0x280C,
+  CURLOPT_PROXY_TLSAUTH_TYPE = 0x280D,
+  CURLOPT_PROXY_SSLCERT = 0x280E,
+  CURLOPT_PROXY_SSLCERTTYPE = 0x280F,
+  CURLOPT_PROXY_SSLKEY = 0x2810,
+  CURLOPT_PROXY_SSLKEYTYPE = 0x2811,
+  CURLOPT_PROXY_KEYPASSWD = 0x2812,
+  CURLOPT_PROXY_SSL_CIPHER_LIST = 0x2813,
+  CURLOPT_PROXY_CRLFILE = 0x2814,
+  CURLOPT_PROXY_SSL_OPTIONS = 0x105,
+  CURLOPT_PRE_PROXY = 0x2816,
+  CURLOPT_PROXY_PINNEDPUBLICKEY = 0x2817,
+  CURLOPT_ABSTRACT_UNIX_SOCKET = 0x2818,
+  CURLOPT_SUPPRESS_CONNECT_HEADERS = 0x109,
+  CURLOPT_REQUEST_TARGET = 0x281A,
+  CURLOPT_SOCKS5_AUTH = 0x10B,
+  CURLOPT_SSH_COMPRESSION = 0x10C,
+  CURLOPT_MIMEPOST = 0x281D,
+  CURLOPT_TIMEVALUE_LARGE = 0x763E,
+  CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS = 0x10F,
+  CURLOPT_RESOLVER_START_FUNCTION = 0x4F30,
+  CURLOPT_RESOLVER_START_DATA = 0x2821,
+  CURLOPT_HAPROXYPROTOCOL = 0x112,
+  CURLOPT_DNS_SHUFFLE_ADDRESSES = 0x113,
+  CURLOPT_TLS13_CIPHERS = 0x2824,
+  CURLOPT_PROXY_TLS13_CIPHERS = 0x2825,
+  CURLOPT_DISALLOW_USERNAME_IN_URL = 0x116,
+  CURLOPT_DOH_URL = 0x2827,
+  CURLOPT_UPLOAD_BUFFERSIZE = 0x118,
+  CURLOPT_UPKEEP_INTERVAL_MS = 0x119,
+  CURLOPT_CURLU = 0x282A,
+  CURLOPT_TRAILERFUNCTION = 0x4F3B,
+  CURLOPT_TRAILERDATA = 0x282C,
+  CURLOPT_HTTP09_ALLOWED = 0x11D,
+  CURLOPT_ALTSVC_CTRL = 0x11E,
+  CURLOPT_ALTSVC = 0x282F,
+  CURLOPT_MAXAGE_CONN = 0x120,
+  CURLOPT_SASL_AUTHZID = 0x2831,
+  CURLOPT_MAIL_RCPT_ALLLOWFAILS = 0x122,
+  CURLOPT_SSLCERT_BLOB = 0x9D63,
+  CURLOPT_SSLKEY_BLOB = 0x9D64,
+  CURLOPT_PROXY_SSLCERT_BLOB = 0x9D65,
+  CURLOPT_PROXY_SSLKEY_BLOB = 0x9D66,
+  CURLOPT_ISSUERCERT_BLOB = 0x9D67,
+  CURLOPT_PROXY_ISSUERCERT = 0x2838,
+  CURLOPT_PROXY_ISSUERCERT_BLOB = 0x9D69,
+  CURLOPT_SSL_EC_CURVES = 0x283A,
+  CURLOPT_HSTS_CTRL = 0x12B,
+  CURLOPT_HSTS = 0x283C,
+  CURLOPT_HSTSREADFUNCTION = 0x4F4D,
+  CURLOPT_HSTSREADDATA = 0x283E,
+  CURLOPT_HSTSWRITEFUNCTION = 0x4F4F,
+  CURLOPT_HSTSWRITEDATA = 0x2840,
+  CURLOPT_AWS_SIGV4 = 0x2841,
+  CURLOPT_LASTENTRY = 0x2842,
+};
+
+</code></pre></div><h3 id="curlmoption"><a href="#curlmoption" class="header-anchor">#</a> <code>CURLMoption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CURLMoption : __int32
+{
+  CURLMOPT_SOCKETFUNCTION = 0x4E21,
+  CURLMOPT_SOCKETDATA = 0x2712,
+  CURLMOPT_PIPELINING = 0x3,
+  CURLMOPT_TIMERFUNCTION = 0x4E24,
+  CURLMOPT_TIMERDATA = 0x2715,
+  CURLMOPT_MAXCONNECTS = 0x6,
+  CURLMOPT_MAX_HOST_CONNECTIONS = 0x7,
+  CURLMOPT_MAX_PIPELINE_LENGTH = 0x8,
+  CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE = 0x7539,
+  CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE = 0x753A,
+  CURLMOPT_PIPELINING_SITE_BL = 0x271B,
+  CURLMOPT_PIPELINING_SERVER_BL = 0x271C,
+  CURLMOPT_MAX_TOTAL_CONNECTIONS = 0xD,
+  CURLMOPT_PUSHFUNCTION = 0x4E2E,
+  CURLMOPT_PUSHDATA = 0x271F,
+  CURLMOPT_MAX_CONCURRENT_STREAMS = 0x10,
+  CURLMOPT_LASTENTRY = 0x11,
+};
+
+</code></pre></div><h3 id="curlmcode"><a href="#curlmcode" class="header-anchor">#</a> <code>CURLMcode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CURLMcode : __int32
+{
+  CURLM_CALL_MULTI_PERFORM = 0xFFFFFFFF,
+  CURLM_OK = 0x0,
+  CURLM_BAD_HANDLE = 0x1,
+  CURLM_BAD_EASY_HANDLE = 0x2,
+  CURLM_OUT_OF_MEMORY = 0x3,
+  CURLM_INTERNAL_ERROR = 0x4,
+  CURLM_BAD_SOCKET = 0x5,
+  CURLM_UNKNOWN_OPTION = 0x6,
+  CURLM_ADDED_ALREADY = 0x7,
+  CURLM_RECURSIVE_API_CALL = 0x8,
+  CURLM_WAKEUP_FAILURE = 0x9,
+  CURLM_BAD_FUNCTION_ARGUMENT = 0xA,
+  CURLM_LAST = 0xB,
+};
+
+</code></pre></div><h3 id="curlcode"><a href="#curlcode" class="header-anchor">#</a> <code>CURLcode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CURLcode : __int32
+{
+  CURLE_OK = 0x0,
+  CURLE_UNSUPPORTED_PROTOCOL = 0x1,
+  CURLE_FAILED_INIT = 0x2,
+  CURLE_URL_MALFORMAT = 0x3,
+  CURLE_NOT_BUILT_IN = 0x4,
+  CURLE_COULDNT_RESOLVE_PROXY = 0x5,
+  CURLE_COULDNT_RESOLVE_HOST = 0x6,
+  CURLE_COULDNT_CONNECT = 0x7,
+  CURLE_WEIRD_SERVER_REPLY = 0x8,
+  CURLE_REMOTE_ACCESS_DENIED = 0x9,
+  CURLE_FTP_ACCEPT_FAILED = 0xA,
+  CURLE_FTP_WEIRD_PASS_REPLY = 0xB,
+  CURLE_FTP_ACCEPT_TIMEOUT = 0xC,
+  CURLE_FTP_WEIRD_PASV_REPLY = 0xD,
+  CURLE_FTP_WEIRD_227_FORMAT = 0xE,
+  CURLE_FTP_CANT_GET_HOST = 0xF,
+  CURLE_HTTP2 = 0x10,
+  CURLE_FTP_COULDNT_SET_TYPE = 0x11,
+  CURLE_PARTIAL_FILE = 0x12,
+  CURLE_FTP_COULDNT_RETR_FILE = 0x13,
+  CURLE_OBSOLETE20 = 0x14,
+  CURLE_QUOTE_ERROR = 0x15,
+  CURLE_HTTP_RETURNED_ERROR = 0x16,
+  CURLE_WRITE_ERROR = 0x17,
+  CURLE_OBSOLETE24 = 0x18,
+  CURLE_UPLOAD_FAILED = 0x19,
+  CURLE_READ_ERROR = 0x1A,
+  CURLE_OUT_OF_MEMORY = 0x1B,
+  CURLE_OPERATION_TIMEDOUT = 0x1C,
+  CURLE_OBSOLETE29 = 0x1D,
+  CURLE_FTP_PORT_FAILED = 0x1E,
+  CURLE_FTP_COULDNT_USE_REST = 0x1F,
+  CURLE_OBSOLETE32 = 0x20,
+  CURLE_RANGE_ERROR = 0x21,
+  CURLE_HTTP_POST_ERROR = 0x22,
+  CURLE_SSL_CONNECT_ERROR = 0x23,
+  CURLE_BAD_DOWNLOAD_RESUME = 0x24,
+  CURLE_FILE_COULDNT_READ_FILE = 0x25,
+  CURLE_LDAP_CANNOT_BIND = 0x26,
+  CURLE_LDAP_SEARCH_FAILED = 0x27,
+  CURLE_OBSOLETE40 = 0x28,
+  CURLE_FUNCTION_NOT_FOUND = 0x29,
+  CURLE_ABORTED_BY_CALLBACK = 0x2A,
+  CURLE_BAD_FUNCTION_ARGUMENT = 0x2B,
+  CURLE_OBSOLETE44 = 0x2C,
+  CURLE_INTERFACE_FAILED = 0x2D,
+  CURLE_OBSOLETE46 = 0x2E,
+  CURLE_TOO_MANY_REDIRECTS = 0x2F,
+  CURLE_UNKNOWN_OPTION = 0x30,
+  CURLE_TELNET_OPTION_SYNTAX = 0x31,
+  CURLE_OBSOLETE50 = 0x32,
+  CURLE_OBSOLETE51 = 0x33,
+  CURLE_GOT_NOTHING = 0x34,
+  CURLE_SSL_ENGINE_NOTFOUND = 0x35,
+  CURLE_SSL_ENGINE_SETFAILED = 0x36,
+  CURLE_SEND_ERROR = 0x37,
+  CURLE_RECV_ERROR = 0x38,
+  CURLE_OBSOLETE57 = 0x39,
+  CURLE_SSL_CERTPROBLEM = 0x3A,
+  CURLE_SSL_CIPHER = 0x3B,
+  CURLE_PEER_FAILED_VERIFICATION = 0x3C,
+  CURLE_BAD_CONTENT_ENCODING = 0x3D,
+  CURLE_LDAP_INVALID_URL = 0x3E,
+  CURLE_FILESIZE_EXCEEDED = 0x3F,
+  CURLE_USE_SSL_FAILED = 0x40,
+  CURLE_SEND_FAIL_REWIND = 0x41,
+  CURLE_SSL_ENGINE_INITFAILED = 0x42,
+  CURLE_LOGIN_DENIED = 0x43,
+  CURLE_TFTP_NOTFOUND = 0x44,
+  CURLE_TFTP_PERM = 0x45,
+  CURLE_REMOTE_DISK_FULL = 0x46,
+  CURLE_TFTP_ILLEGAL = 0x47,
+  CURLE_TFTP_UNKNOWNID = 0x48,
+  CURLE_REMOTE_FILE_EXISTS = 0x49,
+  CURLE_TFTP_NOSUCHUSER = 0x4A,
+  CURLE_CONV_FAILED = 0x4B,
+  CURLE_CONV_REQD = 0x4C,
+  CURLE_SSL_CACERT_BADFILE = 0x4D,
+  CURLE_REMOTE_FILE_NOT_FOUND = 0x4E,
+  CURLE_SSH = 0x4F,
+  CURLE_SSL_SHUTDOWN_FAILED = 0x50,
+  CURLE_AGAIN = 0x51,
+  CURLE_SSL_CRL_BADFILE = 0x52,
+  CURLE_SSL_ISSUER_ERROR = 0x53,
+  CURLE_FTP_PRET_FAILED = 0x54,
+  CURLE_RTSP_CSEQ_ERROR = 0x55,
+  CURLE_RTSP_SESSION_ERROR = 0x56,
+  CURLE_FTP_BAD_FILE_LIST = 0x57,
+  CURLE_CHUNK_FAILED = 0x58,
+  CURLE_NO_CONNECTION_AVAILABLE = 0x59,
+  CURLE_SSL_PINNEDPUBKEYNOTMATCH = 0x5A,
+  CURLE_SSL_INVALIDCERTSTATUS = 0x5B,
+  CURLE_HTTP2_STREAM = 0x5C,
+  CURLE_RECURSIVE_API_CALL = 0x5D,
+  CURLE_AUTH_ERROR = 0x5E,
+  CURLE_HTTP3 = 0x5F,
+  CURLE_QUIC_CONNECT_ERROR = 0x60,
+  CURLE_PROXY = 0x61,
+  CURL_LAST = 0x62,
+};
+
+</code></pre></div><h3 id="curlinfo"><a href="#curlinfo" class="header-anchor">#</a> <code>CURLINFO</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CURLINFO : __int32
+{
+  CURLINFO_NONE = 0x0,
+  CURLINFO_EFFECTIVE_URL = 0x100001,
+  CURLINFO_RESPONSE_CODE = 0x200002,
+  CURLINFO_TOTAL_TIME = 0x300003,
+  CURLINFO_NAMELOOKUP_TIME = 0x300004,
+  CURLINFO_CONNECT_TIME = 0x300005,
+  CURLINFO_PRETRANSFER_TIME = 0x300006,
+  CURLINFO_SIZE_UPLOAD = 0x300007,
+  CURLINFO_SIZE_UPLOAD_T = 0x600007,
+  CURLINFO_SIZE_DOWNLOAD = 0x300008,
+  CURLINFO_SIZE_DOWNLOAD_T = 0x600008,
+  CURLINFO_SPEED_DOWNLOAD = 0x300009,
+  CURLINFO_SPEED_DOWNLOAD_T = 0x600009,
+  CURLINFO_SPEED_UPLOAD = 0x30000A,
+  CURLINFO_SPEED_UPLOAD_T = 0x60000A,
+  CURLINFO_HEADER_SIZE = 0x20000B,
+  CURLINFO_REQUEST_SIZE = 0x20000C,
+  CURLINFO_SSL_VERIFYRESULT = 0x20000D,
+  CURLINFO_FILETIME = 0x20000E,
+  CURLINFO_FILETIME_T = 0x60000E,
+  CURLINFO_CONTENT_LENGTH_DOWNLOAD = 0x30000F,
+  CURLINFO_CONTENT_LENGTH_DOWNLOAD_T = 0x60000F,
+  CURLINFO_CONTENT_LENGTH_UPLOAD = 0x300010,
+  CURLINFO_CONTENT_LENGTH_UPLOAD_T = 0x600010,
+  CURLINFO_STARTTRANSFER_TIME = 0x300011,
+  CURLINFO_CONTENT_TYPE = 0x100012,
+  CURLINFO_REDIRECT_TIME = 0x300013,
+  CURLINFO_REDIRECT_COUNT = 0x200014,
+  CURLINFO_PRIVATE = 0x100015,
+  CURLINFO_HTTP_CONNECTCODE = 0x200016,
+  CURLINFO_HTTPAUTH_AVAIL = 0x200017,
+  CURLINFO_PROXYAUTH_AVAIL = 0x200018,
+  CURLINFO_OS_ERRNO = 0x200019,
+  CURLINFO_NUM_CONNECTS = 0x20001A,
+  CURLINFO_SSL_ENGINES = 0x40001B,
+  CURLINFO_COOKIELIST = 0x40001C,
+  CURLINFO_LASTSOCKET = 0x20001D,
+  CURLINFO_FTP_ENTRY_PATH = 0x10001E,
+  CURLINFO_REDIRECT_URL = 0x10001F,
+  CURLINFO_PRIMARY_IP = 0x100020,
+  CURLINFO_APPCONNECT_TIME = 0x300021,
+  CURLINFO_CERTINFO = 0x400022,
+  CURLINFO_CONDITION_UNMET = 0x200023,
+  CURLINFO_RTSP_SESSION_ID = 0x100024,
+  CURLINFO_RTSP_CLIENT_CSEQ = 0x200025,
+  CURLINFO_RTSP_SERVER_CSEQ = 0x200026,
+  CURLINFO_RTSP_CSEQ_RECV = 0x200027,
+  CURLINFO_PRIMARY_PORT = 0x200028,
+  CURLINFO_LOCAL_IP = 0x100029,
+  CURLINFO_LOCAL_PORT = 0x20002A,
+  CURLINFO_TLS_SESSION = 0x40002B,
+  CURLINFO_ACTIVESOCKET = 0x50002C,
+  CURLINFO_TLS_SSL_PTR = 0x40002D,
+  CURLINFO_HTTP_VERSION = 0x20002E,
+  CURLINFO_PROXY_SSL_VERIFYRESULT = 0x20002F,
+  CURLINFO_PROTOCOL = 0x200030,
+  CURLINFO_SCHEME = 0x100031,
+  CURLINFO_TOTAL_TIME_T = 0x600032,
+  CURLINFO_NAMELOOKUP_TIME_T = 0x600033,
+  CURLINFO_CONNECT_TIME_T = 0x600034,
+  CURLINFO_PRETRANSFER_TIME_T = 0x600035,
+  CURLINFO_STARTTRANSFER_TIME_T = 0x600036,
+  CURLINFO_REDIRECT_TIME_T = 0x600037,
+  CURLINFO_APPCONNECT_TIME_T = 0x600038,
+  CURLINFO_RETRY_AFTER = 0x600039,
+  CURLINFO_EFFECTIVE_METHOD = 0x10003A,
+  CURLINFO_PROXY_ERROR = 0x20003B,
+  CURLINFO_LASTONE = 0x3B,
+};
+
+</code></pre></div><h3 id="commandblockscreencontroller-commandblockcolorcontext"><a href="#commandblockscreencontroller-commandblockcolorcontext" class="header-anchor">#</a> <code>CommandBlockScreenController::CommandBlockColorContext</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CommandBlockScreenController::CommandBlockColorContext : __int32
+{
+  DropDown = 0x0,
+  Dialog = 0x1,
+};
+
+</code></pre></div><h3 id="chordtrackingresult"><a href="#chordtrackingresult" class="header-anchor">#</a> <code>ChordTrackingResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ChordTrackingResult : __int32
+{
+  NotRelevant = 0x0,
+  IncompleteChord = 0x1,
+  CompleteChord = 0x2,
+};
+
+</code></pre></div><h3 id="cst-audiofmt"><a href="#cst-audiofmt" class="header-anchor">#</a> <code>cst_audiofmt</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum cst_audiofmt : __int32
+{
+  CST_AUDIO_LINEAR16 = 0x0,
+  CST_AUDIO_LINEAR8 = 0x1,
+  CST_AUDIO_MULAW = 0x2,
+};
+
+</code></pre></div><h3 id="c-pass-type"><a href="#c-pass-type" class="header-anchor">#</a> <code>c_pass_type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum c_pass_type : __int32
+{
+  main_pass = 0x0,
+  huff_opt_pass = 0x1,
+  output_pass = 0x2,
+};
+
+</code></pre></div><h3 id="codetype"><a href="#codetype" class="header-anchor">#</a> <code>codetype</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum codetype : __int32
+{
+  CODES = 0x0,
+  LENS = 0x1,
+  DISTS = 0x2,
+};
+
+</code></pre></div><h3 id="crypto-asn1-asn1type"><a href="#crypto-asn1-asn1type" class="header-anchor">#</a> <code>Crypto::Asn1::Asn1Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace Crypto::Asn1::Asn1Type;
+
+</code></pre></div><h3 id="crypto-asymmetric-opensslinterface-systemtype"><a href="#crypto-asymmetric-opensslinterface-systemtype" class="header-anchor">#</a> <code>Crypto::Asymmetric::OpenSSLInterface::SystemType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Crypto::Asymmetric::OpenSSLInterface::SystemType : __int32
+{
+  RSA = 0x0,
+  ECC = 0x1,
+};
+
+</code></pre></div><h3 id="crypto-asymmetric-nullsslinterface-systemtype"><a href="#crypto-asymmetric-nullsslinterface-systemtype" class="header-anchor">#</a> <code>Crypto::Asymmetric::NullSSLInterface::SystemType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Crypto::Asymmetric::OpenSSLInterface::SystemType Crypto::Asymmetric::NullSSLInterface::SystemType;
+
+</code></pre></div><h3 id="crypto-certificate-encoding"><a href="#crypto-certificate-encoding" class="header-anchor">#</a> <code>Crypto::Certificate::Encoding</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Crypto::Certificate::Encoding : __int32
+{
+  PEM = 0x0,
+  DER = 0x1,
+};
+
+</code></pre></div><h3 id="crypto-certificate-thumbprintformat"><a href="#crypto-certificate-thumbprintformat" class="header-anchor">#</a> <code>Crypto::Certificate::ThumbprintFormat</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Crypto::Certificate::ThumbprintFormat : __int32
+{
+  Binary = 0x0,
+  Base64 = 0x1,
+  Base64URL = 0x2,
+  HexGrouped2 = 0x3,
+  HexGrouped4 = 0x4,
+};
+
+</code></pre></div><h3 id="cf2-pathop"><a href="#cf2-pathop" class="header-anchor">#</a> <code>CF2_PathOp_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CF2_PathOp_ : __int32
+{
+  CF2_PathOpMoveTo = 0x1,
+  CF2_PathOpLineTo = 0x2,
+  CF2_PathOpQuadTo = 0x3,
+  CF2_PathOpCubeTo = 0x4,
+};
+
+</code></pre></div><h3 id="cf2-numbertype"><a href="#cf2-numbertype" class="header-anchor">#</a> <code>CF2_NumberType_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum CF2_NumberType_ : __int32
+{
+  CF2_NumberFixed = 0x0,
+  CF2_NumberFrac = 0x1,
+  CF2_NumberInt = 0x2,
+};
+
+</code></pre></div><h3 id="charmapencode-result"><a href="#charmapencode-result" class="header-anchor">#</a> <code>charmapencode_result</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum charmapencode_result : __int32
+{
+  enc_SUCCESS = 0x0,
+  enc_FAILED = 0x1,
+  enc_EXCEPTION = 0x2,
+};
+
+</code></pre></div><h3 id="cmp-op"><a href="#cmp-op" class="header-anchor">#</a> <code>cmp_op</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum cmp_op : __int32
+{
+  PyCmp_LT = 0x0,
+  PyCmp_LE = 0x1,
+  PyCmp_EQ = 0x2,
+  PyCmp_NE = 0x3,
+  PyCmp_GT = 0x4,
+  PyCmp_GE = 0x5,
+  PyCmp_IN = 0x6,
+  PyCmp_NOT_IN = 0x7,
+  PyCmp_IS = 0x8,
+  PyCmp_IS_NOT = 0x9,
+  PyCmp_EXC_MATCH = 0xA,
+  PyCmp_BAD = 0xB,
+};
+
+</code></pre></div><h3 id="clientblockpipeline-surfaceextractionstep-run-l2-vertexlocations"><a href="#clientblockpipeline-surfaceextractionstep-run-l2-vertexlocations" class="header-anchor">#</a> <code>ClientBlockPipeline::SurfaceExtractionStep::_run::__l2::VertexLocations</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ClientBlockPipeline::SurfaceExtractionStep::_run::__l2::VertexLocations : __int32
+{
+  RightUpFront = 0x0,
+  RightUpBack = 0x1,
+  RightDownFront = 0x2,
+  RightDownBack = 0x3,
+  LeftUpFront = 0x4,
+  LeftUpBack = 0x5,
+  LeftDownFront = 0x6,
+  LeftDownBack = 0x7,
+};
+
+</code></pre></div><h3 id="concurrency-details-task-impl-unsigned-char-cancelandruncontinuations-l2-unnamed-type-do"><a href="#concurrency-details-task-impl-unsigned-char-cancelandruncontinuations-l2-unnamed-type-do" class="header-anchor">#</a> <code>Concurrency::details::_Task_impl&lt;unsigned char&gt;::_CancelAndRunContinuations::__l2::&lt;unnamed_type__Do&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Concurrency::details::_Task_impl&lt;unsigned char&gt;::_CancelAndRunContinuations::__l2::&lt;unnamed_type__Do&gt; : __int32
+{
+  _Nothing = 0x0,
+  _RunContinuations = 0x1,
+  _Cancel = 0x2,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/B.html" class="prev">
+        B
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/D.html">
+        D
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/62.3cb13464.js" defer></script>
+  </body>
+</html>

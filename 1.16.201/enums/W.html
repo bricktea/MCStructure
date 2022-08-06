@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>W | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/85.16e996b6.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" aria-current="page" class="active sidebar-link">W</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="w"><a href="#w" class="header-anchor">#</a> W</h1> <h3 id="worldinfo-status"><a href="#worldinfo-status" class="header-anchor">#</a> <code>WorldInfo::Status</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Online</td> <td><code>0</code></td></tr> <tr><td>Offline</td> <td><code>1</code></td></tr> <tr><td>Unavailable</td> <td><code>2</code></td></tr></tbody></table> <h3 id="weatherrenderobject-precipitationtype"><a href="#weatherrenderobject-precipitationtype" class="header-anchor">#</a> <code>WeatherRenderObject::PrecipitationType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>PRECIPITATION_RAIN</td> <td><code>0</code></td></tr> <tr><td>PRECIPITATION_SNOW</td> <td><code>1</code></td></tr> <tr><td>PRECIPITATION_PLANKTON</td> <td><code>2</code></td></tr> <tr><td>PRECIPITATION_RED_SPORES</td> <td><code>3</code></td></tr> <tr><td>PRECIPITATION_BLUE_SPORES</td> <td><code>4</code></td></tr> <tr><td>PRECIPITATION_ASH</td> <td><code>5</code></td></tr> <tr><td>PRECIPITATION_WHITE_ASH</td> <td><code>6</code></td></tr> <tr><td>PRECIPITATION_COUNT</td> <td><code>7</code></td></tr></tbody></table> <h3 id="weathercommand-weathertype"><a href="#weathercommand-weathertype" class="header-anchor">#</a> <code>WeatherCommand::WeatherType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Clear</td> <td><code>0</code></td></tr> <tr><td>Rain</td> <td><code>1</code></td></tr> <tr><td>Thunder</td> <td><code>2</code></td></tr></tbody></table> <h3 id="wallconnectiontype"><a href="#wallconnectiontype" class="header-anchor">#</a> <code>WallConnectionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="woodtype"><a href="#woodtype" class="header-anchor">#</a> <code>WoodType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="wallblocktype"><a href="#wallblocktype" class="header-anchor">#</a> <code>WallBlockType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="wrapencodedkernel32functions"><a href="#wrapencodedkernel32functions" class="header-anchor">#</a> <code>wrapEncodedKERNEL32Functions</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum wrapEncodedKERNEL32Functions : __int32
+{
+  eFlsAlloc = 0x0,
+  eFlsFree = 0x1,
+  eFlsGetValue = 0x2,
+  eFlsSetValue = 0x3,
+  eInitializeCriticalSectionEx = 0x4,
+  eInitOnceExecuteOnce = 0x5,
+  eCreateEventExW = 0x6,
+  eCreateSemaphoreW = 0x7,
+  eCreateSemaphoreExW = 0x8,
+  eCreateThreadpoolTimer = 0x9,
+  eSetThreadpoolTimer = 0xA,
+  eWaitForThreadpoolTimerCallbacks = 0xB,
+  eCloseThreadpoolTimer = 0xC,
+  eCreateThreadpoolWait = 0xD,
+  eSetThreadpoolWait = 0xE,
+  eCloseThreadpoolWait = 0xF,
+  eFlushProcessWriteBuffers = 0x10,
+  eFreeLibraryWhenCallbackReturns = 0x11,
+  eGetCurrentProcessorNumber = 0x12,
+  eCreateSymbolicLinkW = 0x13,
+  eGetCurrentPackageId = 0x14,
+  eGetTickCount64 = 0x15,
+  eGetFileInformationByHandleEx = 0x16,
+  eSetFileInformationByHandle = 0x17,
+  eGetSystemTimePreciseAsFileTime = 0x18,
+  eInitializeConditionVariable = 0x19,
+  eWakeConditionVariable = 0x1A,
+  eWakeAllConditionVariable = 0x1B,
+  eSleepConditionVariableCS = 0x1C,
+  eInitializeSRWLock = 0x1D,
+  eAcquireSRWLockExclusive = 0x1E,
+  eTryAcquireSRWLockExclusive = 0x1F,
+  eReleaseSRWLockExclusive = 0x20,
+  eSleepConditionVariableSRW = 0x21,
+  eCreateThreadpoolWork = 0x22,
+  eSubmitThreadpoolWork = 0x23,
+  eCloseThreadpoolWork = 0x24,
+  eCompareStringEx = 0x25,
+  eGetLocaleInfoEx = 0x26,
+  eLCMapStringEx = 0x27,
+  eMaxKernel32Function = 0x28,
+};
+
+</code></pre></div><h3 id="weakstorageentity-emptyinit"><a href="#weakstorageentity-emptyinit" class="header-anchor">#</a> <code>WeakStorageEntity::EmptyInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum WeakStorageEntity::EmptyInit : __int32
+{
+  NoValue = 0x0,
+};
+
+</code></pre></div><h3 id="weakstorageentity-variadicinit"><a href="#weakstorageentity-variadicinit" class="header-anchor">#</a> <code>WeakStorageEntity::VariadicInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum WeakStorageEntity::VariadicInit : __int32
+{
+  NonAmbiguous = 0x0,
+};
+
+</code></pre></div><h3 id="weakstorageshareptr-entityregistry-emptyinit"><a href="#weakstorageshareptr-entityregistry-emptyinit" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;EntityRegistry&gt;::EmptyInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::EmptyInit WeakStorageSharePtr&lt;EntityRegistry&gt;::EmptyInit;
+
+</code></pre></div><h3 id="weakstorageshareptr-entityregistry-variadicinit"><a href="#weakstorageshareptr-entityregistry-variadicinit" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;EntityRegistry&gt;::VariadicInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::VariadicInit WeakStorageSharePtr&lt;EntityRegistry&gt;::VariadicInit;
+
+</code></pre></div><h3 id="worldconversionerror"><a href="#worldconversionerror" class="header-anchor">#</a> <code>WorldConversionError</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation WorldConversionError;
+
+</code></pre></div><h3 id="weakstorageshareptr-fogdefinition-const-emptyinit"><a href="#weakstorageshareptr-fogdefinition-const-emptyinit" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;FogDefinition const &gt;::EmptyInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::EmptyInit WeakStorageSharePtr&lt;FogDefinition const &gt;::EmptyInit;
+
+</code></pre></div><h3 id="weakstorageshareptr-fogdefinition-const-variadicinit"><a href="#weakstorageshareptr-fogdefinition-const-variadicinit" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;FogDefinition const &gt;::VariadicInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::VariadicInit WeakStorageSharePtr&lt;FogDefinition const &gt;::VariadicInit;
+
+</code></pre></div><h3 id="weirdodirection"><a href="#weirdodirection" class="header-anchor">#</a> <code>WeirdoDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId WeirdoDirection;
+
+</code></pre></div><h3 id="worldpackshistoryfile-parseresult"><a href="#worldpackshistoryfile-parseresult" class="header-anchor">#</a> <code>WorldPacksHistoryFile::ParseResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome WorldPacksHistoryFile::ParseResult;
+
+</code></pre></div><h3 id="weatherrenderobject-unnamed-enum-pass-count"><a href="#weatherrenderobject-unnamed-enum-pass-count" class="header-anchor">#</a> <code>WeatherRenderObject::&lt;unnamed_enum_PASS_COUNT&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum WeatherRenderObject::&lt;unnamed_enum_PASS_COUNT&gt; : __int32
+{
+  PASS_COUNT = 0xA,
+};
+
+</code></pre></div><h3 id="well-known-sid-type"><a href="#well-known-sid-type" class="header-anchor">#</a> <code>WELL_KNOWN_SID_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum WELL_KNOWN_SID_TYPE : __int32
+{
+  WinNullSid = 0x0,
+  WinWorldSid = 0x1,
+  WinLocalSid = 0x2,
+  WinCreatorOwnerSid = 0x3,
+  WinCreatorGroupSid = 0x4,
+  WinCreatorOwnerServerSid = 0x5,
+  WinCreatorGroupServerSid = 0x6,
+  WinNtAuthoritySid = 0x7,
+  WinDialupSid = 0x8,
+  WinNetworkSid = 0x9,
+  WinBatchSid = 0xA,
+  WinInteractiveSid = 0xB,
+  WinServiceSid = 0xC,
+  WinAnonymousSid = 0xD,
+  WinProxySid = 0xE,
+  WinEnterpriseControllersSid = 0xF,
+  WinSelfSid = 0x10,
+  WinAuthenticatedUserSid = 0x11,
+  WinRestrictedCodeSid = 0x12,
+  WinTerminalServerSid = 0x13,
+  WinRemoteLogonIdSid = 0x14,
+  WinLogonIdsSid = 0x15,
+  WinLocalSystemSid = 0x16,
+  WinLocalServiceSid = 0x17,
+  WinNetworkServiceSid = 0x18,
+  WinBuiltinDomainSid = 0x19,
+  WinBuiltinAdministratorsSid = 0x1A,
+  WinBuiltinUsersSid = 0x1B,
+  WinBuiltinGuestsSid = 0x1C,
+  WinBuiltinPowerUsersSid = 0x1D,
+  WinBuiltinAccountOperatorsSid = 0x1E,
+  WinBuiltinSystemOperatorsSid = 0x1F,
+  WinBuiltinPrintOperatorsSid = 0x20,
+  WinBuiltinBackupOperatorsSid = 0x21,
+  WinBuiltinReplicatorSid = 0x22,
+  WinBuiltinPreWindows2000CompatibleAccessSid = 0x23,
+  WinBuiltinRemoteDesktopUsersSid = 0x24,
+  WinBuiltinNetworkConfigurationOperatorsSid = 0x25,
+  WinAccountAdministratorSid = 0x26,
+  WinAccountGuestSid = 0x27,
+  WinAccountKrbtgtSid = 0x28,
+  WinAccountDomainAdminsSid = 0x29,
+  WinAccountDomainUsersSid = 0x2A,
+  WinAccountDomainGuestsSid = 0x2B,
+  WinAccountComputersSid = 0x2C,
+  WinAccountControllersSid = 0x2D,
+  WinAccountCertAdminsSid = 0x2E,
+  WinAccountSchemaAdminsSid = 0x2F,
+  WinAccountEnterpriseAdminsSid = 0x30,
+  WinAccountPolicyAdminsSid = 0x31,
+  WinAccountRasAndIasServersSid = 0x32,
+  WinNTLMAuthenticationSid = 0x33,
+  WinDigestAuthenticationSid = 0x34,
+  WinSChannelAuthenticationSid = 0x35,
+  WinThisOrganizationSid = 0x36,
+  WinOtherOrganizationSid = 0x37,
+  WinBuiltinIncomingForestTrustBuildersSid = 0x38,
+  WinBuiltinPerfMonitoringUsersSid = 0x39,
+  WinBuiltinPerfLoggingUsersSid = 0x3A,
+  WinBuiltinAuthorizationAccessSid = 0x3B,
+  WinBuiltinTerminalServerLicenseServersSid = 0x3C,
+  WinBuiltinDCOMUsersSid = 0x3D,
+  WinBuiltinIUsersSid = 0x3E,
+  WinIUserSid = 0x3F,
+  WinBuiltinCryptoOperatorsSid = 0x40,
+  WinUntrustedLabelSid = 0x41,
+  WinLowLabelSid = 0x42,
+  WinMediumLabelSid = 0x43,
+  WinHighLabelSid = 0x44,
+  WinSystemLabelSid = 0x45,
+  WinWriteRestrictedCodeSid = 0x46,
+  WinCreatorOwnerRightsSid = 0x47,
+  WinCacheablePrincipalsGroupSid = 0x48,
+  WinNonCacheablePrincipalsGroupSid = 0x49,
+  WinEnterpriseReadonlyControllersSid = 0x4A,
+  WinAccountReadonlyControllersSid = 0x4B,
+  WinBuiltinEventLogReadersGroup = 0x4C,
+  WinNewEnterpriseReadonlyControllersSid = 0x4D,
+  WinBuiltinCertSvcDComAccessGroup = 0x4E,
+  WinMediumPlusLabelSid = 0x4F,
+  WinLocalLogonSid = 0x50,
+  WinConsoleLogonSid = 0x51,
+  WinThisOrganizationCertificateSid = 0x52,
+  WinApplicationPackageAuthoritySid = 0x53,
+  WinBuiltinAnyPackageSid = 0x54,
+  WinCapabilityInternetClientSid = 0x55,
+  WinCapabilityInternetClientServerSid = 0x56,
+  WinCapabilityPrivateNetworkClientServerSid = 0x57,
+  WinCapabilityPicturesLibrarySid = 0x58,
+  WinCapabilityVideosLibrarySid = 0x59,
+  WinCapabilityMusicLibrarySid = 0x5A,
+  WinCapabilityDocumentsLibrarySid = 0x5B,
+  WinCapabilitySharedUserCertificatesSid = 0x5C,
+  WinCapabilityEnterpriseAuthenticationSid = 0x5D,
+  WinCapabilityRemovableStorageSid = 0x5E,
+  WinBuiltinRDSRemoteAccessServersSid = 0x5F,
+  WinBuiltinRDSEndpointServersSid = 0x60,
+  WinBuiltinRDSManagementServersSid = 0x61,
+  WinUserModeDriversSid = 0x62,
+  WinBuiltinHyperVAdminsSid = 0x63,
+  WinAccountCloneableControllersSid = 0x64,
+  WinBuiltinAccessControlAssistanceOperatorsSid = 0x65,
+  WinBuiltinRemoteManagementUsersSid = 0x66,
+  WinAuthenticationAuthorityAssertedSid = 0x67,
+  WinAuthenticationServiceAssertedSid = 0x68,
+  WinLocalAccountSid = 0x69,
+  WinLocalAccountAndAdministratorSid = 0x6A,
+  WinAccountProtectedUsersSid = 0x6B,
+  WinCapabilityAppointmentsSid = 0x6C,
+  WinCapabilityContactsSid = 0x6D,
+  WinAccountDefaultSystemManagedSid = 0x6E,
+  WinBuiltinDefaultSystemManagedGroupSid = 0x6F,
+  WinBuiltinStorageReplicaAdminsSid = 0x70,
+  WinAccountKeyAdminsSid = 0x71,
+  WinAccountEnterpriseKeyAdminsSid = 0x72,
+  WinAuthenticationKeyTrustSid = 0x73,
+  WinAuthenticationKeyPropertyMFASid = 0x74,
+  WinAuthenticationKeyPropertyAttestationSid = 0x75,
+  WinAuthenticationFreshKeyAuthSid = 0x76,
+  WinBuiltinDeviceOwnersSid = 0x77,
+};
+
+</code></pre></div><h3 id="worldtype"><a href="#worldtype" class="header-anchor">#</a> <code>WorldType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef RealmsEnvironment WorldType;
+
+</code></pre></div><h3 id="worldpingstatus"><a href="#worldpingstatus" class="header-anchor">#</a> <code>WorldPingStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NetworkPeer::NetworkLoad WorldPingStatus;
+
+</code></pre></div><h3 id="worldinfotype"><a href="#worldinfotype" class="header-anchor">#</a> <code>WorldInfoType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation WorldInfoType;
+
+</code></pre></div><h3 id="wsconnectionresult"><a href="#wsconnectionresult" class="header-anchor">#</a> <code>WSConnectionResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::AuthenticationOutcome WSConnectionResult;
+
+</code></pre></div><h3 id="webviewinterfacetype"><a href="#webviewinterfacetype" class="header-anchor">#</a> <code>WebviewInterfaceType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NetworkIdentifier::Type WebviewInterfaceType;
+
+</code></pre></div><h3 id="windowsstoremode"><a href="#windowsstoremode" class="header-anchor">#</a> <code>WindowsStoreMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId WindowsStoreMode;
+
+</code></pre></div><h3 id="websocketcommunicator-sockettype"><a href="#websocketcommunicator-sockettype" class="header-anchor">#</a> <code>WebSocketCommunicator::SocketType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent WebSocketCommunicator::SocketType;
+
+</code></pre></div><h3 id="worldprocessprogresshandler-type"><a href="#worldprocessprogresshandler-type" class="header-anchor">#</a> <code>WorldProcessProgressHandler::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::FileTransmissionDirection WorldProcessProgressHandler::Type;
+
+</code></pre></div><h3 id="worldverificationresult"><a href="#worldverificationresult" class="header-anchor">#</a> <code>WorldVerificationResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef StreamReadResult WorldVerificationResult;
+
+</code></pre></div><h3 id="webviewerror-type"><a href="#webviewerror-type" class="header-anchor">#</a> <code>WebviewError::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace WebviewError::Type;
+
+</code></pre></div><h3 id="weakstorageshareptr-fogdefinition-emptyinit"><a href="#weakstorageshareptr-fogdefinition-emptyinit" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;FogDefinition&gt;::EmptyInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::EmptyInit WeakStorageSharePtr&lt;FogDefinition&gt;::EmptyInit;
+
+</code></pre></div><h3 id="weakstorageshareptr-fogdefinition-variadicinit"><a href="#weakstorageshareptr-fogdefinition-variadicinit" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;FogDefinition&gt;::VariadicInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::VariadicInit WeakStorageSharePtr&lt;FogDefinition&gt;::VariadicInit;
+
+</code></pre></div><h3 id="win32mockstore-internalpurchase-status"><a href="#win32mockstore-internalpurchase-status" class="header-anchor">#</a> <code>Win32MockStore::InternalPurchase::Status</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState Win32MockStore::InternalPurchase::Status;
+
+</code></pre></div><h3 id="weakstoragefeature-emptyinit"><a href="#weakstoragefeature-emptyinit" class="header-anchor">#</a> <code>WeakStorageFeature::EmptyInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::EmptyInit WeakStorageFeature::EmptyInit;
+
+</code></pre></div><h3 id="weakstoragefeature-variadicinit"><a href="#weakstoragefeature-variadicinit" class="header-anchor">#</a> <code>WeakStorageFeature::VariadicInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::VariadicInit WeakStorageFeature::VariadicInit;
+
+</code></pre></div><h3 id="weathercommand-weatherrequest"><a href="#weathercommand-weatherrequest" class="header-anchor">#</a> <code>WeatherCommand::WeatherRequest</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PermissionCommand::Action WeatherCommand::WeatherRequest;
+
+</code></pre></div><h3 id="websocketmessagetype"><a href="#websocketmessagetype" class="header-anchor">#</a> <code>WebSocketMessageType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CreditsRenderer::CreditsContent::Type WebSocketMessageType;
+
+</code></pre></div><h3 id="weakstorageshareptr-perlinsimplexnoise-emptyinit"><a href="#weakstorageshareptr-perlinsimplexnoise-emptyinit" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;PerlinSimplexNoise&gt;::EmptyInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::EmptyInit WeakStorageSharePtr&lt;PerlinSimplexNoise&gt;::EmptyInit;
+
+</code></pre></div><h3 id="weakstorageshareptr-perlinsimplexnoise-variadicinit"><a href="#weakstorageshareptr-perlinsimplexnoise-variadicinit" class="header-anchor">#</a> <code>WeakStorageSharePtr&lt;PerlinSimplexNoise&gt;::VariadicInit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity::VariadicInit WeakStorageSharePtr&lt;PerlinSimplexNoise&gt;::VariadicInit;
+
+</code></pre></div><h3 id="windows-foundation-diagnostics-roerrorreportingflags"><a href="#windows-foundation-diagnostics-roerrorreportingflags" class="header-anchor">#</a> <code>Windows::Foundation::Diagnostics::RoErrorReportingFlags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation Windows::Foundation::Diagnostics::RoErrorReportingFlags;
+
+</code></pre></div><h3 id="wildcardstring-case"><a href="#wildcardstring-case" class="header-anchor">#</a> <code>WildcardString::Case</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum WildcardString::Case : __int32
+{
+  Sensitive = 0x0,
+  Insensitive = 0x1,
+};
+
+</code></pre></div><h3 id="why-code"><a href="#why-code" class="header-anchor">#</a> <code>why_code</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum why_code : __int32
+{
+  WHY_NOT = 0x1,
+  WHY_EXCEPTION = 0x2,
+  WHY_RERAISE = 0x4,
+  WHY_RETURN = 0x8,
+  WHY_BREAK = 0x10,
+  WHY_CONTINUE = 0x20,
+  WHY_YIELD = 0x40,
+};
+
+</code></pre></div><h3 id="woodlandmansionpieces-woodlandmansionpiece-addchest-l2-sensibledirections"><a href="#woodlandmansionpieces-woodlandmansionpiece-addchest-l2-sensibledirections" class="header-anchor">#</a> <code>WoodlandMansionPieces::WoodlandMansionPiece::_addChest::__l2::SensibleDirections</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Direction::Type WoodlandMansionPieces::WoodlandMansionPiece::_addChest::__l2::SensibleDirections;
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/V.html" class="prev">
+        V
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/85.16e996b6.js" defer></script>
+  </body>
+</html>

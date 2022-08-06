@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>E | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/37.b2ee95ad.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" aria-current="page" class="active sidebar-link">E</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="e"><a href="#e" class="header-anchor">#</a> E</h1> <h3 id="educationlocallevelsettings"><a href="#educationlocallevelsettings" class="header-anchor">#</a> <code>EducationLocalLevelSettings</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>hasQuiz</td></tr></tbody></table> <h3 id="externalfilelevelstoragesource"><a href="#externalfilelevelstoragesource" class="header-anchor">#</a> <code>ExternalFileLevelStorageSource</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>LevelStorageSource</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(16) <code>std::shared_ptr&lt;SaveTransactionManager&gt;</code></td> <td>msptSaveTransactionManager</td></tr> <tr><td>24</td> <td>(8) <code>Core::FilePathManager *</code></td> <td>mFilePathManager</td></tr></tbody></table> <h3 id="entityid"><a href="#entityid" class="header-anchor">#</a> <code>EntityId</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>mRawId</td></tr></tbody></table> <h3 id="eventpacket"><a href="#eventpacket" class="header-anchor">#</a> <code>EventPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>ActorUniqueID</code></td> <td>mPlayerId</td></tr> <tr><td>48</td> <td>(200) <code>EventPacket::Data</code></td> <td>mEventData</td></tr></tbody></table> <h3 id="eventpacket-data"><a href="#eventpacket-data" class="header-anchor">#</a> <code>EventPacket::Data</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>EventPacket::Type</code></td> <td>mType</td></tr> <tr><td>4</td> <td>(1) <code>Util::Byte</code></td> <td>mUsePlayerID</td></tr> <tr><td>8</td> <td>(32) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB</code></td> <td>_anon_0</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mEntityName</td></tr> <tr><td>72</td> <td>(32) <code>std::string</code></td> <td>mCommandName</td></tr> <tr><td>104</td> <td>(32) <code>std::string</code></td> <td>mResultKey</td></tr> <tr><td>136</td> <td>(32) <code>std::string</code></td> <td>mResultString</td></tr> <tr><td>168</td> <td>(32) <code>std::string</code></td> <td>mErrorList</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$103E0A04995712B8D39AE343EA50817C</code></td> <td>Achievement</td></tr> <tr><td>1</td> <td>(16) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$3EA7AF8D67CA2C237D54EACA0411C0BB</code></td> <td>Interaction</td></tr> <tr><td>2</td> <td>(4) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$CFC5415F71714946B1482A4EA070D3F8</code></td> <td>PortalCreated</td></tr> <tr><td>3</td> <td>(8) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$731817FF9A1D8A7F7DE35EC2646A852E</code></td> <td>PortalUsed</td></tr> <tr><td>4</td> <td>(32) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$43709AFFC502E7A13BA1073C610D8549</code></td> <td>PetDied</td></tr> <tr><td>5</td> <td>(32) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$3E28A071213A0B2BC357FB8DFB040ECA</code></td> <td>MobKilled</td></tr> <tr><td>6</td> <td>(12) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$8DB381A6CBFA50BDCCF821038DD76269</code></td> <td>CauldronUsed</td></tr> <tr><td>7</td> <td>(16) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$FF0AE4D4703BAEB84232F79BCFC2EBCD</code></td> <td>PlayerDied</td></tr> <tr><td>8</td> <td>(24) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$63ED5E6F79A5C5C3A74CFCAA908DF8F1</code></td> <td>BossKilled</td></tr> <tr><td>9</td> <td>(8) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$92C02C0BC48AA2105788421214C7C1B7</code></td> <td>AgentCommand</td></tr> <tr><td>10</td> <td>(20) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$A01EA2DF6590CA7397A67CCFB21A7F86</code></td> <td>PatternRemoved</td></tr> <tr><td>11</td> <td>(8) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$EA4713E4A3566411BE29AE280F22E9DF</code></td> <td>SlashCommand</td></tr> <tr><td>12</td> <td>(16) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$E47DE5B305D15144F0589DE3337858CF</code></td> <td>FishBucketed</td></tr> <tr><td>13</td> <td>(12) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$FEA48FE64DE27FADBA89F8BAEC4B7A9C</code></td> <td>MobBorn</td></tr> <tr><td>14</td> <td>(8) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$A05CE60CF11B1B9B38674E8A09580618</code></td> <td>POICauldronUsed</td></tr> <tr><td>15</td> <td>(8) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$A05CE60CF11B1B9B38674E8A09580618</code></td> <td>ComposterUsed</td></tr> <tr><td>16</td> <td>(2) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$5B316CCC98B60A95F92E231D823C7BE3</code></td> <td>BellUsed</td></tr> <tr><td>17</td> <td>(12) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$30DBAAB0C52B2A0F9E419B4088A015FC</code></td> <td>RaidUpdate</td></tr> <tr><td>18</td> <td>(20) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$61A09D83502661C769654363F1382707</code></td> <td>PlayerMovementCorrected</td></tr> <tr><td>19</td> <td>(24) <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$922D880B3EFBF7F2063214579535BD95</code></td> <td>PlayerMovementAnomaly</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-103e0a04995712b8d39ae343ea50817c"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-103e0a04995712b8d39ae343ea50817c" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$103E0A04995712B8D39AE343EA50817C</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>MinecraftEventing::AchievementIds</code></td> <td>mAchievementId</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-3ea7af8d67ca2c237d54eaca0411c0bb"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-3ea7af8d67ca2c237d54eaca0411c0bb" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$3EA7AF8D67CA2C237D54EACA0411C0BB</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mInteractedEntityType</td></tr> <tr><td>4</td> <td>(4) <code>MinecraftEventing::InteractionType</code></td> <td>mInteractionType</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mInteractedEntityVariant</td></tr> <tr><td>12</td> <td>(1) <code>unsigned __int8</code></td> <td>mInteractedEntityColor</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-cfc5415f71714946b1482a4ea070d3f8"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-cfc5415f71714946b1482a4ea070d3f8" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$CFC5415F71714946B1482A4EA070D3F8</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mBuiltInDimension</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-731817ff9a1d8a7f7de35ec2646a852e"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-731817ff9a1d8a7f7de35ec2646a852e" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$731817FF9A1D8A7F7DE35EC2646A852E</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mFromDimension</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mToDimension</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-43709affc502e7a13ba1073c610d8549"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-43709affc502e7a13ba1073c610d8549" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$43709AFFC502E7A13BA1073C610D8549</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mKilledByOwner</td></tr> <tr><td>8</td> <td>(8) <code>int64_t</code></td> <td>mKillerEntityId</td></tr> <tr><td>16</td> <td>(8) <code>int64_t</code></td> <td>mKilledMobId</td></tr> <tr><td>24</td> <td>(4) <code>int32_t</code></td> <td>mDamageSource</td></tr> <tr><td>28</td> <td>(4) <code>ActorType</code></td> <td>mKilledMobType</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-3e28a071213a0b2bc357fb8dfb040eca"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-3e28a071213a0b2bc357fb8dfb040eca" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$3E28A071213A0B2BC357FB8DFB040ECA</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int64_t</code></td> <td>mKillerEntityId</td></tr> <tr><td>8</td> <td>(8) <code>int64_t</code></td> <td>mKilledMobId</td></tr> <tr><td>16</td> <td>(4) <code>ActorType</code></td> <td>mDamageChildType</td></tr> <tr><td>20</td> <td>(4) <code>int32_t</code></td> <td>mDamageSource</td></tr> <tr><td>24</td> <td>(4) <code>int</code></td> <td>mTraderTier</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-8db381a6cbfa50bdccf821038dd76269"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-8db381a6cbfa50bdccf821038dd76269" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$8DB381A6CBFA50BDCCF821038DD76269</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>__int16</code></td> <td>mContentsType</td></tr> <tr><td>4</td> <td>(4) <code>uint32_t</code></td> <td>mContentsColor</td></tr> <tr><td>8</td> <td>(2) <code>__int16</code></td> <td>mFillLevel</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-ff0ae4d4703baeb84232f79bcfc2ebcd"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-ff0ae4d4703baeb84232f79bcfc2ebcd" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$FF0AE4D4703BAEB84232F79BCFC2EBCD</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int32_t</code></td> <td>mKillerId</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mKillerVariant</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mDamageSource</td></tr> <tr><td>12</td> <td>(1) <code>bool</code></td> <td>mInRaid</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-63ed5e6f79a5c5c3a74cfcaa908df8f1"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-63ed5e6f79a5c5c3a74cfcaa908df8f1" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$63ED5E6F79A5C5C3A74CFCAA908DF8F1</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int32_t</code></td> <td>mPartySize</td></tr> <tr><td>8</td> <td>(8) <code>int64_t</code></td> <td>mBossUniqueId</td></tr> <tr><td>16</td> <td>(4) <code>int32_t</code></td> <td>mBossType</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-92c02c0bc48aa2105788421214c7c1b7"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-92c02c0bc48aa2105788421214c7c1b7" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$92C02C0BC48AA2105788421214C7C1B7</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int32_t</code></td> <td>mResult</td></tr> <tr><td>4</td> <td>(4) <code>int32_t</code></td> <td>mResultNumber</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-a01ea2df6590ca7397a67ccfb21a7f86"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-a01ea2df6590ca7397a67ccfb21a7f86" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$A01EA2DF6590CA7397A67CCFB21A7F86</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int32_t</code></td> <td>mItemId</td></tr> <tr><td>4</td> <td>(4) <code>int32_t</code></td> <td>mItemAux</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mLayerIndex</td></tr> <tr><td>12</td> <td>(4) <code>int32_t</code></td> <td>mPatternId</td></tr> <tr><td>16</td> <td>(4) <code>int32_t</code></td> <td>mPatternColor</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-ea4713e4a3566411be29ae280f22e9df"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-ea4713e4a3566411be29ae280f22e9df" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$EA4713E4A3566411BE29AE280F22E9DF</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int32_t</code></td> <td>mSuccessCount</td></tr> <tr><td>4</td> <td>(4) <code>int32_t</code></td> <td>mErrorCount</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-e47de5b305d15144f0589de3337858cf"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-e47de5b305d15144f0589de3337858cf" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$E47DE5B305D15144F0589DE3337858CF</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int32_t</code></td> <td>mPattern</td></tr> <tr><td>4</td> <td>(4) <code>int32_t</code></td> <td>mPreset</td></tr> <tr><td>8</td> <td>(4) <code>int32_t</code></td> <td>mType</td></tr> <tr><td>12</td> <td>(1) <code>bool</code></td> <td>mRelease</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-fea48fe64de27fadba89f8baec4b7a9c"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-fea48fe64de27fadba89f8baec4b7a9c" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$FEA48FE64DE27FADBA89F8BAEC4B7A9C</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mBabyType</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mBabyVariant</td></tr> <tr><td>8</td> <td>(1) <code>unsigned __int8</code></td> <td>mBabyColor</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-a05ce60cf11b1b9b38674e8a09580618"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-a05ce60cf11b1b9b38674e8a09580618" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$A05CE60CF11B1B9B38674E8A09580618</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>__int16</code></td> <td>mItemId</td></tr> <tr><td>4</td> <td>(4) <code>MinecraftEventing::POIBlockInteractionType</code></td> <td>mInteractionType</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-5b316ccc98b60a95f92e231d823c7be3"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-5b316ccc98b60a95f92e231d823c7be3" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$5B316CCC98B60A95F92E231D823C7BE3</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>__int16</code></td> <td>mItemId</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-30dbaab0c52b2a0f9e419b4088a015fc"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-30dbaab0c52b2a0f9e419b4088a015fc" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$30DBAAB0C52B2A0F9E419B4088A015FC</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mCurrentWave</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mTotalWaves</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mSuccess</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-61a09d83502661c769654363f1382707"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-61a09d83502661c769654363f1382707" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$61A09D83502661C769654363F1382707</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mPositionDelta</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mObservedScore</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mThresholdDistance</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>mThresholdScore</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>mThresholdDuration_ms</td></tr></tbody></table> <h3 id="eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-922d880b3efbf7f2063214579535bd95"><a href="#eventpacket-data-a9b56bb2a8a14afa32257d71180a3ddb-922d880b3efbf7f2063214579535bd95" class="header-anchor">#</a> <code>EventPacket::Data::$A9B56BB2A8A14AFA32257D71180A3DDB::$922D880B3EFBF7F2063214579535BD95</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>MovementEventType</code></td> <td>mEventType</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mObservedScore</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mAveragePosDelta</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>mTotalPosDelta</td></tr> <tr><td>16</td> <td>(4) <code>float</code></td> <td>mMinPosDelta</td></tr> <tr><td>20</td> <td>(4) <code>float</code></td> <td>mMaxPosDelta</td></tr></tbody></table> <h3 id="enchantresult"><a href="#enchantresult" class="header-anchor">#</a> <code>EnchantResult</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>EnchantResultType</code></td> <td>result</td></tr> <tr><td>8</td> <td>(8) <code>size_t</code></td> <td>enchantIdx</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>level</td></tr></tbody></table> <h3 id="entitycontext"><a href="#entitycontext" class="header-anchor">#</a> <code>EntityContext</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>EntityContextBase</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="entitycontextbase"><a href="#entitycontextbase" class="header-anchor">#</a> <code>EntityContextBase</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistryBase *</code></td> <td>mRegistry</td></tr> <tr><td>8</td> <td>(4) <code>const EntityId</code></td> <td>mEntity</td></tr></tbody></table> <h3 id="entitysensorcomponent"><a href="#entitysensorcomponent" class="header-anchor">#</a> <code>EntitySensorComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mSensorRange</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mMinimumCount</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mMaximumCount</td></tr> <tr><td>12</td> <td>(1) <code>bool</code></td> <td>mRequireAll</td></tr> <tr><td>16</td> <td>(64) <code>ActorFilterGroup</code></td> <td>mEventCondition</td></tr> <tr><td>80</td> <td>(32) <code>std::string</code></td> <td>mEventName</td></tr></tbody></table> <h3 id="explodecomponent"><a href="#explodecomponent" class="header-anchor">#</a> <code>ExplodeComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mFuseLength</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mInitialFuseLength</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mExplosionPower</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>mMaxResistance</td></tr> <tr><td>16</td> <td>(1) <code>bool</code></td> <td>mIsFuseLit</td></tr> <tr><td>17</td> <td>(1) <code>bool</code></td> <td>mCausesFire</td></tr> <tr><td>18</td> <td>(1) <code>bool</code></td> <td>mBreaksBlocks</td></tr> <tr><td>19</td> <td>(1) <code>bool</code></td> <td>mFireAffectedByGriefing</td></tr> <tr><td>20</td> <td>(1) <code>bool</code></td> <td>mDestroyAffectedByGriefing</td></tr> <tr><td>21</td> <td>(1) <code>bool</code></td> <td>mAllowUnderwater</td></tr></tbody></table> <h3 id="emotepacket"><a href="#emotepacket" class="header-anchor">#</a> <code>EmotePacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mRuntimeId</td></tr> <tr><td>48</td> <td>(32) <code>std::string</code></td> <td>mEmote</td></tr> <tr><td>80</td> <td>(1) <code>uint8_t</code></td> <td>mFlags</td></tr></tbody></table> <h3 id="educationlevelsettings"><a href="#educationlevelsettings" class="header-anchor">#</a> <code>EducationLevelSettings</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>codeBuilderDefaultUri</td></tr> <tr><td>32</td> <td>(56) <code>std::unordered_map&lt;std::string,CommandFlag&gt;</code></td> <td>hiddenPlayerCommands</td></tr> <tr><td>88</td> <td>(1) <code>EducationLocalLevelSettings</code></td> <td>localSettings</td></tr></tbody></table> <h3 id="errorpathstack"><a href="#errorpathstack" class="header-anchor">#</a> <code>ErrorPathStack</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::vector&lt;std::string&gt; *</code></td> <td>mErrorPath</td></tr></tbody></table> <h3 id="eventinfo"><a href="#eventinfo" class="header-anchor">#</a> <code>EventInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mEventName</td></tr></tbody></table> <h3 id="equipmenttabledescription"><a href="#equipmenttabledescription" class="header-anchor">#</a> <code>EquipmentTableDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>PropertyDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mFilePath</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;SlotDropChance&gt;</code></td> <td>mDropChancesPerSlot</td></tr></tbody></table> <h3 id="equippabledefinition"><a href="#equippabledefinition" class="header-anchor">#</a> <code>EquippableDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;SlotDescriptor&gt;</code></td> <td>mSlots</td></tr></tbody></table> <h3 id="explodedefinition"><a href="#explodedefinition" class="header-anchor">#</a> <code>ExplodeDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>FloatRange</code></td> <td>mFuseLength</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mExplosionPower</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>mMaxResistance</td></tr> <tr><td>16</td> <td>(1) <code>bool</code></td> <td>mIsFuseLit</td></tr> <tr><td>17</td> <td>(1) <code>bool</code></td> <td>mCausesFire</td></tr> <tr><td>18</td> <td>(1) <code>bool</code></td> <td>mBreaksBlocks</td></tr> <tr><td>19</td> <td>(1) <code>bool</code></td> <td>mFireAffectedByGriefing</td></tr> <tr><td>20</td> <td>(1) <code>bool</code></td> <td>mDestroyAffectedByGriefing</td></tr></tbody></table> <h3 id="equippablecomponent"><a href="#equippablecomponent" class="header-anchor">#</a> <code>EquippableComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;SlotDescriptor&gt;</code></td> <td>mSlots</td></tr></tbody></table> <h3 id="expressionnode"><a href="#expressionnode" class="header-anchor">#</a> <code>ExpressionNode</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>ExpressionOp</code></td> <td>mOp</td></tr> <tr><td>8</td> <td>(56) <code>MolangScriptArg</code></td> <td>mValue</td></tr> <tr><td>64</td> <td>(24) <code>std::vector&lt;ExpressionNode&gt;</code></td> <td>mChildren</td></tr> <tr><td>88</td> <td>(8) <code>uint64_t</code></td> <td>mUsedTokenFlags</td></tr> <tr><td>96</td> <td>(32) <code>std::string</code></td> <td>_mExpressionString</td></tr></tbody></table> <h3 id="expandocontainermodel-onitemexpandedcallback"><a href="#expandocontainermodel-onitemexpandedcallback" class="header-anchor">#</a> <code>ExpandoContainerModel::OnItemExpandedCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (const std::string &amp;,int,int)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="enchantmentinstance"><a href="#enchantmentinstance" class="header-anchor">#</a> <code>EnchantmentInstance</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>Enchant::Type</code></td> <td>mEnchantType</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mLevel</td></tr></tbody></table> <h3 id="entitynetid"><a href="#entitynetid" class="header-anchor">#</a> <code>EntityNetId</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>mRawId</td></tr></tbody></table> <h3 id="entityreftraits-ownerstorage"><a href="#entityreftraits-ownerstorage" class="header-anchor">#</a> <code>EntityRefTraits::OwnerStorage</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::optional&lt;OwnerStorageEntity::EntityContextOwned&gt;</code></td> <td>mContext</td></tr></tbody></table> <h3 id="explosion"><a href="#explosion" class="header-anchor">#</a> <code>Explosion</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Vec3</code></td> <td>mPos</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>mRadius</td></tr> <tr><td>16</td> <td>(56) <code>BlockPosSet</code></td> <td>mToBlow</td></tr> <tr><td>72</td> <td>(1) <code>bool</code></td> <td>mFire</td></tr> <tr><td>73</td> <td>(1) <code>bool</code></td> <td>mBreaking</td></tr> <tr><td>74</td> <td>(1) <code>bool</code></td> <td>mAllowUnderwater</td></tr> <tr><td>80</td> <td>(8) <code>Actor *</code></td> <td>mSource</td></tr> <tr><td>88</td> <td>(8) <code>BlockSource *</code></td> <td>mRegion</td></tr> <tr><td>96</td> <td>(4) <code>float</code></td> <td>mMaxResistance</td></tr> <tr><td>100</td> <td>(2516) <code>Random</code></td> <td>mRandom</td></tr></tbody></table> <h3 id="expressionnode-querylookupfunc"><a href="#expressionnode-querylookupfunc" class="header-anchor">#</a> <code>ExpressionNode::QueryLookupFunc</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;const std::function&lt;float (RenderParams &amp;,const std::vector&lt;float&gt; &amp;)&gt; *(const std::string &amp;,bool)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="endgatewayfeature"><a href="#endgatewayfeature" class="header-anchor">#</a> <code>EndGatewayFeature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>Feature</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="endpodiumfeature"><a href="#endpodiumfeature" class="header-anchor">#</a> <code>EndPodiumFeature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>Feature</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(1) <code>bool</code></td> <td>mActive</td></tr></tbody></table> <h3 id="enddragonfight-gatewaygenerator"><a href="#enddragonfight-gatewaygenerator" class="header-anchor">#</a> <code>EndDragonFight::GateWayGenerator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mPlaceNewBlocks</td></tr> <tr><td>8</td> <td>(8) <code>Unique&lt;ChunkViewSource&gt;</code></td> <td>mSource</td></tr> <tr><td>16</td> <td>(12) <code>BlockPos</code></td> <td>mPosition</td></tr></tbody></table> <h3 id="endislandfeature"><a href="#endislandfeature" class="header-anchor">#</a> <code>EndIslandFeature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>Feature</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="enddragonfight-setendgatewayblockactorexitposition-7ef7c94beab75c6cef4adfb99b570420"><a href="#enddragonfight-setendgatewayblockactorexitposition-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>EndDragonFight::_setEndGatewayBlockActorExitPosition::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="environmentrequirement"><a href="#environmentrequirement" class="header-anchor">#</a> <code>EnvironmentRequirement</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(48) <code>std::set&lt;const Block *&gt;</code></td> <td>mBlockTypes</td></tr> <tr><td>48</td> <td>(4) <code>unsigned int</code></td> <td>mNumBlocksRequired</td></tr> <tr><td>52</td> <td>(4) <code>unsigned int</code></td> <td>mSearchRadius</td></tr></tbody></table> <h3 id="entityregistryreftraits-stackresultstorage"><a href="#entityregistryreftraits-stackresultstorage" class="header-anchor">#</a> <code>EntityRegistryRefTraits::StackResultStorage</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::shared_ptr&lt;EntityRegistry&gt;</code></td> <td>mValue</td></tr></tbody></table> <h3 id="expressionnode-genericquerylookupfunc"><a href="#expressionnode-genericquerylookupfunc" class="header-anchor">#</a> <code>ExpressionNode::GenericQueryLookupFunc</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;const std::function&lt;MolangScriptArg (RenderParams &amp;,const std::vector&lt;MolangScriptArg&gt; &amp;)&gt; *(const std::string &amp;,bool)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="experiencerewardcomponent"><a href="#experiencerewardcomponent" class="header-anchor">#</a> <code>ExperienceRewardComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;ExpressionNode&gt;</code></td> <td>mOnBred</td></tr> <tr><td>24</td> <td>(24) <code>std::vector&lt;ExpressionNode&gt;</code></td> <td>mOnDeath</td></tr></tbody></table> <h3 id="endportalshape"><a href="#endportalshape" class="header-anchor">#</a> <code>EndPortalShape</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>BlockSource *</code></td> <td>mSource</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mRightDir</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>mLeftDir</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>mDepthDir</td></tr> <tr><td>20</td> <td>(12) <code>BlockPos</code></td> <td>mBottomLeft</td></tr> <tr><td>32</td> <td>(12) <code>BlockPos</code></td> <td>mOrigin</td></tr> <tr><td>44</td> <td>(4) <code>int</code></td> <td>mBlockDirection</td></tr> <tr><td>48</td> <td>(24) <code>std::vector&lt;std::vector&lt;const Block *&gt;&gt;</code></td> <td>mPortalPattern</td></tr></tbody></table> <h3 id="endcitypieces-generators"><a href="#endcitypieces-generators" class="header-anchor">#</a> <code>EndCityPieces::Generators</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;EndCityPieces::SectionGenerator&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="educationmetadata"><a href="#educationmetadata" class="header-anchor">#</a> <code>EducationMetadata</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>EducationMetadata::ContentType</code></td> <td>mContentType</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mEstimatedTime</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mDescription</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mGoals</td></tr> <tr><td>72</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mTasks</td></tr> <tr><td>96</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mInstructions</td></tr> <tr><td>120</td> <td>(32) <code>std::string</code></td> <td>mLinkToMore</td></tr> <tr><td>152</td> <td>(4) <code>int</code></td> <td>mOrder</td></tr> <tr><td>156</td> <td>(4) <code>EducationMetadata::UserType</code></td> <td>mRole</td></tr></tbody></table> <h3 id="educationoptions"><a href="#educationoptions" class="header-anchor">#</a> <code>EducationOptions</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ResourcePackListener</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>ResourcePackManager *</code></td> <td>mPackMan</td></tr> <tr><td>16</td> <td>(1) <code>EducationFeature</code></td> <td>mFeatureFlags</td></tr></tbody></table> <h3 id="epoll-event"><a href="#epoll-event" class="header-anchor">#</a> <code>epoll_event</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>events</td></tr> <tr><td>4</td> <td>(8) <code>epoll_data_t</code></td> <td>data</td></tr></tbody></table> <h3 id="epoll-data-t"><a href="#epoll-data-t" class="header-anchor">#</a> <code>epoll_data_t</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>void *</code></td> <td>ptr</td></tr> <tr><td>1</td> <td>(4) <code>int</code></td> <td>fd</td></tr> <tr><td>2</td> <td>(4) <code>uint32_t</code></td> <td>u32</td></tr> <tr><td>3</td> <td>(8) <code>uint64_t</code></td> <td>u64</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-ageablecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-ageablecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,AgeableComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-agentcommandcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-agentcommandcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,AgentCommandComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-angrycomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-angrycomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,AngryComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-areaattackcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-areaattackcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,AreaAttackComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-ballooncomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-ballooncomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BalloonComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-behaviorcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-behaviorcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BehaviorComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-blockbreaksensorcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-blockbreaksensorcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BlockBreakSensorComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-bodycontrolcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-bodycontrolcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BodyControlComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-boostablecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-boostablecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BoostableComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-bosscomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-bosscomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BossComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-breakblockscomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-breakblockscomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BreakBlocksComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-breakdoorannotationcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-breakdoorannotationcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BreakDoorAnnotationComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-breathablecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-breathablecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BreathableComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-breedablecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-breedablecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BreedableComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-bribeablecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-bribeablecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,BribeableComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-actorflagcomponent-burnsindaylightflag"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-actorflagcomponent-burnsindaylightflag" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,ActorFlagComponent&lt;BurnsInDaylightFlag&gt; &gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-commandblockcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-commandblockcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,CommandBlockComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-damageovertimecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-damageovertimecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,DamageOverTimeComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-dancecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-dancecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,DanceComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-despawncomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-despawncomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,DespawnComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-dwellercomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-dwellercomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,DwellerComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-entitysensorcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-entitysensorcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,EntitySensorComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-actorflagcomponent-environmentsensorflag"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-actorflagcomponent-environmentsensorflag" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,ActorFlagComponent&lt;EnvironmentSensorFlag&gt; &gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-explodecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-explodecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,ExplodeComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-flockingcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-flockingcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,FlockingComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-goalselectorcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-goalselectorcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,GoalSelectorComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-growscropcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-growscropcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,GrowsCropComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-hoppercomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-hoppercomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,HopperComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-hurtonconditioncomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-hurtonconditioncomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,HurtOnConditionComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-insomniacomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-insomniacomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,InsomniaComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-interactcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-interactcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,InteractComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-jumpcontrolcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-jumpcontrolcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,JumpControlComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-leashablecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-leashablecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,LeashableComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-lookatcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-lookatcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,LookAtComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-lookcontrolcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-lookcontrolcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,LookControlComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-mobeffectcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-mobeffectcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,MobEffectComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-mounttamingcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-mounttamingcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,MountTamingComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-movecontrolcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-movecontrolcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,MoveControlComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-navigationcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-navigationcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,NavigationComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-opendoorannotationcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-opendoorannotationcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,OpenDoorAnnotationComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-peekcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-peekcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,PeekComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-projectilecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-projectilecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,ProjectileComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-raidbosscomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-raidbosscomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,RaidBossComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-railactivatorcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-railactivatorcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,RailActivatorComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-scaffoldingclimbercomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-scaffoldingclimbercomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,ScaffoldingClimberComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-scalebyagecomponent-ageablecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-scalebyagecomponent-ageablecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,ScaleByAgeComponent,AgeableComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-schedulercomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-schedulercomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,SchedulerComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-sensingcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-sensingcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,SensingComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-spawnactorcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-spawnactorcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,SpawnActorComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-targetnearbycomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-targetnearbycomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,TargetNearbyComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-teleportcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-teleportcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,TeleportComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-timercomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-timercomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,TimerComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-legacytradeablecomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-legacytradeablecomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,LegacyTradeableComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-trailcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-trailcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,TrailComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-transformationcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-flagcomponent-actortickedflag-actorcomponent-transformationcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,FlagComponent&lt;ActorTickedFlag&gt;,ActorComponent,TransformationComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="educationlevelsettings-commandoverridefunctor"><a href="#educationlevelsettings-commandoverridefunctor" class="header-anchor">#</a> <code>EducationLevelSettings::CommandOverrideFunctor</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (CommandFlag &amp;,const std::string &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="enumbitset-scriptlogtype-3"><a href="#enumbitset-scriptlogtype-3" class="header-anchor">#</a> <code>EnumBitset&lt;ScriptLogType,3&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::bitset&lt;3&gt;</code></td> <td>mBitset</td></tr></tbody></table> <h3 id="entitycomponentfactory-464"><a href="#entitycomponentfactory-464" class="header-anchor">#</a> <code>EntityComponentFactory:464</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;HashedString,std::unique_ptr&lt;IDefinitionSerializer&gt;&gt;</code></td> <td>mDefinitionSerializers</td></tr> <tr><td>56</td> <td>(1) <code>bool</code></td> <td>mErrorOnDuplicateAdd</td></tr> <tr><td>57</td> <td>(1) <code>bool</code></td> <td>mErrorOnAbsentRemove</td></tr></tbody></table> <h3 id="entitycanonicalname-7ef7c94beab75c6cef4adfb99b570420"><a href="#entitycanonicalname-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>EntityCanonicalName::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="eyeofender-normaltick-7ef7c94beab75c6cef4adfb99b570420"><a href="#eyeofender-normaltick-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>EyeOfEnder::normalTick::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="expandomodelelement"><a href="#expandomodelelement" class="header-anchor">#</a> <code>ExpandoModelElement</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(272) <code>ContainerItemStack</code></td> <td>item</td></tr> <tr><td>272</td> <td>(4) <code>ContainerExpandStatus</code></td> <td>status</td></tr> <tr><td>280</td> <td>(32) <code>std::string</code></td> <td>groupName</td></tr></tbody></table> <h3 id="entityreftraits-stackresultstorage"><a href="#entityreftraits-stackresultstorage" class="header-anchor">#</a> <code>EntityRefTraits::StackResultStorage</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::optional&lt;EntityContext&gt;</code></td> <td>mContext</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-surfacebuildercomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-surfacebuildercomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,SurfaceBuilderComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="endgatewayblockactor"><a href="#endgatewayblockactor" class="header-anchor">#</a> <code>EndGatewayBlockActor</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(204) <code>BlockActor:1632</code></td> <td>baseclass_0</td></tr> <tr><td>204</td> <td>(4) <code>int</code></td> <td>mAge</td></tr> <tr><td>208</td> <td>(4) <code>int</code></td> <td>mTeleportCooldown</td></tr> <tr><td>212</td> <td>(12) <code>BlockPos</code></td> <td>mExitPortal</td></tr> <tr><td>224</td> <td>(1) <code>bool</code></td> <td>mNeedsExitGeneration</td></tr> <tr><td>225</td> <td>(1) <code>bool</code></td> <td>mTeleportTriggered</td></tr> <tr><td>226</td> <td>(1) <code>bool</code></td> <td>mNeedsExitPositionVerification</td></tr> <tr><td>227</td> <td>(1) <code>bool</code></td> <td>mExitPositionVerified</td></tr></tbody></table> <h3 id="entityregistry"><a href="#entityregistry" class="header-anchor">#</a> <code>EntityRegistry</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>EntityRegistryBase</code></td> <td>baseclass_0</td></tr> <tr><td>32</td> <td>(16) <code>std::enable_shared_from_this&lt;EntityRegistry&gt;</code></td> <td>baseclass_20</td></tr></tbody></table> <h3 id="entityregistrybase"><a href="#entityregistrybase" class="header-anchor">#</a> <code>EntityRegistryBase</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>entt::Registry&lt;EntityId&gt; *</code></td> <td>mRegistry</td></tr> <tr><td>8</td> <td>(8) <code>std::optional&lt;EntityId&gt;</code></td> <td>mViewedEntity</td></tr> <tr><td>16</td> <td>(8) <code>std::unique_ptr&lt;EntityRegistryBase::ICanModifyComponentPoolDuringView&gt;</code></td> <td>mCanModifyDuringView</td></tr> <tr><td>24</td> <td>(1) <code>bool</code></td> <td>mViewUsesViewedContext</td></tr></tbody></table> <h3 id="entityregistryreftraits-weakstorage"><a href="#entityregistryreftraits-weakstorage" class="header-anchor">#</a> <code>EntityRegistryRefTraits::WeakStorage</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::weak_ptr&lt;EntityRegistry&gt;</code></td> <td>mHandle</td></tr></tbody></table> <h3 id="entityregistrybase-view-entitycontext-entityregistry-actorcomponent-railmovementcomponent"><a href="#entityregistrybase-view-entitycontext-entityregistry-actorcomponent-railmovementcomponent" class="header-anchor">#</a> <code>EntityRegistryBase::View&lt;EntityContext,EntityRegistry,ActorComponent,RailMovementComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>EntityRegistry *</code></td> <td>mRegistry</td></tr></tbody></table> <h3 id="educationmetadataerror"><a href="#educationmetadataerror" class="header-anchor">#</a> <code>EducationMetadataError</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>PackError</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="endgatewayblock-animatetick-7ef7c94beab75c6cef4adfb99b570420"><a href="#endgatewayblock-animatetick-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>EndGatewayBlock::animateTick::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="enumbitset-rendercapability-14"><a href="#enumbitset-rendercapability-14" class="header-anchor">#</a> <code>EnumBitset&lt;RenderCapability,14&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::bitset&lt;14&gt;</code></td> <td>mBitset</td></tr></tbody></table> <h3 id="endermantakeblockgoal"><a href="#endermantakeblockgoal" class="header-anchor">#</a> <code>EndermanTakeBlockGoal</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>Goal</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(8) <code>EnderMan *</code></td> <td>mEnderman</td></tr></tbody></table> <h3 id="eventcoordinator-serverinstanceeventlistener"><a href="#eventcoordinator-serverinstanceeventlistener" class="header-anchor">#</a> <code>EventCoordinator&lt;ServerInstanceEventListener&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EventCoordinator&lt;ServerInstanceEventListener&gt;
+{
+  std::vector&lt;ServerInstanceEventListener *&gt; mListeners;
+  std::vector&lt;std::function&lt;EventResult (ServerInstanceEventListener *)&gt;&gt; mEventsToProcess;
+  std::thread::id mThreadId;
+  bool mThreadIdInitialized;
+  unsigned int mThreadCheckIndex;
+};
+
+</code></pre></div><h3 id="extendedcertificate"><a href="#extendedcertificate" class="header-anchor">#</a> <code>ExtendedCertificate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ExtendedCertificate
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="encryptednetworkpeer"><a href="#encryptednetworkpeer" class="header-anchor">#</a> <code>EncryptedNetworkPeer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EncryptedNetworkPeer : NetworkPeer
+{
+  Unique&lt;Crypto::Symmetric::Symmetric&gt; mDecryption;
+  Unique&lt;Crypto::Hash::HMAC&gt; mEncryptionMAC;
+  Unique&lt;Crypto::Symmetric::Symmetric&gt; mEncryption;
+  Unique&lt;Crypto::Hash::HMAC&gt; mDecryptionMAC;
+  uint64_t mSendCounter;
+  uint64_t mReceiveCounter;
+  std::string mSendEncryptedDataBuffer;
+  std::string mSendSignedDataBuffer;
+  std::string mRecvEncryptedDataBuffer;
+  std::string mRecvSignedDataBuffer;
+  std::string mRecvDecryptedDataBuffer;
+};
+
+</code></pre></div><h3 id="entityregistrybase-icanmodifycomponentpoolduringview"><a href="#entityregistrybase-icanmodifycomponentpoolduringview" class="header-anchor">#</a> <code>EntityRegistryBase::ICanModifyComponentPoolDuringView</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EntityRegistryBase::ICanModifyComponentPoolDuringView
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="enablegetweakref-entityregistryreftraits"><a href="#enablegetweakref-entityregistryreftraits" class="header-anchor">#</a> <code>EnableGetWeakRef&lt;EntityRegistryRefTraits&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EnableGetWeakRef&lt;EntityRegistryRefTraits&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="entityregistryowned"><a href="#entityregistryowned" class="header-anchor">#</a> <code>EntityRegistryOwned</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EntityRegistryOwned : EntityRegistry
+{
+  entt::Registry&lt;EntityId&gt; mOwnedRegistry;
+};
+
+</code></pre></div><h3 id="enablegetweakref-entityreftraits"><a href="#enablegetweakref-entityreftraits" class="header-anchor">#</a> <code>EnableGetWeakRef&lt;EntityRefTraits&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EnableGetWeakRef&lt;EntityRefTraits&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="environmentsensorsystem"><a href="#environmentsensorsystem" class="header-anchor">#</a> <code>EnvironmentSensorSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnvironmentSensorSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="explodesystem"><a href="#explodesystem" class="header-anchor">#</a> <code>ExplodeSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExplodeSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="entitysensorsystem"><a href="#entitysensorsystem" class="header-anchor">#</a> <code>EntitySensorSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EntitySensorSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="entityregistryreftraits"><a href="#entityregistryreftraits" class="header-anchor">#</a> <code>EntityRegistryRefTraits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EntityRegistryRefTraits
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="entityregistryreftraits-ownerstorage"><a href="#entityregistryreftraits-ownerstorage" class="header-anchor">#</a> <code>EntityRegistryRefTraits::OwnerStorage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OwnerStorageSharePtr&lt;EntityRegistryOwned&gt; EntityRegistryRefTraits::OwnerStorage;
+
+</code></pre></div><h3 id="entityregistryreftraits-ownerstackref"><a href="#entityregistryreftraits-ownerstackref" class="header-anchor">#</a> <code>EntityRegistryRefTraits::OwnerStackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef EntityRegistryOwned EntityRegistryRefTraits::OwnerStackRef;
+
+</code></pre></div><h3 id="entityreftraits"><a href="#entityreftraits" class="header-anchor">#</a> <code>EntityRefTraits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EntityRefTraits
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="entityreftraits-weakstorage"><a href="#entityreftraits-weakstorage" class="header-anchor">#</a> <code>EntityRefTraits::WeakStorage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeakStorageEntity EntityRefTraits::WeakStorage;
+
+</code></pre></div><h3 id="entityreftraits-ownerstackref"><a href="#entityreftraits-ownerstackref" class="header-anchor">#</a> <code>EntityRefTraits::OwnerStackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef EntityRefTraits::StackRef EntityRefTraits::OwnerStackRef;
+
+</code></pre></div><h3 id="entityreftraits-stackref"><a href="#entityreftraits-stackref" class="header-anchor">#</a> <code>EntityRefTraits::StackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef EntityContext EntityRefTraits::StackRef;
+
+</code></pre></div><h3 id="entitysystems"><a href="#entitysystems" class="header-anchor">#</a> <code>EntitySystems</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EntitySystems
+{
+  std::vector&lt;std::unique_ptr&lt;ITickingSystem&gt;&gt; mTickingSystems;
+  Unique&lt;PlayerInteractionSystem&gt; mPlayerInteractionSystem;
+};
+
+</code></pre></div><h3 id="entitycomponentfactory"><a href="#entitycomponentfactory" class="header-anchor">#</a> <code>EntityComponentFactory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) EntityComponentFactory
+{
+  std::unordered_map&lt;HashedString,std::unique_ptr&lt;IDefinitionSerializer&gt;&gt; mDefinitionSerializers;
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="eventcoordinator-playereventlistener"><a href="#eventcoordinator-playereventlistener" class="header-anchor">#</a> <code>EventCoordinator&lt;PlayerEventListener&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EventCoordinator&lt;PlayerEventListener&gt;
+{
+  std::vector&lt;PlayerEventListener *&gt; mListeners;
+  std::vector&lt;std::function&lt;EventResult (PlayerEventListener *)&gt;&gt; mEventsToProcess;
+  std::thread::id mThreadId;
+  bool mThreadIdInitialized;
+  unsigned int mThreadCheckIndex;
+};
+
+</code></pre></div><h3 id="eventcoordinator-actoreventlistener"><a href="#eventcoordinator-actoreventlistener" class="header-anchor">#</a> <code>EventCoordinator&lt;ActorEventListener&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EventCoordinator&lt;ActorEventListener&gt;
+{
+  std::vector&lt;ActorEventListener *&gt; mListeners;
+  std::vector&lt;std::function&lt;EventResult (ActorEventListener *)&gt;&gt; mEventsToProcess;
+  std::thread::id mThreadId;
+  bool mThreadIdInitialized;
+  unsigned int mThreadCheckIndex;
+};
+
+</code></pre></div><h3 id="eventcoordinator-blockeventlistener"><a href="#eventcoordinator-blockeventlistener" class="header-anchor">#</a> <code>EventCoordinator&lt;BlockEventListener&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EventCoordinator&lt;BlockEventListener&gt;
+{
+  std::vector&lt;BlockEventListener *&gt; mListeners;
+  std::vector&lt;std::function&lt;EventResult (BlockEventListener *)&gt;&gt; mEventsToProcess;
+  std::thread::id mThreadId;
+  bool mThreadIdInitialized;
+  unsigned int mThreadCheckIndex;
+};
+
+</code></pre></div><h3 id="enchantcommand"><a href="#enchantcommand" class="header-anchor">#</a> <code>EnchantCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnchantCommand : Command
+{
+  PlayerSelector mTargets;
+  Enchant::Type mType;
+  int mId;
+  int mLevel;
+};
+
+</code></pre></div><h3 id="enchant"><a href="#enchant" class="header-anchor">#</a> <code>Enchant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) Enchant
+{
+  int (**_vptr$Enchant)(void);
+  const Enchant::Type mEnchantType;
+  const Enchant::Frequency mFrequency;
+  const bool mIsLootable;
+  const int mPrimarySlots;
+  const int mSecondarySlots;
+  const int mCompatibility;
+  const std::string mDescription;
+  const Util::HashString mStringId;
+  bool mIsExperimental;
+  bool mIsDisabled;
+};
+
+</code></pre></div><h3 id="extralicensedata"><a href="#extralicensedata" class="header-anchor">#</a> <code>ExtraLicenseData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ExtraLicenseData
+{
+  int64_t mValidationTime;
+  int64_t mRetryUntilTime;
+  int64_t mRetryAttempts;
+};
+
+</code></pre></div><h3 id="economytradeablecomponent"><a href="#economytradeablecomponent" class="header-anchor">#</a> <code>EconomyTradeableComponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) EconomyTradeableComponent
+{
+  Player *mLastPlayerTradeName;
+  int mUpdateMerchantTimer;
+  bool mAddRecipeOnUpdate;
+  int mRiches;
+  Mob *mOwner;
+  std::unique_ptr&lt;MerchantRecipeList&gt; mOffers;
+  std::string mDisplayName;
+  std::string mGeneratedTablePath;
+  bool mConvertedFromVillagerV1;
+};
+
+</code></pre></div><h3 id="experienceorb"><a href="#experienceorb" class="header-anchor">#</a> <code>ExperienceOrb</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ExperienceOrb : Actor
+{
+  ActorUniqueID mFollowingPlayer;
+  int mFollowingTime;
+  int mAge;
+  int mHealth;
+};
+
+</code></pre></div><h3 id="environmentsensordefinition"><a href="#environmentsensordefinition" class="header-anchor">#</a> <code>EnvironmentSensorDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EnvironmentSensorDefinition
+{
+  std::vector&lt;DefinitionTrigger&gt; mTriggers;
+};
+
+</code></pre></div><h3 id="endtag"><a href="#endtag" class="header-anchor">#</a> <code>EndTag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndTag : Tag
+{
+};
+
+</code></pre></div><h3 id="eventcoordinator-networkpacketeventlistener"><a href="#eventcoordinator-networkpacketeventlistener" class="header-anchor">#</a> <code>EventCoordinator&lt;NetworkPacketEventListener&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EventCoordinator&lt;NetworkPacketEventListener&gt;
+{
+  std::vector&lt;NetworkPacketEventListener *&gt; mListeners;
+  std::vector&lt;std::function&lt;EventResult (NetworkPacketEventListener *)&gt;&gt; mEventsToProcess;
+  std::thread::id mThreadId;
+  bool mThreadIdInitialized;
+  unsigned int mThreadCheckIndex;
+};
+
+</code></pre></div><h3 id="educationsettingspacket"><a href="#educationsettingspacket" class="header-anchor">#</a> <code>EducationSettingsPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EducationSettingsPacket : Packet
+{
+  EducationLevelSettings mEducationLevelSettings;
+};
+
+</code></pre></div><h3 id="entityclientpacket"><a href="#entityclientpacket" class="header-anchor">#</a> <code>EntityClientPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EntityClientPacket : Packet:288
+{
+  EntityNetId mEntityNetId;
+};
+
+</code></pre></div><h3 id="entityserverpacket"><a href="#entityserverpacket" class="header-anchor">#</a> <code>EntityServerPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EntityServerPacket : Packet:288
+{
+  EntityNetId mEntityNetId;
+};
+
+</code></pre></div><h3 id="enumoption"><a href="#enumoption" class="header-anchor">#</a> <code>EnumOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnumOption : IntOption
+{
+  const std::unordered_map&lt;int,std::string&gt; *ValueNameMap;
+};
+
+</code></pre></div><h3 id="eventcoordinator-leveleventlistener"><a href="#eventcoordinator-leveleventlistener" class="header-anchor">#</a> <code>EventCoordinator&lt;LevelEventListener&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EventCoordinator&lt;LevelEventListener&gt;
+{
+  std::vector&lt;LevelEventListener *&gt; mListeners;
+  std::vector&lt;std::function&lt;EventResult (LevelEventListener *)&gt;&gt; mEventsToProcess;
+  std::thread::id mThreadId;
+  bool mThreadIdInitialized;
+  unsigned int mThreadCheckIndex;
+};
+
+</code></pre></div><h3 id="eventcoordinator-itemeventlistener"><a href="#eventcoordinator-itemeventlistener" class="header-anchor">#</a> <code>EventCoordinator&lt;ItemEventListener&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EventCoordinator&lt;ItemEventListener&gt;
+{
+  std::vector&lt;ItemEventListener *&gt; mListeners;
+  std::vector&lt;std::function&lt;EventResult (ItemEventListener *)&gt;&gt; mEventsToProcess;
+  std::thread::id mThreadId;
+  bool mThreadIdInitialized;
+  unsigned int mThreadCheckIndex;
+};
+
+</code></pre></div><h3 id="enderchestcontainer"><a href="#enderchestcontainer" class="header-anchor">#</a> <code>EnderChestContainer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnderChestContainer : FillingContainer
+{
+  ChestBlockActor *activeChest;
+};
+
+</code></pre></div><h3 id="economytradeabledescription"><a href="#economytradeabledescription" class="header-anchor">#</a> <code>EconomyTradeableDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EconomyTradeableDescription : ComponentDescription
+{
+  std::string mDisplayName;
+  std::string mTradeTablePath;
+  bool mUseNewTradeScreen;
+  int mHeroDemandDiscount;
+  bool mPersistTrades;
+  bool mConvertTradesEconomy;
+};
+
+</code></pre></div><h3 id="enchantingcontainermanagermodel"><a href="#enchantingcontainermanagermodel" class="header-anchor">#</a> <code>EnchantingContainerManagerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnchantingContainerManagerModel : ContainerManagerModel
+{
+  BlockPos mBlockPos;
+  bool mShouldBookBeOpen;
+  std::vector&lt;std::pair&lt;int,ItemEnchants&gt;&gt; mEnchants;
+  std::vector&lt;std::string&gt; mEnchantNames;
+  std::vector&lt;int&gt; mCosts;
+};
+
+</code></pre></div><h3 id="elementconstructorcontainermanagermodel"><a href="#elementconstructorcontainermanagermodel" class="header-anchor">#</a> <code>ElementConstructorContainerManagerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ElementConstructorContainerManagerModel : ContainerManagerModel
+{
+  BlockPos mBlockPos;
+};
+
+</code></pre></div><h3 id="eventcoordinator-scripteventlistener"><a href="#eventcoordinator-scripteventlistener" class="header-anchor">#</a> <code>EventCoordinator&lt;ScriptEventListener&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EventCoordinator&lt;ScriptEventListener&gt;
+{
+  std::vector&lt;ScriptEventListener *&gt; mListeners;
+  std::vector&lt;std::function&lt;EventResult (ScriptEventListener *)&gt;&gt; mEventsToProcess;
+  std::thread::id mThreadId;
+  bool mThreadIdInitialized;
+  unsigned int mThreadCheckIndex;
+};
+
+</code></pre></div><h3 id="evalparams"><a href="#evalparams" class="header-anchor">#</a> <code>EvalParams</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EvalParams
+{
+  MolangVariableMap mTempVariables;
+};
+
+</code></pre></div><h3 id="enderman"><a href="#enderman" class="header-anchor">#</a> <code>EnderMan</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnderMan : Monster
+{
+  bool mAggroedByPlayer;
+  std::unique_ptr&lt;CompoundTag&gt; mCarryBlockSerId;
+  NewBlockID mCarryBlockId;
+  DataID mCarryBlockData;
+};
+
+</code></pre></div><h3 id="enderdragon"><a href="#enderdragon" class="header-anchor">#</a> <code>EnderDragon</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnderDragon : Monster
+{
+  float mFlapTimeO;
+  float mFlapTime;
+  Unique&lt;Path&gt; mPath;
+  std::array&lt;std::array&lt;float,3&gt;,64&gt; mPositions;
+  int mPosPointer;
+  AABB *mHead;
+  AABB *mNeck;
+  AABB *mBody;
+  AABB *mTail1;
+  AABB *mTail2;
+  AABB *mTail3;
+  AABB *mWing1;
+  AABB *mWing2;
+  bool mInWall;
+  int mGrowlTime;
+  int mSittingDamageReceived;
+  float mTurnSpeed;
+  Vec3 mTargetPos;
+  int mFlameAttackCount;
+  bool mDeathAnimation;
+  bool mNodesFinalized;
+  std::vector&lt;PathfinderNode&gt; mNodes;
+  intArray mNodeAdjacency;
+  BinaryHeap mOpenSet;
+  ActorUniqueID mNearestCrystal;
+  EndDragonFight *mDragonFight;
+};
+
+</code></pre></div><h3 id="endermite"><a href="#endermite" class="header-anchor">#</a> <code>Endermite</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) Endermite : Monster
+{
+  int mLifeTime;
+};
+
+</code></pre></div><h3 id="experiencepotion"><a href="#experiencepotion" class="header-anchor">#</a> <code>ExperiencePotion</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExperiencePotion : Throwable
+{
+};
+
+</code></pre></div><h3 id="eyeofender"><a href="#eyeofender" class="header-anchor">#</a> <code>EyeOfEnder</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EyeOfEnder : Actor
+{
+  BlockPos mTarget;
+  bool mSurviveAfterDeath;
+  int mLife;
+  Vec3 mTargetPos;
+};
+
+</code></pre></div><h3 id="endercrystal"><a href="#endercrystal" class="header-anchor">#</a> <code>EnderCrystal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnderCrystal : Actor
+{
+  uint64_t mTime;
+  int mTimeOffset;
+};
+
+</code></pre></div><h3 id="evocationfang"><a href="#evocationfang" class="header-anchor">#</a> <code>EvocationFang</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EvocationFang : Actor
+{
+  bool mClientSideAttackStarted;
+};
+
+</code></pre></div><h3 id="evocationillager"><a href="#evocationillager" class="header-anchor">#</a> <code>EvocationIllager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EvocationIllager : HumanoidMonster
+{
+};
+
+</code></pre></div><h3 id="eatblockgoal"><a href="#eatblockgoal" class="header-anchor">#</a> <code>EatBlockGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EatBlockGoal : Goal:96
+{
+  int mEatAnimationTick;
+  const DefinitionTrigger mOnEat;
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="eatcarrieditemgoal"><a href="#eatcarrieditemgoal" class="header-anchor">#</a> <code>EatCarriedItemGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EatCarriedItemGoal : Goal
+{
+  Mob *mMob;
+  const uint64_t mStartDelay;
+  uint64_t mStartDelayCounter;
+};
+
+</code></pre></div><h3 id="exploreoutskirtsgoal"><a href="#exploreoutskirtsgoal" class="header-anchor">#</a> <code>ExploreOutskirtsGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExploreOutskirtsGoal : Goal
+{
+  Mob *mMob;
+  const float mSpeed;
+  const float mExploreDist;
+  const Tick mWaitTime;
+  const Tick mTravelTimeout;
+  Tick mWaitTimer;
+  Tick mShiftLocationTimer;
+  Tick mTravelTimer;
+  bool mTraveling;
+  bool mFailedToPath;
+  Vec3 mWantedPos;
+};
+
+</code></pre></div><h3 id="endermanleaveblockgoal"><a href="#endermanleaveblockgoal" class="header-anchor">#</a> <code>EndermanLeaveBlockGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndermanLeaveBlockGoal : Goal
+{
+  EnderMan *mEnderman;
+};
+
+</code></pre></div><h3 id="enddragonfight"><a href="#enddragonfight" class="header-anchor">#</a> <code>EndDragonFight</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EndDragonFight
+{
+  BlockSource *mRegion;
+  std::vector&lt;int&gt; mGateways;
+  Unique&lt;BlockPatternBuilder&gt; mExitPortalPattern;
+  int mCrystalsAlive;
+  int mTicksSinceCrystalsScanned;
+  int mTicksSincePortalScanned;
+  int mTicksSinceLastPlayerScan;
+  bool mDragonKilled;
+  bool mPreviouslyKilled;
+  bool mDragonSpawned;
+  ActorUniqueID mDragonUUID;
+  BlockPos mPortalLocation;
+  const BlockPos mDragonSpawnPos;
+  RespawnAnimation mRespawnStage;
+  int mRespawnTime;
+  std::vector&lt;ActorUniqueID&gt; mRespawnCrystals;
+  EndDragonFightVersion mFightVersion;
+  EndDragonFight::GateWayGenerator mEntryGenerator;
+  EndDragonFight::GateWayGenerator mExitGenerator;
+  EndDragonFight::GatewayTask mBuildingOrVerifyingEndGatewayPair;
+  std::deque&lt;std::tuple&lt;EndDragonFight::GatewayTask,EndDragonFight::GateWayGenerator,EndDragonFight::GateWayGenerator&gt;&gt; mGatewayTasks;
+};
+
+</code></pre></div><h3 id="exhaustionattributedelegate"><a href="#exhaustionattributedelegate" class="header-anchor">#</a> <code>ExhaustionAttributeDelegate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExhaustionAttributeDelegate : AttributeInstanceDelegate
+{
+};
+
+</code></pre></div><h3 id="expandocontainermodel"><a href="#expandocontainermodel" class="header-anchor">#</a> <code>ExpandoContainerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExpandoContainerModel : ContainerModel
+{
+  std::vector&lt;ExpandoModelElement&gt; mCurrentItems;
+  std::vector&lt;ExpandoModelElement&gt; mExpandedItems;
+  ExpandoContainerModel::OnItemExpandedCallback mOnItemExpanded;
+};
+
+</code></pre></div><h3 id="emptymapitem"><a href="#emptymapitem" class="header-anchor">#</a> <code>EmptyMapItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EmptyMapItem : ComplexItem
+{
+};
+
+</code></pre></div><h3 id="enchantedbookitem"><a href="#enchantedbookitem" class="header-anchor">#</a> <code>EnchantedBookItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnchantedBookItem : Item
+{
+  bool mIsGlint;
+};
+
+</code></pre></div><h3 id="eggitem"><a href="#eggitem" class="header-anchor">#</a> <code>EggItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EggItem : Item
+{
+};
+
+</code></pre></div><h3 id="enderpearlitem"><a href="#enderpearlitem" class="header-anchor">#</a> <code>EnderpearlItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnderpearlItem : Item
+{
+};
+
+</code></pre></div><h3 id="endereyeitem"><a href="#endereyeitem" class="header-anchor">#</a> <code>EnderEyeItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnderEyeItem : Item
+{
+};
+
+</code></pre></div><h3 id="experiencepotionitem"><a href="#experiencepotionitem" class="header-anchor">#</a> <code>ExperiencePotionItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExperiencePotionItem : Item
+{
+};
+
+</code></pre></div><h3 id="endcrystalitem"><a href="#endcrystalitem" class="header-anchor">#</a> <code>EndCrystalItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndCrystalItem : Item
+{
+};
+
+</code></pre></div><h3 id="elementblockitem"><a href="#elementblockitem" class="header-anchor">#</a> <code>ElementBlockItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ElementBlockItem : ChemistryAuxDataBlockItem
+{
+};
+
+</code></pre></div><h3 id="enchantutils"><a href="#enchantutils" class="header-anchor">#</a> <code>EnchantUtils</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EnchantUtils
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="entityoptionalownerref"><a href="#entityoptionalownerref" class="header-anchor">#</a> <code>EntityOptionalOwnerRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EntityOptionalOwnerRef
+{
+  OwnerPtr&lt;EntityId&gt; mOwnedEntity;
+  WeakRef&lt;EntityId&gt; mWeakEntity;
+};
+
+</code></pre></div><h3 id="elementblock"><a href="#elementblock" class="header-anchor">#</a> <code>ElementBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ElementBlock : BlockLegacy
+{
+  ElementType mType;
+};
+
+</code></pre></div><h3 id="elementinfo"><a href="#elementinfo" class="header-anchor">#</a> <code>ElementInfo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ElementInfo
+{
+  ElementCategory mCategory;
+  const char *mName;
+};
+
+</code></pre></div><h3 id="enchantingtableblockactor"><a href="#enchantingtableblockactor" class="header-anchor">#</a> <code>EnchantingTableBlockActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnchantingTableBlockActor : BlockActor:1632
+{
+  float mOpen;
+  float mOpenOld;
+  float mRot;
+  float mRotOld;
+  float mRotT;
+  float mFlip;
+  float mFlipOld;
+  float mFlipT;
+  float mFlipA;
+  int mTime;
+  std::string customName;
+};
+
+</code></pre></div><h3 id="endportalblockactor"><a href="#endportalblockactor" class="header-anchor">#</a> <code>EndPortalBlockActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndPortalBlockActor : BlockActor
+{
+};
+
+</code></pre></div><h3 id="enderchestblockactor"><a href="#enderchestblockactor" class="header-anchor">#</a> <code>EnderChestBlockActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnderChestBlockActor : ChestBlockActor
+{
+};
+
+</code></pre></div><h3 id="enchantingtableblock"><a href="#enchantingtableblock" class="header-anchor">#</a> <code>EnchantingTableBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnchantingTableBlock : ActorBlock
+{
+};
+
+</code></pre></div><h3 id="endportalblock"><a href="#endportalblock" class="header-anchor">#</a> <code>EndPortalBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndPortalBlock : ActorBlock
+{
+};
+
+</code></pre></div><h3 id="endportalframeblock"><a href="#endportalframeblock" class="header-anchor">#</a> <code>EndPortalFrameBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndPortalFrameBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="enderchestblock"><a href="#enderchestblock" class="header-anchor">#</a> <code>EnderChestBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnderChestBlock : ChestBlock
+{
+};
+
+</code></pre></div><h3 id="endrodblock"><a href="#endrodblock" class="header-anchor">#</a> <code>EndRodBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndRodBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="endgatewayblock"><a href="#endgatewayblock" class="header-anchor">#</a> <code>EndGatewayBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndGatewayBlock : ActorBlock
+{
+};
+
+</code></pre></div><h3 id="endcityfeature"><a href="#endcityfeature" class="header-anchor">#</a> <code>EndCityFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndCityFeature : StructureFeature
+{
+  TheEndGenerator *mLevelSource;
+};
+
+</code></pre></div><h3 id="entitysensordefinition"><a href="#entitysensordefinition" class="header-anchor">#</a> <code>EntitySensorDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EntitySensorDefinition
+{
+  float mSensorRange;
+  int mMinimumCount;
+  int mMaximumCount;
+  bool mRequireAll;
+  ActorFilterGroup mEventCondition;
+  std::string mEventName;
+};
+
+</code></pre></div><h3 id="experiencerewarddefinition"><a href="#experiencerewarddefinition" class="header-anchor">#</a> <code>ExperienceRewardDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ExperienceRewardDefinition
+{
+  std::vector&lt;ExpressionNode&gt; mOnBred;
+  std::vector&lt;ExpressionNode&gt; mOnDeath;
+};
+
+</code></pre></div><h3 id="entityregistryreftraits-stackref"><a href="#entityregistryreftraits-stackref" class="header-anchor">#</a> <code>EntityRegistryRefTraits::StackRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef EntityRegistry EntityRegistryRefTraits::StackRef;
+
+</code></pre></div><h3 id="encryptedziptransforms"><a href="#encryptedziptransforms" class="header-anchor">#</a> <code>EncryptedZipTransforms</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EncryptedZipTransforms : FileAccessTransforms
+{
+  const IContentKeyProvider *mKeyProvider;
+};
+
+</code></pre></div><h3 id="encryptedfileaccessstrategy"><a href="#encryptedfileaccessstrategy" class="header-anchor">#</a> <code>EncryptedFileAccessStrategy</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EncryptedFileAccessStrategy : DirectoryPackAccessStrategy
+{
+  ContentIdentity mContentIdentity;
+  const IContentKeyProvider *mKeyProvider;
+  std::unordered_map&lt;Core::PathBuffer&lt;std::string &gt;,std::string&gt; mEncryptedAssetSet;
+};
+
+</code></pre></div><h3 id="effectcommand"><a href="#effectcommand" class="header-anchor">#</a> <code>EffectCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EffectCommand : Command
+{
+  ActorSelector mTargets;
+  EffectCommand::Mode mMode;
+  const MobEffect *mEffect;
+  int mDuration;
+  int mAmplifier;
+  bool mHideParticles;
+};
+
+</code></pre></div><h3 id="executecommand"><a href="#executecommand" class="header-anchor">#</a> <code>ExecuteCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExecuteCommand : Command
+{
+  ActorSelector mTargets;
+  CommandPositionFloat mPosition;
+  CommandPosition mDetectPosition;
+  const Block *mBlock;
+  int mBlockData;
+  ExecuteCommand::Mode mMode;
+  std::unique_ptr&lt;Command&gt; mCommand;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-addriderdefinition-addridercomponent"><a href="#entitycomponentdefinition-addriderdefinition-addridercomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;AddRiderDefinition,AddRiderComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;AddRiderDefinition,AddRiderComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,AddRiderDefinition,AddRiderComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-ageabledefinition-ageablecomponent"><a href="#entitycomponentdefinition-ageabledefinition-ageablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;AgeableDefinition,AgeableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;AgeableDefinition,AgeableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,AgeableDefinition,AgeableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-areaattackdefinition-areaattackcomponent"><a href="#entitycomponentdefinition-areaattackdefinition-areaattackcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;AreaAttackDefinition,AreaAttackComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;AreaAttackDefinition,AreaAttackComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,AreaAttackDefinition,AreaAttackComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-boostabledefinition-boostablecomponent"><a href="#entitycomponentdefinition-boostabledefinition-boostablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BoostableDefinition,BoostableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BoostableDefinition,BoostableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,BoostableDefinition,BoostableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-bossdefinition-bosscomponent"><a href="#entitycomponentdefinition-bossdefinition-bosscomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BossDefinition,BossComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BossDefinition,BossComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,BossDefinition,BossComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-breathabledefinition-breathablecomponent"><a href="#entitycomponentdefinition-breathabledefinition-breathablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BreathableDefinition,BreathableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BreathableDefinition,BreathableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,BreathableDefinition,BreathableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-breedabledefinition-breedablecomponent"><a href="#entitycomponentdefinition-breedabledefinition-breedablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BreedableDefinition,BreedableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BreedableDefinition,BreedableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,BreedableDefinition,BreedableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-bribeabledefinition-bribeablecomponent"><a href="#entitycomponentdefinition-bribeabledefinition-bribeablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BribeableDefinition,BribeableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BribeableDefinition,BribeableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,BribeableDefinition,BribeableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-burnsindaylightdefinition-actorflagcomponent-burnsindaylightflag"><a href="#entitycomponentdefinition-burnsindaylightdefinition-actorflagcomponent-burnsindaylightflag" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BurnsInDaylightDefinition,ActorFlagComponent&lt;BurnsInDaylightFlag&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BurnsInDaylightDefinition,ActorFlagComponent&lt;BurnsInDaylightFlag&gt; &gt; : DefinitionInstance&lt;EntityContext &amp;,BurnsInDaylightDefinition,ActorFlagComponent&lt;BurnsInDaylightFlag&gt; &gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-damageovertimedefinition-damageovertimecomponent"><a href="#entitycomponentdefinition-damageovertimedefinition-damageovertimecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;DamageOverTimeDefinition,DamageOverTimeComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;DamageOverTimeDefinition,DamageOverTimeComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,DamageOverTimeDefinition,DamageOverTimeComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-damagesensordefinition-damagesensorcomponent"><a href="#entitycomponentdefinition-damagesensordefinition-damagesensorcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;DamageSensorDefinition,DamageSensorComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;DamageSensorDefinition,DamageSensorComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,DamageSensorDefinition,DamageSensorComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-entitysensordefinition-entitysensorcomponent"><a href="#entitycomponentdefinition-entitysensordefinition-entitysensorcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;EntitySensorDefinition,EntitySensorComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;EntitySensorDefinition,EntitySensorComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,EntitySensorDefinition,EntitySensorComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-environmentsensordefinition-actorflagcomponent-environmentsensorflag"><a href="#entitycomponentdefinition-environmentsensordefinition-actorflagcomponent-environmentsensorflag" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;EnvironmentSensorDefinition,ActorFlagComponent&lt;EnvironmentSensorFlag&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;EnvironmentSensorDefinition,ActorFlagComponent&lt;EnvironmentSensorFlag&gt; &gt; : DefinitionInstance&lt;EntityContext &amp;,EnvironmentSensorDefinition,ActorFlagComponent&lt;EnvironmentSensorFlag&gt; &gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-equippabledefinition-equippablecomponent"><a href="#entitycomponentdefinition-equippabledefinition-equippablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;EquippableDefinition,EquippableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;EquippableDefinition,EquippableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,EquippableDefinition,EquippableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-experiencerewarddefinition-experiencerewardcomponent"><a href="#entitycomponentdefinition-experiencerewarddefinition-experiencerewardcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;ExperienceRewardDefinition,ExperienceRewardComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;ExperienceRewardDefinition,ExperienceRewardComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,ExperienceRewardDefinition,ExperienceRewardComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-explodedefinition-explodecomponent"><a href="#entitycomponentdefinition-explodedefinition-explodecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;ExplodeDefinition,ExplodeComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;ExplodeDefinition,ExplodeComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,ExplodeDefinition,ExplodeComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-flockingdefinition-flockingcomponent"><a href="#entitycomponentdefinition-flockingdefinition-flockingcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;FlockingDefinition,FlockingComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;FlockingDefinition,FlockingComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,FlockingDefinition,FlockingComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-geneticsdefinition-geneticscomponent"><a href="#entitycomponentdefinition-geneticsdefinition-geneticscomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;GeneticsDefinition,GeneticsComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;GeneticsDefinition,GeneticsComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,GeneticsDefinition,GeneticsComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-giveabledefinition-giveablecomponent"><a href="#entitycomponentdefinition-giveabledefinition-giveablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;GiveableDefinition,GiveableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;GiveableDefinition,GiveableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,GiveableDefinition,GiveableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-healabledefinition-healablecomponent"><a href="#entitycomponentdefinition-healabledefinition-healablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;HealableDefinition,HealableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;HealableDefinition,HealableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,HealableDefinition,HealableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-homedefinition-homecomponent"><a href="#entitycomponentdefinition-homedefinition-homecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;HomeDefinition,HomeComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;HomeDefinition,HomeComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,HomeDefinition,HomeComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-hurtonconditiondefinition-hurtonconditioncomponent"><a href="#entitycomponentdefinition-hurtonconditiondefinition-hurtonconditioncomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;HurtOnConditionDefinition,HurtOnConditionComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;HurtOnConditionDefinition,HurtOnConditionComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,HurtOnConditionDefinition,HurtOnConditionComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-insomniadefinition-insomniacomponent"><a href="#entitycomponentdefinition-insomniadefinition-insomniacomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;InsomniaDefinition,InsomniaComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;InsomniaDefinition,InsomniaComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,InsomniaDefinition,InsomniaComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-interactdefinition-interactcomponent"><a href="#entitycomponentdefinition-interactdefinition-interactcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;InteractDefinition,InteractComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;InteractDefinition,InteractComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,InteractDefinition,InteractComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-hopperdefinition-hoppercomponent"><a href="#entitycomponentdefinition-hopperdefinition-hoppercomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;HopperDefinition,HopperComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;HopperDefinition,HopperComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,HopperDefinition,HopperComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-leashabledefinition-leashablecomponent"><a href="#entitycomponentdefinition-leashabledefinition-leashablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;LeashableDefinition,LeashableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;LeashableDefinition,LeashableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,LeashableDefinition,LeashableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-legacytradeabledefinition-legacytradeablecomponent"><a href="#entitycomponentdefinition-legacytradeabledefinition-legacytradeablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;LegacyTradeableDefinition,LegacyTradeableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;LegacyTradeableDefinition,LegacyTradeableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,LegacyTradeableDefinition,LegacyTradeableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-lookatdefinition-lookatcomponent"><a href="#entitycomponentdefinition-lookatdefinition-lookatcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;LookAtDefinition,LookAtComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;LookAtDefinition,LookAtComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,LookAtDefinition,LookAtComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-mobeffectdefinition-mobeffectcomponent"><a href="#entitycomponentdefinition-mobeffectdefinition-mobeffectcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;MobEffectDefinition,MobEffectComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;MobEffectDefinition,MobEffectComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,MobEffectDefinition,MobEffectComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-mounttameabledefinition-mounttamingcomponent"><a href="#entitycomponentdefinition-mounttameabledefinition-mounttamingcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;MountTameableDefinition,MountTamingComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;MountTameableDefinition,MountTamingComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,MountTameableDefinition,MountTamingComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-peekdefinition-peekcomponent"><a href="#entitycomponentdefinition-peekdefinition-peekcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;PeekDefinition,PeekComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;PeekDefinition,PeekComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,PeekDefinition,PeekComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-physicsdefinition-physicscomponent"><a href="#entitycomponentdefinition-physicsdefinition-physicscomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;PhysicsDefinition,PhysicsComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;PhysicsDefinition,PhysicsComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,PhysicsDefinition,PhysicsComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-railmovementdefinition-railmovementcomponent"><a href="#entitycomponentdefinition-railmovementdefinition-railmovementcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;RailMovementDefinition,RailMovementComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;RailMovementDefinition,RailMovementComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,RailMovementDefinition,RailMovementComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-scaffoldingclimberdefinition-scaffoldingclimbercomponent"><a href="#entitycomponentdefinition-scaffoldingclimberdefinition-scaffoldingclimbercomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;ScaffoldingClimberDefinition,ScaffoldingClimberComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;ScaffoldingClimberDefinition,ScaffoldingClimberComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,ScaffoldingClimberDefinition,ScaffoldingClimberComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-scalebyagedefinition-scalebyagecomponent"><a href="#entitycomponentdefinition-scalebyagedefinition-scalebyagecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;ScaleByAgeDefinition,ScaleByAgeComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;ScaleByAgeDefinition,ScaleByAgeComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,ScaleByAgeDefinition,ScaleByAgeComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-schedulerdefinition-schedulercomponent"><a href="#entitycomponentdefinition-schedulerdefinition-schedulercomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;SchedulerDefinition,SchedulerComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;SchedulerDefinition,SchedulerComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,SchedulerDefinition,SchedulerComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-blockbreaksensordefinition-blockbreaksensorcomponent"><a href="#entitycomponentdefinition-blockbreaksensordefinition-blockbreaksensorcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BlockBreakSensorDefinition,BlockBreakSensorComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BlockBreakSensorDefinition,BlockBreakSensorComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,BlockBreakSensorDefinition,BlockBreakSensorComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-shareabledefinition-shareablecomponent"><a href="#entitycomponentdefinition-shareabledefinition-shareablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;ShareableDefinition,ShareableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;ShareableDefinition,ShareableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,ShareableDefinition,ShareableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-growscropdefinition-growscropcomponent"><a href="#entitycomponentdefinition-growscropdefinition-growscropcomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;GrowsCropDefinition,GrowsCropComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;GrowsCropDefinition,GrowsCropComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,GrowsCropDefinition,GrowsCropComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-balloondefinition-ballooncomponent"><a href="#entitycomponentdefinition-balloondefinition-ballooncomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BalloonDefinition,BalloonComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BalloonDefinition,BalloonComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,BalloonDefinition,BalloonComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="entitycomponentdefinition-balloonabledefinition-balloonablecomponent"><a href="#entitycomponentdefinition-balloonabledefinition-balloonablecomponent" class="header-anchor">#</a> <code>EntityComponentDefinition&lt;BalloonableDefinition,BalloonableComponent&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EntityComponentDefinition&lt;BalloonableDefinition,BalloonableComponent&gt; : DefinitionInstance&lt;EntityContext &amp;,BalloonableDefinition,BalloonableComponent&gt;
+{
+  bool mErrorOnDuplicateAdd;
+  bool mErrorOnAbsentRemove;
+};
+
+</code></pre></div><h3 id="enchantinginputcontainercontroller"><a href="#enchantinginputcontainercontroller" class="header-anchor">#</a> <code>EnchantingInputContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnchantingInputContainerController : ContainerController
+{
+};
+
+</code></pre></div><h3 id="enchantingmaterialcontainercontroller"><a href="#enchantingmaterialcontainercontroller" class="header-anchor">#</a> <code>EnchantingMaterialContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnchantingMaterialContainerController : ContainerController
+{
+};
+
+</code></pre></div><h3 id="endcitystart"><a href="#endcitystart" class="header-anchor">#</a> <code>EndCityStart</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EndCityStart : StructureStart
+{
+  bool mIsValid;
+};
+
+</code></pre></div><h3 id="endcitypieces-endcitypiece"><a href="#endcitypieces-endcitypiece" class="header-anchor">#</a> <code>EndCityPieces::EndCityPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndCityPieces::EndCityPiece : TemplateStructurePiece
+{
+  StructureManager *mStructureManager;
+  std::string mTemplateName;
+  Rotation_0 mRotation;
+  bool mOverwrite;
+  std::vector&lt;BlockPos&gt; mMobPositions;
+};
+
+</code></pre></div><h3 id="endcitypieces-sectiongenerator"><a href="#endcitypieces-sectiongenerator" class="header-anchor">#</a> <code>EndCityPieces::SectionGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EndCityPieces::SectionGenerator
+{
+  int (**_vptr$SectionGenerator)(void);
+};
+
+</code></pre></div><h3 id="endcitypieces-towergenerator"><a href="#endcitypieces-towergenerator" class="header-anchor">#</a> <code>EndCityPieces::TowerGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndCityPieces::TowerGenerator : EndCityPieces::SectionGenerator
+{
+};
+
+</code></pre></div><h3 id="endcitypieces-fattowergenerator"><a href="#endcitypieces-fattowergenerator" class="header-anchor">#</a> <code>EndCityPieces::FatTowerGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndCityPieces::FatTowerGenerator : EndCityPieces::SectionGenerator
+{
+};
+
+</code></pre></div><h3 id="endcitypieces-towerbridgegenerator"><a href="#endcitypieces-towerbridgegenerator" class="header-anchor">#</a> <code>EndCityPieces::TowerBridgeGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EndCityPieces::TowerBridgeGenerator : EndCityPieces::SectionGenerator
+{
+  bool mShipCreated;
+};
+
+</code></pre></div><h3 id="endcitypieces-housetowergenerator"><a href="#endcitypieces-housetowergenerator" class="header-anchor">#</a> <code>EndCityPieces::HouseTowerGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EndCityPieces::HouseTowerGenerator : EndCityPieces::SectionGenerator
+{
+};
+
+</code></pre></div><h3 id="endcitypieces"><a href="#endcitypieces" class="header-anchor">#</a> <code>EndCityPieces</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct EndCityPieces
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="encryptedproxyenv"><a href="#encryptedproxyenv" class="header-anchor">#</a> <code>EncryptedProxyEnv</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EncryptedProxyEnv : leveldb::EnvWrapper
+{
+  leveldb::Env *mTarget;
+  const std::string mContentKey;
+  const std::string mProductId;
+};
+
+</code></pre></div><h3 id="emptylootitem"><a href="#emptylootitem" class="header-anchor">#</a> <code>EmptyLootItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EmptyLootItem : LootPoolEntry
+{
+};
+
+</code></pre></div><h3 id="enchantbookfortradingfunction"><a href="#enchantbookfortradingfunction" class="header-anchor">#</a> <code>EnchantBookForTradingFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj EnchantBookForTradingFunction : LootItemFunction
+{
+  int mBaseCost;
+  int mRandomBaseCost;
+  int mRandomPerLevelCost;
+  int mPerLevelCost;
+};
+
+</code></pre></div><h3 id="enchantrandomequipmentfunction"><a href="#enchantrandomequipmentfunction" class="header-anchor">#</a> <code>EnchantRandomEquipmentFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnchantRandomEquipmentFunction : LootItemFunction
+{
+  float mChance;
+};
+
+</code></pre></div><h3 id="enchantrandomlyfunction"><a href="#enchantrandomlyfunction" class="header-anchor">#</a> <code>EnchantRandomlyFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnchantRandomlyFunction : LootItemFunction
+{
+  std::vector&lt;EnchantmentInstance&gt; mEnchantments;
+  bool mTreasure;
+};
+
+</code></pre></div><h3 id="enchantwithlevelsfunction"><a href="#enchantwithlevelsfunction" class="header-anchor">#</a> <code>EnchantWithLevelsFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) EnchantWithLevelsFunction : LootItemFunction
+{
+  RandomValueBounds mLevels;
+  bool mTreasure;
+};
+
+</code></pre></div><h3 id="explorationmapfunction"><a href="#explorationmapfunction" class="header-anchor">#</a> <code>ExplorationMapFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExplorationMapFunction : LootItemFunction
+{
+  std::string mDestination;
+};
+
+</code></pre></div><h3 id="explosiondecayfunction"><a href="#explosiondecayfunction" class="header-anchor">#</a> <code>ExplosionDecayFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ExplosionDecayFunction : LootItemFunction
+{
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/D.html" class="prev">
+        D
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/F.html">
+        F
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/37.b2ee95ad.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>B | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/61.ea56e4d6.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" aria-current="page" class="active sidebar-link">B</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="b"><a href="#b" class="header-anchor">#</a> B</h1> <h3 id="bindingcondition"><a href="#bindingcondition" class="header-anchor">#</a> <code>BindingCondition</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>None</td> <td><code>0</code></td></tr> <tr><td>Rotate90</td> <td><code>1</code></td></tr> <tr><td>Rotate180</td> <td><code>2</code></td></tr> <tr><td>Rotate270</td> <td><code>3</code></td></tr> <tr><td>Total</td> <td><code>4</code></td></tr></tbody></table> <h3 id="buttonmappinginputmodecondition"><a href="#buttonmappinginputmodecondition" class="header-anchor">#</a> <code>ButtonMappingInputModeCondition</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="buttonstate"><a href="#buttonstate" class="header-anchor">#</a> <code>ButtonState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bounds-option"><a href="#bounds-option" class="header-anchor">#</a> <code>Bounds::Option</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Default</td> <td><code>0</code></td></tr> <tr><td>TaskProfiled</td> <td><code>1</code></td></tr> <tr><td>LinkPredecessor</td> <td><code>2</code></td></tr></tbody></table> <h3 id="blockrenderlayer"><a href="#blockrenderlayer" class="header-anchor">#</a> <code>BlockRenderLayer</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>RENDERLAYER_DOUBLE_SIDED</td> <td><code>0</code></td></tr> <tr><td>RENDERLAYER_BLEND_WATER</td> <td><code>1</code></td></tr> <tr><td>RENDERLAYER_ALPHATEST_MICRO_BLOCK</td> <td><code>2</code></td></tr> <tr><td>RENDERLAYER_RAY_TRACED_WATER</td> <td><code>3</code></td></tr> <tr><td>RENDERLAYER_BLEND</td> <td><code>4</code></td></tr> <tr><td>RENDERLAYER_OPAQUE</td> <td><code>5</code></td></tr> <tr><td>RENDERLAYER_OPTIONAL_ALPHATEST</td> <td><code>6</code></td></tr> <tr><td>RENDERLAYER_ALPHATEST</td> <td><code>7</code></td></tr> <tr><td>RENDERLAYER_SEASONS_OPAQUE</td> <td><code>8</code></td></tr> <tr><td>RENDERLAYER_SEASONS_OPTIONAL_ALPHATEST</td> <td><code>9</code></td></tr> <tr><td>RENDERLAYER_ALPHATEST_SINGLE_SIDE</td> <td><code>10</code></td></tr> <tr><td>RENDERLAYER_ENDPORTAL</td> <td><code>11</code></td></tr> <tr><td>RENDERLAYER_BARRIER</td> <td><code>12</code></td></tr> <tr><td>RENDERLAYER_STRUCTURE_VOID</td> <td><code>13</code></td></tr> <tr><td>_RENDERLAYER_COUNT</td> <td><code>14</code></td></tr></tbody></table> <h3 id="blocksoundtype"><a href="#blocksoundtype" class="header-anchor">#</a> <code>BlockSoundType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bonetransformtype"><a href="#bonetransformtype" class="header-anchor">#</a> <code>BoneTransformType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="blockactortype"><a href="#blockactortype" class="header-anchor">#</a> <code>BlockActorType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bannerblocktype"><a href="#bannerblocktype" class="header-anchor">#</a> <code>BannerBlockType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-rtobjectcategory"><a href="#bgfx-rtobjectcategory" class="header-anchor">#</a> <code>bgfx::RtObjectCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Opaque</td> <td><code>1</code></td></tr> <tr><td>Blend</td> <td><code>2</code></td></tr> <tr><td>Bloom</td> <td><code>4</code></td></tr></tbody></table> <h3 id="bgfx-rtmediatype"><a href="#bgfx-rtmediatype" class="header-anchor">#</a> <code>bgfx::RtMediaType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-dlssoptions-mode"><a href="#bgfx-dlssoptions-mode" class="header-anchor">#</a> <code>bgfx::DLSSOptions::Mode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Off</td> <td><code>0</code></td></tr> <tr><td>WifiOnly</td> <td><code>1</code></td></tr> <tr><td>WithCellular</td> <td><code>2</code></td></tr></tbody></table> <h3 id="bgfx-dlssoptions-scaling"><a href="#bgfx-dlssoptions-scaling" class="header-anchor">#</a> <code>bgfx::DLSSOptions::Scaling</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-rtrendermethod"><a href="#bgfx-rtrendermethod" class="header-anchor">#</a> <code>bgfx::RtRenderMethod</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="biometemperaturecategory"><a href="#biometemperaturecategory" class="header-anchor">#</a> <code>BiomeTemperatureCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bedrocklog-logchannel"><a href="#bedrocklog-logchannel" class="header-anchor">#</a> <code>BedrockLog::LogChannel</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Global</td> <td><code>0</code></td></tr> <tr><td>ClientSide</td> <td><code>1</code></td></tr> <tr><td>ServerSide</td> <td><code>2</code></td></tr> <tr><td>NumLogChannels</td> <td><code>3</code></td></tr></tbody></table> <h3 id="bgfx-renderertype-enum"><a href="#bgfx-renderertype-enum" class="header-anchor">#</a> <code>bgfx::RendererType::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Requeue</td> <td><code>0</code></td></tr> <tr><td>Done</td> <td><code>1</code></td></tr> <tr><td>Noop</td> <td><code>2</code></td></tr></tbody></table> <h3 id="bgfx-textureformat-enum"><a href="#bgfx-textureformat-enum" class="header-anchor">#</a> <code>bgfx::TextureFormat::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-accelerationstructurebuildflags-enum"><a href="#bgfx-accelerationstructurebuildflags-enum" class="header-anchor">#</a> <code>bgfx::AccelerationStructureBuildFlags::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-backbufferratio-enum"><a href="#bgfx-backbufferratio-enum" class="header-anchor">#</a> <code>bgfx::BackbufferRatio::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-d3d11-bufferd3d11-usage"><a href="#bgfx-d3d11-bufferd3d11-usage" class="header-anchor">#</a> <code>bgfx::d3d11::BufferD3D11::Usage</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>USAGE_VERTEX_BUFFER</td> <td><code>0</code></td></tr> <tr><td>USAGE_INDEX_BUFFER</td> <td><code>1</code></td></tr> <tr><td>USAGE_SHADER_BUFFER</td> <td><code>2</code></td></tr> <tr><td>USAGE_INDIRECT_BUFFER</td> <td><code>3</code></td></tr> <tr><td>USAGE_RAYTRACING_ACCELERATION_STRUCTURE</td> <td><code>4</code></td></tr></tbody></table> <h3 id="bgfx-d3d12-bufferd3d12-usage"><a href="#bgfx-d3d12-bufferd3d12-usage" class="header-anchor">#</a> <code>bgfx::d3d12::BufferD3D12::Usage</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-d3d12rtx-rtraygenshader"><a href="#bgfx-d3d12rtx-rtraygenshader" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTRayGenShader</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-d3d12rtx-rtcomputeshader"><a href="#bgfx-d3d12rtx-rtcomputeshader" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTComputeShader</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-d3d12rtx-rtdispatchsize"><a href="#bgfx-d3d12rtx-rtdispatchsize" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTDispatchSize</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-spvoperand-enum"><a href="#bgfx-spvoperand-enum" class="header-anchor">#</a> <code>bgfx::SpvOperand::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-attrib-enum"><a href="#bgfx-attrib-enum" class="header-anchor">#</a> <code>bgfx::Attrib::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bimg-textureformat-enum"><a href="#bimg-textureformat-enum" class="header-anchor">#</a> <code>bimg::TextureFormat::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="blockcolor"><a href="#blockcolor" class="header-anchor">#</a> <code>BlockColor</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Red</td> <td><code>0</code></td></tr> <tr><td>X</td> <td><code>0</code></td></tr> <tr><td>Green</td> <td><code>1</code></td></tr> <tr><td>Y</td> <td><code>1</code></td></tr> <tr><td>Blue</td> <td><code>2</code></td></tr> <tr><td>Z</td> <td><code>2</code></td></tr> <tr><td>Alpha</td> <td><code>3</code></td></tr> <tr><td>W</td> <td><code>3</code></td></tr></tbody></table> <h3 id="beaconcontainermanagercontroller-buttonid"><a href="#beaconcontainermanagercontroller-buttonid" class="header-anchor">#</a> <code>BeaconContainerManagerController::ButtonId</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ID_CONFIRM</td> <td><code>0</code></td></tr> <tr><td>ID_CANCEL</td> <td><code>1</code></td></tr> <tr><td>ID_SPEED</td> <td><code>2</code></td></tr> <tr><td>ID_HASTE</td> <td><code>3</code></td></tr> <tr><td>ID_RESIST</td> <td><code>4</code></td></tr> <tr><td>ID_JUMP</td> <td><code>5</code></td></tr> <tr><td>ID_STRENGTH</td> <td><code>6</code></td></tr> <tr><td>ID_REGEN</td> <td><code>7</code></td></tr> <tr><td>ID_EXTRA</td> <td><code>8</code></td></tr> <tr><td>NUM_BUTTON_ID</td> <td><code>9</code></td></tr> <tr><td>ID_INVALID</td> <td><code>18446744073709551615</code></td></tr></tbody></table> <h3 id="bgfx-access-enum"><a href="#bgfx-access-enum" class="header-anchor">#</a> <code>bgfx::Access::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ReadOnly</td> <td><code>0</code></td></tr> <tr><td>ReadWrite</td> <td><code>1</code></td></tr> <tr><td>Flush</td> <td><code>2</code></td></tr></tbody></table> <h3 id="buttonmappingtype"><a href="#buttonmappingtype" class="header-anchor">#</a> <code>ButtonMappingType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="buildplatform"><a href="#buildplatform" class="header-anchor">#</a> <code>BuildPlatform</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bindtype"><a href="#bindtype" class="header-anchor">#</a> <code>BindType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>BindNone</td> <td><code>0</code></td></tr> <tr><td>BindEntity</td> <td><code>1</code></td></tr> <tr><td>BindPos</td> <td><code>2</code></td></tr> <tr><td>BindFakeWorldModel</td> <td><code>3</code></td></tr></tbody></table> <h3 id="bosseventupdatetype"><a href="#bosseventupdatetype" class="header-anchor">#</a> <code>BossEventUpdateType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bossbarcolor"><a href="#bossbarcolor" class="header-anchor">#</a> <code>BossBarColor</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>PINK</td> <td><code>0</code></td></tr> <tr><td>BLUE</td> <td><code>1</code></td></tr> <tr><td>RED</td> <td><code>2</code></td></tr> <tr><td>GREEN</td> <td><code>3</code></td></tr> <tr><td>YELLOW</td> <td><code>4</code></td></tr> <tr><td>PURPLE</td> <td><code>5</code></td></tr> <tr><td>WHITE</td> <td><code>6</code></td></tr></tbody></table> <h3 id="bossbaroverlay"><a href="#bossbaroverlay" class="header-anchor">#</a> <code>BossBarOverlay</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>PROGRESS</td> <td><code>0</code></td></tr> <tr><td>NOTCHED_6</td> <td><code>1</code></td></tr> <tr><td>NOTCHED_10</td> <td><code>2</code></td></tr> <tr><td>NOTCHED_12</td> <td><code>3</code></td></tr> <tr><td>NOTCHED_20</td> <td><code>4</code></td></tr></tbody></table> <h3 id="blockshape"><a href="#blockshape" class="header-anchor">#</a> <code>BlockShape</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AIR</td> <td><code>0</code></td></tr> <tr><td>WEATHER</td> <td><code>1</code></td></tr> <tr><td>WATER</td> <td><code>2</code></td></tr> <tr><td>LAVA</td> <td><code>3</code></td></tr> <tr><td>LAVA_RESIST</td> <td><code>4</code></td></tr></tbody></table> <h3 id="blockactorrendererid"><a href="#blockactorrendererid" class="header-anchor">#</a> <code>BlockActorRendererId</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>TR_DEFAULT_RENDERER</td> <td><code>0</code></td></tr> <tr><td>TR_CHEST_RENDERER</td> <td><code>1</code></td></tr> <tr><td>TR_SIGN_RENDERER</td> <td><code>2</code></td></tr> <tr><td>TR_MOBSPAWNER_RENDERER</td> <td><code>3</code></td></tr> <tr><td>TR_SKULL_RENDERER</td> <td><code>4</code></td></tr> <tr><td>TR_ENCHANTER_RENDERER</td> <td><code>5</code></td></tr> <tr><td>TR_PISTONARM_RENDERER</td> <td><code>6</code></td></tr> <tr><td>TR_ITEMFRAME_RENDERER</td> <td><code>7</code></td></tr> <tr><td>TR_MOVINGBLOCK_RENDERER</td> <td><code>8</code></td></tr> <tr><td>TR_CHALKBOARD_RENDERER</td> <td><code>9</code></td></tr> <tr><td>TR_BEACON_RENDERER</td> <td><code>10</code></td></tr> <tr><td>TR_ENDGATEWAY_RENDERER</td> <td><code>11</code></td></tr> <tr><td>TR_ENDERCHEST_RENDERER</td> <td><code>12</code></td></tr> <tr><td>TR_SHULKERBOX_RENDERER</td> <td><code>13</code></td></tr> <tr><td>TR_COMMANDBLOCK_RENDERER</td> <td><code>14</code></td></tr> <tr><td>TR_BED_RENDERER</td> <td><code>15</code></td></tr> <tr><td>TR_BANNER_RENDERER</td> <td><code>16</code></td></tr> <tr><td>TR_CONDUIT_RENDERER</td> <td><code>17</code></td></tr> <tr><td>TR_LECTERN_RENDERER</td> <td><code>18</code></td></tr> <tr><td>TR_BELL_RENDERER</td> <td><code>19</code></td></tr> <tr><td>TR_CAMPFIRE_RENDERER</td> <td><code>20</code></td></tr></tbody></table> <h3 id="bgfx-viewmode-enum"><a href="#bgfx-viewmode-enum" class="header-anchor">#</a> <code>bgfx::ViewMode::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="breathablecomponent-breathablestate"><a href="#breathablecomponent-breathablestate" class="header-anchor">#</a> <code>BreathableComponent::BreathableState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>InAir</td> <td><code>0</code></td></tr> <tr><td>InWater</td> <td><code>1</code></td></tr> <tr><td>InLava</td> <td><code>2</code></td></tr> <tr><td>InSolids</td> <td><code>3</code></td></tr> <tr><td>InBreathableOverrideBlock</td> <td><code>4</code></td></tr> <tr><td>InNonBreathableOverrideBlock</td> <td><code>5</code></td></tr></tbody></table> <h3 id="bookeditaction"><a href="#bookeditaction" class="header-anchor">#</a> <code>BookEditAction</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ReplacePage</td> <td><code>0</code></td></tr> <tr><td>AddPage</td> <td><code>1</code></td></tr> <tr><td>DeletePage</td> <td><code>2</code></td></tr> <tr><td>SwapPages</td> <td><code>3</code></td></tr> <tr><td>Finalize</td> <td><code>4</code></td></tr></tbody></table> <h3 id="blockserializationutils-nbtstate"><a href="#blockserializationutils-nbtstate" class="header-anchor">#</a> <code>BlockSerializationUtils::NBTState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bucketfilltype"><a href="#bucketfilltype" class="header-anchor">#</a> <code>BucketFillType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bannerpatternitem-type"><a href="#bannerpatternitem-type" class="header-anchor">#</a> <code>BannerPatternItem::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="blockproperty"><a href="#blockproperty" class="header-anchor">#</a> <code>BlockProperty</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bedrocklog-logcategory"><a href="#bedrocklog-logcategory" class="header-anchor">#</a> <code>BedrockLog::LogCategory</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>LogWorldGen</td> <td><code>1</code></td></tr> <tr><td>LogLoot</td> <td><code>2</code></td></tr> <tr><td>LogRender</td> <td><code>3</code></td></tr> <tr><td>LogStructure</td> <td><code>4</code></td></tr> <tr><td>LogUI</td> <td><code>5</code></td></tr> <tr><td>LogOnline</td> <td><code>6</code></td></tr> <tr><td>NumLogCategories</td> <td><code>7</code></td></tr></tbody></table> <h3 id="bedrocklog-logrule"><a href="#bedrocklog-logrule" class="header-anchor">#</a> <code>BedrockLog::LogRule</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>DefaultRules</td> <td><code>0</code></td></tr> <tr><td>ClientAndServer</td> <td><code>1</code></td></tr></tbody></table> <h3 id="bedrock-jsonobject-jsontype"><a href="#bedrock-jsonobject-jsontype" class="header-anchor">#</a> <code>Bedrock::JSONObject::JSONType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bdf-propertytype"><a href="#bdf-propertytype" class="header-anchor">#</a> <code>BDF_PropertyType_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>BDF_PROPERTY_TYPE_NONE</td> <td><code>0</code></td></tr> <tr><td>BDF_PROPERTY_TYPE_ATOM</td> <td><code>1</code></td></tr> <tr><td>BDF_PROPERTY_TYPE_INTEGER</td> <td><code>2</code></td></tr> <tr><td>BDF_PROPERTY_TYPE_CARDINAL</td> <td><code>3</code></td></tr></tbody></table> <h3 id="bool"><a href="#bool" class="header-anchor">#</a> <code>bool</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>false</td> <td><code>0</code></td></tr> <tr><td>true</td> <td><code>1</code></td></tr></tbody></table> <h3 id="bimg-orientation-enum"><a href="#bimg-orientation-enum" class="header-anchor">#</a> <code>bimg::Orientation::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>R0</td> <td><code>0</code></td></tr> <tr><td>R90</td> <td><code>1</code></td></tr> <tr><td>R180</td> <td><code>2</code></td></tr> <tr><td>R270</td> <td><code>3</code></td></tr> <tr><td>HFlip</td> <td><code>4</code></td></tr> <tr><td>HFlipR90</td> <td><code>5</code></td></tr> <tr><td>HFlipR270</td> <td><code>6</code></td></tr> <tr><td>VFlip</td> <td><code>7</code></td></tr></tbody></table> <h3 id="bgfx-d3d12-batchd3d12-enum"><a href="#bgfx-d3d12-batchd3d12-enum" class="header-anchor">#</a> <code>bgfx::d3d12::BatchD3D12::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-d3d12-heapproperty-enum"><a href="#bgfx-d3d12-heapproperty-enum" class="header-anchor">#</a> <code>bgfx::d3d12::HeapProperty::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-d3d12rtx-rtblascompactionstate"><a href="#bgfx-d3d12rtx-rtblascompactionstate" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTBlasCompactionState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-d3d12rtx-rtglobaldescriptortable"><a href="#bgfx-d3d12rtx-rtglobaldescriptortable" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTGlobalDescriptorTable</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-dxbcoperandtype-enum"><a href="#bgfx-dxbcoperandtype-enum" class="header-anchor">#</a> <code>bgfx::DxbcOperandType::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Input</td> <td><code>0</code></td></tr> <tr><td>Material</td> <td><code>1</code></td></tr> <tr><td>Result</td> <td><code>2</code></td></tr></tbody></table> <h3 id="bgfx-dxbcoperandmode-enum"><a href="#bgfx-dxbcoperandmode-enum" class="header-anchor">#</a> <code>bgfx::DxbcOperandMode::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-dxbcopcode-enum"><a href="#bgfx-dxbcopcode-enum" class="header-anchor">#</a> <code>bgfx::DxbcOpcode::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-dxbcinstruction-extendedtype-enum"><a href="#bgfx-dxbcinstruction-extendedtype-enum" class="header-anchor">#</a> <code>bgfx::DxbcInstruction::ExtendedType::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-dxbcresourcereturntype-enum"><a href="#bgfx-dxbcresourcereturntype-enum" class="header-anchor">#</a> <code>bgfx::DxbcResourceReturnType::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bgfx-dxbccustomdataclass-enum"><a href="#bgfx-dxbccustomdataclass-enum" class="header-anchor">#</a> <code>bgfx::DxbcCustomDataClass::Enum</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="bedrock-threading-asyncerrc"><a href="#bedrock-threading-asyncerrc" class="header-anchor">#</a> <code>Bedrock::Threading::AsyncErrc</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Bedrock::Threading::AsyncErrc : __int32
+{
+  operation_in_progress = 0x1,
+  operation_canceled = 0x2,
+  operation_threw_exception = 0x3,
+  unexpected_error = 0x4,
+  invalid_state = 0x5,
+};
+
+</code></pre></div><h3 id="bedrock-threading-asyncstatus"><a href="#bedrock-threading-asyncstatus" class="header-anchor">#</a> <code>Bedrock::Threading::AsyncStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Bedrock::Threading::AsyncStatus : __int32
+{
+  Started = 0x0,
+  Completed = 0x1,
+  Canceled = 0x2,
+  Error = 0x3,
+};
+
+</code></pre></div><h3 id="behaviorstatus"><a href="#behaviorstatus" class="header-anchor">#</a> <code>BehaviorStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Bedrock::Threading::AsyncStatus BehaviorStatus;
+
+</code></pre></div><h3 id="bedrock-threading-asyncdeferredresultt-void-delaystatus"><a href="#bedrock-threading-asyncdeferredresultt-void-delaystatus" class="header-anchor">#</a> <code>Bedrock::Threading::AsyncDeferredResultT&lt;void&gt;::DelayStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Bedrock::Threading::AsyncStatus Bedrock::Threading::AsyncDeferredResultT&lt;void&gt;::DelayStatus;
+
+</code></pre></div><h3 id="bedsleepingresult"><a href="#bedsleepingresult" class="header-anchor">#</a> <code>BedSleepingResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum BedSleepingResult : __int32
+{
+  OK = 0x0,
+  NOT_POSSIBLE_HERE = 0x1,
+  NOT_POSSIBLE_NOW = 0x2,
+  TOO_FAR_AWAY = 0x3,
+  OTHER_PROBLEM = 0x4,
+  NOT_SAFE = 0x5,
+  BED_OBSTRUCTED = 0x6,
+};
+
+</code></pre></div><h3 id="blocksupporttype"><a href="#blocksupporttype" class="header-anchor">#</a> <code>BlockSupportType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MaterialType BlockSupportType;
+
+</code></pre></div><h3 id="biome-biometempcategory"><a href="#biome-biometempcategory" class="header-anchor">#</a> <code>Biome::BiomeTempCategory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Biome::BiomeTempCategory : __int32
+{
+  OCEAN = 0x0,
+  COLD = 0x1,
+  MEDIUM = 0x2,
+  WARM = 0x3,
+};
+
+</code></pre></div><h3 id="boneanimationrelativemode"><a href="#boneanimationrelativemode" class="header-anchor">#</a> <code>BoneAnimationRelativeMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LevelChunkTag BoneAnimationRelativeMode;
+
+</code></pre></div><h3 id="bedrock-dynamicpackage-mountstate"><a href="#bedrock-dynamicpackage-mountstate" class="header-anchor">#</a> <code>Bedrock::DynamicPackage::MountState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Bedrock::DynamicPackage::MountState : __int8
+{
+  Uknown = 0x0,
+  Error_AlreadyMounted = 0x1,
+  Error_CouldNotMount = 0x2,
+  Error_CouldNotUnmount = 0x3,
+  Error_Internal = 0x4,
+  Error_NotMounted = 0x5,
+  Error_PermissionDenied = 0x6,
+  Mounted = 0x7,
+  Unmounted = 0x8,
+  InProgress = 0x9,
+};
+
+</code></pre></div><h3 id="bedrock-dynamicpackage-checkfilesresult-value"><a href="#bedrock-dynamicpackage-checkfilesresult-value" class="header-anchor">#</a> <code>Bedrock::DynamicPackage::CheckFilesResult::Value</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Bedrock::DynamicPackage::MountState Bedrock::DynamicPackage::CheckFilesResult::Value;
+
+</code></pre></div><h3 id="bedrock-dynamicpackage-downloadpausedreason"><a href="#bedrock-dynamicpackage-downloadpausedreason" class="header-anchor">#</a> <code>Bedrock::DynamicPackage::DownloadPausedReason</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace Bedrock::DynamicPackage::DownloadPausedReason;
+
+</code></pre></div><h3 id="bedrock-dynamicpackage-downloadfailedreason"><a href="#bedrock-dynamicpackage-downloadfailedreason" class="header-anchor">#</a> <code>Bedrock::DynamicPackage::DownloadFailedReason</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace Bedrock::DynamicPackage::DownloadFailedReason;
+
+</code></pre></div><h3 id="bedrock-dynamicpackage-processstep"><a href="#bedrock-dynamicpackage-processstep" class="header-anchor">#</a> <code>Bedrock::DynamicPackage::ProcessStep</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskRunResult Bedrock::DynamicPackage::ProcessStep;
+
+</code></pre></div><h3 id="buttonindiciesenum"><a href="#buttonindiciesenum" class="header-anchor">#</a> <code>ButtonIndiciesEnum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Actor::InitializationMethod ButtonIndiciesEnum;
+
+</code></pre></div><h3 id="bindingtype"><a href="#bindingtype" class="header-anchor">#</a> <code>BindingType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation BindingType;
+
+</code></pre></div><h3 id="bannertype"><a href="#bannertype" class="header-anchor">#</a> <code>BannerType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NavButtonLinksTo BannerType;
+
+</code></pre></div><h3 id="blockdescriptor-comparetype"><a href="#blockdescriptor-comparetype" class="header-anchor">#</a> <code>BlockDescriptor::CompareType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace BlockDescriptor::CompareType;
+
+</code></pre></div><h3 id="bakedblocklighttype"><a href="#bakedblocklighttype" class="header-anchor">#</a> <code>BakedBlockLightType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation BakedBlockLightType;
+
+</code></pre></div><h3 id="blockactorblocksyncmessage-messageid"><a href="#blockactorblocksyncmessage-messageid" class="header-anchor">#</a> <code>BlockActorBlockSyncMessage::MessageId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent BlockActorBlockSyncMessage::MessageId;
+
+</code></pre></div><h3 id="bedrock-activationargumenttype"><a href="#bedrock-activationargumenttype" class="header-anchor">#</a> <code>Bedrock::ActivationArgumentType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Core::FlatFileManifestInfo::FlatFileManifestInfoFlags Bedrock::ActivationArgumentType;
+
+</code></pre></div><h3 id="bedrock-islandtransition"><a href="#bedrock-islandtransition" class="header-anchor">#</a> <code>Bedrock::IslandTransition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::EducationLessonAction Bedrock::IslandTransition;
+
+</code></pre></div><h3 id="blockgeometry-axis"><a href="#blockgeometry-axis" class="header-anchor">#</a> <code>BlockGeometry::Axis</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent BlockGeometry::Axis;
+
+</code></pre></div><h3 id="blocktessellator-pointlighttype"><a href="#blocktessellator-pointlighttype" class="header-anchor">#</a> <code>BlockTessellator::PointLightType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace BlockTessellator::PointLightType;
+
+</code></pre></div><h3 id="buttonhandleresult"><a href="#buttonhandleresult" class="header-anchor">#</a> <code>ButtonHandleResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ButtonHandleResult : __int32
+{
+  NotHandled = 0x0,
+  Handled = 0x1,
+  HandledNotConsumed = 0x2,
+};
+
+</code></pre></div><h3 id="bedrock-threading-burst-details-workertask-bedrock-threading-burst-strategy-execution-greedyexecution-desiredoutcome"><a href="#bedrock-threading-burst-details-workertask-bedrock-threading-burst-strategy-execution-greedyexecution-desiredoutcome" class="header-anchor">#</a> <code>Bedrock::Threading::Burst::Details::WorkerTask&lt;Bedrock::Threading::Burst::Strategy::Execution::GreedyExecution&gt;::DesiredOutcome</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Bedrock::Threading::Burst::Details::WorkerTask&lt;Bedrock::Threading::Burst::Strategy::Execution::GreedyExecution&gt;::DesiredOutcome : __int32
+{
+  KeepRunning = 0x0,
+  Die = 0x1,
+};
+
+</code></pre></div><h3 id="backgroundworker-runoneresult"><a href="#backgroundworker-runoneresult" class="header-anchor">#</a> <code>BackgroundWorker::RunOneResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum BackgroundWorker::RunOneResult : __int32
+{
+  NoTasks = 0x0,
+  TaskExecuted = 0x1,
+  Retry = 0x2,
+};
+
+</code></pre></div><h3 id="backgroundworker-state"><a href="#backgroundworker-state" class="header-anchor">#</a> <code>BackgroundWorker::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AutoUpdateMode BackgroundWorker::State;
+
+</code></pre></div><h3 id="buttoneventtype"><a href="#buttoneventtype" class="header-anchor">#</a> <code>ButtonEventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ButtonEventType : __int32
+{
+  Clicked = 0x0,
+  Pressed = 0x1,
+  Released = 0x2,
+};
+
+</code></pre></div><h3 id="bookscreencontroller-bookview"><a href="#bookscreencontroller-bookview" class="header-anchor">#</a> <code>BookScreenController::BookView</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum BookScreenController::BookView : __int8
+{
+  Viewing = 0x0,
+  Signing = 0x1,
+  Picking = 0x2,
+  Exporting = 0x3,
+};
+
+</code></pre></div><h3 id="biomecomponentfactory-factoryscope"><a href="#biomecomponentfactory-factoryscope" class="header-anchor">#</a> <code>BiomeComponentFactory::FactoryScope</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AnimationComponentGroup BiomeComponentFactory::FactoryScope;
+
+</code></pre></div><h3 id="biomecomponentfactory-componentscope"><a href="#biomecomponentfactory-componentscope" class="header-anchor">#</a> <code>BiomeComponentFactory::ComponentScope</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AnimationComponentGroup BiomeComponentFactory::ComponentScope;
+
+</code></pre></div><h3 id="blockforcefieldparticle-particledatamask"><a href="#blockforcefieldparticle-particledatamask" class="header-anchor">#</a> <code>BlockForceFieldParticle::ParticleDataMask</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum BlockForceFieldParticle::ParticleDataMask : __int32
+{
+  ALPHA_MASK = 0xFF,
+  FADEOUT_MASK = 0x100,
+  LIFETIME_MASK = 0x1FE00,
+};
+
+</code></pre></div><h3 id="bgfx-topology-enum"><a href="#bgfx-topology-enum" class="header-anchor">#</a> <code>bgfx::Topology::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::Topology::Enum;
+
+</code></pre></div><h3 id="bgfx-attribtype-enum"><a href="#bgfx-attribtype-enum" class="header-anchor">#</a> <code>bgfx::AttribType::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionType bgfx::AttribType::Enum;
+
+</code></pre></div><h3 id="bgfx-fatal-enum"><a href="#bgfx-fatal-enum" class="header-anchor">#</a> <code>bgfx::Fatal::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::Fatal::Enum;
+
+</code></pre></div><h3 id="bgfx-rtdebugmode"><a href="#bgfx-rtdebugmode" class="header-anchor">#</a> <code>bgfx::RtDebugMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation bgfx::RtDebugMode;
+
+</code></pre></div><h3 id="bgfx-rtlevelculler"><a href="#bgfx-rtlevelculler" class="header-anchor">#</a> <code>bgfx::RtLevelCuller</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation bgfx::RtLevelCuller;
+
+</code></pre></div><h3 id="bgfx-rtfrustumculler"><a href="#bgfx-rtfrustumculler" class="header-anchor">#</a> <code>bgfx::RtFrustumCuller</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FrustumCullerType bgfx::RtFrustumCuller;
+
+</code></pre></div><h3 id="bedrock-threading-asyncdeferredresultt-std-string-delaystatus"><a href="#bedrock-threading-asyncdeferredresultt-std-string-delaystatus" class="header-anchor">#</a> <code>Bedrock::Threading::AsyncDeferredResultT&lt;std::string &gt;::DelayStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState Bedrock::Threading::AsyncDeferredResultT&lt;std::string &gt;::DelayStatus;
+
+</code></pre></div><h3 id="bedrock-threading-asyncdeferredresultt-bool-delaystatus"><a href="#bedrock-threading-asyncdeferredresultt-bool-delaystatus" class="header-anchor">#</a> <code>Bedrock::Threading::AsyncDeferredResultT&lt;bool&gt;::DelayStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState Bedrock::Threading::AsyncDeferredResultT&lt;bool&gt;::DelayStatus;
+
+</code></pre></div><h3 id="breathingtype"><a href="#breathingtype" class="header-anchor">#</a> <code>BreathingType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MaterialType BreathingType;
+
+</code></pre></div><h3 id="behaviordata-datatype"><a href="#behaviordata-datatype" class="header-anchor">#</a> <code>BehaviorData::DataType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionType BehaviorData::DataType;
+
+</code></pre></div><h3 id="bedrock-pubsub-connectposition"><a href="#bedrock-pubsub-connectposition" class="header-anchor">#</a> <code>Bedrock::PubSub::ConnectPosition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Bedrock::PubSub::ConnectPosition : __int32
+{
+  AT_FRONT = 0x0,
+  AT_BACK = 0x1,
+};
+
+</code></pre></div><h3 id="bedrock-threading-asyncdeferredresultt-std-shared-ptr-mce-image-delaystatus"><a href="#bedrock-threading-asyncdeferredresultt-std-shared-ptr-mce-image-delaystatus" class="header-anchor">#</a> <code>Bedrock::Threading::AsyncDeferredResultT&lt;std::shared_ptr&lt;mce::Image&gt; &gt;::DelayStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState Bedrock::Threading::AsyncDeferredResultT&lt;std::shared_ptr&lt;mce::Image&gt; &gt;::DelayStatus;
+
+</code></pre></div><h3 id="blockslot"><a href="#blockslot" class="header-anchor">#</a> <code>BlockSlot</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation BlockSlot;
+
+</code></pre></div><h3 id="bossbarcommand-bossbaraction"><a href="#bossbarcommand-bossbaraction" class="header-anchor">#</a> <code>BossbarCommand::BossbarAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BossEventUpdateType BossbarCommand::BossbarAction;
+
+</code></pre></div><h3 id="bossbarcommand-bossbargetoption"><a href="#bossbarcommand-bossbargetoption" class="header-anchor">#</a> <code>BossbarCommand::BossbarGetOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MovePredictionType BossbarCommand::BossbarGetOption;
+
+</code></pre></div><h3 id="bossbarcommand-bossbarsetoption"><a href="#bossbarcommand-bossbarsetoption" class="header-anchor">#</a> <code>BossbarCommand::BossbarSetOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ChatCategory BossbarCommand::BossbarSetOption;
+
+</code></pre></div><h3 id="bedrock-threading-asyncdeferredresultt-std-pair-json-value-core-pathbuffer-std-string-delaystatus"><a href="#bedrock-threading-asyncdeferredresultt-std-pair-json-value-core-pathbuffer-std-string-delaystatus" class="header-anchor">#</a> <code>Bedrock::Threading::AsyncDeferredResultT&lt;std::pair&lt;Json::Value,Core::PathBuffer&lt;std::string &gt; &gt; &gt;::DelayStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState Bedrock::Threading::AsyncDeferredResultT&lt;std::pair&lt;Json::Value,Core::PathBuffer&lt;std::string &gt; &gt; &gt;::DelayStatus;
+
+</code></pre></div><h3 id="brewingstandblockactor-unnamed-enum-slot-ingredient"><a href="#brewingstandblockactor-unnamed-enum-slot-ingredient" class="header-anchor">#</a> <code>BrewingStandBlockActor::&lt;unnamed_enum_SLOT_INGREDIENT&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FurnaceBlockActor::&lt;unnamed_enum_SLOT_INGREDIENT&gt; BrewingStandBlockActor::&lt;unnamed_enum_SLOT_INGREDIENT&gt;;
+
+</code></pre></div><h3 id="baserailtransporter-railtype"><a href="#baserailtransporter-railtype" class="header-anchor">#</a> <code>BaseRailTransporter::RailType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum BaseRailTransporter::RailType : __int32
+{
+  Activator = 0x0,
+  Power = 0x1,
+};
+
+</code></pre></div><h3 id="bedrock-iapplicationdatastores-datastores"><a href="#bedrock-iapplicationdatastores-datastores" class="header-anchor">#</a> <code>Bedrock::IApplicationDataStores::DataStores</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID Bedrock::IApplicationDataStores::DataStores;
+
+</code></pre></div><h3 id="bbzy-type-detail-istemplateof-std-vector-std-string-std-vector-unnamed-enum-value"><a href="#bbzy-type-detail-istemplateof-std-vector-std-string-std-vector-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsTemplateOf&lt;std::vector&lt;std::string&gt;,std::vector&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsTemplateOf&lt;std::vector&lt;std::string&gt;,std::vector&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-istemplateof-std-vector-std-string-std-list-unnamed-enum-value"><a href="#bbzy-type-detail-istemplateof-std-vector-std-string-std-list-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsTemplateOf&lt;std::vector&lt;std::string&gt;,std::list&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsTemplateOf&lt;std::vector&lt;std::string&gt;,std::list&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-isanyoftemplates-std-vector-std-string-std-vector-std-list-unnamed-enum-value"><a href="#bbzy-type-detail-isanyoftemplates-std-vector-std-string-std-vector-std-list-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsAnyOfTemplates&lt;std::vector&lt;std::string&gt;,std::vector,std::list&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsAnyOfTemplates&lt;std::vector&lt;std::string&gt;,std::vector,std::list&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-istemplateof-std-vector-std-string-std-set-unnamed-enum-value"><a href="#bbzy-type-detail-istemplateof-std-vector-std-string-std-set-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsTemplateOf&lt;std::vector&lt;std::string&gt;,std::set&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsTemplateOf&lt;std::vector&lt;std::string&gt;,std::set&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-istemplateof-std-vector-std-string-std-unordered-set-unnamed-enum-value"><a href="#bbzy-type-detail-istemplateof-std-vector-std-string-std-unordered-set-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsTemplateOf&lt;std::vector&lt;std::string&gt;,std::unordered_set&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsTemplateOf&lt;std::vector&lt;std::string&gt;,std::unordered_set&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-isanyoftemplates-std-vector-std-string-std-set-std-unordered-set-unnamed-enum-value"><a href="#bbzy-type-detail-isanyoftemplates-std-vector-std-string-std-set-std-unordered-set-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsAnyOfTemplates&lt;std::vector&lt;std::string&gt;,std::set,std::unordered_set&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsAnyOfTemplates&lt;std::vector&lt;std::string&gt;,std::set,std::unordered_set&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-isanyoftemplates-std-unordered-set-int-std-vector-std-list-unnamed-enum-value"><a href="#bbzy-type-detail-isanyoftemplates-std-unordered-set-int-std-vector-std-list-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsAnyOfTemplates&lt;std::unordered_set&lt;int&gt;,std::vector,std::list&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsAnyOfTemplates&lt;std::unordered_set&lt;int&gt;,std::vector,std::list&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-istemplateof-std-unordered-set-int-std-list-unnamed-enum-value"><a href="#bbzy-type-detail-istemplateof-std-unordered-set-int-std-list-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsTemplateOf&lt;std::unordered_set&lt;int&gt;,std::list&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsTemplateOf&lt;std::unordered_set&lt;int&gt;,std::list&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-istemplateof-std-unordered-set-int-std-vector-unnamed-enum-value"><a href="#bbzy-type-detail-istemplateof-std-unordered-set-int-std-vector-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsTemplateOf&lt;std::unordered_set&lt;int&gt;,std::vector&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsTemplateOf&lt;std::unordered_set&lt;int&gt;,std::vector&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-isanyoftemplates-std-unordered-set-int-std-set-std-unordered-set-unnamed-enum-value"><a href="#bbzy-type-detail-isanyoftemplates-std-unordered-set-int-std-set-std-unordered-set-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsAnyOfTemplates&lt;std::unordered_set&lt;int&gt;,std::set,std::unordered_set&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsAnyOfTemplates&lt;std::unordered_set&lt;int&gt;,std::set,std::unordered_set&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-istemplateof-std-unordered-set-int-std-unordered-set-unnamed-enum-value"><a href="#bbzy-type-detail-istemplateof-std-unordered-set-int-std-unordered-set-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsTemplateOf&lt;std::unordered_set&lt;int&gt;,std::unordered_set&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsTemplateOf&lt;std::unordered_set&lt;int&gt;,std::unordered_set&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bbzy-type-detail-istemplateof-std-unordered-set-int-std-set-unnamed-enum-value"><a href="#bbzy-type-detail-istemplateof-std-unordered-set-int-std-set-unnamed-enum-value" class="header-anchor">#</a> <code>bbzy::type::detail::IsTemplateOf&lt;std::unordered_set&lt;int&gt;,std::set&gt;::&lt;unnamed_enum_value&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; bbzy::type::detail::IsTemplateOf&lt;std::unordered_set&lt;int&gt;,std::set&gt;::&lt;unnamed_enum_value&gt;;
+
+</code></pre></div><h3 id="bgfx-uniformtype-enum"><a href="#bgfx-uniformtype-enum" class="header-anchor">#</a> <code>bgfx::UniformType::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef mce::ShaderPrimitiveTypes bgfx::UniformType::Enum;
+
+</code></pre></div><h3 id="bgfx-accelerationstructuremaskflags-enum"><a href="#bgfx-accelerationstructuremaskflags-enum" class="header-anchor">#</a> <code>bgfx::AccelerationStructureMaskFlags::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FogDefinition::DistanceSettingType bgfx::AccelerationStructureMaskFlags::Enum;
+
+</code></pre></div><h3 id="beaconcontainermanagercontroller-buttonstatus"><a href="#beaconcontainermanagercontroller-buttonstatus" class="header-anchor">#</a> <code>BeaconContainerManagerController::ButtonStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum BeaconContainerManagerController::ButtonStatus : __int32
+{
+  STATUS_ACTIVE = 0x0,
+  STATUS_INACTIVE = 0x1,
+  STATUS_HIDDEN = 0x2,
+  STATUS_SELECTED = 0x3,
+};
+
+</code></pre></div><h3 id="beaconcontainermanagercontroller-clickstatus"><a href="#beaconcontainermanagercontroller-clickstatus" class="header-anchor">#</a> <code>BeaconContainerManagerController::ClickStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum BeaconContainerManagerController::ClickStatus : __int32
+{
+  STATUS_OK = 0x0,
+  STATUS_EXIT = 0x1,
+};
+
+</code></pre></div><h3 id="brewingstandcontainerdata"><a href="#brewingstandcontainerdata" class="header-anchor">#</a> <code>BrewingStandContainerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum BrewingStandContainerData : __int32
+{
+  SetBrewTime = 0x0,
+  SetFuelAmount = 0x1,
+  SetFuelTotal = 0x2,
+};
+
+</code></pre></div><h3 id="boolean"><a href="#boolean" class="header-anchor">#</a> <code>Boolean</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Boolean : __int32
+{
+  MFALSE = 0x0,
+  MTRUE = 0x1,
+};
+
+</code></pre></div><h3 id="block-state"><a href="#block-state" class="header-anchor">#</a> <code>block_state</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum block_state : __int32
+{
+  need_more = 0x0,
+  block_done = 0x1,
+  finish_started = 0x2,
+  finish_done = 0x3,
+};
+
+</code></pre></div><h3 id="bedrock-islandstate"><a href="#bedrock-islandstate" class="header-anchor">#</a> <code>Bedrock::IslandState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NetworkSuspendResumeListener::State Bedrock::IslandState;
+
+</code></pre></div><h3 id="bedrock-threading-details-conditionalstate"><a href="#bedrock-threading-details-conditionalstate" class="header-anchor">#</a> <code>Bedrock::Threading::Details::ConditionalState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Player::DimensionState Bedrock::Threading::Details::ConditionalState;
+
+</code></pre></div><h3 id="bond-lite-bonddatatype"><a href="#bond-lite-bonddatatype" class="header-anchor">#</a> <code>bond_lite::BondDataType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bond_lite::BondDataType : __int32
+{
+  BT_STOP = 0x0,
+  BT_STOP_BASE = 0x1,
+  BT_BOOL = 0x2,
+  BT_UINT8 = 0x3,
+  BT_UINT16 = 0x4,
+  BT_UINT32 = 0x5,
+  BT_UINT64 = 0x6,
+  BT_FLOAT = 0x7,
+  BT_DOUBLE = 0x8,
+  BT_STRING = 0x9,
+  BT_STRUCT = 0xA,
+  BT_LIST = 0xB,
+  BT_SET = 0xC,
+  BT_MAP = 0xD,
+  BT_INT8 = 0xE,
+  BT_INT16 = 0xF,
+  BT_INT32 = 0x10,
+  BT_INT64 = 0x11,
+  BT_WSTRING = 0x12,
+  BT_UNAVAILABLE = 0x7F,
+};
+
+</code></pre></div><h3 id="buffer-t"><a href="#buffer-t" class="header-anchor">#</a> <code>buffer_t</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum buffer_t : __int32
+{
+  READ_BUFFER = 0x0,
+  WRITE_BUFFER = 0x1,
+  CHAR_BUFFER = 0x2,
+  ANY_BUFFER = 0x3,
+};
+
+</code></pre></div><h3 id="bgfx-topology"><a href="#bgfx-topology" class="header-anchor">#</a> <code>bgfx_topology</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_topology : __int32
+{
+  BGFX_TOPOLOGY_TRI_LIST = 0x0,
+  BGFX_TOPOLOGY_TRI_STRIP = 0x1,
+  BGFX_TOPOLOGY_LINE_LIST = 0x2,
+  BGFX_TOPOLOGY_LINE_STRIP = 0x3,
+  BGFX_TOPOLOGY_POINT_LIST = 0x4,
+  BGFX_TOPOLOGY_COUNT = 0x5,
+};
+
+</code></pre></div><h3 id="bgfx-renderer-type"><a href="#bgfx-renderer-type" class="header-anchor">#</a> <code>bgfx_renderer_type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_renderer_type : __int32
+{
+  BGFX_RENDERER_TYPE_NOOP = 0x0,
+  BGFX_RENDERER_TYPE_DIRECT3D9 = 0x1,
+  BGFX_RENDERER_TYPE_DIRECT3D11 = 0x2,
+  BGFX_RENDERER_TYPE_DIRECT3D12 = 0x3,
+  BGFX_RENDERER_TYPE_DIRECT3D12RTX = 0x4,
+  BGFX_RENDERER_TYPE_GNM = 0x5,
+  BGFX_RENDERER_TYPE_METAL = 0x6,
+  BGFX_RENDERER_TYPE_OPENGLES = 0x7,
+  BGFX_RENDERER_TYPE_OPENGL = 0x8,
+  BGFX_RENDERER_TYPE_VULKAN = 0x9,
+  BGFX_RENDERER_TYPE_NVN = 0xA,
+  BGFX_RENDERER_TYPE_COUNT = 0xB,
+};
+
+</code></pre></div><h3 id="bgfx-occlusion-query-result"><a href="#bgfx-occlusion-query-result" class="header-anchor">#</a> <code>bgfx_occlusion_query_result</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_occlusion_query_result : __int32
+{
+  BGFX_OCCLUSION_QUERY_RESULT_INVISIBLE = 0x0,
+  BGFX_OCCLUSION_QUERY_RESULT_VISIBLE = 0x1,
+  BGFX_OCCLUSION_QUERY_RESULT_NORESULT = 0x2,
+  BGFX_OCCLUSION_QUERY_RESULT_COUNT = 0x3,
+};
+
+</code></pre></div><h3 id="bgfx-fatal-s"><a href="#bgfx-fatal-s" class="header-anchor">#</a> <code>bgfx_fatal_s</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_fatal_s : __int32
+{
+  BGFX_FATAL_DEBUG_CHECK = 0x0,
+  BGFX_FATAL_INVALID_SHADER = 0x1,
+  BGFX_FATAL_UNABLE_TO_INITIALIZE = 0x2,
+  BGFX_FATAL_UNABLE_TO_CREATE_TEXTURE = 0x3,
+  BGFX_FATAL_DEVICE_LOST = 0x4,
+  BGFX_FATAL_COUNT = 0x5,
+};
+
+</code></pre></div><h3 id="bgfx-attrib-type"><a href="#bgfx-attrib-type" class="header-anchor">#</a> <code>bgfx_attrib_type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_attrib_type : __int32
+{
+  BGFX_ATTRIB_TYPE_UINT8 = 0x0,
+  BGFX_ATTRIB_TYPE_INT8 = 0x1,
+  BGFX_ATTRIB_TYPE_UINT10 = 0x2,
+  BGFX_ATTRIB_TYPE_UINT16 = 0x3,
+  BGFX_ATTRIB_TYPE_INT16 = 0x4,
+  BGFX_ATTRIB_TYPE_HALF = 0x5,
+  BGFX_ATTRIB_TYPE_FLOAT = 0x6,
+  BGFX_ATTRIB_TYPE_COUNT = 0x7,
+};
+
+</code></pre></div><h3 id="bgfx-render-frame"><a href="#bgfx-render-frame" class="header-anchor">#</a> <code>bgfx_render_frame</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_render_frame : __int32
+{
+  BGFX_RENDER_FRAME_NO_CONTEXT = 0x0,
+  BGFX_RENDER_FRAME_RENDER = 0x1,
+  BGFX_RENDER_FRAME_TIMEOUT = 0x2,
+  BGFX_RENDER_FRAME_EXITING = 0x3,
+  BGFX_RENDER_FRAME_COUNT = 0x4,
+};
+
+</code></pre></div><h3 id="bgfx-texture-format"><a href="#bgfx-texture-format" class="header-anchor">#</a> <code>bgfx_texture_format</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_texture_format : __int32
+{
+  BGFX_TEXTURE_FORMAT_BC1 = 0x0,
+  BGFX_TEXTURE_FORMAT_BC2 = 0x1,
+  BGFX_TEXTURE_FORMAT_BC3 = 0x2,
+  BGFX_TEXTURE_FORMAT_BC4 = 0x3,
+  BGFX_TEXTURE_FORMAT_BC5 = 0x4,
+  BGFX_TEXTURE_FORMAT_BC6H = 0x5,
+  BGFX_TEXTURE_FORMAT_BC7 = 0x6,
+  BGFX_TEXTURE_FORMAT_ETC1 = 0x7,
+  BGFX_TEXTURE_FORMAT_ETC2 = 0x8,
+  BGFX_TEXTURE_FORMAT_ETC2A = 0x9,
+  BGFX_TEXTURE_FORMAT_ETC2A1 = 0xA,
+  BGFX_TEXTURE_FORMAT_PTC12 = 0xB,
+  BGFX_TEXTURE_FORMAT_PTC14 = 0xC,
+  BGFX_TEXTURE_FORMAT_PTC12A = 0xD,
+  BGFX_TEXTURE_FORMAT_PTC14A = 0xE,
+  BGFX_TEXTURE_FORMAT_PTC22 = 0xF,
+  BGFX_TEXTURE_FORMAT_PTC24 = 0x10,
+  BGFX_TEXTURE_FORMAT_ATC = 0x11,
+  BGFX_TEXTURE_FORMAT_ATCE = 0x12,
+  BGFX_TEXTURE_FORMAT_ATCI = 0x13,
+  BGFX_TEXTURE_FORMAT_ASTC4x4 = 0x14,
+  BGFX_TEXTURE_FORMAT_ASTC5x5 = 0x15,
+  BGFX_TEXTURE_FORMAT_ASTC6x6 = 0x16,
+  BGFX_TEXTURE_FORMAT_ASTC8x5 = 0x17,
+  BGFX_TEXTURE_FORMAT_ASTC8x6 = 0x18,
+  BGFX_TEXTURE_FORMAT_ASTC10x5 = 0x19,
+  BGFX_TEXTURE_FORMAT_UNKNOWN = 0x1A,
+  BGFX_TEXTURE_FORMAT_R1 = 0x1B,
+  BGFX_TEXTURE_FORMAT_A8 = 0x1C,
+  BGFX_TEXTURE_FORMAT_R8 = 0x1D,
+  BGFX_TEXTURE_FORMAT_R8I = 0x1E,
+  BGFX_TEXTURE_FORMAT_R8U = 0x1F,
+  BGFX_TEXTURE_FORMAT_R8S = 0x20,
+  BGFX_TEXTURE_FORMAT_R16 = 0x21,
+  BGFX_TEXTURE_FORMAT_R16I = 0x22,
+  BGFX_TEXTURE_FORMAT_R16U = 0x23,
+  BGFX_TEXTURE_FORMAT_R16F = 0x24,
+  BGFX_TEXTURE_FORMAT_R16S = 0x25,
+  BGFX_TEXTURE_FORMAT_R32I = 0x26,
+  BGFX_TEXTURE_FORMAT_R32U = 0x27,
+  BGFX_TEXTURE_FORMAT_R32F = 0x28,
+  BGFX_TEXTURE_FORMAT_RG8 = 0x29,
+  BGFX_TEXTURE_FORMAT_RG8I = 0x2A,
+  BGFX_TEXTURE_FORMAT_RG8U = 0x2B,
+  BGFX_TEXTURE_FORMAT_RG8S = 0x2C,
+  BGFX_TEXTURE_FORMAT_RG16 = 0x2D,
+  BGFX_TEXTURE_FORMAT_RG16I = 0x2E,
+  BGFX_TEXTURE_FORMAT_RG16U = 0x2F,
+  BGFX_TEXTURE_FORMAT_RG16F = 0x30,
+  BGFX_TEXTURE_FORMAT_RG16S = 0x31,
+  BGFX_TEXTURE_FORMAT_RG32I = 0x32,
+  BGFX_TEXTURE_FORMAT_RG32U = 0x33,
+  BGFX_TEXTURE_FORMAT_RG32F = 0x34,
+  BGFX_TEXTURE_FORMAT_RGB8 = 0x35,
+  BGFX_TEXTURE_FORMAT_RGB8I = 0x36,
+  BGFX_TEXTURE_FORMAT_RGB8U = 0x37,
+  BGFX_TEXTURE_FORMAT_RGB8S = 0x38,
+  BGFX_TEXTURE_FORMAT_RGB9E5F = 0x39,
+  BGFX_TEXTURE_FORMAT_BGRA8 = 0x3A,
+  BGFX_TEXTURE_FORMAT_RGBA8 = 0x3B,
+  BGFX_TEXTURE_FORMAT_RGBA8I = 0x3C,
+  BGFX_TEXTURE_FORMAT_RGBA8U = 0x3D,
+  BGFX_TEXTURE_FORMAT_RGBA8S = 0x3E,
+  BGFX_TEXTURE_FORMAT_RGBA16 = 0x3F,
+  BGFX_TEXTURE_FORMAT_RGBA16I = 0x40,
+  BGFX_TEXTURE_FORMAT_RGBA16U = 0x41,
+  BGFX_TEXTURE_FORMAT_RGBA16F = 0x42,
+  BGFX_TEXTURE_FORMAT_RGBA16S = 0x43,
+  BGFX_TEXTURE_FORMAT_RGBA32I = 0x44,
+  BGFX_TEXTURE_FORMAT_RGBA32U = 0x45,
+  BGFX_TEXTURE_FORMAT_RGBA32F = 0x46,
+  BGFX_TEXTURE_FORMAT_R5G6B5 = 0x47,
+  BGFX_TEXTURE_FORMAT_RGBA4 = 0x48,
+  BGFX_TEXTURE_FORMAT_RGB5A1 = 0x49,
+  BGFX_TEXTURE_FORMAT_RGB10A2 = 0x4A,
+  BGFX_TEXTURE_FORMAT_RG11B10F = 0x4B,
+  BGFX_TEXTURE_FORMAT_UNKNOWN_DEPTH = 0x4C,
+  BGFX_TEXTURE_FORMAT_D16 = 0x4D,
+  BGFX_TEXTURE_FORMAT_D24 = 0x4E,
+  BGFX_TEXTURE_FORMAT_D24S8 = 0x4F,
+  BGFX_TEXTURE_FORMAT_D32 = 0x50,
+  BGFX_TEXTURE_FORMAT_D16F = 0x51,
+  BGFX_TEXTURE_FORMAT_D24F = 0x52,
+  BGFX_TEXTURE_FORMAT_D32F = 0x53,
+  BGFX_TEXTURE_FORMAT_D0S8 = 0x54,
+  BGFX_TEXTURE_FORMAT_COUNT = 0x55,
+};
+
+</code></pre></div><h3 id="bgfx-topology-convert"><a href="#bgfx-topology-convert" class="header-anchor">#</a> <code>bgfx_topology_convert</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_topology_convert : __int32
+{
+  BGFX_TOPOLOGY_CONVERT_TRI_LIST_FLIP_WINDING = 0x0,
+  BGFX_TOPOLOGY_CONVERT_TRI_STRIP_FLIP_WINDING = 0x1,
+  BGFX_TOPOLOGY_CONVERT_TRI_LIST_TO_LINE_LIST = 0x2,
+  BGFX_TOPOLOGY_CONVERT_TRI_STRIP_TO_TRI_LIST = 0x3,
+  BGFX_TOPOLOGY_CONVERT_LINE_STRIP_TO_LINE_LIST = 0x4,
+  BGFX_TOPOLOGY_CONVERT_COUNT = 0x5,
+};
+
+</code></pre></div><h3 id="bgfx-uniform-type"><a href="#bgfx-uniform-type" class="header-anchor">#</a> <code>bgfx_uniform_type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_uniform_type : __int32
+{
+  BGFX_UNIFORM_TYPE_INT1 = 0x0,
+  BGFX_UNIFORM_TYPE_END = 0x1,
+  BGFX_UNIFORM_TYPE_VEC4 = 0x2,
+  BGFX_UNIFORM_TYPE_MAT3 = 0x3,
+  BGFX_UNIFORM_TYPE_MAT4 = 0x4,
+  BGFX_UNIFORM_TYPE_COUNT = 0x5,
+};
+
+</code></pre></div><h3 id="bgfx-backbuffer-ratio"><a href="#bgfx-backbuffer-ratio" class="header-anchor">#</a> <code>bgfx_backbuffer_ratio</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_backbuffer_ratio : __int32
+{
+  BGFX_BACKBUFFER_RATIO_EQUAL = 0x0,
+  BGFX_BACKBUFFER_RATIO_HALF = 0x1,
+  BGFX_BACKBUFFER_RATIO_QUARTER = 0x2,
+  BGFX_BACKBUFFER_RATIO_EIGHTH = 0x3,
+  BGFX_BACKBUFFER_RATIO_SIXTEENTH = 0x4,
+  BGFX_BACKBUFFER_RATIO_DOUBLE = 0x5,
+  BGFX_BACKBUFFER_RATIO_COUNT = 0x6,
+};
+
+</code></pre></div><h3 id="bgfx-attrib"><a href="#bgfx-attrib" class="header-anchor">#</a> <code>bgfx_attrib</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_attrib : __int32
+{
+  BGFX_ATTRIB_POSITION = 0x0,
+  BGFX_ATTRIB_NORMAL = 0x1,
+  BGFX_ATTRIB_TANGENT = 0x2,
+  BGFX_ATTRIB_BITANGENT = 0x3,
+  BGFX_ATTRIB_COLOR0 = 0x4,
+  BGFX_ATTRIB_COLOR1 = 0x5,
+  BGFX_ATTRIB_COLOR2 = 0x6,
+  BGFX_ATTRIB_COLOR3 = 0x7,
+  BGFX_ATTRIB_INDICES = 0x8,
+  BGFX_ATTRIB_WEIGHT = 0x9,
+  BGFX_ATTRIB_TEXCOORD0 = 0xA,
+  BGFX_ATTRIB_TEXCOORD1 = 0xB,
+  BGFX_ATTRIB_TEXCOORD2 = 0xC,
+  BGFX_ATTRIB_TEXCOORD3 = 0xD,
+  BGFX_ATTRIB_TEXCOORD4 = 0xE,
+  BGFX_ATTRIB_TEXCOORD5 = 0xF,
+  BGFX_ATTRIB_TEXCOORD6 = 0x10,
+  BGFX_ATTRIB_TEXCOORD7 = 0x11,
+  BGFX_ATTRIB_COUNT = 0x12,
+};
+
+</code></pre></div><h3 id="bgfx-topology-sort"><a href="#bgfx-topology-sort" class="header-anchor">#</a> <code>bgfx_topology_sort</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_topology_sort : __int32
+{
+  BGFX_TOPOLOGY_SORT_DIRECTION_FRONT_TO_BACK_MIN = 0x0,
+  BGFX_TOPOLOGY_SORT_DIRECTION_FRONT_TO_BACK_AVG = 0x1,
+  BGFX_TOPOLOGY_SORT_DIRECTION_FRONT_TO_BACK_MAX = 0x2,
+  BGFX_TOPOLOGY_SORT_DIRECTION_BACK_TO_FRONT_MIN = 0x3,
+  BGFX_TOPOLOGY_SORT_DIRECTION_BACK_TO_FRONT_AVG = 0x4,
+  BGFX_TOPOLOGY_SORT_DIRECTION_BACK_TO_FRONT_MAX = 0x5,
+  BGFX_TOPOLOGY_SORT_DISTANCE_FRONT_TO_BACK_MIN = 0x6,
+  BGFX_TOPOLOGY_SORT_DISTANCE_FRONT_TO_BACK_AVG = 0x7,
+  BGFX_TOPOLOGY_SORT_DISTANCE_FRONT_TO_BACK_MAX = 0x8,
+  BGFX_TOPOLOGY_SORT_DISTANCE_BACK_TO_FRONT_MIN = 0x9,
+  BGFX_TOPOLOGY_SORT_DISTANCE_BACK_TO_FRONT_AVG = 0xA,
+  BGFX_TOPOLOGY_SORT_DISTANCE_BACK_TO_FRONT_MAX = 0xB,
+  BGFX_TOPOLOGY_SORT_COUNT = 0xC,
+};
+
+</code></pre></div><h3 id="bgfx-view-mode"><a href="#bgfx-view-mode" class="header-anchor">#</a> <code>bgfx_view_mode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_view_mode : __int32
+{
+  BGFX_VIEW_MODE_DEFAULT = 0x0,
+  BGFX_VIEW_MODE_SEQUENTIAL = 0x1,
+  BGFX_VIEW_MODE_DEPTH_ASCENDING = 0x2,
+  BGFX_VIEW_MODE_DEPTH_DESCENDING = 0x3,
+  BGFX_VIEW_MODE_CCOUNT = 0x4,
+};
+
+</code></pre></div><h3 id="bx-units-enum"><a href="#bx-units-enum" class="header-anchor">#</a> <code>bx::Units::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bx::Units::Enum : __int32
+{
+  Kilo = 0x0,
+  Kibi = 0x1,
+};
+
+</code></pre></div><h3 id="bx-whence-enum"><a href="#bx-whence-enum" class="header-anchor">#</a> <code>bx::Whence::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Realms::World::State bx::Whence::Enum;
+
+</code></pre></div><h3 id="bx-dir-enum"><a href="#bx-dir-enum" class="header-anchor">#</a> <code>bx::Dir::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bx::Dir::Enum;
+
+</code></pre></div><h3 id="bx-hashcrc32-enum"><a href="#bx-hashcrc32-enum" class="header-anchor">#</a> <code>bx::HashCrc32::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bx::HashCrc32::Enum;
+
+</code></pre></div><h3 id="bgfx-access"><a href="#bgfx-access" class="header-anchor">#</a> <code>bgfx_access</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx_access : __int32
+{
+  BGFX_ACCESS_READ = 0x0,
+  BGFX_ACCESS_WRITE = 0x1,
+  BGFX_ACCESS_READWRITE = 0x2,
+  BGFX_ACCESS_COUNT = 0x3,
+};
+
+</code></pre></div><h3 id="bgfx-commandbuffer-enum"><a href="#bgfx-commandbuffer-enum" class="header-anchor">#</a> <code>bgfx::CommandBuffer::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NpcRequestPacket::RequestType bgfx::CommandBuffer::Enum;
+
+</code></pre></div><h3 id="bgfx-occlusionqueryresult-enum"><a href="#bgfx-occlusionqueryresult-enum" class="header-anchor">#</a> <code>bgfx::OcclusionQueryResult::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CommandVisibilityFlag bgfx::OcclusionQueryResult::Enum;
+
+</code></pre></div><h3 id="bgfx-renderframe-enum"><a href="#bgfx-renderframe-enum" class="header-anchor">#</a> <code>bgfx::RenderFrame::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef dragon::rendering::RtBufferSizes bgfx::RenderFrame::Enum;
+
+</code></pre></div><h3 id="bgfx-handle-enum"><a href="#bgfx-handle-enum" class="header-anchor">#</a> <code>bgfx::Handle::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::Handle::Enum;
+
+</code></pre></div><h3 id="bgfx-condition-enum"><a href="#bgfx-condition-enum" class="header-anchor">#</a> <code>bgfx::Condition::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::Condition::Enum : __int32
+{
+  LessEqual = 0x0,
+  GreaterEqual = 0x1,
+};
+
+</code></pre></div><h3 id="bgfx-accelerationstructurebufferusage-enum"><a href="#bgfx-accelerationstructurebufferusage-enum" class="header-anchor">#</a> <code>bgfx::AccelerationStructureBufferUsage::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::AccelerationStructureBufferUsage::Enum : __int8
+{
+  STATIC = 0x0,
+  DYNAMIC = 0x1,
+};
+
+</code></pre></div><h3 id="bgfx-predefineduniform-enum"><a href="#bgfx-predefineduniform-enum" class="header-anchor">#</a> <code>bgfx::PredefinedUniform::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ScreenEventScope bgfx::PredefinedUniform::Enum;
+
+</code></pre></div><h3 id="bgfx-sortkey-enum"><a href="#bgfx-sortkey-enum" class="header-anchor">#</a> <code>bgfx::SortKey::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::SortKey::Enum : __int32
+{
+  SortProgram = 0x0,
+  SortDepth = 0x1,
+  SortSequence = 0x2,
+};
+
+</code></pre></div><h3 id="bgfx-topologyconvert-enum"><a href="#bgfx-topologyconvert-enum" class="header-anchor">#</a> <code>bgfx::TopologyConvert::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::TopologyConvert::Enum;
+
+</code></pre></div><h3 id="bgfx-binding-enum"><a href="#bgfx-binding-enum" class="header-anchor">#</a> <code>bgfx::Binding::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef mce::BufferType bgfx::Binding::Enum;
+
+</code></pre></div><h3 id="bgfx-d3d12-bufferheapalloctype"><a href="#bgfx-d3d12-bufferheapalloctype" class="header-anchor">#</a> <code>bgfx::d3d12::BufferHeapAllocType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::d3d12::BufferHeapAllocType : __int32
+{
+  PerAlloc = 0x0,
+  PerBlock = 0x1,
+};
+
+</code></pre></div><h3 id="bgfx-dxbcresourcedim-enum"><a href="#bgfx-dxbcresourcedim-enum" class="header-anchor">#</a> <code>bgfx::DxbcResourceDim::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace bgfx::DxbcResourceDim::Enum;
+
+</code></pre></div><h3 id="bgfx-dxbcinterpolation-enum"><a href="#bgfx-dxbcinterpolation-enum" class="header-anchor">#</a> <code>bgfx::DxbcInterpolation::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace bgfx::DxbcInterpolation::Enum;
+
+</code></pre></div><h3 id="bgfx-dxbcoperandmodifier-enum"><a href="#bgfx-dxbcoperandmodifier-enum" class="header-anchor">#</a> <code>bgfx::DxbcOperandModifier::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation bgfx::DxbcOperandModifier::Enum;
+
+</code></pre></div><h3 id="bgfx-dxbcbuiltin-enum"><a href="#bgfx-dxbcbuiltin-enum" class="header-anchor">#</a> <code>bgfx::DxbcBuiltin::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::DxbcBuiltin::Enum;
+
+</code></pre></div><h3 id="bgfx-dxbccomponenttype-enum"><a href="#bgfx-dxbccomponenttype-enum" class="header-anchor">#</a> <code>bgfx::DxbcComponentType::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace bgfx::DxbcComponentType::Enum;
+
+</code></pre></div><h3 id="bgfx-d3d12-textured3d12-enum"><a href="#bgfx-d3d12-textured3d12-enum" class="header-anchor">#</a> <code>bgfx::d3d12::TextureD3D12::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::d3d12::TextureD3D12::Enum : __int32
+{
+  Texture2D = 0x0,
+  Texture3D = 0x1,
+  TextureCube = 0x2,
+};
+
+</code></pre></div><h3 id="bgfx-nvapistatus"><a href="#bgfx-nvapistatus" class="header-anchor">#</a> <code>bgfx::NvApiStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::NvApiStatus : __int32
+{
+  NVAPI_OK = 0x0,
+  NVAPI_ERROR = 0xFFFFFFFF,
+};
+
+</code></pre></div><h3 id="bgfx-d3d11-ags-return-code"><a href="#bgfx-d3d11-ags-return-code" class="header-anchor">#</a> <code>bgfx::d3d11::AGS_RETURN_CODE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::d3d11::AGS_RETURN_CODE : __int32
+{
+  AGS_SUCCESS = 0x0,
+  AGS_INVALID_ARGS = 0x1,
+  AGS_OUT_OF_MEMORY = 0x2,
+  AGS_ERROR_MISSING_DLL = 0x3,
+  AGS_ERROR_LEGACY_DRIVER = 0x4,
+  AGS_EXTENSION_NOT_SUPPORTED = 0x5,
+  AGS_ADL_FAILURE = 0x6,
+};
+
+</code></pre></div><h3 id="bgfx-d3d11-ags-driver-extension"><a href="#bgfx-d3d11-ags-driver-extension" class="header-anchor">#</a> <code>bgfx::d3d11::AGS_DRIVER_EXTENSION</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::d3d11::AGS_DRIVER_EXTENSION : __int32
+{
+  AGS_EXTENSION_QUADLIST = 0x1,
+  AGS_EXTENSION_UAV_OVERLAP = 0x2,
+  AGS_EXTENSION_DEPTH_BOUNDS_TEST = 0x4,
+  AGS_EXTENSION_MULTIDRAWINDIRECT = 0x8,
+};
+
+</code></pre></div><h3 id="bgfx-d3d11-textureformatext-enum"><a href="#bgfx-d3d11-textureformatext-enum" class="header-anchor">#</a> <code>bgfx::d3d11::TextureFormatExt::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace bgfx::d3d11::TextureFormatExt::Enum;
+
+</code></pre></div><h3 id="bgfx-d3d11-d3d11-format-support2"><a href="#bgfx-d3d11-d3d11-format-support2" class="header-anchor">#</a> <code>bgfx::d3d11::D3D11_FORMAT_SUPPORT2</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::d3d11::D3D11_FORMAT_SUPPORT2 : __int32
+{
+  D3D11_FORMAT_SUPPORT2_UAV_TYPED_LOAD = 0x40,
+  D3D11_FORMAT_SUPPORT2_UAV_TYPED_STORE = 0x80,
+};
+
+</code></pre></div><h3 id="bgfx-d3d11-textured3d11-enum"><a href="#bgfx-d3d11-textured3d11-enum" class="header-anchor">#</a> <code>bgfx::d3d11::TextureD3D11::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef bgfx::d3d12::TextureD3D12::Enum bgfx::d3d11::TextureD3D11::Enum;
+
+</code></pre></div><h3 id="bgfx-d3d12-textureformatext-enum"><a href="#bgfx-d3d12-textureformatext-enum" class="header-anchor">#</a> <code>bgfx::d3d12::TextureFormatExt::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace bgfx::d3d12::TextureFormatExt::Enum;
+
+</code></pre></div><h3 id="bgfx-dxbcoperandaddrmode-enum"><a href="#bgfx-dxbcoperandaddrmode-enum" class="header-anchor">#</a> <code>bgfx::DxbcOperandAddrMode::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::DxbcOperandAddrMode::Enum;
+
+</code></pre></div><h3 id="bgfx-d3d12-renderercontextd3d12-bufferheapupdatemode"><a href="#bgfx-d3d12-renderercontextd3d12-bufferheapupdatemode" class="header-anchor">#</a> <code>bgfx::d3d12::RendererContextD3D12::BufferHeapUpdateMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::d3d12::RendererContextD3D12::BufferHeapUpdateMode : __int32
+{
+  Flip = 0x0,
+  AfterWaitForGPU = 0x1,
+};
+
+</code></pre></div><h3 id="bgfx-d3d12-rdt-enum"><a href="#bgfx-d3d12-rdt-enum" class="header-anchor">#</a> <code>bgfx::d3d12::Rdt::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef dragon::materials::TextureBindType bgfx::d3d12::Rdt::Enum;
+
+</code></pre></div><h3 id="bgfx-rtmediaactions"><a href="#bgfx-rtmediaactions" class="header-anchor">#</a> <code>bgfx::RtMediaActions</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Urho3D::ModelRenderLayer bgfx::RtMediaActions;
+
+</code></pre></div><h3 id="bgfx-rtskytypes"><a href="#bgfx-rtskytypes" class="header-anchor">#</a> <code>bgfx::RtSkyTypes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::RtSkyTypes : __int32
+{
+  LatLongVolume = 0x0,
+  FixedColour = 0x1,
+  VirtualCube = 0x2,
+  Cubemap = 0x3,
+  Hemispheric = 0x4,
+};
+
+</code></pre></div><h3 id="bgfx-d3d12rtx-rtgeometrydescriptortableoffsets"><a href="#bgfx-d3d12rtx-rtgeometrydescriptortableoffsets" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTGeometryDescriptorTableOffsets</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum bgfx::d3d12rtx::RTGeometryDescriptorTableOffsets : __int32
+{
+  VertexBuffers = 0x0,
+  FaceDataBuffers = 0x1000,
+  VertexIrradianceCache = 0x2000,
+  IndexBuffers = 0x3000,
+  FaceIrradianceCache = 0x4000,
+  FaceUvBuffers = 0x5000,
+  FaceDataBuffersRW = 0x6000,
+  FaceUvBuffersRW = 0x7000,
+  VertexBuffersRW = 0x8000,
+  TotalDescriptors = 0x9000,
+};
+
+</code></pre></div><h3 id="bgfx-d3d12rtx-rtshadersourcefile"><a href="#bgfx-d3d12rtx-rtshadersourcefile" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTShaderSourceFile</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::d3d12rtx::RTShaderSourceFile;
+
+</code></pre></div><h3 id="bgfx-d3d12rtx-rtstaticdescriptorstable"><a href="#bgfx-d3d12rtx-rtstaticdescriptorstable" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTStaticDescriptorsTable</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::d3d12rtx::RTStaticDescriptorsTable;
+
+</code></pre></div><h3 id="bgfx-d3d12rtx-rtsamplers"><a href="#bgfx-d3d12rtx-rtsamplers" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTSamplers</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions bgfx::d3d12rtx::RTSamplers;
+
+</code></pre></div><h3 id="bgfx-d3d12rtx-rtraytracingshader"><a href="#bgfx-d3d12rtx-rtraytracingshader" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTRayTracingShader</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::d3d12rtx::RTRayTracingShader;
+
+</code></pre></div><h3 id="bgfx-d3d12rtx-rtglobalrootparameters"><a href="#bgfx-d3d12rtx-rtglobalrootparameters" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTGlobalRootParameters</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::d3d12rtx::RTGlobalRootParameters;
+
+</code></pre></div><h3 id="bgfx-d3d12rtx-rtstatictextures"><a href="#bgfx-d3d12rtx-rtstatictextures" class="header-anchor">#</a> <code>bgfx::d3d12rtx::RTStaticTextures</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef dragon::rendering::RtExternalTextureBinds bgfx::d3d12rtx::RTStaticTextures;
+
+</code></pre></div><h3 id="bgfx-d3d9-textured3d9-enum"><a href="#bgfx-d3d9-textured3d9-enum" class="header-anchor">#</a> <code>bgfx::d3d9::TextureD3D9::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef bgfx::d3d12::TextureD3D12::Enum bgfx::d3d9::TextureD3D9::Enum;
+
+</code></pre></div><h3 id="bgfx-gl-extension-enum"><a href="#bgfx-gl-extension-enum" class="header-anchor">#</a> <code>bgfx::gl::Extension::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::gl::Extension::Enum;
+
+</code></pre></div><h3 id="bgfx-vk-extension-enum"><a href="#bgfx-vk-extension-enum" class="header-anchor">#</a> <code>bgfx::vk::Extension::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::vk::Extension::Enum;
+
+</code></pre></div><h3 id="bgfx-vk-shadervk-bindtype-enum"><a href="#bgfx-vk-shadervk-bindtype-enum" class="header-anchor">#</a> <code>bgfx::vk::ShaderVK::BindType::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef dragon::materials::TextureBindType bgfx::vk::ShaderVK::BindType::Enum;
+
+</code></pre></div><h3 id="bgfx-spvopcode-enum"><a href="#bgfx-spvopcode-enum" class="header-anchor">#</a> <code>bgfx::SpvOpcode::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef NpcInteractScreenController::NpcTextEdit bgfx::SpvOpcode::Enum;
+
+</code></pre></div><h3 id="bgfx-dx9bcopcode-enum"><a href="#bgfx-dx9bcopcode-enum" class="header-anchor">#</a> <code>bgfx::Dx9bcOpcode::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Category bgfx::Dx9bcOpcode::Enum;
+
+</code></pre></div><h3 id="bgfx-dx9bcoperandtype-enum"><a href="#bgfx-dx9bcoperandtype-enum" class="header-anchor">#</a> <code>bgfx::Dx9bcOperandType::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AnvilScreenController::SlotIndex bgfx::Dx9bcOperandType::Enum;
+
+</code></pre></div><h3 id="bgfx-dx9bcoperandaddrmode-enum"><a href="#bgfx-dx9bcoperandaddrmode-enum" class="header-anchor">#</a> <code>bgfx::Dx9bcOperandAddrMode::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef LayoutRuleTermType bgfx::Dx9bcOperandAddrMode::Enum;
+
+</code></pre></div><h3 id="bgfx-dx9bcdeclusage-enum"><a href="#bgfx-dx9bcdeclusage-enum" class="header-anchor">#</a> <code>bgfx::Dx9bcDeclUsage::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BoneTransformType bgfx::Dx9bcDeclUsage::Enum;
+
+</code></pre></div><h3 id="bgfx-spvbuiltin-enum"><a href="#bgfx-spvbuiltin-enum" class="header-anchor">#</a> <code>bgfx::SpvBuiltin::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef BoneTransformType bgfx::SpvBuiltin::Enum;
+
+</code></pre></div><h3 id="bgfx-spvstorageclass-enum"><a href="#bgfx-spvstorageclass-enum" class="header-anchor">#</a> <code>bgfx::SpvStorageClass::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AnvilScreenController::SlotIndex bgfx::SpvStorageClass::Enum;
+
+</code></pre></div><h3 id="bgfx-spvdecoration-enum"><a href="#bgfx-spvdecoration-enum" class="header-anchor">#</a> <code>bgfx::SpvDecoration::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef dragon::materials::definition::InterpolationConstraint bgfx::SpvDecoration::Enum;
+
+</code></pre></div><h3 id="bgfx-topologysort-enum"><a href="#bgfx-topologysort-enum" class="header-anchor">#</a> <code>bgfx::TopologySort::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bgfx::TopologySort::Enum;
+
+</code></pre></div><h3 id="bx-encodingtype-enum"><a href="#bx-encodingtype-enum" class="header-anchor">#</a> <code>bx::EncodingType::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionType bx::EncodingType::Enum;
+
+</code></pre></div><h3 id="bimg-lightingmodel-enum"><a href="#bimg-lightingmodel-enum" class="header-anchor">#</a> <code>bimg::LightingModel::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bimg::LightingModel::Enum;
+
+</code></pre></div><h3 id="bimg-cubemapface-enum"><a href="#bimg-cubemapface-enum" class="header-anchor">#</a> <code>bimg::CubeMapFace::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SearchFeature::SearchAxis bimg::CubeMapFace::Enum;
+
+</code></pre></div><h3 id="bimg-cubemapface-edge-enum"><a href="#bimg-cubemapface-edge-enum" class="header-anchor">#</a> <code>bimg::CubeMapFace::Edge::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Frustum::FrustumSide bimg::CubeMapFace::Edge::Enum;
+
+</code></pre></div><h3 id="bx-easing-enum"><a href="#bx-easing-enum" class="header-anchor">#</a> <code>bx::Easing::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace bx::Easing::Enum;
+
+</code></pre></div><h3 id="bx-fileinfo-enum"><a href="#bx-fileinfo-enum" class="header-anchor">#</a> <code>bx::FileInfo::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId bx::FileInfo::Enum;
+
+</code></pre></div><h3 id="bx-nearfar-enum"><a href="#bx-nearfar-enum" class="header-anchor">#</a> <code>bx::NearFar::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions bx::NearFar::Enum;
+
+</code></pre></div><h3 id="bx-handness-enum"><a href="#bx-handness-enum" class="header-anchor">#</a> <code>bx::Handness::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Frustum::FrustumSide bx::Handness::Enum;
+
+</code></pre></div><h3 id="bx-urlview-enum"><a href="#bx-urlview-enum" class="header-anchor">#</a> <code>bx::UrlView::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef IMinecraftEventing::EducationLessonAction bx::UrlView::Enum;
+
+</code></pre></div><h3 id="bgfx-init-l2-errorstate-enum"><a href="#bgfx-init-l2-errorstate-enum" class="header-anchor">#</a> <code>bgfx::init::__l2::ErrorState::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions bgfx::init::__l2::ErrorState::Enum;
+
+</code></pre></div><h3 id="bgfx-d3d11-renderercontextd3d11-init-l2-errorstate-enum"><a href="#bgfx-d3d11-renderercontextd3d11-init-l2-errorstate-enum" class="header-anchor">#</a> <code>bgfx::d3d11::RendererContextD3D11::init::__l2::ErrorState::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions bgfx::d3d11::RendererContextD3D11::init::__l2::ErrorState::Enum;
+
+</code></pre></div><h3 id="bgfx-d3d12-renderercontextd3d12-init-l2-errorstate-enum"><a href="#bgfx-d3d12-renderercontextd3d12-init-l2-errorstate-enum" class="header-anchor">#</a> <code>bgfx::d3d12::RendererContextD3D12::init::__l2::ErrorState::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions bgfx::d3d12::RendererContextD3D12::init::__l2::ErrorState::Enum;
+
+</code></pre></div><h3 id="bgfx-d3d9-renderercontextd3d9-init-l2-errorstate-enum"><a href="#bgfx-d3d9-renderercontextd3d9-init-l2-errorstate-enum" class="header-anchor">#</a> <code>bgfx::d3d9::RendererContextD3D9::init::__l2::ErrorState::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions bgfx::d3d9::RendererContextD3D9::init::__l2::ErrorState::Enum;
+
+</code></pre></div><h3 id="bgfx-gl-renderercontextgl-init-l2-errorstate-enum"><a href="#bgfx-gl-renderercontextgl-init-l2-errorstate-enum" class="header-anchor">#</a> <code>bgfx::gl::RendererContextGL::init::__l2::ErrorState::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions bgfx::gl::RendererContextGL::init::__l2::ErrorState::Enum;
+
+</code></pre></div><h3 id="bgfx-vk-renderercontextvk-init-l2-errorstate-enum"><a href="#bgfx-vk-renderercontextvk-init-l2-errorstate-enum" class="header-anchor">#</a> <code>bgfx::vk::RendererContextVK::init::__l2::ErrorState::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions bgfx::vk::RendererContextVK::init::__l2::ErrorState::Enum;
+
+</code></pre></div><h3 id="bgfx-vertexconvert-l2-convertop-enum"><a href="#bgfx-vertexconvert-l2-convertop-enum" class="header-anchor">#</a> <code>bgfx::vertexConvert::__l2::ConvertOp::Enum</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PermissionCommand::Action bgfx::vertexConvert::__l2::ConvertOp::Enum;
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/A.html" class="prev">
+        A
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/C.html">
+        C
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/61.ea56e4d6.js" defer></script>
+  </body>
+</html>

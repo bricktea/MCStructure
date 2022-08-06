@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>T | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/52.a2d46eef.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" aria-current="page" class="active sidebar-link">T</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="t"><a href="#t" class="header-anchor">#</a> T</h1> <h3 id="tick"><a href="#tick" class="header-anchor">#</a> <code>Tick</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>uint64_t</code></td> <td>tickID</td></tr></tbody></table> <h3 id="tag"><a href="#tag" class="header-anchor">#</a> <code>Tag</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$Tag</td></tr></tbody></table> <h3 id="tagmap"><a href="#tagmap" class="header-anchor">#</a> <code>TagMap</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(48) <code>std::map&lt;std::string,CompoundTagVariant&gt;::_Rep_type</code></td> <td>_M_t</td></tr></tbody></table> <h3 id="typeid-t-commandregistry"><a href="#typeid-t-commandregistry" class="header-anchor">#</a> <code>typeid_t&lt;CommandRegistry&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>uint16_t</code></td> <td>mID</td></tr></tbody></table> <h3 id="textpacket"><a href="#textpacket" class="header-anchor">#</a> <code>TextPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(1) <code>TextPacketType</code></td> <td>mType</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mAuthor</td></tr> <tr><td>72</td> <td>(32) <code>std::string</code></td> <td>mMessage</td></tr> <tr><td>104</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>params</td></tr> <tr><td>128</td> <td>(1) <code>bool</code></td> <td>mLocalize</td></tr> <tr><td>136</td> <td>(32) <code>std::string</code></td> <td>mXuid</td></tr> <tr><td>168</td> <td>(32) <code>std::string</code></td> <td>mPlatformId</td></tr></tbody></table> <h3 id="trade"><a href="#trade" class="header-anchor">#</a> <code>Trade</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mMaxUses</td></tr> <tr><td>4</td> <td>(1) <code>bool</code></td> <td>mRewardExperience</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mWeight</td></tr> <tr><td>12</td> <td>(4) <code>unsigned int</code></td> <td>mTraderExperience</td></tr> <tr><td>16</td> <td>(24) <code>std::vector&lt;std::vector&lt;TradeItem&gt;&gt;</code></td> <td>mOffer</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;std::vector&lt;TradeItem&gt;&gt;</code></td> <td>mReceive</td></tr></tbody></table> <h3 id="typeid-t-idefinitioninstance"><a href="#typeid-t-idefinitioninstance" class="header-anchor">#</a> <code>typeid_t&lt;IDefinitionInstance&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>uint16_t</code></td> <td>mID</td></tr></tbody></table> <h3 id="textobjectroot"><a href="#textobjectroot" class="header-anchor">#</a> <code>TextObjectRoot</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ITextObject</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;std::unique_ptr&lt;ITextObject&gt;&gt;</code></td> <td>mChildren</td></tr></tbody></table> <h3 id="targetnearbycomponent"><a href="#targetnearbycomponent" class="header-anchor">#</a> <code>TargetNearbyComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mWasSeenLastTick</td></tr> <tr><td>1</td> <td>(1) <code>bool</code></td> <td>mWasInsideRange</td></tr> <tr><td>2</td> <td>(1) <code>bool</code></td> <td>mWasOutsideRange</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mPreviousDistance</td></tr></tbody></table> <h3 id="teleportcomponent"><a href="#teleportcomponent" class="header-anchor">#</a> <code>TeleportComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mRandomTeleports</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mMinTeleportTime</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mMaxTeleportTime</td></tr> <tr><td>12</td> <td>(12) <code>Vec3</code></td> <td>mRandomTeleportCube</td></tr> <tr><td>24</td> <td>(4) <code>float</code></td> <td>mTargetDistance</td></tr> <tr><td>28</td> <td>(4) <code>float</code></td> <td>mTargetTeleportChance</td></tr> <tr><td>32</td> <td>(4) <code>float</code></td> <td>mLightTeleportChance</td></tr> <tr><td>36</td> <td>(4) <code>float</code></td> <td>mDarkTeleportChance</td></tr> <tr><td>40</td> <td>(4) <code>int</code></td> <td>mTeleportTime</td></tr></tbody></table> <h3 id="timercomponent"><a href="#timercomponent" class="header-anchor">#</a> <code>TimerComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mTime</td></tr> <tr><td>8</td> <td>(8) <code>uint64_t</code></td> <td>mTimeStamp</td></tr> <tr><td>16</td> <td>(1) <code>bool</code></td> <td>mHasExecuted</td></tr> <tr><td>17</td> <td>(1) <code>bool</code></td> <td>mLooping</td></tr> <tr><td>20</td> <td>(4) <code>int</code></td> <td>mStartTime</td></tr> <tr><td>24</td> <td>(1) <code>bool</code></td> <td>mRandomInterval</td></tr> <tr><td>28</td> <td>(4) <code>int</code></td> <td>mMinTime</td></tr> <tr><td>32</td> <td>(4) <code>int</code></td> <td>mMaxTime</td></tr> <tr><td>40</td> <td>(128) <code>DefinitionTrigger</code></td> <td>mOnTimeDown</td></tr> <tr><td>168</td> <td>(24) <code>WeightedChoices&lt;float&gt;</code></td> <td>mTimeChoices</td></tr></tbody></table> <h3 id="trailsystem-blockpositions"><a href="#trailsystem-blockpositions" class="header-anchor">#</a> <code>TrailSystem::BlockPositions</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(48) <code>BlockPos[4]</code></td> <td>mBlockPos</td></tr></tbody></table> <h3 id="trailcomponent"><a href="#trailcomponent" class="header-anchor">#</a> <code>TrailComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const BlockLegacy *</code></td> <td>mBlockType</td></tr> <tr><td>8</td> <td>(12) <code>Vec3</code></td> <td>mSpawnOffset</td></tr></tbody></table> <h3 id="transformationcomponent"><a href="#transformationcomponent" class="header-anchor">#</a> <code>TransformationComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mDelayTicks</td></tr></tbody></table> <h3 id="tagmemorychunk"><a href="#tagmemorychunk" class="header-anchor">#</a> <code>TagMemoryChunk</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>size_t</code></td> <td>mElements</td></tr> <tr><td>8</td> <td>(8) <code>size_t</code></td> <td>mSize</td></tr> <tr><td>16</td> <td>(8) <code>std::unique_ptr&lt;unsigned char []&gt;</code></td> <td>mBuffer</td></tr></tbody></table> <h3 id="thirdpartyinfo"><a href="#thirdpartyinfo" class="header-anchor">#</a> <code>ThirdPartyInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_set&lt;std::string&gt;</code></td> <td>mWhitelistUrls</td></tr> <tr><td>56</td> <td>(32) <code>std::string</code></td> <td>mCreatorId</td></tr> <tr><td>88</td> <td>(32) <code>std::string</code></td> <td>mCreatorName</td></tr> <tr><td>120</td> <td>(1) <code>bool</code></td> <td>mRequireXBL</td></tr></tbody></table> <h3 id="taskstartinfo"><a href="#taskstartinfo" class="header-anchor">#</a> <code>TaskStartInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>string_span</code></td> <td>name</td></tr> <tr><td>16</td> <td>(8) <code>std::thread::id</code></td> <td>affinity</td></tr> <tr><td>24</td> <td>(4) <code>uint32_t</code></td> <td>priority</td></tr> <tr><td>28</td> <td>(4) <code>int</code></td> <td>priorityBackDown</td></tr> <tr><td>32</td> <td>(4) <code>TaskOptions</code></td> <td>options</td></tr> <tr><td>40</td> <td>(8) <code>std::chrono::_V2::steady_clock::time_point</code></td> <td>startAtTime</td></tr> <tr><td>48</td> <td>(16) <code>Bedrock::Threading::IAsyncResult&lt;void&gt;::Handle</code></td> <td>predecessor</td></tr></tbody></table> <h3 id="transferpacket"><a href="#transferpacket" class="header-anchor">#</a> <code>TransferPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mServerAddress</td></tr> <tr><td>72</td> <td>(4) <code>int</code></td> <td>mServerPort</td></tr></tbody></table> <h3 id="ticksyncpacket"><a href="#ticksyncpacket" class="header-anchor">#</a> <code>TickSyncPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>int64_t</code></td> <td>mClientRequestTimestamp</td></tr> <tr><td>48</td> <td>(8) <code>int64_t</code></td> <td>mServerReceptionResponseTimestamp</td></tr></tbody></table> <h3 id="tintmapcolor"><a href="#tintmapcolor" class="header-anchor">#</a> <code>TintMapColor</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(64) <code>std::array&lt;Color,4&gt;</code></td> <td>colors</td></tr></tbody></table> <h3 id="threadconfiguration"><a href="#threadconfiguration" class="header-anchor">#</a> <code>ThreadConfiguration</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>Bedrock::Threading::OSThreadPriority</code></td> <td>Priority</td></tr> <tr><td>8</td> <td>(16) <code>std::optional&lt;unsigned long&gt;</code></td> <td>CoreAffinityMask</td></tr> <tr><td>24</td> <td>(4) <code>int32_t</code></td> <td>IdealCore</td></tr></tbody></table> <h3 id="threadconfiguration-224"><a href="#threadconfiguration-224" class="header-anchor">#</a> <code>ThreadConfiguration:224</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>Bedrock::Threading::OSThreadPriority</code></td> <td>Priority</td></tr> <tr><td>4</td> <td>(4) <code>_BYTE[4]</code></td> <td>gap4</td></tr> <tr><td>8</td> <td>(16) <code>std::optional&lt;unsigned long&gt;</code></td> <td>CoreAffinityMask</td></tr> <tr><td>24</td> <td>(4) <code>int32_t</code></td> <td>IdealCore</td></tr></tbody></table> <h3 id="typeid-t-scriptbindercomponent"><a href="#typeid-t-scriptbindercomponent" class="header-anchor">#</a> <code>typeid_t&lt;ScriptBinderComponent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>uint16_t</code></td> <td>mID</td></tr></tbody></table> <h3 id="teleportdescription"><a href="#teleportdescription" class="header-anchor">#</a> <code>TeleportDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ComponentDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mRandomTeleports</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>mMinTeleportTime</td></tr> <tr><td>16</td> <td>(4) <code>float</code></td> <td>mMaxTeleportTime</td></tr> <tr><td>20</td> <td>(12) <code>Vec3</code></td> <td>mRandomTeleportCube</td></tr> <tr><td>32</td> <td>(4) <code>float</code></td> <td>mTargetDistance</td></tr> <tr><td>36</td> <td>(4) <code>float</code></td> <td>mTargetTeleportChance</td></tr> <tr><td>40</td> <td>(4) <code>float</code></td> <td>mLightTeleportChance</td></tr> <tr><td>44</td> <td>(4) <code>float</code></td> <td>mDarkTeleportChance</td></tr></tbody></table> <h3 id="tickingareadescription"><a href="#tickingareadescription" class="header-anchor">#</a> <code>TickingAreaDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>BlockPos</code></td> <td>mOrigin</td></tr> <tr><td>12</td> <td>(12) <code>BlockPos</code></td> <td>mMax</td></tr> <tr><td>24</td> <td>(4) <code>uint32_t</code></td> <td>mRadius</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>64</td> <td>(1) <code>bool</code></td> <td>mIsCircle</td></tr></tbody></table> <h3 id="tagsdescription"><a href="#tagsdescription" class="header-anchor">#</a> <code>TagsDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ComponentDescription</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="textureuvcoordinateset"><a href="#textureuvcoordinateset" class="header-anchor">#</a> <code>TextureUVCoordinateSet</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>weight</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>_u0</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>_v0</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>_u1</td></tr> <tr><td>16</td> <td>(4) <code>float</code></td> <td>_v1</td></tr> <tr><td>20</td> <td>(2) <code>uint16_t</code></td> <td>_texSizeW</td></tr> <tr><td>22</td> <td>(2) <code>uint16_t</code></td> <td>_texSizeH</td></tr> <tr><td>24</td> <td>(56) <code>ResourceLocation</code></td> <td>sourceFileLocation</td></tr> <tr><td>80</td> <td>(8) <code>IsotropicFaceData</code></td> <td>mIsotropicFaceData</td></tr></tbody></table> <h3 id="trustcomponent"><a href="#trustcomponent" class="header-anchor">#</a> <code>TrustComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_set&lt;ActorUniqueID&gt;</code></td> <td>mTrustedPlayerIDs</td></tr></tbody></table> <h3 id="tagscomponent"><a href="#tagscomponent" class="header-anchor">#</a> <code>TagsComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>TagSetID</code></td> <td>mTagSetID</td></tr></tbody></table> <h3 id="tagsetid"><a href="#tagsetid" class="header-anchor">#</a> <code>TagSetID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>size_t</code></td> <td>mID</td></tr></tbody></table> <h3 id="tameablecomponent"><a href="#tameablecomponent" class="header-anchor">#</a> <code>TameableComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mChance</td></tr> <tr><td>8</td> <td>(48) <code>std::set&lt;const Item *&gt;</code></td> <td>mTameItems</td></tr></tbody></table> <h3 id="tickworldcomponent"><a href="#tickworldcomponent" class="header-anchor">#</a> <code>TickWorldComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>mChunkRadius</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mMaxDistToPlayers</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mAlwaysActive</td></tr> <tr><td>9</td> <td>(1) <code>bool</code></td> <td>mChanged</td></tr> <tr><td>16</td> <td>(16) <code>std::weak_ptr&lt;ITickingArea&gt;</code></td> <td>mTickingArea</td></tr></tbody></table> <h3 id="trustingcomponent"><a href="#trustingcomponent" class="header-anchor">#</a> <code>TrustingComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mChance</td></tr> <tr><td>8</td> <td>(48) <code>std::set&lt;const Item *&gt;</code></td> <td>mTrustItems</td></tr></tbody></table> <h3 id="traderesupplycomponent"><a href="#traderesupplycomponent" class="header-anchor">#</a> <code>TradeResupplyComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mHasResupplied</td></tr></tbody></table> <h3 id="token-list"><a href="#token-list" class="header-anchor">#</a> <code>Token::List</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;Token&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="targetdescriptorlist"><a href="#targetdescriptorlist" class="header-anchor">#</a> <code>TargetDescriptorList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;MobDescriptor&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="tripodcameracomponent"><a href="#tripodcameracomponent" class="header-anchor">#</a> <code>TripodCameraComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="takeitemactorpacket"><a href="#takeitemactorpacket" class="header-anchor">#</a> <code>TakeItemActorPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mItemId</td></tr> <tr><td>48</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mPlayerId</td></tr></tbody></table> <h3 id="temporalattributebuff"><a href="#temporalattributebuff" class="header-anchor">#</a> <code>TemporalAttributeBuff</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(84) <code>AttributeBuff:672</code></td> <td>baseclass_0</td></tr> <tr><td>84</td> <td>(4) <code>int</code></td> <td>mDuration</td></tr> <tr><td>88</td> <td>(4) <code>int</code></td> <td>mLifeTimer</td></tr> <tr><td>92</td> <td>(4) <code>float</code></td> <td>mBaseAmount</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mIsSerializable</td></tr></tbody></table> <h3 id="textureatlasitem"><a href="#textureatlasitem" class="header-anchor">#</a> <code>TextureAtlasItem</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>32</td> <td>(4) <code>int</code></td> <td>mParsedNodeIndex</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;std::vector&lt;TextureUVCoordinateSet&gt;&gt;</code></td> <td>mTextureUVs</td></tr></tbody></table> <h3 id="tradetier"><a href="#tradetier" class="header-anchor">#</a> <code>TradeTier</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>unsigned int</code></td> <td>mExpToUnlock</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;TradeGroup&gt;</code></td> <td>mGroups</td></tr></tbody></table> <h3 id="tradegroup"><a href="#tradegroup" class="header-anchor">#</a> <code>TradeGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mNumToSelect</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;Trade&gt;</code></td> <td>mTrades</td></tr></tbody></table> <h3 id="tradeitem"><a href="#tradeitem" class="header-anchor">#</a> <code>TradeItem</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>itemId</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>itemAux</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>count_min</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>count_max</td></tr> <tr><td>16</td> <td>(4) <code>float</code></td> <td>price_multiplier</td></tr> <tr><td>24</td> <td>(24) <code>std::vector&lt;std::unique_ptr&lt;LootItemFunction&gt;&gt;</code></td> <td>functions</td></tr></tbody></table> <h3 id="ticknexttickdata"><a href="#ticknexttickdata" class="header-anchor">#</a> <code>TickNextTickData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>BlockPos</code></td> <td>pos</td></tr> <tr><td>16</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr> <tr><td>24</td> <td>(8) <code>Tick</code></td> <td>tick</td></tr> <tr><td>32</td> <td>(4) <code>int</code></td> <td>priorityOffset</td></tr></tbody></table> <h3 id="tm"><a href="#tm" class="header-anchor">#</a> <code>tm</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>tm_sec</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>tm_min</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>tm_hour</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>tm_mday</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>tm_mon</td></tr> <tr><td>20</td> <td>(4) <code>int</code></td> <td>tm_year</td></tr> <tr><td>24</td> <td>(4) <code>int</code></td> <td>tm_wday</td></tr> <tr><td>28</td> <td>(4) <code>int</code></td> <td>tm_yday</td></tr> <tr><td>32</td> <td>(4) <code>int</code></td> <td>tm_isdst</td></tr> <tr><td>40</td> <td>(8) <code>__int64</code></td> <td>tm_gmtoff</td></tr> <tr><td>48</td> <td>(8) <code>const char *</code></td> <td>tm_zone</td></tr></tbody></table> <h3 id="trackeduniquechunkptr"><a href="#trackeduniquechunkptr" class="header-anchor">#</a> <code>TrackedUniqueChunkPtr</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::__uniq_ptr_impl&lt;LevelChunk,LevelChunkFinalDeleter&gt;</code></td> <td>_M_t</td></tr></tbody></table> <h3 id="tagregistry"><a href="#tagregistry" class="header-anchor">#</a> <code>TagRegistry</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;StringKey,unsigned int&gt;</code></td> <td>mTagIndexMap</td></tr> <tr><td>56</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mTags</td></tr> <tr><td>80</td> <td>(24) <code>std::vector&lt;IndexSet&gt;</code></td> <td>mSets</td></tr> <tr><td>104</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mTagsScratchpad</td></tr> <tr><td>128</td> <td>(24) <code>std::vector&lt;IDType&lt;TagIDType&gt;&gt;</code></td> <td>mTagIDScratchpad</td></tr> <tr><td>152</td> <td>(48) <code>IndexSet</code></td> <td>mIndexSetScratchpad</td></tr> <tr><td>200</td> <td>(8) <code>TagSetID</code></td> <td>mEmptyTagSet</td></tr></tbody></table> <h3 id="tagid"><a href="#tagid" class="header-anchor">#</a> <code>TagID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>size_t</code></td> <td>mID</td></tr></tbody></table> <h3 id="tickingareaslist"><a href="#tickingareaslist" class="header-anchor">#</a> <code>TickingAreasList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::shared_ptr&lt;ITickingArea&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="textureitem"><a href="#textureitem" class="header-anchor">#</a> <code>TextureItem</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>defaultName</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>carriedName</td></tr> <tr><td>64</td> <td>(64) <code>TextureAtlasItem</code></td> <td>defaultItem</td></tr> <tr><td>128</td> <td>(64) <code>TextureAtlasItem</code></td> <td>carriedItem</td></tr></tbody></table> <h3 id="typeid-t-contextaccessor"><a href="#typeid-t-contextaccessor" class="header-anchor">#</a> <code>typeid_t&lt;ContextAccessor&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>uint16_t</code></td> <td>mID</td></tr></tbody></table> <h3 id="tagcommand-actorreflist"><a href="#tagcommand-actorreflist" class="header-anchor">#</a> <code>TagCommand::ActorRefList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::reference_wrapper&lt;Actor&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="tagcommand-listtags-7ef7c94beab75c6cef4adfb99b570420"><a href="#tagcommand-listtags-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>TagCommand::_listTags::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="token"><a href="#token" class="header-anchor">#</a> <code>Token</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mText</td></tr> <tr><td>32</td> <td>(4) <code>Token::$8E444B718253266053441DBC27016FD8</code></td> <td>_anon_0</td></tr> <tr><td>36</td> <td>(4) <code>Token::Type</code></td> <td>mType</td></tr> <tr><td>40</td> <td>(1) <code>bool</code></td> <td>mIsDefault</td></tr></tbody></table> <h3 id="token-8e444b718253266053441dbc27016fd8"><a href="#token-8e444b718253266053441dbc27016fd8" class="header-anchor">#</a> <code>Token::$8E444B718253266053441DBC27016FD8</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mIntValue</td></tr> <tr><td>1</td> <td>(1) <code>bool</code></td> <td>mBoolValue</td></tr></tbody></table> <h3 id="type-safe-strong-typedef-mce-radian-float"><a href="#type-safe-strong-typedef-mce-radian-float" class="header-anchor">#</a> <code>type_safe::strong_typedef&lt;mce::Radian,float&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>value_</td></tr></tbody></table> <h3 id="taskresult"><a href="#taskresult" class="header-anchor">#</a> <code>TaskResult</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mIsDone</td></tr> <tr><td>8</td> <td>(8) <code>std::chrono::_V2::steady_clock::time_point</code></td> <td>mRunAtTime</td></tr> <tr><td>16</td> <td>(16) <code>Bedrock::Threading::IAsyncResult&lt;void&gt;::Handle</code></td> <td>mWaitOperation</td></tr> <tr><td>32</td> <td>(1) <code>bool</code></td> <td>mLinkWaitOperation</td></tr></tbody></table> <h3 id="timeval"><a href="#timeval" class="header-anchor">#</a> <code>timeval</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>__time_t</code></td> <td>tv_sec</td></tr> <tr><td>8</td> <td>(8) <code>__suseconds_t</code></td> <td>tv_usec</td></tr></tbody></table> <h3 id="timespec"><a href="#timespec" class="header-anchor">#</a> <code>timespec</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>__time_t</code></td> <td>tv_sec</td></tr> <tr><td>8</td> <td>(8) <code>__syscall_slong_t</code></td> <td>tv_nsec</td></tr></tbody></table> <h3 id="tm-unz"><a href="#tm-unz" class="header-anchor">#</a> <code>tm_unz</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uInt</code></td> <td>tm_sec</td></tr> <tr><td>4</td> <td>(4) <code>uInt</code></td> <td>tm_min</td></tr> <tr><td>8</td> <td>(4) <code>uInt</code></td> <td>tm_hour</td></tr> <tr><td>12</td> <td>(4) <code>uInt</code></td> <td>tm_mday</td></tr> <tr><td>16</td> <td>(4) <code>uInt</code></td> <td>tm_mon</td></tr> <tr><td>20</td> <td>(4) <code>uInt</code></td> <td>tm_year</td></tr></tbody></table> <h3 id="tm-zip"><a href="#tm-zip" class="header-anchor">#</a> <code>tm_zip</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uInt</code></td> <td>tm_sec</td></tr> <tr><td>4</td> <td>(4) <code>uInt</code></td> <td>tm_min</td></tr> <tr><td>8</td> <td>(4) <code>uInt</code></td> <td>tm_hour</td></tr> <tr><td>12</td> <td>(4) <code>uInt</code></td> <td>tm_mday</td></tr> <tr><td>16</td> <td>(4) <code>uInt</code></td> <td>tm_mon</td></tr> <tr><td>20</td> <td>(4) <code>uInt</code></td> <td>tm_year</td></tr></tbody></table> <h3 id="type-safe-strong-typedef-mce-degree-float"><a href="#type-safe-strong-typedef-mce-degree-float" class="header-anchor">#</a> <code>type_safe::strong_typedef&lt;mce::Degree,float&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>value_</td></tr></tbody></table> <h3 id="threadlocal-resourceloadmanager-resourceloadtaskgroup"><a href="#threadlocal-resourceloadmanager-resourceloadtaskgroup" class="header-anchor">#</a> <code>ThreadLocal&lt;ResourceLoadManager::ResourceLoadTaskGroup *&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadLocal&lt;ResourceLoadManager::ResourceLoadTaskGroup *&gt;::Creator</code></td> <td>mCreator</td></tr> <tr><td>32</td> <td>(24) <code>ThreadLocal&lt;ResourceLoadManager::ResourceLoadTaskGroup *&gt;::Pool</code></td> <td>mPool</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mCreatorLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mInitialized</td></tr> <tr><td>100</td> <td>(4) <code>pthread_key_t</code></td> <td>mKey</td></tr></tbody></table> <h3 id="threadlocal-resourceloadmanager-resourceloadtaskgroup-creator"><a href="#threadlocal-resourceloadmanager-resourceloadtaskgroup-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;ResourceLoadManager::ResourceLoadTaskGroup *&gt;::Creator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;ResourceLoadManager::ResourceLoadTaskGroup *&gt; ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="threadlocal-resourceloadmanager-resourceloadtaskgroup-pool"><a href="#threadlocal-resourceloadmanager-resourceloadtaskgroup-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;ResourceLoadManager::ResourceLoadTaskGroup *&gt;::Pool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;ResourceLoadManager::ResourceLoadTaskGroup *&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="threadlocal-perftimer"><a href="#threadlocal-perftimer" class="header-anchor">#</a> <code>ThreadLocal&lt;PerfTimer&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadLocal&lt;PerfTimer&gt;::Creator</code></td> <td>mCreator</td></tr> <tr><td>32</td> <td>(24) <code>ThreadLocal&lt;PerfTimer&gt;::Pool</code></td> <td>mPool</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mCreatorLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mInitialized</td></tr> <tr><td>100</td> <td>(4) <code>pthread_key_t</code></td> <td>mKey</td></tr></tbody></table> <h3 id="threadlocal-perftimer-creator"><a href="#threadlocal-perftimer-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;PerfTimer&gt;::Creator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;PerfTimer&gt; ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="threadlocal-perftimer-pool"><a href="#threadlocal-perftimer-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;PerfTimer&gt;::Pool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;PerfTimer&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="threadlocal-evalparams"><a href="#threadlocal-evalparams" class="header-anchor">#</a> <code>ThreadLocal&lt;EvalParams&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadLocal&lt;EvalParams&gt;::Creator</code></td> <td>mCreator</td></tr> <tr><td>32</td> <td>(24) <code>ThreadLocal&lt;EvalParams&gt;::Pool</code></td> <td>mPool</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mCreatorLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mInitialized</td></tr> <tr><td>100</td> <td>(4) <code>pthread_key_t</code></td> <td>mKey</td></tr></tbody></table> <h3 id="threadlocal-evalparams-creator"><a href="#threadlocal-evalparams-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;EvalParams&gt;::Creator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;EvalParams&gt; ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="threadlocal-evalparams-pool"><a href="#threadlocal-evalparams-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;EvalParams&gt;::Pool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;EvalParams&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="threadlocal-random"><a href="#threadlocal-random" class="header-anchor">#</a> <code>ThreadLocal&lt;Random&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadLocal&lt;Random&gt;::Creator</code></td> <td>mCreator</td></tr> <tr><td>32</td> <td>(24) <code>ThreadLocal&lt;Random&gt;::Pool</code></td> <td>mPool</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mCreatorLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mInitialized</td></tr> <tr><td>100</td> <td>(4) <code>pthread_key_t</code></td> <td>mKey</td></tr></tbody></table> <h3 id="threadlocal-random-creator"><a href="#threadlocal-random-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;Random&gt;::Creator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;Random&gt; ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="threadlocal-random-pool"><a href="#threadlocal-random-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;Random&gt;::Pool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;Random&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="threadlocal-dbstoragewritebatch"><a href="#threadlocal-dbstoragewritebatch" class="header-anchor">#</a> <code>ThreadLocal&lt;DBStorageWriteBatch&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadLocal&lt;DBStorageWriteBatch&gt;::Creator</code></td> <td>mCreator</td></tr> <tr><td>32</td> <td>(24) <code>ThreadLocal&lt;DBStorageWriteBatch&gt;::Pool</code></td> <td>mPool</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mCreatorLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mInitialized</td></tr> <tr><td>100</td> <td>(4) <code>pthread_key_t</code></td> <td>mKey</td></tr></tbody></table> <h3 id="threadlocal-dbstoragewritebatch-creator"><a href="#threadlocal-dbstoragewritebatch-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;DBStorageWriteBatch&gt;::Creator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;DBStorageWriteBatch&gt; ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="threadlocal-dbstoragewritebatch-pool"><a href="#threadlocal-dbstoragewritebatch-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;DBStorageWriteBatch&gt;::Pool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;DBStorageWriteBatch&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="threadlocal-std-cxx11-basic-string-char-std-char-traits-char-std-allocator-char"><a href="#threadlocal-std-cxx11-basic-string-char-std-char-traits-char-std-allocator-char" class="header-anchor">#</a> <code>ThreadLocal&lt;std::__cxx11::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadLocal&lt;std::string &gt;::Creator</code></td> <td>mCreator</td></tr> <tr><td>32</td> <td>(24) <code>ThreadLocal&lt;std::string &gt;::Pool</code></td> <td>mPool</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mCreatorLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mInitialized</td></tr> <tr><td>100</td> <td>(4) <code>pthread_key_t</code></td> <td>mKey</td></tr></tbody></table> <h3 id="threadlocal-std-cxx11-basic-string-char-std-char-traits-char-std-allocator-char-creator"><a href="#threadlocal-std-cxx11-basic-string-char-std-char-traits-char-std-allocator-char-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;std::__cxx11::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;::Creator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;std::string&gt; ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="threadlocal-std-cxx11-basic-string-char-std-char-traits-char-std-allocator-char-pool"><a href="#threadlocal-std-cxx11-basic-string-char-std-char-traits-char-std-allocator-char-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;std::__cxx11::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;::Pool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;std::string&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="threadlocal-core-random"><a href="#threadlocal-core-random" class="header-anchor">#</a> <code>ThreadLocal&lt;Core::Random&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadLocal&lt;Core::Random&gt;::Creator</code></td> <td>mCreator</td></tr> <tr><td>32</td> <td>(24) <code>ThreadLocal&lt;Core::Random&gt;::Pool</code></td> <td>mPool</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mCreatorLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mInitialized</td></tr> <tr><td>100</td> <td>(4) <code>pthread_key_t</code></td> <td>mKey</td></tr></tbody></table> <h3 id="threadlocal-core-random-creator"><a href="#threadlocal-core-random-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;Core::Random&gt;::Creator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;Core::Random&gt; ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="threadlocal-core-random-pool"><a href="#threadlocal-core-random-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;Core::Random&gt;::Pool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;Core::Random&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="threadlocal-bool-const-char-const-char-const-char-bool-int-const-char-const-char-bool"><a href="#threadlocal-bool-const-char-const-char-const-char-bool-int-const-char-const-char-bool" class="header-anchor">#</a> <code>ThreadLocal&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool)&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadLocal&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool)&gt;::Creator</code></td> <td>mCreator</td></tr> <tr><td>32</td> <td>(24) <code>ThreadLocal&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool)&gt;::Pool</code></td> <td>mPool</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mCreatorLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mInitialized</td></tr> <tr><td>100</td> <td>(4) <code>pthread_key_t</code></td> <td>mKey</td></tr></tbody></table> <h3 id="threadlocal-bool-const-char-const-char-const-char-bool-int-const-char-const-char-bool-creator"><a href="#threadlocal-bool-const-char-const-char-const-char-bool-int-const-char-const-char-bool-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool)&gt;::Creator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool),std::default_delete&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool)&gt; &gt; ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="threadlocal-bool-const-char-const-char-const-char-bool-int-const-char-const-char-bool-pool"><a href="#threadlocal-bool-const-char-const-char-const-char-bool-int-const-char-const-char-bool-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool)&gt;::Pool</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool),std::default_delete&lt;bool (**)(const char *,const char *,const char *,bool,int,const char *,const char *,bool)&gt; &gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="taskgroup"><a href="#taskgroup" class="header-anchor">#</a> <code>TaskGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ITaskGroup</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>Scheduler *</code></td> <td>mScheduler</td></tr> <tr><td>16</td> <td>(8) <code>WorkerPool *</code></td> <td>mWorkers</td></tr> <tr><td>24</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>56</td> <td>(1) <code>bool</code></td> <td>mCheckOwnerThread</td></tr> <tr><td>64</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mLock</td></tr> <tr><td>104</td> <td>(4) <code>std::atomic&lt;TaskGroupState&gt;</code></td> <td>mState</td></tr> <tr><td>112</td> <td>(16) <code>std::shared_ptr&lt;BackgroundTask&gt;</code></td> <td>mTasks</td></tr> <tr><td>128</td> <td>(8) <code>size_t</code></td> <td>mTaskCount</td></tr> <tr><td>136</td> <td>(16) <code>std::shared_ptr&lt;BackgroundTask&gt;</code></td> <td>mEnumCurr</td></tr> <tr><td>152</td> <td>(16) <code>std::shared_ptr&lt;BackgroundTask&gt;</code></td> <td>mEnumNext</td></tr></tbody></table> <h3 id="type-safe-strong-typedef-op-unary-minus-mce-radian"><a href="#type-safe-strong-typedef-op-unary-minus-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::unary_minus&lt;mce::Radian&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="tropicalfish-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#tropicalfish-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>TropicalFish::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="tripodcamera-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#tripodcamera-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>TripodCamera::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="tickdelayblock"><a href="#tickdelayblock" class="header-anchor">#</a> <code>TickDelayBlock</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mTickDelay</td></tr> <tr><td>8</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr></tbody></table> <h3 id="type-safe-strong-typedef-op-relational-comparison-mce-degree"><a href="#type-safe-strong-typedef-op-relational-comparison-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::relational_comparison&lt;mce::Degree&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="type-safe-strong-typedef-op-addition-mce-degree"><a href="#type-safe-strong-typedef-op-addition-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::addition&lt;mce::Degree&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="threadlocal-threadspecificdata"><a href="#threadlocal-threadspecificdata" class="header-anchor">#</a> <code>ThreadLocal&lt;ThreadSpecificData&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ThreadLocal&lt;ThreadSpecificData&gt;
+{
+  ThreadLocal&lt;ThreadSpecificData&gt;::Creator mCreator;
+  ThreadLocal&lt;ThreadSpecificData&gt;::Pool mPool;
+  Bedrock::Threading::Mutex mCreatorLock;
+  bool mInitialized;
+  pthread_key_t mKey;
+};
+
+</code></pre></div><h3 id="threadlocal-threadspecificdata-creator"><a href="#threadlocal-threadspecificdata-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;ThreadSpecificData&gt;::Creator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::function&lt;std::unique_ptr&lt;ThreadSpecificData&gt; ()&gt; ThreadLocal&lt;ThreadSpecificData&gt;::Creator;
+
+</code></pre></div><h3 id="threadlocal-threadspecificdata-pool"><a href="#threadlocal-threadspecificdata-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;ThreadSpecificData&gt;::Pool</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::unique_ptr&lt;ThreadSpecificData&gt;&gt; ThreadLocal&lt;ThreadSpecificData&gt;::Pool;
+
+</code></pre></div><h3 id="threadspecificdata"><a href="#threadspecificdata" class="header-anchor">#</a> <code>ThreadSpecificData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ThreadSpecificData
+{
+  std::vector&lt;std::string&gt; mScope;
+  std::vector&lt;ContextMessageLogger *&gt; mMessageLoggers;
+};
+
+</code></pre></div><h3 id="testdedicatedservercommands"><a href="#testdedicatedservercommands" class="header-anchor">#</a> <code>TestDedicatedServerCommands</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TestDedicatedServerCommands
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="tradeablesystem"><a href="#tradeablesystem" class="header-anchor">#</a> <code>TradeableSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TradeableSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="teleportsystem"><a href="#teleportsystem" class="header-anchor">#</a> <code>TeleportSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TeleportSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="timersystem"><a href="#timersystem" class="header-anchor">#</a> <code>TimerSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TimerSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="transformationsystem"><a href="#transformationsystem" class="header-anchor">#</a> <code>TransformationSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TransformationSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="trailsystem"><a href="#trailsystem" class="header-anchor">#</a> <code>TrailSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TrailSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="targetnearbysystem"><a href="#targetnearbysystem" class="header-anchor">#</a> <code>TargetNearbySystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TargetNearbySystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="theenddimension"><a href="#theenddimension" class="header-anchor">#</a> <code>TheEndDimension</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TheEndDimension : Dimension
+{
+  Unique&lt;EndDragonFight&gt; mDragonFight;
+};
+
+</code></pre></div><h3 id="treefeature"><a href="#treefeature" class="header-anchor">#</a> <code>TreeFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TreeFeature : Feature
+{
+  int mTrunkType;
+  int mLeafType;
+  bool mAddJungleFeatures;
+  bool mHasBeehive;
+};
+
+</code></pre></div><h3 id="tallgrassfeature"><a href="#tallgrassfeature" class="header-anchor">#</a> <code>TallGrassFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TallGrassFeature : Feature
+{
+  const Block *mGrass;
+};
+
+</code></pre></div><h3 id="tickingarealist"><a href="#tickingarealist" class="header-anchor">#</a> <code>TickingAreaList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TickingAreaList : TickingAreaListBase
+{
+};
+
+</code></pre></div><h3 id="tickingarealistbase"><a href="#tickingarealistbase" class="header-anchor">#</a> <code>TickingAreaListBase</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TickingAreaListBase
+{
+  TickingAreasList mTickingAreas;
+};
+
+</code></pre></div><h3 id="threadlocal-nethergenerator-threaddata"><a href="#threadlocal-nethergenerator-threaddata" class="header-anchor">#</a> <code>ThreadLocal&lt;NetherGenerator::ThreadData&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ThreadLocal&lt;NetherGenerator::ThreadData&gt;
+{
+  ThreadLocal&lt;NetherGenerator::ThreadData&gt;::Creator mCreator;
+  ThreadLocal&lt;NetherGenerator::ThreadData&gt;::Pool mPool;
+  Bedrock::Threading::Mutex mCreatorLock;
+  bool mInitialized;
+  pthread_key_t mKey;
+};
+
+</code></pre></div><h3 id="threadlocal-nethergenerator-threaddata-creator"><a href="#threadlocal-nethergenerator-threaddata-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;NetherGenerator::ThreadData&gt;::Creator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::function&lt;std::unique_ptr&lt;NetherGenerator::ThreadData&gt; ()&gt; ThreadLocal&lt;NetherGenerator::ThreadData&gt;::Creator;
+
+</code></pre></div><h3 id="threadlocal-nethergenerator-threaddata-pool"><a href="#threadlocal-nethergenerator-threaddata-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;NetherGenerator::ThreadData&gt;::Pool</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::unique_ptr&lt;NetherGenerator::ThreadData&gt;&gt; ThreadLocal&lt;NetherGenerator::ThreadData&gt;::Pool;
+
+</code></pre></div><h3 id="transformationmixerlayer-weightedbiomeattributes-rivertransformation"><a href="#transformationmixerlayer-weightedbiomeattributes-rivertransformation" class="header-anchor">#</a> <code>TransformationMixerLayer&lt;WeightedBiomeAttributes&lt;RiverTransformation&gt; &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TransformationMixerLayer&lt;WeightedBiomeAttributes&lt;RiverTransformation&gt; &gt; : MixerLayer&lt;Biome *,Biome *,bool&gt;
+{
+  Biome *mDefaultTransformation;
+};
+
+</code></pre></div><h3 id="threadlocal-overworldgenerator-threaddata"><a href="#threadlocal-overworldgenerator-threaddata" class="header-anchor">#</a> <code>ThreadLocal&lt;OverworldGenerator::ThreadData&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ThreadLocal&lt;OverworldGenerator::ThreadData&gt;
+{
+  ThreadLocal&lt;OverworldGenerator::ThreadData&gt;::Creator mCreator;
+  ThreadLocal&lt;OverworldGenerator::ThreadData&gt;::Pool mPool;
+  Bedrock::Threading::Mutex mCreatorLock;
+  bool mInitialized;
+  pthread_key_t mKey;
+};
+
+</code></pre></div><h3 id="threadlocal-overworldgenerator-threaddata-creator"><a href="#threadlocal-overworldgenerator-threaddata-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;OverworldGenerator::ThreadData&gt;::Creator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::function&lt;std::unique_ptr&lt;OverworldGenerator::ThreadData&gt; ()&gt; ThreadLocal&lt;OverworldGenerator::ThreadData&gt;::Creator;
+
+</code></pre></div><h3 id="threadlocal-overworldgenerator-threaddata-pool"><a href="#threadlocal-overworldgenerator-threaddata-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;OverworldGenerator::ThreadData&gt;::Pool</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::unique_ptr&lt;OverworldGenerator::ThreadData&gt;&gt; ThreadLocal&lt;OverworldGenerator::ThreadData&gt;::Pool;
+
+</code></pre></div><h3 id="templatestructurepiece"><a href="#templatestructurepiece" class="header-anchor">#</a> <code>TemplateStructurePiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TemplateStructurePiece : StructurePiece
+{
+  LegacyStructureTemplate *mTemplate;
+  LegacyStructureSettings mSettings;
+  BlockPos mTemplatePosition;
+};
+
+</code></pre></div><h3 id="telemetryinfo"><a href="#telemetryinfo" class="header-anchor">#</a> <code>TelemetryInfo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(4))) TelemetryInfo
+{
+  PropertyBag mOldInfo;
+  PropertyBag mNewPendingInfo;
+  Core::HeapPathBuffer mFilePath;
+  int mPropertyChangeVersion;
+  bool mTampered;
+  bool mFirstSession;
+};
+
+</code></pre></div><h3 id="tradetable"><a href="#tradetable" class="header-anchor">#</a> <code>TradeTable</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TradeTable
+{
+  Core::HeapPathBuffer mPath;
+  std::vector&lt;TradeTier&gt; mTiers;
+};
+
+</code></pre></div><h3 id="tradetables"><a href="#tradetables" class="header-anchor">#</a> <code>TradeTables</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TradeTables
+{
+  std::unordered_map&lt;std::string,std::unique_ptr&lt;TradeTable&gt;&gt; mTradeTables;
+};
+
+</code></pre></div><h3 id="targetnearbydescription"><a href="#targetnearbydescription" class="header-anchor">#</a> <code>TargetNearbyDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TargetNearbyDescription : ComponentDescription
+{
+  float mInsideRange;
+  float mOutsideRange;
+  bool mMustSee;
+  DefinitionTrigger mInsideRangeTrigger;
+  DefinitionTrigger mOutsideRangeTrigger;
+  DefinitionTrigger mLostVisionTrigger;
+};
+
+</code></pre></div><h3 id="traildescription"><a href="#traildescription" class="header-anchor">#</a> <code>TrailDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TrailDescription : ComponentDescription
+{
+  ActorFilterGroup mSpawnCondition;
+  std::string mBlockType;
+  Vec3 mSpawnOffset;
+};
+
+</code></pre></div><h3 id="transformationdescription"><a href="#transformationdescription" class="header-anchor">#</a> <code>TransformationDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TransformationDescription : ComponentDescription
+{
+  ActorDefinitionIdentifier mEntityName;
+  int mDelayTicks;
+  bool mDropEquipment;
+  std::vector&lt;LevelSoundEvent&gt; mBeginTransformSound;
+  std::vector&lt;LevelSoundEvent&gt; mTransformSound;
+  float mBlockAssistChance;
+  int mBlockRadius;
+  int mBlockMax;
+  float mBlockChance;
+  std::vector&lt;std::string&gt; mBlockTypes;
+  std::vector&lt;std::string&gt; mAddComponentGroups;
+  bool mMaintainOwner;
+  bool mMaintainTradeLevel;
+};
+
+</code></pre></div><h3 id="trackerstat"><a href="#trackerstat" class="header-anchor">#</a> <code>TrackerStat</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TrackerStat
+{
+  unsigned int sentCount;
+  unsigned int sentBytes;
+  unsigned int receivedCount;
+  unsigned int receivedBytes;
+  uint32_t sampleNum;
+};
+
+</code></pre></div><h3 id="thirdpartyserver"><a href="#thirdpartyserver" class="header-anchor">#</a> <code>ThirdPartyServer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) ThirdPartyServer
+{
+  std::string mCreatorName;
+  std::string mProductId;
+  std::string mCreatorId;
+  std::string mTitle;
+  std::string mDescription;
+  std::string mWhitelistUrl;
+  Core::HeapPathBuffer mImagePath;
+  std::string mServerUrl;
+  uint16_t mServerPort;
+  bool mRequireXBL;
+  bool mIsImageFinished;
+};
+
+</code></pre></div><h3 id="treatmentpacksource"><a href="#treatmentpacksource" class="header-anchor">#</a> <code>TreatmentPackSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TreatmentPackSource : PackSource
+{
+  bool mDiscovered;
+  Core::HeapPathBuffer mPath;
+  PackType mPackType;
+  std::vector&lt;std::unique_ptr&lt;Pack&gt;&gt; mPacks;
+};
+
+</code></pre></div><h3 id="timer"><a href="#timer" class="header-anchor">#</a> <code>Timer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Timer
+{
+  float mTicksPerSecond;
+  int mTicks;
+  float mAlpha;
+  float mTimeScale;
+  float mPassedTime;
+  float mFrameStepAlignmentRemainder;
+  float mLastTimeSeconds;
+  float mLastTimestep;
+  int mLastMs;
+  int mLastMsSysTime;
+  float mAdjustTime;
+  int mSteppingTick;
+  std::function&lt;int ()&gt; mGetTimeMSCallback;
+};
+
+</code></pre></div><h3 id="tickingareasmanager"><a href="#tickingareasmanager" class="header-anchor">#</a> <code>TickingAreasManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TickingAreasManager
+{
+  const DimensionMap *mDimensions;
+  std::unordered_map&lt;AutomaticID&lt;Dimension,int&gt;,std::vector&lt;PendingArea&gt;&gt; mPendingAreas;
+};
+
+</code></pre></div><h3 id="tameabledescription"><a href="#tameabledescription" class="header-anchor">#</a> <code>TameableDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TameableDescription : ComponentDescription
+{
+  float mTameChance;
+  std::set&lt;const Item *&gt; mTameItems;
+  DefinitionTrigger mOnTame;
+};
+
+</code></pre></div><h3 id="trustingdescription"><a href="#trustingdescription" class="header-anchor">#</a> <code>TrustingDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TrustingDescription : ComponentDescription
+{
+  float mTrustChance;
+  std::set&lt;const Item *&gt; mTrustItems;
+  DefinitionTrigger mOnTrust;
+};
+
+</code></pre></div><h3 id="tickworlddescription"><a href="#tickworlddescription" class="header-anchor">#</a> <code>TickWorldDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TickWorldDescription : ComponentDescription
+{
+  uint32_t mChunkRadius;
+  float mMaxDistToPlayers;
+  bool mAlwaysActive;
+};
+
+</code></pre></div><h3 id="timerdescription"><a href="#timerdescription" class="header-anchor">#</a> <code>TimerDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TimerDescription : ComponentDescription
+{
+  bool mLooping;
+  bool mRandomInterval;
+  FloatRange mTime;
+  DefinitionTrigger mOnTimeDown;
+  WeightedChoices&lt;float&gt; mTimeChoices;
+};
+
+</code></pre></div><h3 id="traderesupplydescription"><a href="#traderesupplydescription" class="header-anchor">#</a> <code>TradeResupplyDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TradeResupplyDescription : ComponentDescription
+{
+};
+
+</code></pre></div><h3 id="trustdescription"><a href="#trustdescription" class="header-anchor">#</a> <code>TrustDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TrustDescription : ComponentDescription
+{
+};
+
+</code></pre></div><h3 id="tripodcameradescription"><a href="#tripodcameradescription" class="header-anchor">#</a> <code>TripodCameraDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TripodCameraDescription : ComponentDescription
+{
+};
+
+</code></pre></div><h3 id="triggerdescription"><a href="#triggerdescription" class="header-anchor">#</a> <code>TriggerDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TriggerDescription : Description
+{
+  DefinitionTrigger mTrigger;
+};
+
+</code></pre></div><h3 id="tradecontainermanagermodel"><a href="#tradecontainermanagermodel" class="header-anchor">#</a> <code>TradeContainerManagerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TradeContainerManagerModel : LevelContainerManagerModel:1312
+{
+  int mCurrentIndex;
+};
+
+</code></pre></div><h3 id="testcommandorigin"><a href="#testcommandorigin" class="header-anchor">#</a> <code>TestCommandOrigin</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TestCommandOrigin : CommandOrigin
+{
+  ActorUniqueID mPlayerId;
+  Level *mLevel;
+  NetworkIdentifier mSourceId;
+  uint8_t mSourceSubId;
+};
+
+</code></pre></div><h3 id="textobjecttext"><a href="#textobjecttext" class="header-anchor">#</a> <code>TextObjectText</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TextObjectText : ITextObject
+{
+  std::string mText;
+};
+
+</code></pre></div><h3 id="textobjectlocalizedtext"><a href="#textobjectlocalizedtext" class="header-anchor">#</a> <code>TextObjectLocalizedText</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TextObjectLocalizedText : ITextObject
+{
+  std::string mText;
+};
+
+</code></pre></div><h3 id="textobjectlocalizedtextwithparams"><a href="#textobjectlocalizedtextwithparams" class="header-anchor">#</a> <code>TextObjectLocalizedTextWithParams</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TextObjectLocalizedTextWithParams : ITextObject
+{
+  std::string mText;
+  std::vector&lt;std::string&gt; mParams;
+};
+
+</code></pre></div><h3 id="textobjectparser"><a href="#textobjectparser" class="header-anchor">#</a> <code>TextObjectParser</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TextObjectParser
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="timestamp"><a href="#timestamp" class="header-anchor">#</a> <code>TimeStamp</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TimeStamp
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="tropicalfish"><a href="#tropicalfish" class="header-anchor">#</a> <code>TropicalFish</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TropicalFish : WaterAnimal
+{
+  float mAnimationAmount;
+  float mAnimationAmountPrev;
+};
+
+</code></pre></div><h3 id="turtle"><a href="#turtle" class="header-anchor">#</a> <code>Turtle</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) Turtle : Animal
+{
+  int mLayEggCounter;
+};
+
+</code></pre></div><h3 id="thrownegg"><a href="#thrownegg" class="header-anchor">#</a> <code>ThrownEgg</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ThrownEgg : Throwable
+{
+};
+
+</code></pre></div><h3 id="throwntrident"><a href="#throwntrident" class="header-anchor">#</a> <code>ThrownTrident</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ThrownTrident : AbstractArrow
+{
+  bool mDealtDamage;
+  int mClientSideReturnTridentTickCount;
+  ItemStack mTrident;
+};
+
+</code></pre></div><h3 id="thrownpotion"><a href="#thrownpotion" class="header-anchor">#</a> <code>ThrownPotion</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ThrownPotion : Throwable
+{
+};
+
+</code></pre></div><h3 id="thrownenderpearl"><a href="#thrownenderpearl" class="header-anchor">#</a> <code>ThrownEnderpearl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ThrownEnderpearl : Throwable
+{
+};
+
+</code></pre></div><h3 id="thrownicebomb"><a href="#thrownicebomb" class="header-anchor">#</a> <code>ThrownIceBomb</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ThrownIceBomb : Throwable
+{
+};
+
+</code></pre></div><h3 id="tripodcamera"><a href="#tripodcamera" class="header-anchor">#</a> <code>TripodCamera</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TripodCamera : Mob
+{
+  TempEPtr&lt;Player&gt; mPlayer;
+  bool mActivated;
+  int mCountdown;
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-equality-comparison-mce-degree"><a href="#type-safe-strong-typedef-op-equality-comparison-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::equality_comparison&lt;mce::Degree&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::equality_comparison&lt;mce::Degree&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-floating-point-arithmetic-mce-degree"><a href="#type-safe-strong-typedef-op-floating-point-arithmetic-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::floating_point_arithmetic&lt;mce::Degree&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj type_safe::strong_typedef_op::floating_point_arithmetic&lt;mce::Degree&gt; : type_safe::strong_typedef_op::unary_plus&lt;mce::Degree&gt;
+{
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-unary-plus-mce-degree"><a href="#type-safe-strong-typedef-op-unary-plus-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::unary_plus&lt;mce::Degree&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::unary_plus&lt;mce::Degree&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-unary-minus-mce-degree"><a href="#type-safe-strong-typedef-op-unary-minus-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::unary_minus&lt;mce::Degree&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::unary_minus&lt;mce::Degree&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-subtraction-mce-degree"><a href="#type-safe-strong-typedef-op-subtraction-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::subtraction&lt;mce::Degree&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::subtraction&lt;mce::Degree&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-multiplication-mce-degree"><a href="#type-safe-strong-typedef-op-multiplication-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::multiplication&lt;mce::Degree&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::multiplication&lt;mce::Degree&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-division-mce-degree"><a href="#type-safe-strong-typedef-op-division-mce-degree" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::division&lt;mce::Degree&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::division&lt;mce::Degree&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-256b327ee357af9fcd813216707b60d5"><a href="#type-safe-strong-typedef-op-256b327ee357af9fcd813216707b60d5" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::$256B327EE357AF9FCD813216707B60D5</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::$256B327EE357AF9FCD813216707B60D5
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-equality-comparison-mce-radian"><a href="#type-safe-strong-typedef-op-equality-comparison-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::equality_comparison&lt;mce::Radian&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::equality_comparison&lt;mce::Radian&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-relational-comparison-mce-radian"><a href="#type-safe-strong-typedef-op-relational-comparison-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::relational_comparison&lt;mce::Radian&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::relational_comparison&lt;mce::Radian&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-floating-point-arithmetic-mce-radian"><a href="#type-safe-strong-typedef-op-floating-point-arithmetic-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::floating_point_arithmetic&lt;mce::Radian&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj type_safe::strong_typedef_op::floating_point_arithmetic&lt;mce::Radian&gt; : type_safe::strong_typedef_op::unary_plus&lt;mce::Radian&gt;
+{
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-unary-plus-mce-radian"><a href="#type-safe-strong-typedef-op-unary-plus-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::unary_plus&lt;mce::Radian&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::unary_plus&lt;mce::Radian&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-addition-mce-radian"><a href="#type-safe-strong-typedef-op-addition-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::addition&lt;mce::Radian&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::addition&lt;mce::Radian&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-subtraction-mce-radian"><a href="#type-safe-strong-typedef-op-subtraction-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::subtraction&lt;mce::Radian&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::subtraction&lt;mce::Radian&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-multiplication-mce-radian"><a href="#type-safe-strong-typedef-op-multiplication-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::multiplication&lt;mce::Radian&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::multiplication&lt;mce::Radian&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="type-safe-strong-typedef-op-division-mce-radian"><a href="#type-safe-strong-typedef-op-division-mce-radian" class="header-anchor">#</a> <code>type_safe::strong_typedef_op::division&lt;mce::Radian&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct type_safe::strong_typedef_op::division&lt;mce::Radian&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="targetwhenpushedgoal"><a href="#targetwhenpushedgoal" class="header-anchor">#</a> <code>TargetWhenPushedGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TargetWhenPushedGoal : Goal
+{
+  Mob *mSelf;
+  float mPercentChance;
+  const TargetDescriptorList mTargetTypes;
+};
+
+</code></pre></div><h3 id="temptgoal"><a href="#temptgoal" class="header-anchor">#</a> <code>TemptGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TemptGoal : Goal
+{
+  Mob *mMob;
+  float mSpeed;
+  TempEPtr&lt;Player&gt; mPlayer;
+  Vec3 mOldPlayerPosition;
+  Vec2 mOldPlayerRotation;
+  bool mCanGetScared;
+  int mCalmDown;
+  bool mIsRunning;
+  bool mOldAvoidWater;
+  int mPathfinderWaitTicks;
+  float mTemptDistance;
+  std::vector&lt;ItemDescriptor&gt; mItems;
+  bool mCanTemptVertically;
+};
+
+</code></pre></div><h3 id="tradeinterestgoal"><a href="#tradeinterestgoal" class="header-anchor">#</a> <code>TradeInterestGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TradeInterestGoal : Goal
+{
+  Mob *mMob;
+  TempEPtr&lt;Player&gt; mPlayer;
+  bool mIsRunning;
+  bool mIsOnlyTargetItemFound;
+  float mInterestDistance;
+  size_t mCurrentIndex;
+  ItemStack mCarriedItem;
+  ItemStack mPlayerItem;
+  Tick mCarriedItemSwitchTimer;
+  Tick mRemoveItemTimer;
+  Tick mInterestTimer;
+  Tick mInterestCooldown;
+  const Tick mInterestTimeMax;
+  const Tick mInterestTimeMaxHalf;
+  const Tick mRemoveTimeMax;
+  const Tick mCarriedSwitchMax;
+  const Tick mInterestCooldownMax;
+};
+
+</code></pre></div><h3 id="takeflowergoal"><a href="#takeflowergoal" class="header-anchor">#</a> <code>TakeFlowerGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TakeFlowerGoal : Goal
+{
+  TempEPtr&lt;IronGolem&gt; mGolem;
+  int mPickupTick;
+  bool mTakeFlower;
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="tradewithplayergoal"><a href="#tradewithplayergoal" class="header-anchor">#</a> <code>TradeWithPlayerGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TradeWithPlayerGoal : Goal
+{
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="tempeptr-actor"><a href="#tempeptr-actor" class="header-anchor">#</a> <code>TempEPtr&lt;Actor&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TempEPtr&lt;Actor&gt; : _TickPtr
+{
+  Actor *tmp;
+  ActorUniqueID mEntityId;
+  Level *mLevel;
+  bool mHasLocked;
+};
+
+</code></pre></div><h3 id="tempeptr-mob"><a href="#tempeptr-mob" class="header-anchor">#</a> <code>TempEPtr&lt;Mob&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TempEPtr&lt;Mob&gt; : _TickPtr
+{
+  Mob *tmp;
+  ActorUniqueID mEntityId;
+  Level *mLevel;
+  bool mHasLocked;
+};
+
+</code></pre></div><h3 id="targetgoal"><a href="#targetgoal" class="header-anchor">#</a> <code>TargetGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TargetGoal : Goal
+{
+  const std::vector&lt;MobDescriptor&gt; mTargetTypes;
+  float mWithinDefault;
+  bool mGlobalMustSee;
+  int mGlobalMustSeeForgetTicks;
+  bool mMustReach;
+  int mReachCache;
+  int mReachCacheTime;
+  int mUnseenTicks;
+  bool mAttackOwner;
+  int mPersistTargetTicks;
+  int mFilterFailureTicks;
+  bool mFilterFailure;
+  Mob *mMob;
+  bool mTargetMustSee;
+  int mTargetMustSeeForgetTicks;
+};
+
+</code></pre></div><h3 id="tempeptr-villager"><a href="#tempeptr-villager" class="header-anchor">#</a> <code>TempEPtr&lt;Villager&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TempEPtr&lt;Villager&gt; : _TickPtr
+{
+  Villager *tmp;
+  ActorUniqueID mEntityId;
+  Level *mLevel;
+  bool mHasLocked;
+};
+
+</code></pre></div><h3 id="tempeptr-irongolem"><a href="#tempeptr-irongolem" class="header-anchor">#</a> <code>TempEPtr&lt;IronGolem&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TempEPtr&lt;IronGolem&gt; : _TickPtr
+{
+  IronGolem *tmp;
+  ActorUniqueID mEntityId;
+  Level *mLevel;
+  bool mHasLocked;
+};
+
+</code></pre></div><h3 id="tempeptr-player"><a href="#tempeptr-player" class="header-anchor">#</a> <code>TempEPtr&lt;Player&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TempEPtr&lt;Player&gt; : _TickPtr
+{
+  Player *tmp;
+  ActorUniqueID mEntityId;
+  Level *mLevel;
+  bool mHasLocked;
+};
+
+</code></pre></div><h3 id="topsnowblock"><a href="#topsnowblock" class="header-anchor">#</a> <code>TopSnowBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TopSnowBlock : HeavyBlock
+{
+};
+
+</code></pre></div><h3 id="throwable"><a href="#throwable" class="header-anchor">#</a> <code>Throwable</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Throwable : Actor
+{
+  bool mInGround;
+  ActorUniqueID mOwnerId;
+  int mShakeTime;
+  int mLife;
+  MovementInterpolator mInterpolation;
+};
+
+</code></pre></div><h3 id="thrownpotioneffectsubcomponent"><a href="#thrownpotioneffectsubcomponent" class="header-anchor">#</a> <code>ThrownPotionEffectSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ThrownPotionEffectSubcomponent : SplashPotionEffectSubcomponent
+{
+};
+
+</code></pre></div><h3 id="teleporttosubcomponent"><a href="#teleporttosubcomponent" class="header-anchor">#</a> <code>TeleportToSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TeleportToSubcomponent : OnHitSubcomponent
+{
+};
+
+</code></pre></div><h3 id="tridentitem"><a href="#tridentitem" class="header-anchor">#</a> <code>TridentItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TridentItem : Item
+{
+};
+
+</code></pre></div><h3 id="topsnowblockitem"><a href="#topsnowblockitem" class="header-anchor">#</a> <code>TopSnowBlockItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TopSnowBlockItem : BlockItem
+{
+};
+
+</code></pre></div><h3 id="toolrecipes"><a href="#toolrecipes" class="header-anchor">#</a> <code>ToolRecipes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ToolRecipes
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="tridentimpalerenchant"><a href="#tridentimpalerenchant" class="header-anchor">#</a> <code>TridentImpalerEnchant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TridentImpalerEnchant : Enchant
+{
+};
+
+</code></pre></div><h3 id="tridentriptideenchant"><a href="#tridentriptideenchant" class="header-anchor">#</a> <code>TridentRiptideEnchant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TridentRiptideEnchant : Enchant
+{
+};
+
+</code></pre></div><h3 id="tridentloyaltyenchant"><a href="#tridentloyaltyenchant" class="header-anchor">#</a> <code>TridentLoyaltyEnchant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TridentLoyaltyEnchant : Enchant
+{
+};
+
+</code></pre></div><h3 id="tridentchannelingenchant"><a href="#tridentchannelingenchant" class="header-anchor">#</a> <code>TridentChannelingEnchant</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TridentChannelingEnchant : Enchant
+{
+};
+
+</code></pre></div><h3 id="terrainburstreactioncomponent"><a href="#terrainburstreactioncomponent" class="header-anchor">#</a> <code>TerrainBurstReactionComponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TerrainBurstReactionComponent : LabTableReactionComponent
+{
+  int mData;
+  Vec3 mDims;
+  Vec3 mDirRange;
+  int mCount;
+  bool mDirOneWay;
+};
+
+</code></pre></div><h3 id="tallgrass"><a href="#tallgrass" class="header-anchor">#</a> <code>TallGrass</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TallGrass : BushBlock
+{
+};
+
+</code></pre></div><h3 id="tntblock"><a href="#tntblock" class="header-anchor">#</a> <code>TntBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TntBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="torchblock"><a href="#torchblock" class="header-anchor">#</a> <code>TorchBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TorchBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="trapdoorblock"><a href="#trapdoorblock" class="header-anchor">#</a> <code>TrapDoorBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TrapDoorBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="thinfenceblock"><a href="#thinfenceblock" class="header-anchor">#</a> <code>ThinFenceBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ThinFenceBlock : BlockLegacy
+{
+  const bool mDropsResources;
+  const bool mCanBeUsedInCommands;
+};
+
+</code></pre></div><h3 id="tripwirehookblock"><a href="#tripwirehookblock" class="header-anchor">#</a> <code>TripWireHookBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TripWireHookBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="tripwireblock"><a href="#tripwireblock" class="header-anchor">#</a> <code>TripWireBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TripWireBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="turtleeggblock"><a href="#turtleeggblock" class="header-anchor">#</a> <code>TurtleEggBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TurtleEggBlock : BlockLegacy
+{
+  float mShapeOffset;
+};
+
+</code></pre></div><h3 id="theendgenerator"><a href="#theendgenerator" class="header-anchor">#</a> <code>TheEndGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TheEndGenerator : ChunkSource, WorldGenerator
+{
+  PerlinNoisePtr mLPerlinNoise1;
+  PerlinNoisePtr mLPerlinNoise2;
+  PerlinNoisePtr mPerlinNoise1;
+  SimplexNoisePtr mIslandNoise;
+  ThreadLocal&lt;TheEndGenerator::ThreadData&gt; generatorHelpersPool;
+  EndCityFeature mEndCityFeature;
+};
+
+</code></pre></div><h3 id="treefeature-272"><a href="#treefeature-272" class="header-anchor">#</a> <code>TreeFeature:272</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((packed)) __attribute__((aligned(2))) TreeFeature:272 : Feature
+{
+  int mTrunkType;
+  int mLeafType;
+  bool mAddJungleFeatures;
+  bool mHasBeehive;
+};
+
+</code></pre></div><h3 id="treefeature-288"><a href="#treefeature-288" class="header-anchor">#</a> <code>TreeFeature:288</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((packed)) __attribute__((aligned(4))) TreeFeature:288 : Feature
+{
+  int mTrunkType;
+  int mLeafType;
+  bool mAddJungleFeatures;
+  bool mHasBeehive;
+};
+
+</code></pre></div><h3 id="theendgenerator-threaddata"><a href="#theendgenerator-threaddata" class="header-anchor">#</a> <code>TheEndGenerator::ThreadData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TheEndGenerator::ThreadData
+{
+  std::array&lt;long,32768&gt; blockBuffer;
+};
+
+</code></pre></div><h3 id="threadlocal-theendgenerator-threaddata"><a href="#threadlocal-theendgenerator-threaddata" class="header-anchor">#</a> <code>ThreadLocal&lt;TheEndGenerator::ThreadData&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ThreadLocal&lt;TheEndGenerator::ThreadData&gt;
+{
+  ThreadLocal&lt;TheEndGenerator::ThreadData&gt;::Creator mCreator;
+  ThreadLocal&lt;TheEndGenerator::ThreadData&gt;::Pool mPool;
+  Bedrock::Threading::Mutex mCreatorLock;
+  bool mInitialized;
+  pthread_key_t mKey;
+};
+
+</code></pre></div><h3 id="threadlocal-theendgenerator-threaddata-creator"><a href="#threadlocal-theendgenerator-threaddata-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;TheEndGenerator::ThreadData&gt;::Creator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::function&lt;std::unique_ptr&lt;TheEndGenerator::ThreadData&gt; ()&gt; ThreadLocal&lt;TheEndGenerator::ThreadData&gt;::Creator;
+
+</code></pre></div><h3 id="threadlocal-theendgenerator-threaddata-pool"><a href="#threadlocal-theendgenerator-threaddata-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;TheEndGenerator::ThreadData&gt;::Pool</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::unique_ptr&lt;TheEndGenerator::ThreadData&gt;&gt; ThreadLocal&lt;TheEndGenerator::ThreadData&gt;::Pool;
+
+</code></pre></div><h3 id="tickingarea"><a href="#tickingarea" class="header-anchor">#</a> <code>TickingArea</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TickingArea : ITickingArea
+{
+  mce::UUID mUID;
+  std::string mName;
+  ActorUniqueID mEntityId;
+  float mMaxDistToPlayers;
+  bool mAlwaysActive;
+  bool mEntityFound;
+  bool mSizeChanged;
+  bool mRemoved;
+  Vec3 mLastChunkUpdatePos;
+  Vec3 mLastPos;
+  uint32_t mLastRadius;
+  GridArea&lt;std::shared_ptr&lt;LevelChunk&gt; &gt;::AddCallback mAddCallback;
+  ChunkViewSource mChunkSource;
+  BlockSource mBlockSource;
+  TickingAreaView mView;
+};
+
+</code></pre></div><h3 id="transportercomponent"><a href="#transportercomponent" class="header-anchor">#</a> <code>TransporterComponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TransporterComponent : BaseCircuitComponent:480
+{
+  int mNextStrength;
+};
+
+</code></pre></div><h3 id="testservercommands"><a href="#testservercommands" class="header-anchor">#</a> <code>TestServerCommands</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TestServerCommands
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="tagcommand"><a href="#tagcommand" class="header-anchor">#</a> <code>TagCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TagCommand : Command:240
+{
+  TagCommand::Action mAction;
+  WildcardActorSelector mSelector;
+  std::string mTagString;
+};
+
+</code></pre></div><h3 id="teleportcommand"><a href="#teleportcommand" class="header-anchor">#</a> <code>TeleportCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(2))) TeleportCommand : Command
+{
+  ActorSelector mTargets;
+  ActorSelector mDestinationEntity;
+  CommandPositionFloat mDestinationPos;
+  ActorSelector mFacingEntity;
+  CommandPositionFloat mFacingPos;
+  RelativeFloat mYRot;
+  RelativeFloat mXRot;
+  TeleportCommand::FacingResult mHaveFacing;
+  bool mDestinationIsPosition;
+  bool mFacingIsPosition;
+  bool mCheckForBlocks;
+};
+
+</code></pre></div><h3 id="tellcommand"><a href="#tellcommand" class="header-anchor">#</a> <code>TellCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TellCommand : MessagingCommand
+{
+  PlayerSelector mTargets;
+  CommandMessage mMessage;
+};
+
+</code></pre></div><h3 id="tellrawcommand"><a href="#tellrawcommand" class="header-anchor">#</a> <code>TellRawCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TellRawCommand : MessagingCommand
+{
+  PlayerSelector mTargets;
+  Json::Value mRawText;
+};
+
+</code></pre></div><h3 id="testforblockcommand"><a href="#testforblockcommand" class="header-anchor">#</a> <code>TestForBlockCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TestForBlockCommand : Command
+{
+  CommandPosition mPosition;
+  const Block *mBlock;
+  int mData;
+};
+
+</code></pre></div><h3 id="testforblockscommand"><a href="#testforblockscommand" class="header-anchor">#</a> <code>TestForBlocksCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TestForBlocksCommand : Command
+{
+  CommandPosition mBegin;
+  CommandPosition mEnd;
+  CommandPosition mDestination;
+  TestForBlocksCommand::Mode mMode;
+};
+
+</code></pre></div><h3 id="testforcommand"><a href="#testforcommand" class="header-anchor">#</a> <code>TestForCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TestForCommand : Command
+{
+  ActorSelector mTargets;
+};
+
+</code></pre></div><h3 id="tickingareacommand"><a href="#tickingareacommand" class="header-anchor">#</a> <code>TickingAreaCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TickingAreaCommand : Command
+{
+  TickingAreaCommand::Mode mMode;
+  TickingAreaCommand::AddAreaType mAddAreaType;
+  TickingAreaCommand::TargetDimensions mTargetDimensions;
+  CommandPosition mPosition;
+  CommandPosition mMax;
+  std::string mName;
+  int mRadius;
+};
+
+</code></pre></div><h3 id="timecommand"><a href="#timecommand" class="header-anchor">#</a> <code>TimeCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TimeCommand : Command
+{
+  TimeCommand::Mode mMode;
+  TimeCommand::Query mQuery;
+  TimeCommand::TimeSpec mSpec;
+  int mValue;
+};
+
+</code></pre></div><h3 id="titlecommand"><a href="#titlecommand" class="header-anchor">#</a> <code>TitleCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TitleCommand : MessagingCommand
+{
+  TitleCommand::Mode mMode;
+  PlayerSelector mTargets;
+  CommandMessage mMessage;
+  int mFadeIn;
+  int mStay;
+  int mFadeOut;
+};
+
+</code></pre></div><h3 id="titlerawcommand"><a href="#titlerawcommand" class="header-anchor">#</a> <code>TitleRawCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TitleRawCommand : MessagingCommand
+{
+  TitleRawCommand::Mode mMode;
+  PlayerSelector mTargets;
+  Json::Value mMessage;
+  int mFadeIn;
+  int mStay;
+  int mFadeOut;
+};
+
+</code></pre></div><h3 id="toggledownfallcommand"><a href="#toggledownfallcommand" class="header-anchor">#</a> <code>ToggleDownfallCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ToggleDownfallCommand : Command
+{
+};
+
+</code></pre></div><h3 id="tradeingredientcontainercontroller"><a href="#tradeingredientcontainercontroller" class="header-anchor">#</a> <code>TradeIngredientContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TradeIngredientContainerController : ContainerController
+{
+  ItemStack mItem;
+};
+
+</code></pre></div><h3 id="traderesultcontainercontroller"><a href="#traderesultcontainercontroller" class="header-anchor">#</a> <code>TradeResultContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj TradeResultContainerController : ContainerController
+{
+};
+
+</code></pre></div><h3 id="tropicalfishinfo"><a href="#tropicalfishinfo" class="header-anchor">#</a> <code>TropicalFishInfo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct TropicalFishInfo
+{
+  int mColor;
+  int mColor2;
+  int mVariant;
+  int mMarkVariant;
+  std::string mName;
+};
+
+</code></pre></div><h3 id="tickingareaview"><a href="#tickingareaview" class="header-anchor">#</a> <code>TickingAreaView</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) TickingAreaView : ITickingAreaView
+{
+  ChunkViewSource mTickingArea;
+  bool mDoneLoading;
+};
+
+</code></pre></div><h3 id="threadlocal-std-string"><a href="#threadlocal-std-string" class="header-anchor">#</a> <code>ThreadLocal&lt;std::string &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ThreadLocal&lt;std::string &gt;
+{
+  ThreadLocal&lt;std::string &gt;::Creator mCreator;
+  ThreadLocal&lt;std::string &gt;::Pool mPool;
+  Bedrock::Threading::Mutex mCreatorLock;
+  bool mInitialized;
+  pthread_key_t mKey;
+};
+
+</code></pre></div><h3 id="threadlocal-std-string-creator"><a href="#threadlocal-std-string-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;std::string &gt;::Creator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::function&lt;std::unique_ptr&lt;std::string&gt; ()&gt; ThreadLocal&lt;std::string &gt;::Creator;
+
+</code></pre></div><h3 id="threadlocal-std-string-pool"><a href="#threadlocal-std-string-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;std::string &gt;::Pool</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::unique_ptr&lt;std::string&gt;&gt; ThreadLocal&lt;std::string &gt;::Pool;
+
+</code></pre></div><h3 id="tm-unz-s"><a href="#tm-unz-s" class="header-anchor">#</a> <code>tm_unz_s</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct tm_unz_s
+{
+  uInt tm_sec;
+  uInt tm_min;
+  uInt tm_hour;
+  uInt tm_mday;
+  uInt tm_mon;
+  uInt tm_year;
+};
+
+</code></pre></div><h3 id="tm-zip-s"><a href="#tm-zip-s" class="header-anchor">#</a> <code>tm_zip_s</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct tm_zip_s
+{
+  uInt tm_sec;
+  uInt tm_min;
+  uInt tm_hour;
+  uInt tm_mday;
+  uInt tm_mon;
+  uInt tm_year;
+};
+
+</code></pre></div><h3 id="threadlocal-backgroundworker"><a href="#threadlocal-backgroundworker" class="header-anchor">#</a> <code>ThreadLocal&lt;BackgroundWorker *&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ThreadLocal&lt;BackgroundWorker *&gt;
+{
+  ThreadLocal&lt;BackgroundWorker *&gt;::Creator mCreator;
+  ThreadLocal&lt;BackgroundWorker *&gt;::Pool mPool;
+  Bedrock::Threading::Mutex mCreatorLock;
+  bool mInitialized;
+  pthread_key_t mKey;
+};
+
+</code></pre></div><h3 id="threadlocal-backgroundworker-creator"><a href="#threadlocal-backgroundworker-creator" class="header-anchor">#</a> <code>ThreadLocal&lt;BackgroundWorker *&gt;::Creator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::function&lt;std::unique_ptr&lt;BackgroundWorker *&gt; ()&gt; ThreadLocal&lt;BackgroundWorker *&gt;::Creator;
+
+</code></pre></div><h3 id="threadlocal-backgroundworker-pool"><a href="#threadlocal-backgroundworker-pool" class="header-anchor">#</a> <code>ThreadLocal&lt;BackgroundWorker *&gt;::Pool</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::unique_ptr&lt;BackgroundWorker *&gt;&gt; ThreadLocal&lt;BackgroundWorker *&gt;::Pool;
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/S.html" class="prev">
+        S
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/U.html">
+        U
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/52.a2d46eef.js" defer></script>
+  </body>
+</html>

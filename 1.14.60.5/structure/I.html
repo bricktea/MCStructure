@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>I | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/41.420acfde.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" aria-current="page" class="active sidebar-link">I</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="i"><a href="#i" class="header-anchor">#</a> I</h1> <h3 id="ijsonserializable"><a href="#ijsonserializable" class="header-anchor">#</a> <code>IJsonSerializable</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IJsonSerializable</td></tr></tbody></table> <h3 id="iminecraftapp"><a href="#iminecraftapp" class="header-anchor">#</a> <code>IMinecraftApp</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IMinecraftApp</td></tr></tbody></table> <h3 id="itemstack"><a href="#itemstack" class="header-anchor">#</a> <code>ItemStack</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(136) <code>ItemStackBase</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstackbase"><a href="#itemstackbase" class="header-anchor">#</a> <code>ItemStackBase</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ItemStackBase</td></tr> <tr><td>8</td> <td>(8) <code>WeakPtr&lt;Item&gt;</code></td> <td>mItem</td></tr> <tr><td>16</td> <td>(8) <code>Unique&lt;CompoundTag&gt;</code></td> <td>mUserData</td></tr> <tr><td>24</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr> <tr><td>32</td> <td>(2) <code>__int16</code></td> <td>mAuxValue</td></tr> <tr><td>34</td> <td>(1) <code>byte</code></td> <td>mCount</td></tr> <tr><td>35</td> <td>(1) <code>bool</code></td> <td>mValid</td></tr> <tr><td>40</td> <td>(8) <code>std::chrono::_V2::steady_clock::time_point</code></td> <td>mPickupTime</td></tr> <tr><td>48</td> <td>(1) <code>bool</code></td> <td>mShowPickUp</td></tr> <tr><td>56</td> <td>(24) <code>std::vector&lt;const BlockLegacy *&gt;</code></td> <td>mCanPlaceOn</td></tr> <tr><td>80</td> <td>(8) <code>size_t</code></td> <td>mCanPlaceOnHash</td></tr> <tr><td>88</td> <td>(24) <code>std::vector&lt;const BlockLegacy *&gt;</code></td> <td>mCanDestroy</td></tr> <tr><td>112</td> <td>(8) <code>size_t</code></td> <td>mCanDestroyHash</td></tr> <tr><td>120</td> <td>(8) <code>Tick</code></td> <td>mBlockingTick</td></tr> <tr><td>128</td> <td>(8) <code>Unique&lt;ItemInstance&gt;</code></td> <td>mChargedItem</td></tr></tbody></table> <h3 id="iblockplacementtarget"><a href="#iblockplacementtarget" class="header-anchor">#</a> <code>IBlockPlacementTarget</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IBlockPlacementTarget</td></tr></tbody></table> <h3 id="ifeature"><a href="#ifeature" class="header-anchor">#</a> <code>IFeature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IFeature</td></tr></tbody></table> <h3 id="itemenchants"><a href="#itemenchants" class="header-anchor">#</a> <code>ItemEnchants</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mSlot</td></tr> <tr><td>8</td> <td>(72) <code>std::vector&lt;EnchantmentInstance&gt;[3]</code></td> <td>mItemEnchants</td></tr></tbody></table> <h3 id="iteminstance"><a href="#iteminstance" class="header-anchor">#</a> <code>ItemInstance</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(136) <code>ItemStackBase</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itextobject"><a href="#itextobject" class="header-anchor">#</a> <code>ITextObject</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ITextObject</td></tr></tbody></table> <h3 id="ientitycomponent"><a href="#ientitycomponent" class="header-anchor">#</a> <code>IEntityComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="insomniacomponent"><a href="#insomniacomponent" class="header-anchor">#</a> <code>InsomniaComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mTimeSinceRest</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mDaysUntilInsomnia</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mTicksUntilInsomnia</td></tr></tbody></table> <h3 id="interactcomponent"><a href="#interactcomponent" class="header-anchor">#</a> <code>InteractComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>__int16</code></td> <td>mCoolDownCounter</td></tr></tbody></table> <h3 id="idataoutput"><a href="#idataoutput" class="header-anchor">#</a> <code>IDataOutput</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IDataOutput</td></tr></tbody></table> <h3 id="idatainput"><a href="#idatainput" class="header-anchor">#</a> <code>IDataInput</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IDataInput</td></tr></tbody></table> <h3 id="in6-addr"><a href="#in6-addr" class="header-anchor">#</a> <code>in6_addr</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>in6_addr::$FA2BBAF2C6BC03A9E0081A5D902744A5</code></td> <td>__in6_u</td></tr></tbody></table> <h3 id="in6-addr-fa2bbaf2c6bc03a9e0081a5d902744a5"><a href="#in6-addr-fa2bbaf2c6bc03a9e0081a5d902744a5" class="header-anchor">#</a> <code>in6_addr::$FA2BBAF2C6BC03A9E0081A5D902744A5</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>uint8_t[16]</code></td> <td>__u6_addr8</td></tr> <tr><td>1</td> <td>(16) <code>uint16_t[8]</code></td> <td>__u6_addr16</td></tr> <tr><td>2</td> <td>(16) <code>uint32_t[4]</code></td> <td>__u6_addr32</td></tr></tbody></table> <h3 id="in-addr"><a href="#in-addr" class="header-anchor">#</a> <code>in_addr</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>in_addr_t</code></td> <td>s_addr</td></tr></tbody></table> <h3 id="inventorycontentpacket"><a href="#inventorycontentpacket" class="header-anchor">#</a> <code>InventoryContentPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(1) <code>ContainerID</code></td> <td>mInventoryId</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;ItemStack&gt;</code></td> <td>mSlots</td></tr></tbody></table> <h3 id="inventorysource"><a href="#inventorysource" class="header-anchor">#</a> <code>InventorySource</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>InventorySourceType</code></td> <td>mType</td></tr> <tr><td>4</td> <td>(1) <code>ContainerID</code></td> <td>mContainerId</td></tr> <tr><td>8</td> <td>(4) <code>InventorySource::InventorySourceFlags</code></td> <td>mFlags</td></tr></tbody></table> <h3 id="inputmodevaluechangedcallback"><a href="#inputmodevaluechangedcallback" class="header-anchor">#</a> <code>InputModeValueChangedCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (Option *,InputMode)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="intoption-validate-7ef7c94beab75c6cef4adfb99b570420"><a href="#intoption-validate-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>IntOption::_validate::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="iterator"><a href="#iterator" class="header-anchor">#</a> <code>iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::_Bit_iterator_base</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="inventorytransactionpacket"><a href="#inventorytransactionpacket" class="header-anchor">#</a> <code>InventoryTransactionPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>Unique&lt;ComplexInventoryTransaction&gt;</code></td> <td>mTransaction</td></tr></tbody></table> <h3 id="inventoryslotpacket"><a href="#inventoryslotpacket" class="header-anchor">#</a> <code>InventorySlotPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(1) <code>ContainerID</code></td> <td>mInventoryId</td></tr> <tr><td>40</td> <td>(4) <code>uint32_t</code></td> <td>mSlot</td></tr> <tr><td>48</td> <td>(136) <code>ItemStack</code></td> <td>mItem</td></tr></tbody></table> <h3 id="invertablefilter-std-cxx11-basic-string-char-std-char-traits-char-std-allocator-char"><a href="#invertablefilter-std-cxx11-basic-string-char-std-char-traits-char-std-allocator-char" class="header-anchor">#</a> <code>InvertableFilter&lt;std::__cxx11::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>value</td></tr> <tr><td>32</td> <td>(1) <code>bool</code></td> <td>inverted</td></tr></tbody></table> <h3 id="interactdefinition"><a href="#interactdefinition" class="header-anchor">#</a> <code>InteractDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;Interaction&gt;</code></td> <td>mInteractions</td></tr></tbody></table> <h3 id="interactpacket"><a href="#interactpacket" class="header-anchor">#</a> <code>InteractPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(1) <code>InteractPacket::Action</code></td> <td>mAction</td></tr> <tr><td>40</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mTargetId</td></tr> <tr><td>48</td> <td>(12) <code>Vec3</code></td> <td>mPos</td></tr></tbody></table> <h3 id="isotropicfacedata"><a href="#isotropicfacedata" class="header-anchor">#</a> <code>IsotropicFaceData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>unsigned int</code></td> <td>mFaceTextureIsotropic</td></tr> <tr><td>4</td> <td>(4) <code>unsigned int</code></td> <td>mIsotropicFaceEnabled</td></tr></tbody></table> <h3 id="illagerbeastblockedcomponent"><a href="#illagerbeastblockedcomponent" class="header-anchor">#</a> <code>IllagerBeastBlockedComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="intrange"><a href="#intrange" class="header-anchor">#</a> <code>IntRange</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>rangeMin</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>rangeMax</td></tr></tbody></table> <h3 id="identifierdescription"><a href="#identifierdescription" class="header-anchor">#</a> <code>IdentifierDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>DefintionDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mId</td></tr></tbody></table> <h3 id="isspawnabledescription"><a href="#isspawnabledescription" class="header-anchor">#</a> <code>IsSpawnableDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>DefintionDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mIsSpawnable</td></tr></tbody></table> <h3 id="issummonabledescription"><a href="#issummonabledescription" class="header-anchor">#</a> <code>IsSummonableDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>DefintionDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mIsSummonable</td></tr></tbody></table> <h3 id="isexperimentaldescription"><a href="#isexperimentaldescription" class="header-anchor">#</a> <code>IsExperimentalDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>DefintionDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mIsExperimental</td></tr></tbody></table> <h3 id="itemdescriptor"><a href="#itemdescriptor" class="header-anchor">#</a> <code>ItemDescriptor</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>WeakPtr&lt;Item&gt;</code></td> <td>mItem</td></tr> <tr><td>8</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr> <tr><td>16</td> <td>(2) <code>__int16</code></td> <td>mAuxValue</td></tr> <tr><td>18</td> <td>(1) <code>bool</code></td> <td>mValid</td></tr></tbody></table> <h3 id="inventoryaction"><a href="#inventoryaction" class="header-anchor">#</a> <code>InventoryAction</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>InventorySource</code></td> <td>mSource</td></tr> <tr><td>12</td> <td>(4) <code>uint32_t</code></td> <td>mSlot</td></tr> <tr><td>16</td> <td>(136) <code>ItemStack</code></td> <td>mFromItem</td></tr> <tr><td>152</td> <td>(136) <code>ItemStack</code></td> <td>mToItem</td></tr></tbody></table> <h3 id="itemtransferamount"><a href="#itemtransferamount" class="header-anchor">#</a> <code>ItemTransferAmount</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>const ItemTransferAmount::ItemTransferAmountTag</code></td> <td>mTag</td></tr> <tr><td>4</td> <td>(4) <code>ItemTransferAmount::$8A9EA68892D5133F1EC35B6C915D03B5</code></td> <td>mData</td></tr> <tr><td>8</td> <td>(1) <code>const bool</code></td> <td>mFromMax</td></tr></tbody></table> <h3 id="itemtransferamount-8a9ea68892d5133f1ec35b6c915d03b5"><a href="#itemtransferamount-8a9ea68892d5133f1ec35b6c915d03b5" class="header-anchor">#</a> <code>ItemTransferAmount::$8A9EA68892D5133F1EC35B6C915D03B5</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>requestAmount</td></tr> <tr><td>1</td> <td>(4) <code>ItemTakeType</code></td> <td>takeType</td></tr> <tr><td>2</td> <td>(4) <code>ItemPlaceType</code></td> <td>placeType</td></tr></tbody></table> <h3 id="instantaneousattributebuff"><a href="#instantaneousattributebuff" class="header-anchor">#</a> <code>InstantaneousAttributeBuff</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(88) <code>AttributeBuff</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemuseinventorytransaction-resendblocksaroundarea-aaed32d802a7a0d4b8cda03b8d4f5ba0"><a href="#itemuseinventorytransaction-resendblocksaroundarea-aaed32d802a7a0d4b8cda03b8d4f5ba0" class="header-anchor">#</a> <code>ItemUseInventoryTransaction::resendBlocksAroundArea::$AAED32D802A7A0D4B8CDA03B8D4F5BA0</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Player *</code></td> <td>player</td></tr> <tr><td>8</td> <td>(8) <code>BlockSource *</code></td> <td>region</td></tr></tbody></table> <h3 id="itemoffsetsjsonmergestrategy"><a href="#itemoffsetsjsonmergestrategy" class="header-anchor">#</a> <code>ItemOffsetsJsonMergeStrategy</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ResourcePackMergeStrategy</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mFileName</td></tr> <tr><td>40</td> <td>(8) <code>Json::Value *</code></td> <td>mRoot</td></tr> <tr><td>48</td> <td>(32) <code>ItemOffsetsJsonMergeStrategy::PreMergeCallback</code></td> <td>mPreMergeCallback</td></tr></tbody></table> <h3 id="itemoffsetsjsonmergestrategy-premergecallback"><a href="#itemoffsetsjsonmergestrategy-premergecallback" class="header-anchor">#</a> <code>ItemOffsetsJsonMergeStrategy::PreMergeCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;bool (Json::Value &amp;,const Json::Value &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="itemstackbase-loadcomponents-7ef7c94beab75c6cef4adfb99b570420"><a href="#itemstackbase-loadcomponents-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>ItemStackBase::_loadComponents::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="itemdescriptorcount"><a href="#itemdescriptorcount" class="header-anchor">#</a> <code>ItemDescriptorCount</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(20) <code>ItemDescriptor:160</code></td> <td>baseclass_0</td></tr> <tr><td>20</td> <td>(2) <code>uint16_t</code></td> <td>mStackSize</td></tr></tbody></table> <h3 id="itemdescriptor-160"><a href="#itemdescriptor-160" class="header-anchor">#</a> <code>ItemDescriptor:160</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>WeakPtr&lt;Item&gt;</code></td> <td>mItem</td></tr> <tr><td>8</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr> <tr><td>16</td> <td>(2) <code>__int16</code></td> <td>mAuxValue</td></tr> <tr><td>18</td> <td>(1) <code>bool</code></td> <td>mValid</td></tr></tbody></table> <h3 id="inheritancetree-biomeregistry-biomeparent"><a href="#inheritancetree-biomeregistry-biomeparent" class="header-anchor">#</a> <code>InheritanceTree&lt;BiomeRegistry::BiomeParent&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;std::string,InheritanceTree&lt;BiomeRegistry::BiomeParent&gt;::InheritanceTreeNode,std::hash&lt;std::string&gt;,std::equal_to&lt;std::string &gt;,std::allocator&lt;std::pair&lt;const std::string,InheritanceTree&lt;BiomeRegistry::BiomeParent&gt;::InheritanceTreeNode&gt; &gt; &gt;</code></td> <td>mNodes</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mNodeLock</td></tr></tbody></table> <h3 id="itemframedropitempacket"><a href="#itemframedropitempacket" class="header-anchor">#</a> <code>ItemFrameDropItemPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(12) <code>NetworkBlockPosition</code></td> <td>mPos</td></tr></tbody></table> <h3 id="indexset"><a href="#indexset" class="header-anchor">#</a> <code>IndexSet</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;unsigned long&gt;</code></td> <td>mPacked</td></tr> <tr><td>24</td> <td>(24) <code>std::vector&lt;unsigned long&gt;</code></td> <td>mSparse</td></tr></tbody></table> <h3 id="ifconf"><a href="#ifconf" class="header-anchor">#</a> <code>ifconf</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>ifc_len</td></tr> <tr><td>8</td> <td>(8) <code>ifconf::$CB4E2310AA03783056CB5D3719B31C2A</code></td> <td>ifc_ifcu</td></tr></tbody></table> <h3 id="ifconf-cb4e2310aa03783056cb5d3719b31c2a"><a href="#ifconf-cb4e2310aa03783056cb5d3719b31c2a" class="header-anchor">#</a> <code>ifconf::$CB4E2310AA03783056CB5D3719B31C2A</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>__caddr_t</code></td> <td>ifcu_buf</td></tr> <tr><td>1</td> <td>(8) <code>ifreq *</code></td> <td>ifcu_req</td></tr></tbody></table> <h3 id="identifierresult"><a href="#identifierresult" class="header-anchor">#</a> <code>IdentifierResult</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mValid</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mIdentifier</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mNamespace</td></tr></tbody></table> <h3 id="identitydefinition-playernameresolver"><a href="#identitydefinition-playernameresolver" class="header-anchor">#</a> <code>IdentityDefinition::PlayerNameResolver</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;const std::string &amp;(ActorUniqueID)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="item-tier"><a href="#item-tier" class="header-anchor">#</a> <code>Item::Tier</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>const int</code></td> <td>mLevel</td></tr> <tr><td>4</td> <td>(4) <code>const int</code></td> <td>mUses</td></tr> <tr><td>8</td> <td>(4) <code>const float</code></td> <td>mSpeed</td></tr> <tr><td>12</td> <td>(4) <code>const int</code></td> <td>mDamage</td></tr> <tr><td>16</td> <td>(4) <code>const int</code></td> <td>mEnchantmentValue</td></tr></tbody></table> <h3 id="identitydefinition"><a href="#identitydefinition" class="header-anchor">#</a> <code>IdentityDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>ScoreboardId</code></td> <td>mScoreboardId</td></tr> <tr><td>16</td> <td>(1) <code>bool</code></td> <td>mIsHiddenFakePlayer</td></tr> <tr><td>24</td> <td>(8) <code>PlayerScoreboardId</code></td> <td>mPlayerId</td></tr> <tr><td>32</td> <td>(8) <code>ActorUniqueID</code></td> <td>mEntityId</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mPlayerName</td></tr> <tr><td>72</td> <td>(1) <code>IdentityDefinition::Type</code></td> <td>mIdentityType</td></tr></tbody></table> <h3 id="ifreq"><a href="#ifreq" class="header-anchor">#</a> <code>ifreq</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>ifreq::$EC3FB77B1F5CBB3C6B6AB4B4CE5B261D</code></td> <td>ifr_ifrn</td></tr> <tr><td>16</td> <td>(24) <code>ifreq::$3766CEB1D20AE6FB37CD7F05C4AF9C4E</code></td> <td>ifr_ifru</td></tr></tbody></table> <h3 id="ifreq-ec3fb77b1f5cbb3c6b6ab4b4ce5b261d"><a href="#ifreq-ec3fb77b1f5cbb3c6b6ab4b4ce5b261d" class="header-anchor">#</a> <code>ifreq::$EC3FB77B1F5CBB3C6B6AB4B4CE5B261D</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>char[16]</code></td> <td>ifrn_name</td></tr></tbody></table> <h3 id="ifreq-3766ceb1d20ae6fb37cd7f05c4af9c4e"><a href="#ifreq-3766ceb1d20ae6fb37cd7f05c4af9c4e" class="header-anchor">#</a> <code>ifreq::$3766CEB1D20AE6FB37CD7F05C4AF9C4E</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>sockaddr</code></td> <td>ifru_addr</td></tr> <tr><td>1</td> <td>(16) <code>sockaddr</code></td> <td>ifru_dstaddr</td></tr> <tr><td>2</td> <td>(16) <code>sockaddr</code></td> <td>ifru_broadaddr</td></tr> <tr><td>3</td> <td>(16) <code>sockaddr</code></td> <td>ifru_netmask</td></tr> <tr><td>4</td> <td>(16) <code>sockaddr</code></td> <td>ifru_hwaddr</td></tr> <tr><td>5</td> <td>(2) <code>__int16</code></td> <td>ifru_flags</td></tr> <tr><td>6</td> <td>(4) <code>int</code></td> <td>ifru_ivalue</td></tr> <tr><td>7</td> <td>(4) <code>int</code></td> <td>ifru_mtu</td></tr> <tr><td>8</td> <td>(24) <code>ifmap</code></td> <td>ifru_map</td></tr> <tr><td>9</td> <td>(16) <code>char[16]</code></td> <td>ifru_slave</td></tr> <tr><td>10</td> <td>(16) <code>char[16]</code></td> <td>ifru_newname</td></tr> <tr><td>11</td> <td>(8) <code>__caddr_t</code></td> <td>ifru_data</td></tr></tbody></table> <h3 id="ifmap"><a href="#ifmap" class="header-anchor">#</a> <code>ifmap</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>unsigned __int64</code></td> <td>mem_start</td></tr> <tr><td>8</td> <td>(8) <code>unsigned __int64</code></td> <td>mem_end</td></tr> <tr><td>16</td> <td>(2) <code>unsigned __int16</code></td> <td>base_addr</td></tr> <tr><td>18</td> <td>(1) <code>unsigned __int8</code></td> <td>irq</td></tr> <tr><td>19</td> <td>(1) <code>unsigned __int8</code></td> <td>dma</td></tr> <tr><td>20</td> <td>(1) <code>unsigned __int8</code></td> <td>port</td></tr></tbody></table> <h3 id="ipv6-mreq"><a href="#ipv6-mreq" class="header-anchor">#</a> <code>ipv6_mreq</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>in6_addr</code></td> <td>ipv6mr_multiaddr</td></tr> <tr><td>16</td> <td>(4) <code>unsigned int</code></td> <td>ipv6mr_interface</td></tr></tbody></table> <h3 id="ifileaccess"><a href="#ifileaccess" class="header-anchor">#</a> <code>IFileAccess</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IFileAccess</td></tr></tbody></table> <h3 id="ifilereadaccess"><a href="#ifilereadaccess" class="header-anchor">#</a> <code>IFileReadAccess</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IFileReadAccess</td></tr></tbody></table> <h3 id="ifilewriteaccess"><a href="#ifilewriteaccess" class="header-anchor">#</a> <code>IFileWriteAccess</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IFileWriteAccess</td></tr></tbody></table> <h3 id="iovec"><a href="#iovec" class="header-anchor">#</a> <code>iovec</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>void *</code></td> <td>iov_base</td></tr> <tr><td>8</td> <td>(8) <code>size_t</code></td> <td>iov_len</td></tr></tbody></table> <h3 id="itemregistry-itemregistrymap"><a href="#itemregistry-itemregistrymap" class="header-anchor">#</a> <code>ItemRegistry::ItemRegistryMap</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;SharedPtr&lt;Item&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="internaltaskgroup"><a href="#internaltaskgroup" class="header-anchor">#</a> <code>InternalTaskGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ITaskGroup</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itaskgroup"><a href="#itaskgroup" class="header-anchor">#</a> <code>ITaskGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ITaskGroup</td></tr></tbody></table> <h3 id="itemstatevariant-bool"><a href="#itemstatevariant-bool" class="header-anchor">#</a> <code>ItemStateVariant&lt;bool&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstate"><a href="#itemstate" class="header-anchor">#</a> <code>ItemState</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ItemState</td></tr> <tr><td>8</td> <td>(8) <code>const size_t</code></td> <td>mID</td></tr> <tr><td>16</td> <td>(8) <code>const size_t</code></td> <td>mVariationCount</td></tr> <tr><td>24</td> <td>(32) <code>const std::string</code></td> <td>mName</td></tr> <tr><td>56</td> <td>(24) <code>ItemState::StateListNode</code></td> <td>mNode</td></tr></tbody></table> <h3 id="itemstate-statelistnode"><a href="#itemstate-statelistnode" class="header-anchor">#</a> <code>ItemState::StateListNode</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ItemState::StateListNode *</code></td> <td>mNext</td></tr> <tr><td>8</td> <td>(8) <code>ItemState::StateListNode *</code></td> <td>mPrev</td></tr> <tr><td>16</td> <td>(8) <code>ItemState *</code></td> <td>mState</td></tr></tbody></table> <h3 id="itemstatevariant-int"><a href="#itemstatevariant-int" class="header-anchor">#</a> <code>ItemStateVariant&lt;int&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-portalaxis"><a href="#itemstatevariant-portalaxis" class="header-anchor">#</a> <code>ItemStateVariant&lt;PortalAxis&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-anvildamage"><a href="#itemstatevariant-anvildamage" class="header-anchor">#</a> <code>ItemStateVariant&lt;AnvilDamage&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-saplingtype"><a href="#itemstatevariant-saplingtype" class="header-anchor">#</a> <code>ItemStateVariant&lt;SaplingType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-torchfacing"><a href="#itemstatevariant-torchfacing" class="header-anchor">#</a> <code>ItemStateVariant&lt;TorchFacing&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-eggcount"><a href="#itemstatevariant-eggcount" class="header-anchor">#</a> <code>ItemStateVariant&lt;EggCount&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-hatchlevel"><a href="#itemstatevariant-hatchlevel" class="header-anchor">#</a> <code>ItemStateVariant&lt;HatchLevel&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-blockcolor"><a href="#itemstatevariant-blockcolor" class="header-anchor">#</a> <code>ItemStateVariant&lt;BlockColor&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-stalkthickness"><a href="#itemstatevariant-stalkthickness" class="header-anchor">#</a> <code>ItemStateVariant&lt;StalkThickness&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-leafsize"><a href="#itemstatevariant-leafsize" class="header-anchor">#</a> <code>ItemStateVariant&lt;LeafSize&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-woodtype"><a href="#itemstatevariant-woodtype" class="header-anchor">#</a> <code>ItemStateVariant&lt;WoodType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-stonetype"><a href="#itemstatevariant-stonetype" class="header-anchor">#</a> <code>ItemStateVariant&lt;StoneType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-dirttype"><a href="#itemstatevariant-dirttype" class="header-anchor">#</a> <code>ItemStateVariant&lt;DirtType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-sandtype"><a href="#itemstatevariant-sandtype" class="header-anchor">#</a> <code>ItemStateVariant&lt;SandType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-oldlogtype"><a href="#itemstatevariant-oldlogtype" class="header-anchor">#</a> <code>ItemStateVariant&lt;OldLogType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-newlogtype"><a href="#itemstatevariant-newlogtype" class="header-anchor">#</a> <code>ItemStateVariant&lt;NewLogType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-chiseltype"><a href="#itemstatevariant-chiseltype" class="header-anchor">#</a> <code>ItemStateVariant&lt;ChiselType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-oldleaftype"><a href="#itemstatevariant-oldleaftype" class="header-anchor">#</a> <code>ItemStateVariant&lt;OldLeafType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-newleaftype"><a href="#itemstatevariant-newleaftype" class="header-anchor">#</a> <code>ItemStateVariant&lt;NewLeafType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-spongetype"><a href="#itemstatevariant-spongetype" class="header-anchor">#</a> <code>ItemStateVariant&lt;SpongeType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-sandstonetype"><a href="#itemstatevariant-sandstonetype" class="header-anchor">#</a> <code>ItemStateVariant&lt;SandStoneType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-tallgrasstype"><a href="#itemstatevariant-tallgrasstype" class="header-anchor">#</a> <code>ItemStateVariant&lt;TallGrassType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-flowertype"><a href="#itemstatevariant-flowertype" class="header-anchor">#</a> <code>ItemStateVariant&lt;FlowerType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-stoneslabtype"><a href="#itemstatevariant-stoneslabtype" class="header-anchor">#</a> <code>ItemStateVariant&lt;StoneSlabType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-stoneslabtype2"><a href="#itemstatevariant-stoneslabtype2" class="header-anchor">#</a> <code>ItemStateVariant&lt;StoneSlabType2&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-stoneslabtype3"><a href="#itemstatevariant-stoneslabtype3" class="header-anchor">#</a> <code>ItemStateVariant&lt;StoneSlabType3&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-stoneslabtype4"><a href="#itemstatevariant-stoneslabtype4" class="header-anchor">#</a> <code>ItemStateVariant&lt;StoneSlabType4&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-monstereggstonetype"><a href="#itemstatevariant-monstereggstonetype" class="header-anchor">#</a> <code>ItemStateVariant&lt;MonsterEggStoneType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-stonebricktype"><a href="#itemstatevariant-stonebricktype" class="header-anchor">#</a> <code>ItemStateVariant&lt;StoneBrickType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-wallblocktype"><a href="#itemstatevariant-wallblocktype" class="header-anchor">#</a> <code>ItemStateVariant&lt;WallBlockType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-prismarineblocktype"><a href="#itemstatevariant-prismarineblocktype" class="header-anchor">#</a> <code>ItemStateVariant&lt;PrismarineBlockType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-doubleplanttype"><a href="#itemstatevariant-doubleplanttype" class="header-anchor">#</a> <code>ItemStateVariant&lt;DoublePlantType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-chemistrytabletype"><a href="#itemstatevariant-chemistrytabletype" class="header-anchor">#</a> <code>ItemStateVariant&lt;ChemistryTableType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-seagrasstype"><a href="#itemstatevariant-seagrasstype" class="header-anchor">#</a> <code>ItemStateVariant&lt;SeaGrassType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-coralcolor"><a href="#itemstatevariant-coralcolor" class="header-anchor">#</a> <code>ItemStateVariant&lt;CoralColor&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-cauldronliquidtype"><a href="#itemstatevariant-cauldronliquidtype" class="header-anchor">#</a> <code>ItemStateVariant&lt;CauldronLiquidType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-attachmenttype"><a href="#itemstatevariant-attachmenttype" class="header-anchor">#</a> <code>ItemStateVariant&lt;AttachmentType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-structurevoidtype"><a href="#itemstatevariant-structurevoidtype" class="header-anchor">#</a> <code>ItemStateVariant&lt;StructureVoidType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-structureblocktype"><a href="#itemstatevariant-structureblocktype" class="header-anchor">#</a> <code>ItemStateVariant&lt;StructureBlockType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-leverdirection"><a href="#itemstatevariant-leverdirection" class="header-anchor">#</a> <code>ItemStateVariant&lt;LeverDirection&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="itemstatevariant-pillaraxis"><a href="#itemstatevariant-pillaraxis" class="header-anchor">#</a> <code>ItemStateVariant&lt;PillarAxis&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ItemState</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="iminecrafteventing"><a href="#iminecrafteventing" class="header-anchor">#</a> <code>IMinecraftEventing</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>IPackTelemetry</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(24) <code>IWebviewTelemetry</code></td> <td>baseclass_8</td></tr></tbody></table> <h3 id="ipacktelemetry"><a href="#ipacktelemetry" class="header-anchor">#</a> <code>IPackTelemetry</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IPackTelemetry</td></tr></tbody></table> <h3 id="iwebviewtelemetry"><a href="#iwebviewtelemetry" class="header-anchor">#</a> <code>IWebviewTelemetry</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>WebviewObserver</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(8) <code>const IMinecraftEventing *</code></td> <td>mEventing</td></tr></tbody></table> <h3 id="itemdata"><a href="#itemdata" class="header-anchor">#</a> <code>ItemData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>32</td> <td>(2) <code>__int16</code></td> <td>mId</td></tr></tbody></table> <h3 id="irongolem-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#irongolem-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>IronGolem::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="itemgroup"><a href="#itemgroup" class="header-anchor">#</a> <code>ItemGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(136) <code>ItemInstance</code></td> <td>mItemTemplate</td></tr> <tr><td>136</td> <td>(4) <code>int</code></td> <td>mCount</td></tr></tbody></table> <h3 id="idtype-tagidtype"><a href="#idtype-tagidtype" class="header-anchor">#</a> <code>IDType&lt;TagIDType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>size_t</code></td> <td>mID</td></tr></tbody></table> <h3 id="inventorytransactionitemgroup"><a href="#inventorytransactionitemgroup" class="header-anchor">#</a> <code>InventoryTransactionItemGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mItemId</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mItemAux</td></tr> <tr><td>8</td> <td>(8) <code>Unique&lt;CompoundTag&gt;</code></td> <td>mTag</td></tr> <tr><td>16</td> <td>(4) <code>int32_t</code></td> <td>mCount</td></tr> <tr><td>20</td> <td>(1) <code>bool</code></td> <td>mOverflow</td></tr></tbody></table> <h3 id="inheritancetree-biomeregistry-biomeparent-inheritancetreenode"><a href="#inheritancetree-biomeregistry-biomeparent-inheritancetreenode" class="header-anchor">#</a> <code>InheritanceTree&lt;BiomeRegistry::BiomeParent&gt;::InheritanceTreeNode</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>name</td></tr> <tr><td>32</td> <td>(48) <code>BiomeRegistry::BiomeParent</code></td> <td>val</td></tr> <tr><td>80</td> <td>(24) <code>std::vector&lt;InheritanceTree&lt;BiomeRegistry::BiomeParent&gt;::InheritanceTreeNode *,std::allocator&lt;InheritanceTree&lt;BiomeRegistry::BiomeParent&gt;::InheritanceTreeNode *&gt; &gt;</code></td> <td>child</td></tr> <tr><td>104</td> <td>(1) <code>bool</code></td> <td>isVisited</td></tr></tbody></table> <h3 id="identitydictionary"><a href="#identitydictionary" class="header-anchor">#</a> <code>IdentityDictionary</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;PlayerScoreboardId,ScoreboardId&gt;</code></td> <td>mPlayers</td></tr> <tr><td>56</td> <td>(56) <code>std::unordered_map&lt;ActorUniqueID,ScoreboardId&gt;</code></td> <td>mEntities</td></tr> <tr><td>112</td> <td>(56) <code>std::unordered_map&lt;std::string,ScoreboardId&gt;</code></td> <td>mFakes</td></tr> <tr><td>168</td> <td>(56) <code>std::unordered_map&lt;ScoreboardId,IdentityDefinition&gt;</code></td> <td>mIdentityDefs</td></tr></tbody></table> <h3 id="itemdefinition"><a href="#itemdefinition" class="header-anchor">#</a> <code>ItemDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>itemId</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>auxValue</td></tr></tbody></table> <h3 id="idtype-tagsetidtype"><a href="#idtype-tagsetidtype" class="header-anchor">#</a> <code>IDType&lt;TagSetIDType&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>size_t</code></td> <td>mID</td></tr></tbody></table> <h3 id="inmemoryfile"><a href="#inmemoryfile" class="header-anchor">#</a> <code>InMemoryFile</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mMutex</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;char&gt;</code></td> <td>mBuffer</td></tr> <tr><td>64</td> <td>(32) <code>Core::HeapPathBuffer</code></td> <td>mFilename</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mOpenForWrite</td></tr> <tr><td>100</td> <td>(4) <code>int</code></td> <td>mOpenReadHandles</td></tr> <tr><td>104</td> <td>(1) <code>bool</code></td> <td>mMarkedForDelete</td></tr> <tr><td>105</td> <td>(1) <code>bool</code></td> <td>mMarkedDirty</td></tr></tbody></table> <h3 id="iinpackagepacks"><a href="#iinpackagepacks" class="header-anchor">#</a> <code>IInPackagePacks</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IInPackagePacks
+{
+  int (**_vptr$IInPackagePacks)(void);
+};
+
+</code></pre></div><h3 id="igamemoduleshared"><a href="#igamemoduleshared" class="header-anchor">#</a> <code>IGameModuleShared</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IGameModuleShared
+{
+  int (**_vptr$IGameModuleShared)(void);
+};
+
+</code></pre></div><h3 id="icontentaccessibilityprovider"><a href="#icontentaccessibilityprovider" class="header-anchor">#</a> <code>IContentAccessibilityProvider</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IContentAccessibilityProvider : IContentKeyProvider
+{
+};
+
+</code></pre></div><h3 id="icontentkeyprovider"><a href="#icontentkeyprovider" class="header-anchor">#</a> <code>IContentKeyProvider</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IContentKeyProvider
+{
+  int (**_vptr$IContentKeyProvider)(void);
+};
+
+</code></pre></div><h3 id="invertablefilter-std-string"><a href="#invertablefilter-std-string" class="header-anchor">#</a> <code>InvertableFilter&lt;std::string &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) InvertableFilter&lt;std::string &gt;
+{
+  std::string value;
+  bool inverted;
+};
+
+</code></pre></div><h3 id="inpackagepacksource"><a href="#inpackagepacksource" class="header-anchor">#</a> <code>InPackagePackSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InPackagePackSource : PackSource
+{
+  std::shared_ptr&lt;IInPackagePacks&gt; mPacksProvider;
+  PackType mPackType;
+  bool mDiscovered;
+  std::vector&lt;std::unique_ptr&lt;Pack&gt;&gt; mPacks;
+  PackSourceReport mReport;
+};
+
+</code></pre></div><h3 id="invalidpacksfiltergroup"><a href="#invalidpacksfiltergroup" class="header-anchor">#</a> <code>InvalidPacksFilterGroup</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct InvalidPacksFilterGroup
+{
+  std::vector&lt;PackType&gt; packFilters;
+};
+
+</code></pre></div><h3 id="iappplatform"><a href="#iappplatform" class="header-anchor">#</a> <code>IAppPlatform</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IAppPlatform
+{
+  int (**_vptr$IAppPlatform)(void);
+};
+
+</code></pre></div><h3 id="iinpackagepacks-metadata"><a href="#iinpackagepacks-metadata" class="header-anchor">#</a> <code>IInPackagePacks::MetaData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IInPackagePacks::MetaData
+{
+  Core::HeapPathBuffer mPath;
+  bool mIsHidden;
+  PackCategory mPackCategory;
+};
+
+</code></pre></div><h3 id="idefinitionserializer"><a href="#idefinitionserializer" class="header-anchor">#</a> <code>IDefinitionSerializer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IDefinitionSerializer
+{
+  int (**_vptr$IDefinitionSerializer)(void);
+  std::string mName;
+};
+
+</code></pre></div><h3 id="idefinitioninstance"><a href="#idefinitioninstance" class="header-anchor">#</a> <code>IDefinitionInstance</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) IDefinitionInstance
+{
+  int (**_vptr$IDefinitionInstance)(void);
+  std::string mName;
+  uint16_t mTypeId;
+};
+
+</code></pre></div><h3 id="itickingsystem"><a href="#itickingsystem" class="header-anchor">#</a> <code>ITickingSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ITickingSystem
+{
+  int (**_vptr$ITickingSystem)(void);
+};
+
+</code></pre></div><h3 id="insomniasystem"><a href="#insomniasystem" class="header-anchor">#</a> <code>InsomniaSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InsomniaSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="interactsystem"><a href="#interactsystem" class="header-anchor">#</a> <code>InteractSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InteractSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="iworldregistriesprovider"><a href="#iworldregistriesprovider" class="header-anchor">#</a> <code>IWorldRegistriesProvider</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IWorldRegistriesProvider
+{
+  int (**_vptr$IWorldRegistriesProvider)(void);
+};
+
+</code></pre></div><h3 id="item"><a href="#item" class="header-anchor">#</a> <code>Item</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Item
+{
+  int (**_vptr$Item)(void);
+  byte m_maxStackSize;
+  std::string m_textureAtlasFile;
+  int m_frameCount;
+  bool m_animatesInToolbar;
+  bool mIsMirroredArt;
+  UseAnimation mUseAnim;
+  const std::string *mHoverTextColorFormat;
+  const TextureUVCoordinateSet *mIconTexture;
+  const TextureAtlasItem *mIconAtlas;
+  bool mUsesRenderingAdjustment;
+  Vec3 mRenderingAdjTrans;
+  Vec3 mRenderingAdjRot;
+  float mRenderingAdjScale;
+  __int16 mId;
+  std::string mDescriptionId;
+  std::string mRawNameId;
+  std::string mNamespace;
+  HashedString mFullName;
+  __int16 mMaxDamage;
+  __int8 mIsGlint : 1;
+  __int8 mHandEquipped : 1;
+  __int8 mIsStackedByData : 1;
+  __int8 mRequiresWorldBuilder : 1;
+  __int8 mExplodable : 1;
+  __int8 mShouldDespawn : 1;
+  __int8 mAllowOffhand : 1;
+  __int8 mIgnoresPermissions : 1;
+  __int8 mExperimental : 1;
+  int mMaxUseDuration;
+  BaseGameVersion mMinRequiredBaseGameVersion;
+  WeakPtr&lt;BlockLegacy&gt; mLegacyBlock;
+  CreativeItemCategory mCreativeCategory;
+  Item *mCraftingRemainingItem;
+  std::unique_ptr&lt;FoodItemComponent&gt; mFoodComponent;
+  std::unique_ptr&lt;SeedItemComponent&gt; mSeedComponent;
+  std::unique_ptr&lt;CameraItemComponent&gt; mCameraComponent;
+  std::vector&lt;std::function&lt;void ()&gt;&gt; mOnResetBAIcallbacks;
+};
+
+</code></pre></div><h3 id="icebergfeature"><a href="#icebergfeature" class="header-anchor">#</a> <code>IcebergFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IcebergFeature : Feature
+{
+};
+
+</code></pre></div><h3 id="icespikefeature"><a href="#icespikefeature" class="header-anchor">#</a> <code>IceSpikeFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IceSpikeFeature : Feature
+{
+};
+
+</code></pre></div><h3 id="icepatchfeature"><a href="#icepatchfeature" class="header-anchor">#</a> <code>IcePatchFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) IcePatchFeature : Feature
+{
+  const Block *mBlock;
+  int mRadius;
+};
+
+</code></pre></div><h3 id="itemstateinstance"><a href="#itemstateinstance" class="header-anchor">#</a> <code>ItemStateInstance</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ItemStateInstance
+{
+  const unsigned int mMaxBits;
+  uint32_t mStartBit;
+  uint32_t mNumBits;
+  uint32_t mVariationCount;
+  uint32_t mMask;
+  bool mInitialized;
+  const ItemState *mState;
+};
+
+</code></pre></div><h3 id="invertablefilter-actordefinitionidentifier"><a href="#invertablefilter-actordefinitionidentifier" class="header-anchor">#</a> <code>InvertableFilter&lt;ActorDefinitionIdentifier&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) InvertableFilter&lt;ActorDefinitionIdentifier&gt;
+{
+  ActorDefinitionIdentifier value;
+  bool inverted;
+};
+
+</code></pre></div><h3 id="inventorytransaction"><a href="#inventorytransaction" class="header-anchor">#</a> <code>InventoryTransaction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct InventoryTransaction
+{
+  std::unordered_map&lt;InventorySource,std::vector&lt;InventoryAction&gt;&gt; mActions;
+  std::vector&lt;InventoryTransactionItemGroup&gt; mContents;
+};
+
+</code></pre></div><h3 id="inventorytransactionmanager"><a href="#inventorytransactionmanager" class="header-anchor">#</a> <code>InventoryTransactionManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct InventoryTransactionManager
+{
+  Player *mPlayer;
+  Unique&lt;InventoryTransaction&gt; mCurrentTransaction;
+  std::vector&lt;InventoryAction&gt; mExpectedActions;
+};
+
+</code></pre></div><h3 id="itickingarea"><a href="#itickingarea" class="header-anchor">#</a> <code>ITickingArea</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ITickingArea
+{
+  int (**_vptr$ITickingArea)(void);
+};
+
+</code></pre></div><h3 id="istructurepoolactorpredicate"><a href="#istructurepoolactorpredicate" class="header-anchor">#</a> <code>IStructurePoolActorPredicate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IStructurePoolActorPredicate
+{
+  int (**_vptr$IStructurePoolActorPredicate)(void);
+};
+
+</code></pre></div><h3 id="istructurepoolblockpredicate"><a href="#istructurepoolblockpredicate" class="header-anchor">#</a> <code>IStructurePoolBlockPredicate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IStructurePoolBlockPredicate
+{
+  int (**_vptr$IStructurePoolBlockPredicate)(void);
+};
+
+</code></pre></div><h3 id="istructurepoolblocktagpredicate"><a href="#istructurepoolblocktagpredicate" class="header-anchor">#</a> <code>IStructurePoolBlockTagPredicate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IStructurePoolBlockTagPredicate
+{
+  int (**_vptr$IStructurePoolBlockTagPredicate)(void);
+};
+
+</code></pre></div><h3 id="improvednoise"><a href="#improvednoise" class="header-anchor">#</a> <code>ImprovedNoise</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ImprovedNoise
+{
+  Vec3 mOrigin;
+  int mNoiseMap[512];
+};
+
+</code></pre></div><h3 id="islandlayer"><a href="#islandlayer" class="header-anchor">#</a> <code>IslandLayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IslandLayer : RootLayer&lt;LayerValues::Terrain&gt;
+{
+};
+
+</code></pre></div><h3 id="iminecrafteventing-signinerrordetails"><a href="#iminecrafteventing-signinerrordetails" class="header-anchor">#</a> <code>IMinecraftEventing::SignInErrorDetails</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::pair&lt;std::string,std::string &gt;&gt; IMinecraftEventing::SignInErrorDetails;
+
+</code></pre></div><h3 id="itemactor"><a href="#itemactor" class="header-anchor">#</a> <code>ItemActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ItemActor : Actor
+{
+  ItemStack mItem;
+  int mAge;
+  int mPickupDelay;
+  int mThrowTime;
+  float mBobOffs;
+  int mHealth;
+  int mLifeTime;
+  bool mIsInItemFrame;
+  bool mIsFromFishing;
+};
+
+</code></pre></div><h3 id="interaction"><a href="#interaction" class="header-anchor">#</a> <code>Interaction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Interaction
+{
+  int mRequiresCoolDown;
+  bool mSwing;
+  bool mUseItem;
+  int mHurtItem;
+  ItemDefinition mTransformItem;
+  std::string mInteractText;
+  std::string mAddItemsTable;
+  std::string mSpawnItemsTable;
+  ParticleType mParticleOnStartType;
+  bool mParticleOffsetTowardsInteractor;
+  float mParticleOffsetY;
+  std::vector&lt;LevelSoundEvent&gt; mPlaySounds;
+  std::vector&lt;ActorDefinitionIdentifier&gt; mSpawnEntities;
+  DefinitionTrigger mOnInteraction;
+};
+
+</code></pre></div><h3 id="i18n-languagechangedlistener"><a href="#i18n-languagechangedlistener" class="header-anchor">#</a> <code>I18n::LanguageChangedListener</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct I18n::LanguageChangedListener
+{
+  std::weak_ptr&lt;bool&gt; mWeakTracker;
+  std::function&lt;void (const std::string &amp;,bool)&gt; mCallback;
+};
+
+</code></pre></div><h3 id="i18n"><a href="#i18n" class="header-anchor">#</a> <code>I18n</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct I18n
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="inttag"><a href="#inttag" class="header-anchor">#</a> <code>IntTag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) IntTag : Tag
+{
+  int data;
+};
+
+</code></pre></div><h3 id="int64tag"><a href="#int64tag" class="header-anchor">#</a> <code>Int64Tag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Int64Tag : Tag
+{
+  int64_t data;
+};
+
+</code></pre></div><h3 id="intarraytag"><a href="#intarraytag" class="header-anchor">#</a> <code>IntArrayTag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IntArrayTag : Tag
+{
+  TagMemoryChunk data;
+};
+
+</code></pre></div><h3 id="icontainermanager"><a href="#icontainermanager" class="header-anchor">#</a> <code>IContainerManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IContainerManager
+{
+  int (**_vptr$IContainerManager)(void);
+};
+
+</code></pre></div><h3 id="itemframeblockactor"><a href="#itemframeblockactor" class="header-anchor">#</a> <code>ItemFrameBlockActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ItemFrameBlockActor : BlockActor:1632
+{
+  ClockSpriteCalculator mClockSpriteCalc;
+  CompassSpriteCalculator mCompassSpriteCalc;
+  ItemInstance mItem;
+  float mDropChance;
+  float mRotation;
+  bool mUpgradeMapBit;
+};
+
+</code></pre></div><h3 id="ientityregistryowner"><a href="#ientityregistryowner" class="header-anchor">#</a> <code>IEntityRegistryOwner</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IEntityRegistryOwner
+{
+  int (**_vptr$IEntityRegistryOwner)(void);
+};
+
+</code></pre></div><h3 id="inputmodefloatoption"><a href="#inputmodefloatoption" class="header-anchor">#</a> <code>InputModeFloatOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) InputModeFloatOption : Option
+{
+  const float VALUE_MIN;
+  const float VALUE_MAX;
+  std::unordered_map&lt;InputMode,float&gt; mValues;
+  std::unordered_map&lt;InputMode,float&gt; mDefaultValues;
+  const float DELTA;
+};
+
+</code></pre></div><h3 id="inputmodebooloption"><a href="#inputmodebooloption" class="header-anchor">#</a> <code>InputModeBoolOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InputModeBoolOption : Option
+{
+  std::unordered_map&lt;InputMode,bool&gt; mValues;
+  std::unordered_map&lt;InputMode,bool&gt; mDefaultValues;
+};
+
+</code></pre></div><h3 id="intoption"><a href="#intoption" class="header-anchor">#</a> <code>IntOption</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IntOption : Option
+{
+  const int VALUE_MAX;
+  const int VALUE_MIN;
+  int mValue;
+  int mDefaultValue;
+  bool mClampToRange;
+  const std::vector&lt;int&gt; mPossibleValues;
+  Option::SaveIntCallback mCoerceSaveValueCallback;
+};
+
+</code></pre></div><h3 id="icommanddispatcher"><a href="#icommanddispatcher" class="header-anchor">#</a> <code>ICommandDispatcher</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ICommandDispatcher
+{
+  int (**_vptr$ICommandDispatcher)(void);
+};
+
+</code></pre></div><h3 id="itemeventcoordinator"><a href="#itemeventcoordinator" class="header-anchor">#</a> <code>ItemEventCoordinator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ItemEventCoordinator : EventCoordinator&lt;ItemEventListener&gt;
+{
+};
+
+</code></pre></div><h3 id="isurfacebuilder"><a href="#isurfacebuilder" class="header-anchor">#</a> <code>ISurfaceBuilder</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ISurfaceBuilder
+{
+  int (**_vptr$ISurfaceBuilder)(void);
+};
+
+</code></pre></div><h3 id="inventorymenu"><a href="#inventorymenu" class="header-anchor">#</a> <code>InventoryMenu</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InventoryMenu : BaseContainerMenu
+{
+  Container *mContainer;
+};
+
+</code></pre></div><h3 id="isbabydescription"><a href="#isbabydescription" class="header-anchor">#</a> <code>IsBabyDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsBabyDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="ischargeddescription"><a href="#ischargeddescription" class="header-anchor">#</a> <code>IsChargedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsChargedDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="ischesteddescription"><a href="#ischesteddescription" class="header-anchor">#</a> <code>IsChestedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsChestedDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="ishiddenwheninvisibledescription"><a href="#ishiddenwheninvisibledescription" class="header-anchor">#</a> <code>IsHiddenWhenInvisibleDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsHiddenWhenInvisibleDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="isigniteddescription"><a href="#isigniteddescription" class="header-anchor">#</a> <code>IsIgnitedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsIgnitedDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="isillagercaptaindescription"><a href="#isillagercaptaindescription" class="header-anchor">#</a> <code>IsIllagerCaptainDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsIllagerCaptainDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="issaddleddescription"><a href="#issaddleddescription" class="header-anchor">#</a> <code>IsSaddledDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsSaddledDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="isshakingdescription"><a href="#isshakingdescription" class="header-anchor">#</a> <code>IsShakingDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsShakingDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="issheareddescription"><a href="#issheareddescription" class="header-anchor">#</a> <code>IsShearedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsShearedDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="isstunneddescription"><a href="#isstunneddescription" class="header-anchor">#</a> <code>IsStunnedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsStunnedDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="isstackabledescription"><a href="#isstackabledescription" class="header-anchor">#</a> <code>IsStackableDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsStackableDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="istameddescription"><a href="#istameddescription" class="header-anchor">#</a> <code>IsTamedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IsTamedDescription : PropertyDescription
+{
+};
+
+</code></pre></div><h3 id="itemcontroldescription"><a href="#itemcontroldescription" class="header-anchor">#</a> <code>ItemControlDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ItemControlDescription : PropertyDescription
+{
+  std::set&lt;const Item *&gt; mControlItems;
+};
+
+</code></pre></div><h3 id="illagerbeastblockeddescription"><a href="#illagerbeastblockeddescription" class="header-anchor">#</a> <code>IllagerBeastBlockedDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) IllagerBeastBlockedDescription : ComponentDescription
+{
+  WeightedChoices&lt;DefinitionTrigger&gt; mReactionChoices;
+  float mKnockbackStrength;
+};
+
+</code></pre></div><h3 id="inventory"><a href="#inventory" class="header-anchor">#</a> <code>Inventory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Inventory : FillingContainer
+{
+};
+
+</code></pre></div><h3 id="isplayer-actor"><a href="#isplayer-actor" class="header-anchor">#</a> <code>IsPlayer&lt;Actor&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IsPlayer&lt;Actor&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="isplayer-player"><a href="#isplayer-player" class="header-anchor">#</a> <code>IsPlayer&lt;Player&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IsPlayer&lt;Player&gt;
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="ifunctionentry"><a href="#ifunctionentry" class="header-anchor">#</a> <code>IFunctionEntry</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IFunctionEntry
+{
+  int (**_vptr$IFunctionEntry)(void);
+};
+
+</code></pre></div><h3 id="itickingareaview"><a href="#itickingareaview" class="header-anchor">#</a> <code>ITickingAreaView</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ITickingAreaView
+{
+  int (**_vptr$ITickingAreaView)(void);
+};
+
+</code></pre></div><h3 id="ifilepicker"><a href="#ifilepicker" class="header-anchor">#</a> <code>IFilePicker</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IFilePicker
+{
+  int (**_vptr$IFilePicker)(void);
+};
+
+</code></pre></div><h3 id="ifilechunkuploader"><a href="#ifilechunkuploader" class="header-anchor">#</a> <code>IFileChunkUploader</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IFileChunkUploader
+{
+  int (**_vptr$IFileChunkUploader)(void);
+};
+
+</code></pre></div><h3 id="insomniadefinition"><a href="#insomniadefinition" class="header-anchor">#</a> <code>InsomniaDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct InsomniaDefinition
+{
+  float mDaysUntilInsomnia;
+};
+
+</code></pre></div><h3 id="irongolem"><a href="#irongolem" class="header-anchor">#</a> <code>IronGolem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IronGolem : Mob
+{
+  int mAttackAnimationTick;
+  int mOfferFlowerTick;
+};
+
+</code></pre></div><h3 id="illagerbeast"><a href="#illagerbeast" class="header-anchor">#</a> <code>IllagerBeast</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IllagerBeast : Monster
+{
+};
+
+</code></pre></div><h3 id="inspectbookshelfgoal"><a href="#inspectbookshelfgoal" class="header-anchor">#</a> <code>InspectBookshelfGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) InspectBookshelfGoal : BaseMoveToBlockGoal
+{
+  BlockPos mBookshelfPos;
+  bool mRequireSameY;
+};
+
+</code></pre></div><h3 id="intarray"><a href="#intarray" class="header-anchor">#</a> <code>intArray</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;int&gt; intArray;
+
+</code></pre></div><h3 id="itemreleaseinventorytransaction"><a href="#itemreleaseinventorytransaction" class="header-anchor">#</a> <code>ItemReleaseInventoryTransaction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ItemReleaseInventoryTransaction : ComplexInventoryTransaction
+{
+  ItemReleaseInventoryTransaction::ActionType mActionType;
+  int32_t mSlot;
+  ItemStack mItem;
+  Vec3 mFromPos;
+};
+
+</code></pre></div><h3 id="impactdamagesubcomponent"><a href="#impactdamagesubcomponent" class="header-anchor">#</a> <code>ImpactDamageSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ImpactDamageSubcomponent : OnHitSubcomponent
+{
+  bool mCatchFire;
+  bool mChanneling;
+  FloatRange mProjectileDamage;
+  bool mKnockback;
+  ActorType mFilter;
+  bool mSemiRandomDiffDamage;
+  bool mDestroyOnHit;
+  int mMaxCriticalDamage;
+  int mMinCriticalDamage;
+  float mPowMultiplier;
+};
+
+</code></pre></div><h3 id="ignitesubcomponent"><a href="#ignitesubcomponent" class="header-anchor">#</a> <code>IgniteSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IgniteSubcomponent : OnHitSubcomponent
+{
+};
+
+</code></pre></div><h3 id="inventorycontainermodel"><a href="#inventorycontainermodel" class="header-anchor">#</a> <code>InventoryContainerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InventoryContainerModel : ContainerModel
+{
+  Player *mPlayer;
+};
+
+</code></pre></div><h3 id="itemindexpair"><a href="#itemindexpair" class="header-anchor">#</a> <code>ItemIndexPair</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) ItemIndexPair
+{
+  ItemStack item;
+  int index;
+};
+
+</code></pre></div><h3 id="instantaneousmobeffect"><a href="#instantaneousmobeffect" class="header-anchor">#</a> <code>InstantaneousMobEffect</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InstantaneousMobEffect : MobEffect
+{
+};
+
+</code></pre></div><h3 id="itemuseonactorinventorytransaction"><a href="#itemuseonactorinventorytransaction" class="header-anchor">#</a> <code>ItemUseOnActorInventoryTransaction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ItemUseOnActorInventoryTransaction : ComplexInventoryTransaction
+{
+  ActorRuntimeID mRuntimeId;
+  ItemUseOnActorInventoryTransaction::ActionType mActionType;
+  int32_t mSlot;
+  ItemStack mItem;
+  Vec3 mFromPos;
+  Vec3 mHitPos;
+};
+
+</code></pre></div><h3 id="itemuseinventorytransaction"><a href="#itemuseinventorytransaction" class="header-anchor">#</a> <code>ItemUseInventoryTransaction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ItemUseInventoryTransaction : ComplexInventoryTransaction
+{
+  ItemUseInventoryTransaction::ActionType mActionType;
+  NetworkBlockPosition mPos;
+  BlockRuntimeId mTargetBlockId;
+  FacingID mFace;
+  int32_t mSlot;
+  ItemStack mItem;
+  Vec3 mFromPos;
+  Vec3 mClickPos;
+};
+
+</code></pre></div><h3 id="itemregistry"><a href="#itemregistry" class="header-anchor">#</a> <code>ItemRegistry</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ItemRegistry
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="itemusemethodmap"><a href="#itemusemethodmap" class="header-anchor">#</a> <code>ItemUseMethodMap</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ItemUseMethodMap
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="itemacquisitionmethodmap"><a href="#itemacquisitionmethodmap" class="header-anchor">#</a> <code>ItemAcquisitionMethodMap</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ItemAcquisitionMethodMap
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="icebombitem"><a href="#icebombitem" class="header-anchor">#</a> <code>IceBombItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj IceBombItem : ChemistryItem
+{
+};
+
+</code></pre></div><h3 id="itempack-keyhasher"><a href="#itempack-keyhasher" class="header-anchor">#</a> <code>ItemPack::KeyHasher</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ItemPack::KeyHasher
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="itempack"><a href="#itempack" class="header-anchor">#</a> <code>ItemPack</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ItemPack
+{
+  std::unordered_map&lt;ItemDescriptor,int,ItemPack::KeyHasher,std::equal_to&lt;ItemDescriptor&gt;,std::allocator&lt;std::pair&lt;const ItemDescriptor,int&gt; &gt; &gt; mIngredients;
+};
+
+</code></pre></div><h3 id="itemreactioncomponent"><a href="#itemreactioncomponent" class="header-anchor">#</a> <code>ItemReactionComponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ItemReactionComponent : LabTableReactionComponent
+{
+  std::unique_ptr&lt;ItemStack&gt; mItem;
+};
+
+</code></pre></div><h3 id="iceblock"><a href="#iceblock" class="header-anchor">#</a> <code>IceBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) IceBlock : BlockLegacy
+{
+  bool mPacked;
+};
+
+</code></pre></div><h3 id="invisibleblock"><a href="#invisibleblock" class="header-anchor">#</a> <code>InvisibleBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InvisibleBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="itemframeblock"><a href="#itemframeblock" class="header-anchor">#</a> <code>ItemFrameBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ItemFrameBlock : ActorBlock
+{
+};
+
+</code></pre></div><h3 id="isubchunkblockstoragepaletted"><a href="#isubchunkblockstoragepaletted" class="header-anchor">#</a> <code>ISubChunkBlockStoragePaletted</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ISubChunkBlockStoragePaletted : SubChunkBlockStorage
+{
+};
+
+</code></pre></div><h3 id="istructureconstraint"><a href="#istructureconstraint" class="header-anchor">#</a> <code>IStructureConstraint</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct IStructureConstraint
+{
+  int (**_vptr$IStructureConstraint)(void);
+};
+
+</code></pre></div><h3 id="igloo"><a href="#igloo" class="header-anchor">#</a> <code>Igloo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) Igloo : ScatteredFeaturePiece
+{
+  LegacyStructureSettings mLabSettings;
+  BlockPos mLabPos;
+  Vec3 mVillagerPos;
+  Vec3 mZombieVillagerPos;
+};
+
+</code></pre></div><h3 id="immutableworldcommand"><a href="#immutableworldcommand" class="header-anchor">#</a> <code>ImmutableWorldCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ImmutableWorldCommand : Command:240
+{
+  bool mValue;
+  bool mHaveValue;
+};
+
+</code></pre></div><h3 id="itemlistserializer"><a href="#itemlistserializer" class="header-anchor">#</a> <code>ItemListSerializer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ItemListSerializer
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="inverterdefinition"><a href="#inverterdefinition" class="header-anchor">#</a> <code>InverterDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InverterDefinition : DecoratorDefinition
+{
+};
+
+</code></pre></div><h3 id="inverternode"><a href="#inverternode" class="header-anchor">#</a> <code>InverterNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InverterNode : BehaviorNode
+{
+  Unique&lt;BehaviorNode&gt; mActiveChild;
+};
+
+</code></pre></div><h3 id="interactactiondefinition"><a href="#interactactiondefinition" class="header-anchor">#</a> <code>InteractActionDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InteractActionDefinition : BehaviorDefinition
+{
+  int mInteractTicks;
+  std::string mInteractTicksId;
+};
+
+</code></pre></div><h3 id="interactactionnode"><a href="#interactactionnode" class="header-anchor">#</a> <code>InteractActionNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) InteractActionNode : BehaviorNode:480
+{
+  int mNumTicksToInteract;
+  int mDelayCounter;
+  bool mRightMouseDown;
+  bool mPreActionDone;
+};
+
+</code></pre></div><h3 id="inmemoryenv"><a href="#inmemoryenv" class="header-anchor">#</a> <code>InMemoryEnv</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InMemoryEnv : FlushableEnv
+{
+  leveldb::Env *mTarget;
+  Core::HeapPathBuffer mDbPath;
+  InMemoryFileStorage mInMemoryStorage;
+};
+
+</code></pre></div><h3 id="inmemoryfilestorage"><a href="#inmemoryfilestorage" class="header-anchor">#</a> <code>InMemoryFileStorage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct InMemoryFileStorage
+{
+  leveldb::Env *mEnvironment;
+  Bedrock::Threading::Mutex mMutex;
+  std::vector&lt;std::shared_ptr&lt;InMemoryFile&gt;&gt; mInMemoryFiles;
+  std::vector&lt;std::string&gt; mDiskFilesToDelete;
+};
+
+</code></pre></div><h3 id="inmemoryrandomaccessfile"><a href="#inmemoryrandomaccessfile" class="header-anchor">#</a> <code>InMemoryRandomAccessFile</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InMemoryRandomAccessFile : leveldb::RandomAccessFile
+{
+  std::shared_ptr&lt;InMemoryFile&gt; mFile;
+};
+
+</code></pre></div><h3 id="inmemorysequentialfile"><a href="#inmemorysequentialfile" class="header-anchor">#</a> <code>InMemorySequentialFile</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InMemorySequentialFile : leveldb::SequentialFile
+{
+  std::shared_ptr&lt;InMemoryFile&gt; mFile;
+  size_t mReadOffset;
+};
+
+</code></pre></div><h3 id="inmemorywritablefile"><a href="#inmemorywritablefile" class="header-anchor">#</a> <code>InMemoryWritableFile</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj InMemoryWritableFile : leveldb::WritableFile
+{
+  std::shared_ptr&lt;InMemoryFile&gt; mFile;
+};
+
+</code></pre></div><h3 id="ifaddrs"><a href="#ifaddrs" class="header-anchor">#</a> <code>ifaddrs</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ifaddrs
+{
+  ifaddrs *ifa_next;
+  char *ifa_name;
+  unsigned int ifa_flags;
+  sockaddr *ifa_addr;
+  sockaddr *ifa_netmask;
+  ifaddrs::$84E426BE247030D232EE932B77F5CBF6 ifa_ifu;
+  void *ifa_data;
+};
+
+</code></pre></div><h3 id="itaskexecutioncontext"><a href="#itaskexecutioncontext" class="header-anchor">#</a> <code>ITaskExecutionContext</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ITaskExecutionContext
+{
+  int (**_vptr$ITaskExecutionContext)(void);
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/H.html" class="prev">
+        H
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/J.html">
+        J
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/41.420acfde.js" defer></script>
+  </body>
+</html>

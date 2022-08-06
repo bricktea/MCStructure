@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>A | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/33.6602f7d9.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" aria-current="page" class="active sidebar-link">A</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="a"><a href="#a" class="header-anchor">#</a> A</h1> <h3 id="abilities"><a href="#abilities" class="header-anchor">#</a> <code>Abilities</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::unique_ptr&lt;PermissionsHandler&gt;</code></td> <td>mPermissions</td></tr> <tr><td>8</td> <td>(216) <code>std::array&lt;Ability,18&gt;</code></td> <td>mAbilities</td></tr> <tr><td>224</td> <td>(96) <code>std::array&lt;Ability,8&gt;</code></td> <td>mCustomAbilityCache</td></tr></tbody></table> <h3 id="ability-value"><a href="#ability-value" class="header-anchor">#</a> <code>Ability::Value</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mBoolVal</td></tr> <tr><td>1</td> <td>(4) <code>float</code></td> <td>mFloatVal</td></tr></tbody></table> <h3 id="adventuresettings"><a href="#adventuresettings" class="header-anchor">#</a> <code>AdventureSettings</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>noPvM</td></tr> <tr><td>1</td> <td>(1) <code>bool</code></td> <td>noMvP</td></tr> <tr><td>2</td> <td>(1) <code>bool</code></td> <td>immutableWorld</td></tr> <tr><td>3</td> <td>(1) <code>bool</code></td> <td>showNameTags</td></tr> <tr><td>4</td> <td>(1) <code>bool</code></td> <td>autoJump</td></tr></tbody></table> <h3 id="adventuresettingspacket"><a href="#adventuresettingspacket" class="header-anchor">#</a> <code>AdventureSettingsPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(4) <code>uint32_t</code></td> <td>mFlags</td></tr> <tr><td>40</td> <td>(1) <code>CommandPermissionLevel</code></td> <td>mUserPermissions</td></tr> <tr><td>44</td> <td>(4) <code>uint32_t</code></td> <td>mPermissionsFlags</td></tr> <tr><td>48</td> <td>(1) <code>PlayerPermissionLevel</code></td> <td>mPlayerPermissions</td></tr> <tr><td>56</td> <td>(8) <code>ActorUniqueID</code></td> <td>mSyncPlayerId</td></tr> <tr><td>64</td> <td>(1) <code>bool</code></td> <td>mDefaultLevelAbilities</td></tr> <tr><td>68</td> <td>(4) <code>uint32_t</code></td> <td>mCustomAbilityCache</td></tr></tbody></table> <h3 id="actoruniqueid"><a href="#actoruniqueid" class="header-anchor">#</a> <code>ActorUniqueID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int64_t</code></td> <td>rawID</td></tr></tbody></table> <h3 id="aabb"><a href="#aabb" class="header-anchor">#</a> <code>AABB</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Vec3</code></td> <td>min</td></tr> <tr><td>12</td> <td>(12) <code>Vec3</code></td> <td>max</td></tr> <tr><td>24</td> <td>(1) <code>bool</code></td> <td>empty</td></tr></tbody></table> <h3 id="actorlist"><a href="#actorlist" class="header-anchor">#</a> <code>ActorList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;Actor *&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="appendonlyatomiclookuptable-subchunk-16"><a href="#appendonlyatomiclookuptable-subchunk-16" class="header-anchor">#</a> <code>AppendOnlyAtomicLookupTable&lt;SubChunk,16&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(896) <code>std::aligned_storage&lt;56,8&gt;::type[16]</code></td> <td>mArray</td></tr> <tr><td>896</td> <td>(8) <code>std::atomic_size_t</code></td> <td>mSize</td></tr> <tr><td>904</td> <td>(32) <code>SpinLock</code></td> <td>mAppendLock</td></tr></tbody></table> <h3 id="actoreventpacket"><a href="#actoreventpacket" class="header-anchor">#</a> <code>ActorEventPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mRuntimeId</td></tr> <tr><td>48</td> <td>(1) <code>ActorEvent</code></td> <td>mEventId</td></tr> <tr><td>52</td> <td>(4) <code>int</code></td> <td>mData</td></tr></tbody></table> <h3 id="actorruntimeid"><a href="#actorruntimeid" class="header-anchor">#</a> <code>ActorRuntimeID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>uint64_t</code></td> <td>rawID</td></tr></tbody></table> <h3 id="actorservercommandorigin"><a href="#actorservercommandorigin" class="header-anchor">#</a> <code>ActorServerCommandOrigin</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>ActorCommandOrigin</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorcommandorigin"><a href="#actorcommandorigin" class="header-anchor">#</a> <code>ActorCommandOrigin</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>CommandOrigin</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>ActorUniqueID</code></td> <td>mEntityId</td></tr> <tr><td>32</td> <td>(8) <code>Level *</code></td> <td>mLevel</td></tr></tbody></table> <h3 id="actorcomponent"><a href="#actorcomponent" class="header-anchor">#</a> <code>ActorComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Actor *</code></td> <td>mActor</td></tr></tbody></table> <h3 id="ageablecomponent"><a href="#ageablecomponent" class="header-anchor">#</a> <code>AgeableComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mAge</td></tr></tbody></table> <h3 id="agentcommandcomponent"><a href="#agentcommandcomponent" class="header-anchor">#</a> <code>AgentCommandComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Unique&lt;AgentCommands::Command&gt;</code></td> <td>mCurrentCommand</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mWaitForNextCommandTicks</td></tr></tbody></table> <h3 id="angrycomponent"><a href="#angrycomponent" class="header-anchor">#</a> <code>AngryComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mDuration</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mDurationDelta</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mHasTicked</td></tr> <tr><td>9</td> <td>(1) <code>bool</code></td> <td>mBroadcastAnger</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>mBroadcastRange</td></tr> <tr><td>16</td> <td>(64) <code>ActorFilterGroup</code></td> <td>mBroadcastFilter</td></tr></tbody></table> <h3 id="actorfiltergroup"><a href="#actorfiltergroup" class="header-anchor">#</a> <code>ActorFilterGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(64) <code>FilterGroup</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actordamagebyactorsource"><a href="#actordamagebyactorsource" class="header-anchor">#</a> <code>ActorDamageByActorSource</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>ActorDamageSource</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(8) <code>BlockSource *</code></td> <td>mRegion</td></tr> <tr><td>24</td> <td>(1) <code>bool</code></td> <td>mIsWorldBuilder</td></tr> <tr><td>25</td> <td>(1) <code>bool</code></td> <td>mIsCreative</td></tr> <tr><td>32</td> <td>(8) <code>ActorUniqueID</code></td> <td>mEntityID</td></tr> <tr><td>40</td> <td>(4) <code>ActorType</code></td> <td>mEntityType</td></tr> <tr><td>44</td> <td>(4) <code>ActorCategory</code></td> <td>mEntityCategories</td></tr> <tr><td>48</td> <td>(32) <code>std::string</code></td> <td>mEntityNameTag</td></tr></tbody></table> <h3 id="actordamagesource"><a href="#actordamagesource" class="header-anchor">#</a> <code>ActorDamageSource</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ActorDamageSource</td></tr> <tr><td>8</td> <td>(4) <code>ActorDamageCause</code></td> <td>mCause</td></tr></tbody></table> <h3 id="areaattackcomponent"><a href="#areaattackcomponent" class="header-anchor">#</a> <code>AreaAttackComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mDamageRange</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mDamagePerTick</td></tr> <tr><td>8</td> <td>(4) <code>ActorDamageCause</code></td> <td>mDamageCause</td></tr> <tr><td>16</td> <td>(64) <code>ActorFilterGroup</code></td> <td>mEntityFilter</td></tr></tbody></table> <h3 id="actorflagcomponent-burnsindaylightflag"><a href="#actorflagcomponent-burnsindaylightflag" class="header-anchor">#</a> <code>ActorFlagComponent&lt;BurnsInDaylightFlag&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorflagcomponent-environmentsensorflag"><a href="#actorflagcomponent-environmentsensorflag" class="header-anchor">#</a> <code>ActorFlagComponent&lt;EnvironmentSensorFlag&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actordefinitionidentifier"><a href="#actordefinitionidentifier" class="header-anchor">#</a> <code>ActorDefinitionIdentifier</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mNamespace</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>mIdentifier</td></tr> <tr><td>64</td> <td>(32) <code>std::string</code></td> <td>mInitEvent</td></tr> <tr><td>96</td> <td>(32) <code>std::string</code></td> <td>mFullName</td></tr> <tr><td>128</td> <td>(40) <code>HashedString</code></td> <td>mCanonicalName</td></tr></tbody></table> <h3 id="actorlink"><a href="#actorlink" class="header-anchor">#</a> <code>ActorLink</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>ActorLinkType</code></td> <td>type</td></tr> <tr><td>8</td> <td>(8) <code>ActorUniqueID</code></td> <td>A</td></tr> <tr><td>16</td> <td>(8) <code>ActorUniqueID</code></td> <td>B</td></tr> <tr><td>24</td> <td>(1) <code>bool</code></td> <td>mImmediate</td></tr></tbody></table> <h3 id="actorinfo"><a href="#actorinfo" class="header-anchor">#</a> <code>ActorInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>unsigned int</code></td> <td>mRuntimeId</td></tr> <tr><td>8</td> <td>(168) <code>ActorDefinitionIdentifier</code></td> <td>mIdentifier</td></tr> <tr><td>176</td> <td>(168) <code>ActorDefinitionIdentifier</code></td> <td>mBaseIdentifier</td></tr> <tr><td>344</td> <td>(1) <code>bool</code></td> <td>mHasSpawnEgg</td></tr> <tr><td>345</td> <td>(1) <code>bool</code></td> <td>mIsSummonable</td></tr> <tr><td>346</td> <td>(1) <code>bool</code></td> <td>mIsExperimental</td></tr></tbody></table> <h3 id="availablecommandspacket-commanddata"><a href="#availablecommandspacket-commanddata" class="header-anchor">#</a> <code>AvailableCommandsPacket::CommandData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>name</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>description</td></tr> <tr><td>64</td> <td>(1) <code>uint8_t</code></td> <td>flags</td></tr> <tr><td>65</td> <td>(1) <code>CommandPermissionLevel</code></td> <td>permission</td></tr> <tr><td>72</td> <td>(24) <code>std::vector&lt;AvailableCommandsPacket::OverloadData&gt;</code></td> <td>overloads</td></tr> <tr><td>96</td> <td>(4) <code>int</code></td> <td>aliasEnum</td></tr></tbody></table> <h3 id="availablecommandspacket-overloaddata"><a href="#availablecommandspacket-overloaddata" class="header-anchor">#</a> <code>AvailableCommandsPacket::OverloadData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;AvailableCommandsPacket::ParamData&gt;</code></td> <td>params</td></tr></tbody></table> <h3 id="availablecommandspacket-constrainedvaluedata"><a href="#availablecommandspacket-constrainedvaluedata" class="header-anchor">#</a> <code>AvailableCommandsPacket::ConstrainedValueData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>enumValueSymbol</td></tr> <tr><td>4</td> <td>(4) <code>uint32_t</code></td> <td>enumSymbol</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;unsigned char&gt;</code></td> <td>constraints</td></tr></tbody></table> <h3 id="availablecommandspacket-paramdata"><a href="#availablecommandspacket-paramdata" class="header-anchor">#</a> <code>AvailableCommandsPacket::ParamData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>name</td></tr> <tr><td>32</td> <td>(4) <code>uint32_t</code></td> <td>parseSymbol</td></tr> <tr><td>36</td> <td>(1) <code>bool</code></td> <td>optional</td></tr> <tr><td>37</td> <td>(1) <code>uint8_t</code></td> <td>paramOptions</td></tr></tbody></table> <h3 id="allworkerconfigurations"><a href="#allworkerconfigurations" class="header-anchor">#</a> <code>AllWorkerConfigurations</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>ThreadConfiguration</code></td> <td>MainThread</td></tr> <tr><td>32</td> <td>(32) <code>ThreadConfiguration</code></td> <td>ServerThread</td></tr> <tr><td>64</td> <td>(40) <code>WorkerConfiguration</code></td> <td>Async</td></tr> <tr><td>104</td> <td>(40) <code>WorkerConfiguration</code></td> <td>Disk</td></tr> <tr><td>144</td> <td>(40) <code>WorkerConfiguration</code></td> <td>Network</td></tr> <tr><td>184</td> <td>(40) <code>WorkerConfiguration</code></td> <td>Rendering</td></tr> <tr><td>224</td> <td>(40) <code>WorkerConfiguration</code></td> <td>LevelDB</td></tr> <tr><td>264</td> <td>(40) <code>WorkerConfiguration</code></td> <td>LevelDBCompaction</td></tr> <tr><td>304</td> <td>(40) <code>WorkerConfiguration</code></td> <td>ConnectedStorage</td></tr> <tr><td>344</td> <td>(40) <code>WorkerConfiguration</code></td> <td>Watchdog</td></tr></tbody></table> <h3 id="animatepacket"><a href="#animatepacket" class="header-anchor">#</a> <code>AnimatePacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mRuntimeId</td></tr> <tr><td>48</td> <td>(4) <code>AnimatePacket::Action</code></td> <td>mAction</td></tr> <tr><td>52</td> <td>(4) <code>float</code></td> <td>mData</td></tr></tbody></table> <h3 id="autocompleteoption"><a href="#autocompleteoption" class="header-anchor">#</a> <code>AutoCompleteOption</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>visualText</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>tabCompleteText</td></tr> <tr><td>64</td> <td>(32) <code>std::string</code></td> <td>description</td></tr> <tr><td>96</td> <td>(4) <code>AutoCompleteOption::CursorPos</code></td> <td>matchStart</td></tr> <tr><td>100</td> <td>(4) <code>AutoCompleteOption::CursorPos</code></td> <td>matchLength</td></tr> <tr><td>104</td> <td>(4) <code>AutoCompleteOption::CursorPos</code></td> <td>commandLineMatchStart</td></tr> <tr><td>108</td> <td>(4) <code>AutoCompleteOption::CursorPos</code></td> <td>commandLineMatchOffset</td></tr> <tr><td>112</td> <td>(8) <code>CommandItem</code></td> <td>item</td></tr> <tr><td>120</td> <td>(1) <code>bool</code></td> <td>highlight</td></tr></tbody></table> <h3 id="automaticid-dimension-int"><a href="#automaticid-dimension-int" class="header-anchor">#</a> <code>AutomaticID&lt;Dimension,int&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>runtimeID</td></tr></tbody></table> <h3 id="actordamagebyblocksource"><a href="#actordamagebyblocksource" class="header-anchor">#</a> <code>ActorDamageByBlockSource</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>ActorDamageSource</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr></tbody></table> <h3 id="actordefinitionptr"><a href="#actordefinitionptr" class="header-anchor">#</a> <code>ActorDefinitionPtr</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ActorDefinitionGroup *</code></td> <td>mGroup</td></tr> <tr><td>8</td> <td>(8) <code>ActorDefinition *</code></td> <td>mPtr</td></tr></tbody></table> <h3 id="actorlink-list"><a href="#actorlink-list" class="header-anchor">#</a> <code>ActorLink::List</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;ActorLink&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorfallpacket"><a href="#actorfallpacket" class="header-anchor">#</a> <code>ActorFallPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mEntityID</td></tr> <tr><td>48</td> <td>(4) <code>float</code></td> <td>mDistance</td></tr> <tr><td>52</td> <td>(1) <code>bool</code></td> <td>mOutOfWorld</td></tr></tbody></table> <h3 id="actionevent"><a href="#actionevent" class="header-anchor">#</a> <code>ActionEvent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mActionId</td></tr> <tr><td>4</td> <td>(4) <code>ActionEvent::ActionState</code></td> <td>mActionState</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mIsExclusive</td></tr> <tr><td>9</td> <td>(1) <code>FocusImpact</code></td> <td>mFocusImpact</td></tr></tbody></table> <h3 id="actorflagcomponent-persistentflag"><a href="#actorflagcomponent-persistentflag" class="header-anchor">#</a> <code>ActorFlagComponent&lt;PersistentFlag&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actordefinition-parseattributes-6bafc40004d8c3e8e3a064c81f470774"><a href="#actordefinition-parseattributes-6bafc40004d8c3e8e3a064c81f470774" class="header-anchor">#</a> <code>ActorDefinition::parseAttributes::$6BAFC40004D8C3E8E3A064C81F470774</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>__gnu_cxx::__normal_iterator&lt;std::string *,std::vector&lt;std::string&gt; &gt; *</code></td> <td>iter</td></tr> <tr><td>8</td> <td>(8) <code>ActorDefinition *</code></td> <td>this</td></tr> <tr><td>16</td> <td>(8) <code>ActorDefinitionDescriptor *</code></td> <td>desc</td></tr></tbody></table> <h3 id="actordefinition-parse-aae48c984d581248eccf7b3c863dec20"><a href="#actordefinition-parse-aae48c984d581248eccf7b3c863dec20" class="header-anchor">#</a> <code>ActorDefinition::parse::$AAE48C984D581248ECCF7B3C863DEC20</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::string *</code></td> <td>name</td></tr> <tr><td>8</td> <td>(8) <code>Json::Value *</code></td> <td>root</td></tr> <tr><td>16</td> <td>(8) <code>ActorDefinition *</code></td> <td>this</td></tr> <tr><td>24</td> <td>(8) <code>ActorDefinitionDescriptor *</code></td> <td>desc</td></tr></tbody></table> <h3 id="actordefinitionattribute"><a href="#actordefinitionattribute" class="header-anchor">#</a> <code>ActorDefinitionAttribute</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>name</td></tr> <tr><td>32</td> <td>(4) <code>float</code></td> <td>min</td></tr> <tr><td>36</td> <td>(4) <code>float</code></td> <td>max</td></tr> <tr><td>40</td> <td>(8) <code>FloatRange</code></td> <td>value</td></tr></tbody></table> <h3 id="actordefinitiondescriptor"><a href="#actordefinitiondescriptor" class="header-anchor">#</a> <code>ActorDefinitionDescriptor</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_set&lt;Util::HashString,Util::HashString::HashFunc,std::equal_to&lt;Util::HashString&gt;,std::allocator&lt;Util::HashString&gt; &gt;</code></td> <td>mComponentNames</td></tr> <tr><td>56</td> <td>(40) <code>IdentifierDescription</code></td> <td>mIdentifier</td></tr> <tr><td>96</td> <td>(40) <code>RuntimeIdentifierDescription</code></td> <td>mRuntimeIdentifier</td></tr> <tr><td>136</td> <td>(16) <code>IsSpawnableDescription</code></td> <td>mIsSpawnable</td></tr> <tr><td>152</td> <td>(16) <code>IsSummonableDescription</code></td> <td>mIsSummonable</td></tr> <tr><td>168</td> <td>(16) <code>IsExperimentalDescription</code></td> <td>mIsExperimental</td></tr> <tr><td>184</td> <td>(64) <code>AnimationsDescription</code></td> <td>mAnimationsDescription</td></tr> <tr><td>248</td> <td>(32) <code>AnimationScriptsDescription</code></td> <td>mAnimationScriptsDescription</td></tr> <tr><td>280</td> <td>(24) <code>std::vector&lt;GoalDefinition&gt;</code></td> <td>mGoalDefinitions</td></tr> <tr><td>304</td> <td>(24) <code>std::vector&lt;ActorDefinitionAttribute&gt;</code></td> <td>mAttributes</td></tr> <tr><td>328</td> <td>(56) <code>std::unordered_map&lt;std::string,DefinitionEvent&gt;</code></td> <td>mEventHandlers</td></tr> <tr><td>384</td> <td>(136) <code>DefinitionInstanceGroup</code></td> <td>mComponentDefinitionGroup</td></tr> <tr><td>520</td> <td>(8) <code>Description *</code></td> <td>mAttack</td></tr> <tr><td>528</td> <td>(8) <code>Description *</code></td> <td>mMobEffects</td></tr> <tr><td>536</td> <td>(8) <code>Description *</code></td> <td>mAmbientSoundInterval</td></tr> <tr><td>544</td> <td>(8) <code>Description *</code></td> <td>mCanClimb</td></tr> <tr><td>552</td> <td>(8) <code>Description *</code></td> <td>mCanFly</td></tr> <tr><td>560</td> <td>(8) <code>Description *</code></td> <td>mCanPowerJump</td></tr> <tr><td>568</td> <td>(8) <code>Description *</code></td> <td>mCollisionBox</td></tr> <tr><td>576</td> <td>(8) <code>Description *</code></td> <td>mColor2</td></tr> <tr><td>584</td> <td>(8) <code>Description *</code></td> <td>mColor</td></tr> <tr><td>592</td> <td>(8) <code>Description *</code></td> <td>mDefaultLookAngle</td></tr> <tr><td>600</td> <td>(8) <code>Description *</code></td> <td>mDyeable</td></tr> <tr><td>608</td> <td>(8) <code>Description *</code></td> <td>mEquipmentTable</td></tr> <tr><td>616</td> <td>(8) <code>Description *</code></td> <td>mFamilyTypes</td></tr> <tr><td>624</td> <td>(8) <code>Description *</code></td> <td>mFireImmune</td></tr> <tr><td>632</td> <td>(8) <code>Description *</code></td> <td>mFloatsInLiquid</td></tr> <tr><td>640</td> <td>(8) <code>Description *</code></td> <td>mFlyingSpeed</td></tr> <tr><td>648</td> <td>(8) <code>Description *</code></td> <td>mFootSize</td></tr> <tr><td>656</td> <td>(8) <code>Description *</code></td> <td>mFrictionModifier</td></tr> <tr><td>664</td> <td>(8) <code>Description *</code></td> <td>mSurfaceOffset</td></tr> <tr><td>672</td> <td>(8) <code>Description *</code></td> <td>mIsBaby</td></tr> <tr><td>680</td> <td>(8) <code>Description *</code></td> <td>mIsCharged</td></tr> <tr><td>688</td> <td>(8) <code>Description *</code></td> <td>mIsChested</td></tr> <tr><td>696</td> <td>(8) <code>Description *</code></td> <td>mIsHiddenWhenInvisible</td></tr> <tr><td>704</td> <td>(8) <code>Description *</code></td> <td>mIsIgnited</td></tr> <tr><td>712</td> <td>(8) <code>Description *</code></td> <td>mIsIllagerCaptain</td></tr> <tr><td>720</td> <td>(8) <code>Description *</code></td> <td>mIsSaddled</td></tr> <tr><td>728</td> <td>(8) <code>Description *</code></td> <td>mIsShaking</td></tr> <tr><td>736</td> <td>(8) <code>Description *</code></td> <td>mIsSheared</td></tr> <tr><td>744</td> <td>(8) <code>Description *</code></td> <td>mIsStunned</td></tr> <tr><td>752</td> <td>(8) <code>Description *</code></td> <td>mIsStackable</td></tr> <tr><td>760</td> <td>(8) <code>Description *</code></td> <td>mIsTamed</td></tr> <tr><td>768</td> <td>(8) <code>Description *</code></td> <td>mItemControllable</td></tr> <tr><td>776</td> <td>(8) <code>Description *</code></td> <td>mLootTable</td></tr> <tr><td>784</td> <td>(8) <code>Description *</code></td> <td>mPushthrough</td></tr> <tr><td>792</td> <td>(8) <code>Description *</code></td> <td>mScale</td></tr> <tr><td>800</td> <td>(8) <code>Description *</code></td> <td>mSoundVolume</td></tr> <tr><td>808</td> <td>(8) <code>Description *</code></td> <td>mWalkAnimSpeedMultiplier</td></tr> <tr><td>816</td> <td>(8) <code>Description *</code></td> <td>mWantsJockey</td></tr> <tr><td>824</td> <td>(8) <code>Description *</code></td> <td>mWASDControlled</td></tr> <tr><td>832</td> <td>(8) <code>Description *</code></td> <td>mOnDeath</td></tr> <tr><td>840</td> <td>(8) <code>Description *</code></td> <td>mOnFriendlyAnger</td></tr> <tr><td>848</td> <td>(8) <code>Description *</code></td> <td>mOnHurtByPlayer</td></tr> <tr><td>856</td> <td>(8) <code>Description *</code></td> <td>mOnHurt</td></tr> <tr><td>864</td> <td>(8) <code>Description *</code></td> <td>mOnIgnite</td></tr> <tr><td>872</td> <td>(8) <code>Description *</code></td> <td>mOnStartLanding</td></tr> <tr><td>880</td> <td>(8) <code>Description *</code></td> <td>mOnStartTakeoff</td></tr> <tr><td>888</td> <td>(8) <code>Description *</code></td> <td>mOnTargetAcquired</td></tr> <tr><td>896</td> <td>(8) <code>Description *</code></td> <td>mOnTargetEscape</td></tr> <tr><td>904</td> <td>(8) <code>Description *</code></td> <td>mOnWakeWithOwner</td></tr> <tr><td>912</td> <td>(8) <code>Description *</code></td> <td>mAmphibiousMoveControl</td></tr> <tr><td>920</td> <td>(8) <code>Description *</code></td> <td>mAngry</td></tr> <tr><td>928</td> <td>(8) <code>Description *</code></td> <td>mBehavior</td></tr> <tr><td>936</td> <td>(8) <code>Description *</code></td> <td>mBreakBlocks</td></tr> <tr><td>944</td> <td>(8) <code>Description *</code></td> <td>mBreakDoorAnnotation</td></tr> <tr><td>952</td> <td>(8) <code>Description *</code></td> <td>mBucketable</td></tr> <tr><td>960</td> <td>(8) <code>Description *</code></td> <td>mCommandBlock</td></tr> <tr><td>968</td> <td>(8) <code>Description *</code></td> <td>mContainer</td></tr> <tr><td>976</td> <td>(8) <code>Description *</code></td> <td>mDespawn</td></tr> <tr><td>984</td> <td>(8) <code>Description *</code></td> <td>mDweller</td></tr> <tr><td>992</td> <td>(8) <code>Description *</code></td> <td>mGenericMoveControl</td></tr> <tr><td>1000</td> <td>(8) <code>Description *</code></td> <td>mGlideMoveControl</td></tr> <tr><td>1008</td> <td>(8) <code>Description *</code></td> <td>mHide</td></tr> <tr><td>1016</td> <td>(8) <code>Description *</code></td> <td>mIllagerBeastBlocked</td></tr> <tr><td>1024</td> <td>(8) <code>Description *</code></td> <td>mManagedWanderingTrader</td></tr> <tr><td>1032</td> <td>(8) <code>Description *</code></td> <td>mMarkVariant</td></tr> <tr><td>1040</td> <td>(8) <code>Description *</code></td> <td>mMoveControl</td></tr> <tr><td>1048</td> <td>(8) <code>Description *</code></td> <td>mDolphinSwimControl</td></tr> <tr><td>1056</td> <td>(8) <code>Description *</code></td> <td>mFlyControl</td></tr> <tr><td>1064</td> <td>(8) <code>Description *</code></td> <td>mHopControl</td></tr> <tr><td>1072</td> <td>(8) <code>Description *</code></td> <td>mHoverControl</td></tr> <tr><td>1080</td> <td>(8) <code>Description *</code></td> <td>mSwimControl</td></tr> <tr><td>1088</td> <td>(8) <code>Description *</code></td> <td>mNameable</td></tr> <tr><td>1096</td> <td>(8) <code>Description *</code></td> <td>mWallClimberNavigation</td></tr> <tr><td>1104</td> <td>(8) <code>Description *</code></td> <td>mFloatNavigation</td></tr> <tr><td>1112</td> <td>(8) <code>Description *</code></td> <td>mFlyingNavigation</td></tr> <tr><td>1120</td> <td>(8) <code>Description *</code></td> <td>mHoverNavigation</td></tr> <tr><td>1128</td> <td>(8) <code>Description *</code></td> <td>mGenericNavigation</td></tr> <tr><td>1136</td> <td>(8) <code>Description *</code></td> <td>mWaterboundNavigation</td></tr> <tr><td>1144</td> <td>(8) <code>Description *</code></td> <td>mNavigation</td></tr> <tr><td>1152</td> <td>(8) <code>Description *</code></td> <td>mPersistent</td></tr> <tr><td>1160</td> <td>(8) <code>Description *</code></td> <td>mPreferredPath</td></tr> <tr><td>1168</td> <td>(8) <code>Description *</code></td> <td>mProjectile</td></tr> <tr><td>1176</td> <td>(8) <code>Description *</code></td> <td>mPushable</td></tr> <tr><td>1184</td> <td>(8) <code>Description *</code></td> <td>mRaidTrigger</td></tr> <tr><td>1192</td> <td>(8) <code>Description *</code></td> <td>mRailActivator</td></tr> <tr><td>1200</td> <td>(8) <code>Description *</code></td> <td>mRideable</td></tr> <tr><td>1208</td> <td>(8) <code>Description *</code></td> <td>mShooter</td></tr> <tr><td>1216</td> <td>(8) <code>Description *</code></td> <td>mSittable</td></tr> <tr><td>1224</td> <td>(8) <code>Description *</code></td> <td>mSkinID</td></tr> <tr><td>1232</td> <td>(8) <code>Description *</code></td> <td>mSlimeMoveControl</td></tr> <tr><td>1240</td> <td>(8) <code>Description *</code></td> <td>mSpawnEntity</td></tr> <tr><td>1248</td> <td>(8) <code>Description *</code></td> <td>mStrength</td></tr> <tr><td>1256</td> <td>(8) <code>Description *</code></td> <td>mTags</td></tr> <tr><td>1264</td> <td>(8) <code>Description *</code></td> <td>mTameable</td></tr> <tr><td>1272</td> <td>(8) <code>Description *</code></td> <td>mTrail</td></tr> <tr><td>1280</td> <td>(8) <code>Description *</code></td> <td>mTrusting</td></tr> <tr><td>1288</td> <td>(8) <code>Description *</code></td> <td>mTargetNearby</td></tr> <tr><td>1296</td> <td>(8) <code>Description *</code></td> <td>mTeleport</td></tr> <tr><td>1304</td> <td>(8) <code>Description *</code></td> <td>mTickWorld</td></tr> <tr><td>1312</td> <td>(8) <code>Description *</code></td> <td>mTimer</td></tr> <tr><td>1320</td> <td>(8) <code>Description *</code></td> <td>mTradeResupply</td></tr> <tr><td>1328</td> <td>(8) <code>Description *</code></td> <td>mTrust</td></tr> <tr><td>1336</td> <td>(8) <code>Description *</code></td> <td>mEconomyTradeable</td></tr> <tr><td>1344</td> <td>(8) <code>Description *</code></td> <td>mTransformation</td></tr> <tr><td>1352</td> <td>(8) <code>Description *</code></td> <td>mVariant</td></tr> <tr><td>1360</td> <td>(8) <code>Description *</code></td> <td>mWaterMovement</td></tr> <tr><td>1368</td> <td>(8) <code>Description *</code></td> <td>mDynamicJumpControl</td></tr> <tr><td>1376</td> <td>(8) <code>Description *</code></td> <td>mJumpControl</td></tr> <tr><td>1384</td> <td>(8) <code>Description *</code></td> <td>mOpenDoorAnnotation</td></tr> <tr><td>1392</td> <td>(8) <code>Description *</code></td> <td>mNpc</td></tr> <tr><td>1400</td> <td>(8) <code>Description *</code></td> <td>mTripodCamera</td></tr></tbody></table> <h3 id="animationsdescription"><a href="#animationsdescription" class="header-anchor">#</a> <code>AnimationsDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ComponentDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(56) <code>std::unordered_map&lt;HashedString,HashedString&gt;</code></td> <td>mActorAnimationMap</td></tr></tbody></table> <h3 id="animationscriptsdescription"><a href="#animationscriptsdescription" class="header-anchor">#</a> <code>AnimationScriptsDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ComponentDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;std::pair&lt;HashedString,ExpressionNode&gt;&gt;</code></td> <td>mAnimateScript</td></tr></tbody></table> <h3 id="actorskeletalanimationptr"><a href="#actorskeletalanimationptr" class="header-anchor">#</a> <code>ActorSkeletalAnimationPtr</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::shared_ptr&lt;ActorAnimationInfo&gt;</code></td> <td>mActorAnimationInfoPtr</td></tr></tbody></table> <h3 id="actoranimationcontrollerptr"><a href="#actoranimationcontrollerptr" class="header-anchor">#</a> <code>ActorAnimationControllerPtr</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::shared_ptr&lt;ActorAnimationControllerInfo&gt;</code></td> <td>mActorAnimationControllerInfoPtr</td></tr></tbody></table> <h3 id="actorfactorydata"><a href="#actorfactorydata" class="header-anchor">#</a> <code>ActorFactoryData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(168) <code>ActorDefinitionIdentifier</code></td> <td>mIdentifier</td></tr> <tr><td>168</td> <td>(168) <code>ActorDefinitionIdentifier</code></td> <td>mBaseIdentifier</td></tr> <tr><td>336</td> <td>(1) <code>bool</code></td> <td>mAllowSummon</td></tr> <tr><td>344</td> <td>(8) <code>ActorFactoryFunction</code></td> <td>mFactory</td></tr> <tr><td>352</td> <td>(1) <code>bool</code></td> <td>mIsExperimental</td></tr> <tr><td>356</td> <td>(4) <code>ActorType</code></td> <td>mActorType</td></tr> <tr><td>360</td> <td>(4) <code>float</code></td> <td>mWalkAnimSpeed</td></tr></tbody></table> <h3 id="actorinteraction-oninteraction"><a href="#actorinteraction-oninteraction" class="header-anchor">#</a> <code>ActorInteraction::OnInteraction</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="actordatamap"><a href="#actordatamap" class="header-anchor">#</a> <code>ActorDataMap</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;std::string,ActorFactoryData&gt;::_Hashtable</code></td> <td>_M_h</td></tr></tbody></table> <h3 id="actordamagebychildactorsource"><a href="#actordamagebychildactorsource" class="header-anchor">#</a> <code>ActorDamageByChildActorSource</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(80) <code>ActorDamageByActorSource</code></td> <td>baseclass_0</td></tr> <tr><td>80</td> <td>(1) <code>bool</code></td> <td>mDamagingActorIsWorldBuilder</td></tr> <tr><td>81</td> <td>(1) <code>bool</code></td> <td>mDamagingActorIsCreative</td></tr> <tr><td>88</td> <td>(8) <code>ActorUniqueID</code></td> <td>mDamagingActorId</td></tr> <tr><td>96</td> <td>(4) <code>ActorType</code></td> <td>mDamagingActorType</td></tr> <tr><td>100</td> <td>(4) <code>ActorCategory</code></td> <td>mDamagingActorCategories</td></tr> <tr><td>104</td> <td>(32) <code>std::string</code></td> <td>mDamagingActorNameTag</td></tr></tbody></table> <h3 id="actorparticleeffect"><a href="#actorparticleeffect" class="header-anchor">#</a> <code>ActorParticleEffect</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>HashedString</code></td> <td>mParticleEffectName</td></tr> <tr><td>40</td> <td>(40) <code>HashedString</code></td> <td>mLocatorName</td></tr> <tr><td>80</td> <td>(128) <code>ExpressionNode</code></td> <td>mInitializationScripts</td></tr> <tr><td>208</td> <td>(1) <code>bool</code></td> <td>mBindToActor</td></tr></tbody></table> <h3 id="actorsoundeffect"><a href="#actorsoundeffect" class="header-anchor">#</a> <code>ActorSoundEffect</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>HashedString</code></td> <td>mSoundEffectName</td></tr></tbody></table> <h3 id="actorparticleeffectevent"><a href="#actorparticleeffectevent" class="header-anchor">#</a> <code>ActorParticleEffectEvent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(216) <code>ActorParticleEffect</code></td> <td>mParticleEffect</td></tr> <tr><td>216</td> <td>(4) <code>float</code></td> <td>mTime</td></tr></tbody></table> <h3 id="actorsoundeffectevent"><a href="#actorsoundeffectevent" class="header-anchor">#</a> <code>ActorSoundEffectEvent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>ActorSoundEffect</code></td> <td>mSoundEffect</td></tr> <tr><td>40</td> <td>(4) <code>float</code></td> <td>mTime</td></tr></tbody></table> <h3 id="actoranimationevent"><a href="#actoranimationevent" class="header-anchor">#</a> <code>ActorAnimationEvent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(128) <code>ExpressionNode</code></td> <td>mExpression</td></tr> <tr><td>128</td> <td>(40) <code>HashedString</code></td> <td>mCommand</td></tr> <tr><td>168</td> <td>(4) <code>CurrentCmdVersion</code></td> <td>mCommandVersion</td></tr> <tr><td>176</td> <td>(32) <code>std::string</code></td> <td>mEvent</td></tr> <tr><td>208</td> <td>(4) <code>float</code></td> <td>mTime</td></tr></tbody></table> <h3 id="actoranimationcontrollergroupparsemetadata"><a href="#actoranimationcontrollergroupparsemetadata" class="header-anchor">#</a> <code>ActorAnimationControllerGroupParseMetaData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ActorAnimationControllerGroup *</code></td> <td>mActorAnimationControllerGroup</td></tr> <tr><td>8</td> <td>(4) <code>CurrentCmdVersion</code></td> <td>mCurrentCommandVersion</td></tr></tbody></table> <h3 id="actoranimationgroupparsemetadata"><a href="#actoranimationgroupparsemetadata" class="header-anchor">#</a> <code>ActorAnimationGroupParseMetaData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ActorAnimationGroup *</code></td> <td>mActorAnimationGroup</td></tr> <tr><td>8</td> <td>(4) <code>CurrentCmdVersion</code></td> <td>mCurrentCommandVersion</td></tr></tbody></table> <h3 id="animationcomponentid"><a href="#animationcomponentid" class="header-anchor">#</a> <code>AnimationComponentID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>AnimationComponentID::$9FA17E7D7DCEEBB7713B7193F23D45BD</code></td> <td>mData</td></tr></tbody></table> <h3 id="animationcomponentid-9fa17e7d7dceebb7713b7193f23d45bd"><a href="#animationcomponentid-9fa17e7d7dceebb7713b7193f23d45bd" class="header-anchor">#</a> <code>AnimationComponentID::$9FA17E7D7DCEEBB7713B7193F23D45BD</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>AnimationComponentID::$9FA17E7D7DCEEBB7713B7193F23D45BD::$65CCC15F238CE74967BBE3340E99BC94</code></td> <td>_anon_0</td></tr> <tr><td>1</td> <td>(8) <code>uint64_t</code></td> <td>mAllBits</td></tr></tbody></table> <h3 id="animationcomponentid-9fa17e7d7dceebb7713b7193f23d45bd-65ccc15f238ce74967bbe3340e99bc94"><a href="#animationcomponentid-9fa17e7d7dceebb7713b7193f23d45bd-65ccc15f238ce74967bbe3340e99bc94" class="header-anchor">#</a> <code>AnimationComponentID::$9FA17E7D7DCEEBB7713B7193F23D45BD::$65CCC15F238CE74967BBE3340E99BC94</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>__int64</code></td> <td>_bf_0</td></tr></tbody></table> <h3 id="actorblocksyncmessage"><a href="#actorblocksyncmessage" class="header-anchor">#</a> <code>ActorBlockSyncMessage</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ActorUniqueID</code></td> <td>mEntityUniqueID</td></tr> <tr><td>8</td> <td>(4) <code>ActorBlockSyncMessage::MessageId</code></td> <td>mMessage</td></tr></tbody></table> <h3 id="attributeinstance"><a href="#attributeinstance" class="header-anchor">#</a> <code>AttributeInstance</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$AttributeInstance</td></tr> <tr><td>8</td> <td>(8) <code>BaseAttributeMap *</code></td> <td>mAttributeMap</td></tr> <tr><td>16</td> <td>(8) <code>const Attribute *</code></td> <td>mAttribute</td></tr> <tr><td>24</td> <td>(24) <code>std::vector&lt;AttributeModifier&gt;</code></td> <td>mModifierList</td></tr> <tr><td>48</td> <td>(24) <code>std::vector&lt;TemporalAttributeBuff&gt;</code></td> <td>mTemporalBuffs</td></tr> <tr><td>72</td> <td>(24) <code>std::vector&lt;AttributeInstanceHandle&gt;</code></td> <td>mListeners</td></tr> <tr><td>96</td> <td>(16) <code>std::shared_ptr&lt;AttributeInstanceDelegate&gt;</code></td> <td>mDelegate</td></tr> <tr><td>112</td> <td>(12) <code>AttributeInstance::$DA28B55148B6D6964D71615272628344</code></td> <td>_anon_0</td></tr> <tr><td>124</td> <td>(12) <code>AttributeInstance::$DA28B55148B6D6964D71615272628344</code></td> <td>_anon_1</td></tr></tbody></table> <h3 id="attributeinstance-da28b55148b6d6964d71615272628344"><a href="#attributeinstance-da28b55148b6d6964d71615272628344" class="header-anchor">#</a> <code>AttributeInstance::$DA28B55148B6D6964D71615272628344</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>AttributeInstance::$DA28B55148B6D6964D71615272628344::$CBA65015C8EB93BF42E3CAB5E288923D</code></td> <td>_anon_0</td></tr> <tr><td>1</td> <td>(12) <code>AttributeInstance::$DA28B55148B6D6964D71615272628344::$F2BAED747831077325874A72B2A106F3</code></td> <td>_anon_1</td></tr></tbody></table> <h3 id="attributeinstance-da28b55148b6d6964d71615272628344-cba65015c8eb93bf42e3cab5e288923d"><a href="#attributeinstance-da28b55148b6d6964d71615272628344-cba65015c8eb93bf42e3cab5e288923d" class="header-anchor">#</a> <code>AttributeInstance::$DA28B55148B6D6964D71615272628344::$CBA65015C8EB93BF42E3CAB5E288923D</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>float[3]</code></td> <td>mDefaultValues</td></tr></tbody></table> <h3 id="attributeinstance-da28b55148b6d6964d71615272628344-f2baed747831077325874a72b2a106f3"><a href="#attributeinstance-da28b55148b6d6964d71615272628344-f2baed747831077325874a72b2a106f3" class="header-anchor">#</a> <code>AttributeInstance::$DA28B55148B6D6964D71615272628344::$F2BAED747831077325874A72B2A106F3</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mDefaultMinValue</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mDefaultMaxValue</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mDefaultValue</td></tr></tbody></table> <h3 id="actorinteraction"><a href="#actorinteraction" class="header-anchor">#</a> <code>ActorInteraction</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mInteractText</td></tr> <tr><td>32</td> <td>(32) <code>ActorInteraction::OnInteraction</code></td> <td>mInteraction</td></tr> <tr><td>64</td> <td>(1) <code>bool</code></td> <td>mNoCapture</td></tr></tbody></table> <h3 id="attributecollection"><a href="#attributecollection" class="header-anchor">#</a> <code>AttributeCollection</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;StringKey,Attribute *&gt;</code></td> <td>mAttributesMap</td></tr> <tr><td>56</td> <td>(4) <code>uint32_t</code></td> <td>mIDValueIndex</td></tr></tbody></table> <h3 id="attributeinstance-modifiervector"><a href="#attributeinstance-modifiervector" class="header-anchor">#</a> <code>AttributeInstance::ModifierVector</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;AttributeModifier&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="attributeinstancehandle"><a href="#attributeinstancehandle" class="header-anchor">#</a> <code>AttributeInstanceHandle</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>mAttributeID</td></tr> <tr><td>8</td> <td>(8) <code>BaseAttributeMap *</code></td> <td>mAttributeMap</td></tr></tbody></table> <h3 id="attributebuffinfo"><a href="#attributebuffinfo" class="header-anchor">#</a> <code>AttributeBuffInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>AttributeBuffType</code></td> <td>type</td></tr> <tr><td>8</td> <td>(8) <code>ActorUniqueID</code></td> <td>source</td></tr></tbody></table> <h3 id="attributebuff-672"><a href="#attributebuff-672" class="header-anchor">#</a> <code>AttributeBuff:672</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$AttributeBuff</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mAmount</td></tr> <tr><td>12</td> <td>(4) <code>_BYTE[4]</code></td> <td>gapC</td></tr> <tr><td>16</td> <td>(16) <code>AttributeBuffInfo</code></td> <td>mInfo</td></tr> <tr><td>32</td> <td>(16) <code>std::shared_ptr&lt;Amplifier&gt;</code></td> <td>mValueAmplifier</td></tr> <tr><td>48</td> <td>(16) <code>std::shared_ptr&lt;Amplifier&gt;</code></td> <td>mDurationAmplifier</td></tr> <tr><td>64</td> <td>(4) <code>float</code></td> <td>mScale</td></tr> <tr><td>68</td> <td>(4) <code>int</code></td> <td>mAmplification</td></tr> <tr><td>72</td> <td>(8) <code>size_t</code></td> <td>mId</td></tr> <tr><td>80</td> <td>(4) <code>int</code></td> <td>mOperand</td></tr></tbody></table> <h3 id="anvildamagepacket"><a href="#anvildamagepacket" class="header-anchor">#</a> <code>AnvilDamagePacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(4) <code>int</code></td> <td>mDamage</td></tr> <tr><td>40</td> <td>(12) <code>NetworkBlockPosition</code></td> <td>mPosition</td></tr></tbody></table> <h3 id="attributebuff"><a href="#attributebuff" class="header-anchor">#</a> <code>AttributeBuff</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$AttributeBuff</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mAmount</td></tr> <tr><td>16</td> <td>(16) <code>AttributeBuffInfo</code></td> <td>mInfo</td></tr> <tr><td>32</td> <td>(16) <code>std::shared_ptr&lt;Amplifier&gt;</code></td> <td>mValueAmplifier</td></tr> <tr><td>48</td> <td>(16) <code>std::shared_ptr&lt;Amplifier&gt;</code></td> <td>mDurationAmplifier</td></tr> <tr><td>64</td> <td>(4) <code>float</code></td> <td>mScale</td></tr> <tr><td>68</td> <td>(4) <code>int</code></td> <td>mAmplification</td></tr> <tr><td>72</td> <td>(8) <code>size_t</code></td> <td>mId</td></tr> <tr><td>80</td> <td>(4) <code>int</code></td> <td>mOperand</td></tr></tbody></table> <h3 id="actormap"><a href="#actormap" class="header-anchor">#</a> <code>ActorMap</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;ActorUniqueID,Actor *&gt;::_Hashtable</code></td> <td>_M_h</td></tr></tbody></table> <h3 id="arbitrarybiomecomponent"><a href="#arbitrarybiomecomponent" class="header-anchor">#</a> <code>ArbitraryBiomeComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>32</td> <td>(16) <code>Json::Value</code></td> <td>mPayload</td></tr></tbody></table> <h3 id="aabbcontactpoint"><a href="#aabbcontactpoint" class="header-anchor">#</a> <code>AABBContactPoint</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mNormalIndex</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mSignedPenetration</td></tr> <tr><td>8</td> <td>(12) <code>Vec3</code></td> <td>mNormal</td></tr></tbody></table> <h3 id="actordefinitionfeeditem"><a href="#actordefinitionfeeditem" class="header-anchor">#</a> <code>ActorDefinitionFeedItem</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const Item *</code></td> <td>mItem</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mGrowth</td></tr></tbody></table> <h3 id="appconfigs-leavegamecallback"><a href="#appconfigs-leavegamecallback" class="header-anchor">#</a> <code>AppConfigs::LeaveGameCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (SceneStack &amp;,SceneFactory &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="automationclientconnectpacket"><a href="#automationclientconnectpacket" class="header-anchor">#</a> <code>AutomationClientConnectPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(32) <code>WebSocketPacketData</code></td> <td>mWebSocketData</td></tr></tbody></table> <h3 id="addridercomponent"><a href="#addridercomponent" class="header-anchor">#</a> <code>AddRiderComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(168) <code>ActorDefinitionIdentifier</code></td> <td>mRiderType</td></tr></tbody></table> <h3 id="animationvaluecurvekeyframe"><a href="#animationvaluecurvekeyframe" class="header-anchor">#</a> <code>AnimationValueCurveKeyFrame</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mInputValue</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mOutputValue</td></tr></tbody></table> <h3 id="agentcommand-agentcommandfunction"><a href="#agentcommand-agentcommandfunction" class="header-anchor">#</a> <code>AgentCommand::AgentCommandFunction</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::unique_ptr&lt;AgentCommands::Command&gt; (Player &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="actorspawnrulebase-spawnruleshandler"><a href="#actorspawnrulebase-spawnruleshandler" class="header-anchor">#</a> <code>ActorSpawnRuleBase::SpawnRulesHandler</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (const std::string &amp;,int,BiomeFilterGroup &amp;,MobSpawnRules &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="addrinfo"><a href="#addrinfo" class="header-anchor">#</a> <code>addrinfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>ai_flags</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>ai_family</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>ai_socktype</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>ai_protocol</td></tr> <tr><td>16</td> <td>(4) <code>socklen_t</code></td> <td>ai_addrlen</td></tr> <tr><td>24</td> <td>(8) <code>sockaddr *</code></td> <td>ai_addr</td></tr> <tr><td>32</td> <td>(8) <code>char *</code></td> <td>ai_canonname</td></tr> <tr><td>40</td> <td>(8) <code>addrinfo *</code></td> <td>ai_next</td></tr></tbody></table> <h3 id="armorstand-pose"><a href="#armorstand-pose" class="header-anchor">#</a> <code>ArmorStand::Pose</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Vec3</code></td> <td>mHeadPose</td></tr> <tr><td>12</td> <td>(12) <code>Vec3</code></td> <td>mBodyPose</td></tr> <tr><td>24</td> <td>(12) <code>Vec3</code></td> <td>mRightArmPose</td></tr> <tr><td>36</td> <td>(12) <code>Vec3</code></td> <td>mLeftArmPose</td></tr> <tr><td>48</td> <td>(12) <code>Vec3</code></td> <td>mRightLegPose</td></tr> <tr><td>60</td> <td>(12) <code>Vec3</code></td> <td>mLeftLegPose</td></tr> <tr><td>72</td> <td>(12) <code>Vec3</code></td> <td>mRightItemPose</td></tr></tbody></table> <h3 id="attribute"><a href="#attribute" class="header-anchor">#</a> <code>Attribute</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>RedefinitionMode</code></td> <td>mRedefinitionMode</td></tr> <tr><td>1</td> <td>(1) <code>bool</code></td> <td>mSyncable</td></tr> <tr><td>4</td> <td>(4) <code>uint32_t</code></td> <td>mIDValue</td></tr> <tr><td>8</td> <td>(40) <code>HashedString</code></td> <td>mName</td></tr></tbody></table> <h3 id="armoritem-armormaterial"><a href="#armoritem-armormaterial" class="header-anchor">#</a> <code>ArmorItem::ArmorMaterial</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mDurabilityMultiplier</td></tr> <tr><td>4</td> <td>(16) <code>int[4]</code></td> <td>slotProtections</td></tr> <tr><td>20</td> <td>(4) <code>int</code></td> <td>mEnchantmentValue</td></tr></tbody></table> <h3 id="actormapping"><a href="#actormapping" class="header-anchor">#</a> <code>ActorMapping</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mNamespace</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>mPrimaryName</td></tr> <tr><td>64</td> <td>(32) <code>std::string</code></td> <td>mAlternateName</td></tr> <tr><td>96</td> <td>(40) <code>HashedString</code></td> <td>mCanonicalName</td></tr></tbody></table> <h3 id="availablecommandspacket"><a href="#availablecommandspacket" class="header-anchor">#</a> <code>AvailableCommandsPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mEnumValues</td></tr> <tr><td>64</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mPostfixes</td></tr> <tr><td>88</td> <td>(24) <code>std::vector&lt;AvailableCommandsPacket::EnumData&gt;</code></td> <td>mEnums</td></tr> <tr><td>112</td> <td>(24) <code>std::vector&lt;AvailableCommandsPacket::CommandData&gt;</code></td> <td>mCommands</td></tr> <tr><td>136</td> <td>(24) <code>std::vector&lt;AvailableCommandsPacket::SoftEnumData&gt;</code></td> <td>mSoftEnums</td></tr> <tr><td>160</td> <td>(24) <code>std::vector&lt;AvailableCommandsPacket::ConstrainedValueData&gt;</code></td> <td>mConstraints</td></tr></tbody></table> <h3 id="availableactoridentifierspacket"><a href="#availableactoridentifierspacket" class="header-anchor">#</a> <code>AvailableActorIdentifiersPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;ActorInfo&gt;</code></td> <td>mIdentifierList</td></tr></tbody></table> <h3 id="availablecommandspacket-enumdata"><a href="#availablecommandspacket-enumdata" class="header-anchor">#</a> <code>AvailableCommandsPacket::EnumData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>name</td></tr> <tr><td>32</td> <td>(24) <code>std::vector&lt;unsigned int&gt;</code></td> <td>values</td></tr></tbody></table> <h3 id="availablecommandspacket-softenumdata"><a href="#availablecommandspacket-softenumdata" class="header-anchor">#</a> <code>AvailableCommandsPacket::SoftEnumData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>name</td></tr> <tr><td>32</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>values</td></tr></tbody></table> <h3 id="automation-automationclient"><a href="#automation-automationclient" class="header-anchor">#</a> <code>Automation::AutomationClient</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>UriListener</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actordefinitiondifflist"><a href="#actordefinitiondifflist" class="header-anchor">#</a> <code>ActorDefinitionDiffList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ActorDefinitionGroup *</code></td> <td>mDefinitions</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;std::pair&lt;bool,ActorDefinitionPtr&gt;&gt;</code></td> <td>mDefinitionStack</td></tr> <tr><td>32</td> <td>(8) <code>Unique&lt;ActorDefinitionDescriptor&gt;</code></td> <td>mChangedDescription</td></tr> <tr><td>40</td> <td>(1) <code>bool</code></td> <td>mChanged</td></tr> <tr><td>48</td> <td>(136) <code>DefinitionInstanceGroup</code></td> <td>mAddedDefinitionGroup</td></tr> <tr><td>184</td> <td>(136) <code>DefinitionInstanceGroup</code></td> <td>mRemovedDefinitionGroup</td></tr></tbody></table> <h3 id="actor-basetick-7ef7c94beab75c6cef4adfb99b570420"><a href="#actor-basetick-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Actor::baseTick::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="actor-spawndeathparticles-7ef7c94beab75c6cef4adfb99b570420"><a href="#actor-spawndeathparticles-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Actor::spawnDeathParticles::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="actor-spawntrailbubbles-7ef7c94beab75c6cef4adfb99b570420"><a href="#actor-spawntrailbubbles-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Actor::spawnTrailBubbles::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="actorfactory"><a href="#actorfactory" class="header-anchor">#</a> <code>ActorFactory</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Level *</code></td> <td>mLevel</td></tr> <tr><td>8</td> <td>(16) <code>std::shared_ptr&lt;IEntityInitializer&gt;</code></td> <td>mEntityInitializer</td></tr> <tr><td>24</td> <td>(64) <code>ActorComponentFactory</code></td> <td>mComponentFactory</td></tr></tbody></table> <h3 id="actorcomponentfactory"><a href="#actorcomponentfactory" class="header-anchor">#</a> <code>ActorComponentFactory</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(58) <code>EntityComponentFactory:464</code></td> <td>baseclass_0</td></tr> <tr><td>58</td> <td>(1) <code>bool</code></td> <td>mGenerateDoc</td></tr></tbody></table> <h3 id="actorfiltergroup-legacymapping"><a href="#actorfiltergroup-legacymapping" class="header-anchor">#</a> <code>ActorFilterGroup::LegacyMapping</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>FilterGroup::CollectionType</code></td> <td>mType</td></tr> <tr><td>8</td> <td>(8) <code>const FilterTest::Definition *</code></td> <td>mFilterDef</td></tr> <tr><td>16</td> <td>(2) <code>FilterSubject</code></td> <td>mSubject</td></tr> <tr><td>18</td> <td>(2) <code>FilterOperator</code></td> <td>mOperator</td></tr> <tr><td>20</td> <td>(4) <code>ActorFilterGroup::Processing</code></td> <td>mProcess</td></tr></tbody></table> <h3 id="armorstand-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#armorstand-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>ArmorStand::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="agent-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#agent-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Agent::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="actoranimationcontrollergroup"><a href="#actoranimationcontrollergroup" class="header-anchor">#</a> <code>ActorAnimationControllerGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;HashedString,std::shared_ptr&lt;ActorAnimationControllerInfo&gt;&gt;</code></td> <td>mAnimationControllers</td></tr></tbody></table> <h3 id="actoranimationgroup"><a href="#actoranimationgroup" class="header-anchor">#</a> <code>ActorAnimationGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;HashedString,std::shared_ptr&lt;ActorAnimationInfo&gt;&gt;</code></td> <td>mAnimations</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mActorAnimationLock</td></tr> <tr><td>96</td> <td>(1) <code>bool</code></td> <td>mIsExperimental</td></tr></tbody></table> <h3 id="animationcomponent"><a href="#animationcomponent" class="header-anchor">#</a> <code>AnimationComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>size_t</code></td> <td>mLastReloadInitTimeStamp</td></tr> <tr><td>8</td> <td>(8) <code>const ActorAnimationControllerStatePlayer *</code></td> <td>mCurrentAnimationControllerStatePlayer</td></tr> <tr><td>16</td> <td>(24) <code>std::vector&lt;std::unique_ptr&lt;ActorAnimationPlayer&gt;&gt;</code></td> <td>mComponentAnimationPlayers</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;std::shared_ptr&lt;ActorAnimationControllerInfo&gt;&gt;</code></td> <td>mOwnedAnimationControllers</td></tr> <tr><td>64</td> <td>(8) <code>std::unique_ptr&lt;std::unordered_map&lt;HashedString,ModelPartLocator&gt;&gt;</code></td> <td>mModelPartLocators</td></tr> <tr><td>72</td> <td>(152) <code>RenderParams</code></td> <td>mRenderParams</td></tr> <tr><td>224</td> <td>(8) <code>ActorAnimationPlayer *</code></td> <td>mPlaySingleAnimation</td></tr> <tr><td>232</td> <td>(8) <code>AnimationResourceDefinitionMap *</code></td> <td>mAnimationResourceDefinitionMap</td></tr> <tr><td>240</td> <td>(8) <code>const ActorParticleEffectMap *</code></td> <td>mParticleEffectMap</td></tr> <tr><td>248</td> <td>(32) <code>std::function&lt;void (ActorAnimationPlayer &amp;)&gt;</code></td> <td>mAnimationComponentInitFunction</td></tr> <tr><td>280</td> <td>(24) <code>std::vector&lt;AnimationComponent::ChildAnimationComponentInfo&gt;</code></td> <td>mChildAnimationComponents</td></tr> <tr><td>304</td> <td>(4) <code>int</code></td> <td>mBoneOrientationGroupIndexToUseForPosing</td></tr> <tr><td>312</td> <td>(56) <code>std::unordered_map&lt;SkeletalHierarchyIndex,std::vector&lt;BoneOrientation&gt;&gt;</code></td> <td>mBoneOrientations</td></tr> <tr><td>368</td> <td>(1) <code>bool</code></td> <td>mAnimationComponentInitialized</td></tr> <tr><td>372</td> <td>(4) <code>AnimationComponentGroup</code></td> <td>mAnimationComponentGroup</td></tr> <tr><td>376</td> <td>(8) <code>AnimationComponentID</code></td> <td>mOwnerUUID</td></tr> <tr><td>384</td> <td>(8) <code>int64_t</code></td> <td>mLastUpdateFrame</td></tr></tbody></table> <h3 id="animationcomponent-setinitializedscriptsrun-7ef7c94beab75c6cef4adfb99b570420"><a href="#animationcomponent-setinitializedscriptsrun-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>AnimationComponent::setInitializedScriptsRun::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="ability"><a href="#ability" class="header-anchor">#</a> <code>Ability</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>Ability::Type</code></td> <td>mType</td></tr> <tr><td>4</td> <td>(4) <code>Ability::Value</code></td> <td>mValue</td></tr> <tr><td>8</td> <td>(1) <code>Ability::Options</code></td> <td>mOptions</td></tr></tbody></table> <h3 id="arrow-normaltick-7ef7c94beab75c6cef4adfb99b570420"><a href="#arrow-normaltick-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Arrow::normalTick::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="attributemodifier"><a href="#attributemodifier" class="header-anchor">#</a> <code>AttributeModifier</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$AttributeModifier</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mAmount</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>mOperation</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>mOperand</td></tr> <tr><td>24</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>56</td> <td>(16) <code>mce::UUID</code></td> <td>mId</td></tr> <tr><td>72</td> <td>(1) <code>bool</code></td> <td>mSerialize</td></tr></tbody></table> <h3 id="actorhasequipmenttest"><a href="#actorhasequipmenttest" class="header-anchor">#</a> <code>ActorHasEquipmentTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>FilterTest:96</code></td> <td>baseclass_0</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>mEquipmentSlot</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>mItemID</td></tr> <tr><td>20</td> <td>(4) <code>int</code></td> <td>mItemAux</td></tr></tbody></table> <h3 id="actorundergroundtest"><a href="#actorundergroundtest" class="header-anchor">#</a> <code>ActorUndergroundTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorunderwatertest"><a href="#actorunderwatertest" class="header-anchor">#</a> <code>ActorUnderwaterTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorinwatertest"><a href="#actorinwatertest" class="header-anchor">#</a> <code>ActorInWaterTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorinwaterorraintest"><a href="#actorinwaterorraintest" class="header-anchor">#</a> <code>ActorInWaterOrRainTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorongroundtest"><a href="#actorongroundtest" class="header-anchor">#</a> <code>ActorOnGroundTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorinlavatest"><a href="#actorinlavatest" class="header-anchor">#</a> <code>ActorInLavaTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorincloudstest"><a href="#actorincloudstest" class="header-anchor">#</a> <code>ActorInCloudsTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actoronladdertest"><a href="#actoronladdertest" class="header-anchor">#</a> <code>ActorOnLadderTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorhascomponenttest"><a href="#actorhascomponenttest" class="header-anchor">#</a> <code>ActorHasComponentTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>SimpleHashStringFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisfamilytest"><a href="#actorisfamilytest" class="header-anchor">#</a> <code>ActorIsFamilyTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>SimpleHashStringFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorhasabilitytest"><a href="#actorhasabilitytest" class="header-anchor">#</a> <code>ActorHasAbilityTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorhasdamagetest"><a href="#actorhasdamagetest" class="header-anchor">#</a> <code>ActorHasDamageTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actoriscolortest"><a href="#actoriscolortest" class="header-anchor">#</a> <code>ActorIsColorTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisownertest"><a href="#actorisownertest" class="header-anchor">#</a> <code>ActorIsOwnerTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actoristargettest"><a href="#actoristargettest" class="header-anchor">#</a> <code>ActorIsTargetTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisimmobiletest"><a href="#actorisimmobiletest" class="header-anchor">#</a> <code>ActorIsImmobileTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorhastargettest"><a href="#actorhastargettest" class="header-anchor">#</a> <code>ActorHasTargetTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisleashedtotest"><a href="#actorisleashedtotest" class="header-anchor">#</a> <code>ActorIsLeashedToTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorismovingtest"><a href="#actorismovingtest" class="header-anchor">#</a> <code>ActorIsMovingTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorissneakingtest"><a href="#actorissneakingtest" class="header-anchor">#</a> <code>ActorIsSneakingTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisclimbingtest"><a href="#actorisclimbingtest" class="header-anchor">#</a> <code>ActorIsClimbingTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisridingtest"><a href="#actorisridingtest" class="header-anchor">#</a> <code>ActorIsRidingTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorridercounttest"><a href="#actorridercounttest" class="header-anchor">#</a> <code>ActorRiderCountTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorincaravantest"><a href="#actorincaravantest" class="header-anchor">#</a> <code>ActorInCaravanTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisleashedtest"><a href="#actorisleashedtest" class="header-anchor">#</a> <code>ActorIsLeashedTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisvarianttest"><a href="#actorisvarianttest" class="header-anchor">#</a> <code>ActorIsVariantTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorismarkvarianttest"><a href="#actorismarkvarianttest" class="header-anchor">#</a> <code>ActorIsMarkVariantTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisskinidtest"><a href="#actorisskinidtest" class="header-anchor">#</a> <code>ActorIsSkinIDTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleIntFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorhastagtest"><a href="#actorhastagtest" class="header-anchor">#</a> <code>ActorHasTagTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>SimpleHashStringFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actortrustssubjecttest"><a href="#actortrustssubjecttest" class="header-anchor">#</a> <code>ActorTrustsSubjectTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisavoidingmobstest"><a href="#actorisavoidingmobstest" class="header-anchor">#</a> <code>ActorIsAvoidingMobsTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorinvillagetest"><a href="#actorinvillagetest" class="header-anchor">#</a> <code>ActorInVillageTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorisvisibletest"><a href="#actorisvisibletest" class="header-anchor">#</a> <code>ActorIsVisibleTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="actorhasmobeffect"><a href="#actorhasmobeffect" class="header-anchor">#</a> <code>ActorHasMobEffect</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>FilterTest</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(8) <code>MobEffect *</code></td> <td>mMobEffect</td></tr></tbody></table> <h3 id="actorissleepingtest"><a href="#actorissleepingtest" class="header-anchor">#</a> <code>ActorIsSleepingTest</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>SimpleBoolFilterTest</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="automaticid-dimension-int-self"><a href="#automaticid-dimension-int-self" class="header-anchor">#</a> <code>AutomaticID&lt;Dimension,int&gt;::SELF</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>runtimeID</td></tr></tbody></table> <h3 id="actorterraininterlockdata"><a href="#actorterraininterlockdata" class="header-anchor">#</a> <code>ActorTerrainInterlockData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>ActorTerrainInterlockData::VisibilityState</code></td> <td>mRenderVisibilityState</td></tr> <tr><td>8</td> <td>(8) <code>std::chrono::time_point&lt;std::chrono::_V2::system_clock,std::chrono::duration&lt;long,std::ratio&lt;1,1000000000&gt; &gt; &gt;</code></td> <td>mCreationTime</td></tr> <tr><td>16</td> <td>(1) <code>bool</code></td> <td>mHasBeenDelayedDeleted</td></tr></tbody></table> <h3 id="automation-response"><a href="#automation-response" class="header-anchor">#</a> <code>Automation::Response</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>const Automation::Response::Type</code></td> <td>mType</td></tr> <tr><td>8</td> <td>(32) <code>const std::string</code></td> <td>mMessage</td></tr> <tr><td>40</td> <td>(32) <code>const std::string</code></td> <td>mId</td></tr></tbody></table> <h3 id="automation-messageheader"><a href="#automation-messageheader" class="header-anchor">#</a> <code>Automation::MessageHeader</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mRequestId</td></tr> <tr><td>32</td> <td>(1) <code>Automation::MessagePurpose</code></td> <td>mMessagePurpose</td></tr> <tr><td>36</td> <td>(4) <code>int</code></td> <td>mVersion</td></tr></tbody></table> <h3 id="appconfigs"><a href="#appconfigs" class="header-anchor">#</a> <code>AppConfigs</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AppConfigs
+{
+  int (**_vptr$AppConfigs)(void);
+  AppConfigs::LeaveGameCallback mLeaveGameCallback;
+};
+
+</code></pre></div><h3 id="actor"><a href="#actor" class="header-anchor">#</a> <code>Actor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Actor
+{
+  int (**_vptr$Actor)(void);
+  OwnerPtr&lt;EntityId&gt; mEntity;
+  Actor::InitializationMethod mInitMethod;
+  std::string mCustomInitEventName;
+  VariantParameterList mInitParams;
+  bool mForceInitMethodToSpawnOnReload;
+  bool mRequiresReload;
+  DimensionType mDimensionId;
+  bool mAdded;
+  ActorDefinitionGroup *mDefinitions;
+  Unique&lt;ActorDefinitionDescriptor&gt; mCurrentDescription;
+  ActorUniqueID mUniqueID;
+  Shared&lt;RopeSystem&gt; mLeashRopeSystem;
+  Vec2 mRot;
+  Vec2 mRotPrev;
+  float mSwimAmount;
+  float mSwimPrev;
+  ChunkPos mChunkPos;
+  Vec3 mRenderPos;
+  Vec2 mRenderRot;
+  int mAmbientSoundTime;
+  int mLastHurtByPlayerTime;
+  ActorCategory mCategories;
+  SynchedActorData mEntityData;
+  Unique&lt;SpatialActorNetworkData&gt; mNetworkData;
+  Vec3 mSentDelta;
+  float mScale;
+  float mScalePrev;
+  HashType64 mNameTagHash;
+  bool mOnGround;
+  bool mWasOnGround;
+  bool mHorizontalCollision;
+  bool mVerticalCollision;
+  bool mCollision;
+  const Block *mInsideBlock;
+  BlockPos mInsideBlockPos;
+  float mFallDistance;
+  bool mIgnoreLighting;
+  bool mFilterLighting;
+  Color mTintColor;
+  Color mTintColor2;
+  float mStepSoundVolume;
+  float mStepSoundPitch;
+  AABB *mLastHitBB;
+  std::vector&lt;AABB&gt; mSubBBs;
+  float mTerrainSurfaceOffset;
+  float mHeightOffset;
+  float mExplosionOffset;
+  float mShadowOffset;
+  float mMaxAutoStep;
+  float mPushthrough;
+  float mWalkDistPrev;
+  float mWalkDist;
+  float mMoveDist;
+  int mNextStep;
+  float mBlockMovementSlowdownMultiplier;
+  bool mImmobile;
+  bool mWasInWater;
+  bool mHasEnteredWater;
+  bool mHeadInWater;
+  bool mIsWet;
+  Vec2 mSlideOffset;
+  Vec3 mHeadOffset;
+  Vec3 mEyeOffset;
+  Vec3 mBreathingOffset;
+  Vec3 mMouthOffset;
+  Vec3 mDropOffset;
+  bool mFirstTick;
+  int mTickCount;
+  int mInvulnerableTime;
+  int mLastHealth;
+  bool mFallDamageImmune;
+  bool mHurtMarked;
+  bool mWasHurtLastFrame;
+  bool mInvulnerable;
+  bool mAlwaysFireImmune;
+  int mOnFire;
+  int mFlameTexFrameIndex;
+  float mFlameFrameIncrementTime;
+  bool mOnHotBlock;
+  int mClientSideFireTransitionStartTick;
+  bool mClientSideFireTransitionLatch;
+  int mPortalCooldown;
+  BlockPos mPortalBlockPos;
+  PortalAxis mPortalEntranceAxis;
+  int mInsidePortalTime;
+  std::vector&lt;ActorUniqueID&gt; mRiderIDs;
+  std::vector&lt;ActorUniqueID&gt; mRiderIDsToRemove;
+  ActorUniqueID mRidingID;
+  ActorUniqueID mRidingPrevID;
+  ActorUniqueID mPushedByID;
+  bool mInheritRotationWhenRiding;
+  bool mRidersChanged;
+  bool mBlocksBuilding;
+  bool mUsesOneWayCollision;
+  bool mForcedLoading;
+  bool mPrevPosRotSetThisTick;
+  bool mTeleportedThisTick;
+  bool mForceSendMotionPacket;
+  float mSoundVolume;
+  int mShakeTime;
+  float mWalkAnimSpeedMultiplier;
+  float mWalkAnimSpeedO;
+  float mWalkAnimSpeed;
+  float mWalkAnimPos;
+  ActorUniqueID mLegacyUniqueID;
+  bool mHighlightedThisFrame;
+  bool mInitialized;
+  BlockSource *mRegion;
+  Dimension *mDimension;
+  Level *mLevel;
+  HashedString mActorRendererId;
+  HashedString mActorRendererIdThatAnimationComponentWasInitializedWith;
+  bool mChanged;
+  bool mRemoved;
+  bool mGlobal;
+  bool mAutonomous;
+  ActorType mActorType;
+  ActorDefinitionIdentifier mActorIdentifier;
+  std::unique_ptr&lt;BaseAttributeMap&gt; mAttributes;
+  Unique&lt;EconomyTradeableComponent&gt; mEconomyTradeableComponent;
+  std::shared_ptr&lt;AnimationComponent&gt; mAnimationComponent;
+  AABBShapeComponent mAABBComponent;
+  StateVectorComponent mStateVectorComponent;
+  ActorUniqueID mTargetId;
+  bool mLootDropped;
+  float mRestrictRadius;
+  BlockPos mRestrictCenter;
+  ActorUniqueID mInLovePartner;
+  MobEffectInstanceList mMobEffects;
+  bool mEffectsDirty;
+  bool mPersistingTrade;
+  Unique&lt;CompoundTag&gt; mPersistingTradeOffers;
+  int mPersistingTradeRiches;
+  ActorRuntimeID mRuntimeID;
+  Color mHurtColor;
+  bool mEnforceRiderRotationLimit;
+  std::unique_ptr&lt;ActorDefinitionDiffList&gt; mDefinitionList;
+  bool mHasLimitedLife;
+  int mLimitedLifeTicks;
+  int mForceVisibleTimerTicks;
+  std::string mFilteredNameTag;
+  bool mIsStuckItem;
+  float mRidingExitDistance;
+  bool mIsSafeToSleepNear;
+  ActorTerrainInterlockData mTerrainInterlockData;
+  SimpleContainer mArmor;
+  float mArmorDropChance[4];
+  SimpleContainer mHand;
+  float mHandDropChance[2];
+  bool mIsKnockedBackOnDeath;
+  std::vector&lt;AABB&gt; mOnewayPhysicsBlocks;
+  bool mStuckInCollider;
+  float mLastPenetration;
+  bool mCollidableMobNear;
+  bool mCollidableMob;
+  bool mChainedDamageEffects;
+  int mDamageNearbyMobsTick;
+  bool mWasInBubbleColumn;
+  bool mWasInWallLastTick;
+  int mTicksInWall;
+  bool mIsExperimental;
+  Unique&lt;ActionQueue&gt; mActionQueue;
+  MolangVariableMap mMolangVariables;
+  CompoundTag mCachedComponentData;
+  ActorUniqueID mFishingHookID;
+};
+
+</code></pre></div><h3 id="appplatform"><a href="#appplatform" class="header-anchor">#</a> <code>AppPlatform</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AppPlatform : IAppPlatform
+{
+  bool mRequestedRestart;
+  bool mPointerFocusLost;
+  bool mKeyboardVisible;
+  bool mOnInitUriListenerRegDone;
+  VRControllerType mVRControllerType;
+  std::multimap&lt;float,AppPlatformListener *&gt; mListeners;
+  Core::Observer&lt;NetworkChangeObserver,std::mutex&gt;::SubjectType mNetworkChangeSubject;
+  std::function&lt;void (StoragePermissionResult)&gt; mStoragePermissionRequestResultCallback;
+  AppLifecycleContext mAppLifecycleContext;
+  AppFocusState mFocusState;
+  std::string mShareTitle;
+  std::string mShareText;
+  std::string mShareUri;
+  ARVRPlatform mHMDPlatform;
+  std::unique_ptr&lt;IFileAccess&gt; mDefaultFileAccess;
+  std::unique_ptr&lt;IFileAccess&gt; mPackageFileAccess;
+  int64_t mMaximumMemoryUsage;
+  BedrockEngine::CommonPlatform *mCommonPlatformShim;
+  bool mMockMultiplayerActive;
+  std::string mLocale;
+  std::atomic&lt;bool&gt; mTerminating;
+  int mForcedDpi;
+  UIScalingRules mForcedUIScalingRules;
+  bool mForceUIScalingRules;
+  bool mShowLostFocusToasts;
+  bool mAllowLostFocusToasts;
+  bool mAreThreadsFrozen;
+  bool mIsLowMemoryDevice;
+  Core::HeapPathBuffer mScratchPath;
+  Bedrock::Threading::Mutex mScratchPathMutex;
+  std::string mDeviceID;
+  std::string mDeviceIDWarning;
+  std::string mLastDeviceSessionId;
+  BedrockEngine::PlatformRuntimeInfo mPlatformRuntimeInfo;
+  BedrockEngine::PlatformBuildInfo mPlatformBuildInfo;
+};
+
+</code></pre></div><h3 id="autocompleteinformation"><a href="#autocompleteinformation" class="header-anchor">#</a> <code>AutoCompleteInformation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AutoCompleteInformation
+{
+  std::vector&lt;AutoCompleteOption&gt; possibilities;
+};
+
+</code></pre></div><h3 id="automation-automationsession"><a href="#automation-automationsession" class="header-anchor">#</a> <code>Automation::AutomationSession</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Automation::AutomationSession
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="appplatform-linux"><a href="#appplatform-linux" class="header-anchor">#</a> <code>AppPlatform_linux</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AppPlatform_linux : AppPlatform
+{
+  Core::HeapPathBuffer mExternalPath;
+  Core::HeapPathBuffer mHomePath;
+  std::string mSystemRegion;
+  std::string mGraphicsVersion;
+  std::string mGraphicsRenderer;
+  std::string mGraphicsVendor;
+  std::string mGraphicsExtensions;
+  std::string mDeviceId;
+  MPMCQueue&lt;std::function&lt;void ()&gt; &gt; mMainThreadQueue;
+};
+
+</code></pre></div><h3 id="applifecyclecontext"><a href="#applifecyclecontext" class="header-anchor">#</a> <code>AppLifecycleContext</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AppLifecycleContext
+{
+  bool mAppliedHasGraphicsContext;
+  bool mAppliedIsCurrentlyResumed;
+  bool mHasGraphicsContext;
+  bool mIsCurrentlyResumed;
+};
+
+</code></pre></div><h3 id="actoreventlistener"><a href="#actoreventlistener" class="header-anchor">#</a> <code>ActorEventListener</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorEventListener
+{
+  int (**_vptr$ActorEventListener)(void);
+};
+
+</code></pre></div><h3 id="ageablesystem"><a href="#ageablesystem" class="header-anchor">#</a> <code>AgeableSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgeableSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="angrysystem"><a href="#angrysystem" class="header-anchor">#</a> <code>AngrySystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AngrySystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="agentcommandsystem"><a href="#agentcommandsystem" class="header-anchor">#</a> <code>AgentCommandSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgentCommandSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="areaattacksystem"><a href="#areaattacksystem" class="header-anchor">#</a> <code>AreaAttackSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AreaAttackSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="actordefinitiongroup"><a href="#actordefinitiongroup" class="header-anchor">#</a> <code>ActorDefinitionGroup</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorDefinitionGroup
+{
+  int (**_vptr$ActorDefinitionGroup)(void);
+  std::unordered_set&lt;ActorDefinitionPtr *&gt; mRegisteredPtrs;
+  ActorDefinitionGroup::ActorDefinitionList mDefinitions;
+  std::unordered_map&lt;std::string,ActorDefinitionGroup::EDLWrapper&gt; mTemplateMap;
+  ResourcePackManager *mResourcePackManager;
+  Bedrock::Threading::Mutex mReferenceMutex;
+  IMinecraftEventing *mEventing;
+  bool mExperimentalEnabled;
+  ActorComponentFactory *mComponentFactory;
+};
+
+</code></pre></div><h3 id="aggregatefeature-placetype-arbitrary"><a href="#aggregatefeature-placetype-arbitrary" class="header-anchor">#</a> <code>AggregateFeature&lt;PlaceType::Arbitrary&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AggregateFeature&lt;PlaceType::Arbitrary&gt; : IFeature
+{
+  std::vector&lt;WeakRefT&lt;FeatureRefTraits&gt;&gt; mFeatureReferences;
+  AggregateFeature&lt;PlaceType::Arbitrary&gt;::EarlyOut mEarlyOut;
+};
+
+</code></pre></div><h3 id="aggregatefeature-placetype-sequential"><a href="#aggregatefeature-placetype-sequential" class="header-anchor">#</a> <code>AggregateFeature&lt;PlaceType::Sequential&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AggregateFeature&lt;PlaceType::Sequential&gt; : IFeature
+{
+  std::vector&lt;WeakRefT&lt;FeatureRefTraits&gt;&gt; mFeatureReferences;
+  AggregateFeature&lt;PlaceType::Sequential&gt;::EarlyOut mEarlyOut;
+};
+
+</code></pre></div><h3 id="addoceantemperaturelayer"><a href="#addoceantemperaturelayer" class="header-anchor">#</a> <code>AddOceanTemperatureLayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AddOceanTemperatureLayer : RootLayer&lt;BiomeTemperatureCategory&gt;
+{
+};
+
+</code></pre></div><h3 id="armorstand"><a href="#armorstand" class="header-anchor">#</a> <code>ArmorStand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ArmorStand : Mob
+{
+  uint64_t mLastHit;
+  int mPoseIndex;
+  int mLastCircuitStrength;
+};
+
+</code></pre></div><h3 id="ageabledefinition"><a href="#ageabledefinition" class="header-anchor">#</a> <code>AgeableDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AgeableDefinition
+{
+  float mSecondsAsBaby;
+  std::vector&lt;ActorDefinitionFeedItem&gt; mFeedItems;
+  std::vector&lt;const Item *&gt; mDropItems;
+  DefinitionTrigger mOnGrowUp;
+};
+
+</code></pre></div><h3 id="agentcommands-command"><a href="#agentcommands-command" class="header-anchor">#</a> <code>AgentCommands::Command</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) AgentCommands::Command
+{
+  int (**_vptr$Command)(void);
+  Actor *mTarget;
+  Player *mCommander;
+  std::string mCommandName;
+  bool mResult;
+  bool mIsQueryResult;
+};
+
+</code></pre></div><h3 id="angrydescription"><a href="#angrydescription" class="header-anchor">#</a> <code>AngryDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AngryDescription : ComponentDescription
+{
+  int mDuration;
+  int mDurationDelta;
+  bool mBroadcastAnger;
+  int mBroadcastRange;
+  ActorFilterGroup mBroadcastFilter;
+  DefinitionTrigger mOnCalm;
+  std::vector&lt;Util::HashString&gt; mBroadcastTargets;
+};
+
+</code></pre></div><h3 id="aabbshapecomponent"><a href="#aabbshapecomponent" class="header-anchor">#</a> <code>AABBShapeComponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AABBShapeComponent
+{
+  AABB mAABB;
+  Vec2 mBBDim;
+};
+
+</code></pre></div><h3 id="actortickedcomponent"><a href="#actortickedcomponent" class="header-anchor">#</a> <code>ActorTickedComponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FlagComponent&lt;ActorTickedFlag&gt; ActorTickedComponent;
+
+</code></pre></div><h3 id="asynctracker"><a href="#asynctracker" class="header-anchor">#</a> <code>AsyncTracker</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AsyncTracker
+{
+  bool isCurrentWaitingOnCall;
+  bool mWasCallAborted;
+  std::chrono::_V2::steady_clock::time_point operationStartTime;
+  std::chrono::seconds timeLimit;
+  bool mHasRetryBeenRequested;
+  std::chrono::_V2::steady_clock::time_point mRetryTime;
+};
+
+</code></pre></div><h3 id="addactorpacket"><a href="#addactorpacket" class="header-anchor">#</a> <code>AddActorPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AddActorPacket : Packet
+{
+  ActorLink::List mLinks;
+  ActorUniqueID mEntityId;
+  ActorRuntimeID mRuntimeId;
+  SynchedActorData *mEntityData;
+  SynchedActorData::DataList mData;
+  ActorDefinitionIdentifier mType;
+  Vec3 mPos;
+  Vec3 mVelocity;
+  Vec2 mRot;
+  float mYHeadRotation;
+  std::vector&lt;AttributeInstanceHandle&gt; mAttributeHandles;
+  std::vector&lt;SyncedAttribute&gt; mAttributes;
+};
+
+</code></pre></div><h3 id="addentitypacket"><a href="#addentitypacket" class="header-anchor">#</a> <code>AddEntityPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AddEntityPacket : EntityServerPacket
+{
+};
+
+</code></pre></div><h3 id="additemactorpacket"><a href="#additemactorpacket" class="header-anchor">#</a> <code>AddItemActorPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AddItemActorPacket : Packet
+{
+  SynchedActorData::DataList mData;
+  SynchedActorData *mEntityData;
+  ActorUniqueID mId;
+  ActorRuntimeID mRuntimeId;
+  ItemStack mItem;
+  Vec3 mPos;
+  Vec3 mVelocity;
+  bool mIsFromFishing;
+};
+
+</code></pre></div><h3 id="addplayerpacket"><a href="#addplayerpacket" class="header-anchor">#</a> <code>AddPlayerPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AddPlayerPacket : Packet
+{
+  ActorLink::List mLinks;
+  std::string mName;
+  mce::UUID mUuid;
+  ActorUniqueID mEntityId;
+  ActorRuntimeID mRuntimeId;
+  std::string mPlatformOnlineId;
+  Vec3 mPos;
+  Vec3 mVelocity;
+  Vec2 mRot;
+  float mYHeadRot;
+  ItemStack mCarriedItem;
+  SynchedActorData::DataList mUnpack;
+  Abilities mAbilities;
+  std::string mDeviceId;
+  BuildPlatform mBuildPlatform;
+  const SynchedActorData *mEntityData;
+};
+
+</code></pre></div><h3 id="actorpickrequestpacket"><a href="#actorpickrequestpacket" class="header-anchor">#</a> <code>ActorPickRequestPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ActorPickRequestPacket : Packet
+{
+  int64_t mID;
+  byte mMaxSlots;
+};
+
+</code></pre></div><h3 id="addpaintingpacket"><a href="#addpaintingpacket" class="header-anchor">#</a> <code>AddPaintingPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AddPaintingPacket : Packet
+{
+  ActorUniqueID mEntityId;
+  ActorRuntimeID mRuntimeId;
+  Vec3 mPos;
+  int mDir;
+  std::string mMotive;
+};
+
+</code></pre></div><h3 id="addbehaviortreepacket"><a href="#addbehaviortreepacket" class="header-anchor">#</a> <code>AddBehaviorTreePacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AddBehaviorTreePacket : Packet
+{
+  std::string mJsonInput;
+};
+
+</code></pre></div><h3 id="asynchronousipresolver-resolvedip"><a href="#asynchronousipresolver-resolvedip" class="header-anchor">#</a> <code>AsynchronousIPResolver::ResolvedIp</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) AsynchronousIPResolver::ResolvedIp
+{
+  std::string ip;
+  std::atomic&lt;bool&gt; ready;
+};
+
+</code></pre></div><h3 id="asynchronousipresolver"><a href="#asynchronousipresolver" class="header-anchor">#</a> <code>AsynchronousIPResolver</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AsynchronousIPResolver
+{
+  std::string mUrl;
+  std::shared_ptr&lt;AsynchronousIPResolver::ResolvedIp&gt; mResolvedIpPtr;
+};
+
+</code></pre></div><h3 id="attributeinstancedelegate"><a href="#attributeinstancedelegate" class="header-anchor">#</a> <code>AttributeInstanceDelegate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AttributeInstanceDelegate
+{
+  int (**_vptr$AttributeInstanceDelegate)(void);
+  AttributeInstanceHandle mAttributeHandle;
+};
+
+</code></pre></div><h3 id="attributeinstance-a0656a567348dc83b4af251f24308a0f-c619d87f19d17294536cf8d7230526de"><a href="#attributeinstance-a0656a567348dc83b4af251f24308a0f-c619d87f19d17294536cf8d7230526de" class="header-anchor">#</a> <code>AttributeInstance::$A0656A567348DC83B4AF251F24308A0F::$C619D87F19D17294536CF8D7230526DE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AttributeInstance::$A0656A567348DC83B4AF251F24308A0F::$C619D87F19D17294536CF8D7230526DE
+{
+  float mCurrentValues[3];
+};
+
+</code></pre></div><h3 id="attributeinstance-a0656a567348dc83b4af251f24308a0f-a2cb89779bdc0e5e7a2dbcec2e3dc5d0"><a href="#attributeinstance-a0656a567348dc83b4af251f24308a0f-a2cb89779bdc0e5e7a2dbcec2e3dc5d0" class="header-anchor">#</a> <code>AttributeInstance::$A0656A567348DC83B4AF251F24308A0F::$A2CB89779BDC0E5E7A2DBCEC2E3DC5D0</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AttributeInstance::$A0656A567348DC83B4AF251F24308A0F::$A2CB89779BDC0E5E7A2DBCEC2E3DC5D0
+{
+  float mCurrentMinValue;
+  float mCurrentMaxValue;
+  float mCurrentValue;
+};
+
+</code></pre></div><h3 id="animatedimagedata"><a href="#animatedimagedata" class="header-anchor">#</a> <code>AnimatedImageData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) AnimatedImageData
+{
+  persona::AnimatedTextureType mType;
+  mce::Image mImage;
+  float mFrames;
+};
+
+</code></pre></div><h3 id="actorinforegistry"><a href="#actorinforegistry" class="header-anchor">#</a> <code>ActorInfoRegistry</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) ActorInfoRegistry
+{
+  std::unordered_map&lt;std::string,unsigned int&gt; mActorInfoNameMap;
+  std::unordered_map&lt;unsigned int,ActorInfo&gt; mActorInfoMap;
+  unsigned int mLastId;
+};
+
+</code></pre></div><h3 id="appconfigsfactory"><a href="#appconfigsfactory" class="header-anchor">#</a> <code>AppConfigsFactory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AppConfigsFactory
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="appplatformlistener"><a href="#appplatformlistener" class="header-anchor">#</a> <code>AppPlatformListener</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AppPlatformListener
+{
+  int (**_vptr$AppPlatformListener)(void);
+  AppPlatform *platform;
+};
+
+</code></pre></div><h3 id="actorspawnrulegroup"><a href="#actorspawnrulegroup" class="header-anchor">#</a> <code>ActorSpawnRuleGroup</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActorSpawnRuleGroup : ActorSpawnRuleBase
+{
+  std::unordered_map&lt;std::string,int&gt; mCategoryLookup;
+};
+
+</code></pre></div><h3 id="autonomousactorlist"><a href="#autonomousactorlist" class="header-anchor">#</a> <code>AutonomousActorList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SmallSet&lt;Actor *&gt; AutonomousActorList;
+
+</code></pre></div><h3 id="actoreventcoordinator"><a href="#actoreventcoordinator" class="header-anchor">#</a> <code>ActorEventCoordinator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActorEventCoordinator : EventCoordinator&lt;ActorEventListener&gt;
+{
+};
+
+</code></pre></div><h3 id="actoranimationcontrollerstateplayer"><a href="#actoranimationcontrollerstateplayer" class="header-anchor">#</a> <code>ActorAnimationControllerStatePlayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActorAnimationControllerStatePlayer : ActorAnimationPlayer
+{
+  ActorAnimationControllerPlayer *mOwner;
+  std::shared_ptr&lt;ActorAnimationControllerState&gt; mControllerState;
+  std::vector&lt;std::unique_ptr&lt;ActorAnimationPlayer&gt;&gt; mAnimationPlayers;
+  const Core::Profile::CPUProfileToken mProfileToken;
+};
+
+</code></pre></div><h3 id="actoranimationcontrollerinfo"><a href="#actoranimationcontrollerinfo" class="header-anchor">#</a> <code>ActorAnimationControllerInfo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorAnimationControllerInfo
+{
+  HashedString mName;
+  std::unique_ptr&lt;ActorAnimationController&gt; mPtr;
+};
+
+</code></pre></div><h3 id="actoranimationplayer"><a href="#actoranimationplayer" class="header-anchor">#</a> <code>ActorAnimationPlayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) ActorAnimationPlayer
+{
+  int (**_vptr$ActorAnimationPlayer)(void);
+  const HashedString mFriendlyName;
+  const ExpressionNode mBlendExpression;
+  bool mExpanded;
+  bool mAnimationFinished;
+};
+
+</code></pre></div><h3 id="animationresourcedefinitionmap"><a href="#animationresourcedefinitionmap" class="header-anchor">#</a> <code>AnimationResourceDefinitionMap</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AnimationResourceDefinitionMap
+{
+  ActorAnimationMap mActorAnimationMap;
+  ActorAnimationControllerMap mActorAnimationControllerMap;
+  ActorAnimateScriptArray mActorAnimateScriptArray;
+};
+
+</code></pre></div><h3 id="animationcomponent-childanimationcomponentinfo"><a href="#animationcomponent-childanimationcomponentinfo" class="header-anchor">#</a> <code>AnimationComponent::ChildAnimationComponentInfo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AnimationComponent::ChildAnimationComponentInfo
+{
+  const void *mChildObjectKey;
+  MolangVariableMap mMolangVariableMap;
+  std::shared_ptr&lt;AnimationComponent&gt; mChildAnimationComponent;
+};
+
+</code></pre></div><h3 id="aabbbucket"><a href="#aabbbucket" class="header-anchor">#</a> <code>AABBBucket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) AABBBucket
+{
+  AABB mBucketBounds;
+  int mCachedTicks;
+  std::vector&lt;RopeAABB&gt; mBBs;
+  bool mDirty;
+  bool mNeedsFinalize;
+};
+
+</code></pre></div><h3 id="aabbpred"><a href="#aabbpred" class="header-anchor">#</a> <code>AABBPred</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AABBPred
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="actoranimationmap"><a href="#actoranimationmap" class="header-anchor">#</a> <code>ActorAnimationMap</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::unordered_map&lt;StringKey,ActorSkeletalAnimationPtr&gt; ActorAnimationMap;
+
+</code></pre></div><h3 id="actoranimationcontrollermap"><a href="#actoranimationcontrollermap" class="header-anchor">#</a> <code>ActorAnimationControllerMap</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::unordered_map&lt;StringKey,ActorAnimationControllerPtr&gt; ActorAnimationControllerMap;
+
+</code></pre></div><h3 id="actoranimatescriptarray"><a href="#actoranimatescriptarray" class="header-anchor">#</a> <code>ActorAnimateScriptArray</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::pair&lt;HashedString,ExpressionNode&gt;&gt; ActorAnimateScriptArray;
+
+</code></pre></div><h3 id="actordefinition"><a href="#actordefinition" class="header-anchor">#</a> <code>ActorDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorDefinition
+{
+  ActorDefinitionDescriptor mDescription;
+  IdentifierDescription mIdentifier;
+  RuntimeIdentifierDescription mRuntimeIdentifier;
+  IsSpawnableDescription mIsSpawnable;
+  IsSummonableDescription mIsSummonable;
+  IsExperimentalDescription mIsExperimental;
+  AnimationsDescription mAnimationsDescription;
+  AnimationScriptsDescription mAnimationScriptsDescription;
+  std::vector&lt;GoalDefinition&gt; mGoalDefinitions;
+  std::vector&lt;ActorDefinitionAttribute&gt; mAttributes;
+  std::unordered_map&lt;std::string,DefinitionEvent&gt; mEventHandlers;
+  AnimationResourceDefinitionMap mAnimationResourceDefinitionMap;
+  AttackDescription mAttack;
+  MobEffectChangeDescription mMobEffects;
+  AmbientSoundIntervalDescription mAmbientSoundInterval;
+  CanClimbDescription mCanClimb;
+  CanFlyDescription mCanFly;
+  CanPowerJumpDescription mCanPowerJump;
+  CollisionBoxDescription mCollisionBox;
+  Color2Description mColor2;
+  ColorDescription mColor;
+  DefaultLookAngleDescription mDefaultLookAngle;
+  DyeableDescription mDyeable;
+  EquipmentTableDescription mEquipmentTable;
+  FamilyTypeDescription mFamilyTypes;
+  FireImmuneDescription mFireImmune;
+  FloatsInLiquidDescription mFloatsInLiquid;
+  FlyingSpeedDescription mFlyingSpeed;
+  FootSizeDescription mFootSize;
+  FrictionModifierDescription mFrictionModifier;
+  GroundOffsetDescription mSurfaceOffset;
+  IsBabyDescription mIsBaby;
+  IsChargedDescription mIsCharged;
+  IsChestedDescription mIsChested;
+  IsHiddenWhenInvisibleDescription mIsHiddenWhenInvisible;
+  IsIgnitedDescription mIsIgnited;
+  IsIllagerCaptainDescription mIsIllagerCaptain;
+  IsSaddledDescription mIsSaddled;
+  IsShakingDescription mIsShaking;
+  IsShearedDescription mIsSheared;
+  IsStunnedDescription mIsStunned;
+  IsStackableDescription mIsStackable;
+  IsTamedDescription mIsTamed;
+  ItemControlDescription mItemControllable;
+  LootTableDescription mLootTable;
+  PushThroughDescription mPushthrough;
+  ScaleDescription mScale;
+  SoundVolumeDescription mSoundVolume;
+  WalkAnimationSpeedDescription mWalkAnimSpeedMultiplier;
+  WantsJockeyDescription mWantsJockey;
+  WASDControlledDescription mWASDControlled;
+  OnDeathDescription mOnDeath;
+  OnFriendlyAngerDescription mOnFriendlyAnger;
+  OnHurtByPlayerDescription mOnHurtByPlayer;
+  OnHurtDescription mOnHurt;
+  OnIgniteDescription mOnIgnite;
+  OnStartLandingDescription mOnStartLanding;
+  OnStartTakeoffDescription mOnStartTakeoff;
+  OnTargetAcquiredDescription mOnTargetAcquired;
+  OnTargetEscapeDescription mOnTargetEscape;
+  OnWakeWithOwnerDescription mOnWakeWithOwner;
+  AmphibiousMoveControlDescription mAmphibiousMoveControl;
+  AngryDescription mAngry;
+  BehaviorTreeDescription mBehavior;
+  BreakBlocksDescription mBreakBlocks;
+  BreakDoorAnnotationDescription mBreakDoorAnnotation;
+  BucketableDescription mBucketable;
+  CommandBlockDescription mCommandBlock;
+  ContainerDescription mContainer;
+  DespawnDescription mDespawn;
+  DwellerDescription mDweller;
+  GenericMoveControlDescription mGenericMoveControl;
+  GlideMoveControlDescription mGlideMoveControl;
+  HideDescription mHide;
+  IllagerBeastBlockedDescription mIllagerBeastBlocked;
+  ManagedWanderingTraderDescription mManagedWanderingTrader;
+  MarkVariantDescription mMarkVariant;
+  MoveControlBasicDescription mMoveControl;
+  MoveControlDolphinDescription mDolphinSwimControl;
+  MoveControlFlyDescription mFlyControl;
+  MoveControlSkipDescription mHopControl;
+  MoveControlHoverDescription mHoverControl;
+  MoveControlSwayDescription mSwimControl;
+  NameableDescription mNameable;
+  NavigationClimbDescription mWallClimberNavigation;
+  NavigationFloatDescription mFloatNavigation;
+  NavigationFlyDescription mFlyingNavigation;
+  NavigationHoverDescription mHoverNavigation;
+  NavigationGenericDescription mGenericNavigation;
+  NavigationSwimDescription mWaterboundNavigation;
+  NavigationWalkDescription mNavigation;
+  PersistentDescription mPersistent;
+  PreferredPathDescription mPreferredPath;
+  ProjectileDescription mProjectile;
+  PushableDescription mPushable;
+  RaidTriggerDescription mRaidTrigger;
+  RailActivatorDescription mRailActivator;
+  RideableDescription mRideable;
+  ShooterDescription mShooter;
+  SittableDescription mSittable;
+  SkinIDDescription mSkinID;
+  SlimeMoveControlDescription mSlimeMoveControl;
+  SpawnActorDescription mSpawnEntity;
+  StrengthDescription mStrength;
+  TagsDescription mTags;
+  TameableDescription mTameable;
+  TrailDescription mTrail;
+  TrustingDescription mTrusting;
+  TargetNearbyDescription mTargetNearby;
+  TeleportDescription mTeleport;
+  TickWorldDescription mTickWorld;
+  TimerDescription mTimer;
+  TradeResupplyDescription mTradeResupply;
+  TrustDescription mTrust;
+  EconomyTradeableDescription mEconomyTradeable;
+  TransformationDescription mTransformation;
+  VariantDescription mVariant;
+  WaterMovementDescription mWaterMovement;
+  DynamicJumpControlDescription mDynamicJumpControl;
+  JumpControlDescription mJumpControl;
+  OpenDoorAnnotationDescription mOpenDoorAnnotation;
+  NpcDescription mNpc;
+  TripodCameraDescription mTripodCamera;
+};
+
+</code></pre></div><h3 id="attackdescription"><a href="#attackdescription" class="header-anchor">#</a> <code>AttackDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AttackDescription : AttributeDescription
+{
+  FloatRange mDamage;
+  std::string mEffectName;
+  float mEffectDuration;
+};
+
+</code></pre></div><h3 id="ambientsoundintervaldescription"><a href="#ambientsoundintervaldescription" class="header-anchor">#</a> <code>AmbientSoundIntervalDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AmbientSoundIntervalDescription : PropertyDescription
+{
+  float mValue;
+  float mRange;
+  std::string mEventName;
+};
+
+</code></pre></div><h3 id="amphibiousmovecontroldescription"><a href="#amphibiousmovecontroldescription" class="header-anchor">#</a> <code>AmphibiousMoveControlDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AmphibiousMoveControlDescription : MoveControlDescription
+{
+};
+
+</code></pre></div><h3 id="attributedescription"><a href="#attributedescription" class="header-anchor">#</a> <code>AttributeDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AttributeDescription : Description
+{
+};
+
+</code></pre></div><h3 id="actionqueue"><a href="#actionqueue" class="header-anchor">#</a> <code>ActionQueue</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActionQueue
+{
+  std::deque&lt;ActionEvent&gt; mQueue;
+};
+
+</code></pre></div><h3 id="anvilcontainermanagermodel"><a href="#anvilcontainermanagermodel" class="header-anchor">#</a> <code>AnvilContainerManagerModel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AnvilContainerManagerModel : ContainerManagerModel
+{
+  BlockPos mBlockPos;
+};
+
+</code></pre></div><h3 id="automationplayercommandorigin"><a href="#automationplayercommandorigin" class="header-anchor">#</a> <code>AutomationPlayerCommandOrigin</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AutomationPlayerCommandOrigin : PlayerCommandOrigin
+{
+  std::string mRequestId;
+  CommandPermissionLevel mPlayerPermission;
+  NetworkIdentifier mSource;
+};
+
+</code></pre></div><h3 id="applyitembinding"><a href="#applyitembinding" class="header-anchor">#</a> <code>ApplyItemBinding</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ApplyItemBinding : ScriptServerEntity
+{
+};
+
+</code></pre></div><h3 id="applylegacyentitybinding"><a href="#applylegacyentitybinding" class="header-anchor">#</a> <code>ApplyLegacyEntityBinding</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ApplyLegacyEntityBinding : ScriptServerEntity
+{
+};
+
+</code></pre></div><h3 id="atlasitemmanager"><a href="#atlasitemmanager" class="header-anchor">#</a> <code>AtlasItemManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AtlasItemManager
+{
+  std::unordered_map&lt;std::string,TextureAtlasItem&gt; mTextureAtlasItems;
+};
+
+</code></pre></div><h3 id="actoranimationinfo"><a href="#actoranimationinfo" class="header-anchor">#</a> <code>ActorAnimationInfo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorAnimationInfo
+{
+  HashedString mName;
+  std::unique_ptr&lt;ActorSkeletalAnimation&gt; mPtr;
+};
+
+</code></pre></div><h3 id="addriderdefinition"><a href="#addriderdefinition" class="header-anchor">#</a> <code>AddRiderDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AddRiderDefinition
+{
+  ActorDefinitionIdentifier mEntityType;
+};
+
+</code></pre></div><h3 id="actorskeletalanimation"><a href="#actorskeletalanimation" class="header-anchor">#</a> <code>ActorSkeletalAnimation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorSkeletalAnimation
+{
+  HashedString mName;
+  float mAnimationLength;
+  bool mShouldLoop;
+  bool mOverridePreviousAnimation;
+  ExpressionNode mBlendWeight;
+  ExpressionNode mAnimTimeUpdate;
+  std::vector&lt;BoneAnimation&gt; mBoneAnimations;
+  std::vector&lt;ActorParticleEffectEvent&gt; mParticleEffectEvents;
+  std::vector&lt;ActorSoundEffectEvent&gt; mSoundEffectEvents;
+  std::vector&lt;ActorAnimationEvent&gt; mEvents;
+  bool mIsExperimental;
+  std::string mSourceFilePathWithExtension;
+};
+
+</code></pre></div><h3 id="actoranimationcontroller"><a href="#actoranimationcontroller" class="header-anchor">#</a> <code>ActorAnimationController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorAnimationController
+{
+  HashedString mName;
+  size_t mInitialStateIndex;
+  std::vector&lt;std::shared_ptr&lt;ActorAnimationControllerState&gt;&gt; mStates;
+  std::string mSourceFilePathWithExtension;
+};
+
+</code></pre></div><h3 id="actoranimationcontrollerplayer"><a href="#actoranimationcontrollerplayer" class="header-anchor">#</a> <code>ActorAnimationControllerPlayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActorAnimationControllerPlayer : ActorAnimationPlayer
+{
+  ActorAnimationControllerPtr mAnimationControllerPtr;
+  int mCurrStateIndex;
+  int mLastStateIndex;
+  int mNextStateIndex;
+  int mBlendTransitionStateIndex;
+  float mBlendTransitionTime;
+  std::vector&lt;std::unique_ptr&lt;ActorAnimationControllerStatePlayer&gt;&gt; mAnimationControllerStatePlayers;
+  const ActorParticleEffectMap *mActorParticleEffectMap;
+  const std::unordered_map&lt;StringKey,std::string&gt; *mActorSoundEffectMap;
+};
+
+</code></pre></div><h3 id="actorclasstree"><a href="#actorclasstree" class="header-anchor">#</a> <code>ActorClassTree</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorClassTree
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="actordamagesource-96"><a href="#actordamagesource-96" class="header-anchor">#</a> <code>ActorDamageSource:96</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((packed)) __attribute__((aligned(4))) ActorDamageSource:96
+{
+  int (**_vptr$ActorDamageSource)(void);
+  ActorDamageCause mCause;
+};
+
+</code></pre></div><h3 id="actordefinitiongroup-actordefinitionlist"><a href="#actordefinitiongroup-actordefinitionlist" class="header-anchor">#</a> <code>ActorDefinitionGroup::ActorDefinitionList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::unordered_map&lt;std::string,std::unique_ptr&lt;ActorDefinition&gt;&gt; ActorDefinitionGroup::ActorDefinitionList;
+
+</code></pre></div><h3 id="actordefinitiongroup-edlwrapper"><a href="#actordefinitiongroup-edlwrapper" class="header-anchor">#</a> <code>ActorDefinitionGroup::EDLWrapper</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorDefinitionGroup::EDLWrapper
+{
+  ActorDefinitionGroup::ActorDefinitionList mList;
+};
+
+</code></pre></div><h3 id="arrow"><a href="#arrow" class="header-anchor">#</a> <code>Arrow</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Arrow : AbstractArrow
+{
+  int mLife;
+  int mEnchantFlame;
+  int mEnchantInfinity;
+  std::vector&lt;MobEffectInstance&gt; mMobEffects;
+};
+
+</code></pre></div><h3 id="areaeffectcloud"><a href="#areaeffectcloud" class="header-anchor">#</a> <code>AreaEffectCloud</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AreaEffectCloud : Actor
+{
+  ActorUniqueID mOwnerId;
+  bool mAffectOwner;
+  int64_t mSpawnTickClient;
+  int mReapplicationDelay;
+  int mDurationOnUse;
+  int mLocalPickupCount;
+  float mRadiusOnUse;
+  MobEffectInstanceList mMobEffects;
+  std::unordered_map&lt;ActorUniqueID,int&gt; mVictims;
+};
+
+</code></pre></div><h3 id="agent"><a href="#agent" class="header-anchor">#</a> <code>Agent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) Agent : Mob
+{
+  Vec3 mToTarget;
+  int mSwingAnimationTick;
+  const int SWING_TICKS;
+  int mSelectedSlot;
+  bool mHasSetName;
+  bool mHasFiredCreationEvent;
+  bool mHover;
+  AgentRenderData mRenderData;
+};
+
+</code></pre></div><h3 id="actorlegacysaveconverter"><a href="#actorlegacysaveconverter" class="header-anchor">#</a> <code>ActorLegacySaveConverter</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorLegacySaveConverter
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="amphibiousmovecontrol"><a href="#amphibiousmovecontrol" class="header-anchor">#</a> <code>AmphibiousMoveControl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AmphibiousMoveControl : GenericMoveControl
+{
+};
+
+</code></pre></div><h3 id="armoritem"><a href="#armoritem" class="header-anchor">#</a> <code>ArmorItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ArmorItem : Item
+{
+  const ArmorSlot mSlot;
+  const int mDefense;
+  const int mModelIndex;
+  const ArmorItem::ArmorMaterial *mArmorType;
+  TextureAtlasItem m_uvTextureItem;
+};
+
+</code></pre></div><h3 id="agentlookcontrol"><a href="#agentlookcontrol" class="header-anchor">#</a> <code>AgentLookControl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgentLookControl : LookControl
+{
+};
+
+</code></pre></div><h3 id="agentcommandexecutiongoal"><a href="#agentcommandexecutiongoal" class="header-anchor">#</a> <code>AgentCommandExecutionGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgentCommandExecutionGoal : Goal
+{
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="agentbodycontrol"><a href="#agentbodycontrol" class="header-anchor">#</a> <code>AgentBodyControl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgentBodyControl : BodyControl
+{
+};
+
+</code></pre></div><h3 id="agentrenderdata"><a href="#agentrenderdata" class="header-anchor">#</a> <code>AgentRenderData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AgentRenderData
+{
+  float mEaseIn;
+  int mOldTime;
+};
+
+</code></pre></div><h3 id="avoidmobtypegoal"><a href="#avoidmobtypegoal" class="header-anchor">#</a> <code>AvoidMobTypeGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AvoidMobTypeGoal : AvoidMobGoal
+{
+  const std::vector&lt;MobDescriptor&gt; mAvoidMobs;
+  std::string mAvoidIdentifier;
+};
+
+</code></pre></div><h3 id="animal"><a href="#animal" class="header-anchor">#</a> <code>Animal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Animal : Mob
+{
+};
+
+</code></pre></div><h3 id="actorskeletalanimationplayer"><a href="#actorskeletalanimationplayer" class="header-anchor">#</a> <code>ActorSkeletalAnimationPlayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActorSkeletalAnimationPlayer : ActorAnimationPlayer
+{
+  ActorSkeletalAnimationPtr mAnimationData;
+  std::unordered_map&lt;SkeletalHierarchyIndex,std::vector&lt;int&gt;&gt; mBoneToPartMapping;
+  const ActorParticleEffectMap *mActorParticleEffectMap;
+  const std::unordered_map&lt;StringKey,std::string&gt; *mActorSoundEffectMap;
+  float mAnimTime;
+  float mLastAnimTime;
+};
+
+</code></pre></div><h3 id="actoranimationcontrollerstate"><a href="#actoranimationcontrollerstate" class="header-anchor">#</a> <code>ActorAnimationControllerState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorAnimationControllerState
+{
+  HashedString mName;
+  std::vector&lt;StateAnimationVariable&gt; mVariables;
+  std::vector&lt;std::pair&lt;HashedString,ExpressionNode&gt;&gt; mAnimations;
+  std::vector&lt;ActorParticleEffect&gt; mParticleEffects;
+  std::vector&lt;ActorAnimationEvent&gt; mEvents[2];
+  std::vector&lt;ActorAnimationControllerStateTransition&gt; mTransitions;
+  std::vector&lt;ActorSoundEffect&gt; mSoundEffects;
+  bool mBlendViaShortestPath;
+  std::vector&lt;AnimationValueCurveKeyFrame&gt; mBlendTransitionKeyFrames;
+};
+
+</code></pre></div><h3 id="actoranimationbase"><a href="#actoranimationbase" class="header-anchor">#</a> <code>ActorAnimationBase</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorAnimationBase
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="actoranimationcontrollerstatetransition"><a href="#actoranimationcontrollerstatetransition" class="header-anchor">#</a> <code>ActorAnimationControllerStateTransition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorAnimationControllerStateTransition
+{
+  std::string mTargetStateName;
+  size_t mTargetStateIndex;
+  ExpressionNode mTransitionExpression;
+};
+
+</code></pre></div><h3 id="amplifier"><a href="#amplifier" class="header-anchor">#</a> <code>Amplifier</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Amplifier
+{
+  int (**_vptr$Amplifier)(void);
+};
+
+</code></pre></div><h3 id="animatedimagedata-0"><a href="#animatedimagedata-0" class="header-anchor">#</a> <code>AnimatedImageData_0</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) AnimatedImageData_0
+{
+  persona::AnimatedTextureType mType;
+  mce::Image_0 mImage;
+  float mFrames;
+};
+
+</code></pre></div><h3 id="abstractarrow"><a href="#abstractarrow" class="header-anchor">#</a> <code>AbstractArrow</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AbstractArrow : Actor
+{
+  int mFavoredSlot;
+  bool mIsPlayerOwned;
+  bool mIsCreative;
+  MovementInterpolator mInterpolation;
+};
+
+</code></pre></div><h3 id="arroweffectsubcomponent"><a href="#arroweffectsubcomponent" class="header-anchor">#</a> <code>ArrowEffectSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ArrowEffectSubcomponent : MobEffectSubcomponent
+{
+};
+
+</code></pre></div><h3 id="actordefinitioneventsubcomponent"><a href="#actordefinitioneventsubcomponent" class="header-anchor">#</a> <code>ActorDefinitionEventSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActorDefinitionEventSubcomponent : OnHitSubcomponent
+{
+  bool mAffectShooter;
+  bool mAffectProjectile;
+  bool mAffectTarget;
+  bool mAffectSplashArea;
+  float mSplashArea;
+  DefinitionTrigger mTrigger;
+};
+
+</code></pre></div><h3 id="autoplaceitem"><a href="#autoplaceitem" class="header-anchor">#</a> <code>AutoPlaceItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) AutoPlaceItem
+{
+  std::string collection;
+  bool stopWhenPlaced;
+};
+
+</code></pre></div><h3 id="autoplaceresult"><a href="#autoplaceresult" class="header-anchor">#</a> <code>AutoPlaceResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) AutoPlaceResult
+{
+  std::string collectionName;
+  int collectionIndex;
+};
+
+</code></pre></div><h3 id="attackdamagemobeffect"><a href="#attackdamagemobeffect" class="header-anchor">#</a> <code>AttackDamageMobEffect</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AttackDamageMobEffect : MobEffect
+{
+};
+
+</code></pre></div><h3 id="absorptionmobeffect"><a href="#absorptionmobeffect" class="header-anchor">#</a> <code>AbsorptionMobEffect</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AbsorptionMobEffect : MobEffect
+{
+};
+
+</code></pre></div><h3 id="actorinweathertest"><a href="#actorinweathertest" class="header-anchor">#</a> <code>ActorInWeatherTest</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActorInWeatherTest : FilterTest:96
+{
+  ActorInWeatherTest::WeatherType mWeather;
+};
+
+</code></pre></div><h3 id="airblockitem"><a href="#airblockitem" class="header-anchor">#</a> <code>AirBlockItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AirBlockItem : Item
+{
+};
+
+</code></pre></div><h3 id="arrowitem"><a href="#arrowitem" class="header-anchor">#</a> <code>ArrowItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ArrowItem : Item
+{
+  TextureUVCoordinateSet mArrowIcons[17];
+  Potion::PotionVariant mArrowVariants[17];
+};
+
+</code></pre></div><h3 id="armorstanditem"><a href="#armorstanditem" class="header-anchor">#</a> <code>ArmorStandItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ArmorStandItem : Item
+{
+};
+
+</code></pre></div><h3 id="auxdatablockitem"><a href="#auxdatablockitem" class="header-anchor">#</a> <code>AuxDataBlockItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AuxDataBlockItem : BlockItem
+{
+  const Block *mParentBlock;
+};
+
+</code></pre></div><h3 id="actorblock"><a href="#actorblock" class="header-anchor">#</a> <code>ActorBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActorBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="airblock"><a href="#airblock" class="header-anchor">#</a> <code>AirBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AirBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="activatorrailblock"><a href="#activatorrailblock" class="header-anchor">#</a> <code>ActivatorRailBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ActivatorRailBlock : BaseRailBlock
+{
+};
+
+</code></pre></div><h3 id="anvilblock"><a href="#anvilblock" class="header-anchor">#</a> <code>AnvilBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AnvilBlock : HeavyBlock
+{
+};
+
+</code></pre></div><h3 id="abilitycommand"><a href="#abilitycommand" class="header-anchor">#</a> <code>AbilityCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AbilityCommand : Command
+{
+  PlayerSelector mTargets;
+  std::string mAbilityName;
+  bool mValue;
+  bool mHaveValue;
+};
+
+</code></pre></div><h3 id="actorselector"><a href="#actorselector" class="header-anchor">#</a> <code>ActorSelector</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef CommandSelector&lt;Actor&gt; ActorSelector;
+
+</code></pre></div><h3 id="areaattackdefinition"><a href="#areaattackdefinition" class="header-anchor">#</a> <code>AreaAttackDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AreaAttackDefinition
+{
+  float mDamageRange;
+  int mDamagePerTick;
+  ActorDamageCause mDamageCause;
+  ActorFilterGroup mEntityFilter;
+};
+
+</code></pre></div><h3 id="actorspawnrulebase"><a href="#actorspawnrulebase" class="header-anchor">#</a> <code>ActorSpawnRuleBase</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ActorSpawnRuleBase
+{
+  int (**_vptr$ActorSpawnRuleBase)(void);
+  std::unordered_map&lt;std::string,int&gt; mSpawnDelayStartMap;
+};
+
+</code></pre></div><h3 id="avoidmobgoal"><a href="#avoidmobgoal" class="header-anchor">#</a> <code>AvoidMobGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) AvoidMobGoal : Goal
+{
+  Mob *mMob;
+  float mMaxDist;
+  float mMaxFlee;
+  float mWalkSpeedModifier;
+  float mSprintSpeedModifier;
+  float mProbabilityPerStrength;
+  TempEPtr&lt;Actor&gt; mToAvoid;
+  Unique&lt;Path&gt; mPath;
+  Vec3 mPos;
+  bool mIgnoreVisibility;
+};
+
+</code></pre></div><h3 id="activatetooldefinition"><a href="#activatetooldefinition" class="header-anchor">#</a> <code>ActivateToolDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ActivateToolDefinition : BehaviorDefinition
+{
+  BlockPos mBlockPos;
+  std::string mBlockPosId;
+};
+
+</code></pre></div><h3 id="activatetoolnode"><a href="#activatetoolnode" class="header-anchor">#</a> <code>ActivateToolNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) ActivateToolNode : BehaviorNode:480
+{
+  BlockPos mBlockPos;
+  const Block *mStartingBlock;
+  bool mRightMouseDown;
+  int mDelayTicks;
+  int mDelayCounter;
+  bool mPreActionDone;
+};
+
+</code></pre></div><h3 id="attackdefinition"><a href="#attackdefinition" class="header-anchor">#</a> <code>AttackDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AttackDefinition : BehaviorDefinition
+{
+  int mAttackTicks;
+  std::string mAttackTicksId;
+};
+
+</code></pre></div><h3 id="attacknode"><a href="#attacknode" class="header-anchor">#</a> <code>AttackNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) AttackNode : BehaviorNode:480
+{
+  int mNumTicksToAttack;
+  int mNumTicksAttacked;
+  bool mPreActionDone;
+};
+
+</code></pre></div><h3 id="armorcontainercontroller"><a href="#armorcontainercontroller" class="header-anchor">#</a> <code>ArmorContainerController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ArmorContainerController : ContainerController
+{
+};
+
+</code></pre></div><h3 id="agentservercommands"><a href="#agentservercommands" class="header-anchor">#</a> <code>AgentServerCommands</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct AgentServerCommands
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="agentcommand"><a href="#agentcommand" class="header-anchor">#</a> <code>AgentCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) AgentCommand : Command
+{
+  AgentCommand::Mode mMode;
+  AgentCommands::CollectCommand::CollectionSpecification mCollectMode;
+  AgentCommands::Direction mDirection;
+  CommandItem mItem;
+  int mSlot;
+  int mDestination;
+  int mQuantity;
+  int mAux;
+  CommandPosition mPos;
+  bool mIsPosSet;
+  float mYRot;
+  bool mIsYRotSet;
+};
+
+</code></pre></div><h3 id="agentcommands-getitemcountcommand"><a href="#agentcommands-getitemcountcommand" class="header-anchor">#</a> <code>AgentCommands::GetItemCountCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgentCommands::GetItemCountCommand : AgentCommands::Command:480
+{
+  int mCount;
+};
+
+</code></pre></div><h3 id="agentcommands-getitemdetailscommand"><a href="#agentcommands-getitemdetailscommand" class="header-anchor">#</a> <code>AgentCommands::GetItemDetailsCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgentCommands::GetItemDetailsCommand : AgentCommands::Command
+{
+  ItemStack mItem;
+};
+
+</code></pre></div><h3 id="agentcommands-getitemspacecommand"><a href="#agentcommands-getitemspacecommand" class="header-anchor">#</a> <code>AgentCommands::GetItemSpaceCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::GetItemSpaceCommand : AgentCommands::Command:480
+{
+  int mCount;
+  int mMaxCount;
+};
+
+</code></pre></div><h3 id="agentcommands-transfertocommand"><a href="#agentcommands-transfertocommand" class="header-anchor">#</a> <code>AgentCommands::TransferToCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgentCommands::TransferToCommand : AgentCommands::Command:480
+{
+  int mSrcSlot;
+  int mQuantity;
+  int mDestSlot;
+};
+
+</code></pre></div><h3 id="agentcommands-dropcommand"><a href="#agentcommands-dropcommand" class="header-anchor">#</a> <code>AgentCommands::DropCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::DropCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+  int mSlotNum;
+  int mQuantity;
+};
+
+</code></pre></div><h3 id="agentcommands-collectcommand"><a href="#agentcommands-collectcommand" class="header-anchor">#</a> <code>AgentCommands::CollectCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) AgentCommands::CollectCommand : AgentCommands::Command:480
+{
+  int mItemId;
+  AgentCommands::CollectCommand::CollectionSpecification mCollecting;
+  bool mDone;
+};
+
+</code></pre></div><h3 id="agentcommands-placecommand"><a href="#agentcommands-placecommand" class="header-anchor">#</a> <code>AgentCommands::PlaceCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) AgentCommands::PlaceCommand : AgentCommands::Command
+{
+  ItemStack mItem;
+  int mSlot;
+  AgentCommands::Direction mDir;
+};
+
+</code></pre></div><h3 id="agentcommands-turncommand"><a href="#agentcommands-turncommand" class="header-anchor">#</a> <code>AgentCommands::TurnCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::TurnCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+  float mTurnStep;
+  float mRotation;
+};
+
+</code></pre></div><h3 id="agentcommands-attackcommand"><a href="#agentcommands-attackcommand" class="header-anchor">#</a> <code>AgentCommands::AttackCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::AttackCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+};
+
+</code></pre></div><h3 id="agentcommands-destroycommand"><a href="#agentcommands-destroycommand" class="header-anchor">#</a> <code>AgentCommands::DestroyCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::DestroyCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+};
+
+</code></pre></div><h3 id="agentcommands-detectcommand"><a href="#agentcommands-detectcommand" class="header-anchor">#</a> <code>AgentCommands::DetectCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::DetectCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+};
+
+</code></pre></div><h3 id="agentcommands-detectredstonecommand"><a href="#agentcommands-detectredstonecommand" class="header-anchor">#</a> <code>AgentCommands::DetectRedstoneCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::DetectRedstoneCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+};
+
+</code></pre></div><h3 id="agentcommands-dropallcommand"><a href="#agentcommands-dropallcommand" class="header-anchor">#</a> <code>AgentCommands::DropAllCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::DropAllCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+};
+
+</code></pre></div><h3 id="agentcommands-inspectcommand"><a href="#agentcommands-inspectcommand" class="header-anchor">#</a> <code>AgentCommands::InspectCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj AgentCommands::InspectCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+  std::string mBlockName;
+};
+
+</code></pre></div><h3 id="agentcommands-inspectdatacommand"><a href="#agentcommands-inspectdatacommand" class="header-anchor">#</a> <code>AgentCommands::InspectDataCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) AgentCommands::InspectDataCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+  const DataID mData;
+};
+
+</code></pre></div><h3 id="agentcommands-movecommand"><a href="#agentcommands-movecommand" class="header-anchor">#</a> <code>AgentCommands::MoveCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::MoveCommand : AgentCommands::Command:464
+{
+  AgentCommands::Direction mDir;
+  Vec3 mPosition;
+  bool mTicked;
+  Vec3 mStartingPosition;
+  Vec3 mIdealMovementVector;
+};
+
+</code></pre></div><h3 id="agentcommands-tillcommand"><a href="#agentcommands-tillcommand" class="header-anchor">#</a> <code>AgentCommands::TillCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) AgentCommands::TillCommand : AgentCommands::Command
+{
+  ItemStack mItem;
+  AgentCommands::Direction mDir;
+};
+
+</code></pre></div><h3 id="agentcommand-agentcommandreturntype"><a href="#agentcommand-agentcommandreturntype" class="header-anchor">#</a> <code>AgentCommand::AgentCommandReturnType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::unique_ptr&lt;AgentCommands::Command&gt; AgentCommand::AgentCommandReturnType;
+
+</code></pre></div><h3 id="agentcommands-command-480"><a href="#agentcommands-command-480" class="header-anchor">#</a> <code>AgentCommands::Command:480</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((packed)) __attribute__((aligned(4))) AgentCommands::Command:480
+{
+  int (**_vptr$Command)(void);
+  Actor *mTarget;
+  Player *mCommander;
+  std::string mCommandName;
+  bool mResult;
+  bool mIsQueryResult;
+};
+
+</code></pre></div><h3 id="agentcommands-command-464"><a href="#agentcommands-command-464" class="header-anchor">#</a> <code>AgentCommands::Command:464</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((packed)) __attribute__((aligned(2))) AgentCommands::Command:464
+{
+  int (**_vptr$Command)(void);
+  Actor *mTarget;
+  Player *mCommander;
+  std::string mCommandName;
+  bool mResult;
+  bool mIsQueryResult;
+};
+
+</code></pre></div><h3 id="appplatform-listener"><a href="#appplatform-listener" class="header-anchor">#</a> <code>AppPlatform::Listener</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AppPlatformListener AppPlatform::Listener;
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/mcstructure/1.14.60.5/structure/B.html">
+        B
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/33.6602f7d9.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>X | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/147.0e0e09a7.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/structure/A~1.html" class="sidebar-link">A~1</a></li><li><a href="/mcstructure/1.16.201/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/structure/B~1.html" class="sidebar-link">B~1</a></li><li><a href="/mcstructure/1.16.201/structure/B~2.html" class="sidebar-link">B~2</a></li><li><a href="/mcstructure/1.16.201/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/structure/C~1.html" class="sidebar-link">C~1</a></li><li><a href="/mcstructure/1.16.201/structure/C~2.html" class="sidebar-link">C~2</a></li><li><a href="/mcstructure/1.16.201/structure/C~3.html" class="sidebar-link">C~3</a></li><li><a href="/mcstructure/1.16.201/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/structure/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/structure/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/structure/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/structure/D~4.html" class="sidebar-link">D~4</a></li><li><a href="/mcstructure/1.16.201/structure/D~5.html" class="sidebar-link">D~5</a></li><li><a href="/mcstructure/1.16.201/structure/D~6.html" class="sidebar-link">D~6</a></li><li><a href="/mcstructure/1.16.201/structure/D~7.html" class="sidebar-link">D~7</a></li><li><a href="/mcstructure/1.16.201/structure/D~8.html" class="sidebar-link">D~8</a></li><li><a href="/mcstructure/1.16.201/structure/D~9.html" class="sidebar-link">D~9</a></li><li><a href="/mcstructure/1.16.201/structure/D~10.html" class="sidebar-link">D~10</a></li><li><a href="/mcstructure/1.16.201/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/structure/E~1.html" class="sidebar-link">E~1</a></li><li><a href="/mcstructure/1.16.201/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/structure/F~1.html" class="sidebar-link">F~1</a></li><li><a href="/mcstructure/1.16.201/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/structure/I~1.html" class="sidebar-link">I~1</a></li><li><a href="/mcstructure/1.16.201/structure/I~2.html" class="sidebar-link">I~2</a></li><li><a href="/mcstructure/1.16.201/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/structure/L~1.html" class="sidebar-link">L~1</a></li><li><a href="/mcstructure/1.16.201/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/structure/M~1.html" class="sidebar-link">M~1</a></li><li><a href="/mcstructure/1.16.201/structure/M~2.html" class="sidebar-link">M~2</a></li><li><a href="/mcstructure/1.16.201/structure/M~3.html" class="sidebar-link">M~3</a></li><li><a href="/mcstructure/1.16.201/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/structure/P~1.html" class="sidebar-link">P~1</a></li><li><a href="/mcstructure/1.16.201/structure/P~2.html" class="sidebar-link">P~2</a></li><li><a href="/mcstructure/1.16.201/structure/P~3.html" class="sidebar-link">P~3</a></li><li><a href="/mcstructure/1.16.201/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.16.201/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/structure/R~1.html" class="sidebar-link">R~1</a></li><li><a href="/mcstructure/1.16.201/structure/R~2.html" class="sidebar-link">R~2</a></li><li><a href="/mcstructure/1.16.201/structure/R~3.html" class="sidebar-link">R~3</a></li><li><a href="/mcstructure/1.16.201/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/structure/S~1.html" class="sidebar-link">S~1</a></li><li><a href="/mcstructure/1.16.201/structure/S~2.html" class="sidebar-link">S~2</a></li><li><a href="/mcstructure/1.16.201/structure/S~3.html" class="sidebar-link">S~3</a></li><li><a href="/mcstructure/1.16.201/structure/S~4.html" class="sidebar-link">S~4</a></li><li><a href="/mcstructure/1.16.201/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/structure/T~1.html" class="sidebar-link">T~1</a></li><li><a href="/mcstructure/1.16.201/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.16.201/structure/W~1.html" class="sidebar-link">W~1</a></li><li><a href="/mcstructure/1.16.201/structure/X.html" aria-current="page" class="active sidebar-link">X</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/structure/Z.html" class="sidebar-link">Z</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="x"><a href="#x" class="header-anchor">#</a> X</h1> <h3 id="xtime"><a href="#xtime" class="header-anchor">#</a> <code>xtime</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>__int64</code></td> <td>sec</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>nsec</td></tr></tbody></table> <h3 id="xforgegameversion"><a href="#xforgegameversion" class="header-anchor">#</a> <code>XforgeGameVersion</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(20) <code>unsigned int[5]</code></td> <td>mDigit</td></tr> <tr><td>24</td> <td>(32) <code>std::string</code></td> <td>mString</td></tr></tbody></table> <h3 id="xmldomdocumentevents-vtbl"><a href="#xmldomdocumentevents-vtbl" class="header-anchor">#</a> <code>XMLDOMDocumentEvents_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ XMLDOMDocumentEvents_vtbl
+{
+  HRESULT (__fastcall *QueryInterface)(IUnknown *this, const _GUID *, void **);
+  unsigned int (__fastcall *AddRef)(IUnknown *this);
+  unsigned int (__fastcall *Release)(IUnknown *this);
+  HRESULT (__fastcall *GetTypeInfoCount)(IDispatch *this, unsigned int *);
+  HRESULT (__fastcall *GetTypeInfo)(IDispatch *this, unsigned int, unsigned int, ITypeInfo **);
+  HRESULT (__fastcall *GetIDsOfNames)(IDispatch *this, const _GUID *, wchar_t **, unsigned int, unsigned int, int *);
+  HRESULT (__fastcall *Invoke)(IDispatch *this, int, const _GUID *, unsigned int, unsigned __int16, tagDISPPARAMS *, tagVARIANT *, tagEXCEPINFO *, unsigned int *);
+};
+
+</code></pre></div><h3 id="xmldomdocumentevents"><a href="#xmldomdocumentevents" class="header-anchor">#</a> <code>XMLDOMDocumentEvents</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XMLDOMDocumentEvents : IDispatch
+{
+};
+
+</code></pre></div><h3 id="xblconsolesigninscreencontroller"><a href="#xblconsolesigninscreencontroller" class="header-anchor">#</a> <code>XblConsoleSignInScreenController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __declspec(align(8)) XblConsoleSignInScreenController : MinecraftScreenController
+{
+  const std::string mCode;
+  const std::string mUrl;
+  bool mDirty;
+  const bool mLanguageCanBeSmooth;
+};
+
+</code></pre></div><h3 id="xblconsolesigninscreencontroller-vtbl"><a href="#xblconsolesigninscreencontroller-vtbl" class="header-anchor">#</a> <code>XblConsoleSignInScreenController_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ XblConsoleSignInScreenController_vtbl
+{
+  void (__fastcall *~IScreenController)(IScreenController *this);
+  ui::DirtyFlag (__fastcall *tick)(IScreenController *this);
+  ui::ViewRequest (__fastcall *handleEvent)(IScreenController *this, ScreenEvent *);
+  std::optional&lt;std::string &gt; *(__fastcall *getRoute)(IScreenController *this, std::optional&lt;std::string &gt; *result);
+  void (__fastcall *setScreenState)(IScreenController *this, const std::vector&lt;std::pair&lt;std::string,std::string &gt;&gt; *);
+  void (__fastcall *onOpen)(ScreenController *this);
+  void (__fastcall *onTerminate)(ScreenController *this);
+  void (__fastcall *onInit)(ScreenController *this);
+  void (__fastcall *onDelete)(ScreenController *this);
+  bool (__fastcall *canExit)(ScreenController *this);
+  ui::ViewRequest (__fastcall *tryExit)(ScreenController *this);
+  bool (__fastcall *areControllerTabsEnabled)(ScreenController *this);
+  void (__fastcall *onCreation)(ScreenController *this);
+  void (__fastcall *logCreationTime)(ScreenController *this, const std::string *, long double, long double, unsigned __int8);
+  void (__fastcall *onLeave)(ScreenController *this);
+  void (__fastcall *leaveScreen)(ScreenController *this);
+  ui::DirtyFlag (__fastcall *handleGameEventNotification)(ScreenController *this, ui::GameEventNotification);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, int, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  void (__fastcall *handleLicenseChanged)(ScreenController *this);
+  void (__fastcall *onDictationEvent)(ScreenController *this, const std::string *);
+  void (__fastcall *setAssociatedBlockPos)(ScreenController *this, const BlockPos *);
+  void (__fastcall *setAssociatedEntityUniqueID)(ScreenController *this, const ActorUniqueID);
+  void (__fastcall *setSuspendInput)(ScreenController *this, bool);
+  float (__fastcall *getCallbackInterval)(ScreenController *this);
+  void (__fastcall *onRender)(ScreenController *this);
+  void (__fastcall *addStaticScreenVars)(ScreenController *this, Json::Value *);
+  std::string *(__fastcall *getAdditionalScreenInfo)(ScreenController *this, std::string *result);
+  std::string *(__fastcall *getTelemetryOverride)(ScreenController *this, std::string *result);
+  void (__fastcall *addEventProperties)(ScreenController *this, std::unordered_map&lt;std::string,std::string&gt; *);
+  ui::SceneType (__fastcall *getSceneType)(ScreenController *this);
+  int (__fastcall *getScreenVersion)(ScreenController *this);
+  bool (__fastcall *screenHandlesGamepadMenuButton)(ScreenController *this);
+  ScreenControllerProxy *(__fastcall *getProxy)(ScreenController *this);
+  void (__fastcall *onEntered)(ScreenController *this);
+  unsigned int (__fastcall *getNameId)(ScreenController *this, const std::string *);
+  bool (__fastcall *verifySceneStack)(ScreenController *this, SceneStack *);
+  bool (__fastcall *_doesScreenHaveExitBehavior)(ScreenController *this);
+  bool (__fastcall *_isStillValid)(MinecraftScreenController *this);
+  bool (__fastcall *_getGamepadHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getMixedHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getKeyboardHelperVisible)(MinecraftScreenController *this);
+  std::string *(__fastcall *_getButtonADescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonBDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonXDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonYDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonKeyboardDescription)(MinecraftScreenController *this, std::string *result);
+};
+
+</code></pre></div><h3 id="xblconsolesigninsucceededscreencontroller"><a href="#xblconsolesigninsucceededscreencontroller" class="header-anchor">#</a> <code>XblConsoleSignInSucceededScreenController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblConsoleSignInSucceededScreenController : MinecraftScreenController
+{
+  Social::UserPicturePath mGamerPicPath;
+  bool mDirty;
+  bool mIsNewAccount;
+  bool mDisplayedPicture;
+  __declspec(align(2)) _BYTE mSignInResult[4];
+  std::function&lt;void __cdecl(enum Social::SignInResult)&gt; mOnLetsPlayCallback;
+};
+
+</code></pre></div><h3 id="xblconsolesigninsucceededscreencontroller-vtbl"><a href="#xblconsolesigninsucceededscreencontroller-vtbl" class="header-anchor">#</a> <code>XblConsoleSignInSucceededScreenController_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ XblConsoleSignInSucceededScreenController_vtbl
+{
+  void (__fastcall *~IScreenController)(IScreenController *this);
+  ui::DirtyFlag (__fastcall *tick)(IScreenController *this);
+  ui::ViewRequest (__fastcall *handleEvent)(IScreenController *this, ScreenEvent *);
+  std::optional&lt;std::string &gt; *(__fastcall *getRoute)(IScreenController *this, std::optional&lt;std::string &gt; *result);
+  void (__fastcall *setScreenState)(IScreenController *this, const std::vector&lt;std::pair&lt;std::string,std::string &gt;&gt; *);
+  void (__fastcall *onOpen)(ScreenController *this);
+  void (__fastcall *onTerminate)(ScreenController *this);
+  void (__fastcall *onInit)(ScreenController *this);
+  void (__fastcall *onDelete)(ScreenController *this);
+  bool (__fastcall *canExit)(ScreenController *this);
+  ui::ViewRequest (__fastcall *tryExit)(ScreenController *this);
+  bool (__fastcall *areControllerTabsEnabled)(ScreenController *this);
+  void (__fastcall *onCreation)(ScreenController *this);
+  void (__fastcall *logCreationTime)(ScreenController *this, const std::string *, long double, long double, unsigned __int8);
+  void (__fastcall *onLeave)(ScreenController *this);
+  void (__fastcall *leaveScreen)(ScreenController *this);
+  ui::DirtyFlag (__fastcall *handleGameEventNotification)(ScreenController *this, ui::GameEventNotification);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, int, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  void (__fastcall *handleLicenseChanged)(ScreenController *this);
+  void (__fastcall *onDictationEvent)(ScreenController *this, const std::string *);
+  void (__fastcall *setAssociatedBlockPos)(ScreenController *this, const BlockPos *);
+  void (__fastcall *setAssociatedEntityUniqueID)(ScreenController *this, const ActorUniqueID);
+  void (__fastcall *setSuspendInput)(ScreenController *this, bool);
+  float (__fastcall *getCallbackInterval)(ScreenController *this);
+  void (__fastcall *onRender)(ScreenController *this);
+  void (__fastcall *addStaticScreenVars)(ScreenController *this, Json::Value *);
+  std::string *(__fastcall *getAdditionalScreenInfo)(ScreenController *this, std::string *result);
+  std::string *(__fastcall *getTelemetryOverride)(ScreenController *this, std::string *result);
+  void (__fastcall *addEventProperties)(ScreenController *this, std::unordered_map&lt;std::string,std::string&gt; *);
+  ui::SceneType (__fastcall *getSceneType)(ScreenController *this);
+  int (__fastcall *getScreenVersion)(ScreenController *this);
+  bool (__fastcall *screenHandlesGamepadMenuButton)(ScreenController *this);
+  ScreenControllerProxy *(__fastcall *getProxy)(ScreenController *this);
+  void (__fastcall *onEntered)(ScreenController *this);
+  unsigned int (__fastcall *getNameId)(ScreenController *this, const std::string *);
+  bool (__fastcall *verifySceneStack)(ScreenController *this, SceneStack *);
+  bool (__fastcall *_doesScreenHaveExitBehavior)(ScreenController *this);
+  bool (__fastcall *_isStillValid)(MinecraftScreenController *this);
+  bool (__fastcall *_getGamepadHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getMixedHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getKeyboardHelperVisible)(MinecraftScreenController *this);
+  std::string *(__fastcall *_getButtonADescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonBDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonXDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonYDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonKeyboardDescription)(MinecraftScreenController *this, std::string *result);
+};
+
+</code></pre></div><h3 id="xblconsolesigninscreencontroller-registerbindings-l2-lambda-2f4a09ef9243b7a441b7ffa6a4522b13"><a href="#xblconsolesigninscreencontroller-registerbindings-l2-lambda-2f4a09ef9243b7a441b7ffa6a4522b13" class="header-anchor">#</a> <code>XblConsoleSignInScreenController::_registerBindings::__l2::&lt;lambda_2f4a09ef9243b7a441b7ffa6a4522b13&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblConsoleSignInScreenController::_registerBindings::__l2::&lt;lambda_2f4a09ef9243b7a441b7ffa6a4522b13&gt;
+{
+  XblConsoleSignInScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblconsolesigninscreencontroller-registerbindings-l2-lambda-a4660731f1f893bdfcafb3c37f3c74c1"><a href="#xblconsolesigninscreencontroller-registerbindings-l2-lambda-a4660731f1f893bdfcafb3c37f3c74c1" class="header-anchor">#</a> <code>XblConsoleSignInScreenController::_registerBindings::__l2::&lt;lambda_a4660731f1f893bdfcafb3c37f3c74c1&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblConsoleSignInScreenController::_registerBindings::__l2::&lt;lambda_a4660731f1f893bdfcafb3c37f3c74c1&gt;
+{
+  XblConsoleSignInScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblconsolesigninscreencontroller-registerbindings-l2-lambda-faa4ecdd94945fc14413b33f4d36fe2a"><a href="#xblconsolesigninscreencontroller-registerbindings-l2-lambda-faa4ecdd94945fc14413b33f4d36fe2a" class="header-anchor">#</a> <code>XblConsoleSignInScreenController::_registerBindings::__l2::&lt;lambda_faa4ecdd94945fc14413b33f4d36fe2a&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblConsoleSignInScreenController::_registerBindings::__l2::&lt;lambda_faa4ecdd94945fc14413b33f4d36fe2a&gt;
+{
+  XblConsoleSignInScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblconsolesigninscreencontroller-registereventhandlers-l2-lambda-4bd8b8df77ee6e64cdcd96600abfc7a1"><a href="#xblconsolesigninscreencontroller-registereventhandlers-l2-lambda-4bd8b8df77ee6e64cdcd96600abfc7a1" class="header-anchor">#</a> <code>XblConsoleSignInScreenController::_registerEventHandlers::__l2::&lt;lambda_4bd8b8df77ee6e64cdcd96600abfc7a1&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblConsoleSignInScreenController::_registerEventHandlers::__l2::&lt;lambda_4bd8b8df77ee6e64cdcd96600abfc7a1&gt;
+{
+};
+
+</code></pre></div><h3 id="xblfriendfinderscreencontroller"><a href="#xblfriendfinderscreencontroller" class="header-anchor">#</a> <code>XblFriendFinderScreenController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __declspec(align(8)) XblFriendFinderScreenController : MinecraftScreenController
+{
+  std::string mGamertag;
+  bool mSearchingForGamertag;
+  bool mGamertagNotFound;
+  bool mShowPlatformAccounts;
+  bool mDirty;
+};
+
+</code></pre></div><h3 id="xblfriendfinderscreencontroller-vtbl"><a href="#xblfriendfinderscreencontroller-vtbl" class="header-anchor">#</a> <code>XblFriendFinderScreenController_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ XblFriendFinderScreenController_vtbl
+{
+  void (__fastcall *~IScreenController)(IScreenController *this);
+  ui::DirtyFlag (__fastcall *tick)(IScreenController *this);
+  ui::ViewRequest (__fastcall *handleEvent)(IScreenController *this, ScreenEvent *);
+  std::optional&lt;std::string &gt; *(__fastcall *getRoute)(IScreenController *this, std::optional&lt;std::string &gt; *result);
+  void (__fastcall *setScreenState)(IScreenController *this, const std::vector&lt;std::pair&lt;std::string,std::string &gt;&gt; *);
+  void (__fastcall *onOpen)(ScreenController *this);
+  void (__fastcall *onTerminate)(ScreenController *this);
+  void (__fastcall *onInit)(ScreenController *this);
+  void (__fastcall *onDelete)(ScreenController *this);
+  bool (__fastcall *canExit)(ScreenController *this);
+  ui::ViewRequest (__fastcall *tryExit)(ScreenController *this);
+  bool (__fastcall *areControllerTabsEnabled)(ScreenController *this);
+  void (__fastcall *onCreation)(ScreenController *this);
+  void (__fastcall *logCreationTime)(ScreenController *this, const std::string *, long double, long double, unsigned __int8);
+  void (__fastcall *onLeave)(ScreenController *this);
+  void (__fastcall *leaveScreen)(ScreenController *this);
+  ui::DirtyFlag (__fastcall *handleGameEventNotification)(ScreenController *this, ui::GameEventNotification);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, int, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  void (__fastcall *handleLicenseChanged)(ScreenController *this);
+  void (__fastcall *onDictationEvent)(ScreenController *this, const std::string *);
+  void (__fastcall *setAssociatedBlockPos)(ScreenController *this, const BlockPos *);
+  void (__fastcall *setAssociatedEntityUniqueID)(ScreenController *this, const ActorUniqueID);
+  void (__fastcall *setSuspendInput)(ScreenController *this, bool);
+  float (__fastcall *getCallbackInterval)(ScreenController *this);
+  void (__fastcall *onRender)(ScreenController *this);
+  void (__fastcall *addStaticScreenVars)(ScreenController *this, Json::Value *);
+  std::string *(__fastcall *getAdditionalScreenInfo)(ScreenController *this, std::string *result);
+  std::string *(__fastcall *getTelemetryOverride)(ScreenController *this, std::string *result);
+  void (__fastcall *addEventProperties)(ScreenController *this, std::unordered_map&lt;std::string,std::string&gt; *);
+  ui::SceneType (__fastcall *getSceneType)(ScreenController *this);
+  int (__fastcall *getScreenVersion)(ScreenController *this);
+  bool (__fastcall *screenHandlesGamepadMenuButton)(ScreenController *this);
+  ScreenControllerProxy *(__fastcall *getProxy)(ScreenController *this);
+  void (__fastcall *onEntered)(ScreenController *this);
+  unsigned int (__fastcall *getNameId)(ScreenController *this, const std::string *);
+  bool (__fastcall *verifySceneStack)(ScreenController *this, SceneStack *);
+  bool (__fastcall *_doesScreenHaveExitBehavior)(ScreenController *this);
+  bool (__fastcall *_isStillValid)(MinecraftScreenController *this);
+  bool (__fastcall *_getGamepadHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getMixedHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getKeyboardHelperVisible)(MinecraftScreenController *this);
+  std::string *(__fastcall *_getButtonADescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonBDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonXDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonYDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonKeyboardDescription)(MinecraftScreenController *this, std::string *result);
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller"><a href="#xblreportuserscreencontroller" class="header-anchor">#</a> <code>XblReportUserScreenController</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __declspec(align(4)) XblReportUserScreenController : MinecraftScreenController
+{
+  const std::string mGamertag;
+  const std::string mXuid;
+  std::string mReportAdditionalText;
+  _BYTE mReportReason[4];
+  bool mReportReasonDropDownActive;
+  bool mReasonSelected;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-vtbl"><a href="#xblreportuserscreencontroller-vtbl" class="header-anchor">#</a> <code>XblReportUserScreenController_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ XblReportUserScreenController_vtbl
+{
+  void (__fastcall *~IScreenController)(IScreenController *this);
+  ui::DirtyFlag (__fastcall *tick)(IScreenController *this);
+  ui::ViewRequest (__fastcall *handleEvent)(IScreenController *this, ScreenEvent *);
+  std::optional&lt;std::string &gt; *(__fastcall *getRoute)(IScreenController *this, std::optional&lt;std::string &gt; *result);
+  void (__fastcall *setScreenState)(IScreenController *this, const std::vector&lt;std::pair&lt;std::string,std::string &gt;&gt; *);
+  void (__fastcall *onOpen)(ScreenController *this);
+  void (__fastcall *onTerminate)(ScreenController *this);
+  void (__fastcall *onInit)(ScreenController *this);
+  void (__fastcall *onDelete)(ScreenController *this);
+  bool (__fastcall *canExit)(ScreenController *this);
+  ui::ViewRequest (__fastcall *tryExit)(ScreenController *this);
+  bool (__fastcall *areControllerTabsEnabled)(ScreenController *this);
+  void (__fastcall *onCreation)(ScreenController *this);
+  void (__fastcall *logCreationTime)(ScreenController *this, const std::string *, long double, long double, unsigned __int8);
+  void (__fastcall *onLeave)(ScreenController *this);
+  void (__fastcall *leaveScreen)(ScreenController *this);
+  ui::DirtyFlag (__fastcall *handleGameEventNotification)(ScreenController *this, ui::GameEventNotification);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  bool (__fastcall *bind)(ScreenController *this, const std::string *, unsigned int, int, const std::string *, unsigned int, const std::string *, UIPropertyBag *);
+  void (__fastcall *handleLicenseChanged)(ScreenController *this);
+  void (__fastcall *onDictationEvent)(ScreenController *this, const std::string *);
+  void (__fastcall *setAssociatedBlockPos)(ScreenController *this, const BlockPos *);
+  void (__fastcall *setAssociatedEntityUniqueID)(ScreenController *this, const ActorUniqueID);
+  void (__fastcall *setSuspendInput)(ScreenController *this, bool);
+  float (__fastcall *getCallbackInterval)(ScreenController *this);
+  void (__fastcall *onRender)(ScreenController *this);
+  void (__fastcall *addStaticScreenVars)(ScreenController *this, Json::Value *);
+  std::string *(__fastcall *getAdditionalScreenInfo)(ScreenController *this, std::string *result);
+  std::string *(__fastcall *getTelemetryOverride)(ScreenController *this, std::string *result);
+  void (__fastcall *addEventProperties)(ScreenController *this, std::unordered_map&lt;std::string,std::string&gt; *);
+  ui::SceneType (__fastcall *getSceneType)(ScreenController *this);
+  int (__fastcall *getScreenVersion)(ScreenController *this);
+  bool (__fastcall *screenHandlesGamepadMenuButton)(ScreenController *this);
+  ScreenControllerProxy *(__fastcall *getProxy)(ScreenController *this);
+  void (__fastcall *onEntered)(ScreenController *this);
+  unsigned int (__fastcall *getNameId)(ScreenController *this, const std::string *);
+  bool (__fastcall *verifySceneStack)(ScreenController *this, SceneStack *);
+  bool (__fastcall *_doesScreenHaveExitBehavior)(ScreenController *this);
+  bool (__fastcall *_isStillValid)(MinecraftScreenController *this);
+  bool (__fastcall *_getGamepadHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getMixedHelperVisible)(MinecraftScreenController *this);
+  bool (__fastcall *_getKeyboardHelperVisible)(MinecraftScreenController *this);
+  std::string *(__fastcall *_getButtonADescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonBDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonXDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonYDescription)(MinecraftScreenController *this, std::string *result);
+  std::string *(__fastcall *_getButtonKeyboardDescription)(MinecraftScreenController *this, std::string *result);
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerreportreasondropdown-l6-lambda-88bcef1d7c9e57c41a90343c9670718a"><a href="#xblreportuserscreencontroller-registerreportreasondropdown-l6-lambda-88bcef1d7c9e57c41a90343c9670718a" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerReportReasonDropdown::__l6::&lt;lambda_88bcef1d7c9e57c41a90343c9670718a&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerReportReasonDropdown::__l6::&lt;lambda_88bcef1d7c9e57c41a90343c9670718a&gt;
+{
+  std::pair&lt;std::string const ,enum Social::ReportReason&gt; blockTypePair;
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerreportreasondropdown-l6-lambda-e4888b90ce259c243405cc142b6a0274"><a href="#xblreportuserscreencontroller-registerreportreasondropdown-l6-lambda-e4888b90ce259c243405cc142b6a0274" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerReportReasonDropdown::__l6::&lt;lambda_e4888b90ce259c243405cc142b6a0274&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerReportReasonDropdown::__l6::&lt;lambda_e4888b90ce259c243405cc142b6a0274&gt;
+{
+  std::pair&lt;std::string const ,enum Social::ReportReason&gt; blockTypePair;
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-b4b1334bb14fefc5f38cc3b84ad43f4a"><a href="#xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-b4b1334bb14fefc5f38cc3b84ad43f4a" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_b4b1334bb14fefc5f38cc3b84ad43f4a&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_b4b1334bb14fefc5f38cc3b84ad43f4a&gt;
+{
+  std::vector&lt;std::string&gt; reportReasonLabels;
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-e8c7814febe457a2b6aaf115b255ed1b"><a href="#xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-e8c7814febe457a2b6aaf115b255ed1b" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_e8c7814febe457a2b6aaf115b255ed1b&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_e8c7814febe457a2b6aaf115b255ed1b&gt;
+{
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-f70f0bf90b49a54b217fa4fbac44b339"><a href="#xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-f70f0bf90b49a54b217fa4fbac44b339" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_f70f0bf90b49a54b217fa4fbac44b339&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_f70f0bf90b49a54b217fa4fbac44b339&gt;
+{
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-fd371238e2ca7481dafd38b7db268828"><a href="#xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-fd371238e2ca7481dafd38b7db268828" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_fd371238e2ca7481dafd38b7db268828&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_fd371238e2ca7481dafd38b7db268828&gt;
+{
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-10dbbaa422c82c7b0aaa698b196c8860"><a href="#xblreportuserscreencontroller-registerreportreasondropdown-l2-lambda-10dbbaa422c82c7b0aaa698b196c8860" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_10dbbaa422c82c7b0aaa698b196c8860&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerReportReasonDropdown::__l2::&lt;lambda_10dbbaa422c82c7b0aaa698b196c8860&gt;
+{
+  const std::string dropdownName;
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerbindings-l2-lambda-a0334f7b4aebbfa53ba98b2353bc46a0"><a href="#xblreportuserscreencontroller-registerbindings-l2-lambda-a0334f7b4aebbfa53ba98b2353bc46a0" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerBindings::__l2::&lt;lambda_a0334f7b4aebbfa53ba98b2353bc46a0&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerBindings::__l2::&lt;lambda_a0334f7b4aebbfa53ba98b2353bc46a0&gt;
+{
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registerbindings-l2-lambda-fd0f9d83b563f9139c951c7bab4be1ad"><a href="#xblreportuserscreencontroller-registerbindings-l2-lambda-fd0f9d83b563f9139c951c7bab4be1ad" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerBindings::__l2::&lt;lambda_fd0f9d83b563f9139c951c7bab4be1ad&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerBindings::__l2::&lt;lambda_fd0f9d83b563f9139c951c7bab4be1ad&gt;
+{
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registereventhandlers-l2-lambda-ae05fab552e586cbc7d5fdc3c1c86c91"><a href="#xblreportuserscreencontroller-registereventhandlers-l2-lambda-ae05fab552e586cbc7d5fdc3c1c86c91" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerEventHandlers::__l2::&lt;lambda_ae05fab552e586cbc7d5fdc3c1c86c91&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerEventHandlers::__l2::&lt;lambda_ae05fab552e586cbc7d5fdc3c1c86c91&gt;
+{
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registereventhandlers-l2-lambda-d06a57ef78bf8fcf5bf1ef99580152bb"><a href="#xblreportuserscreencontroller-registereventhandlers-l2-lambda-d06a57ef78bf8fcf5bf1ef99580152bb" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerEventHandlers::__l2::&lt;lambda_d06a57ef78bf8fcf5bf1ef99580152bb&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerEventHandlers::__l2::&lt;lambda_d06a57ef78bf8fcf5bf1ef99580152bb&gt;
+{
+  XblReportUserScreenController *const __this;
+};
+
+</code></pre></div><h3 id="xblreportuserscreencontroller-registereventhandlers-l2-lambda-d06a57ef78bf8fcf5bf1ef99580152bb-l2-lambda-ca803275f04f4837cd092ef34211a85d"><a href="#xblreportuserscreencontroller-registereventhandlers-l2-lambda-d06a57ef78bf8fcf5bf1ef99580152bb-l2-lambda-ca803275f04f4837cd092ef34211a85d" class="header-anchor">#</a> <code>XblReportUserScreenController::_registerEventHandlers::__l2::&lt;lambda_d06a57ef78bf8fcf5bf1ef99580152bb&gt;::()::__l2::&lt;lambda_ca803275f04f4837cd092ef34211a85d&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblReportUserScreenController::_registerEventHandlers::__l2::&lt;lambda_d06a57ef78bf8fcf5bf1ef99580152bb&gt;::()::__l2::&lt;lambda_ca803275f04f4837cd092ef34211a85d&gt;
+{
+  std::shared_ptr&lt;MinecraftScreenModel&gt; sharedMinecraftScreenModel;
+  std::string gamertag;
+};
+
+</code></pre></div><h3 id="xblfriendfinderscreencontroller-checklinkedprofiles-l2-lambda-b9ae3cfd4bb0a767f638b0615f147218"><a href="#xblfriendfinderscreencontroller-checklinkedprofiles-l2-lambda-b9ae3cfd4bb0a767f638b0615f147218" class="header-anchor">#</a> <code>XblFriendFinderScreenController::_checkLinkedProfiles::__l2::&lt;lambda_b9ae3cfd4bb0a767f638b0615f147218&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblFriendFinderScreenController::_checkLinkedProfiles::__l2::&lt;lambda_b9ae3cfd4bb0a767f638b0615f147218&gt;
+{
+  std::weak_ptr&lt;XblFriendFinderScreenController&gt; weakThis;
+  const Social::XboxLiveUserProfileData xboxProfile;
+};
+
+</code></pre></div><h3 id="xblfriendfinderscreencontroller-checklinkedprofiles-l2-lambda-b9ae3cfd4bb0a767f638b0615f147218-l8-lambda-bb5c55fccfae49aaefc2ba322ac9d152"><a href="#xblfriendfinderscreencontroller-checklinkedprofiles-l2-lambda-b9ae3cfd4bb0a767f638b0615f147218-l8-lambda-bb5c55fccfae49aaefc2ba322ac9d152" class="header-anchor">#</a> <code>XblFriendFinderScreenController::_checkLinkedProfiles::__l2::&lt;lambda_b9ae3cfd4bb0a767f638b0615f147218&gt;::()::__l8::&lt;lambda_bb5c55fccfae49aaefc2ba322ac9d152&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblFriendFinderScreenController::_checkLinkedProfiles::__l2::&lt;lambda_b9ae3cfd4bb0a767f638b0615f147218&gt;::()::__l8::&lt;lambda_bb5c55fccfae49aaefc2ba322ac9d152&gt;
+{
+  std::weak_ptr&lt;XblFriendFinderScreenController&gt; weakThis;
+  std::string xuid;
+  std::string uuid;
+};
+
+</code></pre></div><h3 id="xblfriendfinderscreencontroller-registereventhandlers-l2-lambda-de17937c2e542e02b685f02b95117836-l5-lambda-c0feb565d82aad36c0ce654825cdf3b0"><a href="#xblfriendfinderscreencontroller-registereventhandlers-l2-lambda-de17937c2e542e02b685f02b95117836-l5-lambda-c0feb565d82aad36c0ce654825cdf3b0" class="header-anchor">#</a> <code>XblFriendFinderScreenController::_registerEventHandlers::__l2::&lt;lambda_de17937c2e542e02b685f02b95117836&gt;::()::__l5::&lt;lambda_c0feb565d82aad36c0ce654825cdf3b0&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XblFriendFinderScreenController::_registerEventHandlers::__l2::&lt;lambda_de17937c2e542e02b685f02b95117836&gt;::()::__l5::&lt;lambda_c0feb565d82aad36c0ce654825cdf3b0&gt;
+{
+  std::weak_ptr&lt;XblFriendFinderScreenController&gt; weakThis;
+};
+
+</code></pre></div><h3 id="xpcommand"><a href="#xpcommand" class="header-anchor">#</a> <code>XPCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj XPCommand : Command
+{
+  CommandSelector&lt;Player&gt; mTargets;
+  int mXP;
+  int mLevels;
+};
+
+</code></pre></div><h3 id="xpcommand-vtbl"><a href="#xpcommand-vtbl" class="header-anchor">#</a> <code>XPCommand_vtbl</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct /*VFT*/ XPCommand_vtbl
+{
+  void (__fastcall *~Command)(Command *this);
+  void (__fastcall *execute)(Command *this, const CommandOrigin *, CommandOutput *);
+};
+
+</code></pre></div><h3 id="x509-algor-st"><a href="#x509-algor-st" class="header-anchor">#</a> <code>X509_algor_st</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct X509_algor_st
+{
+  asn1_object_st *algorithm;
+  asn1_type_st *parameter;
+};
+
+</code></pre></div><h3 id="x509-info-st"><a href="#x509-info-st" class="header-anchor">#</a> <code>X509_info_st</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct X509_info_st
+{
+  struct x509_st *x509;
+  struct X509_crl_st *crl;
+  private_key_st *x_pkey;
+  evp_cipher_info_st enc_cipher;
+  int enc_len;
+  char *enc_data;
+};
+
+</code></pre></div><h3 id="x509-trust-st"><a href="#x509-trust-st" class="header-anchor">#</a> <code>x509_trust_st</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct x509_trust_st
+{
+  int trust;
+  int flags;
+  int (__fastcall *check_trust)(x509_trust_st *, struct x509_st *, int);
+  char *name;
+  int arg1;
+  void *arg2;
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/structure/W~1.html" class="prev">
+        W~1
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/structure/Z.html">
+        Z
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/147.0e0e09a7.js" defer></script>
+  </body>
+</html>

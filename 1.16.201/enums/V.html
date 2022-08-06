@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>V | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/84.35c05041.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" aria-current="page" class="active sidebar-link">V</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="v"><a href="#v" class="header-anchor">#</a> V</h1> <h3 id="vksampleraddressmode"><a href="#vksampleraddressmode" class="header-anchor">#</a> <code>VkSamplerAddressMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_SAMPLER_ADDRESS_MODE_REPEAT</td> <td><code>0</code></td></tr> <tr><td>VK_SAMPLER_ADDRESS_MODE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_SAMPLER_ADDRESS_MODE_MIRRORED_REPEAT</td> <td><code>1</code></td></tr> <tr><td>VK_SAMPLER_ADDRESS_MODE_CLAMP_TO_EDGE</td> <td><code>2</code></td></tr> <tr><td>VK_SAMPLER_ADDRESS_MODE_CLAMP_TO_BORDER</td> <td><code>3</code></td></tr> <tr><td>VK_SAMPLER_ADDRESS_MODE_END_RANGE</td> <td><code>3</code></td></tr> <tr><td>VK_SAMPLER_ADDRESS_MODE_MIRROR_CLAMP_TO_EDGE</td> <td><code>4</code></td></tr> <tr><td>VK_SAMPLER_ADDRESS_MODE_RANGE_SIZE</td> <td><code>4</code></td></tr> <tr><td>VK_SAMPLER_ADDRESS_MODE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkblendop"><a href="#vkblendop" class="header-anchor">#</a> <code>VkBlendOp</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_BLEND_OP_ADD</td> <td><code>0</code></td></tr> <tr><td>VK_BLEND_OP_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_BLEND_OP_SUBTRACT</td> <td><code>1</code></td></tr> <tr><td>VK_BLEND_OP_REVERSE_SUBTRACT</td> <td><code>2</code></td></tr> <tr><td>VK_BLEND_OP_MIN</td> <td><code>3</code></td></tr> <tr><td>VK_BLEND_OP_MAX</td> <td><code>4</code></td></tr> <tr><td>VK_BLEND_OP_END_RANGE</td> <td><code>4</code></td></tr> <tr><td>VK_BLEND_OP_RANGE_SIZE</td> <td><code>5</code></td></tr> <tr><td>VK_BLEND_OP_ZERO_EXT</td> <td><code>1000148000</code></td></tr> <tr><td>VK_BLEND_OP_SRC_EXT</td> <td><code>1000148001</code></td></tr> <tr><td>VK_BLEND_OP_DST_EXT</td> <td><code>1000148002</code></td></tr> <tr><td>VK_BLEND_OP_SRC_OVER_EXT</td> <td><code>1000148003</code></td></tr> <tr><td>VK_BLEND_OP_DST_OVER_EXT</td> <td><code>1000148004</code></td></tr> <tr><td>VK_BLEND_OP_SRC_IN_EXT</td> <td><code>1000148005</code></td></tr> <tr><td>VK_BLEND_OP_DST_IN_EXT</td> <td><code>1000148006</code></td></tr> <tr><td>VK_BLEND_OP_SRC_OUT_EXT</td> <td><code>1000148007</code></td></tr> <tr><td>VK_BLEND_OP_DST_OUT_EXT</td> <td><code>1000148008</code></td></tr> <tr><td>VK_BLEND_OP_SRC_ATOP_EXT</td> <td><code>1000148009</code></td></tr> <tr><td>VK_BLEND_OP_DST_ATOP_EXT</td> <td><code>1000148010</code></td></tr> <tr><td>VK_BLEND_OP_XOR_EXT</td> <td><code>1000148011</code></td></tr> <tr><td>VK_BLEND_OP_MULTIPLY_EXT</td> <td><code>1000148012</code></td></tr> <tr><td>VK_BLEND_OP_SCREEN_EXT</td> <td><code>1000148013</code></td></tr> <tr><td>VK_BLEND_OP_OVERLAY_EXT</td> <td><code>1000148014</code></td></tr> <tr><td>VK_BLEND_OP_DARKEN_EXT</td> <td><code>1000148015</code></td></tr> <tr><td>VK_BLEND_OP_LIGHTEN_EXT</td> <td><code>1000148016</code></td></tr> <tr><td>VK_BLEND_OP_COLORDODGE_EXT</td> <td><code>1000148017</code></td></tr> <tr><td>VK_BLEND_OP_COLORBURN_EXT</td> <td><code>1000148018</code></td></tr> <tr><td>VK_BLEND_OP_HARDLIGHT_EXT</td> <td><code>1000148019</code></td></tr> <tr><td>VK_BLEND_OP_SOFTLIGHT_EXT</td> <td><code>1000148020</code></td></tr> <tr><td>VK_BLEND_OP_DIFFERENCE_EXT</td> <td><code>1000148021</code></td></tr> <tr><td>VK_BLEND_OP_EXCLUSION_EXT</td> <td><code>1000148022</code></td></tr> <tr><td>VK_BLEND_OP_INVERT_EXT</td> <td><code>1000148023</code></td></tr> <tr><td>VK_BLEND_OP_INVERT_RGB_EXT</td> <td><code>1000148024</code></td></tr> <tr><td>VK_BLEND_OP_LINEARDODGE_EXT</td> <td><code>1000148025</code></td></tr> <tr><td>VK_BLEND_OP_LINEARBURN_EXT</td> <td><code>1000148026</code></td></tr> <tr><td>VK_BLEND_OP_VIVIDLIGHT_EXT</td> <td><code>1000148027</code></td></tr> <tr><td>VK_BLEND_OP_LINEARLIGHT_EXT</td> <td><code>1000148028</code></td></tr> <tr><td>VK_BLEND_OP_PINLIGHT_EXT</td> <td><code>1000148029</code></td></tr> <tr><td>VK_BLEND_OP_HARDMIX_EXT</td> <td><code>1000148030</code></td></tr> <tr><td>VK_BLEND_OP_HSL_HUE_EXT</td> <td><code>1000148031</code></td></tr> <tr><td>VK_BLEND_OP_HSL_SATURATION_EXT</td> <td><code>1000148032</code></td></tr> <tr><td>VK_BLEND_OP_HSL_COLOR_EXT</td> <td><code>1000148033</code></td></tr> <tr><td>VK_BLEND_OP_HSL_LUMINOSITY_EXT</td> <td><code>1000148034</code></td></tr> <tr><td>VK_BLEND_OP_PLUS_EXT</td> <td><code>1000148035</code></td></tr> <tr><td>VK_BLEND_OP_PLUS_CLAMPED_EXT</td> <td><code>1000148036</code></td></tr> <tr><td>VK_BLEND_OP_PLUS_CLAMPED_ALPHA_EXT</td> <td><code>1000148037</code></td></tr> <tr><td>VK_BLEND_OP_PLUS_DARKER_EXT</td> <td><code>1000148038</code></td></tr> <tr><td>VK_BLEND_OP_MINUS_EXT</td> <td><code>1000148039</code></td></tr> <tr><td>VK_BLEND_OP_MINUS_CLAMPED_EXT</td> <td><code>1000148040</code></td></tr> <tr><td>VK_BLEND_OP_CONTRAST_EXT</td> <td><code>1000148041</code></td></tr> <tr><td>VK_BLEND_OP_INVERT_OVG_EXT</td> <td><code>1000148042</code></td></tr> <tr><td>VK_BLEND_OP_RED_EXT</td> <td><code>1000148043</code></td></tr> <tr><td>VK_BLEND_OP_GREEN_EXT</td> <td><code>1000148044</code></td></tr> <tr><td>VK_BLEND_OP_BLUE_EXT</td> <td><code>1000148045</code></td></tr> <tr><td>VK_BLEND_OP_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkcompareop"><a href="#vkcompareop" class="header-anchor">#</a> <code>VkCompareOp</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_COMPARE_OP_NEVER</td> <td><code>0</code></td></tr> <tr><td>VK_COMPARE_OP_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_COMPARE_OP_LESS</td> <td><code>1</code></td></tr> <tr><td>VK_COMPARE_OP_EQUAL</td> <td><code>2</code></td></tr> <tr><td>VK_COMPARE_OP_LESS_OR_EQUAL</td> <td><code>3</code></td></tr> <tr><td>VK_COMPARE_OP_GREATER</td> <td><code>4</code></td></tr> <tr><td>VK_COMPARE_OP_NOT_EQUAL</td> <td><code>5</code></td></tr> <tr><td>VK_COMPARE_OP_GREATER_OR_EQUAL</td> <td><code>6</code></td></tr> <tr><td>VK_COMPARE_OP_ALWAYS</td> <td><code>7</code></td></tr> <tr><td>VK_COMPARE_OP_END_RANGE</td> <td><code>7</code></td></tr> <tr><td>VK_COMPARE_OP_RANGE_SIZE</td> <td><code>8</code></td></tr> <tr><td>VK_COMPARE_OP_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkblendfactor"><a href="#vkblendfactor" class="header-anchor">#</a> <code>VkBlendFactor</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_BLEND_FACTOR_ZERO</td> <td><code>0</code></td></tr> <tr><td>VK_BLEND_FACTOR_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE</td> <td><code>1</code></td></tr> <tr><td>VK_BLEND_FACTOR_SRC_COLOR</td> <td><code>2</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE_MINUS_SRC_COLOR</td> <td><code>3</code></td></tr> <tr><td>VK_BLEND_FACTOR_DST_COLOR</td> <td><code>4</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE_MINUS_DST_COLOR</td> <td><code>5</code></td></tr> <tr><td>VK_BLEND_FACTOR_SRC_ALPHA</td> <td><code>6</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA</td> <td><code>7</code></td></tr> <tr><td>VK_BLEND_FACTOR_DST_ALPHA</td> <td><code>8</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE_MINUS_DST_ALPHA</td> <td><code>9</code></td></tr> <tr><td>VK_BLEND_FACTOR_CONSTANT_COLOR</td> <td><code>10</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE_MINUS_CONSTANT_COLOR</td> <td><code>11</code></td></tr> <tr><td>VK_BLEND_FACTOR_CONSTANT_ALPHA</td> <td><code>12</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE_MINUS_CONSTANT_ALPHA</td> <td><code>13</code></td></tr> <tr><td>VK_BLEND_FACTOR_SRC_ALPHA_SATURATE</td> <td><code>14</code></td></tr> <tr><td>VK_BLEND_FACTOR_SRC1_COLOR</td> <td><code>15</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE_MINUS_SRC1_COLOR</td> <td><code>16</code></td></tr> <tr><td>VK_BLEND_FACTOR_SRC1_ALPHA</td> <td><code>17</code></td></tr> <tr><td>VK_BLEND_FACTOR_ONE_MINUS_SRC1_ALPHA</td> <td><code>18</code></td></tr> <tr><td>VK_BLEND_FACTOR_END_RANGE</td> <td><code>18</code></td></tr> <tr><td>VK_BLEND_FACTOR_RANGE_SIZE</td> <td><code>19</code></td></tr> <tr><td>VK_BLEND_FACTOR_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkformat"><a href="#vkformat" class="header-anchor">#</a> <code>VkFormat</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_FORMAT_UNDEFINED</td> <td><code>0</code></td></tr> <tr><td>VK_FORMAT_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_FORMAT_R4G4_UNORM_PACK8</td> <td><code>1</code></td></tr> <tr><td>VK_FORMAT_R4G4B4A4_UNORM_PACK16</td> <td><code>2</code></td></tr> <tr><td>VK_FORMAT_B4G4R4A4_UNORM_PACK16</td> <td><code>3</code></td></tr> <tr><td>VK_FORMAT_R5G6B5_UNORM_PACK16</td> <td><code>4</code></td></tr> <tr><td>VK_FORMAT_B5G6R5_UNORM_PACK16</td> <td><code>5</code></td></tr> <tr><td>VK_FORMAT_R5G5B5A1_UNORM_PACK16</td> <td><code>6</code></td></tr> <tr><td>VK_FORMAT_B5G5R5A1_UNORM_PACK16</td> <td><code>7</code></td></tr> <tr><td>VK_FORMAT_A1R5G5B5_UNORM_PACK16</td> <td><code>8</code></td></tr> <tr><td>VK_FORMAT_R8_UNORM</td> <td><code>9</code></td></tr> <tr><td>VK_FORMAT_R8_SNORM</td> <td><code>10</code></td></tr> <tr><td>VK_FORMAT_R8_USCALED</td> <td><code>11</code></td></tr> <tr><td>VK_FORMAT_R8_SSCALED</td> <td><code>12</code></td></tr> <tr><td>VK_FORMAT_R8_UINT</td> <td><code>13</code></td></tr> <tr><td>VK_FORMAT_R8_SINT</td> <td><code>14</code></td></tr> <tr><td>VK_FORMAT_R8_SRGB</td> <td><code>15</code></td></tr> <tr><td>VK_FORMAT_R8G8_UNORM</td> <td><code>16</code></td></tr> <tr><td>VK_FORMAT_R8G8_SNORM</td> <td><code>17</code></td></tr> <tr><td>VK_FORMAT_R8G8_USCALED</td> <td><code>18</code></td></tr> <tr><td>VK_FORMAT_R8G8_SSCALED</td> <td><code>19</code></td></tr> <tr><td>VK_FORMAT_R8G8_UINT</td> <td><code>20</code></td></tr> <tr><td>VK_FORMAT_R8G8_SINT</td> <td><code>21</code></td></tr> <tr><td>VK_FORMAT_R8G8_SRGB</td> <td><code>22</code></td></tr> <tr><td>VK_FORMAT_R8G8B8_UNORM</td> <td><code>23</code></td></tr> <tr><td>VK_FORMAT_R8G8B8_SNORM</td> <td><code>24</code></td></tr> <tr><td>VK_FORMAT_R8G8B8_USCALED</td> <td><code>25</code></td></tr> <tr><td>VK_FORMAT_R8G8B8_SSCALED</td> <td><code>26</code></td></tr> <tr><td>VK_FORMAT_R8G8B8_UINT</td> <td><code>27</code></td></tr> <tr><td>VK_FORMAT_R8G8B8_SINT</td> <td><code>28</code></td></tr> <tr><td>VK_FORMAT_R8G8B8_SRGB</td> <td><code>29</code></td></tr> <tr><td>VK_FORMAT_B8G8R8_UNORM</td> <td><code>30</code></td></tr> <tr><td>VK_FORMAT_B8G8R8_SNORM</td> <td><code>31</code></td></tr> <tr><td>VK_FORMAT_B8G8R8_USCALED</td> <td><code>32</code></td></tr> <tr><td>VK_FORMAT_B8G8R8_SSCALED</td> <td><code>33</code></td></tr> <tr><td>VK_FORMAT_B8G8R8_UINT</td> <td><code>34</code></td></tr> <tr><td>VK_FORMAT_B8G8R8_SINT</td> <td><code>35</code></td></tr> <tr><td>VK_FORMAT_B8G8R8_SRGB</td> <td><code>36</code></td></tr> <tr><td>VK_FORMAT_R8G8B8A8_UNORM</td> <td><code>37</code></td></tr> <tr><td>VK_FORMAT_R8G8B8A8_SNORM</td> <td><code>38</code></td></tr> <tr><td>VK_FORMAT_R8G8B8A8_USCALED</td> <td><code>39</code></td></tr> <tr><td>VK_FORMAT_R8G8B8A8_SSCALED</td> <td><code>40</code></td></tr> <tr><td>VK_FORMAT_R8G8B8A8_UINT</td> <td><code>41</code></td></tr> <tr><td>VK_FORMAT_R8G8B8A8_SINT</td> <td><code>42</code></td></tr> <tr><td>VK_FORMAT_R8G8B8A8_SRGB</td> <td><code>43</code></td></tr> <tr><td>VK_FORMAT_B8G8R8A8_UNORM</td> <td><code>44</code></td></tr> <tr><td>VK_FORMAT_B8G8R8A8_SNORM</td> <td><code>45</code></td></tr> <tr><td>VK_FORMAT_B8G8R8A8_USCALED</td> <td><code>46</code></td></tr> <tr><td>VK_FORMAT_B8G8R8A8_SSCALED</td> <td><code>47</code></td></tr> <tr><td>VK_FORMAT_B8G8R8A8_UINT</td> <td><code>48</code></td></tr> <tr><td>VK_FORMAT_B8G8R8A8_SINT</td> <td><code>49</code></td></tr> <tr><td>VK_FORMAT_B8G8R8A8_SRGB</td> <td><code>50</code></td></tr> <tr><td>VK_FORMAT_A8B8G8R8_UNORM_PACK32</td> <td><code>51</code></td></tr> <tr><td>VK_FORMAT_A8B8G8R8_SNORM_PACK32</td> <td><code>52</code></td></tr> <tr><td>VK_FORMAT_A8B8G8R8_USCALED_PACK32</td> <td><code>53</code></td></tr> <tr><td>VK_FORMAT_A8B8G8R8_SSCALED_PACK32</td> <td><code>54</code></td></tr> <tr><td>VK_FORMAT_A8B8G8R8_UINT_PACK32</td> <td><code>55</code></td></tr> <tr><td>VK_FORMAT_A8B8G8R8_SINT_PACK32</td> <td><code>56</code></td></tr> <tr><td>VK_FORMAT_A8B8G8R8_SRGB_PACK32</td> <td><code>57</code></td></tr> <tr><td>VK_FORMAT_A2R10G10B10_UNORM_PACK32</td> <td><code>58</code></td></tr> <tr><td>VK_FORMAT_A2R10G10B10_SNORM_PACK32</td> <td><code>59</code></td></tr> <tr><td>VK_FORMAT_A2R10G10B10_USCALED_PACK32</td> <td><code>60</code></td></tr> <tr><td>VK_FORMAT_A2R10G10B10_SSCALED_PACK32</td> <td><code>61</code></td></tr> <tr><td>VK_FORMAT_A2R10G10B10_UINT_PACK32</td> <td><code>62</code></td></tr> <tr><td>VK_FORMAT_A2R10G10B10_SINT_PACK32</td> <td><code>63</code></td></tr> <tr><td>VK_FORMAT_A2B10G10R10_UNORM_PACK32</td> <td><code>64</code></td></tr> <tr><td>VK_FORMAT_A2B10G10R10_SNORM_PACK32</td> <td><code>65</code></td></tr> <tr><td>VK_FORMAT_A2B10G10R10_USCALED_PACK32</td> <td><code>66</code></td></tr> <tr><td>VK_FORMAT_A2B10G10R10_SSCALED_PACK32</td> <td><code>67</code></td></tr> <tr><td>VK_FORMAT_A2B10G10R10_UINT_PACK32</td> <td><code>68</code></td></tr> <tr><td>VK_FORMAT_A2B10G10R10_SINT_PACK32</td> <td><code>69</code></td></tr> <tr><td>VK_FORMAT_R16_UNORM</td> <td><code>70</code></td></tr> <tr><td>VK_FORMAT_R16_SNORM</td> <td><code>71</code></td></tr> <tr><td>VK_FORMAT_R16_USCALED</td> <td><code>72</code></td></tr> <tr><td>VK_FORMAT_R16_SSCALED</td> <td><code>73</code></td></tr> <tr><td>VK_FORMAT_R16_UINT</td> <td><code>74</code></td></tr> <tr><td>VK_FORMAT_R16_SINT</td> <td><code>75</code></td></tr> <tr><td>VK_FORMAT_R16_SFLOAT</td> <td><code>76</code></td></tr> <tr><td>VK_FORMAT_R16G16_UNORM</td> <td><code>77</code></td></tr> <tr><td>VK_FORMAT_R16G16_SNORM</td> <td><code>78</code></td></tr> <tr><td>VK_FORMAT_R16G16_USCALED</td> <td><code>79</code></td></tr> <tr><td>VK_FORMAT_R16G16_SSCALED</td> <td><code>80</code></td></tr> <tr><td>VK_FORMAT_R16G16_UINT</td> <td><code>81</code></td></tr> <tr><td>VK_FORMAT_R16G16_SINT</td> <td><code>82</code></td></tr> <tr><td>VK_FORMAT_R16G16_SFLOAT</td> <td><code>83</code></td></tr> <tr><td>VK_FORMAT_R16G16B16_UNORM</td> <td><code>84</code></td></tr> <tr><td>VK_FORMAT_R16G16B16_SNORM</td> <td><code>85</code></td></tr> <tr><td>VK_FORMAT_R16G16B16_USCALED</td> <td><code>86</code></td></tr> <tr><td>VK_FORMAT_R16G16B16_SSCALED</td> <td><code>87</code></td></tr> <tr><td>VK_FORMAT_R16G16B16_UINT</td> <td><code>88</code></td></tr> <tr><td>VK_FORMAT_R16G16B16_SINT</td> <td><code>89</code></td></tr> <tr><td>VK_FORMAT_R16G16B16_SFLOAT</td> <td><code>90</code></td></tr> <tr><td>VK_FORMAT_R16G16B16A16_UNORM</td> <td><code>91</code></td></tr> <tr><td>VK_FORMAT_R16G16B16A16_SNORM</td> <td><code>92</code></td></tr> <tr><td>VK_FORMAT_R16G16B16A16_USCALED</td> <td><code>93</code></td></tr> <tr><td>VK_FORMAT_R16G16B16A16_SSCALED</td> <td><code>94</code></td></tr> <tr><td>VK_FORMAT_R16G16B16A16_UINT</td> <td><code>95</code></td></tr> <tr><td>VK_FORMAT_R16G16B16A16_SINT</td> <td><code>96</code></td></tr> <tr><td>VK_FORMAT_R16G16B16A16_SFLOAT</td> <td><code>97</code></td></tr> <tr><td>VK_FORMAT_R32_UINT</td> <td><code>98</code></td></tr> <tr><td>VK_FORMAT_R32_SINT</td> <td><code>99</code></td></tr> <tr><td>VK_FORMAT_R32_SFLOAT</td> <td><code>100</code></td></tr> <tr><td>VK_FORMAT_R32G32_UINT</td> <td><code>101</code></td></tr> <tr><td>VK_FORMAT_R32G32_SINT</td> <td><code>102</code></td></tr> <tr><td>VK_FORMAT_R32G32_SFLOAT</td> <td><code>103</code></td></tr> <tr><td>VK_FORMAT_R32G32B32_UINT</td> <td><code>104</code></td></tr> <tr><td>VK_FORMAT_R32G32B32_SINT</td> <td><code>105</code></td></tr> <tr><td>VK_FORMAT_R32G32B32_SFLOAT</td> <td><code>106</code></td></tr> <tr><td>VK_FORMAT_R32G32B32A32_UINT</td> <td><code>107</code></td></tr> <tr><td>VK_FORMAT_R32G32B32A32_SINT</td> <td><code>108</code></td></tr> <tr><td>VK_FORMAT_R32G32B32A32_SFLOAT</td> <td><code>109</code></td></tr> <tr><td>VK_FORMAT_R64_UINT</td> <td><code>110</code></td></tr> <tr><td>VK_FORMAT_R64_SINT</td> <td><code>111</code></td></tr> <tr><td>VK_FORMAT_R64_SFLOAT</td> <td><code>112</code></td></tr> <tr><td>VK_FORMAT_R64G64_UINT</td> <td><code>113</code></td></tr> <tr><td>VK_FORMAT_R64G64_SINT</td> <td><code>114</code></td></tr> <tr><td>VK_FORMAT_R64G64_SFLOAT</td> <td><code>115</code></td></tr> <tr><td>VK_FORMAT_R64G64B64_UINT</td> <td><code>116</code></td></tr> <tr><td>VK_FORMAT_R64G64B64_SINT</td> <td><code>117</code></td></tr> <tr><td>VK_FORMAT_R64G64B64_SFLOAT</td> <td><code>118</code></td></tr> <tr><td>VK_FORMAT_R64G64B64A64_UINT</td> <td><code>119</code></td></tr> <tr><td>VK_FORMAT_R64G64B64A64_SINT</td> <td><code>120</code></td></tr> <tr><td>VK_FORMAT_R64G64B64A64_SFLOAT</td> <td><code>121</code></td></tr> <tr><td>VK_FORMAT_B10G11R11_UFLOAT_PACK32</td> <td><code>122</code></td></tr> <tr><td>VK_FORMAT_E5B9G9R9_UFLOAT_PACK32</td> <td><code>123</code></td></tr> <tr><td>VK_FORMAT_D16_UNORM</td> <td><code>124</code></td></tr> <tr><td>VK_FORMAT_X8_D24_UNORM_PACK32</td> <td><code>125</code></td></tr> <tr><td>VK_FORMAT_D32_SFLOAT</td> <td><code>126</code></td></tr> <tr><td>VK_FORMAT_S8_UINT</td> <td><code>127</code></td></tr> <tr><td>VK_FORMAT_D16_UNORM_S8_UINT</td> <td><code>128</code></td></tr> <tr><td>VK_FORMAT_D24_UNORM_S8_UINT</td> <td><code>129</code></td></tr> <tr><td>VK_FORMAT_D32_SFLOAT_S8_UINT</td> <td><code>130</code></td></tr> <tr><td>VK_FORMAT_BC1_RGB_UNORM_BLOCK</td> <td><code>131</code></td></tr> <tr><td>VK_FORMAT_BC1_RGB_SRGB_BLOCK</td> <td><code>132</code></td></tr> <tr><td>VK_FORMAT_BC1_RGBA_UNORM_BLOCK</td> <td><code>133</code></td></tr> <tr><td>VK_FORMAT_BC1_RGBA_SRGB_BLOCK</td> <td><code>134</code></td></tr> <tr><td>VK_FORMAT_BC2_UNORM_BLOCK</td> <td><code>135</code></td></tr> <tr><td>VK_FORMAT_BC2_SRGB_BLOCK</td> <td><code>136</code></td></tr> <tr><td>VK_FORMAT_BC3_UNORM_BLOCK</td> <td><code>137</code></td></tr> <tr><td>VK_FORMAT_BC3_SRGB_BLOCK</td> <td><code>138</code></td></tr> <tr><td>VK_FORMAT_BC4_UNORM_BLOCK</td> <td><code>139</code></td></tr> <tr><td>VK_FORMAT_BC4_SNORM_BLOCK</td> <td><code>140</code></td></tr> <tr><td>VK_FORMAT_BC5_UNORM_BLOCK</td> <td><code>141</code></td></tr> <tr><td>VK_FORMAT_BC5_SNORM_BLOCK</td> <td><code>142</code></td></tr> <tr><td>VK_FORMAT_BC6H_UFLOAT_BLOCK</td> <td><code>143</code></td></tr> <tr><td>VK_FORMAT_BC6H_SFLOAT_BLOCK</td> <td><code>144</code></td></tr> <tr><td>VK_FORMAT_BC7_UNORM_BLOCK</td> <td><code>145</code></td></tr> <tr><td>VK_FORMAT_BC7_SRGB_BLOCK</td> <td><code>146</code></td></tr> <tr><td>VK_FORMAT_ETC2_R8G8B8_UNORM_BLOCK</td> <td><code>147</code></td></tr> <tr><td>VK_FORMAT_ETC2_R8G8B8_SRGB_BLOCK</td> <td><code>148</code></td></tr> <tr><td>VK_FORMAT_ETC2_R8G8B8A1_UNORM_BLOCK</td> <td><code>149</code></td></tr> <tr><td>VK_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK</td> <td><code>150</code></td></tr> <tr><td>VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK</td> <td><code>151</code></td></tr> <tr><td>VK_FORMAT_ETC2_R8G8B8A8_SRGB_BLOCK</td> <td><code>152</code></td></tr> <tr><td>VK_FORMAT_EAC_R11_UNORM_BLOCK</td> <td><code>153</code></td></tr> <tr><td>VK_FORMAT_EAC_R11_SNORM_BLOCK</td> <td><code>154</code></td></tr> <tr><td>VK_FORMAT_EAC_R11G11_UNORM_BLOCK</td> <td><code>155</code></td></tr> <tr><td>VK_FORMAT_EAC_R11G11_SNORM_BLOCK</td> <td><code>156</code></td></tr> <tr><td>VK_FORMAT_ASTC_4x4_UNORM_BLOCK</td> <td><code>157</code></td></tr> <tr><td>VK_FORMAT_ASTC_4x4_SRGB_BLOCK</td> <td><code>158</code></td></tr> <tr><td>VK_FORMAT_ASTC_5x4_UNORM_BLOCK</td> <td><code>159</code></td></tr> <tr><td>VK_FORMAT_ASTC_5x4_SRGB_BLOCK</td> <td><code>160</code></td></tr> <tr><td>VK_FORMAT_ASTC_5x5_UNORM_BLOCK</td> <td><code>161</code></td></tr> <tr><td>VK_FORMAT_ASTC_5x5_SRGB_BLOCK</td> <td><code>162</code></td></tr> <tr><td>VK_FORMAT_ASTC_6x5_UNORM_BLOCK</td> <td><code>163</code></td></tr> <tr><td>VK_FORMAT_ASTC_6x5_SRGB_BLOCK</td> <td><code>164</code></td></tr> <tr><td>VK_FORMAT_ASTC_6x6_UNORM_BLOCK</td> <td><code>165</code></td></tr> <tr><td>VK_FORMAT_ASTC_6x6_SRGB_BLOCK</td> <td><code>166</code></td></tr> <tr><td>VK_FORMAT_ASTC_8x5_UNORM_BLOCK</td> <td><code>167</code></td></tr> <tr><td>VK_FORMAT_ASTC_8x5_SRGB_BLOCK</td> <td><code>168</code></td></tr> <tr><td>VK_FORMAT_ASTC_8x6_UNORM_BLOCK</td> <td><code>169</code></td></tr> <tr><td>VK_FORMAT_ASTC_8x6_SRGB_BLOCK</td> <td><code>170</code></td></tr> <tr><td>VK_FORMAT_ASTC_8x8_UNORM_BLOCK</td> <td><code>171</code></td></tr> <tr><td>VK_FORMAT_ASTC_8x8_SRGB_BLOCK</td> <td><code>172</code></td></tr> <tr><td>VK_FORMAT_ASTC_10x5_UNORM_BLOCK</td> <td><code>173</code></td></tr> <tr><td>VK_FORMAT_ASTC_10x5_SRGB_BLOCK</td> <td><code>174</code></td></tr> <tr><td>VK_FORMAT_ASTC_10x6_UNORM_BLOCK</td> <td><code>175</code></td></tr> <tr><td>VK_FORMAT_ASTC_10x6_SRGB_BLOCK</td> <td><code>176</code></td></tr> <tr><td>VK_FORMAT_ASTC_10x8_UNORM_BLOCK</td> <td><code>177</code></td></tr> <tr><td>VK_FORMAT_ASTC_10x8_SRGB_BLOCK</td> <td><code>178</code></td></tr> <tr><td>VK_FORMAT_ASTC_10x10_UNORM_BLOCK</td> <td><code>179</code></td></tr> <tr><td>VK_FORMAT_ASTC_10x10_SRGB_BLOCK</td> <td><code>180</code></td></tr> <tr><td>VK_FORMAT_ASTC_12x10_UNORM_BLOCK</td> <td><code>181</code></td></tr> <tr><td>VK_FORMAT_ASTC_12x10_SRGB_BLOCK</td> <td><code>182</code></td></tr> <tr><td>VK_FORMAT_ASTC_12x12_UNORM_BLOCK</td> <td><code>183</code></td></tr> <tr><td>VK_FORMAT_ASTC_12x12_SRGB_BLOCK</td> <td><code>184</code></td></tr> <tr><td>VK_FORMAT_END_RANGE</td> <td><code>184</code></td></tr> <tr><td>VK_FORMAT_RANGE_SIZE</td> <td><code>185</code></td></tr> <tr><td>VK_FORMAT_PVRTC1_2BPP_UNORM_BLOCK_IMG</td> <td><code>1000054000</code></td></tr> <tr><td>VK_FORMAT_PVRTC1_4BPP_UNORM_BLOCK_IMG</td> <td><code>1000054001</code></td></tr> <tr><td>VK_FORMAT_PVRTC2_2BPP_UNORM_BLOCK_IMG</td> <td><code>1000054002</code></td></tr> <tr><td>VK_FORMAT_PVRTC2_4BPP_UNORM_BLOCK_IMG</td> <td><code>1000054003</code></td></tr> <tr><td>VK_FORMAT_PVRTC1_2BPP_SRGB_BLOCK_IMG</td> <td><code>1000054004</code></td></tr> <tr><td>VK_FORMAT_PVRTC1_4BPP_SRGB_BLOCK_IMG</td> <td><code>1000054005</code></td></tr> <tr><td>VK_FORMAT_PVRTC2_2BPP_SRGB_BLOCK_IMG</td> <td><code>1000054006</code></td></tr> <tr><td>VK_FORMAT_PVRTC2_4BPP_SRGB_BLOCK_IMG</td> <td><code>1000054007</code></td></tr> <tr><td>VK_FORMAT_G8B8G8R8_422_UNORM</td> <td><code>1000156000</code></td></tr> <tr><td>VK_FORMAT_G8B8G8R8_422_UNORM_KHR</td> <td><code>1000156000</code></td></tr> <tr><td>VK_FORMAT_B8G8R8G8_422_UNORM</td> <td><code>1000156001</code></td></tr> <tr><td>VK_FORMAT_B8G8R8G8_422_UNORM_KHR</td> <td><code>1000156001</code></td></tr> <tr><td>VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM</td> <td><code>1000156002</code></td></tr> <tr><td>VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM_KHR</td> <td><code>1000156002</code></td></tr> <tr><td>VK_FORMAT_G8_B8R8_2PLANE_420_UNORM</td> <td><code>1000156003</code></td></tr> <tr><td>VK_FORMAT_G8_B8R8_2PLANE_420_UNORM_KHR</td> <td><code>1000156003</code></td></tr> <tr><td>VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM</td> <td><code>1000156004</code></td></tr> <tr><td>VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM_KHR</td> <td><code>1000156004</code></td></tr> <tr><td>VK_FORMAT_G8_B8R8_2PLANE_422_UNORM</td> <td><code>1000156005</code></td></tr> <tr><td>VK_FORMAT_G8_B8R8_2PLANE_422_UNORM_KHR</td> <td><code>1000156005</code></td></tr> <tr><td>VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM</td> <td><code>1000156006</code></td></tr> <tr><td>VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM_KHR</td> <td><code>1000156006</code></td></tr> <tr><td>VK_FORMAT_R10X6_UNORM_PACK16</td> <td><code>1000156007</code></td></tr> <tr><td>VK_FORMAT_R10X6_UNORM_PACK16_KHR</td> <td><code>1000156007</code></td></tr> <tr><td>VK_FORMAT_R10X6G10X6_UNORM_2PACK16</td> <td><code>1000156008</code></td></tr> <tr><td>VK_FORMAT_R10X6G10X6_UNORM_2PACK16_KHR</td> <td><code>1000156008</code></td></tr> <tr><td>VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16</td> <td><code>1000156009</code></td></tr> <tr><td>VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16_KHR</td> <td><code>1000156009</code></td></tr> <tr><td>VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16</td> <td><code>1000156010</code></td></tr> <tr><td>VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16_KHR</td> <td><code>1000156010</code></td></tr> <tr><td>VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16</td> <td><code>1000156011</code></td></tr> <tr><td>VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16_KHR</td> <td><code>1000156011</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16</td> <td><code>1000156012</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16_KHR</td> <td><code>1000156012</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16</td> <td><code>1000156013</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16_KHR</td> <td><code>1000156013</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16</td> <td><code>1000156014</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16_KHR</td> <td><code>1000156014</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16</td> <td><code>1000156015</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16_KHR</td> <td><code>1000156015</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16</td> <td><code>1000156016</code></td></tr> <tr><td>VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16_KHR</td> <td><code>1000156016</code></td></tr> <tr><td>VK_FORMAT_R12X4_UNORM_PACK16</td> <td><code>1000156017</code></td></tr> <tr><td>VK_FORMAT_R12X4_UNORM_PACK16_KHR</td> <td><code>1000156017</code></td></tr> <tr><td>VK_FORMAT_R12X4G12X4_UNORM_2PACK16</td> <td><code>1000156018</code></td></tr> <tr><td>VK_FORMAT_R12X4G12X4_UNORM_2PACK16_KHR</td> <td><code>1000156018</code></td></tr> <tr><td>VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16</td> <td><code>1000156019</code></td></tr> <tr><td>VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16_KHR</td> <td><code>1000156019</code></td></tr> <tr><td>VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16</td> <td><code>1000156020</code></td></tr> <tr><td>VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16_KHR</td> <td><code>1000156020</code></td></tr> <tr><td>VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16</td> <td><code>1000156021</code></td></tr> <tr><td>VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16_KHR</td> <td><code>1000156021</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16</td> <td><code>1000156022</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16_KHR</td> <td><code>1000156022</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16</td> <td><code>1000156023</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16_KHR</td> <td><code>1000156023</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16</td> <td><code>1000156024</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16_KHR</td> <td><code>1000156024</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16</td> <td><code>1000156025</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16_KHR</td> <td><code>1000156025</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16</td> <td><code>1000156026</code></td></tr> <tr><td>VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16_KHR</td> <td><code>1000156026</code></td></tr> <tr><td>VK_FORMAT_G16B16G16R16_422_UNORM</td> <td><code>1000156027</code></td></tr> <tr><td>VK_FORMAT_G16B16G16R16_422_UNORM_KHR</td> <td><code>1000156027</code></td></tr> <tr><td>VK_FORMAT_B16G16R16G16_422_UNORM</td> <td><code>1000156028</code></td></tr> <tr><td>VK_FORMAT_B16G16R16G16_422_UNORM_KHR</td> <td><code>1000156028</code></td></tr> <tr><td>VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM</td> <td><code>1000156029</code></td></tr> <tr><td>VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM_KHR</td> <td><code>1000156029</code></td></tr> <tr><td>VK_FORMAT_G16_B16R16_2PLANE_420_UNORM</td> <td><code>1000156030</code></td></tr> <tr><td>VK_FORMAT_G16_B16R16_2PLANE_420_UNORM_KHR</td> <td><code>1000156030</code></td></tr> <tr><td>VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM</td> <td><code>1000156031</code></td></tr> <tr><td>VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM_KHR</td> <td><code>1000156031</code></td></tr> <tr><td>VK_FORMAT_G16_B16R16_2PLANE_422_UNORM</td> <td><code>1000156032</code></td></tr> <tr><td>VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR</td> <td><code>1000156032</code></td></tr> <tr><td>VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM</td> <td><code>1000156033</code></td></tr> <tr><td>VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR</td> <td><code>1000156033</code></td></tr> <tr><td>VK_FORMAT_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkstencilop"><a href="#vkstencilop" class="header-anchor">#</a> <code>VkStencilOp</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_STENCIL_OP_KEEP</td> <td><code>0</code></td></tr> <tr><td>VK_STENCIL_OP_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_STENCIL_OP_ZERO</td> <td><code>1</code></td></tr> <tr><td>VK_STENCIL_OP_REPLACE</td> <td><code>2</code></td></tr> <tr><td>VK_STENCIL_OP_INCREMENT_AND_CLAMP</td> <td><code>3</code></td></tr> <tr><td>VK_STENCIL_OP_DECREMENT_AND_CLAMP</td> <td><code>4</code></td></tr> <tr><td>VK_STENCIL_OP_INVERT</td> <td><code>5</code></td></tr> <tr><td>VK_STENCIL_OP_INCREMENT_AND_WRAP</td> <td><code>6</code></td></tr> <tr><td>VK_STENCIL_OP_DECREMENT_AND_WRAP</td> <td><code>7</code></td></tr> <tr><td>VK_STENCIL_OP_END_RANGE</td> <td><code>7</code></td></tr> <tr><td>VK_STENCIL_OP_RANGE_SIZE</td> <td><code>8</code></td></tr> <tr><td>VK_STENCIL_OP_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkprimitivetopology"><a href="#vkprimitivetopology" class="header-anchor">#</a> <code>VkPrimitiveTopology</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_PRIMITIVE_TOPOLOGY_POINT_LIST</td> <td><code>0</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_LINE_LIST</td> <td><code>1</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_LINE_STRIP</td> <td><code>2</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST</td> <td><code>3</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP</td> <td><code>4</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_TRIANGLE_FAN</td> <td><code>5</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_LINE_LIST_WITH_ADJACENCY</td> <td><code>6</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_LINE_STRIP_WITH_ADJACENCY</td> <td><code>7</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST_WITH_ADJACENCY</td> <td><code>8</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP_WITH_ADJACENCY</td> <td><code>9</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_PATCH_LIST</td> <td><code>10</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_END_RANGE</td> <td><code>10</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_RANGE_SIZE</td> <td><code>11</code></td></tr> <tr><td>VK_PRIMITIVE_TOPOLOGY_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkcullmodeflagbits"><a href="#vkcullmodeflagbits" class="header-anchor">#</a> <code>VkCullModeFlagBits</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_CULL_MODE_NONE</td> <td><code>0</code></td></tr> <tr><td>VK_CULL_MODE_FRONT_BIT</td> <td><code>1</code></td></tr> <tr><td>VK_CULL_MODE_BACK_BIT</td> <td><code>2</code></td></tr> <tr><td>VK_CULL_MODE_FRONT_AND_BACK</td> <td><code>3</code></td></tr> <tr><td>VK_CULL_MODE_FLAG_BITS_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkimagelayout"><a href="#vkimagelayout" class="header-anchor">#</a> <code>VkImageLayout</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_IMAGE_LAYOUT_UNDEFINED</td> <td><code>0</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_GENERAL</td> <td><code>1</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL</td> <td><code>2</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL</td> <td><code>3</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_DEPTH_STENCIL_READ_ONLY_OPTIMAL</td> <td><code>4</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</td> <td><code>5</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL</td> <td><code>6</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL</td> <td><code>7</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_PREINITIALIZED</td> <td><code>8</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_END_RANGE</td> <td><code>8</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_RANGE_SIZE</td> <td><code>9</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_PRESENT_SRC_KHR</td> <td><code>1000001002</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_SHARED_PRESENT_KHR</td> <td><code>1000111000</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL</td> <td><code>1000117000</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL_KHR</td> <td><code>1000117000</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL</td> <td><code>1000117001</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL_KHR</td> <td><code>1000117001</code></td></tr> <tr><td>VK_IMAGE_LAYOUT_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkpresentmodekhr"><a href="#vkpresentmodekhr" class="header-anchor">#</a> <code>VkPresentModeKHR</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_PRESENT_MODE_IMMEDIATE_KHR</td> <td><code>0</code></td></tr> <tr><td>VK_PRESENT_MODE_BEGIN_RANGE_KHR</td> <td><code>0</code></td></tr> <tr><td>VK_PRESENT_MODE_MAILBOX_KHR</td> <td><code>1</code></td></tr> <tr><td>VK_PRESENT_MODE_FIFO_KHR</td> <td><code>2</code></td></tr> <tr><td>VK_PRESENT_MODE_FIFO_RELAXED_KHR</td> <td><code>3</code></td></tr> <tr><td>VK_PRESENT_MODE_END_RANGE_KHR</td> <td><code>3</code></td></tr> <tr><td>VK_PRESENT_MODE_RANGE_SIZE_KHR</td> <td><code>4</code></td></tr> <tr><td>VK_PRESENT_MODE_SHARED_DEMAND_REFRESH_KHR</td> <td><code>1000111000</code></td></tr> <tr><td>VK_PRESENT_MODE_SHARED_CONTINUOUS_REFRESH_KHR</td> <td><code>1000111001</code></td></tr> <tr><td>VK_PRESENT_MODE_MAX_ENUM_KHR</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkphysicaldevicetype"><a href="#vkphysicaldevicetype" class="header-anchor">#</a> <code>VkPhysicalDeviceType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_PHYSICAL_DEVICE_TYPE_OTHER</td> <td><code>0</code></td></tr> <tr><td>VK_PHYSICAL_DEVICE_TYPE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU</td> <td><code>1</code></td></tr> <tr><td>VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU</td> <td><code>2</code></td></tr> <tr><td>VK_PHYSICAL_DEVICE_TYPE_VIRTUAL_GPU</td> <td><code>3</code></td></tr> <tr><td>VK_PHYSICAL_DEVICE_TYPE_CPU</td> <td><code>4</code></td></tr> <tr><td>VK_PHYSICAL_DEVICE_TYPE_END_RANGE</td> <td><code>4</code></td></tr> <tr><td>VK_PHYSICAL_DEVICE_TYPE_RANGE_SIZE</td> <td><code>5</code></td></tr> <tr><td>VK_PHYSICAL_DEVICE_TYPE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkstructuretype"><a href="#vkstructuretype" class="header-anchor">#</a> <code>VkStructureType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_STRUCTURE_TYPE_APPLICATION_INFO</td> <td><code>0</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO</td> <td><code>1</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO</td> <td><code>2</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO</td> <td><code>3</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SUBMIT_INFO</td> <td><code>4</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO</td> <td><code>5</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MAPPED_MEMORY_RANGE</td> <td><code>6</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_SPARSE_INFO</td> <td><code>7</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_FENCE_CREATE_INFO</td> <td><code>8</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO</td> <td><code>9</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EVENT_CREATE_INFO</td> <td><code>10</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_QUERY_POOL_CREATE_INFO</td> <td><code>11</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO</td> <td><code>12</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BUFFER_VIEW_CREATE_INFO</td> <td><code>13</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_CREATE_INFO</td> <td><code>14</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO</td> <td><code>15</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO</td> <td><code>16</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_CACHE_CREATE_INFO</td> <td><code>17</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO</td> <td><code>18</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO</td> <td><code>19</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO</td> <td><code>20</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_STATE_CREATE_INFO</td> <td><code>21</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO</td> <td><code>22</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO</td> <td><code>23</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO</td> <td><code>24</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO</td> <td><code>25</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO</td> <td><code>26</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_DYNAMIC_STATE_CREATE_INFO</td> <td><code>27</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO</td> <td><code>28</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_COMPUTE_PIPELINE_CREATE_INFO</td> <td><code>29</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO</td> <td><code>30</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLER_CREATE_INFO</td> <td><code>31</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_CREATE_INFO</td> <td><code>32</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO</td> <td><code>33</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO</td> <td><code>34</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET</td> <td><code>35</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_COPY_DESCRIPTOR_SET</td> <td><code>36</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_FRAMEBUFFER_CREATE_INFO</td> <td><code>37</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO</td> <td><code>38</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO</td> <td><code>39</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO</td> <td><code>40</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_INFO</td> <td><code>41</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO</td> <td><code>42</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO</td> <td><code>43</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BUFFER_MEMORY_BARRIER</td> <td><code>44</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER</td> <td><code>45</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_BARRIER</td> <td><code>46</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_LOADER_INSTANCE_CREATE_INFO</td> <td><code>47</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_LOADER_DEVICE_CREATE_INFO</td> <td><code>48</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_END_RANGE</td> <td><code>48</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RANGE_SIZE</td> <td><code>49</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR</td> <td><code>1000001000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PRESENT_INFO_KHR</td> <td><code>1000001001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_MODE_CREATE_INFO_KHR</td> <td><code>1000002000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_SURFACE_CREATE_INFO_KHR</td> <td><code>1000002001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_PRESENT_INFO_KHR</td> <td><code>1000003000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_XLIB_SURFACE_CREATE_INFO_KHR</td> <td><code>1000004000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_XCB_SURFACE_CREATE_INFO_KHR</td> <td><code>1000005000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_WAYLAND_SURFACE_CREATE_INFO_KHR</td> <td><code>1000006000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MIR_SURFACE_CREATE_INFO_KHR</td> <td><code>1000007000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_ANDROID_SURFACE_CREATE_INFO_KHR</td> <td><code>1000008000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_WIN32_SURFACE_CREATE_INFO_KHR</td> <td><code>1000009000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_REPORT_CALLBACK_CREATE_INFO_EXT</td> <td><code>1000011000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_RASTERIZATION_ORDER_AMD</td> <td><code>1000018000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_MARKER_OBJECT_NAME_INFO_EXT</td> <td><code>1000022000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_MARKER_OBJECT_TAG_INFO_EXT</td> <td><code>1000022001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_MARKER_MARKER_INFO_EXT</td> <td><code>1000022002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEDICATED_ALLOCATION_IMAGE_CREATE_INFO_NV</td> <td><code>1000026000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEDICATED_ALLOCATION_BUFFER_CREATE_INFO_NV</td> <td><code>1000026001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEDICATED_ALLOCATION_MEMORY_ALLOCATE_INFO_NV</td> <td><code>1000026002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD</td> <td><code>1000041000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO</td> <td><code>1000053000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO_KHR</td> <td><code>1000053000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES</td> <td><code>1000053001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES_KHR</td> <td><code>1000053001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES</td> <td><code>1000053002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR</td> <td><code>1000053002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_NV</td> <td><code>1000056000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_NV</td> <td><code>1000056001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_MEMORY_WIN32_HANDLE_INFO_NV</td> <td><code>1000057000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_MEMORY_WIN32_HANDLE_INFO_NV</td> <td><code>1000057001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_WIN32_KEYED_MUTEX_ACQUIRE_RELEASE_INFO_NV</td> <td><code>1000058000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2</td> <td><code>1000059000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2_KHR</td> <td><code>1000059000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2</td> <td><code>1000059001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2_KHR</td> <td><code>1000059001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2</td> <td><code>1000059002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2_KHR</td> <td><code>1000059002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2</td> <td><code>1000059003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2_KHR</td> <td><code>1000059003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2</td> <td><code>1000059004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2_KHR</td> <td><code>1000059004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2</td> <td><code>1000059005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2_KHR</td> <td><code>1000059005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2</td> <td><code>1000059006</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2_KHR</td> <td><code>1000059006</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2</td> <td><code>1000059007</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2_KHR</td> <td><code>1000059007</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2</td> <td><code>1000059008</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2_KHR</td> <td><code>1000059008</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO</td> <td><code>1000060000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO_KHR</td> <td><code>1000060000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO</td> <td><code>1000060003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO_KHR</td> <td><code>1000060003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO</td> <td><code>1000060004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO_KHR</td> <td><code>1000060004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO</td> <td><code>1000060005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO_KHR</td> <td><code>1000060005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO</td> <td><code>1000060006</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO_KHR</td> <td><code>1000060006</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_PRESENT_CAPABILITIES_KHR</td> <td><code>1000060007</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_SWAPCHAIN_CREATE_INFO_KHR</td> <td><code>1000060008</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_SWAPCHAIN_INFO_KHR</td> <td><code>1000060009</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_ACQUIRE_NEXT_IMAGE_INFO_KHR</td> <td><code>1000060010</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_PRESENT_INFO_KHR</td> <td><code>1000060011</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_SWAPCHAIN_CREATE_INFO_KHR</td> <td><code>1000060012</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO</td> <td><code>1000060013</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO_KHR</td> <td><code>1000060013</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO</td> <td><code>1000060014</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO_KHR</td> <td><code>1000060014</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_VALIDATION_FLAGS_EXT</td> <td><code>1000061000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_VI_SURFACE_CREATE_INFO_NN</td> <td><code>1000062000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETER_FEATURES</td> <td><code>1000063000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES</td> <td><code>1000070000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES_KHR</td> <td><code>1000070000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO</td> <td><code>1000070001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO_KHR</td> <td><code>1000070001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO</td> <td><code>1000071000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO_KHR</td> <td><code>1000071000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES</td> <td><code>1000071001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES_KHR</td> <td><code>1000071001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO</td> <td><code>1000071002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO_KHR</td> <td><code>1000071002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES</td> <td><code>1000071003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES_KHR</td> <td><code>1000071003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES</td> <td><code>1000071004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES_KHR</td> <td><code>1000071004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO</td> <td><code>1000072000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO_KHR</td> <td><code>1000072000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO</td> <td><code>1000072001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_KHR</td> <td><code>1000072001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO</td> <td><code>1000072002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_KHR</td> <td><code>1000072002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_MEMORY_WIN32_HANDLE_INFO_KHR</td> <td><code>1000073000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_MEMORY_WIN32_HANDLE_INFO_KHR</td> <td><code>1000073001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_WIN32_HANDLE_PROPERTIES_KHR</td> <td><code>1000073002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_GET_WIN32_HANDLE_INFO_KHR</td> <td><code>1000073003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_MEMORY_FD_INFO_KHR</td> <td><code>1000074000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_FD_PROPERTIES_KHR</td> <td><code>1000074001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_GET_FD_INFO_KHR</td> <td><code>1000074002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_WIN32_KEYED_MUTEX_ACQUIRE_RELEASE_INFO_KHR</td> <td><code>1000075000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO</td> <td><code>1000076000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO_KHR</td> <td><code>1000076000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES</td> <td><code>1000076001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES_KHR</td> <td><code>1000076001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO</td> <td><code>1000077000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR</td> <td><code>1000077000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_WIN32_HANDLE_INFO_KHR</td> <td><code>1000078000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_WIN32_HANDLE_INFO_KHR</td> <td><code>1000078001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_D3D12_FENCE_SUBMIT_INFO_KHR</td> <td><code>1000078002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SEMAPHORE_GET_WIN32_HANDLE_INFO_KHR</td> <td><code>1000078003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_FD_INFO_KHR</td> <td><code>1000079000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SEMAPHORE_GET_FD_INFO_KHR</td> <td><code>1000079001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PUSH_DESCRIPTOR_PROPERTIES_KHR</td> <td><code>1000080000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_CONDITIONAL_RENDERING_INFO_EXT</td> <td><code>1000081000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CONDITIONAL_RENDERING_FEATURES_EXT</td> <td><code>1000081001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_CONDITIONAL_RENDERING_BEGIN_INFO_EXT</td> <td><code>1000081002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES</td> <td><code>1000083000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR</td> <td><code>1000083000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PRESENT_REGIONS_KHR</td> <td><code>1000084000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO</td> <td><code>1000085000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR</td> <td><code>1000085000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_OBJECT_TABLE_CREATE_INFO_NVX</td> <td><code>1000086000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_NVX</td> <td><code>1000086001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_CMD_PROCESS_COMMANDS_INFO_NVX</td> <td><code>1000086002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_CMD_RESERVE_SPACE_FOR_COMMANDS_INFO_NVX</td> <td><code>1000086003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GENERATED_COMMANDS_LIMITS_NVX</td> <td><code>1000086004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_GENERATED_COMMANDS_FEATURES_NVX</td> <td><code>1000086005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_W_SCALING_STATE_CREATE_INFO_NV</td> <td><code>1000087000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_EXT</td> <td><code>1000090000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_POWER_INFO_EXT</td> <td><code>1000091000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_EVENT_INFO_EXT</td> <td><code>1000091001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_EVENT_INFO_EXT</td> <td><code>1000091002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SWAPCHAIN_COUNTER_CREATE_INFO_EXT</td> <td><code>1000091003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PRESENT_TIMES_INFO_GOOGLE</td> <td><code>1000092000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_PROPERTIES</td> <td><code>1000094000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PER_VIEW_ATTRIBUTES_PROPERTIES_NVX</td> <td><code>1000097000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_SWIZZLE_STATE_CREATE_INFO_NV</td> <td><code>1000098000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DISCARD_RECTANGLE_PROPERTIES_EXT</td> <td><code>1000099000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_DISCARD_RECTANGLE_STATE_CREATE_INFO_EXT</td> <td><code>1000099001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CONSERVATIVE_RASTERIZATION_PROPERTIES_EXT</td> <td><code>1000101000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_CONSERVATIVE_STATE_CREATE_INFO_EXT</td> <td><code>1000101001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_HDR_METADATA_EXT</td> <td><code>1000105000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_ATTACHMENT_DESCRIPTION_2_KHR</td> <td><code>1000109000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_ATTACHMENT_REFERENCE_2_KHR</td> <td><code>1000109001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_2_KHR</td> <td><code>1000109002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SUBPASS_DEPENDENCY_2_KHR</td> <td><code>1000109003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO_2_KHR</td> <td><code>1000109004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SUBPASS_BEGIN_INFO_KHR</td> <td><code>1000109005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SUBPASS_END_INFO_KHR</td> <td><code>1000109006</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SHARED_PRESENT_SURFACE_CAPABILITIES_KHR</td> <td><code>1000111000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO</td> <td><code>1000112000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR</td> <td><code>1000112000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES</td> <td><code>1000112001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES_KHR</td> <td><code>1000112001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO</td> <td><code>1000113000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO_KHR</td> <td><code>1000113000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_FENCE_WIN32_HANDLE_INFO_KHR</td> <td><code>1000114000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXPORT_FENCE_WIN32_HANDLE_INFO_KHR</td> <td><code>1000114001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_FENCE_GET_WIN32_HANDLE_INFO_KHR</td> <td><code>1000114002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_FENCE_FD_INFO_KHR</td> <td><code>1000115000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_FENCE_GET_FD_INFO_KHR</td> <td><code>1000115001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES</td> <td><code>1000117000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES_KHR</td> <td><code>1000117000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO</td> <td><code>1000117001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO_KHR</td> <td><code>1000117001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO</td> <td><code>1000117002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO_KHR</td> <td><code>1000117002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO</td> <td><code>1000117003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO_KHR</td> <td><code>1000117003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SURFACE_INFO_2_KHR</td> <td><code>1000119000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_KHR</td> <td><code>1000119001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SURFACE_FORMAT_2_KHR</td> <td><code>1000119002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES</td> <td><code>1000120000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR</td> <td><code>1000120000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_PROPERTIES_2_KHR</td> <td><code>1000121000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_PLANE_PROPERTIES_2_KHR</td> <td><code>1000121001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_MODE_PROPERTIES_2_KHR</td> <td><code>1000121002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_PLANE_INFO_2_KHR</td> <td><code>1000121003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DISPLAY_PLANE_CAPABILITIES_2_KHR</td> <td><code>1000121004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IOS_SURFACE_CREATE_INFO_MVK</td> <td><code>1000122000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MACOS_SURFACE_CREATE_INFO_MVK</td> <td><code>1000123000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS</td> <td><code>1000127000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR</td> <td><code>1000127000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO</td> <td><code>1000127001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR</td> <td><code>1000127001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_NAME_INFO_EXT</td> <td><code>1000128000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_TAG_INFO_EXT</td> <td><code>1000128001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_UTILS_LABEL_EXT</td> <td><code>1000128002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CALLBACK_DATA_EXT</td> <td><code>1000128003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT</td> <td><code>1000128004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_ANDROID_HARDWARE_BUFFER_USAGE_ANDROID</td> <td><code>1000129000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_ANDROID_HARDWARE_BUFFER_PROPERTIES_ANDROID</td> <td><code>1000129001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_ANDROID_HARDWARE_BUFFER_FORMAT_PROPERTIES_ANDROID</td> <td><code>1000129002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_ANDROID_HARDWARE_BUFFER_INFO_ANDROID</td> <td><code>1000129003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_GET_ANDROID_HARDWARE_BUFFER_INFO_ANDROID</td> <td><code>1000129004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_EXTERNAL_FORMAT_ANDROID</td> <td><code>1000129005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_FILTER_MINMAX_PROPERTIES_EXT</td> <td><code>1000130000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLER_REDUCTION_MODE_CREATE_INFO_EXT</td> <td><code>1000130001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLE_LOCATIONS_INFO_EXT</td> <td><code>1000143000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_RENDER_PASS_SAMPLE_LOCATIONS_BEGIN_INFO_EXT</td> <td><code>1000143001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_SAMPLE_LOCATIONS_STATE_CREATE_INFO_EXT</td> <td><code>1000143002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLE_LOCATIONS_PROPERTIES_EXT</td> <td><code>1000143003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MULTISAMPLE_PROPERTIES_EXT</td> <td><code>1000143004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PROTECTED_SUBMIT_INFO</td> <td><code>1000145000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_FEATURES</td> <td><code>1000145001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_PROPERTIES</td> <td><code>1000145002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_QUEUE_INFO_2</td> <td><code>1000145003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2</td> <td><code>1000146000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR</td> <td><code>1000146000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2</td> <td><code>1000146001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2_KHR</td> <td><code>1000146001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2</td> <td><code>1000146002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2_KHR</td> <td><code>1000146002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2</td> <td><code>1000146003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR</td> <td><code>1000146003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2</td> <td><code>1000146004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR</td> <td><code>1000146004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_FORMAT_LIST_CREATE_INFO_KHR</td> <td><code>1000147000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_FEATURES_EXT</td> <td><code>1000148000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_PROPERTIES_EXT</td> <td><code>1000148001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_ADVANCED_STATE_CREATE_INFO_EXT</td> <td><code>1000148002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_TO_COLOR_STATE_CREATE_INFO_NV</td> <td><code>1000149000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_MODULATION_STATE_CREATE_INFO_NV</td> <td><code>1000152000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO</td> <td><code>1000156000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR</td> <td><code>1000156000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO</td> <td><code>1000156001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO_KHR</td> <td><code>1000156001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO</td> <td><code>1000156002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO_KHR</td> <td><code>1000156002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO</td> <td><code>1000156003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO_KHR</td> <td><code>1000156003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES</td> <td><code>1000156004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES_KHR</td> <td><code>1000156004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES</td> <td><code>1000156005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES_KHR</td> <td><code>1000156005</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO</td> <td><code>1000157000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR</td> <td><code>1000157000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO</td> <td><code>1000157001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR</td> <td><code>1000157001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_VALIDATION_CACHE_CREATE_INFO_EXT</td> <td><code>1000160000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_SHADER_MODULE_VALIDATION_CACHE_CREATE_INFO_EXT</td> <td><code>1000160001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_BINDING_FLAGS_CREATE_INFO_EXT</td> <td><code>1000161000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_FEATURES_EXT</td> <td><code>1000161001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT</td> <td><code>1000161002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_ALLOCATE_INFO_EXT</td> <td><code>1000161003</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_LAYOUT_SUPPORT_EXT</td> <td><code>1000161004</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES</td> <td><code>1000168000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR</td> <td><code>1000168000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT</td> <td><code>1000168001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT_KHR</td> <td><code>1000168001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_DEVICE_QUEUE_GLOBAL_PRIORITY_CREATE_INFO_EXT</td> <td><code>1000174000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_8BIT_STORAGE_FEATURES_KHR</td> <td><code>1000177000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_IMPORT_MEMORY_HOST_POINTER_INFO_EXT</td> <td><code>1000178000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MEMORY_HOST_POINTER_PROPERTIES_EXT</td> <td><code>1000178001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_MEMORY_HOST_PROPERTIES_EXT</td> <td><code>1000178002</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_AMD</td> <td><code>1000185000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_PROPERTIES_EXT</td> <td><code>1000190000</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_DIVISOR_STATE_CREATE_INFO_EXT</td> <td><code>1000190001</code></td></tr> <tr><td>VK_STRUCTURE_TYPE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkcolorspacekhr"><a href="#vkcolorspacekhr" class="header-anchor">#</a> <code>VkColorSpaceKHR</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_COLOR_SPACE_SRGB_NONLINEAR_KHR</td> <td><code>0</code></td></tr> <tr><td>VK_COLOR_SPACE_BEGIN_RANGE_KHR</td> <td><code>0</code></td></tr> <tr><td>VK_COLOR_SPACE_END_RANGE_KHR</td> <td><code>0</code></td></tr> <tr><td>VK_COLOR_SPACE_RANGE_SIZE_KHR</td> <td><code>1</code></td></tr> <tr><td>VK_COLOR_SPACE_DISPLAY_P3_NONLINEAR_EXT</td> <td><code>1000104001</code></td></tr> <tr><td>VK_COLOR_SPACE_EXTENDED_SRGB_LINEAR_EXT</td> <td><code>1000104002</code></td></tr> <tr><td>VK_COLOR_SPACE_DCI_P3_LINEAR_EXT</td> <td><code>1000104003</code></td></tr> <tr><td>VK_COLOR_SPACE_DCI_P3_NONLINEAR_EXT</td> <td><code>1000104004</code></td></tr> <tr><td>VK_COLOR_SPACE_BT709_LINEAR_EXT</td> <td><code>1000104005</code></td></tr> <tr><td>VK_COLOR_SPACE_BT709_NONLINEAR_EXT</td> <td><code>1000104006</code></td></tr> <tr><td>VK_COLOR_SPACE_BT2020_LINEAR_EXT</td> <td><code>1000104007</code></td></tr> <tr><td>VK_COLOR_SPACE_HDR10_ST2084_EXT</td> <td><code>1000104008</code></td></tr> <tr><td>VK_COLOR_SPACE_DOLBYVISION_EXT</td> <td><code>1000104009</code></td></tr> <tr><td>VK_COLOR_SPACE_HDR10_HLG_EXT</td> <td><code>1000104010</code></td></tr> <tr><td>VK_COLOR_SPACE_ADOBERGB_LINEAR_EXT</td> <td><code>1000104011</code></td></tr> <tr><td>VK_COLOR_SPACE_ADOBERGB_NONLINEAR_EXT</td> <td><code>1000104012</code></td></tr> <tr><td>VK_COLOR_SPACE_PASS_THROUGH_EXT</td> <td><code>1000104013</code></td></tr> <tr><td>VK_COLOR_SPACE_EXTENDED_SRGB_NONLINEAR_EXT</td> <td><code>1000104014</code></td></tr> <tr><td>VK_COLOR_SPACE_MAX_ENUM_KHR</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vksharingmode"><a href="#vksharingmode" class="header-anchor">#</a> <code>VkSharingMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_SHARING_MODE_EXCLUSIVE</td> <td><code>0</code></td></tr> <tr><td>VK_SHARING_MODE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_SHARING_MODE_CONCURRENT</td> <td><code>1</code></td></tr> <tr><td>VK_SHARING_MODE_END_RANGE</td> <td><code>1</code></td></tr> <tr><td>VK_SHARING_MODE_RANGE_SIZE</td> <td><code>2</code></td></tr> <tr><td>VK_SHARING_MODE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vksurfacetransformflagbitskhr"><a href="#vksurfacetransformflagbitskhr" class="header-anchor">#</a> <code>VkSurfaceTransformFlagBitsKHR</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR</td> <td><code>1</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_ROTATE_90_BIT_KHR</td> <td><code>2</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_ROTATE_180_BIT_KHR</td> <td><code>4</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_ROTATE_270_BIT_KHR</td> <td><code>8</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_BIT_KHR</td> <td><code>16</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_90_BIT_KHR</td> <td><code>32</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_180_BIT_KHR</td> <td><code>64</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_270_BIT_KHR</td> <td><code>128</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_INHERIT_BIT_KHR</td> <td><code>256</code></td></tr> <tr><td>VK_SURFACE_TRANSFORM_FLAG_BITS_MAX_ENUM_KHR</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkcompositealphaflagbitskhr"><a href="#vkcompositealphaflagbitskhr" class="header-anchor">#</a> <code>VkCompositeAlphaFlagBitsKHR</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR</td> <td><code>1</code></td></tr> <tr><td>VK_COMPOSITE_ALPHA_PRE_MULTIPLIED_BIT_KHR</td> <td><code>2</code></td></tr> <tr><td>VK_COMPOSITE_ALPHA_POST_MULTIPLIED_BIT_KHR</td> <td><code>4</code></td></tr> <tr><td>VK_COMPOSITE_ALPHA_INHERIT_BIT_KHR</td> <td><code>8</code></td></tr> <tr><td>VK_COMPOSITE_ALPHA_FLAG_BITS_MAX_ENUM_KHR</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkdescriptortype"><a href="#vkdescriptortype" class="header-anchor">#</a> <code>VkDescriptorType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_DESCRIPTOR_TYPE_SAMPLER</td> <td><code>0</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER</td> <td><code>1</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_SAMPLED_IMAGE</td> <td><code>2</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_STORAGE_IMAGE</td> <td><code>3</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_UNIFORM_TEXEL_BUFFER</td> <td><code>4</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_STORAGE_TEXEL_BUFFER</td> <td><code>5</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER</td> <td><code>6</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_STORAGE_BUFFER</td> <td><code>7</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER_DYNAMIC</td> <td><code>8</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_STORAGE_BUFFER_DYNAMIC</td> <td><code>9</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_INPUT_ATTACHMENT</td> <td><code>10</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_END_RANGE</td> <td><code>10</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_RANGE_SIZE</td> <td><code>11</code></td></tr> <tr><td>VK_DESCRIPTOR_TYPE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkimageviewtype"><a href="#vkimageviewtype" class="header-anchor">#</a> <code>VkImageViewType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_IMAGE_VIEW_TYPE_1D</td> <td><code>0</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_2D</td> <td><code>1</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_3D</td> <td><code>2</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_CUBE</td> <td><code>3</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_1D_ARRAY</td> <td><code>4</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_2D_ARRAY</td> <td><code>5</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_CUBE_ARRAY</td> <td><code>6</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_END_RANGE</td> <td><code>6</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_RANGE_SIZE</td> <td><code>7</code></td></tr> <tr><td>VK_IMAGE_VIEW_TYPE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vanillabiometypes"><a href="#vanillabiometypes" class="header-anchor">#</a> <code>VanillaBiomeTypes</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="vkimagetype"><a href="#vkimagetype" class="header-anchor">#</a> <code>VkImageType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_IMAGE_TYPE_1D</td> <td><code>0</code></td></tr> <tr><td>VK_IMAGE_TYPE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_IMAGE_TYPE_2D</td> <td><code>1</code></td></tr> <tr><td>VK_IMAGE_TYPE_3D</td> <td><code>2</code></td></tr> <tr><td>VK_IMAGE_TYPE_END_RANGE</td> <td><code>2</code></td></tr> <tr><td>VK_IMAGE_TYPE_RANGE_SIZE</td> <td><code>3</code></td></tr> <tr><td>VK_IMAGE_TYPE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vksamplecountflagbits"><a href="#vksamplecountflagbits" class="header-anchor">#</a> <code>VkSampleCountFlagBits</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_SAMPLE_COUNT_1_BIT</td> <td><code>1</code></td></tr> <tr><td>VK_SAMPLE_COUNT_2_BIT</td> <td><code>2</code></td></tr> <tr><td>VK_SAMPLE_COUNT_4_BIT</td> <td><code>4</code></td></tr> <tr><td>VK_SAMPLE_COUNT_8_BIT</td> <td><code>8</code></td></tr> <tr><td>VK_SAMPLE_COUNT_16_BIT</td> <td><code>16</code></td></tr> <tr><td>VK_SAMPLE_COUNT_32_BIT</td> <td><code>32</code></td></tr> <tr><td>VK_SAMPLE_COUNT_64_BIT</td> <td><code>64</code></td></tr> <tr><td>VK_SAMPLE_COUNT_FLAG_BITS_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkimagetiling"><a href="#vkimagetiling" class="header-anchor">#</a> <code>VkImageTiling</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_IMAGE_TILING_OPTIMAL</td> <td><code>0</code></td></tr> <tr><td>VK_IMAGE_TILING_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_IMAGE_TILING_LINEAR</td> <td><code>1</code></td></tr> <tr><td>VK_IMAGE_TILING_END_RANGE</td> <td><code>1</code></td></tr> <tr><td>VK_IMAGE_TILING_RANGE_SIZE</td> <td><code>2</code></td></tr> <tr><td>VK_IMAGE_TILING_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkcomponentswizzle"><a href="#vkcomponentswizzle" class="header-anchor">#</a> <code>VkComponentSwizzle</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_COMPONENT_SWIZZLE_IDENTITY</td> <td><code>0</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_ZERO</td> <td><code>1</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_ONE</td> <td><code>2</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_R</td> <td><code>3</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_G</td> <td><code>4</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_B</td> <td><code>5</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_A</td> <td><code>6</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_END_RANGE</td> <td><code>6</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_RANGE_SIZE</td> <td><code>7</code></td></tr> <tr><td>VK_COMPONENT_SWIZZLE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkfilter"><a href="#vkfilter" class="header-anchor">#</a> <code>VkFilter</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_FILTER_NEAREST</td> <td><code>0</code></td></tr> <tr><td>VK_FILTER_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_FILTER_LINEAR</td> <td><code>1</code></td></tr> <tr><td>VK_FILTER_END_RANGE</td> <td><code>1</code></td></tr> <tr><td>VK_FILTER_RANGE_SIZE</td> <td><code>2</code></td></tr> <tr><td>VK_FILTER_CUBIC_IMG</td> <td><code>1000015000</code></td></tr> <tr><td>VK_FILTER_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vksamplermipmapmode"><a href="#vksamplermipmapmode" class="header-anchor">#</a> <code>VkSamplerMipmapMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_SAMPLER_MIPMAP_MODE_NEAREST</td> <td><code>0</code></td></tr> <tr><td>VK_SAMPLER_MIPMAP_MODE_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_SAMPLER_MIPMAP_MODE_LINEAR</td> <td><code>1</code></td></tr> <tr><td>VK_SAMPLER_MIPMAP_MODE_END_RANGE</td> <td><code>1</code></td></tr> <tr><td>VK_SAMPLER_MIPMAP_MODE_RANGE_SIZE</td> <td><code>2</code></td></tr> <tr><td>VK_SAMPLER_MIPMAP_MODE_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkbordercolor"><a href="#vkbordercolor" class="header-anchor">#</a> <code>VkBorderColor</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_BORDER_COLOR_FLOAT_TRANSPARENT_BLACK</td> <td><code>0</code></td></tr> <tr><td>VK_BORDER_COLOR_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_BORDER_COLOR_INT_TRANSPARENT_BLACK</td> <td><code>1</code></td></tr> <tr><td>VK_BORDER_COLOR_FLOAT_OPAQUE_BLACK</td> <td><code>2</code></td></tr> <tr><td>VK_BORDER_COLOR_INT_OPAQUE_BLACK</td> <td><code>3</code></td></tr> <tr><td>VK_BORDER_COLOR_FLOAT_OPAQUE_WHITE</td> <td><code>4</code></td></tr> <tr><td>VK_BORDER_COLOR_INT_OPAQUE_WHITE</td> <td><code>5</code></td></tr> <tr><td>VK_BORDER_COLOR_END_RANGE</td> <td><code>5</code></td></tr> <tr><td>VK_BORDER_COLOR_RANGE_SIZE</td> <td><code>6</code></td></tr> <tr><td>VK_BORDER_COLOR_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkshaderstageflagbits"><a href="#vkshaderstageflagbits" class="header-anchor">#</a> <code>VkShaderStageFlagBits</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_SHADER_STAGE_VERTEX_BIT</td> <td><code>1</code></td></tr> <tr><td>VK_SHADER_STAGE_TESSELLATION_CONTROL_BIT</td> <td><code>2</code></td></tr> <tr><td>VK_SHADER_STAGE_TESSELLATION_EVALUATION_BIT</td> <td><code>4</code></td></tr> <tr><td>VK_SHADER_STAGE_GEOMETRY_BIT</td> <td><code>8</code></td></tr> <tr><td>VK_SHADER_STAGE_FRAGMENT_BIT</td> <td><code>16</code></td></tr> <tr><td>VK_SHADER_STAGE_ALL_GRAPHICS</td> <td><code>31</code></td></tr> <tr><td>VK_SHADER_STAGE_COMPUTE_BIT</td> <td><code>32</code></td></tr> <tr><td>VK_SHADER_STAGE_ALL</td> <td><code>2147483647</code></td></tr> <tr><td>VK_SHADER_STAGE_FLAG_BITS_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vklogicop"><a href="#vklogicop" class="header-anchor">#</a> <code>VkLogicOp</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_LOGIC_OP_CLEAR</td> <td><code>0</code></td></tr> <tr><td>VK_LOGIC_OP_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_LOGIC_OP_AND</td> <td><code>1</code></td></tr> <tr><td>VK_LOGIC_OP_AND_REVERSE</td> <td><code>2</code></td></tr> <tr><td>VK_LOGIC_OP_COPY</td> <td><code>3</code></td></tr> <tr><td>VK_LOGIC_OP_AND_INVERTED</td> <td><code>4</code></td></tr> <tr><td>VK_LOGIC_OP_NO_OP</td> <td><code>5</code></td></tr> <tr><td>VK_LOGIC_OP_XOR</td> <td><code>6</code></td></tr> <tr><td>VK_LOGIC_OP_OR</td> <td><code>7</code></td></tr> <tr><td>VK_LOGIC_OP_NOR</td> <td><code>8</code></td></tr> <tr><td>VK_LOGIC_OP_EQUIVALENT</td> <td><code>9</code></td></tr> <tr><td>VK_LOGIC_OP_INVERT</td> <td><code>10</code></td></tr> <tr><td>VK_LOGIC_OP_OR_REVERSE</td> <td><code>11</code></td></tr> <tr><td>VK_LOGIC_OP_COPY_INVERTED</td> <td><code>12</code></td></tr> <tr><td>VK_LOGIC_OP_OR_INVERTED</td> <td><code>13</code></td></tr> <tr><td>VK_LOGIC_OP_NAND</td> <td><code>14</code></td></tr> <tr><td>VK_LOGIC_OP_SET</td> <td><code>15</code></td></tr> <tr><td>VK_LOGIC_OP_END_RANGE</td> <td><code>15</code></td></tr> <tr><td>VK_LOGIC_OP_RANGE_SIZE</td> <td><code>16</code></td></tr> <tr><td>VK_LOGIC_OP_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vkcommandbufferlevel"><a href="#vkcommandbufferlevel" class="header-anchor">#</a> <code>VkCommandBufferLevel</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VK_COMMAND_BUFFER_LEVEL_PRIMARY</td> <td><code>0</code></td></tr> <tr><td>VK_COMMAND_BUFFER_LEVEL_BEGIN_RANGE</td> <td><code>0</code></td></tr> <tr><td>VK_COMMAND_BUFFER_LEVEL_SECONDARY</td> <td><code>1</code></td></tr> <tr><td>VK_COMMAND_BUFFER_LEVEL_END_RANGE</td> <td><code>1</code></td></tr> <tr><td>VK_COMMAND_BUFFER_LEVEL_RANGE_SIZE</td> <td><code>2</code></td></tr> <tr><td>VK_COMMAND_BUFFER_LEVEL_MAX_ENUM</td> <td><code>2147483647</code></td></tr></tbody></table> <h3 id="vrcameramovement"><a href="#vrcameramovement" class="header-anchor">#</a> <code>VRCameraMovement</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VRCameraMovement : __int32
+{
+  Classic = 0x0,
+  Snap = 0x1,
+  Wheel = 0x2,
+  SnapWheel = 0x3,
+};
+
+</code></pre></div><h3 id="vroutputmode"><a href="#vroutputmode" class="header-anchor">#</a> <code>VROutputMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VROutputMode : __int32
+{
+  REGULAR = 0x0,
+  TWO_DIMENSIONAL = 0x1,
+};
+
+</code></pre></div><h3 id="vrhudposition"><a href="#vrhudposition" class="header-anchor">#</a> <code>VRHUDPosition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VRHUDPosition : __int32
+{
+  Drift = 0x0,
+  Fixed = 0x1,
+  Offhand = 0x2,
+};
+
+</code></pre></div><h3 id="vrstickymining"><a href="#vrstickymining" class="header-anchor">#</a> <code>VRStickyMining</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef HolographicPlatform::GestureMode VRStickyMining;
+
+</code></pre></div><h3 id="vrcontrollertype"><a href="#vrcontrollertype" class="header-anchor">#</a> <code>VRControllerType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VRControllerType : __int32
+{
+  Standard = 0x0,
+  SingleTriggerGearVR = 0x1,
+  GearVR = 0x2,
+  MotionController = 0x3,
+  _count = 0x4,
+};
+
+</code></pre></div><h3 id="voicecommand"><a href="#voicecommand" class="header-anchor">#</a> <code>VoiceCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VoiceCommand : __int32
+{
+  ZoomIn = 0x0,
+  ZoomOut = 0x1,
+  ZoomMax = 0x2,
+  ZoomMin = 0x3,
+  LightningBolt = 0x4,
+  RaiseWorld = 0x5,
+  LowerWorld = 0x6,
+  Follow = 0x7,
+  StopFollow = 0x8,
+  FollowNext = 0x9,
+  TimeSunrise = 0xA,
+  TimeMorning = 0xB,
+  TimeAfternoon = 0xC,
+  TimeEvening = 0xD,
+  TimeMidnight = 0xE,
+  PlaceScreen = 0xF,
+  PlaceViewer = 0x10,
+  GoBack = 0x11,
+  ScreenMode = 0x12,
+  RealityMode = 0x13,
+  RealityModeVRSubMode = 0x14,
+  RealityModeRealitySubMode = 0x15,
+  AutoAlign = 0x16,
+  PanMode = 0x17,
+  RotateMode = 0x18,
+  TiltMode = 0x19,
+  PivotLeft = 0x1A,
+  PivotRight = 0x1B,
+  ZoomMode = 0x1C,
+  TV2DMode = 0x1D,
+  TV3DMode = 0x1E,
+  SmallTV = 0x1F,
+  MediumTV = 0x20,
+  LargeTV = 0x21,
+  HugeTV = 0x22,
+  Mark = 0x23,
+  ToggleLSRDisplay = 0x24,
+  DebugVoiceCommandsToggle = 0x25,
+  ThirdPersonToggle = 0x26,
+};
+
+</code></pre></div><h3 id="virtualcurrencytype"><a href="#virtualcurrencytype" class="header-anchor">#</a> <code>VirtualCurrencyType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VirtualCurrencyType : __int32
+{
+  Minecoin = 0x0,
+  Token = 0x1,
+  GroundRuby = 0x2,
+  PurchasedRuby = 0x3,
+  CurrencyCount = 0x4,
+};
+
+</code></pre></div><h3 id="varenum"><a href="#varenum" class="header-anchor">#</a> <code>VARENUM</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VARENUM : __int32
+{
+  VT_EMPTY = 0x0,
+  VT_NULL = 0x1,
+  VT_I2 = 0x2,
+  VT_I4 = 0x3,
+  VT_R4 = 0x4,
+  VT_R8 = 0x5,
+  VT_CY = 0x6,
+  VT_DATE = 0x7,
+  VT_BSTR = 0x8,
+  VT_DISPATCH = 0x9,
+  VT_ERROR = 0xA,
+  VT_BOOL = 0xB,
+  VT_VARIANT = 0xC,
+  VT_UNKNOWN = 0xD,
+  VT_DECIMAL = 0xE,
+  VT_I1 = 0x10,
+  VT_UI1 = 0x11,
+  VT_UI2 = 0x12,
+  VT_UI4 = 0x13,
+  VT_I8 = 0x14,
+  VT_UI8 = 0x15,
+  VT_INT = 0x16,
+  VT_UINT = 0x17,
+  VT_VOID = 0x18,
+  VT_HRESULT = 0x19,
+  VT_PTR = 0x1A,
+  VT_SAFEARRAY = 0x1B,
+  VT_CARRAY = 0x1C,
+  VT_USERDEFINED = 0x1D,
+  VT_LPSTR = 0x1E,
+  VT_LPWSTR = 0x1F,
+  VT_RECORD = 0x24,
+  VT_INT_PTR = 0x25,
+  VT_UINT_PTR = 0x26,
+  VT_FILETIME = 0x40,
+  VT_BLOB = 0x41,
+  VT_STREAM = 0x42,
+  VT_STORAGE = 0x43,
+  VT_STREAMED_OBJECT = 0x44,
+  VT_STORED_OBJECT = 0x45,
+  VT_BLOB_OBJECT = 0x46,
+  VT_CF = 0x47,
+  VT_CLSID = 0x48,
+  VT_VERSIONED_STREAM = 0x49,
+  VT_BSTR_BLOB = 0xFFF,
+  VT_VECTOR = 0x1000,
+  VT_ARRAY = 0x2000,
+  VT_BYREF = 0x4000,
+  VT_RESERVED = 0x8000,
+  VT_ILLEGAL = 0xFFFF,
+  VT_ILLEGALMASKED = 0xFFF,
+  VT_TYPEMASK = 0xFFF,
+};
+
+</code></pre></div><h3 id="vrmovement"><a href="#vrmovement" class="header-anchor">#</a> <code>VRMovement</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace VRMovement;
+
+</code></pre></div><h3 id="vrjump"><a href="#vrjump" class="header-anchor">#</a> <code>VRJump</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace VRJump;
+
+</code></pre></div><h3 id="vrheadsteering"><a href="#vrheadsteering" class="header-anchor">#</a> <code>VRHeadSteering</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VRHeadSteering : __int32
+{
+  FollowGaze = 0x0,
+  FollowPlayerAngle = 0x1,
+};
+
+</code></pre></div><h3 id="visibilityextimator-blockstate"><a href="#visibilityextimator-blockstate" class="header-anchor">#</a> <code>VisibilityExtimator::BlockState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VisibilityExtimator::BlockState : __int8
+{
+  TS_EMPTY = 0x0,
+  TS_OPAQUE = 0x1,
+  TS_EMPTY_MARKED = 0x2,
+};
+
+</code></pre></div><h3 id="village-villageversion"><a href="#village-villageversion" class="header-anchor">#</a> <code>Village::VillageVersion</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId Village::VillageVersion;
+
+</code></pre></div><h3 id="vanillaxboxliveachievementseventlistener-movementaxis"><a href="#vanillaxboxliveachievementseventlistener-movementaxis" class="header-anchor">#</a> <code>VanillaXboxLiveAchievementsEventListener::MovementAxis</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Direction::Type VanillaXboxLiveAchievementsEventListener::MovementAxis;
+
+</code></pre></div><h3 id="vanillalevelchunkupgrade-axis"><a href="#vanillalevelchunkupgrade-axis" class="header-anchor">#</a> <code>VanillaLevelChunkUpgrade::Axis</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TextureAtlasItemTextureSetTranslation::Channel VanillaLevelChunkUpgrade::Axis;
+
+</code></pre></div><h3 id="vkbufferusageflagbits"><a href="#vkbufferusageflagbits" class="header-anchor">#</a> <code>VkBufferUsageFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkBufferUsageFlagBits : __int32
+{
+  VK_BUFFER_USAGE_TRANSFER_SRC_BIT = 0x1,
+  VK_BUFFER_USAGE_TRANSFER_DST_BIT = 0x2,
+  VK_BUFFER_USAGE_UNIFORM_TEXEL_BUFFER_BIT = 0x4,
+  VK_BUFFER_USAGE_STORAGE_TEXEL_BUFFER_BIT = 0x8,
+  VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT = 0x10,
+  VK_BUFFER_USAGE_STORAGE_BUFFER_BIT = 0x20,
+  VK_BUFFER_USAGE_INDEX_BUFFER_BIT = 0x40,
+  VK_BUFFER_USAGE_VERTEX_BUFFER_BIT = 0x80,
+  VK_BUFFER_USAGE_INDIRECT_BUFFER_BIT = 0x100,
+  VK_BUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXT = 0x200,
+  VK_BUFFER_USAGE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkresult"><a href="#vkresult" class="header-anchor">#</a> <code>VkResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkResult : __int32
+{
+  VK_SUCCESS = 0x0,
+  VK_NOT_READY = 0x1,
+  VK_TIMEOUT = 0x2,
+  VK_EVENT_SET = 0x3,
+  VK_EVENT_RESET = 0x4,
+  VK_INCOMPLETE = 0x5,
+  VK_ERROR_OUT_OF_HOST_MEMORY = 0xFFFFFFFF,
+  VK_ERROR_OUT_OF_DEVICE_MEMORY = 0xFFFFFFFE,
+  VK_ERROR_INITIALIZATION_FAILED = 0xFFFFFFFD,
+  VK_ERROR_DEVICE_LOST = 0xFFFFFFFC,
+  VK_ERROR_MEMORY_MAP_FAILED = 0xFFFFFFFB,
+  VK_ERROR_LAYER_NOT_PRESENT = 0xFFFFFFFA,
+  VK_ERROR_EXTENSION_NOT_PRESENT = 0xFFFFFFF9,
+  VK_ERROR_FEATURE_NOT_PRESENT = 0xFFFFFFF8,
+  VK_ERROR_INCOMPATIBLE_DRIVER = 0xFFFFFFF7,
+  VK_ERROR_TOO_MANY_OBJECTS = 0xFFFFFFF6,
+  VK_ERROR_FORMAT_NOT_SUPPORTED = 0xFFFFFFF5,
+  VK_ERROR_FRAGMENTED_POOL = 0xFFFFFFF4,
+  VK_ERROR_OUT_OF_POOL_MEMORY = 0xC4642878,
+  VK_ERROR_INVALID_EXTERNAL_HANDLE = 0xC4641CBD,
+  VK_ERROR_SURFACE_LOST_KHR = 0xC4653600,
+  VK_ERROR_NATIVE_WINDOW_IN_USE_KHR = 0xC46535FF,
+  VK_SUBOPTIMAL_KHR = 0x3B9ACDEB,
+  VK_ERROR_OUT_OF_DATE_KHR = 0xC4653214,
+  VK_ERROR_INCOMPATIBLE_DISPLAY_KHR = 0xC4652A47,
+  VK_ERROR_VALIDATION_FAILED_EXT = 0xC4650B07,
+  VK_ERROR_INVALID_SHADER_NV = 0xC4650720,
+  VK_ERROR_FRAGMENTATION_EXT = 0xC462C118,
+  VK_ERROR_NOT_PERMITTED_EXT = 0xC4628E4F,
+  VK_ERROR_OUT_OF_POOL_MEMORY_KHR = 0xC4642878,
+  VK_ERROR_INVALID_EXTERNAL_HANDLE_KHR = 0xC4641CBD,
+  VK_RESULT_BEGIN_RANGE = 0xFFFFFFF4,
+  VK_RESULT_END_RANGE = 0x5,
+  VK_RESULT_RANGE_SIZE = 0x12,
+  VK_RESULT_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkformatfeatureflagbits"><a href="#vkformatfeatureflagbits" class="header-anchor">#</a> <code>VkFormatFeatureFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkFormatFeatureFlagBits : __int32
+{
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_BIT = 0x1,
+  VK_FORMAT_FEATURE_STORAGE_IMAGE_BIT = 0x2,
+  VK_FORMAT_FEATURE_STORAGE_IMAGE_ATOMIC_BIT = 0x4,
+  VK_FORMAT_FEATURE_UNIFORM_TEXEL_BUFFER_BIT = 0x8,
+  VK_FORMAT_FEATURE_STORAGE_TEXEL_BUFFER_BIT = 0x10,
+  VK_FORMAT_FEATURE_STORAGE_TEXEL_BUFFER_ATOMIC_BIT = 0x20,
+  VK_FORMAT_FEATURE_VERTEX_BUFFER_BIT = 0x40,
+  VK_FORMAT_FEATURE_COLOR_ATTACHMENT_BIT = 0x80,
+  VK_FORMAT_FEATURE_COLOR_ATTACHMENT_BLEND_BIT = 0x100,
+  VK_FORMAT_FEATURE_DEPTH_STENCIL_ATTACHMENT_BIT = 0x200,
+  VK_FORMAT_FEATURE_BLIT_SRC_BIT = 0x400,
+  VK_FORMAT_FEATURE_BLIT_DST_BIT = 0x800,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_LINEAR_BIT = 0x1000,
+  VK_FORMAT_FEATURE_TRANSFER_SRC_BIT = 0x4000,
+  VK_FORMAT_FEATURE_TRANSFER_DST_BIT = 0x8000,
+  VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT = 0x20000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT = 0x40000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT = 0x80000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT = 0x100000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT = 0x200000,
+  VK_FORMAT_FEATURE_DISJOINT_BIT = 0x400000,
+  VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT = 0x800000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_IMG = 0x2000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT = 0x10000,
+  VK_FORMAT_FEATURE_TRANSFER_SRC_BIT_KHR = 0x4000,
+  VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR = 0x8000,
+  VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR = 0x20000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT_KHR = 0x40000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT_KHR = 0x80000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT_KHR = 0x100000,
+  VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT_KHR = 0x200000,
+  VK_FORMAT_FEATURE_DISJOINT_BIT_KHR = 0x400000,
+  VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT_KHR = 0x800000,
+  VK_FORMAT_FEATURE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkpolygonmode"><a href="#vkpolygonmode" class="header-anchor">#</a> <code>VkPolygonMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkPolygonMode : __int32
+{
+  VK_POLYGON_MODE_FILL = 0x0,
+  VK_POLYGON_MODE_LINE = 0x1,
+  VK_POLYGON_MODE_POINT = 0x2,
+  VK_POLYGON_MODE_FILL_RECTANGLE_NV = 0x3B9D1FA8,
+  VK_POLYGON_MODE_BEGIN_RANGE = 0x0,
+  VK_POLYGON_MODE_END_RANGE = 0x2,
+  VK_POLYGON_MODE_RANGE_SIZE = 0x3,
+  VK_POLYGON_MODE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkmemorypropertyflagbits"><a href="#vkmemorypropertyflagbits" class="header-anchor">#</a> <code>VkMemoryPropertyFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkMemoryPropertyFlagBits : __int32
+{
+  VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT = 0x1,
+  VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT = 0x2,
+  VK_MEMORY_PROPERTY_HOST_COHERENT_BIT = 0x4,
+  VK_MEMORY_PROPERTY_HOST_CACHED_BIT = 0x8,
+  VK_MEMORY_PROPERTY_LAZILY_ALLOCATED_BIT = 0x10,
+  VK_MEMORY_PROPERTY_PROTECTED_BIT = 0x20,
+  VK_MEMORY_PROPERTY_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkimageusageflagbits"><a href="#vkimageusageflagbits" class="header-anchor">#</a> <code>VkImageUsageFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkImageUsageFlagBits : __int32
+{
+  VK_IMAGE_USAGE_TRANSFER_SRC_BIT = 0x1,
+  VK_IMAGE_USAGE_TRANSFER_DST_BIT = 0x2,
+  VK_IMAGE_USAGE_SAMPLED_BIT = 0x4,
+  VK_IMAGE_USAGE_STORAGE_BIT = 0x8,
+  VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT = 0x10,
+  VK_IMAGE_USAGE_DEPTH_STENCIL_ATTACHMENT_BIT = 0x20,
+  VK_IMAGE_USAGE_TRANSIENT_ATTACHMENT_BIT = 0x40,
+  VK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT = 0x80,
+  VK_IMAGE_USAGE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkquerytype"><a href="#vkquerytype" class="header-anchor">#</a> <code>VkQueryType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkQueryType : __int32
+{
+  VK_QUERY_TYPE_OCCLUSION = 0x0,
+  VK_QUERY_TYPE_PIPELINE_STATISTICS = 0x1,
+  VK_QUERY_TYPE_TIMESTAMP = 0x2,
+  VK_QUERY_TYPE_BEGIN_RANGE = 0x0,
+  VK_QUERY_TYPE_END_RANGE = 0x2,
+  VK_QUERY_TYPE_RANGE_SIZE = 0x3,
+  VK_QUERY_TYPE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkexternalsemaphorefeatureflagbits"><a href="#vkexternalsemaphorefeatureflagbits" class="header-anchor">#</a> <code>VkExternalSemaphoreFeatureFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkExternalSemaphoreFeatureFlagBits : __int32
+{
+  VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT = 0x1,
+  VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT = 0x2,
+  VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR = 0x1,
+  VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT_KHR = 0x2,
+  VK_EXTERNAL_SEMAPHORE_FEATURE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkshaderinfotypeamd"><a href="#vkshaderinfotypeamd" class="header-anchor">#</a> <code>VkShaderInfoTypeAMD</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkShaderInfoTypeAMD : __int32
+{
+  VK_SHADER_INFO_TYPE_STATISTICS_AMD = 0x0,
+  VK_SHADER_INFO_TYPE_BINARY_AMD = 0x1,
+  VK_SHADER_INFO_TYPE_DISASSEMBLY_AMD = 0x2,
+  VK_SHADER_INFO_TYPE_BEGIN_RANGE_AMD = 0x0,
+  VK_SHADER_INFO_TYPE_END_RANGE_AMD = 0x2,
+  VK_SHADER_INFO_TYPE_RANGE_SIZE_AMD = 0x3,
+  VK_SHADER_INFO_TYPE_MAX_ENUM_AMD = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkvertexinputrate"><a href="#vkvertexinputrate" class="header-anchor">#</a> <code>VkVertexInputRate</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkVertexInputRate : __int32
+{
+  VK_VERTEX_INPUT_RATE_VERTEX = 0x0,
+  VK_VERTEX_INPUT_RATE_INSTANCE = 0x1,
+  VK_VERTEX_INPUT_RATE_BEGIN_RANGE = 0x0,
+  VK_VERTEX_INPUT_RATE_END_RANGE = 0x1,
+  VK_VERTEX_INPUT_RATE_RANGE_SIZE = 0x2,
+  VK_VERTEX_INPUT_RATE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdisplaypowerstateext"><a href="#vkdisplaypowerstateext" class="header-anchor">#</a> <code>VkDisplayPowerStateEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDisplayPowerStateEXT : __int32
+{
+  VK_DISPLAY_POWER_STATE_OFF_EXT = 0x0,
+  VK_DISPLAY_POWER_STATE_SUSPEND_EXT = 0x1,
+  VK_DISPLAY_POWER_STATE_ON_EXT = 0x2,
+  VK_DISPLAY_POWER_STATE_BEGIN_RANGE_EXT = 0x0,
+  VK_DISPLAY_POWER_STATE_END_RANGE_EXT = 0x2,
+  VK_DISPLAY_POWER_STATE_RANGE_SIZE_EXT = 0x3,
+  VK_DISPLAY_POWER_STATE_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkindextype"><a href="#vkindextype" class="header-anchor">#</a> <code>VkIndexType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkIndexType : __int32
+{
+  VK_INDEX_TYPE_UINT16 = 0x0,
+  VK_INDEX_TYPE_UINT32 = 0x1,
+  VK_INDEX_TYPE_BEGIN_RANGE = 0x0,
+  VK_INDEX_TYPE_END_RANGE = 0x1,
+  VK_INDEX_TYPE_RANGE_SIZE = 0x2,
+  VK_INDEX_TYPE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkaccessflagbits"><a href="#vkaccessflagbits" class="header-anchor">#</a> <code>VkAccessFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkAccessFlagBits : __int32
+{
+  VK_ACCESS_INDIRECT_COMMAND_READ_BIT = 0x1,
+  VK_ACCESS_INDEX_READ_BIT = 0x2,
+  VK_ACCESS_VERTEX_ATTRIBUTE_READ_BIT = 0x4,
+  VK_ACCESS_UNIFORM_READ_BIT = 0x8,
+  VK_ACCESS_INPUT_ATTACHMENT_READ_BIT = 0x10,
+  VK_ACCESS_SHADER_READ_BIT = 0x20,
+  VK_ACCESS_SHADER_WRITE_BIT = 0x40,
+  VK_ACCESS_COLOR_ATTACHMENT_READ_BIT = 0x80,
+  VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT = 0x100,
+  VK_ACCESS_DEPTH_STENCIL_ATTACHMENT_READ_BIT = 0x200,
+  VK_ACCESS_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT = 0x400,
+  VK_ACCESS_TRANSFER_READ_BIT = 0x800,
+  VK_ACCESS_TRANSFER_WRITE_BIT = 0x1000,
+  VK_ACCESS_HOST_READ_BIT = 0x2000,
+  VK_ACCESS_HOST_WRITE_BIT = 0x4000,
+  VK_ACCESS_MEMORY_READ_BIT = 0x8000,
+  VK_ACCESS_MEMORY_WRITE_BIT = 0x10000,
+  VK_ACCESS_CONDITIONAL_RENDERING_READ_BIT_EXT = 0x100000,
+  VK_ACCESS_COMMAND_PROCESS_READ_BIT_NVX = 0x20000,
+  VK_ACCESS_COMMAND_PROCESS_WRITE_BIT_NVX = 0x40000,
+  VK_ACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT = 0x80000,
+  VK_ACCESS_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkmemoryheapflagbits"><a href="#vkmemoryheapflagbits" class="header-anchor">#</a> <code>VkMemoryHeapFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkMemoryHeapFlagBits : __int32
+{
+  VK_MEMORY_HEAP_DEVICE_LOCAL_BIT = 0x1,
+  VK_MEMORY_HEAP_MULTI_INSTANCE_BIT = 0x2,
+  VK_MEMORY_HEAP_MULTI_INSTANCE_BIT_KHR = 0x2,
+  VK_MEMORY_HEAP_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkexternalmemoryhandletypeflagbits"><a href="#vkexternalmemoryhandletypeflagbits" class="header-anchor">#</a> <code>VkExternalMemoryHandleTypeFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkExternalMemoryHandleTypeFlagBits : __int32
+{
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT = 0x1,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_BIT = 0x2,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT = 0x4,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_BIT = 0x8,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_KMT_BIT = 0x10,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_HEAP_BIT = 0x20,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_RESOURCE_BIT = 0x40,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_DMA_BUF_BIT_EXT = 0x200,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_ANDROID_HARDWARE_BUFFER_BIT_ANDROID = 0x400,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_ALLOCATION_BIT_EXT = 0x80,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_MAPPED_FOREIGN_MEMORY_BIT_EXT = 0x100,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT_KHR = 0x1,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR = 0x2,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR = 0x4,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_BIT_KHR = 0x8,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_KMT_BIT_KHR = 0x10,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_HEAP_BIT_KHR = 0x20,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_RESOURCE_BIT_KHR = 0x40,
+  VK_EXTERNAL_MEMORY_HANDLE_TYPE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vksamplerycbcrmodelconversion"><a href="#vksamplerycbcrmodelconversion" class="header-anchor">#</a> <code>VkSamplerYcbcrModelConversion</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkSamplerYcbcrModelConversion : __int32
+{
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_RGB_IDENTITY = 0x0,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_IDENTITY = 0x1,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_709 = 0x2,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_601 = 0x3,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_2020 = 0x4,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_RGB_IDENTITY_KHR = 0x0,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_IDENTITY_KHR = 0x1,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_709_KHR = 0x2,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_601_KHR = 0x3,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_2020_KHR = 0x4,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_BEGIN_RANGE = 0x0,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_END_RANGE = 0x4,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_RANGE_SIZE = 0x5,
+  VK_SAMPLER_YCBCR_MODEL_CONVERSION_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vksamplerreductionmodeext"><a href="#vksamplerreductionmodeext" class="header-anchor">#</a> <code>VkSamplerReductionModeEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkSamplerReductionModeEXT : __int32
+{
+  VK_SAMPLER_REDUCTION_MODE_WEIGHTED_AVERAGE_EXT = 0x0,
+  VK_SAMPLER_REDUCTION_MODE_MIN_EXT = 0x1,
+  VK_SAMPLER_REDUCTION_MODE_MAX_EXT = 0x2,
+  VK_SAMPLER_REDUCTION_MODE_BEGIN_RANGE_EXT = 0x0,
+  VK_SAMPLER_REDUCTION_MODE_END_RANGE_EXT = 0x2,
+  VK_SAMPLER_REDUCTION_MODE_RANGE_SIZE_EXT = 0x3,
+  VK_SAMPLER_REDUCTION_MODE_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkcolorcomponentflagbits"><a href="#vkcolorcomponentflagbits" class="header-anchor">#</a> <code>VkColorComponentFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkColorComponentFlagBits : __int32
+{
+  VK_COLOR_COMPONENT_R_BIT = 0x1,
+  VK_COLOR_COMPONENT_G_BIT = 0x2,
+  VK_COLOR_COMPONENT_B_BIT = 0x4,
+  VK_COLOR_COMPONENT_A_BIT = 0x8,
+  VK_COLOR_COMPONENT_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkobjecttype"><a href="#vkobjecttype" class="header-anchor">#</a> <code>VkObjectType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkObjectType : __int32
+{
+  VK_OBJECT_TYPE_UNKNOWN = 0x0,
+  VK_OBJECT_TYPE_INSTANCE = 0x1,
+  VK_OBJECT_TYPE_PHYSICAL_DEVICE = 0x2,
+  VK_OBJECT_TYPE_DEVICE = 0x3,
+  VK_OBJECT_TYPE_QUEUE = 0x4,
+  VK_OBJECT_TYPE_SEMAPHORE = 0x5,
+  VK_OBJECT_TYPE_COMMAND_BUFFER = 0x6,
+  VK_OBJECT_TYPE_FENCE = 0x7,
+  VK_OBJECT_TYPE_DEVICE_MEMORY = 0x8,
+  VK_OBJECT_TYPE_BUFFER = 0x9,
+  VK_OBJECT_TYPE_IMAGE = 0xA,
+  VK_OBJECT_TYPE_EVENT = 0xB,
+  VK_OBJECT_TYPE_QUERY_POOL = 0xC,
+  VK_OBJECT_TYPE_BUFFER_VIEW = 0xD,
+  VK_OBJECT_TYPE_IMAGE_VIEW = 0xE,
+  VK_OBJECT_TYPE_SHADER_MODULE = 0xF,
+  VK_OBJECT_TYPE_PIPELINE_CACHE = 0x10,
+  VK_OBJECT_TYPE_PIPELINE_LAYOUT = 0x11,
+  VK_OBJECT_TYPE_RENDER_PASS = 0x12,
+  VK_OBJECT_TYPE_PIPELINE = 0x13,
+  VK_OBJECT_TYPE_DESCRIPTOR_SET_LAYOUT = 0x14,
+  VK_OBJECT_TYPE_SAMPLER = 0x15,
+  VK_OBJECT_TYPE_DESCRIPTOR_POOL = 0x16,
+  VK_OBJECT_TYPE_DESCRIPTOR_SET = 0x17,
+  VK_OBJECT_TYPE_FRAMEBUFFER = 0x18,
+  VK_OBJECT_TYPE_COMMAND_POOL = 0x19,
+  VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION = 0x3B9D2B60,
+  VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE = 0x3B9C1608,
+  VK_OBJECT_TYPE_SURFACE_KHR = 0x3B9ACA00,
+  VK_OBJECT_TYPE_SWAPCHAIN_KHR = 0x3B9ACDE8,
+  VK_OBJECT_TYPE_DISPLAY_KHR = 0x3B9AD1D0,
+  VK_OBJECT_TYPE_DISPLAY_MODE_KHR = 0x3B9AD1D1,
+  VK_OBJECT_TYPE_DEBUG_REPORT_CALLBACK_EXT = 0x3B9AF4F8,
+  VK_OBJECT_TYPE_OBJECT_TABLE_NVX = 0x3B9C19F0,
+  VK_OBJECT_TYPE_INDIRECT_COMMANDS_LAYOUT_NVX = 0x3B9C19F1,
+  VK_OBJECT_TYPE_DEBUG_UTILS_MESSENGER_EXT = 0x3B9CBE00,
+  VK_OBJECT_TYPE_VALIDATION_CACHE_EXT = 0x3B9D3B00,
+  VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR = 0x3B9C1608,
+  VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR = 0x3B9D2B60,
+  VK_OBJECT_TYPE_BEGIN_RANGE = 0x0,
+  VK_OBJECT_TYPE_END_RANGE = 0x19,
+  VK_OBJECT_TYPE_RANGE_SIZE = 0x1A,
+  VK_OBJECT_TYPE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdynamicstate"><a href="#vkdynamicstate" class="header-anchor">#</a> <code>VkDynamicState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDynamicState : __int32
+{
+  VK_DYNAMIC_STATE_VIEWPORT = 0x0,
+  VK_DYNAMIC_STATE_SCISSOR = 0x1,
+  VK_DYNAMIC_STATE_LINE_WIDTH = 0x2,
+  VK_DYNAMIC_STATE_DEPTH_BIAS = 0x3,
+  VK_DYNAMIC_STATE_BLEND_CONSTANTS = 0x4,
+  VK_DYNAMIC_STATE_DEPTH_BOUNDS = 0x5,
+  VK_DYNAMIC_STATE_STENCIL_COMPARE_MASK = 0x6,
+  VK_DYNAMIC_STATE_STENCIL_WRITE_MASK = 0x7,
+  VK_DYNAMIC_STATE_STENCIL_REFERENCE = 0x8,
+  VK_DYNAMIC_STATE_VIEWPORT_W_SCALING_NV = 0x3B9C1DD8,
+  VK_DYNAMIC_STATE_DISCARD_RECTANGLE_EXT = 0x3B9C4CB8,
+  VK_DYNAMIC_STATE_SAMPLE_LOCATIONS_EXT = 0x3B9CF898,
+  VK_DYNAMIC_STATE_BEGIN_RANGE = 0x0,
+  VK_DYNAMIC_STATE_END_RANGE = 0x8,
+  VK_DYNAMIC_STATE_RANGE_SIZE = 0x9,
+  VK_DYNAMIC_STATE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkqueueflagbits"><a href="#vkqueueflagbits" class="header-anchor">#</a> <code>VkQueueFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkQueueFlagBits : __int32
+{
+  VK_QUEUE_GRAPHICS_BIT = 0x1,
+  VK_QUEUE_COMPUTE_BIT = 0x2,
+  VK_QUEUE_TRANSFER_BIT = 0x4,
+  VK_QUEUE_SPARSE_BINDING_BIT = 0x8,
+  VK_QUEUE_PROTECTED_BIT = 0x10,
+  VK_QUEUE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkattachmentstoreop"><a href="#vkattachmentstoreop" class="header-anchor">#</a> <code>VkAttachmentStoreOp</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkAttachmentStoreOp : __int32
+{
+  VK_ATTACHMENT_STORE_OP_STORE = 0x0,
+  VK_ATTACHMENT_STORE_OP_DONT_CARE = 0x1,
+  VK_ATTACHMENT_STORE_OP_BEGIN_RANGE = 0x0,
+  VK_ATTACHMENT_STORE_OP_END_RANGE = 0x1,
+  VK_ATTACHMENT_STORE_OP_RANGE_SIZE = 0x2,
+  VK_ATTACHMENT_STORE_OP_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkviewportcoordinateswizzlenv"><a href="#vkviewportcoordinateswizzlenv" class="header-anchor">#</a> <code>VkViewportCoordinateSwizzleNV</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkViewportCoordinateSwizzleNV : __int32
+{
+  VK_VIEWPORT_COORDINATE_SWIZZLE_POSITIVE_X_NV = 0x0,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_NEGATIVE_X_NV = 0x1,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_POSITIVE_Y_NV = 0x2,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_NEGATIVE_Y_NV = 0x3,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_POSITIVE_Z_NV = 0x4,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_NEGATIVE_Z_NV = 0x5,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_POSITIVE_W_NV = 0x6,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_NEGATIVE_W_NV = 0x7,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_BEGIN_RANGE_NV = 0x0,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_END_RANGE_NV = 0x7,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_RANGE_SIZE_NV = 0x8,
+  VK_VIEWPORT_COORDINATE_SWIZZLE_MAX_ENUM_NV = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkpipelinebindpoint"><a href="#vkpipelinebindpoint" class="header-anchor">#</a> <code>VkPipelineBindPoint</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkPipelineBindPoint : __int32
+{
+  VK_PIPELINE_BIND_POINT_GRAPHICS = 0x0,
+  VK_PIPELINE_BIND_POINT_COMPUTE = 0x1,
+  VK_PIPELINE_BIND_POINT_BEGIN_RANGE = 0x0,
+  VK_PIPELINE_BIND_POINT_END_RANGE = 0x1,
+  VK_PIPELINE_BIND_POINT_RANGE_SIZE = 0x2,
+  VK_PIPELINE_BIND_POINT_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkcommandbufferusageflagbits"><a href="#vkcommandbufferusageflagbits" class="header-anchor">#</a> <code>VkCommandBufferUsageFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkCommandBufferUsageFlagBits : __int32
+{
+  VK_COMMAND_BUFFER_USAGE_ONE_TIME_SUBMIT_BIT = 0x1,
+  VK_COMMAND_BUFFER_USAGE_RENDER_PASS_CONTINUE_BIT = 0x2,
+  VK_COMMAND_BUFFER_USAGE_SIMULTANEOUS_USE_BIT = 0x4,
+  VK_COMMAND_BUFFER_USAGE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkimageaspectflagbits"><a href="#vkimageaspectflagbits" class="header-anchor">#</a> <code>VkImageAspectFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkImageAspectFlagBits : __int32
+{
+  VK_IMAGE_ASPECT_COLOR_BIT = 0x1,
+  VK_IMAGE_ASPECT_DEPTH_BIT = 0x2,
+  VK_IMAGE_ASPECT_STENCIL_BIT = 0x4,
+  VK_IMAGE_ASPECT_METADATA_BIT = 0x8,
+  VK_IMAGE_ASPECT_PLANE_0_BIT = 0x10,
+  VK_IMAGE_ASPECT_PLANE_1_BIT = 0x20,
+  VK_IMAGE_ASPECT_PLANE_2_BIT = 0x40,
+  VK_IMAGE_ASPECT_PLANE_0_BIT_KHR = 0x10,
+  VK_IMAGE_ASPECT_PLANE_1_BIT_KHR = 0x20,
+  VK_IMAGE_ASPECT_PLANE_2_BIT_KHR = 0x40,
+  VK_IMAGE_ASPECT_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkfrontface"><a href="#vkfrontface" class="header-anchor">#</a> <code>VkFrontFace</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkFrontFace : __int32
+{
+  VK_FRONT_FACE_COUNTER_CLOCKWISE = 0x0,
+  VK_FRONT_FACE_CLOCKWISE = 0x1,
+  VK_FRONT_FACE_BEGIN_RANGE = 0x0,
+  VK_FRONT_FACE_END_RANGE = 0x1,
+  VK_FRONT_FACE_RANGE_SIZE = 0x2,
+  VK_FRONT_FACE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkrasterizationorderamd"><a href="#vkrasterizationorderamd" class="header-anchor">#</a> <code>VkRasterizationOrderAMD</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkRasterizationOrderAMD : __int32
+{
+  VK_RASTERIZATION_ORDER_STRICT_AMD = 0x0,
+  VK_RASTERIZATION_ORDER_RELAXED_AMD = 0x1,
+  VK_RASTERIZATION_ORDER_BEGIN_RANGE_AMD = 0x0,
+  VK_RASTERIZATION_ORDER_END_RANGE_AMD = 0x1,
+  VK_RASTERIZATION_ORDER_RANGE_SIZE_AMD = 0x2,
+  VK_RASTERIZATION_ORDER_MAX_ENUM_AMD = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vktessellationdomainorigin"><a href="#vktessellationdomainorigin" class="header-anchor">#</a> <code>VkTessellationDomainOrigin</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkTessellationDomainOrigin : __int32
+{
+  VK_TESSELLATION_DOMAIN_ORIGIN_UPPER_LEFT = 0x0,
+  VK_TESSELLATION_DOMAIN_ORIGIN_LOWER_LEFT = 0x1,
+  VK_TESSELLATION_DOMAIN_ORIGIN_UPPER_LEFT_KHR = 0x0,
+  VK_TESSELLATION_DOMAIN_ORIGIN_LOWER_LEFT_KHR = 0x1,
+  VK_TESSELLATION_DOMAIN_ORIGIN_BEGIN_RANGE = 0x0,
+  VK_TESSELLATION_DOMAIN_ORIGIN_END_RANGE = 0x1,
+  VK_TESSELLATION_DOMAIN_ORIGIN_RANGE_SIZE = 0x2,
+  VK_TESSELLATION_DOMAIN_ORIGIN_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkindirectcommandstokentypenvx"><a href="#vkindirectcommandstokentypenvx" class="header-anchor">#</a> <code>VkIndirectCommandsTokenTypeNVX</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkIndirectCommandsTokenTypeNVX : __int32
+{
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_PIPELINE_NVX = 0x0,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_DESCRIPTOR_SET_NVX = 0x1,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_INDEX_BUFFER_NVX = 0x2,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_VERTEX_BUFFER_NVX = 0x3,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_PUSH_CONSTANT_NVX = 0x4,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_DRAW_INDEXED_NVX = 0x5,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_DRAW_NVX = 0x6,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_DISPATCH_NVX = 0x7,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_BEGIN_RANGE_NVX = 0x0,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_END_RANGE_NVX = 0x7,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_RANGE_SIZE_NVX = 0x8,
+  VK_INDIRECT_COMMANDS_TOKEN_TYPE_MAX_ENUM_NVX = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdescriptorpoolcreateflagbits"><a href="#vkdescriptorpoolcreateflagbits" class="header-anchor">#</a> <code>VkDescriptorPoolCreateFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDescriptorPoolCreateFlagBits : __int32
+{
+  VK_DESCRIPTOR_POOL_CREATE_FREE_DESCRIPTOR_SET_BIT = 0x1,
+  VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT = 0x2,
+  VK_DESCRIPTOR_POOL_CREATE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdebugreportflagbitsext"><a href="#vkdebugreportflagbitsext" class="header-anchor">#</a> <code>VkDebugReportFlagBitsEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDebugReportFlagBitsEXT : __int32
+{
+  VK_DEBUG_REPORT_INFORMATION_BIT_EXT = 0x1,
+  VK_DEBUG_REPORT_WARNING_BIT_EXT = 0x2,
+  VK_DEBUG_REPORT_PERFORMANCE_WARNING_BIT_EXT = 0x4,
+  VK_DEBUG_REPORT_ERROR_BIT_EXT = 0x8,
+  VK_DEBUG_REPORT_DEBUG_BIT_EXT = 0x10,
+  VK_DEBUG_REPORT_FLAG_BITS_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkpeermemoryfeatureflagbits"><a href="#vkpeermemoryfeatureflagbits" class="header-anchor">#</a> <code>VkPeerMemoryFeatureFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkPeerMemoryFeatureFlagBits : __int32
+{
+  VK_PEER_MEMORY_FEATURE_COPY_SRC_BIT = 0x1,
+  VK_PEER_MEMORY_FEATURE_COPY_DST_BIT = 0x2,
+  VK_PEER_MEMORY_FEATURE_GENERIC_SRC_BIT = 0x4,
+  VK_PEER_MEMORY_FEATURE_GENERIC_DST_BIT = 0x8,
+  VK_PEER_MEMORY_FEATURE_COPY_SRC_BIT_KHR = 0x1,
+  VK_PEER_MEMORY_FEATURE_COPY_DST_BIT_KHR = 0x2,
+  VK_PEER_MEMORY_FEATURE_GENERIC_SRC_BIT_KHR = 0x4,
+  VK_PEER_MEMORY_FEATURE_GENERIC_DST_BIT_KHR = 0x8,
+  VK_PEER_MEMORY_FEATURE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkcommandpoolcreateflagbits"><a href="#vkcommandpoolcreateflagbits" class="header-anchor">#</a> <code>VkCommandPoolCreateFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkCommandPoolCreateFlagBits : __int32
+{
+  VK_COMMAND_POOL_CREATE_TRANSIENT_BIT = 0x1,
+  VK_COMMAND_POOL_CREATE_RESET_COMMAND_BUFFER_BIT = 0x2,
+  VK_COMMAND_POOL_CREATE_PROTECTED_BIT = 0x4,
+  VK_COMMAND_POOL_CREATE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkexternalfencehandletypeflagbits"><a href="#vkexternalfencehandletypeflagbits" class="header-anchor">#</a> <code>VkExternalFenceHandleTypeFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkExternalFenceHandleTypeFlagBits : __int32
+{
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT = 0x1,
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT = 0x2,
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT = 0x4,
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT = 0x8,
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR = 0x1,
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR = 0x2,
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR = 0x4,
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR = 0x8,
+  VK_EXTERNAL_FENCE_HANDLE_TYPE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdisplayeventtypeext"><a href="#vkdisplayeventtypeext" class="header-anchor">#</a> <code>VkDisplayEventTypeEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDisplayEventTypeEXT : __int32
+{
+  VK_DISPLAY_EVENT_TYPE_FIRST_PIXEL_OUT_EXT = 0x0,
+  VK_DISPLAY_EVENT_TYPE_BEGIN_RANGE_EXT = 0x0,
+  VK_DISPLAY_EVENT_TYPE_END_RANGE_EXT = 0x0,
+  VK_DISPLAY_EVENT_TYPE_RANGE_SIZE_EXT = 0x1,
+  VK_DISPLAY_EVENT_TYPE_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkobjectentrytypenvx"><a href="#vkobjectentrytypenvx" class="header-anchor">#</a> <code>VkObjectEntryTypeNVX</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkObjectEntryTypeNVX : __int32
+{
+  VK_OBJECT_ENTRY_TYPE_DESCRIPTOR_SET_NVX = 0x0,
+  VK_OBJECT_ENTRY_TYPE_PIPELINE_NVX = 0x1,
+  VK_OBJECT_ENTRY_TYPE_INDEX_BUFFER_NVX = 0x2,
+  VK_OBJECT_ENTRY_TYPE_VERTEX_BUFFER_NVX = 0x3,
+  VK_OBJECT_ENTRY_TYPE_PUSH_CONSTANT_NVX = 0x4,
+  VK_OBJECT_ENTRY_TYPE_BEGIN_RANGE_NVX = 0x0,
+  VK_OBJECT_ENTRY_TYPE_END_RANGE_NVX = 0x4,
+  VK_OBJECT_ENTRY_TYPE_RANGE_SIZE_NVX = 0x5,
+  VK_OBJECT_ENTRY_TYPE_MAX_ENUM_NVX = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkimagecreateflagbits"><a href="#vkimagecreateflagbits" class="header-anchor">#</a> <code>VkImageCreateFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkImageCreateFlagBits : __int32
+{
+  VK_IMAGE_CREATE_SPARSE_BINDING_BIT = 0x1,
+  VK_IMAGE_CREATE_SPARSE_RESIDENCY_BIT = 0x2,
+  VK_IMAGE_CREATE_SPARSE_ALIASED_BIT = 0x4,
+  VK_IMAGE_CREATE_MUTABLE_FORMAT_BIT = 0x8,
+  VK_IMAGE_CREATE_CUBE_COMPATIBLE_BIT = 0x10,
+  VK_IMAGE_CREATE_ALIAS_BIT = 0x400,
+  VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT = 0x40,
+  VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT = 0x20,
+  VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT = 0x80,
+  VK_IMAGE_CREATE_EXTENDED_USAGE_BIT = 0x100,
+  VK_IMAGE_CREATE_PROTECTED_BIT = 0x800,
+  VK_IMAGE_CREATE_DISJOINT_BIT = 0x200,
+  VK_IMAGE_CREATE_SAMPLE_LOCATIONS_COMPATIBLE_DEPTH_BIT_EXT = 0x1000,
+  VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR = 0x40,
+  VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT_KHR = 0x20,
+  VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT_KHR = 0x80,
+  VK_IMAGE_CREATE_EXTENDED_USAGE_BIT_KHR = 0x100,
+  VK_IMAGE_CREATE_DISJOINT_BIT_KHR = 0x200,
+  VK_IMAGE_CREATE_ALIAS_BIT_KHR = 0x400,
+  VK_IMAGE_CREATE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdependencyflagbits"><a href="#vkdependencyflagbits" class="header-anchor">#</a> <code>VkDependencyFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDependencyFlagBits : __int32
+{
+  VK_DEPENDENCY_BY_REGION_BIT = 0x1,
+  VK_DEPENDENCY_DEVICE_GROUP_BIT = 0x4,
+  VK_DEPENDENCY_VIEW_LOCAL_BIT = 0x2,
+  VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR = 0x2,
+  VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR = 0x4,
+  VK_DEPENDENCY_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkattachmentloadop"><a href="#vkattachmentloadop" class="header-anchor">#</a> <code>VkAttachmentLoadOp</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkAttachmentLoadOp : __int32
+{
+  VK_ATTACHMENT_LOAD_OP_LOAD = 0x0,
+  VK_ATTACHMENT_LOAD_OP_CLEAR = 0x1,
+  VK_ATTACHMENT_LOAD_OP_DONT_CARE = 0x2,
+  VK_ATTACHMENT_LOAD_OP_BEGIN_RANGE = 0x0,
+  VK_ATTACHMENT_LOAD_OP_END_RANGE = 0x2,
+  VK_ATTACHMENT_LOAD_OP_RANGE_SIZE = 0x3,
+  VK_ATTACHMENT_LOAD_OP_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkexternalsemaphorehandletypeflagbits"><a href="#vkexternalsemaphorehandletypeflagbits" class="header-anchor">#</a> <code>VkExternalSemaphoreHandleTypeFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkExternalSemaphoreHandleTypeFlagBits : __int32
+{
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT = 0x1,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_BIT = 0x2,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT = 0x4,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT = 0x8,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT = 0x10,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR = 0x1,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR = 0x2,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR = 0x4,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR = 0x8,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR = 0x10,
+  VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkqueueglobalpriorityext"><a href="#vkqueueglobalpriorityext" class="header-anchor">#</a> <code>VkQueueGlobalPriorityEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkQueueGlobalPriorityEXT : __int32
+{
+  VK_QUEUE_GLOBAL_PRIORITY_LOW_EXT = 0x80,
+  VK_QUEUE_GLOBAL_PRIORITY_MEDIUM_EXT = 0x100,
+  VK_QUEUE_GLOBAL_PRIORITY_HIGH_EXT = 0x200,
+  VK_QUEUE_GLOBAL_PRIORITY_REALTIME_EXT = 0x400,
+  VK_QUEUE_GLOBAL_PRIORITY_BEGIN_RANGE_EXT = 0x80,
+  VK_QUEUE_GLOBAL_PRIORITY_END_RANGE_EXT = 0x400,
+  VK_QUEUE_GLOBAL_PRIORITY_RANGE_SIZE_EXT = 0x381,
+  VK_QUEUE_GLOBAL_PRIORITY_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkpointclippingbehavior"><a href="#vkpointclippingbehavior" class="header-anchor">#</a> <code>VkPointClippingBehavior</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkPointClippingBehavior : __int32
+{
+  VK_POINT_CLIPPING_BEHAVIOR_ALL_CLIP_PLANES = 0x0,
+  VK_POINT_CLIPPING_BEHAVIOR_USER_CLIP_PLANES_ONLY = 0x1,
+  VK_POINT_CLIPPING_BEHAVIOR_ALL_CLIP_PLANES_KHR = 0x0,
+  VK_POINT_CLIPPING_BEHAVIOR_USER_CLIP_PLANES_ONLY_KHR = 0x1,
+  VK_POINT_CLIPPING_BEHAVIOR_BEGIN_RANGE = 0x0,
+  VK_POINT_CLIPPING_BEHAVIOR_END_RANGE = 0x1,
+  VK_POINT_CLIPPING_BEHAVIOR_RANGE_SIZE = 0x2,
+  VK_POINT_CLIPPING_BEHAVIOR_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkfenceimportflagbits"><a href="#vkfenceimportflagbits" class="header-anchor">#</a> <code>VkFenceImportFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkFenceImportFlagBits : __int32
+{
+  VK_FENCE_IMPORT_TEMPORARY_BIT = 0x1,
+  VK_FENCE_IMPORT_TEMPORARY_BIT_KHR = 0x1,
+  VK_FENCE_IMPORT_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkstencilfaceflagbits"><a href="#vkstencilfaceflagbits" class="header-anchor">#</a> <code>VkStencilFaceFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkStencilFaceFlagBits : __int32
+{
+  VK_STENCIL_FACE_FRONT_BIT = 0x1,
+  VK_STENCIL_FACE_BACK_BIT = 0x2,
+  VK_STENCIL_FRONT_AND_BACK = 0x3,
+  VK_STENCIL_FACE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkpipelinecreateflagbits"><a href="#vkpipelinecreateflagbits" class="header-anchor">#</a> <code>VkPipelineCreateFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkPipelineCreateFlagBits : __int32
+{
+  VK_PIPELINE_CREATE_DISABLE_OPTIMIZATION_BIT = 0x1,
+  VK_PIPELINE_CREATE_ALLOW_DERIVATIVES_BIT = 0x2,
+  VK_PIPELINE_CREATE_DERIVATIVE_BIT = 0x4,
+  VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT = 0x8,
+  VK_PIPELINE_CREATE_DISPATCH_BASE = 0x10,
+  VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR = 0x8,
+  VK_PIPELINE_CREATE_DISPATCH_BASE_KHR = 0x10,
+  VK_PIPELINE_CREATE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vksubpasscontents"><a href="#vksubpasscontents" class="header-anchor">#</a> <code>VkSubpassContents</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkSubpassContents : __int32
+{
+  VK_SUBPASS_CONTENTS_INLINE = 0x0,
+  VK_SUBPASS_CONTENTS_SECONDARY_COMMAND_BUFFERS = 0x1,
+  VK_SUBPASS_CONTENTS_BEGIN_RANGE = 0x0,
+  VK_SUBPASS_CONTENTS_END_RANGE = 0x1,
+  VK_SUBPASS_CONTENTS_RANGE_SIZE = 0x2,
+  VK_SUBPASS_CONTENTS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vksystemallocationscope"><a href="#vksystemallocationscope" class="header-anchor">#</a> <code>VkSystemAllocationScope</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkSystemAllocationScope : __int32
+{
+  VK_SYSTEM_ALLOCATION_SCOPE_COMMAND = 0x0,
+  VK_SYSTEM_ALLOCATION_SCOPE_OBJECT = 0x1,
+  VK_SYSTEM_ALLOCATION_SCOPE_CACHE = 0x2,
+  VK_SYSTEM_ALLOCATION_SCOPE_DEVICE = 0x3,
+  VK_SYSTEM_ALLOCATION_SCOPE_INSTANCE = 0x4,
+  VK_SYSTEM_ALLOCATION_SCOPE_BEGIN_RANGE = 0x0,
+  VK_SYSTEM_ALLOCATION_SCOPE_END_RANGE = 0x4,
+  VK_SYSTEM_ALLOCATION_SCOPE_RANGE_SIZE = 0x5,
+  VK_SYSTEM_ALLOCATION_SCOPE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkblendoverlapext"><a href="#vkblendoverlapext" class="header-anchor">#</a> <code>VkBlendOverlapEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkBlendOverlapEXT : __int32
+{
+  VK_BLEND_OVERLAP_UNCORRELATED_EXT = 0x0,
+  VK_BLEND_OVERLAP_DISJOINT_EXT = 0x1,
+  VK_BLEND_OVERLAP_CONJOINT_EXT = 0x2,
+  VK_BLEND_OVERLAP_BEGIN_RANGE_EXT = 0x0,
+  VK_BLEND_OVERLAP_END_RANGE_EXT = 0x2,
+  VK_BLEND_OVERLAP_RANGE_SIZE_EXT = 0x3,
+  VK_BLEND_OVERLAP_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vksemaphoreimportflagbits"><a href="#vksemaphoreimportflagbits" class="header-anchor">#</a> <code>VkSemaphoreImportFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkSemaphoreImportFlagBits : __int32
+{
+  VK_SEMAPHORE_IMPORT_TEMPORARY_BIT = 0x1,
+  VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR = 0x1,
+  VK_SEMAPHORE_IMPORT_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdebugreportobjecttypeext"><a href="#vkdebugreportobjecttypeext" class="header-anchor">#</a> <code>VkDebugReportObjectTypeEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDebugReportObjectTypeEXT : __int32
+{
+  VK_DEBUG_REPORT_OBJECT_TYPE_UNKNOWN_EXT = 0x0,
+  VK_DEBUG_REPORT_OBJECT_TYPE_INSTANCE_EXT = 0x1,
+  VK_DEBUG_REPORT_OBJECT_TYPE_PHYSICAL_DEVICE_EXT = 0x2,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DEVICE_EXT = 0x3,
+  VK_DEBUG_REPORT_OBJECT_TYPE_QUEUE_EXT = 0x4,
+  VK_DEBUG_REPORT_OBJECT_TYPE_SEMAPHORE_EXT = 0x5,
+  VK_DEBUG_REPORT_OBJECT_TYPE_COMMAND_BUFFER_EXT = 0x6,
+  VK_DEBUG_REPORT_OBJECT_TYPE_FENCE_EXT = 0x7,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DEVICE_MEMORY_EXT = 0x8,
+  VK_DEBUG_REPORT_OBJECT_TYPE_BUFFER_EXT = 0x9,
+  VK_DEBUG_REPORT_OBJECT_TYPE_IMAGE_EXT = 0xA,
+  VK_DEBUG_REPORT_OBJECT_TYPE_EVENT_EXT = 0xB,
+  VK_DEBUG_REPORT_OBJECT_TYPE_QUERY_POOL_EXT = 0xC,
+  VK_DEBUG_REPORT_OBJECT_TYPE_BUFFER_VIEW_EXT = 0xD,
+  VK_DEBUG_REPORT_OBJECT_TYPE_IMAGE_VIEW_EXT = 0xE,
+  VK_DEBUG_REPORT_OBJECT_TYPE_SHADER_MODULE_EXT = 0xF,
+  VK_DEBUG_REPORT_OBJECT_TYPE_PIPELINE_CACHE_EXT = 0x10,
+  VK_DEBUG_REPORT_OBJECT_TYPE_PIPELINE_LAYOUT_EXT = 0x11,
+  VK_DEBUG_REPORT_OBJECT_TYPE_RENDER_PASS_EXT = 0x12,
+  VK_DEBUG_REPORT_OBJECT_TYPE_PIPELINE_EXT = 0x13,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DESCRIPTOR_SET_LAYOUT_EXT = 0x14,
+  VK_DEBUG_REPORT_OBJECT_TYPE_SAMPLER_EXT = 0x15,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DESCRIPTOR_POOL_EXT = 0x16,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DESCRIPTOR_SET_EXT = 0x17,
+  VK_DEBUG_REPORT_OBJECT_TYPE_FRAMEBUFFER_EXT = 0x18,
+  VK_DEBUG_REPORT_OBJECT_TYPE_COMMAND_POOL_EXT = 0x19,
+  VK_DEBUG_REPORT_OBJECT_TYPE_SURFACE_KHR_EXT = 0x1A,
+  VK_DEBUG_REPORT_OBJECT_TYPE_SWAPCHAIN_KHR_EXT = 0x1B,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DEBUG_REPORT_CALLBACK_EXT_EXT = 0x1C,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DISPLAY_KHR_EXT = 0x1D,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DISPLAY_MODE_KHR_EXT = 0x1E,
+  VK_DEBUG_REPORT_OBJECT_TYPE_OBJECT_TABLE_NVX_EXT = 0x1F,
+  VK_DEBUG_REPORT_OBJECT_TYPE_INDIRECT_COMMANDS_LAYOUT_NVX_EXT = 0x20,
+  VK_DEBUG_REPORT_OBJECT_TYPE_VALIDATION_CACHE_EXT_EXT = 0x21,
+  VK_DEBUG_REPORT_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_EXT = 0x3B9D2B60,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_EXT = 0x3B9C1608,
+  VK_DEBUG_REPORT_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR_EXT = 0x3B9C1608,
+  VK_DEBUG_REPORT_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR_EXT = 0x3B9D2B60,
+  VK_DEBUG_REPORT_OBJECT_TYPE_BEGIN_RANGE_EXT = 0x0,
+  VK_DEBUG_REPORT_OBJECT_TYPE_END_RANGE_EXT = 0x21,
+  VK_DEBUG_REPORT_OBJECT_TYPE_RANGE_SIZE_EXT = 0x22,
+  VK_DEBUG_REPORT_OBJECT_TYPE_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vksamplerycbcrrange"><a href="#vksamplerycbcrrange" class="header-anchor">#</a> <code>VkSamplerYcbcrRange</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkSamplerYcbcrRange : __int32
+{
+  VK_SAMPLER_YCBCR_RANGE_ITU_FULL = 0x0,
+  VK_SAMPLER_YCBCR_RANGE_ITU_NARROW = 0x1,
+  VK_SAMPLER_YCBCR_RANGE_ITU_FULL_KHR = 0x0,
+  VK_SAMPLER_YCBCR_RANGE_ITU_NARROW_KHR = 0x1,
+  VK_SAMPLER_YCBCR_RANGE_BEGIN_RANGE = 0x0,
+  VK_SAMPLER_YCBCR_RANGE_END_RANGE = 0x1,
+  VK_SAMPLER_YCBCR_RANGE_RANGE_SIZE = 0x2,
+  VK_SAMPLER_YCBCR_RANGE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkinternalallocationtype"><a href="#vkinternalallocationtype" class="header-anchor">#</a> <code>VkInternalAllocationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkInternalAllocationType : __int32
+{
+  VK_INTERNAL_ALLOCATION_TYPE_EXECUTABLE = 0x0,
+  VK_INTERNAL_ALLOCATION_TYPE_BEGIN_RANGE = 0x0,
+  VK_INTERNAL_ALLOCATION_TYPE_END_RANGE = 0x0,
+  VK_INTERNAL_ALLOCATION_TYPE_RANGE_SIZE = 0x1,
+  VK_INTERNAL_ALLOCATION_TYPE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdeviceeventtypeext"><a href="#vkdeviceeventtypeext" class="header-anchor">#</a> <code>VkDeviceEventTypeEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDeviceEventTypeEXT : __int32
+{
+  VK_DEVICE_EVENT_TYPE_DISPLAY_HOTPLUG_EXT = 0x0,
+  VK_DEVICE_EVENT_TYPE_BEGIN_RANGE_EXT = 0x0,
+  VK_DEVICE_EVENT_TYPE_END_RANGE_EXT = 0x0,
+  VK_DEVICE_EVENT_TYPE_RANGE_SIZE_EXT = 0x1,
+  VK_DEVICE_EVENT_TYPE_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkpipelinecacheheaderversion"><a href="#vkpipelinecacheheaderversion" class="header-anchor">#</a> <code>VkPipelineCacheHeaderVersion</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkPipelineCacheHeaderVersion : __int32
+{
+  VK_PIPELINE_CACHE_HEADER_VERSION_ONE = 0x1,
+  VK_PIPELINE_CACHE_HEADER_VERSION_BEGIN_RANGE = 0x1,
+  VK_PIPELINE_CACHE_HEADER_VERSION_END_RANGE = 0x1,
+  VK_PIPELINE_CACHE_HEADER_VERSION_RANGE_SIZE = 0x1,
+  VK_PIPELINE_CACHE_HEADER_VERSION_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkconservativerasterizationmodeext"><a href="#vkconservativerasterizationmodeext" class="header-anchor">#</a> <code>VkConservativeRasterizationModeEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkConservativeRasterizationModeEXT : __int32
+{
+  VK_CONSERVATIVE_RASTERIZATION_MODE_DISABLED_EXT = 0x0,
+  VK_CONSERVATIVE_RASTERIZATION_MODE_OVERESTIMATE_EXT = 0x1,
+  VK_CONSERVATIVE_RASTERIZATION_MODE_UNDERESTIMATE_EXT = 0x2,
+  VK_CONSERVATIVE_RASTERIZATION_MODE_BEGIN_RANGE_EXT = 0x0,
+  VK_CONSERVATIVE_RASTERIZATION_MODE_END_RANGE_EXT = 0x2,
+  VK_CONSERVATIVE_RASTERIZATION_MODE_RANGE_SIZE_EXT = 0x3,
+  VK_CONSERVATIVE_RASTERIZATION_MODE_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkchromalocation"><a href="#vkchromalocation" class="header-anchor">#</a> <code>VkChromaLocation</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkChromaLocation : __int32
+{
+  VK_CHROMA_LOCATION_COSITED_EVEN = 0x0,
+  VK_CHROMA_LOCATION_MIDPOINT = 0x1,
+  VK_CHROMA_LOCATION_COSITED_EVEN_KHR = 0x0,
+  VK_CHROMA_LOCATION_MIDPOINT_KHR = 0x1,
+  VK_CHROMA_LOCATION_BEGIN_RANGE = 0x0,
+  VK_CHROMA_LOCATION_END_RANGE = 0x1,
+  VK_CHROMA_LOCATION_RANGE_SIZE = 0x2,
+  VK_CHROMA_LOCATION_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkcoveragemodulationmodenv"><a href="#vkcoveragemodulationmodenv" class="header-anchor">#</a> <code>VkCoverageModulationModeNV</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkCoverageModulationModeNV : __int32
+{
+  VK_COVERAGE_MODULATION_MODE_NONE_NV = 0x0,
+  VK_COVERAGE_MODULATION_MODE_RGB_NV = 0x1,
+  VK_COVERAGE_MODULATION_MODE_ALPHA_NV = 0x2,
+  VK_COVERAGE_MODULATION_MODE_RGBA_NV = 0x3,
+  VK_COVERAGE_MODULATION_MODE_BEGIN_RANGE_NV = 0x0,
+  VK_COVERAGE_MODULATION_MODE_END_RANGE_NV = 0x3,
+  VK_COVERAGE_MODULATION_MODE_RANGE_SIZE_NV = 0x4,
+  VK_COVERAGE_MODULATION_MODE_MAX_ENUM_NV = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkvendorid"><a href="#vkvendorid" class="header-anchor">#</a> <code>VkVendorId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkVendorId : __int32
+{
+  VK_VENDOR_ID_VIV = 0x10001,
+  VK_VENDOR_ID_VSI = 0x10002,
+  VK_VENDOR_ID_KAZAN = 0x10003,
+  VK_VENDOR_ID_BEGIN_RANGE = 0x10001,
+  VK_VENDOR_ID_END_RANGE = 0x10003,
+  VK_VENDOR_ID_RANGE_SIZE = 0x3,
+  VK_VENDOR_ID_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkvalidationcacheheaderversionext"><a href="#vkvalidationcacheheaderversionext" class="header-anchor">#</a> <code>VkValidationCacheHeaderVersionEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkValidationCacheHeaderVersionEXT : __int32
+{
+  VK_VALIDATION_CACHE_HEADER_VERSION_ONE_EXT = 0x1,
+  VK_VALIDATION_CACHE_HEADER_VERSION_BEGIN_RANGE_EXT = 0x1,
+  VK_VALIDATION_CACHE_HEADER_VERSION_END_RANGE_EXT = 0x1,
+  VK_VALIDATION_CACHE_HEADER_VERSION_RANGE_SIZE_EXT = 0x1,
+  VK_VALIDATION_CACHE_HEADER_VERSION_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkexternalmemoryfeatureflagbits"><a href="#vkexternalmemoryfeatureflagbits" class="header-anchor">#</a> <code>VkExternalMemoryFeatureFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkExternalMemoryFeatureFlagBits : __int32
+{
+  VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT = 0x1,
+  VK_EXTERNAL_MEMORY_FEATURE_EXPORTABLE_BIT = 0x2,
+  VK_EXTERNAL_MEMORY_FEATURE_IMPORTABLE_BIT = 0x4,
+  VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT_KHR = 0x1,
+  VK_EXTERNAL_MEMORY_FEATURE_EXPORTABLE_BIT_KHR = 0x2,
+  VK_EXTERNAL_MEMORY_FEATURE_IMPORTABLE_BIT_KHR = 0x4,
+  VK_EXTERNAL_MEMORY_FEATURE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkexternalfencefeatureflagbits"><a href="#vkexternalfencefeatureflagbits" class="header-anchor">#</a> <code>VkExternalFenceFeatureFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkExternalFenceFeatureFlagBits : __int32
+{
+  VK_EXTERNAL_FENCE_FEATURE_EXPORTABLE_BIT = 0x1,
+  VK_EXTERNAL_FENCE_FEATURE_IMPORTABLE_BIT = 0x2,
+  VK_EXTERNAL_FENCE_FEATURE_EXPORTABLE_BIT_KHR = 0x1,
+  VK_EXTERNAL_FENCE_FEATURE_IMPORTABLE_BIT_KHR = 0x2,
+  VK_EXTERNAL_FENCE_FEATURE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdiscardrectanglemodeext"><a href="#vkdiscardrectanglemodeext" class="header-anchor">#</a> <code>VkDiscardRectangleModeEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDiscardRectangleModeEXT : __int32
+{
+  VK_DISCARD_RECTANGLE_MODE_INCLUSIVE_EXT = 0x0,
+  VK_DISCARD_RECTANGLE_MODE_EXCLUSIVE_EXT = 0x1,
+  VK_DISCARD_RECTANGLE_MODE_BEGIN_RANGE_EXT = 0x0,
+  VK_DISCARD_RECTANGLE_MODE_END_RANGE_EXT = 0x1,
+  VK_DISCARD_RECTANGLE_MODE_RANGE_SIZE_EXT = 0x2,
+  VK_DISCARD_RECTANGLE_MODE_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkvalidationcheckext"><a href="#vkvalidationcheckext" class="header-anchor">#</a> <code>VkValidationCheckEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkValidationCheckEXT : __int32
+{
+  VK_VALIDATION_CHECK_ALL_EXT = 0x0,
+  VK_VALIDATION_CHECK_SHADERS_EXT = 0x1,
+  VK_VALIDATION_CHECK_BEGIN_RANGE_EXT = 0x0,
+  VK_VALIDATION_CHECK_END_RANGE_EXT = 0x1,
+  VK_VALIDATION_CHECK_RANGE_SIZE_EXT = 0x2,
+  VK_VALIDATION_CHECK_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdescriptorupdatetemplatetype"><a href="#vkdescriptorupdatetemplatetype" class="header-anchor">#</a> <code>VkDescriptorUpdateTemplateType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDescriptorUpdateTemplateType : __int32
+{
+  VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_DESCRIPTOR_SET = 0x0,
+  VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_PUSH_DESCRIPTORS_KHR = 0x1,
+  VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_DESCRIPTOR_SET_KHR = 0x0,
+  VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_BEGIN_RANGE = 0x0,
+  VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_END_RANGE = 0x0,
+  VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_RANGE_SIZE = 0x1,
+  VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkmemoryallocateflagbits"><a href="#vkmemoryallocateflagbits" class="header-anchor">#</a> <code>VkMemoryAllocateFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkMemoryAllocateFlagBits : __int32
+{
+  VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT = 0x1,
+  VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT_KHR = 0x1,
+  VK_MEMORY_ALLOCATE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkpipelinestageflagbits"><a href="#vkpipelinestageflagbits" class="header-anchor">#</a> <code>VkPipelineStageFlagBits</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkPipelineStageFlagBits : __int32
+{
+  VK_PIPELINE_STAGE_TOP_OF_PIPE_BIT = 0x1,
+  VK_PIPELINE_STAGE_DRAW_INDIRECT_BIT = 0x2,
+  VK_PIPELINE_STAGE_VERTEX_INPUT_BIT = 0x4,
+  VK_PIPELINE_STAGE_VERTEX_SHADER_BIT = 0x8,
+  VK_PIPELINE_STAGE_TESSELLATION_CONTROL_SHADER_BIT = 0x10,
+  VK_PIPELINE_STAGE_TESSELLATION_EVALUATION_SHADER_BIT = 0x20,
+  VK_PIPELINE_STAGE_GEOMETRY_SHADER_BIT = 0x40,
+  VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT = 0x80,
+  VK_PIPELINE_STAGE_EARLY_FRAGMENT_TESTS_BIT = 0x100,
+  VK_PIPELINE_STAGE_LATE_FRAGMENT_TESTS_BIT = 0x200,
+  VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT = 0x400,
+  VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT = 0x800,
+  VK_PIPELINE_STAGE_TRANSFER_BIT = 0x1000,
+  VK_PIPELINE_STAGE_BOTTOM_OF_PIPE_BIT = 0x2000,
+  VK_PIPELINE_STAGE_HOST_BIT = 0x4000,
+  VK_PIPELINE_STAGE_ALL_GRAPHICS_BIT = 0x8000,
+  VK_PIPELINE_STAGE_ALL_COMMANDS_BIT = 0x10000,
+  VK_PIPELINE_STAGE_CONDITIONAL_RENDERING_BIT_EXT = 0x40000,
+  VK_PIPELINE_STAGE_COMMAND_PROCESS_BIT_NVX = 0x20000,
+  VK_PIPELINE_STAGE_FLAG_BITS_MAX_ENUM = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vkdebugutilsmessageseverityflagbitsext"><a href="#vkdebugutilsmessageseverityflagbitsext" class="header-anchor">#</a> <code>VkDebugUtilsMessageSeverityFlagBitsEXT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VkDebugUtilsMessageSeverityFlagBitsEXT : __int32
+{
+  VK_DEBUG_UTILS_MESSAGE_SEVERITY_VERBOSE_BIT_EXT = 0x1,
+  VK_DEBUG_UTILS_MESSAGE_SEVERITY_INFO_BIT_EXT = 0x10,
+  VK_DEBUG_UTILS_MESSAGE_SEVERITY_WARNING_BIT_EXT = 0x100,
+  VK_DEBUG_UTILS_MESSAGE_SEVERITY_ERROR_BIT_EXT = 0x1000,
+  VK_DEBUG_UTILS_MESSAGE_SEVERITY_FLAG_BITS_MAX_ENUM_EXT = 0x7FFFFFFF,
+};
+
+</code></pre></div><h3 id="vanillaclientinputmappingfactory-creategazescreengamecontrollermapping-l2-unnamed-enum-gamepad-no-turn-stick"><a href="#vanillaclientinputmappingfactory-creategazescreengamecontrollermapping-l2-unnamed-enum-gamepad-no-turn-stick" class="header-anchor">#</a> <code>VanillaClientInputMappingFactory::_createGazeScreenGameControllerMapping::__l2::&lt;unnamed_enum_GAMEPAD_NO_TURN_STICK&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum VanillaClientInputMappingFactory::_createGazeScreenGameControllerMapping::__l2::&lt;unnamed_enum_GAMEPAD_NO_TURN_STICK&gt; : __int32
+{
+  GAMEPAD_NO_TURN_STICK = 0x1,
+};
+
+</code></pre></div><h3 id="vanillaclientinputmappingfactory-createscreengamecontrollermapping-l2-unnamed-enum-gamepad-no-turn-stick"><a href="#vanillaclientinputmappingfactory-createscreengamecontrollermapping-l2-unnamed-enum-gamepad-no-turn-stick" class="header-anchor">#</a> <code>VanillaClientInputMappingFactory::_createScreenGameControllerMapping::__l2::&lt;unnamed_enum_GAMEPAD_NO_TURN_STICK&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VanillaClientInputMappingFactory::_createGazeScreenGameControllerMapping::__l2::&lt;unnamed_enum_GAMEPAD_NO_TURN_STICK&gt; VanillaClientInputMappingFactory::_createScreenGameControllerMapping::__l2::&lt;unnamed_enum_GAMEPAD_NO_TURN_STICK&gt;;
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/U.html" class="prev">
+        U
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/W.html">
+        W
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/84.35c05041.js" defer></script>
+  </body>
+</html>

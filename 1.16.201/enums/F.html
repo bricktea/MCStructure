@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>F | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/68.beec9ddd.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" aria-current="page" class="active sidebar-link">F</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="f"><a href="#f" class="header-anchor">#</a> F</h1> <h3 id="focusimpact"><a href="#focusimpact" class="header-anchor">#</a> <code>FocusImpact</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Neutral</td> <td><code>0</code></td></tr> <tr><td>ActivateFocus</td> <td><code>1</code></td></tr> <tr><td>DeactivateFocus</td> <td><code>2</code></td></tr></tbody></table> <h3 id="facing-rotation"><a href="#facing-rotation" class="header-anchor">#</a> <code>Facing::Rotation</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NONE</td> <td><code>0</code></td></tr> <tr><td>JUMP</td> <td><code>1</code></td></tr> <tr><td>HURT</td> <td><code>2</code></td></tr> <tr><td>DEATH</td> <td><code>3</code></td></tr> <tr><td>START_ATTACKING</td> <td><code>4</code></td></tr> <tr><td>STOP_ATTACKING</td> <td><code>5</code></td></tr> <tr><td>TAMING_FAILED</td> <td><code>6</code></td></tr> <tr><td>TAMING_SUCCEEDED</td> <td><code>7</code></td></tr> <tr><td>SHAKE_WETNESS</td> <td><code>8</code></td></tr> <tr><td>EAT_GRASS</td> <td><code>10</code></td></tr> <tr><td>FISHHOOK_BUBBLE</td> <td><code>11</code></td></tr> <tr><td>FISHHOOK_FISHPOS</td> <td><code>12</code></td></tr> <tr><td>FISHHOOK_HOOKTIME</td> <td><code>13</code></td></tr> <tr><td>FISHHOOK_TEASE</td> <td><code>14</code></td></tr> <tr><td>SQUID_FLEEING</td> <td><code>15</code></td></tr> <tr><td>ZOMBIE_CONVERTING</td> <td><code>16</code></td></tr> <tr><td>PLAY_AMBIENT</td> <td><code>17</code></td></tr> <tr><td>SPAWN_ALIVE</td> <td><code>18</code></td></tr> <tr><td>START_OFFER_FLOWER</td> <td><code>19</code></td></tr> <tr><td>STOP_OFFER_FLOWER</td> <td><code>20</code></td></tr> <tr><td>LOVE_HEARTS</td> <td><code>21</code></td></tr> <tr><td>VILLAGER_ANGRY</td> <td><code>22</code></td></tr> <tr><td>VILLAGER_HAPPY</td> <td><code>23</code></td></tr> <tr><td>WITCH_HAT_MAGIC</td> <td><code>24</code></td></tr> <tr><td>FIREWORKS_EXPLODE</td> <td><code>25</code></td></tr> <tr><td>IN_LOVE_HEARTS</td> <td><code>26</code></td></tr> <tr><td>SILVERFISH_MERGE_ANIM</td> <td><code>27</code></td></tr> <tr><td>GUARDIAN_ATTACK_SOUND</td> <td><code>28</code></td></tr> <tr><td>DRINK_POTION</td> <td><code>29</code></td></tr> <tr><td>THROW_POTION</td> <td><code>30</code></td></tr> <tr><td>PRIME_TNTCART</td> <td><code>31</code></td></tr> <tr><td>PRIME_CREEPER</td> <td><code>32</code></td></tr> <tr><td>AIR_SUPPLY</td> <td><code>33</code></td></tr> <tr><td>ADD_PLAYER_LEVELS</td> <td><code>34</code></td></tr> <tr><td>GUARDIAN_MINING_FATIGUE</td> <td><code>35</code></td></tr> <tr><td>AGENT_SWING_ARM</td> <td><code>36</code></td></tr> <tr><td>DRAGON_START_DEATH_ANIM</td> <td><code>37</code></td></tr> <tr><td>GROUND_DUST</td> <td><code>38</code></td></tr> <tr><td>SHAKE</td> <td><code>39</code></td></tr> <tr><td>FEED</td> <td><code>57</code></td></tr> <tr><td>BABY_EAT</td> <td><code>60</code></td></tr> <tr><td>INSTANT_DEATH</td> <td><code>61</code></td></tr> <tr><td>NOTIFY_TRADE</td> <td><code>62</code></td></tr> <tr><td>LEASH_DESTROYED</td> <td><code>63</code></td></tr> <tr><td>CARAVAN_UPDATED</td> <td><code>64</code></td></tr> <tr><td>TALISMAN_ACTIVATE</td> <td><code>65</code></td></tr> <tr><td>UPDATE_STRUCTURE_FEATURE</td> <td><code>66</code></td></tr> <tr><td>PLAYER_SPAWNED_MOB</td> <td><code>67</code></td></tr> <tr><td>PUKE</td> <td><code>68</code></td></tr> <tr><td>UPDATE_STACK_SIZE</td> <td><code>69</code></td></tr> <tr><td>START_SWIMMING</td> <td><code>70</code></td></tr> <tr><td>BALLOON_POP</td> <td><code>71</code></td></tr> <tr><td>TREASURE_HUNT</td> <td><code>72</code></td></tr> <tr><td>SUMMON_AGENT</td> <td><code>73</code></td></tr> <tr><td>FINISHED_CHARGING_CROSSBOW</td> <td><code>74</code></td></tr> <tr><td>LANDED_ON_GROUND</td> <td><code>75</code></td></tr></tbody></table> <h3 id="flip"><a href="#flip" class="header-anchor">#</a> <code>Flip</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="fertilizertype"><a href="#fertilizertype" class="header-anchor">#</a> <code>FertilizerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Bonemeal</td> <td><code>0</code></td></tr> <tr><td>Rapid</td> <td><code>1</code></td></tr></tbody></table> <h3 id="fogdistancesetting-distancetype"><a href="#fogdistancesetting-distancetype" class="header-anchor">#</a> <code>FogDistanceSetting::DistanceType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>THIRD_BEZIER</td> <td><code>0</code></td></tr> <tr><td>FOURTH_BEZIER</td> <td><code>1</code></td></tr> <tr><td>FIXED</td> <td><code>2</code></td></tr></tbody></table> <h3 id="filteroperator"><a href="#filteroperator" class="header-anchor">#</a> <code>FilterOperator</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Equal</td> <td><code>0</code></td></tr> <tr><td>NotEqual</td> <td><code>1</code></td></tr> <tr><td>GreaterThan</td> <td><code>2</code></td></tr> <tr><td>LessThan</td> <td><code>3</code></td></tr> <tr><td>GreaterThanOrEqual</td> <td><code>4</code></td></tr> <tr><td>LessThanOrEqual</td> <td><code>5</code></td></tr></tbody></table> <h3 id="facing-name"><a href="#facing-name" class="header-anchor">#</a> <code>Facing::Name</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ft-rfork-rule"><a href="#ft-rfork-rule" class="header-anchor">#</a> <code>FT_RFork_Rule_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>FT_RFork_Rule_apple_double</td> <td><code>0</code></td></tr> <tr><td>FT_RFork_Rule_apple_single</td> <td><code>1</code></td></tr> <tr><td>FT_RFork_Rule_darwin_ufs_export</td> <td><code>2</code></td></tr> <tr><td>FT_RFork_Rule_darwin_newvfs</td> <td><code>3</code></td></tr> <tr><td>FT_RFork_Rule_darwin_hfsplus</td> <td><code>4</code></td></tr> <tr><td>FT_RFork_Rule_vfat</td> <td><code>5</code></td></tr> <tr><td>FT_RFork_Rule_linux_cap</td> <td><code>6</code></td></tr> <tr><td>FT_RFork_Rule_linux_double</td> <td><code>7</code></td></tr> <tr><td>FT_RFork_Rule_linux_netatalk</td> <td><code>8</code></td></tr> <tr><td>FT_RFork_Rule_invalid</td> <td><code>18446744073709551614</code></td></tr> <tr><td>FT_RFork_Rule_uknown</td> <td><code>18446744073709551615</code></td></tr></tbody></table> <h3 id="ft-render-mode"><a href="#ft-render-mode" class="header-anchor">#</a> <code>FT_Render_Mode_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>FT_RENDER_MODE_NORMAL</td> <td><code>0</code></td></tr> <tr><td>FT_RENDER_MODE_LIGHT</td> <td><code>1</code></td></tr> <tr><td>FT_RENDER_MODE_MONO</td> <td><code>2</code></td></tr> <tr><td>FT_RENDER_MODE_LCD</td> <td><code>3</code></td></tr> <tr><td>FT_RENDER_MODE_LCD_V</td> <td><code>4</code></td></tr> <tr><td>FT_RENDER_MODE_MAX</td> <td><code>5</code></td></tr></tbody></table> <h3 id="ft-truetypeenginetype"><a href="#ft-truetypeenginetype" class="header-anchor">#</a> <code>FT_TrueTypeEngineType_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>FT_TRUETYPE_ENGINE_TYPE_NONE</td> <td><code>0</code></td></tr> <tr><td>FT_TRUETYPE_ENGINE_TYPE_UNPATENTED</td> <td><code>1</code></td></tr> <tr><td>FT_TRUETYPE_ENGINE_TYPE_PATENTED</td> <td><code>2</code></td></tr></tbody></table> <h3 id="float-format-type"><a href="#float-format-type" class="header-anchor">#</a> <code>float_format_type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>unknown_format</td> <td><code>0</code></td></tr> <tr><td>ieee_big_endian_format</td> <td><code>1</code></td></tr> <tr><td>ieee_little_endian_format</td> <td><code>2</code></td></tr></tbody></table> <h3 id="filetype"><a href="#filetype" class="header-anchor">#</a> <code>filetype</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>SEARCH_ERROR</td> <td><code>0</code></td></tr> <tr><td>?</td> <td><code>1</code></td></tr> <tr><td>?</td> <td><code>2</code></td></tr> <tr><td>C_EXTENSION</td> <td><code>3</code></td></tr> <tr><td>?</td> <td><code>4</code></td></tr> <tr><td>PKG_DIRECTORY</td> <td><code>5</code></td></tr> <tr><td>C_BUILTIN</td> <td><code>6</code></td></tr> <tr><td>?</td> <td><code>7</code></td></tr> <tr><td>?</td> <td><code>8</code></td></tr> <tr><td>IMP_HOOK</td> <td><code>9</code></td></tr></tbody></table> <h3 id="filterparamtype"><a href="#filterparamtype" class="header-anchor">#</a> <code>FilterParamType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="filterparamrequirement"><a href="#filterparamrequirement" class="header-anchor">#</a> <code>FilterParamRequirement</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Required</td> <td><code>0</code></td></tr> <tr><td>Optional</td> <td><code>1</code></td></tr></tbody></table> <h3 id="filterparamoption"><a href="#filterparamoption" class="header-anchor">#</a> <code>FilterParamOption</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ft-glyph-format"><a href="#ft-glyph-format" class="header-anchor">#</a> <code>FT_Glyph_Format_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>FT_GLYPH_FORMAT_NONE</td> <td><code>0</code></td></tr> <tr><td>FT_GLYPH_FORMAT_BITMAP</td> <td><code>1651078259</code></td></tr> <tr><td>FT_GLYPH_FORMAT_COMPOSITE</td> <td><code>1668246896</code></td></tr> <tr><td>FT_GLYPH_FORMAT_OUTLINE</td> <td><code>1869968492</code></td></tr> <tr><td>FT_GLYPH_FORMAT_PLOTTER</td> <td><code>1886154612</code></td></tr></tbody></table> <h3 id="fakehdrsetting"><a href="#fakehdrsetting" class="header-anchor">#</a> <code>FakeHDRSetting</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>EnableFakeHDR</td> <td><code>0</code></td></tr> <tr><td>DisableFakeHDR</td> <td><code>1</code></td></tr></tbody></table> <h3 id="frustumcullertype"><a href="#frustumcullertype" class="header-anchor">#</a> <code>FrustumCullerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Perspective</td> <td><code>0</code></td></tr> <tr><td>RayTracing</td> <td><code>1</code></td></tr></tbody></table> <h3 id="fogmanager-layertype"><a href="#fogmanager-layertype" class="header-anchor">#</a> <code>FogManager::LayerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>DATA_DEFAULT</td> <td><code>0</code></td></tr> <tr><td>BIOME</td> <td><code>1</code></td></tr> <tr><td>SERVER_DIRECTED</td> <td><code>2</code></td></tr></tbody></table> <h3 id="flightingtoggleid"><a href="#flightingtoggleid" class="header-anchor">#</a> <code>FlightingToggleId</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>CoreUiTechValidation</td> <td><code>0</code></td></tr></tbody></table> <h3 id="filearchiver-outcome"><a href="#filearchiver-outcome" class="header-anchor">#</a> <code>FileArchiver::Outcome</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="filtergroup-collectiontype"><a href="#filtergroup-collectiontype" class="header-anchor">#</a> <code>FilterGroup::CollectionType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AND</td> <td><code>0</code></td></tr> <tr><td>OR</td> <td><code>1</code></td></tr> <tr><td>NOT</td> <td><code>2</code></td></tr></tbody></table> <h3 id="filtersubject"><a href="#filtersubject" class="header-anchor">#</a> <code>FilterSubject</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="filereadresult"><a href="#filereadresult" class="header-anchor">#</a> <code>FileReadResult</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>INITIAL</td> <td><code>0</code></td></tr> <tr><td>PROCESSING</td> <td><code>1</code></td></tr> <tr><td>FAIL</td> <td><code>2</code></td></tr> <tr><td>SUCCESS</td> <td><code>3</code></td></tr></tbody></table> <h3 id="flowerblock-type"><a href="#flowerblock-type" class="header-anchor">#</a> <code>FlowerBlock::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="flowertype"><a href="#flowertype" class="header-anchor">#</a> <code>FlowerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ft-size-request-type"><a href="#ft-size-request-type" class="header-anchor">#</a> <code>FT_Size_Request_Type_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>FT_SIZE_REQUEST_TYPE_NOMINAL</td> <td><code>0</code></td></tr> <tr><td>FT_SIZE_REQUEST_TYPE_REAL_DIM</td> <td><code>1</code></td></tr> <tr><td>FT_SIZE_REQUEST_TYPE_BBOX</td> <td><code>2</code></td></tr> <tr><td>FT_SIZE_REQUEST_TYPE_CELL</td> <td><code>3</code></td></tr> <tr><td>FT_SIZE_REQUEST_TYPE_SCALES</td> <td><code>4</code></td></tr> <tr><td>FT_SIZE_REQUEST_TYPE_MAX</td> <td><code>5</code></td></tr></tbody></table> <h3 id="ft-encoding"><a href="#ft-encoding" class="header-anchor">#</a> <code>FT_Encoding_</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>FT_ENCODING_NONE</td> <td><code>0</code></td></tr> <tr><td>FT_ENCODING_ADOBE_CUSTOM</td> <td><code>1094992451</code></td></tr> <tr><td>FT_ENCODING_ADOBE_EXPERT</td> <td><code>1094992453</code></td></tr> <tr><td>FT_ENCODING_ADOBE_STANDARD</td> <td><code>1094995778</code></td></tr> <tr><td>FT_ENCODING_APPLE_ROMAN</td> <td><code>1634889070</code></td></tr> <tr><td>FT_ENCODING_BIG5</td> <td><code>1651074869</code></td></tr> <tr><td>FT_ENCODING_MS_BIG5</td> <td><code>1651074869</code></td></tr> <tr><td>FT_ENCODING_PRC</td> <td><code>1734484000</code></td></tr> <tr><td>FT_ENCODING_GB2312</td> <td><code>1734484000</code></td></tr> <tr><td>FT_ENCODING_MS_GB2312</td> <td><code>1734484000</code></td></tr> <tr><td>FT_ENCODING_JOHAB</td> <td><code>1785686113</code></td></tr> <tr><td>FT_ENCODING_MS_JOHAB</td> <td><code>1785686113</code></td></tr> <tr><td>FT_ENCODING_ADOBE_LATIN_1</td> <td><code>1818326065</code></td></tr> <tr><td>FT_ENCODING_OLD_LATIN_2</td> <td><code>1818326066</code></td></tr> <tr><td>FT_ENCODING_SJIS</td> <td><code>1936353651</code></td></tr> <tr><td>FT_ENCODING_MS_SJIS</td> <td><code>1936353651</code></td></tr> <tr><td>FT_ENCODING_MS_SYMBOL</td> <td><code>1937337698</code></td></tr> <tr><td>FT_ENCODING_UNICODE</td> <td><code>1970170211</code></td></tr> <tr><td>FT_ENCODING_WANSUNG</td> <td><code>2002873971</code></td></tr> <tr><td>FT_ENCODING_MS_WANSUNG</td> <td><code>2002873971</code></td></tr></tbody></table> <h3 id="frustum-frustumside"><a href="#frustum-frustumside" class="header-anchor">#</a> <code>Frustum::FrustumSide</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Frustum::FrustumSide : __int8
+{
+  Right = 0x0,
+  Left = 0x1,
+  Bottom = 0x2,
+  Top = 0x3,
+  Back = 0x4,
+  Front = 0x5,
+  NumFrustumPlanes = 0x6,
+};
+
+</code></pre></div><h3 id="frustum-plane"><a href="#frustum-plane" class="header-anchor">#</a> <code>Frustum::Plane</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Frustum::Plane : __int8
+{
+  PlaneNormalX = 0x0,
+  PlaneNormalY = 0x1,
+  PlaneNormalZ = 0x2,
+  PlaneToOriginDistance = 0x3,
+};
+
+</code></pre></div><h3 id="filestoragedirectory"><a href="#filestoragedirectory" class="header-anchor">#</a> <code>FileStorageDirectory</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation FileStorageDirectory;
+
+</code></pre></div><h3 id="fullscreenmode"><a href="#fullscreenmode" class="header-anchor">#</a> <code>FullscreenMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FullscreenMode : __int32
+{
+  Windowed = 0x0,
+  Fullscreen = 0x1,
+};
+
+</code></pre></div><h3 id="fogdefinition-distancesettingtype"><a href="#fogdefinition-distancesettingtype" class="header-anchor">#</a> <code>FogDefinition::DistanceSettingType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FogDefinition::DistanceSettingType : __int32
+{
+  AIR = 0x0,
+  WEATHER = 0x1,
+  WATER = 0x2,
+  LAVA = 0x3,
+  LAVA_RESIST = 0x4,
+};
+
+</code></pre></div><h3 id="fogdefinition-densitysettingtype"><a href="#fogdefinition-densitysettingtype" class="header-anchor">#</a> <code>FogDefinition::DensitySettingType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FogDefinition::DistanceSettingType FogDefinition::DensitySettingType;
+
+</code></pre></div><h3 id="fogdefinition-coefficientsettingtype"><a href="#fogdefinition-coefficientsettingtype" class="header-anchor">#</a> <code>FogDefinition::CoefficientSettingType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef FogDefinition::DistanceSettingType FogDefinition::CoefficientSettingType;
+
+</code></pre></div><h3 id="filearchiver-state"><a href="#filearchiver-state" class="header-anchor">#</a> <code>FileArchiver::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ClientInstanceState FileArchiver::State;
+
+</code></pre></div><h3 id="filearchiver-exporttype"><a href="#filearchiver-exporttype" class="header-anchor">#</a> <code>FileArchiver::ExportType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FileArchiver::ExportType : __int32
+{
+  Level = 0x0,
+  Template = 0x1,
+};
+
+</code></pre></div><h3 id="featureoptionid"><a href="#featureoptionid" class="header-anchor">#</a> <code>FeatureOptionID</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation FeatureOptionID;
+
+</code></pre></div><h3 id="flightingservice-fetchstate"><a href="#flightingservice-fetchstate" class="header-anchor">#</a> <code>FlightingService::FetchState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FlightingService::FetchState : __int32
+{
+  NotStarted = 0x0,
+  Fetching = 0x1,
+  Complete = 0x2,
+};
+
+</code></pre></div><h3 id="fulfillment"><a href="#fulfillment" class="header-anchor">#</a> <code>Fulfillment</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ItemInstallState Fulfillment;
+
+</code></pre></div><h3 id="ft-orientation"><a href="#ft-orientation" class="header-anchor">#</a> <code>FT_Orientation_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_Orientation_ : __int32
+{
+  FT_ORIENTATION_TRUETYPE = 0x0,
+  FT_ORIENTATION_POSTSCRIPT = 0x1,
+  FT_ORIENTATION_FILL_RIGHT = 0x0,
+  FT_ORIENTATION_FILL_LEFT = 0x1,
+  FT_ORIENTATION_NONE = 0x2,
+};
+
+</code></pre></div><h3 id="foliagecolor-palettename"><a href="#foliagecolor-palettename" class="header-anchor">#</a> <code>FoliageColor::PaletteName</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskOptions FoliageColor::PaletteName;
+
+</code></pre></div><h3 id="focusnavigationmode"><a href="#focusnavigationmode" class="header-anchor">#</a> <code>FocusNavigationMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation FocusNavigationMode;
+
+</code></pre></div><h3 id="filesystemmode"><a href="#filesystemmode" class="header-anchor">#</a> <code>FileSystemMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Core::FileAccessType FileSystemMode;
+
+</code></pre></div><h3 id="filterresult"><a href="#filterresult" class="header-anchor">#</a> <code>FilterResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FilterResult : __int32
+{
+  ShowPrioritized = 0x0,
+  Show = 0x1,
+  Disable = 0x2,
+  Hide = 0x3,
+};
+
+</code></pre></div><h3 id="filepickersettings-pickertype"><a href="#filepickersettings-pickertype" class="header-anchor">#</a> <code>FilePickerSettings::PickerType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace FilePickerSettings::PickerType;
+
+</code></pre></div><h3 id="feedbackdialogchoice"><a href="#feedbackdialogchoice" class="header-anchor">#</a> <code>FeedbackDialogChoice</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FeedbackDialogChoice : __int32
+{
+  Suggestion = 0x0,
+  Bug = 0x1,
+  Help = 0x2,
+  HelpXbox = 0x3,
+};
+
+</code></pre></div><h3 id="friendstatus"><a href="#friendstatus" class="header-anchor">#</a> <code>FriendStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent FriendStatus;
+
+</code></pre></div><h3 id="fireworkchargeitem-shape"><a href="#fireworkchargeitem-shape" class="header-anchor">#</a> <code>FireworkChargeItem::Shape</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FireworkChargeItem::Shape : __int32
+{
+  SHAPE_NONE = 0x0,
+  SHAPE_LARGE_BALL = 0x1,
+  SHAPE_STAR = 0x2,
+  SHAPE_HEAD_CREEPER = 0x3,
+  SHAPE_BURST = 0x4,
+  SHAPE_COUNT = 0x5,
+};
+
+</code></pre></div><h3 id="fallingblock-state"><a href="#fallingblock-state" class="header-anchor">#</a> <code>FallingBlock::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FallingBlock::State : __int32
+{
+  Falling = 0x0,
+  WaitRemoval = 0x1,
+};
+
+</code></pre></div><h3 id="freezeonhitsubcomponent-shape"><a href="#freezeonhitsubcomponent-shape" class="header-anchor">#</a> <code>FreezeOnHitSubcomponent::Shape</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FreezeOnHitSubcomponent::Shape : __int8
+{
+  Cube = 0x0,
+  Sphere = 0x1,
+};
+
+</code></pre></div><h3 id="fogcommand-mode"><a href="#fogcommand-mode" class="header-anchor">#</a> <code>FogCommand::Mode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef hbui::Router::QueuedRouteAction FogCommand::Mode;
+
+</code></pre></div><h3 id="functionstate"><a href="#functionstate" class="header-anchor">#</a> <code>FunctionState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Realms::World::State FunctionState;
+
+</code></pre></div><h3 id="fooditemcomponentlegacy-onuseaction"><a href="#fooditemcomponentlegacy-onuseaction" class="header-anchor">#</a> <code>FoodItemComponentLegacy::OnUseAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent FoodItemComponentLegacy::OnUseAction;
+
+</code></pre></div><h3 id="furnaceblockactor-unnamed-enum-slot-ingredient"><a href="#furnaceblockactor-unnamed-enum-slot-ingredient" class="header-anchor">#</a> <code>FurnaceBlockActor::&lt;unnamed_enum_SLOT_INGREDIENT&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FurnaceBlockActor::&lt;unnamed_enum_SLOT_INGREDIENT&gt; : __int32
+{
+  SLOT_INGREDIENT = 0x0,
+  SLOT_FUEL = 0x1,
+  SLOT_RESULT = 0x2,
+  NUM_ITEMS = 0x3,
+};
+
+</code></pre></div><h3 id="filetype-2"><a href="#filetype-2" class="header-anchor">#</a> <code>FileType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace FileType;
+
+</code></pre></div><h3 id="fillcommand-fillmode"><a href="#fillcommand-fillmode" class="header-anchor">#</a> <code>FillCommand::FillMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef hbui::Router::QueuedRouteAction FillCommand::FillMode;
+
+</code></pre></div><h3 id="filtertestdimensionweather-weathertype"><a href="#filtertestdimensionweather-weathertype" class="header-anchor">#</a> <code>FilterTestDimensionWeather::WeatherType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId FilterTestDimensionWeather::WeatherType;
+
+</code></pre></div><h3 id="fishpattern"><a href="#fishpattern" class="header-anchor">#</a> <code>FishPattern</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef OptionID FishPattern;
+
+</code></pre></div><h3 id="flowerplacementtype"><a href="#flowerplacementtype" class="header-anchor">#</a> <code>FlowerPlacementType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef DimensionId FlowerPlacementType;
+
+</code></pre></div><h3 id="file-usage-type"><a href="#file-usage-type" class="header-anchor">#</a> <code>FILE_USAGE_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FILE_USAGE_TYPE : __int32
+{
+  FUT_PLAYING = 0x0,
+  FUT_EDITING = 0x1,
+  FUT_GENERIC = 0x2,
+};
+
+</code></pre></div><h3 id="fffp-mode"><a href="#fffp-mode" class="header-anchor">#</a> <code>FFFP_MODE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FFFP_MODE : __int32
+{
+  FFFP_EXACTMATCH = 0x0,
+  FFFP_NEARESTPARENTMATCH = 0x1,
+};
+
+</code></pre></div><h3 id="furnacecontainerdata"><a href="#furnacecontainerdata" class="header-anchor">#</a> <code>FurnaceContainerData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FurnaceContainerData : __int32
+{
+  SetTickCount = 0x0,
+  SetLitTime = 0x1,
+  SetLitDuration = 0x2,
+  SetStoredXP = 0x3,
+};
+
+</code></pre></div><h3 id="fmod-debug-mode"><a href="#fmod-debug-mode" class="header-anchor">#</a> <code>FMOD_DEBUG_MODE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DEBUG_MODE : __int32
+{
+  FMOD_DEBUG_MODE_TTY = 0x0,
+  FMOD_DEBUG_MODE_FILE = 0x1,
+  FMOD_DEBUG_MODE_CALLBACK = 0x2,
+  FMOD_DEBUG_MODE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-dspconnection-type"><a href="#fmod-dspconnection-type" class="header-anchor">#</a> <code>FMOD_DSPCONNECTION_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DSPCONNECTION_TYPE : __int32
+{
+  FMOD_DSPCONNECTION_TYPE_STANDARD = 0x0,
+  FMOD_DSPCONNECTION_TYPE_SIDECHAIN = 0x1,
+  FMOD_DSPCONNECTION_TYPE_SEND = 0x2,
+  FMOD_DSPCONNECTION_TYPE_SEND_SIDECHAIN = 0x3,
+  FMOD_DSPCONNECTION_TYPE_MAX = 0x4,
+  FMOD_DSPCONNECTION_TYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-result"><a href="#fmod-result" class="header-anchor">#</a> <code>FMOD_RESULT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_RESULT : __int32
+{
+  FMOD_OK = 0x0,
+  FMOD_ERR_BADCOMMAND = 0x1,
+  FMOD_ERR_CHANNEL_ALLOC = 0x2,
+  FMOD_ERR_CHANNEL_STOLEN = 0x3,
+  FMOD_ERR_DMA = 0x4,
+  FMOD_ERR_DSP_CONNECTION = 0x5,
+  FMOD_ERR_DSP_DONTPROCESS = 0x6,
+  FMOD_ERR_DSP_FORMAT = 0x7,
+  FMOD_ERR_DSP_INUSE = 0x8,
+  FMOD_ERR_DSP_NOTFOUND = 0x9,
+  FMOD_ERR_DSP_RESERVED = 0xA,
+  FMOD_ERR_DSP_SILENCE = 0xB,
+  FMOD_ERR_DSP_TYPE = 0xC,
+  FMOD_ERR_FILE_BAD = 0xD,
+  FMOD_ERR_FILE_COULDNOTSEEK = 0xE,
+  FMOD_ERR_FILE_DISKEJECTED = 0xF,
+  FMOD_ERR_FILE_EOF = 0x10,
+  FMOD_ERR_FILE_ENDOFDATA = 0x11,
+  FMOD_ERR_FILE_NOTFOUND = 0x12,
+  FMOD_ERR_FORMAT = 0x13,
+  FMOD_ERR_HEADER_MISMATCH = 0x14,
+  FMOD_ERR_HTTP = 0x15,
+  FMOD_ERR_HTTP_ACCESS = 0x16,
+  FMOD_ERR_HTTP_PROXY_AUTH = 0x17,
+  FMOD_ERR_HTTP_SERVER_ERROR = 0x18,
+  FMOD_ERR_HTTP_TIMEOUT = 0x19,
+  FMOD_ERR_INITIALIZATION = 0x1A,
+  FMOD_ERR_INITIALIZED = 0x1B,
+  FMOD_ERR_INTERNAL = 0x1C,
+  FMOD_ERR_INVALID_FLOAT = 0x1D,
+  FMOD_ERR_INVALID_HANDLE = 0x1E,
+  FMOD_ERR_INVALID_PARAM = 0x1F,
+  FMOD_ERR_INVALID_POSITION = 0x20,
+  FMOD_ERR_INVALID_SPEAKER = 0x21,
+  FMOD_ERR_INVALID_SYNCPOINT = 0x22,
+  FMOD_ERR_INVALID_THREAD = 0x23,
+  FMOD_ERR_INVALID_VECTOR = 0x24,
+  FMOD_ERR_MAXAUDIBLE = 0x25,
+  FMOD_ERR_MEMORY = 0x26,
+  FMOD_ERR_MEMORY_CANTPOINT = 0x27,
+  FMOD_ERR_NEEDS3D = 0x28,
+  FMOD_ERR_NEEDSHARDWARE = 0x29,
+  FMOD_ERR_NET_CONNECT = 0x2A,
+  FMOD_ERR_NET_SOCKET_ERROR = 0x2B,
+  FMOD_ERR_NET_URL = 0x2C,
+  FMOD_ERR_NET_WOULD_BLOCK = 0x2D,
+  FMOD_ERR_NOTREADY = 0x2E,
+  FMOD_ERR_OUTPUT_ALLOCATED = 0x2F,
+  FMOD_ERR_OUTPUT_CREATEBUFFER = 0x30,
+  FMOD_ERR_OUTPUT_DRIVERCALL = 0x31,
+  FMOD_ERR_OUTPUT_FORMAT = 0x32,
+  FMOD_ERR_OUTPUT_INIT = 0x33,
+  FMOD_ERR_OUTPUT_NODRIVERS = 0x34,
+  FMOD_ERR_PLUGIN = 0x35,
+  FMOD_ERR_PLUGIN_MISSING = 0x36,
+  FMOD_ERR_PLUGIN_RESOURCE = 0x37,
+  FMOD_ERR_PLUGIN_VERSION = 0x38,
+  FMOD_ERR_RECORD = 0x39,
+  FMOD_ERR_REVERB_CHANNELGROUP = 0x3A,
+  FMOD_ERR_REVERB_INSTANCE = 0x3B,
+  FMOD_ERR_SUBSOUNDS = 0x3C,
+  FMOD_ERR_SUBSOUND_ALLOCATED = 0x3D,
+  FMOD_ERR_SUBSOUND_CANTMOVE = 0x3E,
+  FMOD_ERR_TAGNOTFOUND = 0x3F,
+  FMOD_ERR_TOOMANYCHANNELS = 0x40,
+  FMOD_ERR_TRUNCATED = 0x41,
+  FMOD_ERR_UNIMPLEMENTED = 0x42,
+  FMOD_ERR_UNINITIALIZED = 0x43,
+  FMOD_ERR_UNSUPPORTED = 0x44,
+  FMOD_ERR_VERSION = 0x45,
+  FMOD_ERR_EVENT_ALREADY_LOADED = 0x46,
+  FMOD_ERR_EVENT_LIVEUPDATE_BUSY = 0x47,
+  FMOD_ERR_EVENT_LIVEUPDATE_MISMATCH = 0x48,
+  FMOD_ERR_EVENT_LIVEUPDATE_TIMEOUT = 0x49,
+  FMOD_ERR_EVENT_NOTFOUND = 0x4A,
+  FMOD_ERR_STUDIO_UNINITIALIZED = 0x4B,
+  FMOD_ERR_STUDIO_NOT_LOADED = 0x4C,
+  FMOD_ERR_INVALID_STRING = 0x4D,
+  FMOD_ERR_ALREADY_LOCKED = 0x4E,
+  FMOD_ERR_NOT_LOCKED = 0x4F,
+  FMOD_ERR_RECORD_DISCONNECTED = 0x50,
+  FMOD_ERR_TOOMANYSAMPLES = 0x51,
+  FMOD_RESULT_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-channelcontrol-type"><a href="#fmod-channelcontrol-type" class="header-anchor">#</a> <code>FMOD_CHANNELCONTROL_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_CHANNELCONTROL_TYPE : __int32
+{
+  FMOD_CHANNELCONTROL_CHANNEL = 0x0,
+  FMOD_CHANNELCONTROL_CHANNELGROUP = 0x1,
+  FMOD_CHANNELCONTROL_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-outputtype"><a href="#fmod-outputtype" class="header-anchor">#</a> <code>FMOD_OUTPUTTYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_OUTPUTTYPE : __int32
+{
+  FMOD_OUTPUTTYPE_AUTODETECT = 0x0,
+  FMOD_OUTPUTTYPE_UNKNOWN = 0x1,
+  FMOD_OUTPUTTYPE_NOSOUND = 0x2,
+  FMOD_OUTPUTTYPE_WAVWRITER = 0x3,
+  FMOD_OUTPUTTYPE_NOSOUND_NRT = 0x4,
+  FMOD_OUTPUTTYPE_WAVWRITER_NRT = 0x5,
+  FMOD_OUTPUTTYPE_DSOUND = 0x6,
+  FMOD_OUTPUTTYPE_WINMM = 0x7,
+  FMOD_OUTPUTTYPE_WASAPI = 0x8,
+  FMOD_OUTPUTTYPE_ASIO = 0x9,
+  FMOD_OUTPUTTYPE_PULSEAUDIO = 0xA,
+  FMOD_OUTPUTTYPE_ALSA = 0xB,
+  FMOD_OUTPUTTYPE_COREAUDIO = 0xC,
+  FMOD_OUTPUTTYPE_XAUDIO = 0xD,
+  FMOD_OUTPUTTYPE_PS3 = 0xE,
+  FMOD_OUTPUTTYPE_AUDIOTRACK = 0xF,
+  FMOD_OUTPUTTYPE_OPENSL = 0x10,
+  FMOD_OUTPUTTYPE_WIIU = 0x11,
+  FMOD_OUTPUTTYPE_AUDIOOUT = 0x12,
+  FMOD_OUTPUTTYPE_AUDIO3D = 0x13,
+  FMOD_OUTPUTTYPE_ATMOS = 0x14,
+  FMOD_OUTPUTTYPE_WEBAUDIO = 0x15,
+  FMOD_OUTPUTTYPE_NNAUDIO = 0x16,
+  FMOD_OUTPUTTYPE_MAX = 0x17,
+  FMOD_OUTPUTTYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-speakermode"><a href="#fmod-speakermode" class="header-anchor">#</a> <code>FMOD_SPEAKERMODE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_SPEAKERMODE : __int32
+{
+  FMOD_SPEAKERMODE_DEFAULT = 0x0,
+  FMOD_SPEAKERMODE_RAW = 0x1,
+  FMOD_SPEAKERMODE_MONO = 0x2,
+  FMOD_SPEAKERMODE_STEREO = 0x3,
+  FMOD_SPEAKERMODE_QUAD = 0x4,
+  FMOD_SPEAKERMODE_SURROUND = 0x5,
+  FMOD_SPEAKERMODE_5POINT1 = 0x6,
+  FMOD_SPEAKERMODE_7POINT1 = 0x7,
+  FMOD_SPEAKERMODE_MAX = 0x8,
+  FMOD_SPEAKERMODE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-speaker"><a href="#fmod-speaker" class="header-anchor">#</a> <code>FMOD_SPEAKER</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_SPEAKER : __int32
+{
+  FMOD_SPEAKER_FRONT_LEFT = 0x0,
+  FMOD_SPEAKER_FRONT_RIGHT = 0x1,
+  FMOD_SPEAKER_FRONT_CENTER = 0x2,
+  FMOD_SPEAKER_LOW_FREQUENCY = 0x3,
+  FMOD_SPEAKER_SURROUND_LEFT = 0x4,
+  FMOD_SPEAKER_SURROUND_RIGHT = 0x5,
+  FMOD_SPEAKER_BACK_LEFT = 0x6,
+  FMOD_SPEAKER_BACK_RIGHT = 0x7,
+  FMOD_SPEAKER_MAX = 0x8,
+  FMOD_SPEAKER_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-plugintype"><a href="#fmod-plugintype" class="header-anchor">#</a> <code>FMOD_PLUGINTYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_PLUGINTYPE : __int32
+{
+  FMOD_PLUGINTYPE_OUTPUT = 0x0,
+  FMOD_PLUGINTYPE_CODEC = 0x1,
+  FMOD_PLUGINTYPE_DSP = 0x2,
+  FMOD_PLUGINTYPE_MAX = 0x3,
+  FMOD_PLUGINTYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-sound-type"><a href="#fmod-sound-type" class="header-anchor">#</a> <code>FMOD_SOUND_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_SOUND_TYPE : __int32
+{
+  FMOD_SOUND_TYPE_UNKNOWN = 0x0,
+  FMOD_SOUND_TYPE_AIFF = 0x1,
+  FMOD_SOUND_TYPE_ASF = 0x2,
+  FMOD_SOUND_TYPE_DLS = 0x3,
+  FMOD_SOUND_TYPE_FLAC = 0x4,
+  FMOD_SOUND_TYPE_FSB = 0x5,
+  FMOD_SOUND_TYPE_IT = 0x6,
+  FMOD_SOUND_TYPE_MIDI = 0x7,
+  FMOD_SOUND_TYPE_MOD = 0x8,
+  FMOD_SOUND_TYPE_MPEG = 0x9,
+  FMOD_SOUND_TYPE_OGGVORBIS = 0xA,
+  FMOD_SOUND_TYPE_PLAYLIST = 0xB,
+  FMOD_SOUND_TYPE_RAW = 0xC,
+  FMOD_SOUND_TYPE_S3M = 0xD,
+  FMOD_SOUND_TYPE_USER = 0xE,
+  FMOD_SOUND_TYPE_WAV = 0xF,
+  FMOD_SOUND_TYPE_XM = 0x10,
+  FMOD_SOUND_TYPE_XMA = 0x11,
+  FMOD_SOUND_TYPE_AUDIOQUEUE = 0x12,
+  FMOD_SOUND_TYPE_AT9 = 0x13,
+  FMOD_SOUND_TYPE_VORBIS = 0x14,
+  FMOD_SOUND_TYPE_MEDIA_FOUNDATION = 0x15,
+  FMOD_SOUND_TYPE_MEDIACODEC = 0x16,
+  FMOD_SOUND_TYPE_FADPCM = 0x17,
+  FMOD_SOUND_TYPE_MAX = 0x18,
+  FMOD_SOUND_TYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-sound-format"><a href="#fmod-sound-format" class="header-anchor">#</a> <code>FMOD_SOUND_FORMAT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_SOUND_FORMAT : __int32
+{
+  FMOD_SOUND_FORMAT_NONE = 0x0,
+  FMOD_SOUND_FORMAT_PCM8 = 0x1,
+  FMOD_SOUND_FORMAT_PCM16 = 0x2,
+  FMOD_SOUND_FORMAT_PCM24 = 0x3,
+  FMOD_SOUND_FORMAT_PCM32 = 0x4,
+  FMOD_SOUND_FORMAT_PCMFLOAT = 0x5,
+  FMOD_SOUND_FORMAT_BITSTREAM = 0x6,
+  FMOD_SOUND_FORMAT_MAX = 0x7,
+  FMOD_SOUND_FORMAT_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-openstate"><a href="#fmod-openstate" class="header-anchor">#</a> <code>FMOD_OPENSTATE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_OPENSTATE : __int32
+{
+  FMOD_OPENSTATE_READY = 0x0,
+  FMOD_OPENSTATE_LOADING = 0x1,
+  FMOD_OPENSTATE_ERROR = 0x2,
+  FMOD_OPENSTATE_CONNECTING = 0x3,
+  FMOD_OPENSTATE_BUFFERING = 0x4,
+  FMOD_OPENSTATE_SEEKING = 0x5,
+  FMOD_OPENSTATE_PLAYING = 0x6,
+  FMOD_OPENSTATE_SETPOSITION = 0x7,
+  FMOD_OPENSTATE_MAX = 0x8,
+  FMOD_OPENSTATE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-soundgroup-behavior"><a href="#fmod-soundgroup-behavior" class="header-anchor">#</a> <code>FMOD_SOUNDGROUP_BEHAVIOR</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_SOUNDGROUP_BEHAVIOR : __int32
+{
+  FMOD_SOUNDGROUP_BEHAVIOR_FAIL = 0x0,
+  FMOD_SOUNDGROUP_BEHAVIOR_MUTE = 0x1,
+  FMOD_SOUNDGROUP_BEHAVIOR_STEALLOWEST = 0x2,
+  FMOD_SOUNDGROUP_BEHAVIOR_MAX = 0x3,
+  FMOD_SOUNDGROUP_BEHAVIOR_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-channelcontrol-callback-type"><a href="#fmod-channelcontrol-callback-type" class="header-anchor">#</a> <code>FMOD_CHANNELCONTROL_CALLBACK_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_CHANNELCONTROL_CALLBACK_TYPE : __int32
+{
+  FMOD_CHANNELCONTROL_CALLBACK_END = 0x0,
+  FMOD_CHANNELCONTROL_CALLBACK_VIRTUALVOICE = 0x1,
+  FMOD_CHANNELCONTROL_CALLBACK_SYNCPOINT = 0x2,
+  FMOD_CHANNELCONTROL_CALLBACK_OCCLUSION = 0x3,
+  FMOD_CHANNELCONTROL_CALLBACK_MAX = 0x4,
+  FMOD_CHANNELCONTROL_CALLBACK_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-dsp-resampler"><a href="#fmod-dsp-resampler" class="header-anchor">#</a> <code>FMOD_DSP_RESAMPLER</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DSP_RESAMPLER : __int32
+{
+  FMOD_DSP_RESAMPLER_DEFAULT = 0x0,
+  FMOD_DSP_RESAMPLER_NOINTERP = 0x1,
+  FMOD_DSP_RESAMPLER_LINEAR = 0x2,
+  FMOD_DSP_RESAMPLER_CUBIC = 0x3,
+  FMOD_DSP_RESAMPLER_SPLINE = 0x4,
+  FMOD_DSP_RESAMPLER_MAX = 0x5,
+  FMOD_DSP_RESAMPLER_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-tagtype"><a href="#fmod-tagtype" class="header-anchor">#</a> <code>FMOD_TAGTYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_TAGTYPE : __int32
+{
+  FMOD_TAGTYPE_UNKNOWN = 0x0,
+  FMOD_TAGTYPE_ID3V1 = 0x1,
+  FMOD_TAGTYPE_ID3V2 = 0x2,
+  FMOD_TAGTYPE_VORBISCOMMENT = 0x3,
+  FMOD_TAGTYPE_SHOUTCAST = 0x4,
+  FMOD_TAGTYPE_ICECAST = 0x5,
+  FMOD_TAGTYPE_ASF = 0x6,
+  FMOD_TAGTYPE_MIDI = 0x7,
+  FMOD_TAGTYPE_PLAYLIST = 0x8,
+  FMOD_TAGTYPE_FMOD = 0x9,
+  FMOD_TAGTYPE_USER = 0xA,
+  FMOD_TAGTYPE_MAX = 0xB,
+  FMOD_TAGTYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-tagdatatype"><a href="#fmod-tagdatatype" class="header-anchor">#</a> <code>FMOD_TAGDATATYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_TAGDATATYPE : __int32
+{
+  FMOD_TAGDATATYPE_BINARY = 0x0,
+  FMOD_TAGDATATYPE_INT = 0x1,
+  FMOD_TAGDATATYPE_FLOAT = 0x2,
+  FMOD_TAGDATATYPE_STRING = 0x3,
+  FMOD_TAGDATATYPE_STRING_UTF16 = 0x4,
+  FMOD_TAGDATATYPE_STRING_UTF16BE = 0x5,
+  FMOD_TAGDATATYPE_STRING_UTF8 = 0x6,
+  FMOD_TAGDATATYPE_CDTOC = 0x7,
+  FMOD_TAGDATATYPE_MAX = 0x8,
+  FMOD_TAGDATATYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-dsp-type"><a href="#fmod-dsp-type" class="header-anchor">#</a> <code>FMOD_DSP_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DSP_TYPE : __int32
+{
+  FMOD_DSP_TYPE_UNKNOWN = 0x0,
+  FMOD_DSP_TYPE_MIXER = 0x1,
+  FMOD_DSP_TYPE_OSCILLATOR = 0x2,
+  FMOD_DSP_TYPE_LOWPASS = 0x3,
+  FMOD_DSP_TYPE_ITLOWPASS = 0x4,
+  FMOD_DSP_TYPE_HIGHPASS = 0x5,
+  FMOD_DSP_TYPE_ECHO = 0x6,
+  FMOD_DSP_TYPE_FADER = 0x7,
+  FMOD_DSP_TYPE_FLANGE = 0x8,
+  FMOD_DSP_TYPE_DISTORTION = 0x9,
+  FMOD_DSP_TYPE_NORMALIZE = 0xA,
+  FMOD_DSP_TYPE_LIMITER = 0xB,
+  FMOD_DSP_TYPE_PARAMEQ = 0xC,
+  FMOD_DSP_TYPE_PITCHSHIFT = 0xD,
+  FMOD_DSP_TYPE_CHORUS = 0xE,
+  FMOD_DSP_TYPE_VSTPLUGIN = 0xF,
+  FMOD_DSP_TYPE_WINAMPPLUGIN = 0x10,
+  FMOD_DSP_TYPE_ITECHO = 0x11,
+  FMOD_DSP_TYPE_COMPRESSOR = 0x12,
+  FMOD_DSP_TYPE_SFXREVERB = 0x13,
+  FMOD_DSP_TYPE_LOWPASS_SIMPLE = 0x14,
+  FMOD_DSP_TYPE_DELAY = 0x15,
+  FMOD_DSP_TYPE_TREMOLO = 0x16,
+  FMOD_DSP_TYPE_LADSPAPLUGIN = 0x17,
+  FMOD_DSP_TYPE_SEND = 0x18,
+  FMOD_DSP_TYPE_RETURN = 0x19,
+  FMOD_DSP_TYPE_HIGHPASS_SIMPLE = 0x1A,
+  FMOD_DSP_TYPE_PAN = 0x1B,
+  FMOD_DSP_TYPE_THREE_EQ = 0x1C,
+  FMOD_DSP_TYPE_FFT = 0x1D,
+  FMOD_DSP_TYPE_LOUDNESS_METER = 0x1E,
+  FMOD_DSP_TYPE_ENVELOPEFOLLOWER = 0x1F,
+  FMOD_DSP_TYPE_CONVOLUTIONREVERB = 0x20,
+  FMOD_DSP_TYPE_CHANNELMIX = 0x21,
+  FMOD_DSP_TYPE_TRANSCEIVER = 0x22,
+  FMOD_DSP_TYPE_OBJECTPAN = 0x23,
+  FMOD_DSP_TYPE_MULTIBAND_EQ = 0x24,
+  FMOD_DSP_TYPE_MAX = 0x25,
+  FMOD_DSP_TYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-dsp-pan-3d-rolloff-type"><a href="#fmod-dsp-pan-3d-rolloff-type" class="header-anchor">#</a> <code>FMOD_DSP_PAN_3D_ROLLOFF_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DSP_PAN_3D_ROLLOFF_TYPE : __int32
+{
+  FMOD_DSP_PAN_3D_ROLLOFF_LINEARSQUARED = 0x0,
+  FMOD_DSP_PAN_3D_ROLLOFF_LINEAR = 0x1,
+  FMOD_DSP_PAN_3D_ROLLOFF_INVERSE = 0x2,
+  FMOD_DSP_PAN_3D_ROLLOFF_INVERSETAPERED = 0x3,
+  FMOD_DSP_PAN_3D_ROLLOFF_CUSTOM = 0x4,
+};
+
+</code></pre></div><h3 id="fmod-dsp-process-operation"><a href="#fmod-dsp-process-operation" class="header-anchor">#</a> <code>FMOD_DSP_PROCESS_OPERATION</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DSP_PROCESS_OPERATION : __int32
+{
+  FMOD_DSP_PROCESS_PERFORM = 0x0,
+  FMOD_DSP_PROCESS_QUERY = 0x1,
+};
+
+</code></pre></div><h3 id="fmod-dsp-pan-surround-flags"><a href="#fmod-dsp-pan-surround-flags" class="header-anchor">#</a> <code>FMOD_DSP_PAN_SURROUND_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DSP_PAN_SURROUND_FLAGS : __int32
+{
+  FMOD_DSP_PAN_SURROUND_DEFAULT = 0x0,
+  FMOD_DSP_PAN_SURROUND_ROTATION_NOT_BIASED = 0x1,
+  FMOD_DSP_PAN_SURROUND_FLAGS_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-dsp-parameter-type"><a href="#fmod-dsp-parameter-type" class="header-anchor">#</a> <code>FMOD_DSP_PARAMETER_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DSP_PARAMETER_TYPE : __int32
+{
+  FMOD_DSP_PARAMETER_TYPE_FLOAT = 0x0,
+  FMOD_DSP_PARAMETER_TYPE_INT = 0x1,
+  FMOD_DSP_PARAMETER_TYPE_BOOL = 0x2,
+  FMOD_DSP_PARAMETER_TYPE_DATA = 0x3,
+  FMOD_DSP_PARAMETER_TYPE_MAX = 0x4,
+  FMOD_DSP_PARAMETER_TYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-dsp-parameter-float-mapping-type"><a href="#fmod-dsp-parameter-float-mapping-type" class="header-anchor">#</a> <code>FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE : __int32
+{
+  FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE_LINEAR = 0x0,
+  FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE_AUTO = 0x1,
+  FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE_PIECEWISE_LINEAR = 0x2,
+  FMOD_DSP_PARAMETER_FLOAT_MAPPING_TYPE_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="fmod-channelorder"><a href="#fmod-channelorder" class="header-anchor">#</a> <code>FMOD_CHANNELORDER</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FMOD_CHANNELORDER : __int32
+{
+  FMOD_CHANNELORDER_DEFAULT = 0x0,
+  FMOD_CHANNELORDER_WAVEFORMAT = 0x1,
+  FMOD_CHANNELORDER_PROTOOLS = 0x2,
+  FMOD_CHANNELORDER_ALLMONO = 0x3,
+  FMOD_CHANNELORDER_ALLSTEREO = 0x4,
+  FMOD_CHANNELORDER_ALSA = 0x5,
+  FMOD_CHANNELORDER_MAX = 0x6,
+  FMOD_CHANNELORDER_FORCEINT = 0x10000,
+};
+
+</code></pre></div><h3 id="ft-kerning-mode"><a href="#ft-kerning-mode" class="header-anchor">#</a> <code>FT_Kerning_Mode_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_Kerning_Mode_ : __int32
+{
+  FT_KERNING_DEFAULT = 0x0,
+  FT_KERNING_UNFITTED = 0x1,
+  FT_KERNING_UNSCALED = 0x2,
+};
+
+</code></pre></div><h3 id="ft-frame-op"><a href="#ft-frame-op" class="header-anchor">#</a> <code>FT_Frame_Op_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_Frame_Op_ : __int32
+{
+  ft_frame_end = 0x0,
+  ft_frame_start = 0x4,
+  ft_frame_byte = 0x8,
+  ft_frame_schar = 0x9,
+  ft_frame_ushort_be = 0xC,
+  ft_frame_short_be = 0xD,
+  ft_frame_ushort_le = 0xE,
+  ft_frame_short_le = 0xF,
+  ft_frame_ulong_be = 0x10,
+  ft_frame_long_be = 0x11,
+  ft_frame_ulong_le = 0x12,
+  ft_frame_long_le = 0x13,
+  ft_frame_uoff3_be = 0x14,
+  ft_frame_off3_be = 0x15,
+  ft_frame_uoff3_le = 0x16,
+  ft_frame_off3_le = 0x17,
+  ft_frame_bytes = 0x18,
+  ft_frame_skip = 0x19,
+};
+
+</code></pre></div><h3 id="ft-pixel-mode"><a href="#ft-pixel-mode" class="header-anchor">#</a> <code>FT_Pixel_Mode_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_Pixel_Mode_ : __int32
+{
+  FT_PIXEL_MODE_NONE = 0x0,
+  FT_PIXEL_MODE_MONO = 0x1,
+  FT_PIXEL_MODE_GRAY = 0x2,
+  FT_PIXEL_MODE_GRAY2 = 0x3,
+  FT_PIXEL_MODE_GRAY4 = 0x4,
+  FT_PIXEL_MODE_LCD = 0x5,
+  FT_PIXEL_MODE_LCD_V = 0x6,
+  FT_PIXEL_MODE_BGRA = 0x7,
+  FT_PIXEL_MODE_MAX = 0x8,
+};
+
+</code></pre></div><h3 id="ft-validationlevel"><a href="#ft-validationlevel" class="header-anchor">#</a> <code>FT_ValidationLevel_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_ValidationLevel_ : __int32
+{
+  FT_VALIDATE_DEFAULT = 0x0,
+  FT_VALIDATE_TIGHT = 0x1,
+  FT_VALIDATE_PARANOID = 0x2,
+};
+
+</code></pre></div><h3 id="ft-sfnt-tag"><a href="#ft-sfnt-tag" class="header-anchor">#</a> <code>FT_Sfnt_Tag_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_Sfnt_Tag_ : __int32
+{
+  FT_SFNT_HEAD = 0x0,
+  FT_SFNT_MAXP = 0x1,
+  FT_SFNT_OS2 = 0x2,
+  FT_SFNT_HHEA = 0x3,
+  FT_SFNT_VHEA = 0x4,
+  FT_SFNT_POST = 0x5,
+  FT_SFNT_PCLT = 0x6,
+  FT_SFNT_MAX = 0x7,
+};
+
+</code></pre></div><h3 id="ft-lcdfilter"><a href="#ft-lcdfilter" class="header-anchor">#</a> <code>FT_LcdFilter_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_LcdFilter_ : __int32
+{
+  FT_LCD_FILTER_NONE = 0x0,
+  FT_LCD_FILTER_DEFAULT = 0x1,
+  FT_LCD_FILTER_LIGHT = 0x2,
+  FT_LCD_FILTER_LEGACY1 = 0x3,
+  FT_LCD_FILTER_LEGACY = 0x10,
+  FT_LCD_FILTER_MAX = 0x11,
+};
+
+</code></pre></div><h3 id="ft-glyph-bbox-mode"><a href="#ft-glyph-bbox-mode" class="header-anchor">#</a> <code>FT_Glyph_BBox_Mode_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_Glyph_BBox_Mode_ : __int32
+{
+  FT_GLYPH_BBOX_UNSCALED = 0x0,
+  FT_GLYPH_BBOX_SUBPIXELS = 0x0,
+  FT_GLYPH_BBOX_GRIDFIT = 0x1,
+  FT_GLYPH_BBOX_TRUNCATE = 0x2,
+  FT_GLYPH_BBOX_PIXELS = 0x3,
+};
+
+</code></pre></div><h3 id="ft-stroker-linecap"><a href="#ft-stroker-linecap" class="header-anchor">#</a> <code>FT_Stroker_LineCap_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_Stroker_LineCap_ : __int32
+{
+  FT_STROKER_LINECAP_BUTT = 0x0,
+  FT_STROKER_LINECAP_ROUND = 0x1,
+  FT_STROKER_LINECAP_SQUARE = 0x2,
+};
+
+</code></pre></div><h3 id="ft-stroker-linejoin"><a href="#ft-stroker-linejoin" class="header-anchor">#</a> <code>FT_Stroker_LineJoin_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_Stroker_LineJoin_ : __int32
+{
+  FT_STROKER_LINEJOIN_ROUND = 0x0,
+  FT_STROKER_LINEJOIN_BEVEL = 0x1,
+  FT_STROKER_LINEJOIN_MITER_VARIABLE = 0x2,
+  FT_STROKER_LINEJOIN_MITER = 0x2,
+  FT_STROKER_LINEJOIN_MITER_FIXED = 0x3,
+};
+
+</code></pre></div><h3 id="ft-strokerborder"><a href="#ft-strokerborder" class="header-anchor">#</a> <code>FT_StrokerBorder_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_StrokerBorder_ : __int32
+{
+  FT_STROKER_BORDER_LEFT = 0x0,
+  FT_STROKER_BORDER_RIGHT = 0x1,
+};
+
+</code></pre></div><h3 id="ft-stroketags"><a href="#ft-stroketags" class="header-anchor">#</a> <code>FT_StrokeTags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_StrokeTags_ : __int32
+{
+  FT_STROKE_TAG_ON = 0x1,
+  FT_STROKE_TAG_CUBIC = 0x2,
+  FT_STROKE_TAG_BEGIN = 0x4,
+  FT_STROKE_TAG_END = 0x8,
+};
+
+</code></pre></div><h3 id="ft-lzwphase"><a href="#ft-lzwphase" class="header-anchor">#</a> <code>FT_LzwPhase_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum FT_LzwPhase_ : __int32
+{
+  FT_LZW_PHASE_START = 0x0,
+  FT_LZW_PHASE_CODE = 0x1,
+  FT_LZW_PHASE_STACK = 0x2,
+  FT_LZW_PHASE_EOF = 0x3,
+};
+
+</code></pre></div><h3 id="fblocktype"><a href="#fblocktype" class="header-anchor">#</a> <code>fblocktype</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Category fblocktype;
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/E.html" class="prev">
+        E
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/G.html">
+        G
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/68.beec9ddd.js" defer></script>
+  </body>
+</html>

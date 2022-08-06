@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>G | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/69.b4bc257c.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" aria-current="page" class="active sidebar-link">G</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="g"><a href="#g" class="header-anchor">#</a> G</h1> <h3 id="gltf-primitive-componenttype"><a href="#gltf-primitive-componenttype" class="header-anchor">#</a> <code>glTF::Primitive::ComponentType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>BYTE</td> <td><code>5120</code></td></tr> <tr><td>UNSIGNED_BYTE</td> <td><code>5121</code></td></tr> <tr><td>SHORT</td> <td><code>5122</code></td></tr> <tr><td>UNSIGNED_SHORT</td> <td><code>5123</code></td></tr> <tr><td>FLOAT</td> <td><code>5126</code></td></tr></tbody></table> <h3 id="gltf-accessor-type"><a href="#gltf-accessor-type" class="header-anchor">#</a> <code>glTF::Accessor::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>SCALAR</td> <td><code>0</code></td></tr> <tr><td>VEC2</td> <td><code>1</code></td></tr> <tr><td>VEC3</td> <td><code>2</code></td></tr> <tr><td>VEC4</td> <td><code>3</code></td></tr> <tr><td>MAT2</td> <td><code>4</code></td></tr> <tr><td>MAT3</td> <td><code>5</code></td></tr> <tr><td>MAT4</td> <td><code>6</code></td></tr></tbody></table> <h3 id="gametype"><a href="#gametype" class="header-anchor">#</a> <code>GameType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="generatortype"><a href="#generatortype" class="header-anchor">#</a> <code>GeneratorType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="gamerule-type"><a href="#gamerule-type" class="header-anchor">#</a> <code>GameRule::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="gamemoduleclient-resourceloadingphase"><a href="#gamemoduleclient-resourceloadingphase" class="header-anchor">#</a> <code>GameModuleClient::ResourceLoadingPhase</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>AppStartup</td> <td><code>0</code></td></tr> <tr><td>Frontend</td> <td><code>1</code></td></tr> <tr><td>InGame</td> <td><code>2</code></td></tr></tbody></table> <h3 id="gameplaytipid"><a href="#gameplaytipid" class="header-anchor">#</a> <code>GamePlayTipId</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>SHOW_CAMERA_TIP</td> <td><code>0</code></td></tr> <tr><td>SHOW_MOVE_TIP</td> <td><code>1</code></td></tr> <tr><td>SHOW_JUMP_TIP</td> <td><code>2</code></td></tr> <tr><td>SHOW_JUMP_FORWARD_TIP</td> <td><code>3</code></td></tr> <tr><td>SHOW_FIND_A_TREE_TIP</td> <td><code>4</code></td></tr> <tr><td>SHOW_BREAK_A_WOOD_TIP</td> <td><code>5</code></td></tr> <tr><td>SHOW_OPEN_INVENTORY_TIP</td> <td><code>6</code></td></tr> <tr><td>SHOW_NEED_MORE_MATERIALS_TIP</td> <td><code>7</code></td></tr> <tr><td>SHOW_SELECT_CRAFTTABLE_IN_HOTBAR_TIP</td> <td><code>8</code></td></tr> <tr><td>SHOW_PLACE_CRAFTING_TABLE_TIP</td> <td><code>9</code></td></tr> <tr><td>SHOW_USE_CRAFTING_TABLE_TIP</td> <td><code>10</code></td></tr> <tr><td>SHOW_SELECT_PICKAXE_IN_HOTBAR_TIP</td> <td><code>11</code></td></tr> <tr><td>SHOW_HINTS_DONE_TIP</td> <td><code>12</code></td></tr></tbody></table> <h3 id="gltf-image-imagemimetype"><a href="#gltf-image-imagemimetype" class="header-anchor">#</a> <code>glTF::Image::ImageMimeType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>PNG</td> <td><code>0</code></td></tr></tbody></table> <h3 id="gltf-texture-format"><a href="#gltf-texture-format" class="header-anchor">#</a> <code>glTF::Texture::Format</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ALPHA</td> <td><code>6406</code></td></tr> <tr><td>RGB</td> <td><code>6407</code></td></tr> <tr><td>RGBA</td> <td><code>6408</code></td></tr> <tr><td>LUMINANCE</td> <td><code>6409</code></td></tr> <tr><td>LUMINANCE_ALPHA</td> <td><code>6410</code></td></tr></tbody></table> <h3 id="gltf-texture-target"><a href="#gltf-texture-target" class="header-anchor">#</a> <code>glTF::Texture::Target</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>TEXTURE_2D</td> <td><code>3553</code></td></tr></tbody></table> <h3 id="gltf-texture-type"><a href="#gltf-texture-type" class="header-anchor">#</a> <code>glTF::Texture::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="gltf-material-alphamode"><a href="#gltf-material-alphamode" class="header-anchor">#</a> <code>glTF::Material::AlphaMode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>OPAQUE_MODE</td> <td><code>0</code></td></tr> <tr><td>MASK</td> <td><code>1</code></td></tr> <tr><td>BLEND</td> <td><code>2</code></td></tr></tbody></table> <h3 id="gltf-mesh-primitive-mode"><a href="#gltf-mesh-primitive-mode" class="header-anchor">#</a> <code>glTF::Mesh::Primitive::Mode</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>POINT</td> <td><code>0</code></td></tr> <tr><td>LINES</td> <td><code>1</code></td></tr> <tr><td>LINE_LOOP</td> <td><code>2</code></td></tr> <tr><td>LINE_STRIP</td> <td><code>3</code></td></tr> <tr><td>TRIANGLES</td> <td><code>4</code></td></tr> <tr><td>TRIANGLE_STRIP</td> <td><code>5</code></td></tr> <tr><td>TRIANGLE_FAN</td> <td><code>6</code></td></tr></tbody></table> <h3 id="gginput-event"><a href="#gginput-event" class="header-anchor">#</a> <code>GGInput::Event</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>VECTOR_GAZE_RAW_POSITION</td> <td><code>0</code></td></tr> <tr><td>VECTOR_GAZE_RAW_DIRECTION</td> <td><code>1</code></td></tr> <tr><td>VECTOR_GAZE_RAW_DELTA_POS</td> <td><code>2</code></td></tr> <tr><td>VECTOR_GAZE_RAW_DELTA_DIR</td> <td><code>3</code></td></tr> <tr><td>VECTOR_GAZE_HOLOSCREEN_POSITION</td> <td><code>4</code></td></tr> <tr><td>VECTOR_GAZE_HOLOSCREEN_DIRECTION</td> <td><code>5</code></td></tr> <tr><td>VECTOR_GAZE_HOLOVIEWER_POSITION</td> <td><code>6</code></td></tr> <tr><td>VECTOR_GAZE_HOLOVIEWER_DIRECTION</td> <td><code>7</code></td></tr> <tr><td>VECTOR_HAND1_WORLD_POSITION</td> <td><code>8</code></td></tr> <tr><td>VECTOR_HAND1_WORLD_DELTA_POS</td> <td><code>9</code></td></tr> <tr><td>VECTOR_HAND2_WORLD_POSITION</td> <td><code>10</code></td></tr> <tr><td>VECTOR_HAND2_WORLD_DELTA_POS</td> <td><code>11</code></td></tr> <tr><td>VECTOR_EVENTS_END</td> <td><code>12</code></td></tr> <tr><td>GESTURE_HAND_DETECTED</td> <td><code>13</code></td></tr> <tr><td>GESTURE_HAND_LOST</td> <td><code>14</code></td></tr> <tr><td>GESTURE_FINGER_PRESSED</td> <td><code>15</code></td></tr> <tr><td>GESTURE_FINGER_RELEASED</td> <td><code>16</code></td></tr> <tr><td>GESTURE_HAND_TAP</td> <td><code>17</code></td></tr> <tr><td>GESTURE_HAND_CIRCLE</td> <td><code>18</code></td></tr> <tr><td>GESTURE_HAND_SWIPE_LEFT</td> <td><code>19</code></td></tr> <tr><td>GESTURE_HAND_SWIPE_RIGHT</td> <td><code>20</code></td></tr> <tr><td>GESTURE_EVENTS_END</td> <td><code>21</code></td></tr></tbody></table> <h3 id="gamecontrollerbuttonstate"><a href="#gamecontrollerbuttonstate" class="header-anchor">#</a> <code>GameControllerButtonState</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="glm-ctor"><a href="#glm-ctor" class="header-anchor">#</a> <code>glm::ctor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum glm::ctor : __int32
+{
+  uninitialize = 0x0,
+};
+
+</code></pre></div><h3 id="gamerules-gamerulesindex"><a href="#gamerules-gamerulesindex" class="header-anchor">#</a> <code>GameRules::GameRulesIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum GameRules::GameRulesIndex : __int32
+{
+  INVALID_GAME_RULE = 0xFFFFFFFF,
+  COMMAND_BLOCK_OUTPUT = 0x0,
+  DO_DAYLIGHT_CYCLE = 0x1,
+  DO_ENTITY_DROPS = 0x2,
+  DO_FIRE_TICK = 0x3,
+  DO_MOB_LOOT = 0x4,
+  DO_MOB_SPAWNING = 0x5,
+  DO_TILE_DROPS = 0x6,
+  DO_WEATHER_CYCLE = 0x7,
+  DROWNING_DAMAGE = 0x8,
+  FALL_DAMAGE = 0x9,
+  FIRE_DAMAGE = 0xA,
+  KEEP_INVENTORY = 0xB,
+  MOB_GRIEFING = 0xC,
+  PVP = 0xD,
+  SHOW_COORDINATES = 0xE,
+  DO_NATURAL_REGENERATION = 0xF,
+  DO_TNT_EXPLODE = 0x10,
+  SEND_COMMAND_FEEDBACK = 0x11,
+  MAX_COMMAND_CHAIN_LENGTH = 0x12,
+  DO_INSOMNIA = 0x13,
+  COMMAND_BLOCKS_ENABLED = 0x14,
+  RANDOM_TICK_SPEED = 0x15,
+  DO_IMMEDIATE_RESPAWN = 0x16,
+  SHOW_DEATH_MESSAGES = 0x17,
+  FUNCTION_COMMAND_LIMIT = 0x18,
+  PLAYER_SPAWN_RADIUS = 0x19,
+  SHOW_TAGS = 0x1A,
+  VANILLA_GAME_RULE_COUNT = 0x1B,
+  GLOBAL_MUTE = 0x1B,
+  ALLOW_DESTRUCTIVE_OBJECTS = 0x1C,
+  ALLOW_MOBS = 0x1D,
+  CODE_BUILDER = 0x1E,
+  EDU_GAME_RULE_COUNT = 0x1F,
+};
+
+</code></pre></div><h3 id="glm-precision"><a href="#glm-precision" class="header-anchor">#</a> <code>glm::precision</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum glm::precision : __int32
+{
+  packed_highp = 0x0,
+  packed_mediump = 0x1,
+  packed_lowp = 0x2,
+  aligned_highp = 0x3,
+  aligned_mediump = 0x4,
+  aligned_lowp = 0x5,
+  aligned = 0x3,
+  highp = 0x0,
+  mediump = 0x1,
+  lowp = 0x2,
+  packed = 0x0,
+  defaultp = 0x0,
+};
+
+</code></pre></div><h3 id="gameversion-octet"><a href="#gameversion-octet" class="header-anchor">#</a> <code>GameVersion::Octet</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Actor::InitializationMethod GameVersion::Octet;
+
+</code></pre></div><h3 id="gamecontrollererrortype"><a href="#gamecontrollererrortype" class="header-anchor">#</a> <code>GameControllerErrorType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum GameControllerErrorType : __int8
+{
+  NoError = 0x0,
+  ControllerRequired = 0x1,
+  InvalidConfiguration = 0x2,
+  AdhocOverWirelessConnectionLimit = 0x3,
+  AdhocInvalidConfiguration = 0x4,
+};
+
+</code></pre></div><h3 id="gameusertype"><a href="#gameusertype" class="header-anchor">#</a> <code>GameUserType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation GameUserType;
+
+</code></pre></div><h3 id="glm-detail-is-int-unsigned-int64-test"><a href="#glm-detail-is-int-unsigned-int64-test" class="header-anchor">#</a> <code>glm::detail::is_int&lt;unsigned __int64&gt;::test</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; glm::detail::is_int&lt;unsigned __int64&gt;::test;
+
+</code></pre></div><h3 id="glm-detail-is-int-int-test"><a href="#glm-detail-is-int-int-test" class="header-anchor">#</a> <code>glm::detail::is_int&lt;int&gt;::test</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; glm::detail::is_int&lt;int&gt;::test;
+
+</code></pre></div><h3 id="glm-detail-is-int-int64-test"><a href="#glm-detail-is-int-int64-test" class="header-anchor">#</a> <code>glm::detail::is_int&lt;__int64&gt;::test</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; glm::detail::is_int&lt;__int64&gt;::test;
+
+</code></pre></div><h3 id="glm-detail-is-int-unsigned-int-test"><a href="#glm-detail-is-int-unsigned-int-test" class="header-anchor">#</a> <code>glm::detail::is_int&lt;unsigned int&gt;::test</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; glm::detail::is_int&lt;unsigned int&gt;::test;
+
+</code></pre></div><h3 id="gltf-sampler-magfilter"><a href="#gltf-sampler-magfilter" class="header-anchor">#</a> <code>glTF::Sampler::MagFilter</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum glTF::Sampler::MagFilter : __int32
+{
+  NEAREST = 0x2600,
+  LINEAR = 0x2601,
+};
+
+</code></pre></div><h3 id="gltf-sampler-minfilter"><a href="#gltf-sampler-minfilter" class="header-anchor">#</a> <code>glTF::Sampler::MinFilter</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef glTF::Sampler::MagFilter glTF::Sampler::MinFilter;
+
+</code></pre></div><h3 id="gltf-sampler-wraps"><a href="#gltf-sampler-wraps" class="header-anchor">#</a> <code>glTF::Sampler::WrapS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum glTF::Sampler::WrapS : __int32
+{
+  CLAMP_TO_EDGE = 0x812F,
+  MIRRORED_REPEAT = 0x8370,
+  REPEAT = 0x2901,
+};
+
+</code></pre></div><h3 id="gltf-sampler-wrapt"><a href="#gltf-sampler-wrapt" class="header-anchor">#</a> <code>glTF::Sampler::WrapT</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef glTF::Sampler::WrapS glTF::Sampler::WrapT;
+
+</code></pre></div><h3 id="gltf-shader-type"><a href="#gltf-shader-type" class="header-anchor">#</a> <code>glTF::Shader::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum glTF::Shader::Type : __int32
+{
+  FRAGMENT_SHADER = 0x8B30,
+  VERTEX_SHADER = 0x8B31,
+};
+
+</code></pre></div><h3 id="guimessage-messagetype"><a href="#guimessage-messagetype" class="header-anchor">#</a> <code>GuiMessage::MessageType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation GuiMessage::MessageType;
+
+</code></pre></div><h3 id="gamecontrollerstickstate"><a href="#gamecontrollerstickstate" class="header-anchor">#</a> <code>GameControllerStickState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Lockless::MemoryOrder GameControllerStickState;
+
+</code></pre></div><h3 id="gameconnectiontype"><a href="#gameconnectiontype" class="header-anchor">#</a> <code>GameConnectionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef RealmsEnvironment GameConnectionType;
+
+</code></pre></div><h3 id="gamestore-state"><a href="#gamestore-state" class="header-anchor">#</a> <code>GameStore::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ClientInstanceState GameStore::State;
+
+</code></pre></div><h3 id="gradientrenderer-gradientdirection"><a href="#gradientrenderer-gradientdirection" class="header-anchor">#</a> <code>GradientRenderer::GradientDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftEventing::SplitScreenMode GradientRenderer::GradientDirection;
+
+</code></pre></div><h3 id="gamecontrollereventtype"><a href="#gamecontrollereventtype" class="header-anchor">#</a> <code>GameControllerEventType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum GameControllerEventType : __int32
+{
+  ButtonEvent = 0x0,
+  StickEvent = 0x1,
+  TriggerEvent = 0x2,
+  JoinGameEvent = 0x3,
+  ChangeUserEvent = 0x4,
+  ConnectionStateChangeEvent = 0x5,
+};
+
+</code></pre></div><h3 id="gameplaytipstatus"><a href="#gameplaytipstatus" class="header-anchor">#</a> <code>GamePlayTipStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef InventoryTipStatus GamePlayTipStatus;
+
+</code></pre></div><h3 id="generalmultiplayerwarningstate"><a href="#generalmultiplayerwarningstate" class="header-anchor">#</a> <code>GeneralMultiplayerWarningState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation GeneralMultiplayerWarningState;
+
+</code></pre></div><h3 id="glm-detail-is-int-float-test"><a href="#glm-detail-is-int-float-test" class="header-anchor">#</a> <code>glm::detail::is_int&lt;float&gt;::test</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef moodycamel::details::static_is_lock_free_num&lt;long&gt;::&lt;unnamed_enum_value&gt; glm::detail::is_int&lt;float&gt;::test;
+
+</code></pre></div><h3 id="grindstonescreencontroller-slotindex"><a href="#grindstonescreencontroller-slotindex" class="header-anchor">#</a> <code>GrindstoneScreenController::SlotIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef AnvilScreenController::SlotIndex GrindstoneScreenController::SlotIndex;
+
+</code></pre></div><h3 id="gx-tuplecountflags"><a href="#gx-tuplecountflags" class="header-anchor">#</a> <code>GX_TupleCountFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum GX_TupleCountFlags_ : __int32
+{
+  GX_TC_TUPLES_SHARE_POINT_NUMBERS = 0x8000,
+  GX_TC_RESERVED_TUPLE_FLAGS = 0x7000,
+  GX_TC_TUPLE_COUNT_MASK = 0xFFF,
+};
+
+</code></pre></div><h3 id="gx-tupleindexflags"><a href="#gx-tupleindexflags" class="header-anchor">#</a> <code>GX_TupleIndexFlags_</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum GX_TupleIndexFlags_ : __int32
+{
+  GX_TI_EMBEDDED_TUPLE_COORD = 0x8000,
+  GX_TI_INTERMEDIATE_TUPLE = 0x4000,
+  GX_TI_PRIVATE_POINT_NUMBERS = 0x2000,
+  GX_TI_RESERVED_TUPLE_FLAG = 0x1000,
+  GX_TI_TUPLE_INDEX_MASK = 0xFFF,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/F.html" class="prev">
+        F
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/H.html">
+        H
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/69.b4bc257c.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>R | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/50.aa126f14.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" aria-current="page" class="active sidebar-link">R</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="r"><a href="#r" class="header-anchor">#</a> R</h1> <h3 id="resourcepackrepository"><a href="#resourcepackrepository" class="header-anchor">#</a> <code>ResourcePackRepository</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Core::FilePathManager *</code></td> <td>mFilePathManager</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;std::unique_ptr&lt;ResourcePack&gt;&gt;</code></td> <td>mAllResourcePacks</td></tr> <tr><td>32</td> <td>(8) <code>std::unique_ptr&lt;CompositePackSource&gt;</code></td> <td>mPackSource</td></tr> <tr><td>40</td> <td>(8) <code>std::unique_ptr&lt;CompositePackSource&gt;</code></td> <td>mCachePackSource</td></tr> <tr><td>48</td> <td>(8) <code>std::unique_ptr&lt;CompositePackSource&gt;</code></td> <td>mWorldPackSource</td></tr> <tr><td>56</td> <td>(8) <code>std::unique_ptr&lt;CompositePackSource&gt;</code></td> <td>mPremiumWorldTemplatePackSource</td></tr> <tr><td>64</td> <td>(8) <code>std::unique_ptr&lt;PackSourceReport&gt;</code></td> <td>mPackSourceReport</td></tr> <tr><td>72</td> <td>(8) <code>ResourcePack *</code></td> <td>mVanillaPack</td></tr> <tr><td>80</td> <td>(8) <code>ResourcePack *</code></td> <td>mChemistryPack</td></tr> <tr><td>88</td> <td>(8) <code>ResourcePack *</code></td> <td>mChemistryServerPack</td></tr> <tr><td>96</td> <td>(24) <code>std::vector&lt;ResourceLocation&gt;</code></td> <td>mInvalidPackLocation</td></tr> <tr><td>120</td> <td>(24) <code>std::vector&lt;ResourceLocation&gt;</code></td> <td>mInvalidBehaviorPackLocation</td></tr> <tr><td>144</td> <td>(24) <code>std::vector&lt;ResourceLocation&gt;</code></td> <td>mInvalidResourcePackLocation</td></tr> <tr><td>168</td> <td>(24) <code>std::vector&lt;ResourceLocation&gt;</code></td> <td>mInvalidTemplatePackLocation</td></tr> <tr><td>192</td> <td>(8) <code>IMinecraftEventing *</code></td> <td>mEventing</td></tr> <tr><td>200</td> <td>(8) <code>PackManifestFactory *</code></td> <td>mManifestFactory</td></tr> <tr><td>208</td> <td>(8) <code>IContentAccessibilityProvider *</code></td> <td>mContentAccessibility</td></tr> <tr><td>216</td> <td>(32) <code>Core::HeapPathBuffer</code></td> <td>mCurrentWorldPath</td></tr> <tr><td>248</td> <td>(32) <code>Core::HeapPathBuffer</code></td> <td>mCurrentPremiumWorldTemplatePath</td></tr> <tr><td>280</td> <td>(56) <code>ContentKeyMap</code></td> <td>mTempCacheContentKeys</td></tr> <tr><td>336</td> <td>(4) <code>const int</code></td> <td>mKnownPacksFileVerison</td></tr> <tr><td>344</td> <td>(8) <code>std::unique_ptr&lt;PackSettingsFactory&gt;</code></td> <td>mPackSettingsFactory</td></tr> <tr><td>352</td> <td>(8) <code>PackSourceFactory *</code></td> <td>mPackSourceFactory</td></tr> <tr><td>360</td> <td>(24) <code>ResourcePackRepository::KnownPackContainer</code></td> <td>mCachedValidUserPacks</td></tr> <tr><td>384</td> <td>(24) <code>ResourcePackRepository::KnownPackContainer</code></td> <td>mCachedInvalidUserPacks</td></tr> <tr><td>408</td> <td>(48) <code>std::map&lt;void *,std::function&lt;void (ResourcePack *)&gt;&gt;</code></td> <td>mRemoveResourcePackCallback</td></tr> <tr><td>456</td> <td>(8) <code>std::unique_ptr&lt;TaskGroup&gt;</code></td> <td>mInitTaskGroup</td></tr> <tr><td>464</td> <td>(40) <code>Bedrock::Threading::Mutex</code></td> <td>mInitializeMutex</td></tr> <tr><td>504</td> <td>(1) <code>std::atomic&lt;bool&gt;</code></td> <td>mInitialized</td></tr> <tr><td>505</td> <td>(1) <code>std::atomic&lt;bool&gt;</code></td> <td>mReloadUserPacksRequested</td></tr> <tr><td>506</td> <td>(1) <code>std::atomic&lt;bool&gt;</code></td> <td>mRefreshPacksRequested</td></tr> <tr><td>512</td> <td>(24) <code>ContentIdentity</code></td> <td>mCurrentPremiumWorldTemplateIdentity</td></tr></tbody></table> <h3 id="resourcepackrepository-knownpackcontainer"><a href="#resourcepackrepository-knownpackcontainer" class="header-anchor">#</a> <code>ResourcePackRepository::KnownPackContainer</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;ResourcePackRepository::KnownPackInfo&gt;</code></td> <td>mPacks</td></tr></tbody></table> <h3 id="resourcelocation"><a href="#resourcelocation" class="header-anchor">#</a> <code>ResourceLocation</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>ResourceFileSystem</code></td> <td>mFileSystem</td></tr> <tr><td>8</td> <td>(32) <code>Core::HeapPathBuffer</code></td> <td>mPath</td></tr> <tr><td>40</td> <td>(8) <code>HashType64</code></td> <td>mPathHash</td></tr> <tr><td>48</td> <td>(8) <code>size_t</code></td> <td>mFullHash</td></tr></tbody></table> <h3 id="resourcemetadata"><a href="#resourcemetadata" class="header-anchor">#</a> <code>ResourceMetadata</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mAuthors</td></tr> <tr><td>24</td> <td>(32) <code>std::string</code></td> <td>mUrl</td></tr> <tr><td>56</td> <td>(32) <code>std::string</code></td> <td>mLicense</td></tr></tbody></table> <h3 id="resourcepackstack"><a href="#resourcepackstack" class="header-anchor">#</a> <code>ResourcePackStack</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ResourcePackStack</td></tr> <tr><td>8</td> <td>(24) <code>ResourcePackStack::PackInstanceStack</code></td> <td>mStack</td></tr> <tr><td>32</td> <td>(8) <code>std::unique_ptr&lt;PackSourceReport&gt;</code></td> <td>mPackSourceReport</td></tr></tbody></table> <h3 id="resourcepackstack-packinstancestack"><a href="#resourcepackstack-packinstancestack" class="header-anchor">#</a> <code>ResourcePackStack::PackInstanceStack</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;PackInstance&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="random"><a href="#random" class="header-anchor">#</a> <code>Random</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2516) <code>Bedrock::Application::ThreadOwner&lt;Core::Random&gt;</code></td> <td>mRandom</td></tr></tbody></table> <h3 id="range-int-1-iterator"><a href="#range-int-1-iterator" class="header-anchor">#</a> <code>Range&lt;int,-1&gt;::iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="range-int-1-iterator-2"><a href="#range-int-1-iterator-2" class="header-anchor">#</a> <code>Range&lt;int,1&gt;::iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="range-unsigned-int-1-iterator"><a href="#range-unsigned-int-1-iterator" class="header-anchor">#</a> <code>Range&lt;unsigned int,1&gt;::iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>unsigned int</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="rootlayer-layervalues-terrain-layerdata"><a href="#rootlayer-layervalues-terrain-layerdata" class="header-anchor">#</a> <code>RootLayer&lt;LayerValues::Terrain&gt;::LayerData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>LayerDetails::Storage</code></td> <td>baseclass_0</td></tr> <tr><td>32</td> <td>(16) <code>const LayerDetails::BufferAccessor&lt;char&gt;</code></td> <td>mParentArea</td></tr> <tr><td>48</td> <td>(16) <code>LayerDetails::BufferAccessor&lt;LayerValues::Terrain&gt;</code></td> <td>mResult</td></tr></tbody></table> <h3 id="rootlayer-biometemperaturecategory-layerdata"><a href="#rootlayer-biometemperaturecategory-layerdata" class="header-anchor">#</a> <code>RootLayer&lt;BiomeTemperatureCategory&gt;::LayerData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>LayerDetails::Storage</code></td> <td>baseclass_0</td></tr> <tr><td>32</td> <td>(16) <code>const LayerDetails::BufferAccessor&lt;char&gt;</code></td> <td>mParentArea</td></tr> <tr><td>48</td> <td>(16) <code>LayerDetails::BufferAccessor&lt;BiomeTemperatureCategory&gt;</code></td> <td>mResult</td></tr></tbody></table> <h3 id="realms-realmid"><a href="#realms-realmid" class="header-anchor">#</a> <code>Realms::RealmId</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>NewType&lt;long&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="raidbosscomponent"><a href="#raidbosscomponent" class="header-anchor">#</a> <code>RaidBossComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>Weak&lt;Village&gt;</code></td> <td>mVillage</td></tr> <tr><td>16</td> <td>(8) <code>ActorUniqueID</code></td> <td>mOwnerID</td></tr> <tr><td>24</td> <td>(32) <code>std::string</code></td> <td>mName</td></tr> <tr><td>56</td> <td>(32) <code>std::string</code></td> <td>mProgress</td></tr> <tr><td>88</td> <td>(4) <code>int</code></td> <td>mPlayersRegistered</td></tr> <tr><td>92</td> <td>(1) <code>bool</code></td> <td>mWaveStarted</td></tr> <tr><td>93</td> <td>(1) <code>bool</code></td> <td>mRaidInProgress</td></tr> <tr><td>94</td> <td>(1) <code>bool</code></td> <td>mHealthBarVisible</td></tr> <tr><td>96</td> <td>(4) <code>float</code></td> <td>mHealthPercent</td></tr> <tr><td>100</td> <td>(28) <code>AABB</code></td> <td>mBossBarVisibleBounds</td></tr> <tr><td>128</td> <td>(8) <code>std::chrono::_V2::steady_clock::time_point</code></td> <td>mLastPlayerUpdate</td></tr></tbody></table> <h3 id="railactivatorcomponent"><a href="#railactivatorcomponent" class="header-anchor">#</a> <code>RailActivatorComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="raknet-raknetguid"><a href="#raknet-raknetguid" class="header-anchor">#</a> <code>RakNet::RakNetGUID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>uint64_t</code></td> <td>g</td></tr> <tr><td>8</td> <td>(2) <code>RakNet::SystemIndex</code></td> <td>systemIndex</td></tr></tbody></table> <h3 id="readonlybinarystream"><a href="#readonlybinarystream" class="header-anchor">#</a> <code>ReadOnlyBinaryStream</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ReadOnlyBinaryStream</td></tr> <tr><td>8</td> <td>(8) <code>size_t</code></td> <td>mReadPointer</td></tr> <tr><td>16</td> <td>(32) <code>const std::string</code></td> <td>mOwnedBuffer</td></tr> <tr><td>48</td> <td>(8) <code>const std::string *</code></td> <td>mBuffer</td></tr></tbody></table> <h3 id="range-unsigned-long-1-iterator"><a href="#range-unsigned-long-1-iterator" class="header-anchor">#</a> <code>Range&lt;unsigned long,1&gt;::iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>unsigned __int64</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="raknet-raknetstatistics"><a href="#raknet-raknetstatistics" class="header-anchor">#</a> <code>RakNet::RakNetStatistics</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>uint64_t[7]</code></td> <td>valueOverLastSecond</td></tr> <tr><td>56</td> <td>(56) <code>uint64_t[7]</code></td> <td>runningTotal</td></tr> <tr><td>112</td> <td>(8) <code>RakNet::TimeUS</code></td> <td>connectionStartTime</td></tr> <tr><td>120</td> <td>(1) <code>bool</code></td> <td>isLimitedByCongestionControl</td></tr> <tr><td>128</td> <td>(8) <code>uint64_t</code></td> <td>BPSLimitByCongestionControl</td></tr> <tr><td>136</td> <td>(1) <code>bool</code></td> <td>isLimitedByOutgoingBandwidthLimit</td></tr> <tr><td>144</td> <td>(8) <code>uint64_t</code></td> <td>BPSLimitByOutgoingBandwidthLimit</td></tr> <tr><td>152</td> <td>(16) <code>unsigned int[4]</code></td> <td>messageInSendBuffer</td></tr> <tr><td>168</td> <td>(32) <code>double[4]</code></td> <td>bytesInSendBuffer</td></tr> <tr><td>200</td> <td>(4) <code>unsigned int</code></td> <td>messagesInResendBuffer</td></tr> <tr><td>208</td> <td>(8) <code>uint64_t</code></td> <td>bytesInResendBuffer</td></tr> <tr><td>216</td> <td>(4) <code>float</code></td> <td>packetlossLastSecond</td></tr> <tr><td>220</td> <td>(4) <code>float</code></td> <td>packetlossTotal</td></tr></tbody></table> <h3 id="raknet-systemaddress"><a href="#raknet-systemaddress" class="header-anchor">#</a> <code>RakNet::SystemAddress</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(128) <code>RakNet::SystemAddress::$17DEBC484162A322D6AFC648B0CB992A</code></td> <td>address</td></tr> <tr><td>128</td> <td>(2) <code>unsigned __int16</code></td> <td>debugPort</td></tr> <tr><td>130</td> <td>(2) <code>RakNet::SystemIndex</code></td> <td>systemIndex</td></tr></tbody></table> <h3 id="raknet-systemaddress-17debc484162a322d6afc648b0cb992a"><a href="#raknet-systemaddress-17debc484162a322d6afc648b0cb992a" class="header-anchor">#</a> <code>RakNet::SystemAddress::$17DEBC484162A322D6AFC648B0CB992A</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(128) <code>sockaddr_storage</code></td> <td>sa_stor</td></tr> <tr><td>1</td> <td>(28) <code>sockaddr_in6</code></td> <td>addr6</td></tr> <tr><td>2</td> <td>(16) <code>sockaddr_in</code></td> <td>addr4</td></tr></tbody></table> <h3 id="raknetinstance-storelocalip-7ef7c94beab75c6cef4adfb99b570420"><a href="#raknetinstance-storelocalip-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>RakNetInstance::_storeLocalIP::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="raknetinstance-natconnectioninfo"><a href="#raknetinstance-natconnectioninfo" class="header-anchor">#</a> <code>RakNetInstance::NatConnectionInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(136) <code>RakNet::SystemAddress</code></td> <td>remoteAddress</td></tr> <tr><td>136</td> <td>(4) <code>RakNet::TimeMS</code></td> <td>lastNatPingSendTime</td></tr> <tr><td>140</td> <td>(4) <code>uint32_t</code></td> <td>natPingSendCount</td></tr> <tr><td>144</td> <td>(1) <code>bool</code></td> <td>pongReceived</td></tr></tbody></table> <h3 id="raknet-bitstream"><a href="#raknet-bitstream" class="header-anchor">#</a> <code>RakNet::BitStream</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>RakNet::BitSize_t</code></td> <td>numberOfBitsUsed</td></tr> <tr><td>4</td> <td>(4) <code>RakNet::BitSize_t</code></td> <td>numberOfBitsAllocated</td></tr> <tr><td>8</td> <td>(4) <code>RakNet::BitSize_t</code></td> <td>readOffset</td></tr> <tr><td>16</td> <td>(8) <code>unsigned __int8 *</code></td> <td>data</td></tr> <tr><td>24</td> <td>(1) <code>bool</code></td> <td>copyData</td></tr> <tr><td>25</td> <td>(256) <code>unsigned __int8[256]</code></td> <td>stackData</td></tr></tbody></table> <h3 id="raknet-rakstring"><a href="#raknet-rakstring" class="header-anchor">#</a> <code>RakNet::RakString</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>RakNet::RakString::SharedString *</code></td> <td>sharedString</td></tr></tbody></table> <h3 id="raknetserverlocator-scopelock"><a href="#raknetserverlocator-scopelock" class="header-anchor">#</a> <code>RakNetServerLocator::ScopeLock</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>std::lock_guard&lt;std::recursive_mutex&gt;::mutex_type *</code></td> <td>_M_device</td></tr></tbody></table> <h3 id="raknet-socketdescriptor"><a href="#raknet-socketdescriptor" class="header-anchor">#</a> <code>RakNet::SocketDescriptor</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>unsigned __int16</code></td> <td>port</td></tr> <tr><td>2</td> <td>(32) <code>char[32]</code></td> <td>hostAddress</td></tr> <tr><td>34</td> <td>(2) <code>__int16</code></td> <td>socketFamily</td></tr> <tr><td>36</td> <td>(2) <code>unsigned __int16</code></td> <td>remotePortRakNetWasStartedOn_PS3_PSP2</td></tr> <tr><td>40</td> <td>(4) <code>int</code></td> <td>chromeInstance</td></tr> <tr><td>44</td> <td>(1) <code>bool</code></td> <td>blockingSocket</td></tr> <tr><td>48</td> <td>(4) <code>unsigned int</code></td> <td>extraSocketOptions</td></tr></tbody></table> <h3 id="resourcepackstackpacket"><a href="#resourcepackstackpacket" class="header-anchor">#</a> <code>ResourcePackStackPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(24) <code>std::vector&lt;PackInstanceId&gt;</code></td> <td>mAddOnIdsAndVersions</td></tr> <tr><td>64</td> <td>(24) <code>std::vector&lt;PackInstanceId&gt;</code></td> <td>mTexturePackIdsAndVersions</td></tr> <tr><td>88</td> <td>(112) <code>BaseGameVersion</code></td> <td>mBaseGameVersion</td></tr> <tr><td>200</td> <td>(1) <code>bool</code></td> <td>mTexturePackRequired</td></tr> <tr><td>201</td> <td>(1) <code>bool</code></td> <td>mExperimental</td></tr></tbody></table> <h3 id="recipes-furnacerecipekey"><a href="#recipes-furnacerecipekey" class="header-anchor">#</a> <code>Recipes::FurnaceRecipeKey</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mID</td></tr> <tr><td>8</td> <td>(40) <code>Util::HashString</code></td> <td>mTag</td></tr></tbody></table> <h3 id="resourcepacksinfopacket"><a href="#resourcepacksinfopacket" class="header-anchor">#</a> <code>ResourcePacksInfoPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(56) <code>ResourcePacksInfoData</code></td> <td>mData</td></tr></tbody></table> <h3 id="resourcepacksinfodata"><a href="#resourcepacksinfodata" class="header-anchor">#</a> <code>ResourcePacksInfoData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mTexturePackRequired</td></tr> <tr><td>1</td> <td>(1) <code>bool</code></td> <td>mHasScripts</td></tr> <tr><td>2</td> <td>(1) <code>bool</code></td> <td>mHasExceptions</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;ResourcePackInfoData&gt;</code></td> <td>mAddOnPacks</td></tr> <tr><td>32</td> <td>(24) <code>std::vector&lt;ResourcePackInfoData&gt;</code></td> <td>mTexturePacks</td></tr></tbody></table> <h3 id="recipe-resultlist"><a href="#recipe-resultlist" class="header-anchor">#</a> <code>Recipe::ResultList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;ItemInstance&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="resourceinformation"><a href="#resourceinformation" class="header-anchor">#</a> <code>ResourceInformation</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mDescription</td></tr> <tr><td>32</td> <td>(112) <code>SemVersion</code></td> <td>mVersion</td></tr> <tr><td>144</td> <td>(16) <code>mce::UUID</code></td> <td>mUUID</td></tr> <tr><td>160</td> <td>(4) <code>ResourceInformation::ResourceType</code></td> <td>mType</td></tr> <tr><td>168</td> <td>(32) <code>std::string</code></td> <td>mEntry</td></tr></tbody></table> <h3 id="resourcetaskcallback"><a href="#resourcetaskcallback" class="header-anchor">#</a> <code>ResourceTaskCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;TaskResult ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="resourcemainthreadcallback"><a href="#resourcemainthreadcallback" class="header-anchor">#</a> <code>ResourceMainThreadCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void ()&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="resourcepack-callback"><a href="#resourcepack-callback" class="header-anchor">#</a> <code>ResourcePack::Callback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (const Core::Path &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="resourcepackcontents"><a href="#resourcepackcontents" class="header-anchor">#</a> <code>ResourcePackContents</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>mUIJson</td></tr> <tr><td>4</td> <td>(4) <code>uint32_t</code></td> <td>mUITextures</td></tr> <tr><td>8</td> <td>(4) <code>uint32_t</code></td> <td>mSound</td></tr> <tr><td>12</td> <td>(4) <code>uint32_t</code></td> <td>mBlockJson</td></tr> <tr><td>16</td> <td>(4) <code>uint32_t</code></td> <td>mBlockTextures</td></tr> <tr><td>20</td> <td>(4) <code>uint32_t</code></td> <td>mItemTextures</td></tr> <tr><td>24</td> <td>(4) <code>uint32_t</code></td> <td>mEntityTextures</td></tr> <tr><td>28</td> <td>(4) <code>uint32_t</code></td> <td>mModelGeometry</td></tr> <tr><td>32</td> <td>(4) <code>uint32_t</code></td> <td>mAnimations</td></tr> <tr><td>36</td> <td>(4) <code>uint32_t</code></td> <td>mMaterials</td></tr> <tr><td>40</td> <td>(4) <code>uint32_t</code></td> <td>mLanguages</td></tr></tbody></table> <h3 id="resourcepackrepository-knownpackinfo"><a href="#resourcepackrepository-knownpackinfo" class="header-anchor">#</a> <code>ResourcePackRepository::KnownPackInfo</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mDiscoveredOnDisk</td></tr> <tr><td>8</td> <td>(56) <code>ResourceLocation</code></td> <td>mResourceLocation</td></tr> <tr><td>64</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mPastHashes</td></tr> <tr><td>88</td> <td>(136) <code>PackIdVersion</code></td> <td>mIdentity</td></tr></tbody></table> <h3 id="removeactorpacket"><a href="#removeactorpacket" class="header-anchor">#</a> <code>RemoveActorPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>ActorUniqueID</code></td> <td>mEntityId</td></tr></tbody></table> <h3 id="rotationdescription"><a href="#rotationdescription" class="header-anchor">#</a> <code>RotationDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Description</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>Vec2</code></td> <td>mRot</td></tr></tbody></table> <h3 id="range-unsigned-short-1-iterator"><a href="#range-unsigned-short-1-iterator" class="header-anchor">#</a> <code>Range&lt;unsigned short,1&gt;::iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>unsigned __int16</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="resourcepackdatainfopacket"><a href="#resourcepackdatainfopacket" class="header-anchor">#</a> <code>ResourcePackDataInfoPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mResourceName</td></tr> <tr><td>72</td> <td>(4) <code>uint32_t</code></td> <td>mChunkSize</td></tr> <tr><td>76</td> <td>(4) <code>int</code></td> <td>mNbChunks</td></tr> <tr><td>80</td> <td>(8) <code>uint64_t</code></td> <td>mFileSize</td></tr> <tr><td>88</td> <td>(32) <code>std::string</code></td> <td>mFileHash</td></tr> <tr><td>120</td> <td>(1) <code>PackType</code></td> <td>mPackType</td></tr> <tr><td>121</td> <td>(1) <code>bool</code></td> <td>mIsPremium</td></tr></tbody></table> <h3 id="resourcepackchunkdatapacket"><a href="#resourcepackchunkdatapacket" class="header-anchor">#</a> <code>ResourcePackChunkDataPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mResourceName</td></tr> <tr><td>72</td> <td>(4) <code>int</code></td> <td>mChunkID</td></tr> <tr><td>80</td> <td>(8) <code>uint64_t</code></td> <td>mByteOffset</td></tr> <tr><td>88</td> <td>(24) <code>std::vector&lt;unsigned char&gt;</code></td> <td>mData</td></tr></tbody></table> <h3 id="range-short-1-iterator"><a href="#range-short-1-iterator" class="header-anchor">#</a> <code>Range&lt;short,1&gt;::iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>__int16</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="ropeparams"><a href="#ropeparams" class="header-anchor">#</a> <code>RopeParams</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mNodeDist</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mNodeSize</td></tr> <tr><td>8</td> <td>(4) <code>float</code></td> <td>mGravity</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>mSlack</td></tr> <tr><td>16</td> <td>(4) <code>float</code></td> <td>mMaxTension</td></tr> <tr><td>20</td> <td>(4) <code>float</code></td> <td>mVelDamping</td></tr> <tr><td>24</td> <td>(4) <code>float</code></td> <td>mRelaxation</td></tr> <tr><td>28</td> <td>(4) <code>float</code></td> <td>mFriction</td></tr> <tr><td>32</td> <td>(12) <code>Vec3</code></td> <td>mStartPin</td></tr> <tr><td>44</td> <td>(12) <code>Vec3</code></td> <td>mEndPin</td></tr> <tr><td>56</td> <td>(8) <code>size_t</code></td> <td>mIterations</td></tr> <tr><td>64</td> <td>(8) <code>size_t</code></td> <td>mDestroyDelay</td></tr> <tr><td>72</td> <td>(4) <code>int</code></td> <td>mFlags</td></tr> <tr><td>76</td> <td>(4) <code>float</code></td> <td>mLength</td></tr> <tr><td>80</td> <td>(4) <code>float</code></td> <td>mOriginalNodeDist</td></tr></tbody></table> <h3 id="rideablecomponent"><a href="#rideablecomponent" class="header-anchor">#</a> <code>RideableComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="raidtriggercomponent"><a href="#raidtriggercomponent" class="header-anchor">#</a> <code>RaidTriggerComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>IEntityComponent</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="runtimeidentifierdescription"><a href="#runtimeidentifierdescription" class="header-anchor">#</a> <code>RuntimeIdentifierDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>DefintionDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(32) <code>std::string</code></td> <td>mRuntimeId</td></tr></tbody></table> <h3 id="raid-actoridcollection"><a href="#raid-actoridcollection" class="header-anchor">#</a> <code>Raid::ActorIDCollection</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_set&lt;ActorUniqueID&gt;::_Hashtable</code></td> <td>_M_h</td></tr></tbody></table> <h3 id="reverseableiterator-iterator"><a href="#reverseableiterator-iterator" class="header-anchor">#</a> <code>ReverseableIterator::Iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mI</td></tr> <tr><td>4</td> <td>(1) <code>bool</code></td> <td>mReversed</td></tr></tbody></table> <h3 id="resourcepackmergestrategy"><a href="#resourcepackmergestrategy" class="header-anchor">#</a> <code>ResourcePackMergeStrategy</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ResourcePackMergeStrategy</td></tr></tbody></table> <h3 id="recipeingredient"><a href="#recipeingredient" class="header-anchor">#</a> <code>RecipeIngredient</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>ItemDescriptorCount</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="recipemap"><a href="#recipemap" class="header-anchor">#</a> <code>RecipeMap</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(48) <code>std::map&lt;std::string,std::unique_ptr&lt;Recipe&gt;&gt;::_Rep_type</code></td> <td>_M_t</td></tr></tbody></table> <h3 id="range-unsigned-char-x01-iterator"><a href="#range-unsigned-char-x01-iterator" class="header-anchor">#</a> <code>Range&lt;unsigned char,'_x01'&gt;::iterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>unsigned __int8</code></td> <td>mIndex</td></tr></tbody></table> <h3 id="recipes-addshapedrecipe-map"><a href="#recipes-addshapedrecipe-map" class="header-anchor">#</a> <code>Recipes::addShapedRecipe::Map</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(48) <code>std::map&lt;char,RecipeIngredient&gt;::_Rep_type</code></td> <td>_M_t</td></tr></tbody></table> <h3 id="recipes-addshapedrecipe-7ef7c94beab75c6cef4adfb99b570420"><a href="#recipes-addshapedrecipe-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Recipes::addShapedRecipe::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="recipe-ingredients"><a href="#recipe-ingredients" class="header-anchor">#</a> <code>Recipe::Ingredients</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;RecipeIngredient&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="recipes-typelist"><a href="#recipes-typelist" class="header-anchor">#</a> <code>Recipes::TypeList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;Recipes::Type&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="rowlist"><a href="#rowlist" class="header-anchor">#</a> <code>RowList</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::string&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="recipes-addshapelessrecipe-7ef7c94beab75c6cef4adfb99b570420"><a href="#recipes-addshapelessrecipe-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Recipes::addShapelessRecipe::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="rakdatainput"><a href="#rakdatainput" class="header-anchor">#</a> <code>RakDataInput</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>BytesDataInput</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>RakNet::BitStream *</code></td> <td>mBitStream</td></tr></tbody></table> <h3 id="renderparams"><a href="#renderparams" class="header-anchor">#</a> <code>RenderParams</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>BaseActorRenderContext *</code></td> <td>mBaseActorRenderContext</td></tr> <tr><td>8</td> <td>(8) <code>MolangVariableMap *</code></td> <td>mVariables</td></tr> <tr><td>16</td> <td>(8) <code>AnimationComponent *</code></td> <td>mAnimationComponent</td></tr> <tr><td>24</td> <td>(8) <code>AnimationComponent *</code></td> <td>mRootAnimationComponent</td></tr> <tr><td>32</td> <td>(8) <code>DataDrivenModel *</code></td> <td>mRootModel</td></tr> <tr><td>40</td> <td>(8) <code>DataDrivenModel *</code></td> <td>mModel</td></tr> <tr><td>48</td> <td>(8) <code>Actor *</code></td> <td>mActor</td></tr> <tr><td>56</td> <td>(8) <code>BlockSource *</code></td> <td>mBlockSource</td></tr> <tr><td>64</td> <td>(8) <code>ActorRenderData *</code></td> <td>mActorRenderData</td></tr> <tr><td>72</td> <td>(4) <code>int32_t</code></td> <td>mVertexCount</td></tr> <tr><td>76</td> <td>(2) <code>uint16_t</code></td> <td>mSubRenderLayerIndex</td></tr> <tr><td>80</td> <td>(32) <code>std::function&lt;float ()&gt;</code></td> <td>mRandomFunction</td></tr> <tr><td>112</td> <td>(4) <code>float</code></td> <td>mCameraDistance</td></tr> <tr><td>116</td> <td>(32) <code>float[8]</code></td> <td>mParams</td></tr> <tr><td>148</td> <td>(4) <code>RenderParams::$3D9EB0E7A2790D70080124A37CC6ABC8</code></td> <td>mFlags</td></tr></tbody></table> <h3 id="renderparams-3d9eb0e7a2790d70080124a37cc6abc8"><a href="#renderparams-3d9eb0e7a2790d70080124a37cc6abc8" class="header-anchor">#</a> <code>RenderParams::$3D9EB0E7A2790D70080124A37CC6ABC8</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>RenderParams::$3D9EB0E7A2790D70080124A37CC6ABC8::$7CDB70B13784CF5DCA20C1417F11D194</code></td> <td>_anon_0</td></tr> <tr><td>1</td> <td>(4) <code>uint32_t</code></td> <td>_data</td></tr></tbody></table> <h3 id="renderparams-3d9eb0e7a2790d70080124a37cc6abc8-7cdb70b13784cf5dca20c1417f11d194"><a href="#renderparams-3d9eb0e7a2790d70080124a37cc6abc8-7cdb70b13784cf5dca20c1417f11d194" class="header-anchor">#</a> <code>RenderParams::$3D9EB0E7A2790D70080124A37CC6ABC8::$7CDB70B13784CF5DCA20C1417F11D194</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8</code></td> <td>_bf_0</td></tr></tbody></table> <h3 id="roomdefinition"><a href="#roomdefinition" class="header-anchor">#</a> <code>RoomDefinition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>std::enable_shared_from_this&lt;RoomDefinition&gt;</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>mIndex</td></tr> <tr><td>24</td> <td>(24) <code>std::vector&lt;std::shared_ptr&lt;RoomDefinition&gt;&gt;</code></td> <td>mConnections</td></tr> <tr><td>48</td> <td>(40) <code>std::vector&lt;bool&gt;</code></td> <td>mHasOpening</td></tr> <tr><td>88</td> <td>(1) <code>bool</code></td> <td>mClaimed</td></tr> <tr><td>89</td> <td>(1) <code>bool</code></td> <td>mIsSource</td></tr> <tr><td>92</td> <td>(4) <code>int</code></td> <td>mScanIndex</td></tr></tbody></table> <h3 id="rakdataoutput"><a href="#rakdataoutput" class="header-anchor">#</a> <code>RakDataOutput</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>BytesDataOutput</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>RakNet::BitStream *</code></td> <td>mBitStream</td></tr></tbody></table> <h3 id="randomvaluebounds"><a href="#randomvaluebounds" class="header-anchor">#</a> <code>RandomValueBounds</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mMin</td></tr> <tr><td>4</td> <td>(4) <code>float</code></td> <td>mMax</td></tr></tbody></table> <h3 id="requeueareafunc"><a href="#requeueareafunc" class="header-anchor">#</a> <code>RequeueAreaFunc</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (const ITickingArea &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="ropewave"><a href="#ropewave" class="header-anchor">#</a> <code>RopeWave</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Vec3</code></td> <td>mForce</td></tr> <tr><td>12</td> <td>(4) <code>float</code></td> <td>mSpeed</td></tr> <tr><td>16</td> <td>(4) <code>float</code></td> <td>mDamping</td></tr> <tr><td>24</td> <td>(8) <code>size_t</code></td> <td>mCurNode</td></tr> <tr><td>32</td> <td>(4) <code>float</code></td> <td>mDistAlongNode</td></tr> <tr><td>36</td> <td>(4) <code>RopeWave::Direction</code></td> <td>mDir</td></tr></tbody></table> <h3 id="railmovementcomponent"><a href="#railmovementcomponent" class="header-anchor">#</a> <code>RailMovementComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mMaxSpeed</td></tr></tbody></table> <h3 id="resourcesignature"><a href="#resourcesignature" class="header-anchor">#</a> <code>ResourceSignature</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(56) <code>std::unordered_map&lt;std::string,std::string&gt;</code></td> <td>mSignatureFileContents</td></tr></tbody></table> <h3 id="resourcepackchunkrequestpacket"><a href="#resourcepackchunkrequestpacket" class="header-anchor">#</a> <code>ResourcePackChunkRequestPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mResourceName</td></tr> <tr><td>72</td> <td>(4) <code>int</code></td> <td>mChunk</td></tr></tbody></table> <h3 id="registeredtagfilter"><a href="#registeredtagfilter" class="header-anchor">#</a> <code>RegisteredTagFilter</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>TagSetID</code></td> <td>mIncludeSet</td></tr> <tr><td>8</td> <td>(8) <code>TagSetID</code></td> <td>mExcludeSet</td></tr></tbody></table> <h3 id="runtimelightingmanager-relightingchunkelement"><a href="#runtimelightingmanager-relightingchunkelement" class="header-anchor">#</a> <code>RuntimeLightingManager::RelightingChunkElement</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mDist</td></tr> <tr><td>8</td> <td>(8) <code>ChunkPos</code></td> <td>mChunkPos</td></tr> <tr><td>16</td> <td>(8) <code>size_t</code></td> <td>mSubChunkIndex</td></tr> <tr><td>24</td> <td>(8) <code>std::vector&lt;SubChunkLightUpdate&gt; *</code></td> <td>mAlteredBlockList</td></tr></tbody></table> <h3 id="rolechecker-onroleacquired"><a href="#rolechecker-onroleacquired" class="header-anchor">#</a> <code>RoleChecker::OnRoleAcquired</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (ADRole,const std::string &amp;,const std::string &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="raknet-rns2-sendparameters"><a href="#raknet-rns2-sendparameters" class="header-anchor">#</a> <code>RakNet::RNS2_SendParameters</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>char *</code></td> <td>data</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>length</td></tr> <tr><td>16</td> <td>(136) <code>RakNet::SystemAddress</code></td> <td>systemAddress</td></tr> <tr><td>152</td> <td>(4) <code>int</code></td> <td>ttl</td></tr></tbody></table> <h3 id="raknet-rns2-berkleybindparameters"><a href="#raknet-rns2-berkleybindparameters" class="header-anchor">#</a> <code>RakNet::RNS2_BerkleyBindParameters</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>unsigned __int16</code></td> <td>port</td></tr> <tr><td>8</td> <td>(8) <code>char *</code></td> <td>hostAddress</td></tr> <tr><td>16</td> <td>(2) <code>unsigned __int16</code></td> <td>addressFamily</td></tr> <tr><td>20</td> <td>(4) <code>int</code></td> <td>type</td></tr> <tr><td>24</td> <td>(4) <code>int</code></td> <td>protocol</td></tr> <tr><td>28</td> <td>(1) <code>bool</code></td> <td>nonBlockingSocket</td></tr> <tr><td>32</td> <td>(4) <code>int</code></td> <td>setBroadcast</td></tr> <tr><td>36</td> <td>(4) <code>int</code></td> <td>setIPHdrIncl</td></tr> <tr><td>40</td> <td>(4) <code>int</code></td> <td>doNotFragment</td></tr> <tr><td>44</td> <td>(4) <code>int</code></td> <td>pollingThreadPriority</td></tr> <tr><td>48</td> <td>(8) <code>RakNet::RNS2EventHandler *</code></td> <td>eventHandler</td></tr> <tr><td>56</td> <td>(2) <code>unsigned __int16</code></td> <td>remotePortRakNetWasStartedOn_PS3_PS4_PSP2</td></tr></tbody></table> <h3 id="raknet-addressorguid"><a href="#raknet-addressorguid" class="header-anchor">#</a> <code>RakNet::AddressOrGUID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>RakNet::RakNetGUID</code></td> <td>rakNetGuid</td></tr> <tr><td>16</td> <td>(136) <code>RakNet::SystemAddress</code></td> <td>systemAddress</td></tr></tbody></table> <h3 id="raknet-simplemutex"><a href="#raknet-simplemutex" class="header-anchor">#</a> <code>RakNet::SimpleMutex</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>pthread_mutex_t</code></td> <td>hMutex</td></tr></tbody></table> <h3 id="raknet-uint24-t"><a href="#raknet-uint24-t" class="header-anchor">#</a> <code>RakNet::uint24_t</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>val</td></tr></tbody></table> <h3 id="raknet-messagenumbertype"><a href="#raknet-messagenumbertype" class="header-anchor">#</a> <code>RakNet::MessageNumberType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>val</td></tr></tbody></table> <h3 id="raknet-orderingindextype"><a href="#raknet-orderingindextype" class="header-anchor">#</a> <code>RakNet::OrderingIndexType</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>val</td></tr></tbody></table> <h3 id="raknet-internalpacket"><a href="#raknet-internalpacket" class="header-anchor">#</a> <code>RakNet::InternalPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>RakNet::InternalPacketFixedSizeTransmissionHeader</code></td> <td>baseclass_0</td></tr> <tr><td>32</td> <td>(4) <code>RakNet::MessageNumberType</code></td> <td>messageInternalOrder</td></tr> <tr><td>36</td> <td>(1) <code>bool</code></td> <td>messageNumberAssigned</td></tr> <tr><td>40</td> <td>(8) <code>RakNet::TimeUS</code></td> <td>creationTime</td></tr> <tr><td>48</td> <td>(8) <code>RakNet::TimeUS</code></td> <td>nextActionTime</td></tr> <tr><td>56</td> <td>(8) <code>RakNet::TimeUS</code></td> <td>retransmissionTime</td></tr> <tr><td>64</td> <td>(4) <code>RakNet::BitSize_t</code></td> <td>headerLength</td></tr> <tr><td>72</td> <td>(8) <code>unsigned __int8 *</code></td> <td>data</td></tr> <tr><td>80</td> <td>(4) <code>RakNet::InternalPacket::AllocationScheme</code></td> <td>allocationScheme</td></tr> <tr><td>88</td> <td>(8) <code>RakNet::InternalPacketRefCountedData *</code></td> <td>refCountedData</td></tr> <tr><td>96</td> <td>(1) <code>unsigned __int8</code></td> <td>timesSent</td></tr> <tr><td>100</td> <td>(4) <code>PacketPriority</code></td> <td>priority</td></tr> <tr><td>104</td> <td>(4) <code>uint32_t</code></td> <td>sendReceiptSerial</td></tr> <tr><td>112</td> <td>(8) <code>RakNet::InternalPacket *</code></td> <td>resendPrev</td></tr> <tr><td>120</td> <td>(8) <code>RakNet::InternalPacket *</code></td> <td>resendNext</td></tr> <tr><td>128</td> <td>(8) <code>RakNet::InternalPacket *</code></td> <td>unreliablePrev</td></tr> <tr><td>136</td> <td>(8) <code>RakNet::InternalPacket *</code></td> <td>unreliableNext</td></tr> <tr><td>144</td> <td>(128) <code>unsigned __int8[128]</code></td> <td>stackData</td></tr></tbody></table> <h3 id="raknet-internalpacketfixedsizetransmissionheader"><a href="#raknet-internalpacketfixedsizetransmissionheader" class="header-anchor">#</a> <code>RakNet::InternalPacketFixedSizeTransmissionHeader</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>RakNet::MessageNumberType</code></td> <td>reliableMessageNumber</td></tr> <tr><td>4</td> <td>(4) <code>RakNet::OrderingIndexType</code></td> <td>orderingIndex</td></tr> <tr><td>8</td> <td>(4) <code>RakNet::OrderingIndexType</code></td> <td>sequencingIndex</td></tr> <tr><td>12</td> <td>(1) <code>unsigned __int8</code></td> <td>orderingChannel</td></tr> <tr><td>14</td> <td>(2) <code>RakNet::SplitPacketIdType</code></td> <td>splitPacketId</td></tr> <tr><td>16</td> <td>(4) <code>RakNet::SplitPacketIndexType</code></td> <td>splitPacketIndex</td></tr> <tr><td>20</td> <td>(4) <code>RakNet::SplitPacketIndexType</code></td> <td>splitPacketCount</td></tr> <tr><td>24</td> <td>(4) <code>RakNet::BitSize_t</code></td> <td>dataBitLength</td></tr> <tr><td>28</td> <td>(4) <code>PacketReliability</code></td> <td>reliability</td></tr></tbody></table> <h3 id="raknet-packet"><a href="#raknet-packet" class="header-anchor">#</a> <code>RakNet::Packet</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(136) <code>RakNet::SystemAddress</code></td> <td>systemAddress</td></tr> <tr><td>136</td> <td>(16) <code>RakNet::RakNetGUID</code></td> <td>guid</td></tr> <tr><td>152</td> <td>(4) <code>unsigned int</code></td> <td>length</td></tr> <tr><td>156</td> <td>(4) <code>RakNet::BitSize_t</code></td> <td>bitSize</td></tr> <tr><td>160</td> <td>(8) <code>unsigned __int8 *</code></td> <td>data</td></tr> <tr><td>168</td> <td>(1) <code>bool</code></td> <td>deleteData</td></tr> <tr><td>169</td> <td>(1) <code>bool</code></td> <td>wasGeneratedLocally</td></tr></tbody></table> <h3 id="raknet-networkadapter"><a href="#raknet-networkadapter" class="header-anchor">#</a> <code>RakNet::NetworkAdapter</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>unsigned int</code></td> <td>attributeFlags</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>interfaceIndex</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>isDisabled</td></tr> <tr><td>16</td> <td>(2856) <code>RakNet::SystemAddress[21]</code></td> <td>addresses</td></tr></tbody></table> <h3 id="r-debug"><a href="#r-debug" class="header-anchor">#</a> <code>r_debug</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>r_version</td></tr> <tr><td>8</td> <td>(8) <code>link_map *</code></td> <td>r_map</td></tr> <tr><td>16</td> <td>(8) <code>Elf64_Addr</code></td> <td>r_brk</td></tr> <tr><td>24</td> <td>(4) <code>r_debug::$779A3ED0FCC279D8F3DE0A4A7B5F9A6A</code></td> <td>r_state</td></tr> <tr><td>32</td> <td>(8) <code>Elf64_Addr</code></td> <td>r_ldbase</td></tr></tbody></table> <h3 id="resourcepacklistener"><a href="#resourcepacklistener" class="header-anchor">#</a> <code>ResourcePackListener</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ResourcePackListener</td></tr></tbody></table> <h3 id="raknet-raknetrandom"><a href="#raknet-raknetrandom" class="header-anchor">#</a> <code>RakNet::RakNetRandom</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2500) <code>unsigned int[625]</code></td> <td>state</td></tr> <tr><td>2504</td> <td>(8) <code>unsigned int *</code></td> <td>next</td></tr> <tr><td>2512</td> <td>(4) <code>int</code></td> <td>left</td></tr></tbody></table> <h3 id="raknet-rakstring-sharedstring"><a href="#raknet-rakstring-sharedstring" class="header-anchor">#</a> <code>RakNet::RakString::SharedString</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>RakNet::SimpleMutex *</code></td> <td>refCountMutex</td></tr> <tr><td>8</td> <td>(4) <code>unsigned int</code></td> <td>refCount</td></tr> <tr><td>16</td> <td>(8) <code>size_t</code></td> <td>bytesUsed</td></tr> <tr><td>24</td> <td>(8) <code>char *</code></td> <td>bigString</td></tr> <tr><td>32</td> <td>(8) <code>char *</code></td> <td>c_str</td></tr> <tr><td>40</td> <td>(100) <code>char[100]</code></td> <td>smallString</td></tr></tbody></table> <h3 id="rakstringcleanup"><a href="#rakstringcleanup" class="header-anchor">#</a> <code>RakStringCleanup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="range-int-1"><a href="#range-int-1" class="header-anchor">#</a> <code>Range&lt;int,-1&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>const int</code></td> <td>mBeginIDX</td></tr> <tr><td>4</td> <td>(4) <code>const int</code></td> <td>mEndIDX</td></tr></tbody></table> <h3 id="range-int-1-2"><a href="#range-int-1-2" class="header-anchor">#</a> <code>Range&lt;int,1&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>const int</code></td> <td>mBeginIDX</td></tr> <tr><td>4</td> <td>(4) <code>const int</code></td> <td>mEndIDX</td></tr></tbody></table> <h3 id="range-unsigned-int-1"><a href="#range-unsigned-int-1" class="header-anchor">#</a> <code>Range&lt;unsigned int,1&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>const unsigned int</code></td> <td>mBeginIDX</td></tr> <tr><td>4</td> <td>(4) <code>const unsigned int</code></td> <td>mEndIDX</td></tr></tbody></table> <h3 id="resourceloadmanager"><a href="#resourceloadmanager" class="header-anchor">#</a> <code>ResourceLoadManager</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Scheduler *</code></td> <td>mScheduler</td></tr> <tr><td>8</td> <td>(8) <code>WorkerPool *</code></td> <td>mWorkerPool</td></tr> <tr><td>16</td> <td>(48) <code>std::map&lt;ResourceLoadType,std::unique_ptr&lt;ResourceLoadManager::ResourceLoadTaskGroup&gt;&gt;</code></td> <td>mResourceLoadTaskGroups</td></tr> <tr><td>64</td> <td>(8) <code>size_t</code></td> <td>mAppSuspended</td></tr></tbody></table> <h3 id="raknetinstance-connectioncallbacks"><a href="#raknetinstance-connectioncallbacks" class="header-anchor">#</a> <code>RakNetInstance::ConnectionCallbacks</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ConnectionCallbacks</td></tr></tbody></table> <h3 id="raknetinstance"><a href="#raknetinstance" class="header-anchor">#</a> <code>RakNetInstance</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Connector</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>RakNetInstance::ConnectionCallbacks *</code></td> <td>mCallbacks</td></tr> <tr><td>16</td> <td>(152) <code>NetworkIdentifier</code></td> <td>mNATPunchServerId</td></tr> <tr><td>168</td> <td>(240) <code>Social::GameConnectionInfo</code></td> <td>mBackupGameConnection</td></tr> <tr><td>408</td> <td>(1) <code>bool</code></td> <td>mTryBackupConnection</td></tr> <tr><td>416</td> <td>(16) <code>UniqueRakPeer</code></td> <td>mRakPeer</td></tr> <tr><td>432</td> <td>(152) <code>NetworkIdentifier</code></td> <td>mServerId</td></tr> <tr><td>584</td> <td>(160) <code>Connector::NatPunchInfo</code></td> <td>mNatPunchInfo</td></tr> <tr><td>744</td> <td>(4) <code>RakNetInstance::NATState</code></td> <td>mNatState</td></tr> <tr><td>752</td> <td>(24) <code>std::vector&lt;RakNetInstance::NatConnectionInfo&gt;</code></td> <td>mNatList</td></tr> <tr><td>776</td> <td>(24) <code>RakPeerHelper</code></td> <td>mPeerHelper</td></tr> <tr><td>800</td> <td>(8) <code>RakPeerHelper::IPSupportInterface *</code></td> <td>mIPSupportInterface</td></tr> <tr><td>808</td> <td>(1) <code>bool</code></td> <td>mIsAwaitingNatClient</td></tr> <tr><td>809</td> <td>(1) <code>bool</code></td> <td>mIsServer</td></tr> <tr><td>810</td> <td>(1) <code>bool</code></td> <td>mIsDisconnecting</td></tr> <tr><td>811</td> <td>(1) <code>bool</code></td> <td>mConnectingToClient</td></tr> <tr><td>816</td> <td>(240) <code>Social::GameConnectionInfo</code></td> <td>mConnectedGameInfo</td></tr> <tr><td>1056</td> <td>(56) <code>std::unordered_map&lt;NetworkIdentifier,std::weak_ptr&lt;RakNetInstance::RakNetNetworkPeer&gt;&gt;</code></td> <td>mPeers</td></tr> <tr><td>1112</td> <td>(24) <code>std::vector&lt;Connector::ConnectionStateListener *&gt;</code></td> <td>mConnectionStateListeners</td></tr> <tr><td>1136</td> <td>(1) <code>bool</code></td> <td>mWasHostWhenSuspended</td></tr> <tr><td>1140</td> <td>(16) <code>ConnectionDefinition</code></td> <td>mPreviousConnectionDefinition</td></tr> <tr><td>1160</td> <td>(32) <code>std::string</code></td> <td>mResolvedIP</td></tr> <tr><td>1192</td> <td>(24) <code>std::vector&lt;RakNetInstance::PingCallbackData&gt;</code></td> <td>mPingTimeCallbacks</td></tr></tbody></table> <h3 id="rakpeerhelper"><a href="#rakpeerhelper" class="header-anchor">#</a> <code>RakPeerHelper</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>RakNet::StartupResult</code></td> <td>mResult</td></tr> <tr><td>4</td> <td>(8) <code>int[2]</code></td> <td>mConnectionIndices</td></tr> <tr><td>12</td> <td>(4) <code>uint16_t[2]</code></td> <td>mBoundPorts</td></tr> <tr><td>16</td> <td>(8) <code>RakPeerHelper::IPSupportInterface *</code></td> <td>mIPSupportInterface</td></tr></tbody></table> <h3 id="range-unsigned-long-1"><a href="#range-unsigned-long-1" class="header-anchor">#</a> <code>Range&lt;unsigned long,1&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>const unsigned __int64</code></td> <td>mBeginIDX</td></tr> <tr><td>8</td> <td>(8) <code>const unsigned __int64</code></td> <td>mEndIDX</td></tr></tbody></table> <h3 id="rakpeerhelper-ipsupportinterface"><a href="#rakpeerhelper-ipsupportinterface" class="header-anchor">#</a> <code>RakPeerHelper::IPSupportInterface</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$IPSupportInterface</td></tr></tbody></table> <h3 id="resourcepackinfodata"><a href="#resourcepackinfodata" class="header-anchor">#</a> <code>ResourcePackInfoData</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(136) <code>PackIdVersion</code></td> <td>mPackIdVersion</td></tr> <tr><td>136</td> <td>(8) <code>uint64_t</code></td> <td>mPackSize</td></tr> <tr><td>144</td> <td>(32) <code>std::string</code></td> <td>mContentKey</td></tr> <tr><td>176</td> <td>(32) <code>std::string</code></td> <td>mSubpackName</td></tr> <tr><td>208</td> <td>(24) <code>ContentIdentity</code></td> <td>mContentIdentity</td></tr> <tr><td>232</td> <td>(1) <code>bool</code></td> <td>mHasScripts</td></tr> <tr><td>233</td> <td>(1) <code>bool</code></td> <td>mHasExceptions</td></tr></tbody></table> <h3 id="resourceloadmanager-resourceloadtaskgroup"><a href="#resourceloadmanager-resourceloadtaskgroup" class="header-anchor">#</a> <code>ResourceLoadManager::ResourceLoadTaskGroup</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>ResourceLoadType</code></td> <td>mLoadType</td></tr> <tr><td>8</td> <td>(8) <code>std::unique_ptr&lt;TaskGroup&gt;</code></td> <td>mTaskGroup</td></tr> <tr><td>16</td> <td>(24) <code>std::vector&lt;ResourceLoadType&gt;</code></td> <td>mDependencies</td></tr> <tr><td>40</td> <td>(16) <code>ResourceLoadManager::TaskGroupState</code></td> <td>mTaskGroupState</td></tr> <tr><td>56</td> <td>(1) <code>bool</code></td> <td>mTaskGroupPaused</td></tr></tbody></table> <h3 id="resourceloadmanager-taskgroupstate"><a href="#resourceloadmanager-taskgroupstate" class="header-anchor">#</a> <code>ResourceLoadManager::TaskGroupState</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mRunning</td></tr> <tr><td>8</td> <td>(8) <code>size_t</code></td> <td>mPaused</td></tr></tbody></table> <h3 id="resourcepath"><a href="#resourcepath" class="header-anchor">#</a> <code>ResourcePath</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>mPackId</td></tr> <tr><td>32</td> <td>(32) <code>std::string</code></td> <td>mPath</td></tr></tbody></table> <h3 id="range-unsigned-short-1"><a href="#range-unsigned-short-1" class="header-anchor">#</a> <code>Range&lt;unsigned short,1&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>const unsigned __int16</code></td> <td>mBeginIDX</td></tr> <tr><td>2</td> <td>(2) <code>const unsigned __int16</code></td> <td>mEndIDX</td></tr></tbody></table> <h3 id="range-short-1"><a href="#range-short-1" class="header-anchor">#</a> <code>Range&lt;short,1&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>const __int16</code></td> <td>mBeginIDX</td></tr> <tr><td>2</td> <td>(2) <code>const __int16</code></td> <td>mEndIDX</td></tr></tbody></table> <h3 id="randomhovergoal"><a href="#randomhovergoal" class="header-anchor">#</a> <code>RandomHoverGoal</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>Goal</code></td> <td>baseclass_0</td></tr> <tr><td>16</td> <td>(8) <code>Mob *</code></td> <td>mMob</td></tr> <tr><td>24</td> <td>(4) <code>const float</code></td> <td>mSpeedModifier</td></tr> <tr><td>28</td> <td>(4) <code>const int</code></td> <td>mInterval</td></tr> <tr><td>32</td> <td>(4) <code>const float</code></td> <td>mXZDist</td></tr> <tr><td>36</td> <td>(4) <code>const float</code></td> <td>mYDist</td></tr> <tr><td>40</td> <td>(4) <code>float</code></td> <td>mYOffset</td></tr> <tr><td>44</td> <td>(8) <code>IntRange</code></td> <td>mHoverHeight</td></tr> <tr><td>56</td> <td>(8) <code>Unique&lt;Path&gt;</code></td> <td>mPath</td></tr></tbody></table> <h3 id="raid"><a href="#raid" class="header-anchor">#</a> <code>Raid</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>Raid::RaidState</code></td> <td>mCurrentRaidState</td></tr> <tr><td>4</td> <td>(1) <code>Raid::GroupNumberType</code></td> <td>mCurrentGroupNumber</td></tr> <tr><td>5</td> <td>(1) <code>Raid::GroupNumberType</code></td> <td>mNumGroupsInRaid</td></tr> <tr><td>8</td> <td>(8) <code>Tick</code></td> <td>mTicksInState</td></tr> <tr><td>16</td> <td>(4) <code>const Raid::DurationType</code></td> <td>mRaidPreparationTime</td></tr> <tr><td>20</td> <td>(4) <code>const Raid::DurationType</code></td> <td>mGroupCompleteDelay</td></tr> <tr><td>24</td> <td>(4) <code>Raid::DurationType</code></td> <td>mTicksUntilGroupComplete</td></tr> <tr><td>28</td> <td>(4) <code>const Raid::DurationType</code></td> <td>mLocationHelpDelay</td></tr> <tr><td>32</td> <td>(4) <code>Raid::DurationType</code></td> <td>mTicksUntilLocationHelp</td></tr> <tr><td>36</td> <td>(12) <code>Vec3</code></td> <td>mCurrentGroupSpawnPoint</td></tr> <tr><td>48</td> <td>(56) <code>Raid::ActorIDCollection</code></td> <td>mRaiders</td></tr> <tr><td>104</td> <td>(1) <code>Raid::RaiderCountType</code></td> <td>mNumRaidersSpawnedInCurrentGroup</td></tr> <tr><td>105</td> <td>(1) <code>const Raid::FailureCountType</code></td> <td>mAllowedSpawnFailures</td></tr> <tr><td>106</td> <td>(1) <code>Raid::FailureCountType</code></td> <td>mSpawnFailures</td></tr> <tr><td>112</td> <td>(32) <code>const Raid::PickSpawnPointCallback</code></td> <td>mPickSpawnPointCallback</td></tr> <tr><td>144</td> <td>(32) <code>const Raid::SpawnGroupCallback</code></td> <td>mSpawnGroupCallback</td></tr> <tr><td>176</td> <td>(32) <code>const Raid::DoesActorExistCallback</code></td> <td>mDoesActorExistCallback</td></tr> <tr><td>208</td> <td>(32) <code>Raid::NotificationCallback</code></td> <td>mOnSpawnPointChosenCallback</td></tr> <tr><td>240</td> <td>(32) <code>Raid::NotificationCallback</code></td> <td>mOnGroupSpawnedCallback</td></tr> <tr><td>272</td> <td>(32) <code>Raid::NotificationCallback</code></td> <td>mOnAwardRewardsCallback</td></tr> <tr><td>304</td> <td>(32) <code>Raid::NotificationCallback</code></td> <td>mOnHelpLocateRaidersCallback</td></tr></tbody></table> <h3 id="raid-pickspawnpointcallback"><a href="#raid-pickspawnpointcallback" class="header-anchor">#</a> <code>Raid::PickSpawnPointCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;bool (unsigned long,Vec3 &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="raid-spawngroupcallback"><a href="#raid-spawngroupcallback" class="header-anchor">#</a> <code>Raid::SpawnGroupCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;bool (unsigned long,Vec3,unsigned char,std::unordered_set&lt;ActorUniqueID&gt; &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="raid-doesactorexistcallback"><a href="#raid-doesactorexistcallback" class="header-anchor">#</a> <code>Raid::DoesActorExistCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;bool (const ActorUniqueID &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="raid-notificationcallback"><a href="#raid-notificationcallback" class="header-anchor">#</a> <code>Raid::NotificationCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;void (const Raid &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="rabbit-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420"><a href="#rabbit-updateentityspecificmolangvariables-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>Rabbit::updateEntitySpecificMolangVariables::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="respawnpacket"><a href="#respawnpacket" class="header-anchor">#</a> <code>RespawnPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(12) <code>Vec3</code></td> <td>mPos</td></tr> <tr><td>48</td> <td>(1) <code>PlayerRespawnState</code></td> <td>mState</td></tr> <tr><td>56</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mRuntimeId</td></tr></tbody></table> <h3 id="reverseableiterator"><a href="#reverseableiterator" class="header-anchor">#</a> <code>ReverseableIterator</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>const int</code></td> <td>mStartValue</td></tr> <tr><td>4</td> <td>(4) <code>const int</code></td> <td>mEndValue</td></tr> <tr><td>8</td> <td>(1) <code>const bool</code></td> <td>mReversed</td></tr></tbody></table> <h3 id="recipes-type"><a href="#recipes-type" class="header-anchor">#</a> <code>Recipes::Type</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>Item *</code></td> <td>mItem</td></tr> <tr><td>8</td> <td>(8) <code>const Block *</code></td> <td>mBlock</td></tr> <tr><td>16</td> <td>(24) <code>RecipeIngredient</code></td> <td>mIngredient</td></tr> <tr><td>40</td> <td>(1) <code>char</code></td> <td>mC</td></tr></tbody></table> <h3 id="range-unsigned-char-x01"><a href="#range-unsigned-char-x01" class="header-anchor">#</a> <code>Range&lt;unsigned char,'_x01'&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>const unsigned __int8</code></td> <td>mBeginIDX</td></tr> <tr><td>1</td> <td>(1) <code>const unsigned __int8</code></td> <td>mEndIDX</td></tr></tbody></table> <h3 id="resourcepackmanager"><a href="#resourcepackmanager" class="header-anchor">#</a> <code>ResourcePackManager</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>ResourceLoader</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(56) <code>std::unordered_set&lt;ResourcePackListener *&gt;</code></td> <td>mListeners</td></tr> <tr><td>96</td> <td>(8) <code>std::unique_ptr&lt;ResourcePackStack&gt;</code></td> <td>mAddonStack</td></tr> <tr><td>104</td> <td>(8) <code>std::unique_ptr&lt;ResourcePackStack&gt;</code></td> <td>mLevelStack</td></tr> <tr><td>112</td> <td>(8) <code>std::unique_ptr&lt;ResourcePackStack&gt;</code></td> <td>mGlobalStack</td></tr> <tr><td>120</td> <td>(8) <code>std::unique_ptr&lt;ResourcePackStack&gt;</code></td> <td>mTreatmentStack</td></tr> <tr><td>128</td> <td>(8) <code>std::unique_ptr&lt;ResourcePackStack&gt;</code></td> <td>mBaseGameStack</td></tr> <tr><td>136</td> <td>(8) <code>std::unique_ptr&lt;ResourcePackStack&gt;</code></td> <td>mFullStack</td></tr> <tr><td>144</td> <td>(8) <code>std::unique_ptr&lt;PackSourceReport&gt;</code></td> <td>mLoadingReport</td></tr> <tr><td>152</td> <td>(32) <code>std::string</code></td> <td>mLocaleCode</td></tr> <tr><td>184</td> <td>(1) <code>bool</code></td> <td>mInitializing</td></tr> <tr><td>185</td> <td>(1) <code>bool</code></td> <td>mPendingRestack</td></tr> <tr><td>186</td> <td>(1) <code>bool</code></td> <td>mUseGlobalPackStack</td></tr> <tr><td>187</td> <td>(1) <code>bool</code></td> <td>mExperimentalGameplay</td></tr> <tr><td>192</td> <td>(56) <code>SharedMutex</code></td> <td>mFullStackAccess</td></tr> <tr><td>248</td> <td>(8) <code>const ContentTierManager *</code></td> <td>mContentTierManager</td></tr> <tr><td>256</td> <td>(112) <code>SemVersion</code></td> <td>mFullStackMinEngineVersion</td></tr></tbody></table> <h3 id="resourceloader"><a href="#resourceloader" class="header-anchor">#</a> <code>ResourceLoader</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$ResourceLoader</td></tr> <tr><td>8</td> <td>(32) <code>std::function&lt;Core::PathBuffer&lt;std::string &gt; ()&gt;</code></td> <td>mGetPath</td></tr></tbody></table> <h3 id="ropepoint"><a href="#ropepoint" class="header-anchor">#</a> <code>RopePoint</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Vec3</code></td> <td>mOldPos</td></tr> <tr><td>12</td> <td>(12) <code>Vec3</code></td> <td>mToNewPos</td></tr></tbody></table> <h3 id="ropenode"><a href="#ropenode" class="header-anchor">#</a> <code>RopeNode</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Vec3</code></td> <td>mPos</td></tr> <tr><td>12</td> <td>(12) <code>Vec3</code></td> <td>mPrevPos</td></tr> <tr><td>24</td> <td>(1) <code>char</code></td> <td>mFrictionAxis</td></tr></tbody></table> <h3 id="ropeaabb"><a href="#ropeaabb" class="header-anchor">#</a> <code>RopeAABB</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(28) <code>AABB</code></td> <td>mBB</td></tr> <tr><td>28</td> <td>(1) <code>bool</code></td> <td>mBlacklisted</td></tr></tbody></table> <h3 id="removeobjectivepacket"><a href="#removeobjectivepacket" class="header-anchor">#</a> <code>RemoveObjectivePacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(32) <code>std::string</code></td> <td>mObjectiveName</td></tr></tbody></table> <h3 id="relativefloat"><a href="#relativefloat" class="header-anchor">#</a> <code>RelativeFloat</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>float</code></td> <td>mOffset</td></tr> <tr><td>4</td> <td>(1) <code>bool</code></td> <td>mRelative</td></tr></tbody></table> <h3 id="raknet-ccraknetslidingwindow"><a href="#raknet-ccraknetslidingwindow" class="header-anchor">#</a> <code>RakNet::CCRakNetSlidingWindow</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>uint32_t</code></td> <td>MAXIMUM_MTU_INCLUDING_UDP_HEADER</td></tr> <tr><td>8</td> <td>(8) <code>double</code></td> <td>cwnd</td></tr> <tr><td>16</td> <td>(8) <code>double</code></td> <td>ssThresh</td></tr> <tr><td>24</td> <td>(8) <code>CCTimeType</code></td> <td>oldestUnsentAck</td></tr> <tr><td>32</td> <td>(4) <code>DatagramSequenceNumberType</code></td> <td>nextDatagramSequenceNumber</td></tr> <tr><td>36</td> <td>(4) <code>DatagramSequenceNumberType</code></td> <td>nextCongestionControlBlock</td></tr> <tr><td>40</td> <td>(1) <code>bool</code></td> <td>backoffThisBlock</td></tr> <tr><td>41</td> <td>(1) <code>bool</code></td> <td>speedUpThisBlock</td></tr> <tr><td>44</td> <td>(4) <code>DatagramSequenceNumberType</code></td> <td>expectedNextSequenceNumber</td></tr> <tr><td>48</td> <td>(1) <code>bool</code></td> <td>_isContinuousSend</td></tr> <tr><td>56</td> <td>(8) <code>double</code></td> <td>lastRtt</td></tr> <tr><td>64</td> <td>(8) <code>double</code></td> <td>estimatedRTT</td></tr> <tr><td>72</td> <td>(8) <code>double</code></td> <td>deviationRtt</td></tr></tbody></table> <h3 id="raknet-reliabilitylayer-datagramhistorynode"><a href="#raknet-reliabilitylayer-datagramhistorynode" class="header-anchor">#</a> <code>RakNet::ReliabilityLayer::DatagramHistoryNode</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>RakNet::ReliabilityLayer::MessageNumberNode *</code></td> <td>head</td></tr> <tr><td>8</td> <td>(8) <code>CCTimeType</code></td> <td>timeSent</td></tr></tbody></table> <h3 id="raknet-bpstracker-timeandvalue2"><a href="#raknet-bpstracker-timeandvalue2" class="header-anchor">#</a> <code>RakNet::BPSTracker::TimeAndValue2</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>uint64_t</code></td> <td>value1</td></tr> <tr><td>8</td> <td>(8) <code>CCTimeType</code></td> <td>time</td></tr></tbody></table> <h3 id="realmsunknownpacksource"><a href="#realmsunknownpacksource" class="header-anchor">#</a> <code>RealmsUnknownPackSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RealmsUnknownPackSource : PackSource
+{
+  PackType mPackType;
+  PackOrigin mPackOrigin;
+  std::vector&lt;std::unique_ptr&lt;Pack&gt;&gt; mPacks;
+  PackSourceReport mReport;
+};
+
+</code></pre></div><h3 id="resourcepack"><a href="#resourcepack" class="header-anchor">#</a> <code>ResourcePack</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ResourcePack
+{
+  bool mHidden;
+  bool mError;
+  Pack *mPack;
+  std::unique_ptr&lt;PackAccessStrategy&gt; mSubpackAccessStrategy;
+  PackReport mPackReport;
+  std::vector&lt;std::unique_ptr&lt;Pack&gt;&gt; mSubPacks;
+  std::vector&lt;std::unique_ptr&lt;ResourcePack&gt;&gt; mSubResourcePacks;
+  Core::HeapPathBuffer mIconPath;
+  double mLoadTime;
+  bool mIsBaseGamePack;
+  bool mIsSlicePack;
+  ResourceSignature mResourceSignature;
+};
+
+</code></pre></div><h3 id="raknet-tcpinterface"><a href="#raknet-tcpinterface" class="header-anchor">#</a> <code>RakNet::TCPInterface</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::TCPInterface
+{
+  int (**_vptr$TCPInterface)(void);
+  DataStructures::List&lt;RakNet::PluginInterface2 *&gt; messageHandlerList;
+  RakNet::LocklessUint32_t isStarted;
+  RakNet::LocklessUint32_t threadRunning;
+  __TCPSOCKET__ listenSocket;
+  unsigned __int16 listenPort;
+  unsigned __int16 listenMaxIncomingConnections;
+  unsigned __int16 listenSocketFamily;
+  char *listenHostAddress;
+  DataStructures::Queue&lt;RakNet::Packet *&gt; headPush;
+  DataStructures::Queue&lt;RakNet::Packet *&gt; tailPush;
+  RakNet::RemoteClient *remoteClients;
+  int remoteClientsLength;
+  DataStructures::ThreadsafeAllocatingQueue&lt;RakNet::Packet&gt; incomingMessages;
+  DataStructures::ThreadsafeAllocatingQueue&lt;RakNet::SystemAddress&gt; newIncomingConnections;
+  DataStructures::ThreadsafeAllocatingQueue&lt;RakNet::SystemAddress&gt; lostConnections;
+  DataStructures::ThreadsafeAllocatingQueue&lt;RakNet::SystemAddress&gt; requestedCloseConnections;
+  DataStructures::ThreadsafeAllocatingQueue&lt;RakNet::RemoteClient *&gt; newRemoteClients;
+  RakNet::SimpleMutex completedConnectionAttemptMutex;
+  RakNet::SimpleMutex failedConnectionAttemptMutex;
+  DataStructures::Queue&lt;RakNet::SystemAddress&gt; completedConnectionAttempts;
+  DataStructures::Queue&lt;RakNet::SystemAddress&gt; failedConnectionAttempts;
+  int threadPriority;
+  DataStructures::List&lt;int&gt; blockingSocketList;
+  RakNet::SimpleMutex blockingSocketListMutex;
+};
+
+</code></pre></div><h3 id="reseteventobj"><a href="#reseteventobj" class="header-anchor">#</a> <code>ResetEventObj</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) ResetEventObj
+{
+  Bedrock::Threading::ConditionVariable mCondition;
+  Bedrock::Threading::Mutex mMutex;
+  std::atomic&lt;bool&gt; mSet;
+  bool mAutoReset;
+};
+
+</code></pre></div><h3 id="raidbosssystem"><a href="#raidbosssystem" class="header-anchor">#</a> <code>RaidBossSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RaidBossSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="railactivatorsystem"><a href="#railactivatorsystem" class="header-anchor">#</a> <code>RailActivatorSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RailActivatorSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="reedsfeature"><a href="#reedsfeature" class="header-anchor">#</a> <code>ReedsFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ReedsFeature : Feature
+{
+};
+
+</code></pre></div><h3 id="rooftreefeature"><a href="#rooftreefeature" class="header-anchor">#</a> <code>RoofTreeFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RoofTreeFeature : TreeFeature
+{
+};
+
+</code></pre></div><h3 id="referencedpiecelist"><a href="#referencedpiecelist" class="header-anchor">#</a> <code>ReferencedPieceList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;StructurePiece *&gt; ReferencedPieceList;
+
+</code></pre></div><h3 id="runtimelightingmanager"><a href="#runtimelightingmanager" class="header-anchor">#</a> <code>RuntimeLightingManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RuntimeLightingManager
+{
+  std::unordered_map&lt;ChunkPos,RuntimeLightingManager::RuntimeLightingSubchunkList&gt; mLevelChunksToLight;
+  std::vector&lt;RuntimeLightingManager::RelightingChunkElement&gt; mListOfChunksToProcess;
+  std::vector&lt;BlockPos&gt; mProcessedSubchunks;
+  std::vector&lt;BlockPos&gt; mBrightnessChangedList;
+  Dimension *mDimension;
+  bool mWorkerScheduled;
+  float mLightingTimeboxTime;
+};
+
+</code></pre></div><h3 id="regionhillslayer"><a href="#regionhillslayer" class="header-anchor">#</a> <code>RegionHillsLayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RegionHillsLayer : UnaryLayer&lt;Biome *,Biome *&gt;
+{
+  LayerPtr&lt;LayerValues::RiverData&gt; mRiverLayer;
+  const BiomeRegistry *mBiomeRegistry;
+};
+
+</code></pre></div><h3 id="randomscatteredlargefeature"><a href="#randomscatteredlargefeature" class="header-anchor">#</a> <code>RandomScatteredLargeFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RandomScatteredLargeFeature : StructureFeature
+{
+  std::vector&lt;int&gt; allowedBiomes;
+  int mSpacing;
+  int mMinSeparation;
+};
+
+</code></pre></div><h3 id="rootlayer-layervalues-terrain"><a href="#rootlayer-layervalues-terrain" class="header-anchor">#</a> <code>RootLayer&lt;LayerValues::Terrain&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RootLayer&lt;LayerValues::Terrain&gt; : Layer&lt;LayerValues::Terrain&gt;
+{
+};
+
+</code></pre></div><h3 id="rootlayer-biometemperaturecategory"><a href="#rootlayer-biometemperaturecategory" class="header-anchor">#</a> <code>RootLayer&lt;BiomeTemperatureCategory&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RootLayer&lt;BiomeTemperatureCategory&gt; : Layer&lt;BiomeTemperatureCategory&gt;
+{
+};
+
+</code></pre></div><h3 id="realms-player"><a href="#realms-player" class="header-anchor">#</a> <code>Realms::Player</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) Realms::Player
+{
+  std::string name;
+  std::string xuid;
+  std::string realName;
+  Social::UserPicturePath gamerpicLocation;
+  bool isOperator;
+  bool hasAccepted;
+  bool isOnline;
+  PlayerPermissionLevel permission;
+};
+
+</code></pre></div><h3 id="realms-world"><a href="#realms-world" class="header-anchor">#</a> <code>Realms::World</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) Realms::World
+{
+  Realms::RealmId id;
+  Realms::World::State state;
+  std::string name;
+  std::string description;
+  std::string ownerXuid;
+  std::string ownerName;
+  std::string clubId;
+  int daysLeft;
+  bool expired;
+  int maxPlayers;
+  bool newWorld;
+  int gameMode;
+  bool gracePeriod;
+  int difficulty;
+  bool cheatsEnabled;
+  bool full;
+  bool isMember;
+  bool texturePacksRequired;
+  PlayerPermissionLevel defaultPermission;
+  std::vector&lt;Realms::Player&gt; players;
+  bool mValid;
+};
+
+</code></pre></div><h3 id="reverse-iterator"><a href="#reverse-iterator" class="header-anchor">#</a> <code>reverse_iterator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::reverse_iterator&lt;std::_Bit_iterator&gt; reverse_iterator;
+
+</code></pre></div><h3 id="reference"><a href="#reference" class="header-anchor">#</a> <code>reference</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::_Bit_reference reference;
+
+</code></pre></div><h3 id="railactivatordescription"><a href="#railactivatordescription" class="header-anchor">#</a> <code>RailActivatorDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) RailActivatorDescription : ComponentDescription
+{
+  DefinitionTrigger mOnActivate;
+  DefinitionTrigger mOnDeactivate;
+  bool mCheckBlockTypes;
+  bool mTickCommandBlockOnActivate;
+  bool mTickCommandBlockOnDeactivate;
+  bool mEjectOnActivate;
+  bool mEjectOnDeactivate;
+};
+
+</code></pre></div><h3 id="resourceloadmanager-loadorder"><a href="#resourceloadmanager-loadorder" class="header-anchor">#</a> <code>ResourceLoadManager::LoadOrder</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ResourceLoadManager::LoadOrder
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="resourcepackfiledownloadermanager"><a href="#resourcepackfiledownloadermanager" class="header-anchor">#</a> <code>ResourcePackFileDownloaderManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ResourcePackFileDownloaderManager : std::enable_shared_from_this&lt;ResourcePackFileDownloaderManager&gt;
+{
+  int (**_vptr$ResourcePackFileDownloaderManager)(void);
+  PacketSender *mPacketSender;
+  std::string mResourceName;
+  std::string mFileHash;
+  bool mChunkWriteSuccess;
+  Core::HeapPathBuffer mZipFilePath;
+  Core::HeapPathBuffer mResourcePath;
+  FileChunkManager mChunkManager;
+  std::function&lt;void (bool,const Core::Path &amp;)&gt; mCompletionCallback;
+  std::function&lt;void (float)&gt; mProgressCallback;
+  MPMCQueue&lt;std::function&lt;void ()&gt; &gt; mCallbackQueue;
+  TaskGroup *mIOTaskGroup;
+};
+
+</code></pre></div><h3 id="resourcepackfileuploadmanager"><a href="#resourcepackfileuploadmanager" class="header-anchor">#</a> <code>ResourcePackFileUploadManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ResourcePackFileUploadManager : FileUploadManager
+{
+  std::vector&lt;Core::PathBuffer&lt;std::string &gt;&gt; mZipPaths;
+  std::vector&lt;Core::PathBuffer&lt;std::string &gt;&gt; mTempDirPaths;
+};
+
+</code></pre></div><h3 id="raknetserverlocator"><a href="#raknetserverlocator" class="header-anchor">#</a> <code>RakNetServerLocator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RakNetServerLocator : ServerLocator
+{
+  std::unordered_map&lt;std::string,std::string&gt; originalAddresses;
+  std::unordered_map&lt;std::string,RakNetServerLocator::PingRateRecorder&gt; pingTimeRecorders;
+  std::unordered_map&lt;std::string,std::string&gt; guidCache;
+  std::function&lt;RakNet::RakNetGUID ()&gt; mGetHostGUID;
+  RakNetInstance *mRaknetInstance;
+  UniqueRakPeer mFinderPeer;
+  RakPeerHelper mFinderPeerHelper;
+  std::vector&lt;PingedCompatibleServer&gt; mAvailableServers;
+  bool mIsPingingForServers;
+  const bool mIsServer;
+  int mPingPort;
+  int mPingPortv6;
+  RakNet::TimeMS mLastPingTime;
+  std::vector&lt;std::string&gt; mBroadcastAddresses;
+  std::vector&lt;std::string&gt; mMulticastAddressesV6;
+  std::queue&lt;std::pair&lt;AsynchronousIPResolver,int&gt;&gt; mPingQueue;
+  std::function&lt;void (bool)&gt; mServerValidationCallback;
+  std::string mServerWaitingToValidate;
+  RakNet::TimeMS mLastPingToServerWaitingToValidateTime;
+  Bedrock::Threading::RecursiveMutex mServerListLock;
+};
+
+</code></pre></div><h3 id="resourcepacktransmissionmanager"><a href="#resourcepacktransmissionmanager" class="header-anchor">#</a> <code>ResourcePackTransmissionManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ResourcePackTransmissionManager
+{
+  std::unordered_map&lt;unsigned long,std::unordered_map&lt;std::string,std::shared_ptr&lt;ResourcePackFileDownloaderManager&gt;&gt;&gt; mResourceDownloadManagers;
+  std::unordered_map&lt;unsigned long,std::unordered_map&lt;std::string,std::shared_ptr&lt;ResourcePackFileUploadManager&gt;&gt;&gt; mResourceUploadManagers;
+  std::unordered_set&lt;unsigned long&gt; mRemovedResourceDownloadManagers;
+  std::unordered_set&lt;unsigned long&gt; mRemovedResourceUploadManagers;
+  std::unique_ptr&lt;TaskGroup&gt; mIOTaskGroup;
+};
+
+</code></pre></div><h3 id="raknet-rakpeerinterface"><a href="#raknet-rakpeerinterface" class="header-anchor">#</a> <code>RakNet::RakPeerInterface</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RakPeerInterface
+{
+  int (**_vptr$RakPeerInterface)(void);
+};
+
+</code></pre></div><h3 id="resourcepackclientresponsepacket"><a href="#resourcepackclientresponsepacket" class="header-anchor">#</a> <code>ResourcePackClientResponsePacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ResourcePackClientResponsePacket : Packet
+{
+  std::set&lt;std::string&gt; mDownloadingPacks;
+  ResourcePackResponse mResponse;
+};
+
+</code></pre></div><h3 id="riderjumppacket"><a href="#riderjumppacket" class="header-anchor">#</a> <code>RiderJumpPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RiderJumpPacket : Packet:288
+{
+  int mJumpScale;
+};
+
+</code></pre></div><h3 id="removeentitypacket"><a href="#removeentitypacket" class="header-anchor">#</a> <code>RemoveEntityPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RemoveEntityPacket : EntityServerPacket
+{
+};
+
+</code></pre></div><h3 id="requestchunkradiuspacket"><a href="#requestchunkradiuspacket" class="header-anchor">#</a> <code>RequestChunkRadiusPacket</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RequestChunkRadiusPacket : Packet:288
+{
+  int mChunkRadius;
+};
+
+</code></pre></div><h3 id="raknetinstance-raknetnetworkpeer"><a href="#raknetinstance-raknetnetworkpeer" class="header-anchor">#</a> <code>RakNetInstance::RakNetNetworkPeer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RakNetInstance::RakNetNetworkPeer : NetworkPeer
+{
+  RakNet::RakPeerInterface *mRakPeer;
+  NetworkIdentifier mId;
+  std::string mSendBuffer;
+  std::vector&lt;std::string&gt; mReadBuffers;
+  int mApproximateMaxBps;
+  int mLastPing;
+  int mAveragePing;
+};
+
+</code></pre></div><h3 id="raknetinstance-pingcallbackdata"><a href="#raknetinstance-pingcallbackdata" class="header-anchor">#</a> <code>RakNetInstance::PingCallbackData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNetInstance::PingCallbackData
+{
+  std::string mAddress;
+  std::function&lt;void (unsigned int)&gt; mAction;
+};
+
+</code></pre></div><h3 id="raknetserverlocator-pingraterecorder"><a href="#raknetserverlocator-pingraterecorder" class="header-anchor">#</a> <code>RakNetServerLocator::PingRateRecorder</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNetServerLocator::PingRateRecorder
+{
+  std::vector&lt;unsigned long&gt; mPingTimes;
+  unsigned int mAveragingWindowSize;
+  float mAverageTime;
+  float mLastPingTime;
+  RakNet::TimeMS mStartTime;
+  unsigned int mPingTimesIndex;
+  int mIpVersion;
+  bool mPingStarted;
+  bool mAveraging;
+};
+
+</code></pre></div><h3 id="recipe"><a href="#recipe" class="header-anchor">#</a> <code>Recipe</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Recipe
+{
+  int (**_vptr$Recipe)(void);
+  std::string mRecipeId;
+  ItemPack mMyItems;
+  mce::UUID mMyId;
+  int mWidth;
+  int mHeight;
+  int mPriority;
+  Recipe::Ingredients mMyIngredients;
+  Util::HashString mTag;
+};
+
+</code></pre></div><h3 id="recipes"><a href="#recipes" class="header-anchor">#</a> <code>Recipes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct Recipes
+{
+  ResourcePackManager *mResourcePackManager;
+  std::map&lt;Util::HashString,std::map&lt;std::string,std::unique_ptr&lt;Recipe&gt;&gt;&gt; mRecipes;
+  std::map&lt;Recipes::FurnaceRecipeKey,ItemInstance&gt; mFurnaceRecipes;
+  bool mInitializing;
+  std::map&lt;ItemInstance,std::unordered_map&lt;std::string,Recipe *&gt;,SortItemInstanceIdAux,std::allocator&lt;std::pair&lt;const ItemInstance,std::unordered_map&lt;std::string,Recipe *&gt; &gt; &gt; &gt; mRecipesByOutput;
+  RecipeListenerList mListeners;
+};
+
+</code></pre></div><h3 id="recipelistenerlist"><a href="#recipelistenerlist" class="header-anchor">#</a> <code>RecipeListenerList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;std::pair&lt;std::weak_ptr&lt;bool&gt;,std::function&lt;void ()&gt; &gt;&gt; RecipeListenerList;
+
+</code></pre></div><h3 id="repairitemrecipe"><a href="#repairitemrecipe" class="header-anchor">#</a> <code>RepairItemRecipe</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RepairItemRecipe : MultiRecipe
+{
+  Recipe::ResultList mResults;
+};
+
+</code></pre></div><h3 id="resourcelocationpair"><a href="#resourcelocationpair" class="header-anchor">#</a> <code>ResourceLocationPair</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) ResourceLocationPair
+{
+  ResourceLocation mResourceLocation;
+  PackIdVersion mPackId;
+  int mPackPosition;
+};
+
+</code></pre></div><h3 id="randomthreadcheckmanager"><a href="#randomthreadcheckmanager" class="header-anchor">#</a> <code>RandomThreadCheckManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RandomThreadCheckManager : AppPlatformListener
+{
+  std::atomic_uint mSuspendResumeIndex;
+};
+
+</code></pre></div><h3 id="ropesystem"><a href="#ropesystem" class="header-anchor">#</a> <code>RopeSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RopeSystem
+{
+  bool mWaveApplied;
+  RopePoints mQueuedRenderPoints;
+  RopePoints mRenderPoints;
+  std::vector&lt;RopeNode&gt; mNodes;
+  std::vector&lt;AABBBucket&gt; mColliderBuckets;
+  std::vector&lt;RopeWave&gt; mWaves;
+  RopeParams mParams;
+  std::set&lt;AABB,AABBPred,std::allocator&lt;AABB&gt; &gt; mBlacklistedColliders;
+  Vec3 mPrevStartPin;
+  Vec3 mPrevEndPin;
+  size_t mCutNode;
+  size_t mCutRenderNode;
+  size_t mMinNodes;
+  size_t mCutTicks;
+  ActorUniqueID mEndPinEntity;
+  std::atomic_flag mTicking;
+  Bedrock::Threading::Mutex mRenderMutex;
+  bool mAbandonCollision;
+  Vec3 mStartPin;
+  Vec3 mEndPin;
+  size_t mToCutNode;
+};
+
+</code></pre></div><h3 id="ropepoints"><a href="#ropepoints" class="header-anchor">#</a> <code>RopePoints</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RopePoints
+{
+  size_t mSize;
+  std::vector&lt;RopePoint&gt; mPoints;
+};
+
+</code></pre></div><h3 id="raidtriggerdescription"><a href="#raidtriggerdescription" class="header-anchor">#</a> <code>RaidTriggerDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RaidTriggerDescription : ComponentDescription
+{
+  DefinitionTrigger mOnTriggered;
+};
+
+</code></pre></div><h3 id="rideabledescription"><a href="#rideabledescription" class="header-anchor">#</a> <code>RideableDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RideableDescription : ComponentDescription
+{
+  int mSeatCount;
+  int mControllingSeat;
+  bool mSkipInteractIfCrouching;
+  std::vector&lt;SeatDescription&gt; mSeats;
+  Util::hashStringSet mFamilyTypes;
+  std::string mInteractText;
+  bool mPullInEntities;
+  bool mRiderCanPick;
+};
+
+</code></pre></div><h3 id="ropepointsref"><a href="#ropepointsref" class="header-anchor">#</a> <code>RopePointsRef</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RopePointsRef
+{
+  const RopePoints *mPoints;
+  Bedrock::Threading::Mutex *mPointMutex;
+};
+
+</code></pre></div><h3 id="removedactordamagebytype"><a href="#removedactordamagebytype" class="header-anchor">#</a> <code>RemovedActorDamageByType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RemovedActorDamageByType : ActorDamageSource:96
+{
+  ActorType mEntityType;
+};
+
+</code></pre></div><h3 id="rabbit"><a href="#rabbit" class="header-anchor">#</a> <code>Rabbit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Rabbit : Animal
+{
+  int mMoreCarrotTicks;
+  int mCarrotsEaten;
+};
+
+</code></pre></div><h3 id="raidercelebrationgoal"><a href="#raidercelebrationgoal" class="header-anchor">#</a> <code>RaiderCelebrationGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RaiderCelebrationGoal : Goal
+{
+  Mob *mMob;
+  LevelSoundEvent mSoundEvent;
+  FloatRange mSoundIntervalRange;
+  FloatRange mJumpIntervalRange;
+  int mNextJumpTickTimer;
+  int mNextSoundTickTimer;
+  int mDurationInTicks;
+  int mRuntimeTicks;
+  const DefinitionTrigger mOnEndEvent;
+};
+
+</code></pre></div><h3 id="runaroundlikecrazygoal"><a href="#runaroundlikecrazygoal" class="header-anchor">#</a> <code>RunAroundLikeCrazyGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RunAroundLikeCrazyGoal : Goal
+{
+  Mob *mMob;
+  float mSpeedModifier;
+  Vec3 mPos;
+};
+
+</code></pre></div><h3 id="restrictsungoal"><a href="#restrictsungoal" class="header-anchor">#</a> <code>RestrictSunGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RestrictSunGoal : Goal
+{
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="restrictopendoorgoal"><a href="#restrictopendoorgoal" class="header-anchor">#</a> <code>RestrictOpenDoorGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RestrictOpenDoorGoal : Goal
+{
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="randomlookaroundgoal"><a href="#randomlookaroundgoal" class="header-anchor">#</a> <code>RandomLookAroundGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RandomLookAroundGoal : Goal:96
+{
+  float mRelX;
+  float mRelZ;
+  int mTotalLookTime;
+  int mMinLookTime;
+  int mMaxLookTime;
+  float mProbability;
+  Mob *mMob;
+};
+
+</code></pre></div><h3 id="randomsitgoal"><a href="#randomsitgoal" class="header-anchor">#</a> <code>RandomSitGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RandomSitGoal : Goal
+{
+  Mob *mMob;
+  const float mStartChance;
+  const float mStopChance;
+  uint64_t mCooldown;
+  const int mSitCooldownTotal;
+  const int mMinSitTick;
+  int mCurrentSitTick;
+};
+
+</code></pre></div><h3 id="randomlookaroundandsitgoal"><a href="#randomlookaroundandsitgoal" class="header-anchor">#</a> <code>RandomLookAroundAndSitGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RandomLookAroundAndSitGoal : RandomLookAroundGoal
+{
+  int mMinLookCount;
+  int mMaxLookCount;
+  int mTotalLookCount;
+};
+
+</code></pre></div><h3 id="rangedattackgoal"><a href="#rangedattackgoal" class="header-anchor">#</a> <code>RangedAttackGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RangedAttackGoal : Goal
+{
+  Mob *mMob;
+  TempEPtr&lt;Actor&gt; mTarget;
+  int mAttackTime;
+  float mSpeedModifier;
+  int mSeeTime;
+  int mAttackIntervalMin;
+  int mAttackIntervalMax;
+  float mAttackRadius;
+  float mAttackRadiusSqr;
+  float mFOV;
+  bool mIsChargedAttack;
+  int mChargeShootTrigger;
+  int mChargeChargedTrigger;
+  int mCharge;
+  int mBurstShots;
+  int mBurstShotsLeft;
+  int mBurstInterval;
+  int mBurstTime;
+  bool mUsingChargedItem;
+};
+
+</code></pre></div><h3 id="randombreachinggoal"><a href="#randombreachinggoal" class="header-anchor">#</a> <code>RandomBreachingGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RandomBreachingGoal
+{
+  __int8 baseclass_0[68];
+  int mCooldown;
+  int mTimer;
+  int mAttempts;
+};
+
+</code></pre></div><h3 id="randomstrollgoal"><a href="#randomstrollgoal" class="header-anchor">#</a> <code>RandomStrollGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RandomStrollGoal : Goal
+{
+  Mob *mMob;
+  float mSpeed;
+  int mXZDist;
+  int mYDist;
+  int mInterval;
+  Vec3 mWantedPosition;
+  BlockPos mChosenEndPos;
+  bool mPathingInvalid;
+  bool mReachedTarget;
+};
+
+</code></pre></div><h3 id="randomswimminggoal"><a href="#randomswimminggoal" class="header-anchor">#</a> <code>RandomSwimmingGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RandomSwimmingGoal : RandomStrollGoal
+{
+};
+
+</code></pre></div><h3 id="randomflyinggoal"><a href="#randomflyinggoal" class="header-anchor">#</a> <code>RandomFlyingGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RandomFlyingGoal
+{
+  __int8 baseclass_0[66];
+  bool mCanLandOnTrees;
+};
+
+</code></pre></div><h3 id="receivelovegoal"><a href="#receivelovegoal" class="header-anchor">#</a> <code>ReceiveLoveGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ReceiveLoveGoal : Goal
+{
+  VillagerBase *mVillager;
+};
+
+</code></pre></div><h3 id="rollgoal"><a href="#rollgoal" class="header-anchor">#</a> <code>RollGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RollGoal : Goal
+{
+  Mob *mMob;
+  float mRollXd;
+  float mRollZd;
+  float mProbability;
+};
+
+</code></pre></div><h3 id="raidgardengoal"><a href="#raidgardengoal" class="header-anchor">#</a> <code>RaidGardenGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RaidGardenGoal : BaseMoveToBlockGoal
+{
+  int mMaxToEat;
+  int mEaten;
+  int mEatDelay;
+  int mHasEatenFillDelay;
+  int mInitialEatDelay;
+  int mEatTimer;
+  int mHasEatenFillTimer;
+  std::set&lt;const Block *&gt; mEatBlocks;
+};
+
+</code></pre></div><h3 id="randomstrollgoal-528"><a href="#randomstrollgoal-528" class="header-anchor">#</a> <code>RandomStrollGoal:528</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((packed)) __attribute__((aligned(2))) RandomStrollGoal:528 : Goal
+{
+  Mob *mMob;
+  float mSpeed;
+  int mXZDist;
+  int mYDist;
+  int mInterval;
+  Vec3 mWantedPosition;
+  BlockPos mChosenEndPos;
+  bool mPathingInvalid;
+  bool mReachedTarget;
+};
+
+</code></pre></div><h3 id="randompos"><a href="#randompos" class="header-anchor">#</a> <code>RandomPos</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RandomPos
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="riverfollowinggoal"><a href="#riverfollowinggoal" class="header-anchor">#</a> <code>RiverFollowingGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RiverFollowingGoal : Goal
+{
+  Mob *mMob;
+  Vec3 mHeading;
+  float mLookAhead;
+  float mSpeed;
+};
+
+</code></pre></div><h3 id="removeonhitsubcomponent"><a href="#removeonhitsubcomponent" class="header-anchor">#</a> <code>RemoveOnHitSubcomponent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RemoveOnHitSubcomponent : OnHitSubcomponent
+{
+};
+
+</code></pre></div><h3 id="rapidfertilizeritem"><a href="#rapidfertilizeritem" class="header-anchor">#</a> <code>RapidFertilizerItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RapidFertilizerItem : FertilizerItem
+{
+};
+
+</code></pre></div><h3 id="recorditem"><a href="#recorditem" class="header-anchor">#</a> <code>RecordItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RecordItem : Item
+{
+  LevelSoundEvent mSoundEvent;
+  float mDuration;
+};
+
+</code></pre></div><h3 id="redstonedustitem"><a href="#redstonedustitem" class="header-anchor">#</a> <code>RedStoneDustItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RedStoneDustItem : Item
+{
+};
+
+</code></pre></div><h3 id="recipelistener"><a href="#recipelistener" class="header-anchor">#</a> <code>RecipeListener</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::pair&lt;std::weak_ptr&lt;bool&gt;,std::function&lt;void ()&gt; &gt; RecipeListener;
+
+</code></pre></div><h3 id="rivertransformationattributes"><a href="#rivertransformationattributes" class="header-anchor">#</a> <code>RiverTransformationAttributes</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef WeightedBiomeAttributes&lt;RiverTransformation&gt; RiverTransformationAttributes;
+
+</code></pre></div><h3 id="repeaterblock"><a href="#repeaterblock" class="header-anchor">#</a> <code>RepeaterBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RepeaterBlock : DiodeBlock
+{
+};
+
+</code></pre></div><h3 id="randomizableblockactorfillingcontainer"><a href="#randomizableblockactorfillingcontainer" class="header-anchor">#</a> <code>RandomizableBlockActorFillingContainer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RandomizableBlockActorFillingContainer : RandomizableBlockActorContainerBase, FillingContainer
+{
+};
+
+</code></pre></div><h3 id="randomizableblockactorcontainerbase"><a href="#randomizableblockactorcontainerbase" class="header-anchor">#</a> <code>RandomizableBlockActorContainerBase</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RandomizableBlockActorContainerBase : BlockActor
+{
+  std::string mLootTable;
+  int mLootTableSeed;
+};
+
+</code></pre></div><h3 id="randomizableblockactorcontainer"><a href="#randomizableblockactorcontainer" class="header-anchor">#</a> <code>RandomizableBlockActorContainer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RandomizableBlockActorContainer : RandomizableBlockActorContainerBase, Container
+{
+};
+
+</code></pre></div><h3 id="redstonewireblock"><a href="#redstonewireblock" class="header-anchor">#</a> <code>RedStoneWireBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RedStoneWireBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="railblock"><a href="#railblock" class="header-anchor">#</a> <code>RailBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RailBlock : BaseRailBlock
+{
+};
+
+</code></pre></div><h3 id="redstoneoreblock"><a href="#redstoneoreblock" class="header-anchor">#</a> <code>RedStoneOreBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RedStoneOreBlock : BlockLegacy
+{
+  bool mLit;
+};
+
+</code></pre></div><h3 id="redstonetorchblock"><a href="#redstonetorchblock" class="header-anchor">#</a> <code>RedstoneTorchBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RedstoneTorchBlock : TorchBlock
+{
+  bool mOn;
+};
+
+</code></pre></div><h3 id="reedblock"><a href="#reedblock" class="header-anchor">#</a> <code>ReedBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ReedBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="redstonelampblock"><a href="#redstonelampblock" class="header-anchor">#</a> <code>RedstoneLampBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RedstoneLampBlock : BlockLegacy
+{
+  const bool mIsLit;
+};
+
+</code></pre></div><h3 id="redstoneblock"><a href="#redstoneblock" class="header-anchor">#</a> <code>RedstoneBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RedstoneBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="rotatedpillarblock"><a href="#rotatedpillarblock" class="header-anchor">#</a> <code>RotatedPillarBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RotatedPillarBlock : BlockLegacy
+{
+};
+
+</code></pre></div><h3 id="runtimelightingmanager-runtimelightingsubchunklist"><a href="#runtimelightingmanager-runtimelightingsubchunklist" class="header-anchor">#</a> <code>RuntimeLightingManager::RuntimeLightingSubchunkList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RuntimeLightingManager::RuntimeLightingSubchunkList
+{
+  std::array&lt;std::vector&lt;SubChunkLightUpdate&gt;,16&gt; mAlteredSubchunkBlockList;
+};
+
+</code></pre></div><h3 id="randomauxvaluefunction"><a href="#randomauxvaluefunction" class="header-anchor">#</a> <code>RandomAuxValueFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RandomAuxValueFunction : LootItemFunction
+{
+  RandomValueBounds mValues;
+};
+
+</code></pre></div><h3 id="randomblockstatefunction"><a href="#randomblockstatefunction" class="header-anchor">#</a> <code>RandomBlockStateFunction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RandomBlockStateFunction : LootItemFunction
+{
+  RandomValueBounds mValues;
+  std::string mBlockStateName;
+};
+
+</code></pre></div><h3 id="repeatercapacitor"><a href="#repeatercapacitor" class="header-anchor">#</a> <code>RepeaterCapacitor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RepeaterCapacitor : CapacitorComponent:544
+{
+  RepeaterCapacitor::States mOnStates[5];
+  int mInsertAt;
+  bool mPowered;
+  bool mNextPower;
+  bool mLocked;
+  int mPulseCount;
+  bool mPulse;
+  bool mNextPulse;
+  CircuitComponentList mSideComponents;
+};
+
+</code></pre></div><h3 id="redstonetorchcapacitor"><a href="#redstonetorchcapacitor" class="header-anchor">#</a> <code>RedstoneTorchCapacitor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RedstoneTorchCapacitor : CapacitorComponent
+{
+  RedstoneTorchCapacitor *mNextOrder;
+  int mSelfPowerCount;
+  RedstoneTorchCapacitor::State mState[2];
+  bool mCanReigniteFromBurnout;
+};
+
+</code></pre></div><h3 id="railmovementsystem"><a href="#railmovementsystem" class="header-anchor">#</a> <code>RailMovementSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RailMovementSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="rolechecker"><a href="#rolechecker" class="header-anchor">#</a> <code>RoleChecker</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RoleChecker
+{
+  std::weak_ptr&lt;RoleCheckerCallback&gt; mPendingCallback;
+};
+
+</code></pre></div><h3 id="rolecheckercallback"><a href="#rolecheckercallback" class="header-anchor">#</a> <code>RoleCheckerCallback</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RoleCheckerCallback
+{
+  RoleChecker::OnRoleAcquired mCallback;
+};
+
+</code></pre></div><h3 id="reloadcommand"><a href="#reloadcommand" class="header-anchor">#</a> <code>ReloadCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj ReloadCommand : Command
+{
+};
+
+</code></pre></div><h3 id="replaceitemcommand"><a href="#replaceitemcommand" class="header-anchor">#</a> <code>ReplaceItemCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) ReplaceItemCommand : Command
+{
+  ReplaceItemCommand::TargetType mTargetType;
+  ActorSelector mTargetEntity;
+  CommandPosition mTargetBlock;
+  BlockSlot mBlockSlot;
+  EquipmentSlot mEquipmentSlot;
+  int mSlotId;
+  CommandItem mItem;
+  int mAmount;
+  int mData;
+  Json::Value mComponents;
+  bool mHaveComponents;
+};
+
+</code></pre></div><h3 id="railmovementdefinition"><a href="#railmovementdefinition" class="header-anchor">#</a> <code>RailMovementDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RailMovementDefinition
+{
+  float mMaxSpeed;
+};
+
+</code></pre></div><h3 id="repeatuntilsuccessdefinition"><a href="#repeatuntilsuccessdefinition" class="header-anchor">#</a> <code>RepeatUntilSuccessDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RepeatUntilSuccessDefinition : DecoratorDefinition
+{
+  int mMaxNumberOfAttempts;
+  std::string mMaxNumberOfAttemptsId;
+};
+
+</code></pre></div><h3 id="repeatuntilsuccessnode"><a href="#repeatuntilsuccessnode" class="header-anchor">#</a> <code>RepeatUntilSuccessNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RepeatUntilSuccessNode : BehaviorNode
+{
+  Unique&lt;BehaviorNode&gt; mActiveChild;
+  int mMaxNumberOfAttempts;
+  int mCurrentAttempt;
+};
+
+</code></pre></div><h3 id="repeatuntilfailuredefinition"><a href="#repeatuntilfailuredefinition" class="header-anchor">#</a> <code>RepeatUntilFailureDefinition</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RepeatUntilFailureDefinition : DecoratorDefinition
+{
+};
+
+</code></pre></div><h3 id="repeatuntilfailurenode"><a href="#repeatuntilfailurenode" class="header-anchor">#</a> <code>RepeatUntilFailureNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RepeatUntilFailureNode : BehaviorNode
+{
+  Unique&lt;BehaviorNode&gt; mActiveChild;
+};
+
+</code></pre></div><h3 id="rangedweaponitem"><a href="#rangedweaponitem" class="header-anchor">#</a> <code>RangedWeaponItem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RangedWeaponItem : Item
+{
+};
+
+</code></pre></div><h3 id="regionfile"><a href="#regionfile" class="header-anchor">#</a> <code>RegionFile</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RegionFile
+{
+  int (**_vptr$RegionFile)(void);
+  Core::File mFile;
+  Core::HeapPathBuffer mFileName;
+  std::array&lt;int,1024&gt; mOffsets;
+  std::array&lt;int,1024&gt; mEmptyChunk;
+  RegionFile::FreeSectorMap mSectorFree;
+};
+
+</code></pre></div><h3 id="regionfile-freesectormap"><a href="#regionfile-freesectormap" class="header-anchor">#</a> <code>RegionFile::FreeSectorMap</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::map&lt;int,bool&gt; RegionFile::FreeSectorMap;
+
+</code></pre></div><h3 id="redstonetorchcapacitor-state"><a href="#redstonetorchcapacitor-state" class="header-anchor">#</a> <code>RedstoneTorchCapacitor::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RedstoneTorchCapacitor::State
+{
+  bool mOn;
+  bool mHalfFrame;
+  bool mChanged;
+};
+
+</code></pre></div><h3 id="railmovement"><a href="#railmovement" class="header-anchor">#</a> <code>RailMovement</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RailMovement
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="raknet-rakpeer"><a href="#raknet-rakpeer" class="header-anchor">#</a> <code>RakNet::RakPeer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) RakNet::RakPeer : RakNet::RakPeerInterface, RakNet::RNS2EventHandler
+{
+  volatile bool endThreads;
+  volatile bool isMainLoopThreadActive;
+  bool occasionalPing;
+  unsigned int maximumNumberOfPeers;
+  unsigned int maximumIncomingConnections;
+  RakNet::BitStream offlinePingResponse;
+  char incomingPassword[256];
+  unsigned __int8 incomingPasswordLength;
+  RakNet::RakPeer::RemoteSystemStruct *remoteSystemList;
+  RakNet::RakPeer::RemoteSystemStruct **activeSystemList;
+  unsigned int activeSystemListSize;
+  RakNet::RemoteSystemIndex **remoteSystemLookup;
+  DataStructures::MemoryPool&lt;RakNet::RemoteSystemIndex&gt; remoteSystemIndexPool;
+  RakNet::SimpleMutex rakPeerMutexes[2];
+  bool updateCycleIsRunning;
+  unsigned int bytesSentPerSecond;
+  unsigned int bytesReceivedPerSecond;
+  unsigned int validationInteger;
+  RakNet::SimpleMutex incomingQueueMutex;
+  RakNet::SimpleMutex banListMutex;
+  DataStructures::List&lt;RakNet::RakPeer::BanStruct *&gt; banList;
+  DataStructures::List&lt;RakNet::PluginInterface2 *&gt; pluginListTS;
+  DataStructures::List&lt;RakNet::PluginInterface2 *&gt; pluginListNTS;
+  DataStructures::Queue&lt;RakNet::RakPeer::RequestedConnectionStruct *&gt; requestedConnectionQueue;
+  RakNet::SimpleMutex requestedConnectionQueueMutex;
+  DataStructures::ThreadsafeAllocatingQueue&lt;RakNet::RakPeer::BufferedCommandStruct&gt; bufferedCommands;
+  DataStructures::Queue&lt;RakNet::RNS2RecvStruct *&gt; bufferedPacketsFreePool;
+  RakNet::SimpleMutex bufferedPacketsFreePoolMutex;
+  DataStructures::Queue&lt;RakNet::RNS2RecvStruct *&gt; bufferedPacketsQueue;
+  RakNet::SimpleMutex bufferedPacketsQueueMutex;
+  DataStructures::ThreadsafeAllocatingQueue&lt;RakNet::RakPeer::SocketQueryOutput&gt; socketQueryOutput;
+  RakNet::SimpleMutex securityExceptionMutex;
+  int defaultMTUSize;
+  bool trackFrequencyTable;
+  DataStructures::List&lt;RakNet::RakNetSocket2 *&gt; socketList;
+  RakNet::BitStream *replyFromTargetBS;
+  RakNet::SystemAddress replyFromTargetPlayer;
+  bool replyFromTargetBroadcast;
+  RakNet::TimeMS defaultTimeoutTime;
+  RakNet::RakNetGUID myGuid;
+  unsigned int maxOutgoingBPS;
+  bool allowConnectionResponseIPMigration;
+  RakNet::SystemAddress firstExternalID;
+  int splitMessageProgressInterval;
+  RakNet::TimeMS unreliableTimeout;
+  bool (*incomingDatagramEventHandler)(RakNet::RNS2RecvStruct *);
+  DataStructures::List&lt;RakNet::RakString&gt; securityExceptionList;
+  RakNet::SystemAddress ipList[21];
+  RakNet::NetworkAdapter adapterList[11];
+  bool allowInternalRouting;
+  void (*userUpdateThreadPtr)(RakNet::RakPeerInterface *, void *);
+  void *userUpdateThreadData;
+  RakNet::SignaledEvent quitAndDataEvents;
+  bool limitConnectionFrequencyFromTheSameIP;
+  RakNet::SimpleMutex packetAllocationPoolMutex;
+  DataStructures::MemoryPool&lt;RakNet::Packet&gt; packetAllocationPool;
+  RakNet::SimpleMutex packetReturnMutex;
+  DataStructures::Queue&lt;RakNet::Packet *&gt; packetReturnQueue;
+  RakNet::SimpleMutex sendReceiptSerialMutex;
+  uint32_t sendReceiptSerial;
+};
+
+</code></pre></div><h3 id="raknet-rns2eventhandler"><a href="#raknet-rns2eventhandler" class="header-anchor">#</a> <code>RakNet::RNS2EventHandler</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RNS2EventHandler
+{
+  int (**_vptr$RNS2EventHandler)(void);
+};
+
+</code></pre></div><h3 id="raknet-rakpeer-remotesystemstruct"><a href="#raknet-rakpeer-remotesystemstruct" class="header-anchor">#</a> <code>RakNet::RakPeer::RemoteSystemStruct</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RakPeer::RemoteSystemStruct
+{
+  bool isActive;
+  RakNet::SystemAddress systemAddress;
+  RakNet::SystemAddress myExternalSystemAddress;
+  RakNet::SystemAddress theirInternalSystemAddress[20];
+  RakNet::ReliabilityLayer reliabilityLayer;
+  bool weInitiatedTheConnection;
+  RakNet::RakPeer::PingAndClockDifferential pingAndClockDifferential[5];
+  RakNet::Time pingAndClockDifferentialWriteIndex;
+  unsigned __int16 lowestPing;
+  RakNet::Time nextPingTime;
+  RakNet::Time lastReliableSend;
+  RakNet::Time connectionTime;
+  RakNet::RakNetGUID guid;
+  int MTUSize;
+  RakNet::RakNetSocket2 *rakNetSocket;
+  RakNet::SystemIndex remoteSystemIndex;
+  RakNet::RakPeer::RemoteSystemStruct::ConnectMode connectMode;
+};
+
+</code></pre></div><h3 id="raknet-reliabilitylayer"><a href="#raknet-reliabilitylayer" class="header-anchor">#</a> <code>RakNet::ReliabilityLayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::ReliabilityLayer
+{
+  DataStructures::Queue&lt;RakNet::InternalPacket *&gt; outputQueue;
+  int splitMessageProgressInterval;
+  CCTimeType unreliableTimeout;
+  DataStructures::Queue&lt;RakNet::ReliabilityLayer::DatagramHistoryNode&gt; datagramHistory;
+  DataStructures::MemoryPool&lt;RakNet::ReliabilityLayer::MessageNumberNode&gt; datagramHistoryMessagePool;
+  DataStructures::List&lt;RakNet::ReliabilityLayer::UnreliableWithAckReceiptNode&gt; unreliableWithAckReceiptHistory;
+  DatagramSequenceNumberType datagramHistoryPopCount;
+  DataStructures::MemoryPool&lt;RakNet::InternalPacket&gt; internalPacketPool;
+  RakNet::InternalPacket *resendBuffer[512];
+  RakNet::InternalPacket *resendLinkedListHead;
+  RakNet::InternalPacket *unreliableLinkedListHead;
+  RakNet::TimeMS timeLastDatagramArrived;
+  DataStructures::Heap&lt;unsigned long,RakNet::InternalPacket *,false&gt; outgoingPacketBuffer;
+  RakNet::reliabilityHeapWeightType outgoingPacketBufferNextWeights[4];
+  DataStructures::OrderedList&lt;unsigned short,RakNet::SplitPacketChannel *,&amp;RakNet::SplitPacketChannelComp&gt; splitPacketChannelList;
+  RakNet::MessageNumberType sendReliableMessageNumberIndex;
+  RakNet::MessageNumberType internalOrderIndex;
+  bool deadConnection;
+  bool cheater;
+  RakNet::SplitPacketIdType splitPacketId;
+  RakNet::TimeMS timeoutTime;
+  RakNet::RakNetStatistics statistics;
+  RakNet::OrderingIndexType orderedWriteIndex[32];
+  RakNet::OrderingIndexType sequencedWriteIndex[32];
+  RakNet::OrderingIndexType orderedReadIndex[32];
+  RakNet::OrderingIndexType highestSequencedReadIndex[32];
+  DataStructures::Heap&lt;unsigned long,RakNet::InternalPacket *,false&gt; orderingHeaps[32];
+  RakNet::OrderingIndexType heapIndexOffsets[32];
+  DataStructures::Queue&lt;bool&gt; hasReceivedPacketQueue;
+  DatagramSequenceNumberType receivedPacketsBaseIndex;
+  bool resetReceivedPackets;
+  CCTimeType lastUpdateTime;
+  CCTimeType timeBetweenPackets;
+  CCTimeType nextSendTime;
+  CCTimeType ackPingSum;
+  unsigned __int8 ackPingIndex;
+  RakNet::RemoteSystemTimeType remoteSystemTime;
+  CCTimeType nextAllowedThroughputSample;
+  bool bandwidthExceededStatistic;
+  __int64 throughputCapCountdown;
+  unsigned int receivePacketCount;
+  CCTimeType elapsedTimeSinceLastUpdate;
+  CCTimeType nextAckTimeToSend;
+  RakNet::CCRakNetSlidingWindow congestionManager;
+  uint32_t unacknowledgedBytes;
+  DataStructures::List&lt;RakNet::InternalPacket *&gt; packetsToSendThisUpdate;
+  DataStructures::List&lt;bool&gt; packetsToDeallocThisUpdate;
+  DataStructures::List&lt;unsigned int&gt; packetsToSendThisUpdateDatagramBoundaries;
+  DataStructures::List&lt;bool&gt; datagramsToSendThisUpdateIsPair;
+  DataStructures::List&lt;unsigned int&gt; datagramSizesInBytes;
+  RakNet::BitSize_t datagramSizeSoFar;
+  RakNet::BitSize_t allDatagramSizesSoFar;
+  double totalUserDataBytesAcked;
+  CCTimeType timeOfLastContinualSend;
+  CCTimeType timeToNextUnreliableCull;
+  DataStructures::RangeList&lt;RakNet::uint24_t&gt; incomingAcks;
+  int countdownToNextPacketPair;
+  DataStructures::RangeList&lt;RakNet::uint24_t&gt; acknowlegements;
+  DataStructures::RangeList&lt;RakNet::uint24_t&gt; NAKs;
+  bool remoteSystemNeedsBAndAS;
+  DataStructures::MemoryPool&lt;RakNet::InternalPacketRefCountedData&gt; refCountedDataPool;
+  RakNet::BPSTracker bpsMetrics[7];
+  CCTimeType lastBpsClear;
+};
+
+</code></pre></div><h3 id="raknet-internalpacketrefcounteddata"><a href="#raknet-internalpacketrefcounteddata" class="header-anchor">#</a> <code>RakNet::InternalPacketRefCountedData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::InternalPacketRefCountedData
+{
+  unsigned __int8 *sharedDataBlock;
+  unsigned int refCount;
+};
+
+</code></pre></div><h3 id="raknet-reliabilitylayer-unreliablewithackreceiptnode"><a href="#raknet-reliabilitylayer-unreliablewithackreceiptnode" class="header-anchor">#</a> <code>RakNet::ReliabilityLayer::UnreliableWithAckReceiptNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::ReliabilityLayer::UnreliableWithAckReceiptNode
+{
+  DatagramSequenceNumberType datagramNumber;
+  uint32_t sendReceiptSerial;
+  RakNet::TimeUS nextActionTime;
+};
+
+</code></pre></div><h3 id="raknet-splitpacketchannel"><a href="#raknet-splitpacketchannel" class="header-anchor">#</a> <code>RakNet::SplitPacketChannel</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::SplitPacketChannel
+{
+  CCTimeType lastUpdateTime;
+  RakNet::SortedSplittedPackets splitPacketList;
+  RakNet::InternalPacket *firstPacket;
+};
+
+</code></pre></div><h3 id="raknet-bpstracker"><a href="#raknet-bpstracker" class="header-anchor">#</a> <code>RakNet::BPSTracker</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::BPSTracker
+{
+  uint64_t total1;
+  uint64_t lastSec1;
+  DataStructures::Queue&lt;RakNet::BPSTracker::TimeAndValue2&gt; dataQueue;
+};
+
+</code></pre></div><h3 id="raknet-rakpeer-pingandclockdifferential"><a href="#raknet-rakpeer-pingandclockdifferential" class="header-anchor">#</a> <code>RakNet::RakPeer::PingAndClockDifferential</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RakPeer::PingAndClockDifferential
+{
+  unsigned __int16 pingTime;
+  RakNet::Time clockDifferential;
+};
+
+</code></pre></div><h3 id="raknet-raknetsocket2"><a href="#raknet-raknetsocket2" class="header-anchor">#</a> <code>RakNet::RakNetSocket2</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::RakNetSocket2
+{
+  int (**_vptr$RakNetSocket2)(void);
+  RakNet::RNS2EventHandler *eventHandler;
+  RakNet::RNS2Type socketType;
+  RakNet::SystemAddress boundAddress;
+  unsigned int userConnectionSocketIndex;
+};
+
+</code></pre></div><h3 id="raknet-remotesystemindex"><a href="#raknet-remotesystemindex" class="header-anchor">#</a> <code>RakNet::RemoteSystemIndex</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RemoteSystemIndex
+{
+  unsigned int index;
+  RakNet::RemoteSystemIndex *next;
+};
+
+</code></pre></div><h3 id="raknet-rakpeer-banstruct"><a href="#raknet-rakpeer-banstruct" class="header-anchor">#</a> <code>RakNet::RakPeer::BanStruct</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::RakPeer::BanStruct
+{
+  char *IP;
+  RakNet::TimeMS timeout;
+};
+
+</code></pre></div><h3 id="raknet-plugininterface2"><a href="#raknet-plugininterface2" class="header-anchor">#</a> <code>RakNet::PluginInterface2</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::PluginInterface2
+{
+  int (**_vptr$PluginInterface2)(void);
+  RakNet::RakPeerInterface *rakPeerInterface;
+  RakNet::TCPInterface *tcpInterface;
+};
+
+</code></pre></div><h3 id="raknet-rakpeer-requestedconnectionstruct"><a href="#raknet-rakpeer-requestedconnectionstruct" class="header-anchor">#</a> <code>RakNet::RakPeer::RequestedConnectionStruct</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::RakPeer::RequestedConnectionStruct
+{
+  RakNet::SystemAddress systemAddress;
+  RakNet::Time nextRequestTime;
+  unsigned __int8 requestsMade;
+  char *data;
+  unsigned __int16 dataLength;
+  char outgoingPassword[256];
+  unsigned __int8 outgoingPasswordLength;
+  unsigned int socketIndex;
+  unsigned int extraData;
+  unsigned int sendConnectionAttemptCount;
+  unsigned int timeBetweenSendConnectionAttemptsMS;
+  RakNet::TimeMS timeoutTime;
+  RakNet::PublicKeyMode publicKeyMode;
+  RakNet::RakNetSocket2 *socket;
+  RakNet::RakPeer::RequestedConnectionStruct::$FD3B22BB7AF8A0ABB9D04D1A9E595697 actionToTake;
+};
+
+</code></pre></div><h3 id="raknet-rakpeer-bufferedcommandstruct"><a href="#raknet-rakpeer-bufferedcommandstruct" class="header-anchor">#</a> <code>RakNet::RakPeer::BufferedCommandStruct</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::RakPeer::BufferedCommandStruct
+{
+  RakNet::BitSize_t numberOfBitsToSend;
+  PacketPriority priority;
+  PacketReliability reliability;
+  char orderingChannel;
+  RakNet::AddressOrGUID systemIdentifier;
+  bool broadcast;
+  RakNet::RakPeer::RemoteSystemStruct::ConnectMode connectionMode;
+  RakNet::NetworkID networkID;
+  bool blockingCommand;
+  char *data;
+  bool haveRakNetCloseSocket;
+  unsigned int connectionSocketIndex;
+  unsigned __int16 remotePortRakNetWasStartedOn_PS3;
+  unsigned int extraSocketOptions;
+  RakNet::RakNetSocket2 *socket;
+  unsigned __int16 port;
+  uint32_t receipt;
+  RakNet::RakPeer::BufferedCommandStruct::$D8D77DCE4D37D1D6016B84EB664ECA65 command;
+};
+
+</code></pre></div><h3 id="raknet-rns2recvstruct"><a href="#raknet-rns2recvstruct" class="header-anchor">#</a> <code>RakNet::RNS2RecvStruct</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RNS2RecvStruct
+{
+  char data[1400];
+  int bytesRead;
+  RakNet::SystemAddress systemAddress;
+  RakNet::TimeUS timeRead;
+  RakNet::RakNetSocket2 *socket;
+};
+
+</code></pre></div><h3 id="raknet-rakpeer-socketqueryoutput"><a href="#raknet-rakpeer-socketqueryoutput" class="header-anchor">#</a> <code>RakNet::RakPeer::SocketQueryOutput</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RakPeer::SocketQueryOutput
+{
+  DataStructures::List&lt;RakNet::RakNetSocket2 *&gt; sockets;
+};
+
+</code></pre></div><h3 id="raknet-signaledevent"><a href="#raknet-signaledevent" class="header-anchor">#</a> <code>RakNet::SignaledEvent</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::SignaledEvent
+{
+  RakNet::SimpleMutex isSignaledMutex;
+  bool isSignaled;
+  pthread_condattr_t condAttr;
+  pthread_cond_t eventList;
+  pthread_mutex_t hMutex;
+  pthread_mutexattr_t mutexAttr;
+};
+
+</code></pre></div><h3 id="raknet-reliabilitylayer-messagenumbernode"><a href="#raknet-reliabilitylayer-messagenumbernode" class="header-anchor">#</a> <code>RakNet::ReliabilityLayer::MessageNumberNode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::ReliabilityLayer::MessageNumberNode
+{
+  DatagramSequenceNumberType messageNumber;
+  RakNet::ReliabilityLayer::MessageNumberNode *next;
+};
+
+</code></pre></div><h3 id="raknet-rns2-berkley"><a href="#raknet-rns2-berkley" class="header-anchor">#</a> <code>RakNet::RNS2_Berkley</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) RakNet::RNS2_Berkley : RakNet::IRNS2_Berkley:1312
+{
+  RakNet::RNS2Socket rns2Socket;
+  RakNet::RNS2_BerkleyBindParameters binding;
+  RakNet::LocklessUint32_t isRecvFromLoopThreadActive;
+  volatile bool endThreads;
+};
+
+</code></pre></div><h3 id="raknet-rakthread"><a href="#raknet-rakthread" class="header-anchor">#</a> <code>RakNet::RakThread</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RakThread
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="raknet-sortedsplittedpackets"><a href="#raknet-sortedsplittedpackets" class="header-anchor">#</a> <code>RakNet::SortedSplittedPackets</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::SortedSplittedPackets
+{
+  RakNet::InternalPacket **data;
+  unsigned int allocation_size;
+  unsigned int addedPacketsCount;
+  RakNet::SplitPacketIdType packetId;
+};
+
+</code></pre></div><h3 id="raknet-socketlayer"><a href="#raknet-socketlayer" class="header-anchor">#</a> <code>RakNet::SocketLayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::SocketLayer
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="raknet-stringcompressor"><a href="#raknet-stringcompressor" class="header-anchor">#</a> <code>RakNet::StringCompressor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::StringCompressor
+{
+  DataStructures::Map&lt;int,RakNet::HuffmanEncodingTree *,&amp;DataStructures::defaultMapKeyComparison&gt; huffmanEncodingTrees;
+};
+
+</code></pre></div><h3 id="raknet-huffmanencodingtree"><a href="#raknet-huffmanencodingtree" class="header-anchor">#</a> <code>RakNet::HuffmanEncodingTree</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::HuffmanEncodingTree
+{
+  HuffmanEncodingTreeNode *root;
+  RakNet::HuffmanEncodingTree::CharacterEncoding encodingTable[256];
+};
+
+</code></pre></div><h3 id="raknet-huffmanencodingtree-characterencoding"><a href="#raknet-huffmanencodingtree-characterencoding" class="header-anchor">#</a> <code>RakNet::HuffmanEncodingTree::CharacterEncoding</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::HuffmanEncodingTree::CharacterEncoding
+{
+  unsigned __int8 *encoding;
+  unsigned __int16 bitLength;
+};
+
+</code></pre></div><h3 id="raknet-stringtable"><a href="#raknet-stringtable" class="header-anchor">#</a> <code>RakNet::StringTable</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::StringTable
+{
+  DataStructures::OrderedList&lt;char *,StrAndBool,&amp;RakNet::StrAndBoolComp&gt; orderedStringList;
+};
+
+</code></pre></div><h3 id="raknet-locklessuint32-t"><a href="#raknet-locklessuint32-t" class="header-anchor">#</a> <code>RakNet::LocklessUint32_t</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::LocklessUint32_t
+{
+  volatile uint32_t value;
+};
+
+</code></pre></div><h3 id="raknet-remoteclient"><a href="#raknet-remoteclient" class="header-anchor">#</a> <code>RakNet::RemoteClient</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RemoteClient
+{
+  __TCPSOCKET__ socket;
+  RakNet::SystemAddress systemAddress;
+  DataStructures::ByteQueue outgoingData;
+  bool isActive;
+  RakNet::SimpleMutex outgoingDataMutex;
+  RakNet::SimpleMutex isActiveMutex;
+};
+
+</code></pre></div><h3 id="raknet-tcpinterface-thisptrplussysaddr"><a href="#raknet-tcpinterface-thisptrplussysaddr" class="header-anchor">#</a> <code>RakNet::TCPInterface::ThisPtrPlusSysAddr</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) RakNet::TCPInterface::ThisPtrPlusSysAddr
+{
+  RakNet::TCPInterface *tcpInterface;
+  RakNet::SystemAddress systemAddress;
+  bool useSSL;
+  char bindAddress[64];
+  unsigned __int16 socketFamily;
+};
+
+</code></pre></div><h3 id="raknet-irns2-berkley"><a href="#raknet-irns2-berkley" class="header-anchor">#</a> <code>RakNet::IRNS2_Berkley</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RakNet::IRNS2_Berkley : RakNet::RakNetSocket2
+{
+};
+
+</code></pre></div><h3 id="raknet-raknetsocket2-1312"><a href="#raknet-raknetsocket2-1312" class="header-anchor">#</a> <code>RakNet::RakNetSocket2:1312</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((packed)) __attribute__((aligned(4))) RakNet::RakNetSocket2:1312
+{
+  int (**_vptr$RakNetSocket2)(void);
+  RakNet::RNS2EventHandler *eventHandler;
+  RakNet::RNS2Type socketType;
+  _BYTE gap14[4];
+  RakNet::SystemAddress boundAddress;
+  unsigned int userConnectionSocketIndex;
+};
+
+</code></pre></div><h3 id="raknet-irns2-berkley-1312"><a href="#raknet-irns2-berkley-1312" class="header-anchor">#</a> <code>RakNet::IRNS2_Berkley:1312</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj RakNet::IRNS2_Berkley:1312 : RakNet::RakNetSocket2:1312
+{
+};
+
+</code></pre></div><h3 id="raknet-rns2-windows-linux-360"><a href="#raknet-rns2-windows-linux-360" class="header-anchor">#</a> <code>RakNet::RNS2_Windows_Linux_360</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RNS2_Windows_Linux_360
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="raknet-raknetsocket2allocator"><a href="#raknet-raknetsocket2allocator" class="header-anchor">#</a> <code>RakNet::RakNetSocket2Allocator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RakNet::RakNetSocket2Allocator
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="raknet-rns2-linux"><a href="#raknet-rns2-linux" class="header-anchor">#</a> <code>RakNet::RNS2_Linux</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) RakNet::RNS2_Linux : RakNet::RNS2_Berkley
+{
+};
+
+</code></pre></div><h3 id="resourceutil"><a href="#resourceutil" class="header-anchor">#</a> <code>ResourceUtil</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct ResourceUtil
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="ratelimiter"><a href="#ratelimiter" class="header-anchor">#</a> <code>RateLimiter</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct RateLimiter
+{
+  const size_t mLimit;
+  const std::chrono::seconds mTimeIntervalSeconds;
+  std::vector&lt;std::chrono::time_point&lt;std::chrono::_V2::steady_clock,std::chrono::duration&lt;long,std::ratio&lt;1,1000000000&gt; &gt; &gt;&gt; mInstances;
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/Q.html" class="prev">
+        Q
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/S.html">
+        S
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/50.aa126f14.js" defer></script>
+  </body>
+</html>

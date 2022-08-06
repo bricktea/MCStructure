@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>J | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/72.6f64c4ab.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/76.5fddaea1.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" aria-current="page" class="active sidebar-link">J</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="j"><a href="#j" class="header-anchor">#</a> J</h1> <h3 id="jigsawjointtype"><a href="#jigsawjointtype" class="header-anchor">#</a> <code>JigsawJointType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>ROLLABLE</td> <td><code>0</code></td></tr> <tr><td>ALIGNED</td> <td><code>1</code></td></tr></tbody></table> <h3 id="journaledfile-progression"><a href="#journaledfile-progression" class="header-anchor">#</a> <code>JournaledFile::Progression</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NeverWritten</td> <td><code>0</code></td></tr> <tr><td>WriteFailed</td> <td><code>1</code></td></tr> <tr><td>WriteSuccess</td> <td><code>2</code></td></tr></tbody></table> <h3 id="json-reader-tokentype"><a href="#json-reader-tokentype" class="header-anchor">#</a> <code>Json::Reader::TokenType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>tokenEndOfStream</td> <td><code>0</code></td></tr> <tr><td>tokenObjectBegin</td> <td><code>1</code></td></tr> <tr><td>tokenObjectEnd</td> <td><code>2</code></td></tr> <tr><td>tokenArrayBegin</td> <td><code>3</code></td></tr> <tr><td>tokenArrayEnd</td> <td><code>4</code></td></tr> <tr><td>tokenString</td> <td><code>5</code></td></tr> <tr><td>tokenNumber</td> <td><code>6</code></td></tr> <tr><td>tokenTrue</td> <td><code>7</code></td></tr> <tr><td>tokenFalse</td> <td><code>8</code></td></tr> <tr><td>tokenNull</td> <td><code>9</code></td></tr> <tr><td>tokenArraySeparator</td> <td><code>10</code></td></tr> <tr><td>tokenMemberSeparator</td> <td><code>11</code></td></tr> <tr><td>tokenComment</td> <td><code>12</code></td></tr> <tr><td>tokenError</td> <td><code>13</code></td></tr></tbody></table> <h3 id="job-object-net-rate-control-flags"><a href="#job-object-net-rate-control-flags" class="header-anchor">#</a> <code>JOB_OBJECT_NET_RATE_CONTROL_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum JOB_OBJECT_NET_RATE_CONTROL_FLAGS : __int32
+{
+  JOB_OBJECT_NET_RATE_CONTROL_ENABLE = 0x1,
+  JOB_OBJECT_NET_RATE_CONTROL_MAX_BANDWIDTH = 0x2,
+  JOB_OBJECT_NET_RATE_CONTROL_DSCP_TAG = 0x4,
+  JOB_OBJECT_NET_RATE_CONTROL_VALID_FLAGS = 0x7,
+};
+
+</code></pre></div><h3 id="job-object-io-rate-control-flags"><a href="#job-object-io-rate-control-flags" class="header-anchor">#</a> <code>JOB_OBJECT_IO_RATE_CONTROL_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum JOB_OBJECT_IO_RATE_CONTROL_FLAGS : __int32
+{
+  JOB_OBJECT_IO_RATE_CONTROL_ENABLE = 0x1,
+  JOB_OBJECT_IO_RATE_CONTROL_STANDALONE_VOLUME = 0x2,
+  JOB_OBJECT_IO_RATE_CONTROL_VALID_FLAGS = 0x3,
+};
+
+</code></pre></div><h3 id="json-valuetype"><a href="#json-valuetype" class="header-anchor">#</a> <code>Json::ValueType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Json::ValueType : __int32
+{
+  nullValue = 0x0,
+  intValue = 0x1,
+  uintValue = 0x2,
+  realValue = 0x3,
+  stringValue = 0x4,
+  booleanValue = 0x5,
+  arrayValue = 0x6,
+  objectValue = 0x7,
+};
+
+</code></pre></div><h3 id="json-commentplacement"><a href="#json-commentplacement" class="header-anchor">#</a> <code>Json::CommentPlacement</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Json::CommentPlacement : __int32
+{
+  commentBefore = 0x0,
+  commentAfterOnSameLine = 0x1,
+  commentAfter = 0x2,
+  numberOfCommentPlacement = 0x3,
+};
+
+</code></pre></div><h3 id="jobobject-io-attribution-control-flags"><a href="#jobobject-io-attribution-control-flags" class="header-anchor">#</a> <code>JOBOBJECT_IO_ATTRIBUTION_CONTROL_FLAGS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum JOBOBJECT_IO_ATTRIBUTION_CONTROL_FLAGS : __int32
+{
+  JOBOBJECT_IO_ATTRIBUTION_CONTROL_ENABLE = 0x1,
+  JOBOBJECT_IO_ATTRIBUTION_CONTROL_DISABLE = 0x2,
+  JOBOBJECT_IO_ATTRIBUTION_CONTROL_VALID_FLAGS = 0x3,
+};
+
+</code></pre></div><h3 id="json-pathargument-kind"><a href="#json-pathargument-kind" class="header-anchor">#</a> <code>Json::PathArgument::Kind</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Json::PathArgument::Kind : __int32
+{
+  kindNone = 0x0,
+  kindIndex = 0x1,
+  kindKey = 0x2,
+};
+
+</code></pre></div><h3 id="json-value-czstring-duplicationpolicy"><a href="#json-value-czstring-duplicationpolicy" class="header-anchor">#</a> <code>Json::Value::CZString::DuplicationPolicy</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Json::Value::CZString::DuplicationPolicy : __int32
+{
+  noDuplication = 0x0,
+  duplicate = 0x1,
+  duplicateOnCopy = 0x2,
+};
+
+</code></pre></div><h3 id="joincodeentryscreencontroller-activescreen"><a href="#joincodeentryscreencontroller-activescreen" class="header-anchor">#</a> <code>JoincodeEntryScreenController::ActiveScreen</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation JoincodeEntryScreenController::ActiveScreen;
+
+</code></pre></div><h3 id="jumptype"><a href="#jumptype" class="header-anchor">#</a> <code>JumpType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent JumpType;
+
+</code></pre></div><h3 id="j-dct-method"><a href="#j-dct-method" class="header-anchor">#</a> <code>J_DCT_METHOD</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum J_DCT_METHOD : __int32
+{
+  JDCT_ISLOW = 0x0,
+  JDCT_IFAST = 0x1,
+  JDCT_FLOAT = 0x2,
+};
+
+</code></pre></div><h3 id="j-color-space"><a href="#j-color-space" class="header-anchor">#</a> <code>J_COLOR_SPACE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum J_COLOR_SPACE : __int32
+{
+  JCS_UNKNOWN = 0x0,
+  JCS_GRAYSCALE = 0x1,
+  JCS_RGB = 0x2,
+  JCS_YCbCr = 0x3,
+  JCS_CMYK = 0x4,
+  JCS_YCCK = 0x5,
+  JCS_BG_RGB = 0x6,
+  JCS_BG_YCC = 0x7,
+};
+
+</code></pre></div><h3 id="j-color-transform"><a href="#j-color-transform" class="header-anchor">#</a> <code>J_COLOR_TRANSFORM</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum J_COLOR_TRANSFORM : __int32
+{
+  JCT_NONE = 0x0,
+  JCT_SUBTRACT_GREEN = 0x1,
+};
+
+</code></pre></div><h3 id="json-unnamed-enum-uinttostringbuffersize"><a href="#json-unnamed-enum-uinttostringbuffersize" class="header-anchor">#</a> <code>Json::&lt;unnamed_enum_uintToStringBufferSize&gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Json::&lt;unnamed_enum_uintToStringBufferSize&gt; : __int32
+{
+  uintToStringBufferSize = 0x19,
+};
+
+</code></pre></div><h3 id="j-message-code"><a href="#j-message-code" class="header-anchor">#</a> <code>J_MESSAGE_CODE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum J_MESSAGE_CODE : __int32
+{
+  JMSG_NOMESSAGE = 0x0,
+  JERR_BAD_ALIGN_TYPE = 0x1,
+  JERR_BAD_ALLOC_CHUNK = 0x2,
+  JERR_BAD_BUFFER_MODE = 0x3,
+  JERR_BAD_COMPONENT_ID = 0x4,
+  JERR_BAD_CROP_SPEC = 0x5,
+  JERR_BAD_DCT_COEF = 0x6,
+  JERR_BAD_DCTSIZE = 0x7,
+  JERR_BAD_DROP_SAMPLING = 0x8,
+  JERR_BAD_HUFF_TABLE = 0x9,
+  JERR_BAD_IN_COLORSPACE = 0xA,
+  JERR_BAD_J_COLORSPACE = 0xB,
+  JERR_BAD_LENGTH = 0xC,
+  JERR_BAD_LIB_VERSION = 0xD,
+  JERR_BAD_MCU_SIZE = 0xE,
+  JERR_BAD_POOL_ID = 0xF,
+  JERR_BAD_PRECISION = 0x10,
+  JERR_BAD_PROGRESSION = 0x11,
+  JERR_BAD_PROG_SCRIPT = 0x12,
+  JERR_BAD_SAMPLING = 0x13,
+  JERR_BAD_SCAN_SCRIPT = 0x14,
+  JERR_BAD_STATE = 0x15,
+  JERR_BAD_STRUCT_SIZE = 0x16,
+  JERR_BAD_VIRTUAL_ACCESS = 0x17,
+  JERR_BUFFER_SIZE = 0x18,
+  JERR_CANT_SUSPEND = 0x19,
+  JERR_CCIR601_NOTIMPL = 0x1A,
+  JERR_COMPONENT_COUNT = 0x1B,
+  JERR_CONVERSION_NOTIMPL = 0x1C,
+  JERR_DAC_INDEX = 0x1D,
+  JERR_DAC_VALUE = 0x1E,
+  JERR_DHT_INDEX = 0x1F,
+  JERR_DQT_INDEX = 0x20,
+  JERR_EMPTY_IMAGE = 0x21,
+  JERR_EMS_READ = 0x22,
+  JERR_EMS_WRITE = 0x23,
+  JERR_EOI_EXPECTED = 0x24,
+  JERR_FILE_READ = 0x25,
+  JERR_FILE_WRITE = 0x26,
+  JERR_FRACT_SAMPLE_NOTIMPL = 0x27,
+  JERR_HUFF_CLEN_OVERFLOW = 0x28,
+  JERR_HUFF_MISSING_CODE = 0x29,
+  JERR_IMAGE_TOO_BIG = 0x2A,
+  JERR_INPUT_EMPTY = 0x2B,
+  JERR_INPUT_EOF = 0x2C,
+  JERR_MISMATCHED_QUANT_TABLE = 0x2D,
+  JERR_MISSING_DATA = 0x2E,
+  JERR_MODE_CHANGE = 0x2F,
+  JERR_NOTIMPL = 0x30,
+  JERR_NOT_COMPILED = 0x31,
+  JERR_NO_ARITH_TABLE = 0x32,
+  JERR_NO_BACKING_STORE = 0x33,
+  JERR_NO_HUFF_TABLE = 0x34,
+  JERR_NO_IMAGE = 0x35,
+  JERR_NO_QUANT_TABLE = 0x36,
+  JERR_NO_SOI = 0x37,
+  JERR_OUT_OF_MEMORY = 0x38,
+  JERR_QUANT_COMPONENTS = 0x39,
+  JERR_QUANT_FEW_COLORS = 0x3A,
+  JERR_QUANT_MANY_COLORS = 0x3B,
+  JERR_SOF_BEFORE = 0x3C,
+  JERR_SOF_DUPLICATE = 0x3D,
+  JERR_SOF_NO_SOS = 0x3E,
+  JERR_SOF_UNSUPPORTED = 0x3F,
+  JERR_SOI_DUPLICATE = 0x40,
+  JERR_TFILE_CREATE = 0x41,
+  JERR_TFILE_READ = 0x42,
+  JERR_TFILE_SEEK = 0x43,
+  JERR_TFILE_WRITE = 0x44,
+  JERR_TOO_LITTLE_DATA = 0x45,
+  JERR_UNKNOWN_MARKER = 0x46,
+  JERR_VIRTUAL_BUG = 0x47,
+  JERR_WIDTH_OVERFLOW = 0x48,
+  JERR_XMS_READ = 0x49,
+  JERR_XMS_WRITE = 0x4A,
+  JMSG_COPYRIGHT = 0x4B,
+  JMSG_VERSION = 0x4C,
+  JTRC_16BIT_TABLES = 0x4D,
+  JTRC_ADOBE = 0x4E,
+  JTRC_APP0 = 0x4F,
+  JTRC_APP14 = 0x50,
+  JTRC_DAC = 0x51,
+  JTRC_DHT = 0x52,
+  JTRC_DQT = 0x53,
+  JTRC_DRI = 0x54,
+  JTRC_EMS_CLOSE = 0x55,
+  JTRC_EMS_OPEN = 0x56,
+  JTRC_EOI = 0x57,
+  JTRC_HUFFBITS = 0x58,
+  JTRC_JFIF = 0x59,
+  JTRC_JFIF_BADTHUMBNAILSIZE = 0x5A,
+  JTRC_JFIF_EXTENSION = 0x5B,
+  JTRC_JFIF_THUMBNAIL = 0x5C,
+  JTRC_MISC_MARKER = 0x5D,
+  JTRC_PARMLESS_MARKER = 0x5E,
+  JTRC_QUANTVALS = 0x5F,
+  JTRC_QUANT_3_NCOLORS = 0x60,
+  JTRC_QUANT_NCOLORS = 0x61,
+  JTRC_QUANT_SELECTED = 0x62,
+  JTRC_RECOVERY_ACTION = 0x63,
+  JTRC_RST = 0x64,
+  JTRC_SMOOTH_NOTIMPL = 0x65,
+  JTRC_SOF = 0x66,
+  JTRC_SOF_COMPONENT = 0x67,
+  JTRC_SOI = 0x68,
+  JTRC_SOS = 0x69,
+  JTRC_SOS_COMPONENT = 0x6A,
+  JTRC_SOS_PARAMS = 0x6B,
+  JTRC_TFILE_CLOSE = 0x6C,
+  JTRC_TFILE_OPEN = 0x6D,
+  JTRC_THUMB_JPEG = 0x6E,
+  JTRC_THUMB_PALETTE = 0x6F,
+  JTRC_THUMB_RGB = 0x70,
+  JTRC_UNKNOWN_IDS = 0x71,
+  JTRC_XMS_CLOSE = 0x72,
+  JTRC_XMS_OPEN = 0x73,
+  JWRN_ADOBE_XFORM = 0x74,
+  JWRN_ARITH_BAD_CODE = 0x75,
+  JWRN_BOGUS_PROGRESSION = 0x76,
+  JWRN_EXTRANEOUS_DATA = 0x77,
+  JWRN_HIT_MARKER = 0x78,
+  JWRN_HUFF_BAD_CODE = 0x79,
+  JWRN_JFIF_MAJOR = 0x7A,
+  JWRN_JPEG_EOF = 0x7B,
+  JWRN_MUST_RESYNC = 0x7C,
+  JWRN_NOT_SEQUENTIAL = 0x7D,
+  JWRN_TOO_MUCH_DATA = 0x7E,
+  JMSG_LASTMSGCODE = 0x7F,
+};
+
+</code></pre></div><h3 id="j-buf-mode"><a href="#j-buf-mode" class="header-anchor">#</a> <code>J_BUF_MODE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum J_BUF_MODE : __int32
+{
+  JBUF_PASS_THRU = 0x0,
+  JBUF_SAVE_SOURCE = 0x1,
+  JBUF_CRANK_DEST = 0x2,
+  JBUF_SAVE_AND_PASS = 0x3,
+};
+
+</code></pre></div><h3 id="jpeg-marker"><a href="#jpeg-marker" class="header-anchor">#</a> <code>JPEG_MARKER</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum JPEG_MARKER : __int32
+{
+  M_SOF0 = 0xC0,
+  M_SOF1 = 0xC1,
+  M_SOF2 = 0xC2,
+  M_SOF3 = 0xC3,
+  M_SOF5 = 0xC5,
+  M_SOF6 = 0xC6,
+  M_SOF7 = 0xC7,
+  M_JPG = 0xC8,
+  M_SOF9 = 0xC9,
+  M_SOF10 = 0xCA,
+  M_SOF11 = 0xCB,
+  M_SOF13 = 0xCD,
+  M_SOF14 = 0xCE,
+  M_SOF15 = 0xCF,
+  M_DHT = 0xC4,
+  M_DAC = 0xCC,
+  M_RST0 = 0xD0,
+  M_RST1 = 0xD1,
+  M_RST2 = 0xD2,
+  M_RST3 = 0xD3,
+  M_RST4 = 0xD4,
+  M_RST5 = 0xD5,
+  M_RST6 = 0xD6,
+  M_RST7 = 0xD7,
+  M_SOI = 0xD8,
+  M_EOI = 0xD9,
+  M_SOS = 0xDA,
+  M_DQT = 0xDB,
+  M_DNL = 0xDC,
+  M_DRI = 0xDD,
+  M_DHP = 0xDE,
+  M_EXP = 0xDF,
+  M_APP0 = 0xE0,
+  M_APP1 = 0xE1,
+  M_APP2 = 0xE2,
+  M_APP3 = 0xE3,
+  M_APP4 = 0xE4,
+  M_APP5 = 0xE5,
+  M_APP6 = 0xE6,
+  M_APP7 = 0xE7,
+  M_APP8 = 0xE8,
+  M_APP9 = 0xE9,
+  M_APP10 = 0xEA,
+  M_APP11 = 0xEB,
+  M_APP12 = 0xEC,
+  M_APP13 = 0xED,
+  M_APP14 = 0xEE,
+  M_APP15 = 0xEF,
+  M_JPG0 = 0xF0,
+  M_JPG8 = 0xF8,
+  M_JPG13 = 0xFD,
+  M_COM = 0xFE,
+  M_TEM = 0x1,
+  M_ERROR = 0x100,
+};
+
+</code></pre></div><h3 id="j-dither-mode"><a href="#j-dither-mode" class="header-anchor">#</a> <code>J_DITHER_MODE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum J_DITHER_MODE : __int32
+{
+  JDITHER_NONE = 0x0,
+  JDITHER_ORDERED = 0x1,
+  JDITHER_FS = 0x2,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/I.html" class="prev">
+        I
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/K.html">
+        K
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/72.6f64c4ab.js" defer></script>
+  </body>
+</html>

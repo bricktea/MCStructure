@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>N | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.5de0a167.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.56b0ab36.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.56e23786.js" as="script"><link rel="preload" href="/mcstructure/assets/js/76.5fddaea1.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.dda8da32.js"><link rel="prefetch" href="/mcstructure/assets/js/100.d193fca3.js"><link rel="prefetch" href="/mcstructure/assets/js/101.324df8d1.js"><link rel="prefetch" href="/mcstructure/assets/js/102.81d32953.js"><link rel="prefetch" href="/mcstructure/assets/js/103.bafffe55.js"><link rel="prefetch" href="/mcstructure/assets/js/104.4a4116d4.js"><link rel="prefetch" href="/mcstructure/assets/js/105.ee5ab7c3.js"><link rel="prefetch" href="/mcstructure/assets/js/106.16520c01.js"><link rel="prefetch" href="/mcstructure/assets/js/107.e4e2fef9.js"><link rel="prefetch" href="/mcstructure/assets/js/108.9771cecd.js"><link rel="prefetch" href="/mcstructure/assets/js/109.07a059f8.js"><link rel="prefetch" href="/mcstructure/assets/js/11.84aff5f4.js"><link rel="prefetch" href="/mcstructure/assets/js/110.79e73184.js"><link rel="prefetch" href="/mcstructure/assets/js/111.735fe11b.js"><link rel="prefetch" href="/mcstructure/assets/js/112.5b8c9633.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a961fd7d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.f46e6ac6.js"><link rel="prefetch" href="/mcstructure/assets/js/115.29d129b9.js"><link rel="prefetch" href="/mcstructure/assets/js/116.0761604d.js"><link rel="prefetch" href="/mcstructure/assets/js/117.8fa51bbe.js"><link rel="prefetch" href="/mcstructure/assets/js/118.65b68c09.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0b88b1c0.js"><link rel="prefetch" href="/mcstructure/assets/js/12.fb0b2343.js"><link rel="prefetch" href="/mcstructure/assets/js/120.6514cc60.js"><link rel="prefetch" href="/mcstructure/assets/js/121.30792057.js"><link rel="prefetch" href="/mcstructure/assets/js/122.ac6c9052.js"><link rel="prefetch" href="/mcstructure/assets/js/123.9dde14ff.js"><link rel="prefetch" href="/mcstructure/assets/js/124.1b8cd48f.js"><link rel="prefetch" href="/mcstructure/assets/js/125.ba14f223.js"><link rel="prefetch" href="/mcstructure/assets/js/126.5dd69ba6.js"><link rel="prefetch" href="/mcstructure/assets/js/127.32df8d72.js"><link rel="prefetch" href="/mcstructure/assets/js/128.aa9a14cc.js"><link rel="prefetch" href="/mcstructure/assets/js/129.d7a703a5.js"><link rel="prefetch" href="/mcstructure/assets/js/13.b8437649.js"><link rel="prefetch" href="/mcstructure/assets/js/130.d8f7ecf5.js"><link rel="prefetch" href="/mcstructure/assets/js/131.0c1d33fe.js"><link rel="prefetch" href="/mcstructure/assets/js/132.8b6e6ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/133.f999118d.js"><link rel="prefetch" href="/mcstructure/assets/js/134.bc4a2893.js"><link rel="prefetch" href="/mcstructure/assets/js/135.e6e793b3.js"><link rel="prefetch" href="/mcstructure/assets/js/136.c50dcaff.js"><link rel="prefetch" href="/mcstructure/assets/js/137.209d5c8a.js"><link rel="prefetch" href="/mcstructure/assets/js/138.3eed47db.js"><link rel="prefetch" href="/mcstructure/assets/js/139.5e9afeaa.js"><link rel="prefetch" href="/mcstructure/assets/js/14.c94aa248.js"><link rel="prefetch" href="/mcstructure/assets/js/140.ac85c96f.js"><link rel="prefetch" href="/mcstructure/assets/js/141.82f0f06f.js"><link rel="prefetch" href="/mcstructure/assets/js/142.08052153.js"><link rel="prefetch" href="/mcstructure/assets/js/143.97d16176.js"><link rel="prefetch" href="/mcstructure/assets/js/144.66c74f2b.js"><link rel="prefetch" href="/mcstructure/assets/js/145.58e96ed1.js"><link rel="prefetch" href="/mcstructure/assets/js/146.4c73b3b4.js"><link rel="prefetch" href="/mcstructure/assets/js/147.0e0e09a7.js"><link rel="prefetch" href="/mcstructure/assets/js/148.a8c2c253.js"><link rel="prefetch" href="/mcstructure/assets/js/149.99f1b4f1.js"><link rel="prefetch" href="/mcstructure/assets/js/15.fd6df6e3.js"><link rel="prefetch" href="/mcstructure/assets/js/16.855c8adf.js"><link rel="prefetch" href="/mcstructure/assets/js/17.860009b0.js"><link rel="prefetch" href="/mcstructure/assets/js/18.63105a6b.js"><link rel="prefetch" href="/mcstructure/assets/js/19.fbddb16b.js"><link rel="prefetch" href="/mcstructure/assets/js/20.605578ab.js"><link rel="prefetch" href="/mcstructure/assets/js/21.1e5adf90.js"><link rel="prefetch" href="/mcstructure/assets/js/22.29bfa69a.js"><link rel="prefetch" href="/mcstructure/assets/js/23.566201a2.js"><link rel="prefetch" href="/mcstructure/assets/js/24.d912e845.js"><link rel="prefetch" href="/mcstructure/assets/js/25.8885d257.js"><link rel="prefetch" href="/mcstructure/assets/js/26.8409713f.js"><link rel="prefetch" href="/mcstructure/assets/js/27.49cb5267.js"><link rel="prefetch" href="/mcstructure/assets/js/28.2a890355.js"><link rel="prefetch" href="/mcstructure/assets/js/29.6ea7598b.js"><link rel="prefetch" href="/mcstructure/assets/js/3.50967458.js"><link rel="prefetch" href="/mcstructure/assets/js/30.1a3c3902.js"><link rel="prefetch" href="/mcstructure/assets/js/31.24ec9e8b.js"><link rel="prefetch" href="/mcstructure/assets/js/32.40831503.js"><link rel="prefetch" href="/mcstructure/assets/js/33.6602f7d9.js"><link rel="prefetch" href="/mcstructure/assets/js/34.75d333d9.js"><link rel="prefetch" href="/mcstructure/assets/js/35.84bf3e5a.js"><link rel="prefetch" href="/mcstructure/assets/js/36.fe4e7307.js"><link rel="prefetch" href="/mcstructure/assets/js/37.b2ee95ad.js"><link rel="prefetch" href="/mcstructure/assets/js/38.c03d5dee.js"><link rel="prefetch" href="/mcstructure/assets/js/39.a60df6e0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.f5835878.js"><link rel="prefetch" href="/mcstructure/assets/js/40.6322a006.js"><link rel="prefetch" href="/mcstructure/assets/js/41.420acfde.js"><link rel="prefetch" href="/mcstructure/assets/js/42.a4ef9cfe.js"><link rel="prefetch" href="/mcstructure/assets/js/43.660cc3cf.js"><link rel="prefetch" href="/mcstructure/assets/js/44.683fc1e0.js"><link rel="prefetch" href="/mcstructure/assets/js/45.f27a9ad0.js"><link rel="prefetch" href="/mcstructure/assets/js/46.9f9edd2c.js"><link rel="prefetch" href="/mcstructure/assets/js/47.fd3ae547.js"><link rel="prefetch" href="/mcstructure/assets/js/48.375f8f97.js"><link rel="prefetch" href="/mcstructure/assets/js/49.e0d0f024.js"><link rel="prefetch" href="/mcstructure/assets/js/5.e0bd9261.js"><link rel="prefetch" href="/mcstructure/assets/js/50.aa126f14.js"><link rel="prefetch" href="/mcstructure/assets/js/51.e939b03e.js"><link rel="prefetch" href="/mcstructure/assets/js/52.a2d46eef.js"><link rel="prefetch" href="/mcstructure/assets/js/53.72de48c3.js"><link rel="prefetch" href="/mcstructure/assets/js/54.54675155.js"><link rel="prefetch" href="/mcstructure/assets/js/55.8b419ad8.js"><link rel="prefetch" href="/mcstructure/assets/js/56.07af8dcf.js"><link rel="prefetch" href="/mcstructure/assets/js/57.0bedaec9.js"><link rel="prefetch" href="/mcstructure/assets/js/58.37c94f2a.js"><link rel="prefetch" href="/mcstructure/assets/js/59.b0866a6a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.04e2a2d2.js"><link rel="prefetch" href="/mcstructure/assets/js/60.5c5afc8c.js"><link rel="prefetch" href="/mcstructure/assets/js/61.ea56e4d6.js"><link rel="prefetch" href="/mcstructure/assets/js/62.3cb13464.js"><link rel="prefetch" href="/mcstructure/assets/js/63.83c0082d.js"><link rel="prefetch" href="/mcstructure/assets/js/64.2cd02c8b.js"><link rel="prefetch" href="/mcstructure/assets/js/65.c16cc8f2.js"><link rel="prefetch" href="/mcstructure/assets/js/66.ad2d4521.js"><link rel="prefetch" href="/mcstructure/assets/js/67.83e59ab1.js"><link rel="prefetch" href="/mcstructure/assets/js/68.beec9ddd.js"><link rel="prefetch" href="/mcstructure/assets/js/69.b4bc257c.js"><link rel="prefetch" href="/mcstructure/assets/js/7.fd995bdf.js"><link rel="prefetch" href="/mcstructure/assets/js/70.1ea3abef.js"><link rel="prefetch" href="/mcstructure/assets/js/71.3cf65839.js"><link rel="prefetch" href="/mcstructure/assets/js/72.6f64c4ab.js"><link rel="prefetch" href="/mcstructure/assets/js/73.452d7013.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0660e6d9.js"><link rel="prefetch" href="/mcstructure/assets/js/75.b7b5e783.js"><link rel="prefetch" href="/mcstructure/assets/js/77.be26bbc6.js"><link rel="prefetch" href="/mcstructure/assets/js/78.0e00fef4.js"><link rel="prefetch" href="/mcstructure/assets/js/79.731c37fb.js"><link rel="prefetch" href="/mcstructure/assets/js/8.1cbf1ff3.js"><link rel="prefetch" href="/mcstructure/assets/js/80.2282d655.js"><link rel="prefetch" href="/mcstructure/assets/js/81.33a53399.js"><link rel="prefetch" href="/mcstructure/assets/js/82.196f3fc3.js"><link rel="prefetch" href="/mcstructure/assets/js/83.e9cb3f05.js"><link rel="prefetch" href="/mcstructure/assets/js/84.35c05041.js"><link rel="prefetch" href="/mcstructure/assets/js/85.16e996b6.js"><link rel="prefetch" href="/mcstructure/assets/js/86.97412bd5.js"><link rel="prefetch" href="/mcstructure/assets/js/87.2244cc28.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f00d5fcc.js"><link rel="prefetch" href="/mcstructure/assets/js/89.13359307.js"><link rel="prefetch" href="/mcstructure/assets/js/9.86a5a003.js"><link rel="prefetch" href="/mcstructure/assets/js/90.3b4668a2.js"><link rel="prefetch" href="/mcstructure/assets/js/91.85f8c578.js"><link rel="prefetch" href="/mcstructure/assets/js/92.c7bfeb53.js"><link rel="prefetch" href="/mcstructure/assets/js/93.87278538.js"><link rel="prefetch" href="/mcstructure/assets/js/94.9636adb8.js"><link rel="prefetch" href="/mcstructure/assets/js/95.49a2df5b.js"><link rel="prefetch" href="/mcstructure/assets/js/96.f84087c6.js"><link rel="prefetch" href="/mcstructure/assets/js/97.777e52ef.js"><link rel="prefetch" href="/mcstructure/assets/js/98.95f637bf.js"><link rel="prefetch" href="/mcstructure/assets/js/99.535a1eab.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.5de0a167.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" aria-current="page" class="active sidebar-link">N</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="n"><a href="#n" class="header-anchor">#</a> N</h1> <h3 id="networkpeer-reliability"><a href="#networkpeer-reliability" class="header-anchor">#</a> <code>NetworkPeer::Reliability</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Reliable</td> <td><code>0</code></td></tr> <tr><td>ReliableOrdered</td> <td><code>1</code></td></tr> <tr><td>Unreliable</td> <td><code>2</code></td></tr> <tr><td>UnreliableSequenced</td> <td><code>3</code></td></tr></tbody></table> <h3 id="networkidentifier-type"><a href="#networkidentifier-type" class="header-anchor">#</a> <code>NetworkIdentifier::Type</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>RakNet</td> <td><code>0</code></td></tr> <tr><td>Address</td> <td><code>1</code></td></tr> <tr><td>Address6</td> <td><code>2</code></td></tr> <tr><td>Generic</td> <td><code>3</code></td></tr></tbody></table> <h3 id="newlogtype"><a href="#newlogtype" class="header-anchor">#</a> <code>NewLogType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="newleaftype"><a href="#newleaftype" class="header-anchor">#</a> <code>NewLeafType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="nodetype"><a href="#nodetype" class="header-anchor">#</a> <code>NodeType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="nvsdk-ngx-tonemappertype"><a href="#nvsdk-ngx-tonemappertype" class="header-anchor">#</a> <code>NVSDK_NGX_ToneMapperType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NVSDK_NGX_TONEMAPPER_STRING</td> <td><code>0</code></td></tr> <tr><td>NVSDK_NGX_TONEMAPPER_REINHARD</td> <td><code>1</code></td></tr> <tr><td>NVSDK_NGX_TONEMAPPER_ONEOVERLUMA</td> <td><code>2</code></td></tr> <tr><td>NVSDK_NGX_TONEMAPPER_ACES</td> <td><code>3</code></td></tr> <tr><td>NVSDK_NGX_TONEMAPPERTYPE_NUM</td> <td><code>4</code></td></tr></tbody></table> <h3 id="nvsdk-ngx-perfquality-value"><a href="#nvsdk-ngx-perfquality-value" class="header-anchor">#</a> <code>NVSDK_NGX_PerfQuality_Value</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>NVSDK_NGX_PerfQuality_Value_MaxPerf</td> <td><code>0</code></td></tr> <tr><td>NVSDK_NGX_PerfQuality_Value_Balanced</td> <td><code>1</code></td></tr> <tr><td>NVSDK_NGX_PerfQuality_Value_MaxQuality</td> <td><code>2</code></td></tr> <tr><td>NVSDK_NGX_PerfQuality_Value_UltraPerformance</td> <td><code>3</code></td></tr> <tr><td>NVSDK_NGX_PerfQuality_Value_UltraQuality</td> <td><code>4</code></td></tr></tbody></table> <h3 id="networkpeer-datastatus"><a href="#networkpeer-datastatus" class="header-anchor">#</a> <code>NetworkPeer::DataStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NetworkPeer::DataStatus : __int32
+{
+  HasData = 0x0,
+  NoData = 0x1,
+  BrokenData = 0x2,
+};
+
+</code></pre></div><h3 id="networkpeer-networkload"><a href="#networkpeer-networkload" class="header-anchor">#</a> <code>NetworkPeer::NetworkLoad</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NetworkPeer::NetworkLoad : __int32
+{
+  Unrestricted = 0x0,
+  Low = 0x1,
+  Medium = 0x2,
+  High = 0x3,
+};
+
+</code></pre></div><h3 id="networksuspendresumelistener-state"><a href="#networksuspendresumelistener-state" class="header-anchor">#</a> <code>NetworkSuspendResumeListener::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NetworkSuspendResumeListener::State : __int32
+{
+  Resumed = 0x0,
+  Suspended = 0x1,
+};
+
+</code></pre></div><h3 id="netherworldtype"><a href="#netherworldtype" class="header-anchor">#</a> <code>NetherWorldType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ui::FontSize NetherWorldType;
+
+</code></pre></div><h3 id="networkfilter"><a href="#networkfilter" class="header-anchor">#</a> <code>NetworkFilter</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NetworkFilter : __int32
+{
+  OnlyOnWifi = 0x0,
+  WifiOrMobileData = 0x1,
+};
+
+</code></pre></div><h3 id="navbuttonlinksto"><a href="#navbuttonlinksto" class="header-anchor">#</a> <code>NavButtonLinksTo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NavButtonLinksTo : __int32
+{
+  NOT_SPECIFIED = 0x0,
+  DURABLE = 0x1,
+  QUERY_MANIFEST = 0x2,
+  SEARCH = 0x3,
+};
+
+</code></pre></div><h3 id="networkhandler-networkstatisticsconfig"><a href="#networkhandler-networkstatisticsconfig" class="header-anchor">#</a> <code>NetworkHandler::NetworkStatisticsConfig</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation NetworkHandler::NetworkStatisticsConfig;
+
+</code></pre></div><h3 id="networkworldtype"><a href="#networkworldtype" class="header-anchor">#</a> <code>NetworkWorldType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation NetworkWorldType;
+
+</code></pre></div><h3 id="networkhandler-connection-type"><a href="#networkhandler-connection-type" class="header-anchor">#</a> <code>NetworkHandler::Connection::Type</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef RealmsEnvironment NetworkHandler::Connection::Type;
+
+</code></pre></div><h3 id="nodeid"><a href="#nodeid" class="header-anchor">#</a> <code>NodeId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation NodeId;
+
+</code></pre></div><h3 id="npcactiontype"><a href="#npcactiontype" class="header-anchor">#</a> <code>NpcActionType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NpcActionType : __int8
+{
+  UrlAction = 0x0,
+  CommandAction = 0x1,
+  InvalidAction = 0x2,
+};
+
+</code></pre></div><h3 id="npcactionmode"><a href="#npcactionmode" class="header-anchor">#</a> <code>NpcActionMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NpcActionMode : __int8
+{
+  Button = 0x0,
+  OnClose = 0x1,
+};
+
+</code></pre></div><h3 id="npcinteractscreencontroller-npctextedit"><a href="#npcinteractscreencontroller-npctextedit" class="header-anchor">#</a> <code>NpcInteractScreenController::NpcTextEdit</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NpcInteractScreenController::NpcTextEdit : __int32
+{
+  Name = 0x0,
+  InteractText = 0x1,
+  ActionButtonName = 0x2,
+  ActionText = 0x3,
+};
+
+</code></pre></div><h3 id="npcinteractscreencontroller-section"><a href="#npcinteractscreencontroller-section" class="header-anchor">#</a> <code>NpcInteractScreenController::Section</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NpcInteractScreenController::Section : __int8
+{
+  Basic = 0x0,
+  Advanced = 0x1,
+  MaximizedActionEdit = 0x2,
+  Student = 0x3,
+};
+
+</code></pre></div><h3 id="npcrequestpacket-requesttype"><a href="#npcrequestpacket-requesttype" class="header-anchor">#</a> <code>NpcRequestPacket::RequestType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NpcRequestPacket::RequestType : __int8
+{
+  SetActions = 0x0,
+  ExecuteAction = 0x1,
+  ExecuteClosingCommands = 0x2,
+  SetName = 0x3,
+  SetSkin = 0x4,
+  SetInteractText = 0x5,
+};
+
+</code></pre></div><h3 id="nl-prefix-origin"><a href="#nl-prefix-origin" class="header-anchor">#</a> <code>NL_PREFIX_ORIGIN</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NL_PREFIX_ORIGIN : __int32
+{
+  IpPrefixOriginOther = 0x0,
+  IpPrefixOriginManual = 0x1,
+  IpPrefixOriginWellKnown = 0x2,
+  IpPrefixOriginDhcp = 0x3,
+  IpPrefixOriginRouterAdvertisement = 0x4,
+  IpPrefixOriginUnchanged = 0x10,
+};
+
+</code></pre></div><h3 id="nl-suffix-origin"><a href="#nl-suffix-origin" class="header-anchor">#</a> <code>NL_SUFFIX_ORIGIN</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NL_SUFFIX_ORIGIN : __int32
+{
+  NlsoOther = 0x0,
+  NlsoManual = 0x1,
+  NlsoWellKnown = 0x2,
+  NlsoDhcp = 0x3,
+  NlsoLinkLayerAddress = 0x4,
+  NlsoRandom = 0x5,
+  IpSuffixOriginOther = 0x0,
+  IpSuffixOriginManual = 0x1,
+  IpSuffixOriginWellKnown = 0x2,
+  IpSuffixOriginDhcp = 0x3,
+  IpSuffixOriginLinkLayerAddress = 0x4,
+  IpSuffixOriginRandom = 0x5,
+  IpSuffixOriginUnchanged = 0x10,
+};
+
+</code></pre></div><h3 id="nl-dad-state"><a href="#nl-dad-state" class="header-anchor">#</a> <code>NL_DAD_STATE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NL_DAD_STATE : __int32
+{
+  NldsInvalid = 0x0,
+  NldsTentative = 0x1,
+  NldsDuplicate = 0x2,
+  NldsDeprecated = 0x3,
+  NldsPreferred = 0x4,
+  IpDadStateInvalid = 0x0,
+  IpDadStateTentative = 0x1,
+  IpDadStateDuplicate = 0x2,
+  IpDadStateDeprecated = 0x3,
+  IpDadStatePreferred = 0x4,
+};
+
+</code></pre></div><h3 id="negotiationidentifiers"><a href="#negotiationidentifiers" class="header-anchor">#</a> <code>NegotiationIdentifiers</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NegotiationIdentifiers : __int32
+{
+  ID_NONCE_REQUEST = 0x0,
+  ID_NONCE_REPLY = 0x1,
+  ID_HASHED_NONCE_AND_PASSWORD = 0x2,
+};
+
+</code></pre></div><h3 id="naivety"><a href="#naivety" class="header-anchor">#</a> <code>naivety</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum naivety : __int32
+{
+  OFFSET_ERROR = 0x0,
+  OFFSET_UNKNOWN = 0x1,
+  OFFSET_NAIVE = 0x2,
+  OFFSET_AWARE = 0x3,
+};
+
+</code></pre></div><h3 id="nl-address-type"><a href="#nl-address-type" class="header-anchor">#</a> <code>NL_ADDRESS_TYPE</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NL_ADDRESS_TYPE : __int32
+{
+  NlatUnspecified = 0x0,
+  NlatUnicast = 0x1,
+  NlatAnycast = 0x2,
+  NlatMulticast = 0x3,
+  NlatBroadcast = 0x4,
+  NlatInvalid = 0x5,
+};
+
+</code></pre></div><h3 id="nvsdk-ngx-result"><a href="#nvsdk-ngx-result" class="header-anchor">#</a> <code>NVSDK_NGX_Result</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NVSDK_NGX_Result : __int32
+{
+  NVSDK_NGX_Result_Success = 0x1,
+  NVSDK_NGX_Result_Fail = 0xBAD00000,
+  NVSDK_NGX_Result_FAIL_FeatureNotSupported = 0xBAD00001,
+  NVSDK_NGX_Result_FAIL_PlatformError = 0xBAD00002,
+  NVSDK_NGX_Result_FAIL_FeatureAlreadyExists = 0xBAD00003,
+  NVSDK_NGX_Result_FAIL_FeatureNotFound = 0xBAD00004,
+  NVSDK_NGX_Result_FAIL_InvalidParameter = 0xBAD00005,
+  NVSDK_NGX_Result_FAIL_ScratchBufferTooSmall = 0xBAD00006,
+  NVSDK_NGX_Result_FAIL_NotInitialized = 0xBAD00007,
+  NVSDK_NGX_Result_FAIL_UnsupportedInputFormat = 0xBAD00008,
+  NVSDK_NGX_Result_FAIL_RWFlagMissing = 0xBAD00009,
+  NVSDK_NGX_Result_FAIL_MissingInput = 0xBAD0000A,
+  NVSDK_NGX_Result_FAIL_UnableToInitializeFeature = 0xBAD0000B,
+  NVSDK_NGX_Result_FAIL_OutOfDate = 0xBAD0000C,
+  NVSDK_NGX_Result_FAIL_OutOfGPUMemory = 0xBAD0000D,
+  NVSDK_NGX_Result_FAIL_UnsupportedFormat = 0xBAD0000E,
+  NVSDK_NGX_Result_FAIL_UnableToWriteToAppDataPath = 0xBAD0000F,
+  NVSDK_NGX_Result_FAIL_UnsupportedParameter = 0xBAD00010,
+};
+
+</code></pre></div><h3 id="nvsdk-ngx-version"><a href="#nvsdk-ngx-version" class="header-anchor">#</a> <code>NVSDK_NGX_Version</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NVSDK_NGX_Version : __int32
+{
+  NVSDK_NGX_Version_API = 0x13,
+};
+
+</code></pre></div><h3 id="nvsdk-ngx-feature"><a href="#nvsdk-ngx-feature" class="header-anchor">#</a> <code>NVSDK_NGX_Feature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NVSDK_NGX_Feature : __int32
+{
+  NVSDK_NGX_Feature_Reserved0 = 0x0,
+  NVSDK_NGX_Feature_SuperSampling = 0x1,
+  NVSDK_NGX_Feature_InPainting = 0x2,
+  NVSDK_NGX_Feature_ImageSuperResolution = 0x3,
+  NVSDK_NGX_Feature_SlowMotion = 0x4,
+  NVSDK_NGX_Feature_VideoSuperResolution = 0x5,
+  NVSDK_NGX_Feature_Reserved1 = 0x6,
+  NVSDK_NGX_Feature_Reserved2 = 0x7,
+  NVSDK_NGX_Feature_Reserved3 = 0x8,
+  NVSDK_NGX_Feature_ImageSignalProcessing = 0x9,
+  NVSDK_NGX_Feature_DeepResolve = 0xA,
+  NVSDK_NGX_Feature_Reserved4 = 0xB,
+  NVSDK_NGX_Feature_Count = 0xC,
+};
+
+</code></pre></div><h3 id="nvsdk-ngx-gbuffertype"><a href="#nvsdk-ngx-gbuffertype" class="header-anchor">#</a> <code>NVSDK_NGX_GBufferType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NVSDK_NGX_GBufferType : __int32
+{
+  NVSDK_NGX_GBUFFER_ALBEDO = 0x0,
+  NVSDK_NGX_GBUFFER_ROUGHNESS = 0x1,
+  NVSDK_NGX_GBUFFER_METALLIC = 0x2,
+  NVSDK_NGX_GBUFFER_SPECULAR = 0x3,
+  NVSDK_NGX_GBUFFER_SUBSURFACE = 0x4,
+  NVSDK_NGX_GBUFFER_NORMALS = 0x5,
+  NVSDK_NGX_GBUFFER_SHADINGMODELID = 0x6,
+  NVSDK_NGX_GBUFFER_MATERIALID = 0x7,
+  NVSDK_NGX_GBUFFERTYPE_NUM = 0x10,
+};
+
+</code></pre></div><h3 id="nvsdk-ngx-dlss-feature-flags"><a href="#nvsdk-ngx-dlss-feature-flags" class="header-anchor">#</a> <code>NVSDK_NGX_DLSS_Feature_Flags</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum NVSDK_NGX_DLSS_Feature_Flags : __int32
+{
+  NVSDK_NGX_DLSS_Feature_Flags_IsInvalid = 0x80000000,
+  NVSDK_NGX_DLSS_Feature_Flags_None = 0x0,
+  NVSDK_NGX_DLSS_Feature_Flags_IsHDR = 0x1,
+  NVSDK_NGX_DLSS_Feature_Flags_MVLowRes = 0x2,
+  NVSDK_NGX_DLSS_Feature_Flags_MVJittered = 0x4,
+  NVSDK_NGX_DLSS_Feature_Flags_DepthInverted = 0x8,
+  NVSDK_NGX_DLSS_Feature_Flags_Reserved_0 = 0x10,
+  NVSDK_NGX_DLSS_Feature_Flags_DoSharpening = 0x20,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/M.html" class="prev">
+        M
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/O.html">
+        O
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.56b0ab36.js" defer></script><script src="/mcstructure/assets/js/2.56e23786.js" defer></script><script src="/mcstructure/assets/js/76.5fddaea1.js" defer></script>
+  </body>
+</html>
